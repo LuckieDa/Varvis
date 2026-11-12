@@ -1,0 +1,13 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr7,length=159345973>
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="Demo ClinVar clinical significance">
+##INFO=<ID=CLNREVSTAT,Number=1,Type=String,Description="Demo ClinVar review status">
+##INFO=<ID=CLNVID,Number=1,Type=String,Description="Demo ClinVar Variation ID">
+##INFO=<ID=AF_popmax,Number=A,Type=Float,Description="Demo maximum population allele frequency">
+##INFO=<ID=ANN,Number=.,Type=String,Description="Demo functional annotation">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr7	7000000	rs222222	C	T	99	PASS	CLNSIG=Benign;CLNREVSTAT=reviewed_by_expert_panel;CLNVID=222222;AF_popmax=0.500;ANN=T|synonymous_variant|LOW|DEMOBENIGN|1002|transcript|NM_DEMOBENIGN.1|protein_coding|1/1|c.300C>T|p.Gly100Gly	GT:AD:DP:GQ	0/1:16,18:34:95

@@ -1,0 +1,48 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##contig=<ID=chr1,length=1000>
+##contig=<ID=chr2,length=1000>
+##contig=<ID=chr3,length=1000>
+##contig=<ID=chr4,length=1000>
+##contig=<ID=chr5,length=1000>
+##contig=<ID=chr6,length=1000>
+##contig=<ID=chr7,length=1000>
+##contig=<ID=chr8,length=1000>
+##contig=<ID=chr9,length=1000>
+##contig=<ID=chr10,length=1000>
+##contig=<ID=chr11,length=1000>
+##contig=<ID=chr12,length=1000>
+##contig=<ID=chr13,length=1000>
+##contig=<ID=chr14,length=1000>
+##contig=<ID=chr15,length=1000>
+##contig=<ID=chr16,length=1000>
+##contig=<ID=chr17,length=1000>
+##contig=<ID=chr18,length=1000>
+##contig=<ID=chr19,length=1000>
+##contig=<ID=chr20,length=1000>
+##contig=<ID=chr21,length=1000>
+##contig=<ID=chr22,length=1000>
+##varvisPreparationMode=SYNTHETIC_FAKE
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SYNTHETIC_SAMPLE
+chr1	100	.	A	G	.	PASS	.	GT	0/1
+chr2	200	.	AT	A	.	PASS	.	GT	0/1
+chr3	300	.	C	T	.	PASS	.	GT	0/1
+chr4	400	.	A	G	.	PASS	.	GT	0/1
+chr5	500	.	A	G	.	PASS	.	GT	0/1
+chr6	600	.	A	G	.	PASS	.	GT	0/1
+chr7	700	.	A	G	.	PASS	.	GT	0/1
+chr8	800	.	A	G	.	PASS	.	GT	0/1
+chr9	900	.	A	G	.	PASS	.	GT	0/1
+chr10	100	.	A	G	.	PASS	.	GT	0/1
+chr11	110	.	A	G	.	PASS	.	GT	0/1
+chr12	120	.	A	G	.	PASS	.	GT	0/1
+chr13	130	.	A	G	.	PASS	.	GT	0/1
+chr14	140	.	A	G	.	PASS	.	GT	0/1
+chr15	150	.	A	G	.	PASS	.	GT	0/1
+chr16	160	.	A	G	.	PASS	.	GT	0/1
+chr17	170	.	A	G	.	PASS	.	GT	0/1
+chr18	180	.	A	G	.	PASS	.	GT	0/1
+chr19	190	.	A	G	.	PASS	.	GT	0/1
+chr20	200	.	A	G	.	PASS	.	GT	0/1
+chr21	210	.	A	G	.	PASS	.	GT	0/1
+chr22	220	.	A	G	.	PASS	.	GT	0/1

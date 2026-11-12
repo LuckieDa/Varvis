@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioEdgeTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr5	700	multi-target	G	A,C	.	PASS	GENE=GENE_MULTI	GT:DP:GQ:AD	0/2:45:99:20,0,25	0/0:40:99:40,0,0	0/0:41:99:41,0,0
+chr5	710	multi-complex	G	A,C	.	PASS	GENE=GENE_MULTI	GT:DP:GQ:AD	1/2:45:99:0,20,25	0/0:40:99:40,0,0	0/0:41:99:41,0,0

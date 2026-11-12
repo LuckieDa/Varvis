@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=q10,Description="Low quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr1	100	.	A	G,T	.	PASS	.	GT:DP:GQ:AD	1/2:30:90:10,12,8
+chr2	200	.	AT	A	.	q10	.	GT:DP:GQ:AD	0/1:20:40:8,12

@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioEdgeTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	mother	proband	father
+chrX	600	phased-het	A	G	.	PASS	GENE=GENE_PHASE	GT:DP:GQ:AD	0|0:35:99:35,0	0|1:40:99:20,20	0|0:36:99:36,0
+chrX	610	phased-hom	G	T	.	PASS	GENE=GENE_PHASE	GT:DP:GQ:AD	0|1:33:99:16,17	1|1:42:99:0,42	0|0:37:99:37,0

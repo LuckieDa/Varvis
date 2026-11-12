@@ -1,0 +1,12 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##source=Varvis_public_fixed_controls_SYNTHETIC_genotypes_noncommercial_local_research
+##contig=<ID=chr11,length=135086622>
+##contig=<ID=chr13,length=114364328>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Synthetic genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Synthetic depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Synthetic genotype quality">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Synthetic allele depths">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	VARVIS_PP3_PUBLIC_SYNTHETIC_20260918
+chr11	5227002	.	T	A	.	PASS	.	GT:DP:GQ:AD	0/1:40:99:20,20
+chr13	20189473	.	C	T	.	PASS	.	GT:DP:GQ:AD	0/1:40:99:20,20

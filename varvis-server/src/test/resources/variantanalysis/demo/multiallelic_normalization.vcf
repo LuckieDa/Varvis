@@ -1,0 +1,10 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr6,length=170805979>
+##INFO=<ID=AF_popmax,Number=A,Type=Float,Description="Demo maximum population allele frequency">
+##INFO=<ID=ANN,Number=.,Type=String,Description="Demo functional annotation">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr6	6000000	rs999999	G	A,T	99	PASS	AF_popmax=0.0001,0.020;ANN=A|missense_variant|MODERATE|DEMOMULTI|1009|transcript|NM_DEMOMULTI.1|protein_coding|1/2|c.10G>A|p.Gly4Ser,T|stop_gained|HIGH|DEMOMULTI|1009|transcript|NM_DEMOMULTI.1|protein_coding|1/2|c.10G>T|p.Gly4Ter	GT:AD:DP:GQ	1/2:12,10,8:30:91

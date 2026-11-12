@@ -1,0 +1,13 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr1,length=248956422>
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="Demo ClinVar clinical significance">
+##INFO=<ID=CLNREVSTAT,Number=1,Type=String,Description="Demo ClinVar review status">
+##INFO=<ID=CLNVID,Number=1,Type=String,Description="Demo ClinVar Variation ID">
+##INFO=<ID=AF_popmax,Number=A,Type=Float,Description="Demo maximum population allele frequency">
+##INFO=<ID=ANN,Number=.,Type=String,Description="Demo functional annotation">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr1	1000000	rs111111	A	G	99	PASS	CLNSIG=Pathogenic;CLNREVSTAT=criteria_provided;CLNVID=111111;AF_popmax=0.00001;ANN=G|missense_variant|MODERATE|DEMOCLN|1001|transcript|NM_DEMOCLN.1|protein_coding|1/1|c.101A>G|p.Lys34Arg	GT:AD:DP:GQ	0/1:18,14:32:99

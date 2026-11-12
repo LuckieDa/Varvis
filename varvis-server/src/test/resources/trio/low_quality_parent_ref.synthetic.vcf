@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr3	400	low-quality-parent-ref-1	T	C	.	PASS	GENE=GENE_LOWQ	GT:DP:GQ:AD	0/1:40:99:20,20	0/0:4:8:4,0	0/0:38:99:38,0

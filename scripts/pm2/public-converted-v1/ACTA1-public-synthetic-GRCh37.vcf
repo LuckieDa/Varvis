@@ -1,0 +1,10 @@
+##fileformat=VCFv4.2
+##reference=GRCh37
+##source=PUBLIC_ClinVar_VCV000464138.9_SyntheticGenotype_NotPatient
+##contig=<ID=1,length=249250621>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PM2_PUBLIC_SYNTHETIC
+1	229567477	VCV000464138	C	G	99	PASS	.	GT:AD:DP:GQ	0/1:15,15:30:99

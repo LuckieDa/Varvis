@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr1	100	denovo-1	A	G	.	PASS	GENE=GENE_DENOVO	GT:DP:GQ:AD:FT	0/1:40:99:20,20:PASS	0/0:35:99:35,0:PASS	0/0:38:99:38,0:PASS

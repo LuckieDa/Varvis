@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioEdgeTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chrX	800	haploid-x-1	A	T	.	PASS	GENE=GENE_X	GT:DP:GQ:AD	1:30:99:0,30	0:28:99:28,0	0/1:32:99:16,16
+chrX	810	haploid-x-partial	C	G	.	PASS	GENE=GENE_X	GT:DP:GQ:AD	1/.:30:99:0,30	./.:.:.:.	0/1:32:99:16,16

@@ -1,0 +1,12 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr9,length=138394717>
+##FILTER=<ID=LowQual,Description="Demo low quality call">
+##INFO=<ID=AF_popmax,Number=A,Type=Float,Description="Demo maximum population allele frequency">
+##INFO=<ID=ANN,Number=.,Type=String,Description="Demo functional annotation">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr9	9000000	rs121212	G	C	12	LowQual	AF_popmax=0.00001;ANN=C|missense_variant|MODERATE|DEMOQC|1010|transcript|NM_DEMOQC.1|protein_coding|2/4|c.80G>C|p.Gly27Ala	GT:AD:DP:GQ	0/1:5,2:7:8
+chr9	9000100	rs131313	A	T	99	PASS	AF_popmax=0.00001;ANN=T|missense_variant|MODERATE|DEMOREF|1011|transcript|NM_DEMOREF.1|protein_coding|1/1|c.20A>T|p.Lys7Met	GT:AD:DP:GQ	0/0:30,0:30:99

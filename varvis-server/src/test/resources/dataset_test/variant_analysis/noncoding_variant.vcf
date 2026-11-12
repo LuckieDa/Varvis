@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##INFO=<ID=REGION,Number=1,Type=String,Description="Region classification">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr4	400	.	G	A	.	PASS	REGION=intergenic	GT	0/1

@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr4	500	three-single-1	A	G	.	PASS	GENE=GENE_SINGLE	GT:DP:GQ:AD	0/1:40:99:20,20

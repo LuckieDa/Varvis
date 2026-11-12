@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioEdgeTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr1	620	missing-format-quality	A	G	.	PASS	GENE=GENE_FORMAT	GT	0/1	0/0	0/0

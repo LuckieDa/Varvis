@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr2	300	hom-rec-1	G	A	.	PASS	GENE=GENE_REC	GT:DP:GQ:AD	1/1:46:99:0,46	0/1:33:99:16,17	0/1:31:99:15,16

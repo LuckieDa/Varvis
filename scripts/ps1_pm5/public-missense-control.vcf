@@ -1,0 +1,7 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##contig=<ID=chr7,length=159345973>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##source=Public_allele_in_synthetic_genotype_for_engineering_acceptance
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	public-snv
+chr7	140801550	.	G	C	60	PASS	.	GT	0/1

@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioEdgeTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr1	900	malformed-too-few-columns	A
+chr1	910	format-sample-mismatch	A	G	.	PASS	GENE=GENE_BAD	GT:DP:GQ:AD	0/1:30	0/0:40:99:40,0	0/0:40:99:40,0

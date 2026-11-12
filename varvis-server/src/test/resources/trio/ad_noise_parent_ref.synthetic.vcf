@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##source=VarvisSyntheticTrioEdgeTest
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	father	mother
+chr1	630	ad-noise-parent-ref	A	G	.	PASS	GENE=GENE_AD	GT:DP:GQ:AD	0/1:40:99:20,20	0/0:40:99:38,2	0/0:40:99:40,0

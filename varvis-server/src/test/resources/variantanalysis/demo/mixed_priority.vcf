@@ -1,0 +1,20 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr1,length=248956422>
+##contig=<ID=chr4,length=190214555>
+##contig=<ID=chr8,length=145138636>
+##contig=<ID=chr10,length=133797422>
+##FILTER=<ID=LowQual,Description="Demo low quality call">
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="Demo ClinVar clinical significance">
+##INFO=<ID=CLNREVSTAT,Number=1,Type=String,Description="Demo ClinVar review status">
+##INFO=<ID=CLNVID,Number=1,Type=String,Description="Demo ClinVar Variation ID">
+##INFO=<ID=AF_popmax,Number=A,Type=Float,Description="Demo maximum population allele frequency">
+##INFO=<ID=ANN,Number=.,Type=String,Description="Demo functional annotation">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+chr1	1000000	rs111111	A	G	99	PASS	CLNSIG=Likely_pathogenic;CLNREVSTAT=criteria_provided;CLNVID=111111;AF_popmax=0.00001;ANN=G|missense_variant|MODERATE|DEMOCLN|1001|transcript|NM_DEMOCLN.1|protein_coding|1/1|c.101A>G|p.Lys34Arg	GT:AD:DP:GQ	0/1:18,14:32:99
+chr4	4000000	rs555555	G	T	99	PASS	AF_popmax=0.00002;ANN=T|stop_gained|HIGH|DEMOHI|1005|transcript|NM_DEMOHI.1|protein_coding|3/7|c.900G>T|p.Glu300Ter	GT:AD:DP:GQ	0/1:25,17:42:93
+chr8	8000000	rs666666	C	A	99	PASS	AF_popmax=0.250;ANN=A|missense_variant|MODERATE|DEMOCOMMON|1006|transcript|NM_DEMOCOMMON.1|protein_coding|2/5|c.222C>A|p.Asp74Glu	GT:AD:DP:GQ	0/1:19,15:34:90
+chr10	10000000	rs777777	T	C	20	LowQual	AF_popmax=0.00001;ANN=C|missense_variant|MODERATE|DEMOQCF|1007|transcript|NM_DEMOQCF.1|protein_coding|1/3|c.50T>C|p.Val17Ala	GT:AD:DP:GQ	0/1:7,2:9:12

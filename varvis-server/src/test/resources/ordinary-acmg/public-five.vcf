@@ -1,0 +1,16 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##source=Varvis_ordinary_input_acceptance_20260907
+##NOTICE=Public_alleles_synthetic_genotypes_not_a_real_patient
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Synthetic genotype">
+##contig=<ID=chr7,length=159345973,assembly=GRCh38>
+##contig=<ID=chr11,length=135086622,assembly=GRCh38>
+##contig=<ID=chr12,length=133275309,assembly=GRCh38>
+##contig=<ID=chr13,length=114364328,assembly=GRCh38>
+##contig=<ID=chr17,length=83257441,assembly=GRCh38>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	ORDINARY_PUBLIC_20260907
+chr7	140753336	PUBLIC_BRAF	A	T	60	PASS	.	GT	0/1
+chr11	5227002	PUBLIC_HBB	T	A	60	PASS	.	GT	1/1
+chr12	25245350	PUBLIC_KRAS	C	T	60	PASS	.	GT	0/1
+chr13	20189473	PUBLIC_GJB2	C	T	60	PASS	.	GT	1/1
+chr17	7674220	PUBLIC_TP53	C	T	60	PASS	.	GT	0/1
