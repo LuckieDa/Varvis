@@ -1,0 +1,11 @@
+# Preserve the migrated snapshot byte-for-byte, including locked artifacts.
+* -text
+
+# Versioned scientific JSON retains original CRLF bytes and pinned hashes.
+varvis-server/src/main/resources/acmg/**/*.json whitespace=cr-at-eol
+varvis-server/src/main/resources/acmg/*.json whitespace=cr-at-eol
+# Keep the hash-pinned upstream VEP plugin byte-for-byte, including its three trailing spaces.
+varvis-server/src/main/resources/vep/NearestExonJB.pm whitespace=-blank-at-eol
+# Retain exact public ClinVar response bytes, including upstream blank-line spaces.
+varvis-server/src/main/resources/acmg/hnf1a-ps1-pm5-v1/clinvar-g20r.xml whitespace=-blank-at-eol
+varvis-server/src/main/resources/acmg/hnf1a-ps1-pm5-v1/clinvar-w206r.xml whitespace=-blank-at-eol
