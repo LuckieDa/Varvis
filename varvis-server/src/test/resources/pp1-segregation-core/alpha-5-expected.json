@@ -1,0 +1,14 @@
+{
+  "rawPoints": 5,
+  "appliedPoints": 5,
+  "strength": "STRONG",
+  "transmittingParent": "TEST_ONLY_pp1_alpha_mother",
+  "countedChildren": [
+    "patient-context-test-pp1-alpha",
+    "TEST_ONLY_pp1_alpha_child2",
+    "TEST_ONLY_pp1_alpha_child3",
+    "TEST_ONLY_pp1_alpha_child4",
+    "TEST_ONLY_pp1_alpha_child5"
+  ],
+  "uncountedChildren": []
+}

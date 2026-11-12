@@ -1,0 +1,20 @@
+format-version: 1.2
+data-version: hp/releases/2026-06-23
+ontology: hp.obo
+
+[Term]
+id: HP:0000001
+name: Current term
+synonym: "Legacy current term" EXACT []
+
+[Term]
+id: HP:0000002
+name: Obsolete term
+is_obsolete: true
+replaced_by: HP:0000001
+consider: HP:0000003
+
+[Term]
+id: HP:0009098
+name: Recurrent oral thrush
+synonym: "Chronic oral candidiasis" EXACT []

@@ -1,0 +1,534 @@
+{
+  "schemaVersion": "varvis-group-demo-v1",
+  "dataClass": "SYNTHETIC",
+  "clinicalValidation": false,
+  "sampleId": "VARVIS_GROUP_DEMO",
+  "assembly": "GRCh38",
+  "vcfSha256": "d4b87888d51755cf566b9704b046f7ac8b02d9d00f7750ed19092f2f77e4cba9",
+  "variantCount": 60,
+  "topN": 20,
+  "description": "人工教学变异集合：公开资源中的等位基因，人工基因型和病例背景；非真实患者。",
+  "hpoTerms": [],
+  "rankingMode": "EXOMISER_G0",
+  "patient": {
+    "patientContextId": "patient-context-varvis-group-demo-v1",
+    "role": "PROBAND",
+    "sex": "UNKNOWN"
+  },
+  "geneDeclarations": [
+    {
+      "gene": "HBB",
+      "hgncId": "HGNC:4827",
+      "mondoId": "MONDO:0013517",
+      "moi": "AUTOSOMAL_RECESSIVE",
+      "transcript": "ENST00000647020.1",
+      "affectedStatus": "AFFECTED"
+    },
+    {
+      "gene": "GJB2",
+      "hgncId": "HGNC:4284",
+      "mondoId": "MONDO:0019497",
+      "moi": "AUTOSOMAL_RECESSIVE",
+      "transcript": "ENST00000382848.5",
+      "affectedStatus": "AFFECTED"
+    }
+  ],
+  "variants": [
+    {
+      "contig": "chr11",
+      "position": 5226951,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226952,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226953,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226954,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226955,
+      "reference": "C",
+      "alternate": "G",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226956,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226957,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226958,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226960,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226961,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226962,
+      "reference": "G",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226963,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226964,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226966,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226967,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226968,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226969,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226970,
+      "reference": "T",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226972,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226973,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226974,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226975,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226976,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226978,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226979,
+      "reference": "G",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226981,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226982,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226984,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226985,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr11",
+      "position": 5226987,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "HBB",
+      "transcript": "ENST00000647020.1"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189290,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189292,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189293,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189295,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189296,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189298,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189299,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189300,
+      "reference": "G",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189301,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189302,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189303,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189304,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189305,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189307,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189308,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189310,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189311,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189313,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189314,
+      "reference": "G",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189316,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189317,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189319,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189320,
+      "reference": "C",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189322,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189323,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189325,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189326,
+      "reference": "T",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189328,
+      "reference": "G",
+      "alternate": "A",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189329,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    },
+    {
+      "contig": "chr13",
+      "position": 20189331,
+      "reference": "A",
+      "alternate": "C",
+      "gene": "GJB2",
+      "transcript": "ENST00000382848.5"
+    }
+  ],
+  "publicQueryReceipts": [
+    {
+      "gene": "HBB",
+      "region": "chr11:5226950-5227030",
+      "sha256": "4a6d644b61826506a6400763f14d3d8a2181b2ca651c715a40b89a4e580c633d",
+      "selection": "FIRST_ALT_PER_POSITION_THEN_FIRST_30_POSITIONS_NO_SCORE_FILTER"
+    },
+    {
+      "gene": "GJB2",
+      "region": "chr13:20189290-20189500",
+      "sha256": "17c75238bbad71af7bca08d9e19c92f5f7e2e81c378974e52fef268ece288529",
+      "selection": "FIRST_ALT_PER_POSITION_THEN_FIRST_30_POSITIONS_NO_SCORE_FILTER"
+    }
+  ],
+  "ranking": "MUST_BE_COMPUTED_BY_REAL_EXOMISER_NO_STORED_RANKS",
+  "evaluation": "MUST_BE_COMPUTED_BY_EXISTING_PP3_BP4_BUSINESS_ENTRY"
+}

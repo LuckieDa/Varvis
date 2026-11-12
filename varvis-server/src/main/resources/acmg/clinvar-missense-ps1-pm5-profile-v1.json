@@ -1,0 +1,166 @@
+{
+  "profileSchemaVersion": "clinvar-missense-ps1-pm5-profile-v1",
+  "profileId": "CLINVAR_MISSENSE_PS1_PM5",
+  "profileVersion": "1.0.0",
+  "status": "RUNTIME_EVALUATION_SLICE",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-09-04T00:00:00Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "lineage": {
+    "predecessorRegistryId": "acmg-rule-registry-e3-c3-2026-09-02",
+    "predecessorRegistryCanonicalSha256": "1816c94310d9fc320143d02dd3f86e97155f9dfaa818a52145db4a5429d29942",
+    "predecessorRegistryRawSha256": "5fb10c64a0d157708529e3617247375170117ee25d64f5a970efd484008b6f64",
+    "comparatorManifestVersion": "clinvar-comparator-sidecar-manifest-v1",
+    "comparatorManifestCanonicalSha256": "9e3a29f9f9638394ecab632dd2cb3da4611c18b3c8b61e3f7cb3ac6b50aaaf71",
+    "comparatorManifestRawSha256": "a74d57c58ddff614f5efc0ab9e4cc2bb5c20494ac7d88ee38aa5a03d9c84561e"
+  },
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-e3-k1b-2026-09-04",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "4f2e96746541bf6269a9d06a919d3eb0759ee3bf079f06f4868a23561514e9ed",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-k1b-2026-09-04.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PS1",
+      "ACMG_AMP_2015:PM5"
+    ]
+  },
+  "resources": [
+    {
+      "role": "BOUNDED_COMPARATOR_DISCOVERY_AND_ALLELE_IDENTITY_CROSSCHECK_ONLY",
+      "resourceId": "CLINVAR_2026_03_21_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-21 GRCh38",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836"
+    },
+    {
+      "role": "SELECTED_TRANSCRIPT_PROTEIN_RELATION",
+      "resourceId": "VEP_116_GRCH38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+    },
+    {
+      "role": "CONDITION_LINKED_ASSERTION_SEMANTICS_ONLY",
+      "resourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde"
+    }
+  ],
+  "applicability": {
+    "assembly": "GRCh38",
+    "variantType": "SNV",
+    "simpleAlleleRequired": true,
+    "selectedConsequenceRequired": "missense_variant",
+    "splicingEffectRouteExcluded": true,
+    "requiredContextFields": [
+      "variant.evidenceQueryAllele",
+      "gene.symbol",
+      "disease.mondoId",
+      "transcript.accession",
+      "transcript.version"
+    ],
+    "outsideProfileOutcome": "NOT_APPLICABLE"
+  },
+  "assertionEligibility": {
+    "sourceUnit": "SINGLE_CONDITION_LINKED_SCV_ASSERTION",
+    "crossScvRcvFieldAssemblyAllowed": false,
+    "conditionIdentifier": {
+      "contextNamespace": "MONDO",
+      "acceptedSourceForms": [
+        "MONDO:<digits>",
+        "MONDO:MONDO:<digits>"
+      ],
+      "doublePrefixNormalization": "REMOVE_ONE_LEADING_MONDO_PREFIX",
+      "match": "EXACT_AFTER_BOUNDED_NORMALIZATION",
+      "forbiddenMatching": [
+        "CONDITION_NAME_FUZZY",
+        "ALIAS",
+        "TEXT_CONTAINS",
+        "ONTOLOGY_ANCESTOR_DESCENDANT",
+        "CROSS_ONTOLOGY_INFERENCE"
+      ]
+    },
+    "classification": {
+      "acceptedExactValues": [
+        "Pathogenic"
+      ]
+    },
+    "reviewStatus": {
+      "acceptedExactValues": [
+        "reviewed by expert panel",
+        "practice guideline"
+      ]
+    },
+    "requiredAssertionFields": [
+      "scvAccession",
+      "conditionIdentifiers",
+      "classification",
+      "reviewStatus",
+      "dateLastEvaluated",
+      "sourceLocator"
+    ],
+    "geneMatch": "EXACT_SYMBOL"
+  },
+  "criteria": [
+    {
+      "criterionId": "ACMG_AMP_2015:PS1",
+      "currentDesignation": "PS1",
+      "requiredProteinRelation": "SAME_AMINO_ACID_CHANGE",
+      "baseStrength": "STRONG",
+      "appliedStrength": "STRONG",
+      "ruleBasis": "ORIGINAL_2015_NON_SPLICING_MISSENSE",
+      "original2015AuthoritySourceIds": [
+        "authority-acmg-amp-2015-richards"
+      ],
+      "authoritySourceIds": [
+        "authority-clingen-svi-splicing-2023"
+      ]
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM5",
+      "currentDesignation": "PM5",
+      "requiredProteinRelation": "SAME_RESIDUE_DIFFERENT_AMINO_ACID",
+      "baseStrength": "MODERATE",
+      "appliedStrength": "MODERATE",
+      "ruleBasis": "ORIGINAL_2015_NON_SPLICING_MISSENSE",
+      "original2015AuthoritySourceIds": [
+        "authority-acmg-amp-2015-richards"
+      ],
+      "authoritySourceIds": [
+        "authority-acmg-amp-2015-richards",
+        "authority-clingen-svi-splicing-2023"
+      ]
+    }
+  ],
+  "evaluationPolicy": {
+    "criteriaEvaluatedIndependently": true,
+    "differentEligibleComparatorsMaySatisfyBothCriteria": true,
+    "multipleComparatorsIncreaseStrength": false,
+    "successfulQueryWithoutEligibleComparatorOutcome": "NOT_MET",
+    "sameConditionEligibleDirectionConflict": {
+      "outcome": "NOT_EVALUATED",
+      "conflict": "PRESENT",
+      "review": "REQUIRED"
+    },
+    "recordLevelConflictFromOtherConditionAffectsExactCondition": false,
+    "combinationPerformed": false,
+    "classificationPerformed": false
+  },
+  "failurePolicy": {
+    "resourceFailure": "NOT_EVALUATED",
+    "resourceIdentityMismatch": "NOT_EVALUATED",
+    "profileOrRegistryMismatch": "NOT_EVALUATED",
+    "missingRequiredContext": "NOT_EVALUATED",
+    "missingRequiredAssertionField": "NOT_EVALUATED",
+    "unparseableCondition": "NOT_EVALUATED",
+    "sameConditionEligibleDirectionConflict": "NOT_EVALUATED"
+  }
+}

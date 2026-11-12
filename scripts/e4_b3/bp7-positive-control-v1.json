@@ -1,0 +1,27 @@
+{
+  "panelId": "E4_B3_BP7_EXPECTED_POSITIVE_V1",
+  "dataClass": "SYNTHETIC",
+  "selectionBasis": "Expected-result branch coverage: ClinVar SCV000052640.8 reports computational consensus of no significant splice impact; no functional confirmation. Aggregate VCV000036317.26 has conflicting VUS/LB classifications. This is neither independent model-performance nor clinical validation.",
+  "maximumNewPanelAlleles": 1,
+  "stopCondition": "One formal analysis of this fixed input; preserve unexpected results without swapping alleles or changing policy",
+  "source": "https://www.ncbi.nlm.nih.gov/clinvar/variation/36317/",
+  "variants": [{
+    "id": "public-hbb-intron-minus30",
+    "assembly": "GRCh38", "contig": "11", "position": 5225756,
+    "reference": "T", "alternate": "G", "genotype": "1/1",
+    "genotypeProvenance": "Synthetic engineering sample, not a patient observation",
+    "sourceHgvs": "NC_000011.10:g.5225756T>G",
+    "transcriptHgvs": "NM_000518.5:c.316-30A>C",
+    "selectedTranscript": "ENST00000335295.4",
+    "hgncId": "HGNC:4827", "mondoId": "MONDO:0013517", "moi": "AUTOSOMAL_RECESSIVE"
+  }],
+  "sampleId": "synthetic-proband",
+  "analysisMode": "WES", "analysisScope": "INCLUDE_INTRONS", "topN": 20,
+  "expected": {"PP3": "NOT_MET", "BP4": "MET", "BP7": "MET", "BP7Strength": "Supporting", "BA1": "actual conditions"},
+  "frequencyPrecheck": {
+    "exomiser": "15.1.0", "dataVersion": "2602", "unit": "percent",
+    "selectedMaxSource": "UK10K", "selectedMax": "0.013224015", "ac": 1, "an": 7562,
+    "frequencyFilterMax": "2.0", "AUTOSOMAL_RECESSIVE_HOM_ALT": "0.1",
+    "policySha256": "dfc159f3c09bc1327dd15d0ac831513e7358f679e63c7180e42a5addab912498"
+  }
+}

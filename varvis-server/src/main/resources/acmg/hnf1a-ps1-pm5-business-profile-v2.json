@@ -1,0 +1,209 @@
+{
+  "profileSchemaVersion": "hnf1a-ps1-pm5-business-profile-v1",
+  "profileId": "HNF1A_GN017_3_1_PS1_PM5",
+  "profileVersion": "1.0.1",
+  "authorityUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+  "authorityVersion": "3.1",
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "applicability": {
+    "assembly": "GRCh38",
+    "geneSymbol": "HNF1A",
+    "hgncId": "HGNC:11621",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "variantType": "SNV",
+    "transcript": "ENST00000257555.11",
+    "refseqTranscript": "NM_000545.8",
+    "protein": "ENSP00000257555.5"
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-hnf1a-ps1-pm5-2026-09-11",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "40d888045b803acd3fe9f088dec4ac0113e1fcffb4d15be341c2d129eea9460f",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-hnf1a-ps1-pm5-2026-09-11.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PS1",
+      "ACMG_AMP_2015:PM5"
+    ]
+  },
+  "scientificArtifactBinding": {
+    "authorityResource": "/acmg/authority-catalog-hnf1a-ps1-pm5-2026-09-11.json",
+    "authoritySha256": "f828d2e02a7d84ed74254321f91a66d1fff2d50b803dd442edee54f473c4f8f3",
+    "overlayResource": "/acmg/cspec-overlay-registry-v1/cspec-overlay-registry-hnf1a-ps1-pm5-2026-09-11.json",
+    "overlaySha256": "ffb70bcf8ca6aee7de1296748582bc1e8e1ba1a6ed9c957fb27b594157aadac9"
+  },
+  "resources": [
+    {
+      "role": "BOUNDED_COMPARATOR_DISCOVERY_AND_ALLELE_IDENTITY_CROSSCHECK_ONLY",
+      "resourceId": "CLINVAR_2026_03_21_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-21 GRCh38",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836"
+    },
+    {
+      "role": "SELECTED_TRANSCRIPT_PROTEIN_RELATION",
+      "resourceId": "VEP_116_GRCH38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+    },
+    {
+      "role": "CONDITION_LINKED_ASSERTION_SEMANTICS_ONLY",
+      "resourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde"
+    },
+    {
+      "resourceId": "SPLICEAI_V1_3_1_RAW_GRCH38_LOCAL_COMPUTE",
+      "provider": "SPLICEAI",
+      "assembly": "GRCh38",
+      "resourceVersion": "SpliceAI 1.3.1 raw, distance 4999",
+      "identityFingerprintSha256": "e2f652e52955a0c6aaed434a3424cb69bb29413908d7dba8aaded016aa537542",
+      "identity": {
+        "provider": "SPLICEAI",
+        "assembly": "GRCh38",
+        "package": {
+          "name": "SpliceAI",
+          "version": "1.3.1",
+          "installArtifactSha256": "63c633b8de6803d4ffb613e6ef62f1a896fec9fc13245c0f000ff7adea279776"
+        },
+        "parameters": {
+          "scoreMode": "RAW_UNMASKED_CLI",
+          "distanceArgument": 4999,
+          "maskArgument": 0
+        },
+        "candidateResourceIdentityFingerprintSha256": "451a42ab28edab2f542816b51495a79e225217735e65040ceac0fb9cac7517d9",
+        "referenceIdentityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+      },
+      "identitySource": {
+        "profileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+        "profileVersion": "1.0.0-candidate.1",
+        "canonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d"
+      }
+    }
+  ],
+  "predictionIdentity": {
+    "candidateProfileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+    "candidateProfileVersion": "1.0.0-candidate.1",
+    "candidateProfileCanonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d",
+    "candidateProfileRawSha256": "8efd4d5f34e238bab94abaaec99f7ea394729a8bf79083e618814ff837536edc",
+    "authorityCatalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+    "authorityCatalogSchemaVersion": "authority-source-catalog-v1",
+    "authorityCatalogCanonicalSha256": "63db590058808737bdd03af7fd82533c572b80bfabae9b50f0632da78cd803f9"
+  },
+  "sourceArtifacts": [
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/GN017_3.1.0.json",
+      "sha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-sepio.json",
+      "sha256": "f98ad4751234641b58d8b3889cc8270c7c3b6c6deba9d8fb9abc65bd00075965"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206r-sepio.json",
+      "sha256": "d57b78340c507145ff8fe831097f686bcd2aafc2e1a21924a8a0c121b6b5ecbb"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-g20r.xml",
+      "sha256": "1d4df594b2a13d7bbb4583378f484a49c471b6b0c1a72482f9a8f9fa7cd1dbe5"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-w206r.xml",
+      "sha256": "fc778804531da6381b215e6e822f6a26c1bd5bba9fd057ec896b04b8e5f91dc8"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-target.json",
+      "sha256": "cc6d72447193f22c3cc7156a2c9fdab635ea6ccb58152d1d0315bca12b4598c7"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206c-sepio.json",
+      "sha256": "0e1da5e84024a59084075f5f9e6273e6f9d648cd59627b593e1960506f7d8e86"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/pubmed-reference-and-grantham.xml",
+      "sha256": "133c586df0faf22bef788283bea892b5d833f71321106605948e9d8870f26ecb"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/grantham-GRAR740104.txt",
+      "sha256": "eb1a96363a917922f808b4731369d8006a7f918dcf1193e00b6e7e7deed97e4d"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/grantham.json",
+      "sha256": "0d6d8382f6cb2dfc982fb1d47ffa31d19dcbad59297c250f9eda81c22c3c195f"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/splice-annotation-proof.json",
+      "sha256": "33dd02297e7be222ed5017db151183ce444db66f9f17660f688e0b61c74f4786"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/reference-audit.json",
+      "sha256": "d4e2e95a5f28113f3e1a7c7dfca907ae4f331e7ee88fd99533d0731b0d3e7c10"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/rna-review.json",
+      "sha256": "552461f7deaaab385a3c4ec0c53f8e551fe398da112ae3c76c9d821a986a7372"
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/source-manifest.json",
+      "sha256": "fd8c0a9598598a6432b4d8e92fea230508d78208f9cc78ac12118d82ba6a25b7"
+    },
+    {
+      "resource": "/acmg/pvs1-hnf1a-transcript-model-v1.json",
+      "sha256": "74c02ac85c337131d7cced7a9307e9166262787fb02b93f1dfb4b6ccbbf8152a"
+    }
+  ],
+  "referencePolicy": {
+    "requireExactScv": true,
+    "requireIndependentCriteria": true,
+    "requireExactAlleleAndProtein": true,
+    "classificationCaseNormalization": "CASE_INSENSITIVE_CANONICAL_TERM_WITH_RAW_PRESERVED",
+    "historicalClassification": "RETAIN_ORIGINAL_MDEP_P_LP_AND_SPECIFICATION; NO_RECLASSIFICATION",
+    "multipleRecords": "ALL_AUDITED_REFERENCES_AND_HIGH_REVIEW_CONFLICTS_SCREENED; SAME_ALLELE_DEDUPLICATED; SINGLE_BEST_VALID_REFERENCE_STRENGTH_NO_ADDITION"
+  },
+  "strengthPolicy": {
+    "PS1": {
+      "Pathogenic": "STRONG",
+      "Likely_pathogenic": "MODERATE"
+    },
+    "PM5": {
+      "pathogenicTargetDistanceGEReference": "MODERATE",
+      "pathogenicTargetDistanceLTReference": "SUPPORTING",
+      "likelyPathogenicReference": "SUPPORTING"
+    },
+    "pm5StrongEnabled": false,
+    "PS1PrecludesPM5": true,
+    "overlapOutcome": "NOT_EVALUATED_PS1_PM5_OVERLAPPING_SUPPORT_NOT_INDEPENDENT"
+  },
+  "splicePolicy": {
+    "method": "SpliceAI",
+    "maximumScore": "0.1",
+    "distanceBp": 4999,
+    "mask": 0,
+    "requireTargetAndReference": true,
+    "sourceUrl": "https://www.clinicalgenome.org/site/assets/files/9588/clingen_svi_splicing_subgroup_dynamic_document_-_response_to_feedback.pdf",
+    "sourceSha256": "817b0bbf55868fcd37666a8121e432c0e88fe2ed8448018f35de0e5e55199079",
+    "basis": "CONSERVATIVE_IMPLEMENTATION_GATE informed by Walker 2023 and SVI 2024 section 5; GN017 does not prescribe numeric splice cutoff. Both exact annotations and reviewed protein relation required. Low prediction is not observed normal RNA.",
+    "aboveThresholdOutcome": "NOT_EVALUATED_UNRESOLVED_SPLICE_MECHANISM",
+    "missingOutcome": "NOT_EVALUATED"
+  },
+  "implementation": {
+    "evaluatorVersion": "3.0.1-hnf1a-business",
+    "algorithmId": "HNF1A_GN017_3_1_PS1_PM5",
+    "algorithmVersion": "1.0.1",
+    "targetIdentity": "FULL_PINNED_CDS_CODON_VEP116_VERSIONED_HGVSC_HGVSP",
+    "referenceIdentity": "PINNED_PUBLIC_REFERENCE_VEP_FULL_CDS_AND_ACTUAL_COMPARATOR_VEP_PROTEIN_AGREEMENT",
+    "revelOrAmRequired": false,
+    "acceptedAnnotationSources": [
+      "VEP",
+      "VEP_CACHED"
+    ]
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "data": {
+    "@context": "https://erepo.genome.network/evrepo/api/context",
+    "@id": "https://cgerepoapi/evrepo/api/summary/classification/890f4355-b322-4d63-ab2e-02ceb1436a6a/doc/sepio/version/1.0.0",
+    "assertionMethod": {
+      "type": "VariantPathogenicityInterpretationGuideline"
+    },
+    "condition": {
+      "@id": "https://api.monarchinitiative.org/api/bioentity/phenotype/MONDO:0015967",
+      "id": "MONDO:0015967",
+      "label": "monogenic diabetes",
+      "type": "GeneticCondition"
+    },
+    "evidenceLine": [
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1765",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1766",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0050",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000330",
+                "id": "SEPIO:0000330",
+                "label": "Pathogenic Strong"
+              },
+              "id": "0050",
+              "label": "PS1",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1765/1767",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "The nucleotide change c.58G>C, which causes the same amino acid change, has been reported in a patient with monogenic diabetes; however, the c.58G>C variant has not met the criteria to be classified as pathogenic for monogenic diabetes by the ClinGen MDEP.  ",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1765/1767",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1766",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1765",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1681",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1682",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0054",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000329",
+                "id": "SEPIO:0000329",
+                "label": "Pathogenic Supporting"
+              },
+              "id": "0054",
+              "label": "PM1",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1681/1683",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant is located within the dimerization domain (codons 1-32) of HNF1A, which is defined as critical for the protein’s function by the ClinGen MDEP (PM1_Supporting). ",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1681/1683",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1682",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1681",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1699",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1700",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0057",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000216",
+                "id": "SEPIO:0000216",
+                "label": "Pathogenic Moderate"
+              },
+              "id": "0057",
+              "label": "PS4",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1699/1701",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant was identified in five unrelated individuals with non- autoimmune and non-absolute/near-absolute insulin-deficient diabetes (PS4_Moderate; PMID:10588527, PMID:15657605, ClinVar ID:1033090, internal lab contributors).",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1699/1701",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1700",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1699",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1648",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1649",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0023",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000330",
+                "id": "SEPIO:0000330",
+                "label": "Pathogenic Strong"
+              },
+              "id": "0023",
+              "label": "PP1",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1648/1650",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant segregated with diabetes, with at least 5 informative meioses in two families with MODY (PP1_Strong; PMID:15657605, internal lab contributors).",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1648/1650",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1649",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1648",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1747",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1748",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0062",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000329",
+                "id": "SEPIO:0000329",
+                "label": "Pathogenic Supporting"
+              },
+              "id": "0062",
+              "label": "PP3",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1747/1749",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant is predicted to be deleterious by computational evidence, with a REVEL score of 0.956, which is greater than the MDEP threshold of 0.70 (PP3). ",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1747/1749",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1748",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1747",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1696",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1697",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0045",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000329",
+                "id": "SEPIO:0000329",
+                "label": "Pathogenic Supporting"
+              },
+              "id": "0045",
+              "label": "PS3",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1696/1698",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "Functional studies demonstrated the p.Gly20Arg protein has transactivation below 40% of wildtype, indicating that this variant impacts protein function (PMID:12107757).",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1696/1698",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1697",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1696",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1831",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1832",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0018",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000216",
+                "id": "SEPIO:0000216",
+                "label": "Pathogenic Moderate"
+              },
+              "id": "0018",
+              "label": "PP4",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1831/1833",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant was identified in an individual with a clinical history highly specific for HNF1A-MODY (MODY probability calculator result >50%, negative genetic testing for HNF4A, and sulfonylurea sensitive) (PP4_Moderate; internal lab contributor).  ",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1831/1833",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1832",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1831",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1636",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/ei/1/1637",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                  "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2021/10/29",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "criterion": {
+              "@id": "https://obofoundry.org/sepio/clingen/0030",
+              "defaultStrength": {
+                "@id": "https://obofoundry.org/sepio/SEPIO:0000329",
+                "id": "SEPIO:0000329",
+                "label": "Pathogenic Supporting"
+              },
+              "id": "0030",
+              "label": "PM2",
+              "type": "Criterion"
+            },
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA386952577/MONDO:0015967/017/el/0/1636/1638",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50016_EP163553328993009",
+                          "id": "CG-PCER-AGENT:CG_50016_EP163553328993009",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant is absent in the gnomAD v2.1.1 European non-Finnish population and has one copy in another subpopulation, which is less than the ClinGen MDEP threshold for PM2_Supporting (≤0.00002 and ≤1 copy in any other subpopulation) (PM2_Supporting).  ",
+                        "contributionDate": {
+                          "date": "2021/10/29",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA386952577/MONDO:0015967/017/ci/CA386952577/MONDO:0015967/017.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1636/1638",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/1/1637",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017/0/1636",
+        "type": "EvidenceLine"
+      }
+    ],
+    "id": "CG-PCER-VARINT:CA386952577/MONDO:0015967/017",
+    "metadata": {
+      "created": "2024-09-27T22:34:29.900Z",
+      "note": "DISCLAIMER: While the data/content in this document is approved by ClinGen expert panel(s), the SEPIO schema presented here is an initial prototype and has not been reviewed nor finalized by the ClinGen Data Exchange Modeling Team. We expect it to differ significantly from the final schema.",
+      "producedAtUTC": "Fri, 27 Sep 2024 22:34:29 -0000",
+      "schemaLabel": "Evidence Repository.Beta-1 (Unofficial)",
+      "version": "1.0.0"
+    },
+    "statementOutcome": {
+      "@id": "https://loinc.org/LA6668-3",
+      "id": "LN:LA6668-3",
+      "label": "Pathogenic"
+    },
+    "type": "VariantPathogenicityInterpretation",
+    "uuid": "890f4355-b322-4d63-ab2e-02ceb1436a6a",
+    "variant": {
+      "@id": "https://reg.genome.network/allele/CA386952577",
+      "id": "CAR:CA386952577",
+      "relatedContextualAllele": [
+        {
+          "alleleName": [
+            {
+              "name": "NM_001306179.2:c.58G>A"
+            }
+          ],
+          "preferred": true
+        }
+      ],
+      "relatedIdentifier": [
+        {
+          "label": "NM_001306179.2:c.58G>A"
+        }
+      ],
+      "type": "CAR"
+    }
+  },
+  "metadata": {
+    "rendered": {
+      "by": "https://erepo.genome.network/evrepo/api/summary/srvc",
+      "when": "2026-09-11T01:28:30.054Z"
+    }
+  },
+  "status": {
+    "code": 200,
+    "name": "OK"
+  }
+}

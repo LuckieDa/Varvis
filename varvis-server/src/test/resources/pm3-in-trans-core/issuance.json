@@ -1,0 +1,9 @@
+{
+  "dataClass": "TEST_ONLY",
+  "date": "2026-09-29T00:00:00Z",
+  "scriptRawSha256": "56ed1ab4a0745780939ad15b89f00a0f24e1700645be3f2aa71dddd6685f415f",
+  "registryRawSha256": "86f514d0ea9e370bae1f5522db9b86c8fad935b1deb6a4ada3a84eb477a6e87f",
+  "identities": "Independent Node mirror of existing integer/NFC identity projections; no evaluator used",
+  "origins": "Two newly designed six-record families, opposite transmissions, distinct alleles/backgrounds/subjects/sources; not relabeled de novo fixtures",
+  "expected": "Hand-specified one-point MODERATE for both P and LP; no real clinical approval"
+}

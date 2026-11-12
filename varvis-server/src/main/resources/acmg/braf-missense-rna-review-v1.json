@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "braf-missense-rna-review-v1",
+  "reviewId": "BRAF_RASOPATHY_MISSENSE_PUBLIC_RNA_REVIEW",
+  "reviewVersion": "1.0.0",
+  "scope": {
+    "assembly": "GRCh38",
+    "geneSymbol": "BRAF",
+    "hgncId": "HGNC:1097",
+    "mondoId": "MONDO:0021060",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "variantType": "SNV",
+    "transcript": "ENST00000646891.2",
+    "refseqTranscript": "NM_004333.6",
+    "protein": "ENSP00000493543.1",
+    "refseqProtein": "NP_004324.2"
+  },
+  "requiredReferenceScvs": ["SCV001424734.1"],
+  "legacyReferenceScvs": ["SCV000927045.1", "SCV000927041.1"],
+  "newReferencePolicy": "Each new independently audited reference requires a matching gene/disease/MOI/transcript/protein and amino-acid-relation RNA review. No target-coordinate allowlist is used; unknown or mismatched required reviews must not pass.",
+  "reviews": [
+    {
+      "referenceScv": "SCV001424734.1",
+      "aminoAcidRelation": {
+        "referenceAminoAcid": "T",
+        "targetAlternate": "R",
+        "comparatorAlternate": "K"
+      },
+      "status": "REVIEWED_NO_CONTRADICTORY_REPORT_IDENTIFIED",
+      "rnaEffect": "UNKNOWN",
+      "normalRnaClaimed": false,
+      "reviewedOn": "2026-09-09",
+      "searchTerms": [
+        "BRAF Thr241Arg RNA splicing",
+        "BRAF Thr241Lys RNA splicing",
+        "BRAF c.722C>G splicing",
+        "BRAF (T241R OR T241K OR Thr241Arg OR Thr241Lys) (RNA OR minigene OR splicing OR exon skipping)"
+      ],
+      "searchedSources": [
+        "ClinVar VCV000029806.16 full target submission comments",
+        "ClinVar VCV000044829.13 full reference submission comments",
+        "ERepo 096bf007-b1b2-467c-a7b2-e9fbea9db17a version 1.0.0 independent reference evidence",
+        "PMID19206169 / PMC4028130 full text through official NCBI BioC response",
+        "Bounded web searches for the exact cDNA and protein names combined with RNA, splicing, minigene and exon-skipping terms"
+      ],
+      "sourceUrls": [
+        "https://www.ncbi.nlm.nih.gov/clinvar/variation/29806/",
+        "https://www.ncbi.nlm.nih.gov/clinvar/variation/44829/",
+        "https://erepo.genome.network/evrepo/api/summary/classification/096bf007-b1b2-467c-a7b2-e9fbea9db17a/doc/sepio/version/1.0.0",
+        "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC4028130/unicode"
+      ],
+      "sourceArtifacts": [
+        {
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/29806/",
+          "sourceRecordVersion": "VCV000029806.16",
+          "retainedArtifact": "clinvar-target-t241r.html",
+          "sha256": "69e6eed46e8fb2e5d99052a5d53c1fc5b68b985da28e9cb91b8dfeb6e0043faa",
+          "storage": "IGNORED_BRANCH_SCIENCE_ARTIFACTS"
+        },
+        {
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/44829/",
+          "sourceRecordVersion": "VCV000044829.13 / SCV001424734.1",
+          "retainedArtifact": "clinvar-reference-t241k.html",
+          "sha256": "f5f539f612b65fbc0ce57e0f0bd6d51ab690600289b19116fc1cc2a254d59259",
+          "storage": "IGNORED_BRANCH_SCIENCE_ARTIFACTS"
+        },
+        {
+          "sourceUrl": "https://erepo.genome.network/evrepo/api/summary/classification/096bf007-b1b2-467c-a7b2-e9fbea9db17a/doc/sepio/version/1.0.0",
+          "sourceRecordVersion": "1.0.0",
+          "classpathResource": "/acmg/erepo-braf-reference-t241k-v1.json",
+          "sha256": "b41977633e210cfa258e4004632c42495bb309266197306a1e5a87f8c2b5f86f",
+          "storage": "CLASSPATH"
+        },
+        {
+          "sourceUrl": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC4028130/unicode",
+          "sourceRecordVersion": "PMID19206169 / PMC4028130; retrieved 2026-09-09",
+          "retainedArtifact": "pmc4028130-bioconverted.json",
+          "sha256": "5a9342a1122a1a944eb419b5e371961d79c11a5fbb5f5ae296f5df1d28e5453e",
+          "storage": "IGNORED_BRANCH_SCIENCE_ARTIFACTS",
+          "format": "UNMODIFIED_OFFICIAL_NCBI_BIOC_CONVERSION_NOT_JOURNAL_NATIVE_XML"
+        }
+      ],
+      "basis": "No credible contradictory RNA experiment or explicit splice-disruption report was identified for the required target/reference relation in these bounded sources. Absence of a report is not evidence of normal RNA. The original T241R paper is a genomic-DNA case observation, not an RNA assay; parental DNA was unavailable. A complete real prediction for both alleles under the pre-fixed SpliceAI policy remains required.",
+      "proteinPredictionDisagreement": "The target Labcorp SCV003440618.4 protein model predicts no disruption, while GeneDx SCV000057185.6 reports damaging protein prediction. Preserve this difference; it is not RNA experimental evidence and is not resolved by selecting a favourable predictor.",
+      "targetCoordinateAdmissionList": false,
+      "newReferenceAutomaticallyInheritsReview": false,
+      "splicePredictionResultClaimed": false
+    }
+  ],
+  "knownConcerns": [
+    {
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "7",
+        "position": 140801503,
+        "reference": "G",
+        "alternate": "T"
+      },
+      "type": "PUBLIC_SPLICE_PREDICTION_CONCERN",
+      "reviewStatus": "UNRESOLVED",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/RCV003539764.4/",
+      "sourceRecordVersion": "RCV003539764.4; Labcorp assertion evaluated 2023-03-08",
+      "sourceSha256": "435442190fc08948e110af2f5e875eeced5d49f886bd5cea66b3ccfd9c23ceff",
+      "retainedArtifact": "clinvar-q257k-splice-caveat.html",
+      "description": "For NM_004333.6:c.769C>A (p.Gln257Lys), the Labcorp submission reports algorithms suggesting possible consensus splice disruption. This is an unresolved computational concern, not an RNA experiment or confirmed aberrant transcript. Preserve and block when the exact allele is a target or reference; do not hide it because another tool gives a lower score.",
+      "rnaExperimentClaimed": false
+    }
+  ],
+  "knownConcernPolicy": "Match registered unresolved concerns against exact target and reference alleles, preserving assembly and alleles; an unresolved concern blocks rather than being treated as absent evidence.",
+  "legacyReferencePolicy": {
+    "referenceScvs": ["SCV000927045.1", "SCV000927041.1"],
+    "additionalRnaReviewRequired": false,
+    "normalRnaClaimed": false,
+    "basis": "Preserve the previously released behaviour of these two references, including their existing prediction and identity gates. This expansion did not add a new targeted RNA literature audit for them and must not claim normal RNA or retrospective review. Registered unresolved concerns remain visible and blocking."
+  }
+}

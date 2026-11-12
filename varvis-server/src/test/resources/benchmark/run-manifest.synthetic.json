@@ -1,0 +1,70 @@
+{
+  "schemaVersion" : "benchmark-run-manifest-v1",
+  "runId" : "synthetic-run-001",
+  "createdAt" : "2026-01-01T00:00:00Z",
+  "datasetId" : "synthetic-public-like-dataset",
+  "datasetVersion" : "2026.01",
+  "protocolVersion" : "1.0",
+  "startedAt" : "2026-01-01T00:01:00Z",
+  "endedAt" : "2026-01-01T00:02:00Z",
+  "status" : "COMPLETED_WITH_FAILURES",
+  "failureSummary" : "one synthetic case result is unavailable",
+  "gitCommit" : "synthetic-commit-001",
+  "branch" : "synthetic-branch",
+  "applicationVersion" : "synthetic-app-1",
+  "javaVersion" : "Java-8",
+  "osFamily" : "WINDOWS",
+  "rankingContractVersion" : "ranking-contract-v1",
+  "backgroundFingerprint" : "synthetic-background-fingerprint-v1",
+  "truthFingerprint" : "synthetic-truth-fingerprint-v1",
+  "configuration" : {
+    "assembly" : "GRCh38",
+    "normalizationMode" : "BCFTOOLS",
+    "normalizationProfile" : "synthetic-grch38",
+    "hpoOntologyVersion" : "synthetic-hpo",
+    "phen2GeneVersion" : "synthetic-phen2gene",
+    "vepVersion" : "synthetic-vep",
+    "clinvarVersion" : "synthetic-clinvar",
+    "gnomadVersion" : "synthetic-gnomad",
+    "caddVersion" : "synthetic-cadd",
+    "candidateCap" : 20000,
+    "vepCap" : 8000,
+    "featureFlags" : { "trioRanking" : false, "aiHpo" : false },
+    "configurationFingerprint" : "synthetic-config-fingerprint-v1"
+  },
+  "sharedConfigurationFingerprint" : "synthetic-config-fingerprint-v1",
+  "groups" : [ {
+    "groupId" : "G0",
+    "caseId" : "case-alpha",
+    "hpoInputMode" : "NONE",
+    "hpoTerms" : [ ],
+    "hpoInputChecksum" : "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "hpoProvenance" : "frozen G0 no-HPO contract",
+    "configurationFingerprint" : "synthetic-config-fingerprint-v1"
+  }, {
+    "groupId" : "G1",
+    "caseId" : "case-alpha",
+    "hpoInputMode" : "SOURCE_PROVIDED",
+    "hpoTerms" : [ "HP:0000001" ],
+    "hpoInputChecksum" : "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "hpoProvenance" : "source-provided synthetic term",
+    "configurationFingerprint" : "synthetic-config-fingerprint-v1"
+  }, {
+    "groupId" : "G2",
+    "caseId" : "case-alpha",
+    "hpoInputMode" : "HUMAN_REVIEWED",
+    "hpoTerms" : [ "HP:0000001" ],
+    "hpoInputChecksum" : "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "hpoProvenance" : "human-reviewed synthetic term",
+    "transformationProvenance" : "synthetic review fixture",
+    "configurationFingerprint" : "synthetic-config-fingerprint-v1"
+  }, {
+    "groupId" : "G0",
+    "caseId" : "case-beta",
+    "hpoInputMode" : "NONE",
+    "hpoTerms" : [ ],
+    "hpoInputChecksum" : "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "hpoProvenance" : "frozen G0 no-HPO contract",
+    "configurationFingerprint" : "synthetic-config-fingerprint-v1"
+  } ]
+}

@@ -1,0 +1,285 @@
+.acmg-workspace {
+    color: #233f60;
+    display: grid;
+    gap: 20px;
+    .acmg-hero {
+        padding: 26px 28px 20px;
+        background: linear-gradient(110deg, #f1f7ff, #fff 80%);
+        border-color: #dce6f3;
+        border-radius: 12px;
+    }
+    .acmg-eyebrow {
+        color: #5479a7;
+        letter-spacing: 0.12em;
+        font-size: 10px;
+    }
+    .acmg-section {
+        padding: 24px;
+        border-color: #dce6f3;
+        border-radius: 12px;
+    }
+    .acmg-steps {
+        list-style: none;
+        padding: 24px 0 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+    .acmg-steps li {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-size: 13px;
+        color: #70829a;
+        border-top: 2px solid #e2e9f3;
+        padding-top: 12px;
+    }
+    .acmg-steps li span {
+        display: grid;
+        place-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #edf1f7;
+        flex-shrink: 0;
+    }
+    .acmg-steps .is-active {
+        color: #285ea0;
+        border-top-color: #3f71b1;
+    }
+    .acmg-steps .is-active span {
+        background: #3568a8;
+        color: #fff;
+    }
+    .acmg-steps .is-complete {
+        border-top-color: #97b4d5;
+    }
+    .acmg-stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+    .acmg-stat {
+        padding: 16px 20px;
+        border-radius: 10px;
+        border-color: #dce6f3;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .acmg-stat strong {
+        font-size: 26px;
+        color: #3568a8;
+    }
+    .acmg-stat span {
+        font-size: 13px;
+        color: #60748c;
+    }
+    .acmg-stat.success strong {
+        color: #25836b;
+    }
+    .acmg-stat.warning strong {
+        color: #a46c21;
+    }
+    .acmg-stat.neutral strong {
+        color: #71829a;
+    }
+    .acmg-master-detail {
+        display: grid;
+        grid-template-columns: 255px minmax(0, 1fr);
+        gap: 24px;
+        margin-top: 24px;
+    }
+    .acmg-sidebar {
+        min-width: 0;
+    }
+    .acmg-variant-list {
+        max-height: 570px;
+        overflow: auto;
+        padding-right: 4px;
+    }
+    .acmg-variant-button {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        text-align: left;
+        text-transform: none;
+        padding: 12px;
+        border: 1px solid transparent;
+        border-bottom-color: #edf1f7;
+        border-radius: 7px;
+        color: #354e6d;
+    }
+    .acmg-variant-button span {
+        min-width: 0;
+    }
+    .acmg-variant-button strong,
+    .acmg-variant-button small {
+        display: block;
+        overflow-wrap: anywhere;
+    }
+    .acmg-variant-button small {
+        font-size: 11px;
+        font-weight: 400;
+        color: #6e8199;
+        margin-top: 3px;
+    }
+    .acmg-variant-button.selected {
+        background: #eef5ff;
+        border-color: #b8cfea;
+    }
+    .acmg-detail {
+        min-width: 0;
+        border-left: 1px solid #e6edf5;
+        padding-left: 24px;
+    }
+    .acmg-identity {
+        color: #3c6594;
+        margin: 5px 0;
+        overflow-wrap: anywhere;
+    }
+    .acmg-field-block {
+        margin: 18px 0;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #edf1f7;
+    }
+    .acmg-confirm {
+        margin-top: 24px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f5f8fd;
+        display: grid;
+        gap: 12px;
+    }
+    .acmg-disclosure {
+        margin-top: 12px;
+        font-size: 13px;
+        color: #506c90;
+    }
+    .acmg-disclosure summary {
+        cursor: pointer;
+        padding: 8px 0;
+    }
+    .acmg-material-preparation {
+        min-width: 0;
+        border-color: #dce6f3;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .acmg-material-preparation summary {
+        padding: 12px 16px;
+        color: #233f60;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .acmg-material-preparation summary:focus-visible {
+        border-radius: 9px;
+        outline: 2px solid #3568a8;
+        outline-offset: -2px;
+    }
+    .acmg-material-preparation summary span {
+        margin-inline-start: 12px;
+        color: #506c90;
+        font-weight: 400;
+    }
+    .acmg-material-preparation summary .is-attention {
+        color: #83530f;
+        font-weight: 600;
+    }
+    .acmg-material-preparation ul {
+        max-height: 240px;
+        margin: 0;
+        padding: 0 16px;
+        overflow: auto;
+        list-style: none;
+    }
+    .acmg-material-preparation li {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+        align-items: baseline;
+        padding: 8px 0;
+        border-top: 1px solid #edf1f7;
+        overflow-wrap: anywhere;
+    }
+    .acmg-material-preparation li span {
+        color: #506c90;
+    }
+    @media (max-width: 760px) {
+        .acmg-hero,
+        .acmg-section {
+            padding: 16px;
+        }
+        .acmg-steps,
+        .acmg-stats {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .acmg-master-detail {
+            grid-template-columns: 1fr;
+        }
+        .acmg-variant-list {
+            max-height: 220px;
+        }
+        .acmg-detail {
+            border-left: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+.cv-acmg-workspace-dialog {
+    .MuiTypography-overline {
+        font-size: 14px !important;
+    }
+    .MuiTypography-h5 {
+        font-size: 26px !important;
+    }
+    .MuiTypography-h6 {
+        font-size: 22px !important;
+    }
+    .MuiTypography-subtitle1,
+    .MuiTypography-body1,
+    .MuiMenuItem-root {
+        font-size: 18px !important;
+    }
+    .MuiTypography-subtitle2,
+    .MuiTypography-body2,
+    .MuiButton-root,
+    .MuiAlert-message {
+        font-size: 16px !important;
+    }
+    .MuiTypography-caption,
+    .MuiFormHelperText-root {
+        font-size: 14px !important;
+    }
+    .MuiInputBase-input,
+    .MuiInputLabel-root {
+        font-size: 18px !important;
+    }
+    .MuiInputBase-inputSizeSmall,
+    .MuiInputLabel-sizeSmall {
+        font-size: 16px !important;
+    }
+    .MuiChip-label,
+    .MuiFormControlLabel-label {
+        font-size: 15px !important;
+    }
+    .MuiTableCell-root {
+        font-size: 16px !important;
+    }
+    .acmg-steps li {
+        font-size: 15px;
+    }
+    .acmg-stat strong {
+        font-size: 28px;
+    }
+    .acmg-stat span,
+    .acmg-variant-button small,
+    .acmg-disclosure {
+        font-size: 15px;
+    }
+    .acmg-variant-button small {
+        font-size: 13px;
+    }
+}

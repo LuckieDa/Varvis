@@ -1,0 +1,76 @@
+{
+  "reviewVersion": "1.0.0",
+  "geneSymbol": "HNF1A",
+  "transcript": "ENST00000257555.11",
+  "normalRnaClaimed": false,
+  "rnaEffect": "UNKNOWN",
+  "status": "REVIEWED_NO_CONTRADICTORY_REPORT_IDENTIFIED",
+  "basis": "Public MDEP protein comparisons at Gly20 and Trp206 plus exact reference SCV/SEPIO and G20R primary protein assay abstract; not exhaustive literature surveillance.",
+  "reviewedProteinRelations": [
+    {
+      "referenceAminoAcid": "G",
+      "targetAlternate": "R",
+      "comparatorAlternate": "R",
+      "proteinPosition": 20
+    },
+    {
+      "referenceAminoAcid": "W",
+      "targetAlternate": "C",
+      "comparatorAlternate": "R",
+      "proteinPosition": 206
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-sepio.json",
+      "sha256": "f98ad4751234641b58d8b3889cc8270c7c3b6c6deba9d8fb9abc65bd00075965",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/890f4355-b322-4d63-ab2e-02ceb1436a6a/doc/sepio/version/1.0.0",
+      "retrievedAt": "2026-09-11T01:28:30.170810+00:00",
+      "bytes": 32479
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206r-sepio.json",
+      "sha256": "d57b78340c507145ff8fe831097f686bcd2aafc2e1a21924a8a0c121b6b5ecbb",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/8bdb1080-f9e5-4bab-83e2-28a709bdcb9b/doc/sepio/version/1.2.0",
+      "retrievedAt": "2026-09-11T01:28:29.966884+00:00",
+      "bytes": 22457
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-g20r.xml",
+      "sha256": "1d4df594b2a13d7bbb4583378f484a49c471b6b0c1a72482f9a8f9fa7cd1dbe5",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=1033090&rettype=vcv&is_variationid",
+      "retrievedAt": "2026-09-11T01:29:06.715683+00:00",
+      "bytes": 28072
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-w206r.xml",
+      "sha256": "fc778804531da6381b215e6e822f6a26c1bd5bba9fd057ec896b04b8e5f91dc8",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=393434&rettype=vcv&is_variationid",
+      "retrievedAt": "2026-09-11T01:29:06.651994+00:00",
+      "bytes": 21876
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-target.json",
+      "sha256": "cc6d72447193f22c3cc7156a2c9fdab635ea6ccb58152d1d0315bca12b4598c7",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classifications?columns=gene,hgvs&values=HNF1A,c.58G%3EC&matchTypes=exact,contains&matchMode=and",
+      "retrievedAt": "2026-09-11T01:42:34.771849+00:00",
+      "bytes": 5207
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206c-sepio.json",
+      "sha256": "0e1da5e84024a59084075f5f9e6273e6f9d648cd59627b593e1960506f7d8e86",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/dcc36a54-f78e-4db9-954d-3f02dfbbb72c/doc/sepio/version/1.1.0",
+      "retrievedAt": "2026-09-11T01:42:34.450763+00:00",
+      "bytes": 18524
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/pubmed-reference-and-grantham.xml",
+      "sha256": "133c586df0faf22bef788283bea892b5d833f71321106605948e9d8870f26ecb",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=12107757,15657605,4843792,37352859&retmode=xml",
+      "retrievedAt": "2026-09-11T01:42:34.866210+00:00",
+      "bytes": 68761
+    }
+  ],
+  "knownConcerns": [],
+  "unreviewedRelationOutcome": "NOT_EVALUATED"
+}

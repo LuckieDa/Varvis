@@ -1,0 +1,28 @@
+{
+  "dataClass": "SYNTHETIC_TEST_ONLY_NOT_CLINICAL",
+  "recordId": "BP1_TRUNCATING_BACKGROUND_plus",
+  "disclaimer": "Fictional independently specified truncating-dominant background; not PP2 NOT_MET, LoF label, absence of RNA or prediction-derived approval.",
+  "truncatingMechanism": {
+    "conclusion": "SUPPORTED",
+    "basisType": "AUTHORITY_CLAUSE",
+    "clauseLocator": "TEST_ONLY explicit primarily-truncating mechanism statement section1"
+  },
+  "exceptions": {
+    "conclusion": "NO_APPLICABLE_EXCEPTION",
+    "searchStatus": "COMPLETE",
+    "searchedDomains": [
+      "PATHOGENIC_MISSENSE",
+      "FUNCTIONAL_REGIONS",
+      "GOF_DN",
+      "MIXED_MECHANISM"
+    ],
+    "locator": "TEST_ONLY plus expert search memorandum sections1-4 exact variant",
+    "findings": []
+  },
+  "splicing": {
+    "conclusion": "SUPPORTED",
+    "locator": "TEST_ONLY plus variant applicability memorandum section5",
+    "method": "Fictional reviewed multi-source applicability assessment; no RNA requirement or predictor threshold imposed",
+    "limitations": "Synthetic gate only, not real testing or clinical approval"
+  }
+}

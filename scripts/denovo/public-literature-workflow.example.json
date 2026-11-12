@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "denovo-public-literature-workflow-v1",
+  "enabled": false,
+  "allowPublicNetwork": false,
+  "allowModel": false,
+  "needDrivenReading": false,
+  "maximumReadingCalls": 8,
+  "maximumReadingChunks": 8,
+  "projectRoot": "D:/LSD/Project/Code",
+  "library": "local/knowledge/literature/public-papers",
+  "searchCache": "local/cache/denovo-literature-discovery",
+  "modelBudget": "local/cache/denovo-gemini-pilot-20261018",
+  "modelConfig": "local/private/config/denovo-gemini-pilot/config.json",
+  "python": "local/tools/alphagenome/python/python.exe",
+  "work": "local/runtime/denovo-public-literature",
+  "candidateRepository": "local/runtime/denovo-public-literature-candidates"
+}

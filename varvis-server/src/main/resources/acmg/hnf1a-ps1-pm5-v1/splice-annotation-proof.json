@@ -1,0 +1,106 @@
+{
+  "status": "FULL_PACKAGED_EXON_BOUNDARIES_MATCH_PINNED_MODEL",
+  "transcript": "ENST00000257555.11",
+  "refseqTranscript": "NM_000545.8",
+  "modelCanonicalSha256": "270076043014c34aba9e7719ba7fa7bc7ecf090989c0bdb0fc08f7fa7cb0bacf",
+  "packagedAnnotationSha256": "565c0ea83f66b2210182364c3d626fef526229e3d02f444bab247329b6695f2c",
+  "logicalName": "spliceai/annotations/grch38.txt",
+  "lineNumber": 11934,
+  "line": "HNF1A\t12\t+\t120978542\t121002512\t120978542,120988832,120993519,120994163,120996261,120996540,120997473,120999267,120999482,121001064,\t120979094,120989032,120993706,120994405,120996413,120996742,120997665,120999389,120999627,121002512,",
+  "lineSha256": "1e200013ed3eb73b7e14f92fcefb0aeccc6026318dce248fdb2b51c22ed5f818",
+  "coordinateConversion": "START_ZERO_BASED_PLUS_ONE_END_UNCHANGED",
+  "exons": [
+    {
+      "ordinal": 1,
+      "genomicStart": 120978543,
+      "genomicEnd": 120979094,
+      "cdnaStart": 1,
+      "cdnaEnd": 552,
+      "cdsStart": -225,
+      "cdsEnd": 326
+    },
+    {
+      "ordinal": 2,
+      "genomicStart": 120988833,
+      "genomicEnd": 120989032,
+      "cdnaStart": 553,
+      "cdnaEnd": 752,
+      "cdsStart": 327,
+      "cdsEnd": 526
+    },
+    {
+      "ordinal": 3,
+      "genomicStart": 120993520,
+      "genomicEnd": 120993706,
+      "cdnaStart": 753,
+      "cdnaEnd": 939,
+      "cdsStart": 527,
+      "cdsEnd": 713
+    },
+    {
+      "ordinal": 4,
+      "genomicStart": 120994164,
+      "genomicEnd": 120994405,
+      "cdnaStart": 940,
+      "cdnaEnd": 1181,
+      "cdsStart": 714,
+      "cdsEnd": 955
+    },
+    {
+      "ordinal": 5,
+      "genomicStart": 120996262,
+      "genomicEnd": 120996413,
+      "cdnaStart": 1182,
+      "cdnaEnd": 1333,
+      "cdsStart": 956,
+      "cdsEnd": 1107
+    },
+    {
+      "ordinal": 6,
+      "genomicStart": 120996541,
+      "genomicEnd": 120996742,
+      "cdnaStart": 1334,
+      "cdnaEnd": 1535,
+      "cdsStart": 1108,
+      "cdsEnd": 1309
+    },
+    {
+      "ordinal": 7,
+      "genomicStart": 120997474,
+      "genomicEnd": 120997665,
+      "cdnaStart": 1536,
+      "cdnaEnd": 1727,
+      "cdsStart": 1310,
+      "cdsEnd": 1501
+    },
+    {
+      "ordinal": 8,
+      "genomicStart": 120999268,
+      "genomicEnd": 120999389,
+      "cdnaStart": 1728,
+      "cdnaEnd": 1849,
+      "cdsStart": 1502,
+      "cdsEnd": 1623
+    },
+    {
+      "ordinal": 9,
+      "genomicStart": 120999483,
+      "genomicEnd": 120999627,
+      "cdnaStart": 1850,
+      "cdnaEnd": 1994,
+      "cdsStart": 1624,
+      "cdsEnd": 1768
+    },
+    {
+      "ordinal": 10,
+      "genomicStart": 121001065,
+      "genomicEnd": 121002512,
+      "cdnaStart": 1995,
+      "cdnaEnd": 3442,
+      "cdsStart": 1769,
+      "cdsEnd": 3216
+    }
+  ],
+  "normalRnaClaimed": false,
+  "limitation": "Annotation boundaries only; no experimental RNA or historical sequence identity claim"
+}

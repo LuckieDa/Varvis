@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "hnf1a-functional-facts-v1",
+  "factPackageId": "HNF1A_OXFORD_LUCIFERASE_THREE_OBJECTS",
+  "version": "1.0.0",
+  "reviewedAt": "2026-09-10T11:00:18.389393Z",
+  "audit": {
+    "actor": "Codex technical source audit",
+    "clinicalApproval": "NOT_PERFORMED",
+    "userAdoption": "NOT_REQUESTED_OR_RECORDED",
+    "method": "Published source, sequence and figure audit; no wet experiment or independent clinical validation",
+    "calibration": "INHERITED_VCEP_ASSAY_VALIDATION_NOT_INDEPENDENTLY_RECALIBRATED"
+  },
+  "scope": {
+    "hgncId": "HGNC:11621",
+    "geneSymbol": "HNF1A",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "assembly": "GRCh38",
+    "variantType": "SNV",
+    "refseq": "NM_000545.8",
+    "refseqProtein": "NP_000536.6",
+    "ensembl": "ENST00000257555.11",
+    "ensemblProtein": "ENSP00000257555.5"
+  },
+  "sourceManifest": [
+    {
+      "sourceId": "article",
+      "fileName": "PMC7536579.xml",
+      "sha256": "6ca89c195979cae324028bb09c61f0d1586837aff9f1e0f52dc4582e2108a1f5",
+      "bytes": 130157,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7536579/",
+      "locator": "Althari 2020; PMID32910913; DOI10.1016/j.ajhg.2020.08.016; original experiment"
+    },
+    {
+      "sourceId": "supplement",
+      "fileName": "mmc1.pdf",
+      "sha256": "0053a0acaaeada180f725a2892dce638de1d6c8c8f81cc63aa32ba77aa3f540c",
+      "bytes": 2014396,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7536579/#app2",
+      "locator": "Figure S6 A/B p12, C/D p13, E p14; captions p14-15"
+    },
+    {
+      "sourceId": "S1",
+      "fileName": "mmc2.xlsx",
+      "sha256": "b6bc7e1b1cc2b76a8ee39c9edb1040f2a9955085dee17e6df22e087acd620d99",
+      "bytes": 52075,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7536579/#app2",
+      "locator": "Table S1 first sheet, identity A:C; no functional numeric table"
+    },
+    {
+      "sourceId": "S2",
+      "fileName": "mmc3.xlsx",
+      "sha256": "084ea38b5bb1466a23114aefbcab39e0b4c59b5530703c26349632dedfbd66ff",
+      "bytes": 10160,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7536579/#app2",
+      "locator": "Table S2 Sheet1 A2:C2"
+    },
+    {
+      "sourceId": "GN017",
+      "fileName": "GN017-v3.1.html",
+      "sha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "bytes": 342281,
+      "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "locator": "GN017 v3.1, released2025-10-10; PS3 Moderate/Supporting and BS3 Supporting; re-read2026-09-10"
+    },
+    {
+      "sourceId": "calibration",
+      "fileName": "clingen_diabetes_acmg_specifications_v1.pdf",
+      "sha256": "762199ab1d70db86d9e8d25bf00afe0faecac329a2013cceaf5cc68f74ae9da3",
+      "bytes": 508604,
+      "url": "https://www.clinicalgenome.org/site/assets/files/7039/clingen_diabetes_acmg_specifications_v1.pdf",
+      "locator": "Historical approved2021-06-04: p8-9 Oxford validation, p14 cross-condition BS3 caution"
+    },
+    {
+      "sourceId": "refseq",
+      "fileName": "hnf1a_refseq_545_versions.xml",
+      "sha256": "5729494431999c3db9a6386ef7c8b5ea38dc8f1bbf664a2273957c1e1e4ad6fe",
+      "bytes": 152787,
+      "url": "https://www.ncbi.nlm.nih.gov/nuccore/NM_000545.8",
+      "locator": "NM_000545.5/.6/.8 CDS comparison; .6 to .8 c.1720G>A Gly574Ser only"
+    },
+    {
+      "sourceId": "GN017_API",
+      "fileName": "gn017-api.json",
+      "sha256": "7bb2a08863f2c666047c4ec68c8c5a02c4bd74858da36fb404e0aee0375ccd65",
+      "bytes": 154791,
+      "url": "https://cspec.genome.network/cspec/SequenceVariantInterpretation/id/GN017?detail=high",
+      "locator": "Version3.1; ldhId=467903868; revision=_l2Ae7re---; approved2025-10-10; PS3/BS3 scope verified"
+    },
+    {
+      "sourceId": "GN017_IMMUTABLE_JSON",
+      "fileName": "GN017_3.1.0.json",
+      "sha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+      "bytes": 154639,
+      "url": "https://zenodo.org/records/21421568/files/GN017_3.1.0.json?download=1",
+      "locator": "Zenodo:21421568/GN017_3.1.0.json"
+    },
+    {
+      "sourceId": "GN017_IMMUTABLE_PDF",
+      "fileName": "ClinGen_ACMG_Specifications_GN017_3.1.pdf",
+      "sha256": "e419abc37b429289c15057e202da87e006e95479ae6f50f65a527fa9a1f9ecdb",
+      "bytes": 1565489,
+      "url": "https://zenodo.org/records/21421568/files/ClinGen_ACMG_Specifications_GN017_3.1.pdf?download=1",
+      "locator": "Zenodo:21421568/ClinGen_ACMG_Specifications_GN017_3.1.pdf"
+    }
+  ],
+  "construct": {
+    "reportedReference": "NM_000545.6",
+    "reportedVector": "cDNA3.1 His/C (verbatim article)",
+    "commonBackground": [
+      "c.79A>C / I27L",
+      "c.51C>G / L17="
+    ],
+    "referenceVersions": {
+      ".5/.6": "NP_000536.5; identical CDS",
+      ".8": "NP_000536.6; c.1720G>A / Gly574Ser relative to .6"
+    },
+    "sangerVerification": "AUTHOR_REPORTED_ALL_CONSTRUCTS; no chromatograms or full clone sequences received",
+    "independentlyVerifiedCompleteConstruct": false,
+    "transferRationale": "The three target codons and substitutions agree across .5/.6/.8 and independently checked GRCh38 alleles. Compare each mutant to the same study WT background. Apply only the named VCEP-recognized Oxford assay; GN0173.1 explicitly names Althari while targeting NM_000545.8. This permits restricted evidence transfer, not a claim that all backgrounds are identical or have no interaction."
+  },
+  "assay": {
+    "studyId": "PMID32910913",
+    "laboratory": "Oxford/Gloyn",
+    "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+    "readout": "HNF1A transactivation",
+    "timeHours": 24,
+    "transfection": "Lipofectamine2000",
+    "normalization": "Firefly/Renilla then study WT=100%",
+    "unit": "percent_of_study_WT",
+    "replicates": "mean +/- SD of nine readings: three parallels on each of three experimental days (n=3)",
+    "rawWellsAvailable": false,
+    "preciseMeansAndSdAvailable": false,
+    "controls": {
+      "technical": [
+        "WT",
+        "empty vector",
+        "pRL-SV40 Renilla"
+      ],
+      "risk": [
+        "A98V",
+        "E508K"
+      ],
+      "ModyReferences": [
+        "P112L",
+        "P447L",
+        "A116V",
+        "R203H",
+        "P519L",
+        "T260M"
+      ]
+    },
+    "conditions": [
+      {
+        "conditionId": "HELA_RA",
+        "cell": "HeLa human; no endogenous HNF1A",
+        "promoter": "rat albumin -170..+5",
+        "reporter": "pGL3-RA",
+        "figure": "S6A, supplement p12"
+      },
+      {
+        "conditionId": "INS1_HNF4AP2",
+        "cell": "INS-1 rat insulinoma; endogenous HNF1A",
+        "promoter": "human HNF4A P2 -418..+13",
+        "reporter": "pGL3-HNF4A P2",
+        "figure": "S6B, supplement p12"
+      }
+    ]
+  },
+  "calibration": {
+    "policy": "GN0173.1 Oxford PS3 <=40% WT Moderate; generic PS3 <40% Supporting; BS3 >=75% Supporting",
+    "historicalValidation": "Oxford4P+10B, <=2 outside expected, OddsPath>4.3 as reported by VCEP",
+    "figureDenominator": "Historical p9 shows4P+12Benign+3VUS; removing A98V/E508K gives10 only as inference, not independently approved list",
+    "oddsPathExact": null,
+    "confidenceInterval": null,
+    "independentCalibratorRelabeling": false,
+    "controlsAreIndependentValidationSet": false,
+    "bs3CrossCondition": "Historical specification p14 and D526N expert explanation withhold BS3 when one condition is normal and another intermediate; no invented GN0173.1 luciferase AND EMSA requirement"
+  },
+  "provenanceRules": [
+    "Observation identity = original study/lab/assay/condition/variant/background; multiple citations are not extra experiments.",
+    "Both TA conditions are retained but not added as independent strength.",
+    "ClinVar/ERepo is secondary interpretation, never an independent wet observation or independent calibrator label when it relies on this assay.",
+    "No automatic combination with PVS1, PS1/PM5 or PP3/BP4; resolve specific observation/dependency before future combination."
+  ],
+  "sourceDiscrepancies": [
+    "S2 P112L coding literal c.c.335C>T; normalized only with independent identity proof.",
+    "S1 header unversioned NM000545; 73 labels are not 73 mapped genomic alleles.",
+    "S1 shared color includes I27L whereas shared-assay list substitutes R583Q.",
+    "T354M S1 c1061 vs article c1016; not in this slice.",
+    "Historical T260M c779C>A versus S2 c779C>T; not in this slice.",
+    "S574G/G574S reference direction conflict: excluded, never silently renamed.",
+    "Live GN017 API raw version 3.1 revision _l2Ae7re--- differs from immutable published 3.1.0 revision _ka7YRPu---. Executable policy binds the published Zenodo snapshot; no unsupported alias equivalence is asserted."
+  ],
+  "records": [
+    {
+      "recordId": "P112L",
+      "version": "1.0.0",
+      "sourceIdentity": {
+        "proteinLiteral": "p.P112L",
+        "codingLiteral": "c.c.335C>T ",
+        "locator": "S2 A2:C2"
+      },
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "12",
+        "position": 120988841,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "coding": "c.335C>T",
+      "protein": "p.Pro112Leu",
+      "proteinPosition": 112,
+      "alleleRegistryId": "CA124475",
+      "mapping": {
+        "status": "TARGET_CODON_AND_GRCH38_REF_VERIFIED",
+        "registryUrl": "https://reg.genome.network/allele/CA124475",
+        "registrySha256": "d20150343486e28a1b50e0715b7cd27c06d45e1c73a0978e8d25a5910fe6a012",
+        "referenceWindow": "",
+        "referenceWindowSha256": "9e7742874f54e6f1ba35db6bd498cf5a17d19bd3909f14a5ab29b1fcb8bdfb95"
+      },
+      "observations": [
+        {
+          "originObservationId": "ALTHARI2020:OXFORD:TA:HELA_RA:P112L",
+          "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+          "conditionId": "HELA_RA",
+          "backgroundId": "ALTHARI2020_NM5456_I27L_L17SYN",
+          "valueRepresentation": "REVIEWED_PUBLISHED_FIGURE_RANGE",
+          "lower": 20,
+          "upper": 35,
+          "lowerInclusive": true,
+          "upperInclusive": true,
+          "rangeMeaning": "Conservative visual bounds for published bar mean; not measured mean, SD, CI, or raw wells",
+          "unit": "percent_of_study_WT",
+          "figure": "S6A",
+          "sourceId": "supplement",
+          "technicalReview": "CLEAR_FOR_RECORDED_BOUND_ONLY",
+          "independentCalibrator": false
+        },
+        {
+          "originObservationId": "ALTHARI2020:OXFORD:TA:INS1_HNF4AP2:P112L",
+          "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+          "conditionId": "INS1_HNF4AP2",
+          "backgroundId": "ALTHARI2020_NM5456_I27L_L17SYN",
+          "valueRepresentation": "REVIEWED_PUBLISHED_FIGURE_RANGE",
+          "lower": 45,
+          "upper": 60,
+          "lowerInclusive": true,
+          "upperInclusive": true,
+          "rangeMeaning": "Conservative visual bounds for published bar mean; not measured mean, SD, CI, or raw wells",
+          "unit": "percent_of_study_WT",
+          "figure": "S6B",
+          "sourceId": "supplement",
+          "technicalReview": "CLEAR_FOR_RECORDED_BOUND_ONLY",
+          "independentCalibrator": false
+        }
+      ],
+      "independentClinicalValidation": false,
+      "gates": {
+        "ps3": "PASS",
+        "bs3": "FAIL_DAMAGING_FUNCTION",
+        "rationale": "HeLa conservative20-35% range is fully <=40. INS1 retains45-60% intermediate range; not a normal contradiction. GN017 Oxford Moderate calibration applies; no extra strength for two cells.",
+        "mechanism": "Reduced transactivation in recognized HNF1A MODY assay; PS3 does not require excluding every coexisting RNA effect."
+      },
+      "secondaryInterpretation": {
+        "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/14942/",
+        "accession": "SCV002499500.1",
+        "date": "2022-04-08",
+        "specification": "1.1",
+        "meaning": "Historical expert PS3_Moderate from Althari <40%; corroboration from prior source audit, not a second assay or new approval"
+      }
+    },
+    {
+      "recordId": "Q175R",
+      "version": "1.0.0",
+      "sourceIdentity": {
+        "proteinLiteral": "p.Q175R",
+        "codingLiteral": "c.524A>G",
+        "locator": "S1 A23:C23"
+      },
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "12",
+        "position": 120989030,
+        "reference": "A",
+        "alternate": "G"
+      },
+      "coding": "c.524A>G",
+      "protein": "p.Gln175Arg",
+      "proteinPosition": 175,
+      "alleleRegistryId": "CA6831768",
+      "mapping": {
+        "status": "TARGET_CODON_AND_GRCH38_REF_VERIFIED",
+        "registryUrl": "https://reg.genome.network/allele/CA6831768",
+        "registrySha256": "7e7aaa4fe0e26cc3954310f06f2f316489af482232b3a8eedf9bc8578be01891",
+        "referenceWindow": "",
+        "referenceWindowSha256": "ae711e2b200792df1fb2cead70214d1857cc2a0709210bd1be4dbb8b58755336"
+      },
+      "observations": [
+        {
+          "originObservationId": "ALTHARI2020:OXFORD:TA:HELA_RA:Q175R",
+          "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+          "conditionId": "HELA_RA",
+          "backgroundId": "ALTHARI2020_NM5456_I27L_L17SYN",
+          "valueRepresentation": "REVIEWED_PUBLISHED_FIGURE_RANGE",
+          "lower": 95,
+          "upper": 115,
+          "lowerInclusive": true,
+          "upperInclusive": true,
+          "rangeMeaning": "Conservative visual bounds for published bar mean; not measured mean, SD, CI, or raw wells",
+          "unit": "percent_of_study_WT",
+          "figure": "S6A",
+          "sourceId": "supplement",
+          "technicalReview": "CLEAR_FOR_RECORDED_BOUND_ONLY",
+          "independentCalibrator": false
+        },
+        {
+          "originObservationId": "ALTHARI2020:OXFORD:TA:INS1_HNF4AP2:Q175R",
+          "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+          "conditionId": "INS1_HNF4AP2",
+          "backgroundId": "ALTHARI2020_NM5456_I27L_L17SYN",
+          "valueRepresentation": "REVIEWED_PUBLISHED_FIGURE_RANGE",
+          "lower": 105,
+          "upper": 135,
+          "lowerInclusive": true,
+          "upperInclusive": true,
+          "rangeMeaning": "Conservative visual bounds for published bar mean; not measured mean, SD, CI, or raw wells",
+          "unit": "percent_of_study_WT",
+          "figure": "S6B",
+          "sourceId": "supplement",
+          "technicalReview": "CLEAR_FOR_RECORDED_BOUND_ONLY",
+          "independentCalibrator": false
+        }
+      ],
+      "independentClinicalValidation": false,
+      "gates": {
+        "ps3": "HOLD_NORMAL_TA_DOES_NOT_SUPPORT_PS3",
+        "bs3": "HOLD_SPLICE_APPLICABILITY_UNRESOLVED",
+        "rationale": "Both TA means are clearly above75. EMSA S6E is aboveWT, protein/nuclear panels do not identify Q175R as deficient. However c524 is donor exonic position -3 (exon2 ends c526/g120989032); cDNA has no intron and cannot assess that splice context. No variant-specific RNA evidence or reviewed splice exclusion located in this bounded review. Hold BS3 for this nucleotide allele, without claiming abnormal splicing.",
+        "mechanism": "Protein TA and DNA-binding support normal protein function only; RNA/NMD not measured."
+      },
+      "secondaryInterpretation": {
+        "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/1390735/",
+        "accession": "VCV001390735.8 / SCV002166253.3",
+        "date": "2026-01-13",
+        "meaning": "Three submitters VUS; Labcorp comment has protein prediction and insufficient evidence, no RNA evidence. Not an independent benign calibrator label or a veto solely because VUS."
+      }
+    },
+    {
+      "recordId": "D526N",
+      "version": "1.0.0",
+      "sourceIdentity": {
+        "proteinLiteral": "p.D526N",
+        "codingLiteral": "c.1576G>A",
+        "locator": "S1 A61:C61"
+      },
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "12",
+        "position": 120999342,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "coding": "c.1576G>A",
+      "protein": "p.Asp526Asn",
+      "proteinPosition": 526,
+      "alleleRegistryId": "CA386972013",
+      "mapping": {
+        "status": "TARGET_CODON_AND_GRCH38_REF_VERIFIED",
+        "registryUrl": "https://reg.genome.network/allele/CA386972013",
+        "registrySha256": "582c01051824248d5cb9349f694cdf5dddac974f290f40350f2cda696a4c87b8",
+        "referenceWindow": "",
+        "referenceWindowSha256": "062620903ed8ad73c421458791b93c7bbd7346d42292941994b38722b6cbf1e2"
+      },
+      "observations": [
+        {
+          "originObservationId": "ALTHARI2020:OXFORD:TA:HELA_RA:D526N",
+          "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+          "conditionId": "HELA_RA",
+          "backgroundId": "ALTHARI2020_NM5456_I27L_L17SYN",
+          "valueRepresentation": "REVIEWED_PUBLISHED_FIGURE_RANGE",
+          "lower": 45,
+          "upper": 60,
+          "lowerInclusive": true,
+          "upperInclusive": true,
+          "rangeMeaning": "Conservative visual bounds for published bar mean; not measured mean, SD, CI, or raw wells",
+          "unit": "percent_of_study_WT",
+          "figure": "S6A",
+          "sourceId": "supplement",
+          "technicalReview": "CLEAR_FOR_RECORDED_BOUND_ONLY",
+          "independentCalibrator": false
+        },
+        {
+          "originObservationId": "ALTHARI2020:OXFORD:TA:INS1_HNF4AP2:D526N",
+          "assayId": "ALTHARI2020_OXFORD_LUCIFERASE",
+          "conditionId": "INS1_HNF4AP2",
+          "backgroundId": "ALTHARI2020_NM5456_I27L_L17SYN",
+          "valueRepresentation": "REVIEWED_PUBLISHED_FIGURE_RANGE",
+          "lower": 70,
+          "upper": 90,
+          "lowerInclusive": true,
+          "upperInclusive": true,
+          "rangeMeaning": "Conservative visual bounds for published bar mean; not measured mean, SD, CI, or raw wells",
+          "unit": "percent_of_study_WT",
+          "figure": "S6B",
+          "sourceId": "supplement",
+          "technicalReview": "CLEAR_FOR_RECORDED_BOUND_ONLY",
+          "independentCalibrator": false
+        }
+      ],
+      "independentClinicalValidation": false,
+      "gates": {
+        "ps3": "HOLD_INTERMEDIATE",
+        "bs3": "HOLD_CROSS_CONDITION_CONFLICT",
+        "rationale": "Published text approx50%HeLa/80%INS1. Keep both and do not select normal condition; also hepatocyte-dominant isoform limitation. No PS3 or BS3 from this package.",
+        "mechanism": "Intermediate/context-dependent function; no MODY direction assigned."
+      },
+      "secondaryInterpretation": {
+        "url": "https://erepo.clinicalgenome.org/evrepo/ui/classification/b83b2627-ad44-46eb-80b4-fecd77a763c9",
+        "version": "1.0",
+        "date": "2024-08-01",
+        "specification": "2.1",
+        "meaning": "BS3 not applied due one>75/other40-75; page HGNC metadata mismatch retained; allele independently checked."
+      }
+    }
+  ]
+}

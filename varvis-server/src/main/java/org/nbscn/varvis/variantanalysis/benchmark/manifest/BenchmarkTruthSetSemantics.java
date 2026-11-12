@@ -1,0 +1,11 @@
+package org.nbscn.varvis.variantanalysis.benchmark.manifest;
+
+public enum BenchmarkTruthSetSemantics {
+    SINGLE_REQUIRED_ALLELE,
+    EXPLICIT_ALTERNATIVES,
+    EXPLICIT_REQUIRED_SET,
+    PHASED_REQUIRED_SET,
+    MULTI_TRUTH_RELATIONSHIP_UNRESOLVED,
+    UNSUPPORTED_VARIATION,
+    INCOMPLETE_CANONICAL_TRUTH
+}

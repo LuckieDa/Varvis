@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "a5-independent-edit-expectations-v1",
+  "basis": "HAND_CALCULATED_BEFORE_CORE_IMPLEMENTATION",
+  "referenceCds": "ATGAAACCCGGGTTTTAA",
+  "referenceCodingExons": [[0, 9], [9, 18]],
+  "cases": [
+    {"id": "delins-minus-one", "edits": [["CODING_ALLELE", 3, 6, "CG", 1]], "alteredCds": "ATGCGCCCGGGTTTTAA", "delta": -1, "junctions": [8]},
+    {"id": "equal-length-mnv", "edits": [["CODING_ALLELE", 3, 6, "TTC", 1]], "alteredCds": "ATGTTCCCCGGGTTTTAA", "delta": 0, "junctions": [9]},
+    {"id": "splice-across-junction", "edits": [["SPLICE_PROJECTION", 6, 12, "", 0]], "alteredCds": "ATGAAATTTTAA", "delta": -6, "junctions": [6]},
+    {"id": "splice-and-retained-coding", "edits": [["SPLICE_PROJECTION", 6, 12, "", 0], ["CODING_ALLELE", 12, 15, "GCC", 2]], "alteredCds": "ATGAAAGCCTAA", "delta": -6, "junctions": [6]},
+    {"id": "coding-event-removed-by-splice", "edits": [["SPLICE_PROJECTION", 6, 12, "", 0], ["CODING_ALLELE", 6, 9, "ATA", 1]], "alteredCds": "ATGAAATTTTAA", "delta": -6, "junctions": [6], "removedCodingEvents": 1},
+    {"id": "splice-within-one-reference-exon", "edits": [["SPLICE_PROJECTION", 3, 6, "", 0]], "alteredCds": "ATGCCCGGGTTTTAA", "delta": -3, "junctions": [3, 6]},
+    {"id": "coding-deletion-does-not-invent-splicing", "edits": [["CODING_ALLELE", 3, 6, "", 0]], "alteredCds": "ATGCCCGGGTTTTAA", "delta": -3, "junctions": [6]},
+    {"id": "inserted-bases-have-no-reference-identity", "edits": [["CODING_ALLELE", 6, 6, "GCT", 1]], "alteredCds": "ATGAAAGCTCCCGGGTTTTAA", "delta": 3, "junctions": [12]}
+  ]
+}

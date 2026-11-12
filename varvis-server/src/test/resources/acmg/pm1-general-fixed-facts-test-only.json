@@ -1,0 +1,807 @@
+{
+  "schemaVersion": "test-only-pm1-fixed-facts-v1",
+  "dataClass": "SYNTHETIC",
+  "purpose": "TEST_ONLY",
+  "derivation": "All CDS, genomic coordinates, codons, amino acid substitutions, review clauses and expected outcomes were fixed by hand before running the production evaluator. No real gene/disease scientific policy is asserted.",
+  "backgrounds": [
+    {
+      "name": "TEST_ONLY_HBB_PLUS",
+      "gene": "HBB",
+      "hgnc": "HGNC:4827",
+      "mondo": "MONDO:0013517",
+      "contig": "11",
+      "transcript": "NM_000518.5",
+      "protein": "NP_000509.1",
+      "strand": 1,
+      "genomicStart": 100,
+      "genomicEnd": 120,
+      "cds": "ATGGAACCTGGCTTTAAATAA",
+      "genomicSequence": "ATGGAACCTGGCTTTAAATAA",
+      "proteinSequence": "MEPGFK",
+      "proteinLength": 6,
+      "target": "plus-primary",
+      "scientificDeclaration": {
+        "dataClass": "SYNTHETIC",
+        "purpose": "TEST_ONLY",
+        "authoritySourceId": "authority-test-only-pm1-background-0",
+        "reviewStatus": "REVIEWED_IMPLEMENTED",
+        "mechanism": "DISEASE_SPECIFIC_CRITICAL_PROTEIN_LOCATION",
+        "consequenceScope": "PURE_MISSENSE_SNV",
+        "qualification": "QUALIFIED",
+        "pathogenicDistribution": "SATISFIED",
+        "benignDistribution": "SATISFIED",
+        "exactScope": "Invented HBB / HGNC:4827 / MONDO:0013517 / AUTOSOMAL_RECESSIVE / GRCh38 / NM_000518.5 / NP_000509.1; only this 21-base artificial CDS and listed rules.",
+        "qualificationBasis": "An invented external reviewer declares plus-region and plus-single qualified and plus-exclusion an explicit exclusion; the declared precedence applies. This is not a real HBB scientific policy.",
+        "pathogenicDistributionBasis": "Invented reviewed clause explicitly declares the pathogenic-distribution prerequisite satisfied for the listed SUPPORT rows in this exact artificial scope. No real variant observations were searched or inferred.",
+        "benignDistributionBasis": "Invented reviewed clause explicitly declares the benign-distribution prerequisite satisfied for the listed SUPPORT rows. This is an affirmative TEST_ONLY review statement, not an inference from missing benign records."
+      },
+      "coverage": [
+        [
+          2,
+          6
+        ]
+      ],
+      "rules": [
+        [
+          "plus-region",
+          2,
+          4,
+          null,
+          "CRITICAL_FUNCTIONAL_REGION",
+          "SUPPORT",
+          "MODERATE"
+        ],
+        [
+          "plus-exclusion",
+          3,
+          3,
+          "P",
+          "EXCLUSION",
+          "EXCLUDE",
+          "NONE"
+        ],
+        [
+          "plus-single",
+          6,
+          6,
+          "K",
+          "CRITICAL_RESIDUE",
+          "SUPPORT",
+          "SUPPORTING"
+        ]
+      ],
+      "precedence": [
+        [
+          "plus-exclusion",
+          "plus-region"
+        ]
+      ]
+    },
+    {
+      "name": "TEST_ONLY_GJB2_MINUS",
+      "gene": "GJB2",
+      "hgnc": "HGNC:4284",
+      "mondo": "MONDO:0019497",
+      "contig": "13",
+      "transcript": "NM_004004.6",
+      "protein": "NP_003995.2",
+      "strand": -1,
+      "genomicStart": 200,
+      "genomicEnd": 223,
+      "cds": "ATGAAAGCTTGGCCATTTGGATAA",
+      "genomicSequence": "TTATCCAAATGGCCAAGCTTTCAT",
+      "proteinSequence": "MKAWPFG",
+      "proteinLength": 7,
+      "target": "minus-primary",
+      "scientificDeclaration": {
+        "dataClass": "SYNTHETIC",
+        "purpose": "TEST_ONLY",
+        "authoritySourceId": "authority-test-only-pm1-background-1",
+        "reviewStatus": "REVIEWED_IMPLEMENTED",
+        "mechanism": "DISEASE_SPECIFIC_CRITICAL_PROTEIN_LOCATION",
+        "consequenceScope": "PURE_MISSENSE_SNV",
+        "qualification": "QUALIFIED",
+        "pathogenicDistribution": "SATISFIED",
+        "benignDistribution": "SATISFIED",
+        "exactScope": "Invented GJB2 / HGNC:4284 / MONDO:0019497 / AUTOSOMAL_RECESSIVE / GRCh38 / NM_004004.6 / NP_003995.2; only this 24-base artificial negative-strand CDS and listed rules.",
+        "qualificationBasis": "An invented external reviewer declares minus-region and minus-single qualified and minus-exclusion an explicit exclusion. This is not a real GJB2 scientific policy.",
+        "pathogenicDistributionBasis": "Invented reviewed clause explicitly declares the pathogenic-distribution prerequisite satisfied for the listed SUPPORT rows in this exact artificial scope. No real variant observations were searched or inferred.",
+        "benignDistributionBasis": "Invented reviewed clause explicitly declares the benign-distribution prerequisite satisfied for the listed SUPPORT rows. This is an affirmative TEST_ONLY review statement, not an inference from missing benign records."
+      },
+      "coverage": [
+        [
+          2,
+          6
+        ]
+      ],
+      "rules": [
+        [
+          "minus-region",
+          4,
+          5,
+          null,
+          "MUTATIONAL_HOTSPOT",
+          "SUPPORT",
+          "SUPPORTING"
+        ],
+        [
+          "minus-exclusion",
+          6,
+          6,
+          "F",
+          "EXCLUSION",
+          "EXCLUDE",
+          "NONE"
+        ],
+        [
+          "minus-single",
+          2,
+          2,
+          "K",
+          "CRITICAL_RESIDUE",
+          "SUPPORT",
+          "MODERATE"
+        ]
+      ],
+      "precedence": []
+    }
+  ],
+  "variants": [
+    {
+      "id": "plus-primary",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 105,
+        "reference": "A",
+        "alternate": "C"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.6A>C",
+        "hgvsProtein": "NP_000509.1:p.Glu2Asp",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "2",
+        "aminoAcids": "E/D",
+        "codons": "GAA/GAC",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "MODERATE",
+        "ruleId": "plus-region",
+        "cdsPosition": 6,
+        "proteinPosition": 2,
+        "refCodon": "GAA",
+        "altCodon": "GAC",
+        "refAminoAcid": "E",
+        "altAminoAcid": "D"
+      }
+    },
+    {
+      "id": "plus-left",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 103,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.4G>A",
+        "hgvsProtein": "NP_000509.1:p.Glu2Lys",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "2",
+        "aminoAcids": "E/K",
+        "codons": "GAA/AAA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "MODERATE",
+        "ruleId": "plus-region",
+        "cdsPosition": 4,
+        "proteinPosition": 2,
+        "refCodon": "GAA",
+        "altCodon": "AAA",
+        "refAminoAcid": "E",
+        "altAminoAcid": "K"
+      }
+    },
+    {
+      "id": "plus-excluded",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 106,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.7C>T",
+        "hgvsProtein": "NP_000509.1:p.Pro3Ser",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "3",
+        "aminoAcids": "P/S",
+        "codons": "CCT/TCT",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_MET",
+        "strength": "NONE",
+        "ruleId": "plus-exclusion",
+        "cdsPosition": 7,
+        "proteinPosition": 3,
+        "refCodon": "CCT",
+        "altCodon": "TCT",
+        "refAminoAcid": "P",
+        "altAminoAcid": "S"
+      }
+    },
+    {
+      "id": "plus-right",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 109,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.10G>A",
+        "hgvsProtein": "NP_000509.1:p.Gly4Ser",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "4",
+        "aminoAcids": "G/S",
+        "codons": "GGC/AGC",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "MODERATE",
+        "ruleId": "plus-region",
+        "cdsPosition": 10,
+        "proteinPosition": 4,
+        "refCodon": "GGC",
+        "altCodon": "AGC",
+        "refAminoAcid": "G",
+        "altAminoAcid": "S"
+      }
+    },
+    {
+      "id": "plus-adjacent",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 112,
+        "reference": "T",
+        "alternate": "C"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.13T>C",
+        "hgvsProtein": "NP_000509.1:p.Phe5Leu",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "5",
+        "aminoAcids": "F/L",
+        "codons": "TTT/CTT",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_MET",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 13,
+        "proteinPosition": 5,
+        "refCodon": "TTT",
+        "altCodon": "CTT",
+        "refAminoAcid": "F",
+        "altAminoAcid": "L"
+      }
+    },
+    {
+      "id": "plus-single",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 115,
+        "reference": "A",
+        "alternate": "C"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.16A>C",
+        "hgvsProtein": "NP_000509.1:p.Lys6Gln",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "6",
+        "aminoAcids": "K/Q",
+        "codons": "AAA/CAA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "SUPPORTING",
+        "ruleId": "plus-single",
+        "cdsPosition": 16,
+        "proteinPosition": 6,
+        "refCodon": "AAA",
+        "altCodon": "CAA",
+        "refAminoAcid": "K",
+        "altAminoAcid": "Q"
+      }
+    },
+    {
+      "id": "plus-start",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 100,
+        "reference": "A",
+        "alternate": "C"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.1A>C",
+        "hgvsProtein": "NP_000509.1:p.Met1Leu",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "1",
+        "aminoAcids": "M/L",
+        "codons": "ATG/CTG",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_EVALUATED",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 1,
+        "proteinPosition": 1,
+        "refCodon": "ATG",
+        "altCodon": "CTG",
+        "refAminoAcid": "M",
+        "altAminoAcid": "L"
+      }
+    },
+    {
+      "id": "plus-stop",
+      "background": 0,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "11",
+        "position": 118,
+        "reference": "T",
+        "alternate": "C"
+      },
+      "annotation": {
+        "geneSymbol": "HBB",
+        "transcriptAccession": "NM_000518.5",
+        "transcriptId": "NM_000518.5",
+        "hgvsCoding": "NM_000518.5:c.19T>C",
+        "hgvsProtein": "NP_000509.1:p.Ter7Gln",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "7",
+        "aminoAcids": "*/Q",
+        "codons": "TAA/CAA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_EVALUATED",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 19,
+        "proteinPosition": 7,
+        "refCodon": "TAA",
+        "altCodon": "CAA",
+        "refAminoAcid": "*",
+        "altAminoAcid": "Q"
+      }
+    },
+    {
+      "id": "minus-primary",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 213,
+        "reference": "C",
+        "alternate": "A"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.11G>T",
+        "hgvsProtein": "NP_003995.2:p.Trp4Leu",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "4",
+        "aminoAcids": "W/L",
+        "codons": "TGG/TTG",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "SUPPORTING",
+        "ruleId": "minus-region",
+        "cdsPosition": 11,
+        "proteinPosition": 4,
+        "refCodon": "TGG",
+        "altCodon": "TTG",
+        "refAminoAcid": "W",
+        "altAminoAcid": "L"
+      }
+    },
+    {
+      "id": "minus-right",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 211,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.13C>T",
+        "hgvsProtein": "NP_003995.2:p.Pro5Ser",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "5",
+        "aminoAcids": "P/S",
+        "codons": "CCA/TCA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "SUPPORTING",
+        "ruleId": "minus-region",
+        "cdsPosition": 13,
+        "proteinPosition": 5,
+        "refCodon": "CCA",
+        "altCodon": "TCA",
+        "refAminoAcid": "P",
+        "altAminoAcid": "S"
+      }
+    },
+    {
+      "id": "minus-adjacent",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 217,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.7G>A",
+        "hgvsProtein": "NP_003995.2:p.Ala3Thr",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "3",
+        "aminoAcids": "A/T",
+        "codons": "GCT/ACT",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_MET",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 7,
+        "proteinPosition": 3,
+        "refCodon": "GCT",
+        "altCodon": "ACT",
+        "refAminoAcid": "A",
+        "altAminoAcid": "T"
+      }
+    },
+    {
+      "id": "minus-single",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 220,
+        "reference": "T",
+        "alternate": "G"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.4A>C",
+        "hgvsProtein": "NP_003995.2:p.Lys2Gln",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "2",
+        "aminoAcids": "K/Q",
+        "codons": "AAA/CAA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "MET",
+        "strength": "MODERATE",
+        "ruleId": "minus-single",
+        "cdsPosition": 4,
+        "proteinPosition": 2,
+        "refCodon": "AAA",
+        "altCodon": "CAA",
+        "refAminoAcid": "K",
+        "altAminoAcid": "Q"
+      }
+    },
+    {
+      "id": "minus-excluded",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 208,
+        "reference": "A",
+        "alternate": "G"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.16T>C",
+        "hgvsProtein": "NP_003995.2:p.Phe6Leu",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "6",
+        "aminoAcids": "F/L",
+        "codons": "TTT/CTT",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_MET",
+        "strength": "NONE",
+        "ruleId": "minus-exclusion",
+        "cdsPosition": 16,
+        "proteinPosition": 6,
+        "refCodon": "TTT",
+        "altCodon": "CTT",
+        "refAminoAcid": "F",
+        "altAminoAcid": "L"
+      }
+    },
+    {
+      "id": "minus-uncovered",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 205,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.19G>A",
+        "hgvsProtein": "NP_003995.2:p.Gly7Arg",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "7",
+        "aminoAcids": "G/R",
+        "codons": "GGA/AGA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_EVALUATED",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 19,
+        "proteinPosition": 7,
+        "refCodon": "GGA",
+        "altCodon": "AGA",
+        "refAminoAcid": "G",
+        "altAminoAcid": "R"
+      }
+    },
+    {
+      "id": "minus-start",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 223,
+        "reference": "T",
+        "alternate": "G"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.1A>C",
+        "hgvsProtein": "NP_003995.2:p.Met1Leu",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "1",
+        "aminoAcids": "M/L",
+        "codons": "ATG/CTG",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_EVALUATED",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 1,
+        "proteinPosition": 1,
+        "refCodon": "ATG",
+        "altCodon": "CTG",
+        "refAminoAcid": "M",
+        "altAminoAcid": "L"
+      }
+    },
+    {
+      "id": "minus-stop",
+      "background": 1,
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "13",
+        "position": 202,
+        "reference": "A",
+        "alternate": "G"
+      },
+      "annotation": {
+        "geneSymbol": "GJB2",
+        "transcriptAccession": "NM_004004.6",
+        "transcriptId": "NM_004004.6",
+        "hgvsCoding": "NM_004004.6:c.22T>C",
+        "hgvsProtein": "NP_003995.2:p.Ter8Gln",
+        "consequence": "missense_variant",
+        "exon": "1/1",
+        "canonical": true,
+        "maneSelect": true,
+        "manePlusClinical": false,
+        "proteinPosition": "8",
+        "aminoAcids": "*/Q",
+        "codons": "TAA/CAA",
+        "source": "VEP_CACHED",
+        "status": "COMPLETED",
+        "version": "116.0",
+        "timestamp": "2026-09-26T00:00:00Z"
+      },
+      "expected": {
+        "status": "NOT_EVALUATED",
+        "strength": "NONE",
+        "ruleId": null,
+        "cdsPosition": 22,
+        "proteinPosition": 8,
+        "refCodon": "TAA",
+        "altCodon": "CAA",
+        "refAminoAcid": "*",
+        "altAminoAcid": "Q"
+      }
+    }
+  ]
+}

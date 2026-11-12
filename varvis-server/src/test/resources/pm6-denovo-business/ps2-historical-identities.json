@@ -1,0 +1,575 @@
+{
+  "provenance": "Projection from prior independently closed TEST_ONLY saved PS2 runs; expectedRequestSha256 copied from actual saved response, not computed by new product",
+  "cases": [
+    {
+      "background": "alpha",
+      "request": {
+        "topN": 1,
+        "declarationVersion": "ordinary-ps2-denovo-v1",
+        "sampleId": "test-sample-alpha-proband",
+        "dataClass": "SYNTHETIC",
+        "hypotheses": [],
+        "patient": {
+          "patientContextId": "patient-context-test-ps2-alpha",
+          "familyContextId": "family-context-test-ps2-alpha",
+          "role": "PROBAND",
+          "sex": "UNKNOWN"
+        },
+        "ps2Selection": {
+          "candidateId": "exomiser-v1-00000001",
+          "contextId": "context-sha256-51db03e66ade2631474f66dc0b1128efd6cc0177a9ae122ec13aee488c78ac82",
+          "observationId": "test-observation-alpha",
+          "occurrenceId": "test-occurrence-family-alpha-proband",
+          "caseId": "test-case-alpha",
+          "materialBindingSha256": "dacbcbb1911249f08e6a82137c1d3013f63daff695fb3d53cdbbec77a9f24527",
+          "preparationToken": "PS2_DENOVO_CONTEXT@1.0.0:d0267b9654e33033c6d42b74c5b6fca45c911a1766e32a1ef81fe4c3420da145",
+          "policyVersion": "1.0.0-ps2-denovo-development",
+          "confirmed": true
+        }
+      },
+      "executionProfile": {
+        "profileId": "acmg-ps2-denovo-development-v1",
+        "profileVersion": "1.0.0",
+        "requiredDeclaration": "ordinary-ps2-denovo-v1",
+        "formalEnabled": false,
+        "automaticTrigger": false,
+        "classificationEnabled": false,
+        "adoptionSupported": false,
+        "enabledCriteria": [
+          "ACMG_AMP_2015:PS2"
+        ],
+        "ps2MaterialPins": {
+          "bundleRawSha256": "6e961b2a1584a706fc79b37f8ba29891834851b74291a18a32464249c37430e1",
+          "bundleCanonicalSha256": "bb9d112a389425401851d8dcbabf4a5a49e79349e44b551df243f3b0c8f60be7"
+        },
+        "contextPreparation": {
+          "schemaVersion": "ps2-denovo-context-preparation-v1",
+          "version": "1.0.0"
+        },
+        "manifestSha256": "efdf49650abd5968f218a6d08cbc5ed09309e8eb98ba5e49f61f0f49bf09b002"
+      },
+      "publishedInputIdentity": {
+        "analysisId": "76e80d6e-fae5-49b2-a902-beb89282fe26",
+        "sampleId": "test-sample-alpha-proband",
+        "uploadSha256": "02c8273034088ebfafb972ad89f26f1e0d201fce84faae629c8f445bf02f050e",
+        "inputAssembly": "GRCh38",
+        "analysisMode": "WES",
+        "candidatesRawSha256": "7601211497e34805cd66ce67c651cd314f6b3eabd00160a27b7182cc8f40982e",
+        "executionSourceSha256": "a1a6bf2b00a1c565fbfee6bcbbdc103555dba6a4b609a583c572cda5645b513e"
+      },
+      "preparation": {
+        "schemaVersion": "ps2-denovo-context-preparation-v1",
+        "version": "1.0.0",
+        "policyVersion": "1.0.0-ps2-denovo-development",
+        "status": "BOUND_NOT_EVALUATED",
+        "scientificApplicability": "NOT_EVALUATED",
+        "analysisId": "76e80d6e-fae5-49b2-a902-beb89282fe26",
+        "candidateId": "exomiser-v1-00000001",
+        "sampleId": "test-sample-alpha-proband",
+        "materialBindingSha256": "dacbcbb1911249f08e6a82137c1d3013f63daff695fb3d53cdbbec77a9f24527",
+        "criterionPolicySelected": false,
+        "predictionCompatibilityClaimed": false,
+        "publishedInputIdentity": {
+          "analysisId": "76e80d6e-fae5-49b2-a902-beb89282fe26",
+          "sampleId": "test-sample-alpha-proband",
+          "uploadSha256": "02c8273034088ebfafb972ad89f26f1e0d201fce84faae629c8f445bf02f050e",
+          "inputAssembly": "GRCh38",
+          "analysisMode": "WES",
+          "candidatesRawSha256": "7601211497e34805cd66ce67c651cd314f6b3eabd00160a27b7182cc8f40982e",
+          "executionSourceSha256": "a1a6bf2b00a1c565fbfee6bcbbdc103555dba6a4b609a583c572cda5645b513e"
+        },
+        "materialBinding": {
+          "schemaVersion": "ps2-denovo-business-binding-v1",
+          "materialPins": {
+            "bundleRawSha256": "6e961b2a1584a706fc79b37f8ba29891834851b74291a18a32464249c37430e1",
+            "bundleCanonicalSha256": "bb9d112a389425401851d8dcbabf4a5a49e79349e44b551df243f3b0c8f60be7"
+          },
+          "context": {
+            "schemaVersion": "evidence-context-v3",
+            "contextId": "context-sha256-51db03e66ade2631474f66dc0b1128efd6cc0177a9ae122ec13aee488c78ac82",
+            "canonicalizationProfile": "varvis-json-c14n-v1",
+            "dataClass": "SYNTHETIC",
+            "scope": {
+              "analysisDomain": "GERMLINE",
+              "diseaseModel": "MENDELIAN",
+              "variantScope": "SMALL_SEQUENCE_VARIANT"
+            },
+            "variant": {
+              "alleleId": "allele-sha256-58cd8956a6c4be571281eec28ab74e2d7a9c2b81e973f27e6ed92f7ce2cffe5b",
+              "variantType": "SNV",
+              "inputAllele": {
+                "assembly": "GRCh38",
+                "contig": "7",
+                "position": 10101,
+                "reference": "A",
+                "alternate": "G"
+              },
+              "normalizedAllele": {
+                "assembly": "GRCh38",
+                "contig": "7",
+                "position": 10101,
+                "reference": "A",
+                "alternate": "G"
+              },
+              "evidenceQueryAllele": {
+                "assembly": "GRCh38",
+                "contig": "7",
+                "position": 10101,
+                "reference": "A",
+                "alternate": "G"
+              },
+              "normalization": {
+                "status": "UNCHANGED",
+                "method": "synthetic-left-normalizer",
+                "methodVersion": "1.0.0",
+                "referenceSequenceSha256": "53263f71f199eb4bef32fa3673bed2c3e9d98a66e43b5f6536e20a4f44b24e66",
+                "refValidation": "MATCH"
+              },
+              "assemblyLineage": {
+                "mappingStatus": "NATIVE"
+              }
+            },
+            "gene": {
+              "hgncId": "HGNC:900001",
+              "symbol": "TEST_ONLY_ALPHA"
+            },
+            "disease": {
+              "mondoId": "MONDO:0900001",
+              "label": "Fictional TEST_ONLY Café alpha"
+            },
+            "moi": "AUTOSOMAL_DOMINANT",
+            "patientContext": {
+              "patientContextId": "patient-context-test-ps2-alpha",
+              "familyContextId": "family-context-test-ps2-alpha",
+              "role": "PROBAND",
+              "affectedStatus": "AFFECTED",
+              "sex": "UNKNOWN"
+            },
+            "contextCompleteness": {
+              "status": "COMPLETE",
+              "missingFields": []
+            }
+          },
+          "caseId": "test-case-alpha",
+          "observationId": "test-observation-alpha",
+          "observationVersion": "test-r1-2",
+          "occurrenceId": "test-occurrence-family-alpha-proband",
+          "familyId": "family-context-test-ps2-alpha",
+          "factsSha256": "cd9963e432437bfcb808730e9aabbb5957bdaded7e33a30273c049940210b351",
+          "assessmentSha256": "959cf906bb5bc478471047313b052212d3b94ce30f59e054a011d3d010e674da",
+          "policySha256": "15577b410f23b98c5a6578709d2003b209139b8c64a6a3d47adb90bbf7d165f5",
+          "catalogSha256": "bff0cb601dc66927cc5a32e6d9ad16377e4b84c11fb884e90c856093cf5d46f0",
+          "registryBinding": {
+            "registryId": "acmg-rule-registry-ps2-denovo-core-2026-09-28",
+            "registrySha256": "5262951a58366e7a1ae33c36d1821510ccc37b521ad07ec1a4b3e7b9133f8d8f",
+            "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-ps2-denovo-core-2026-09-28.json"
+          },
+          "executionProfile": {
+            "profileId": "acmg-ps2-denovo-development-v1",
+            "profileVersion": "1.0.0",
+            "requiredDeclaration": "ordinary-ps2-denovo-v1",
+            "formalEnabled": false,
+            "automaticTrigger": false,
+            "classificationEnabled": false,
+            "adoptionSupported": false,
+            "enabledCriteria": [
+              "ACMG_AMP_2015:PS2"
+            ],
+            "ps2MaterialPins": {
+              "bundleRawSha256": "6e961b2a1584a706fc79b37f8ba29891834851b74291a18a32464249c37430e1",
+              "bundleCanonicalSha256": "bb9d112a389425401851d8dcbabf4a5a49e79349e44b551df243f3b0c8f60be7"
+            },
+            "contextPreparation": {
+              "schemaVersion": "ps2-denovo-context-preparation-v1",
+              "version": "1.0.0"
+            },
+            "manifestSha256": "efdf49650abd5968f218a6d08cbc5ed09309e8eb98ba5e49f61f0f49bf09b002"
+          }
+        },
+        "clinicalFacts": {
+          "binding": {
+            "observationId": "test-observation-alpha",
+            "contextId": "context-sha256-51db03e66ade2631474f66dc0b1128efd6cc0177a9ae122ec13aee488c78ac82",
+            "alleleId": "allele-sha256-58cd8956a6c4be571281eec28ab74e2d7a9c2b81e973f27e6ed92f7ce2cffe5b",
+            "allele": {
+              "assembly": "GRCh38",
+              "contig": "7",
+              "position": 10101,
+              "reference": "A",
+              "alternate": "G"
+            },
+            "hgncId": "HGNC:900001",
+            "mondoId": "MONDO:0900001",
+            "moi": "AUTOSOMAL_DOMINANT",
+            "patientContextId": "patient-context-test-ps2-alpha",
+            "familyContextId": "family-context-test-ps2-alpha"
+          },
+          "probandMemberId": "patient-context-test-ps2-alpha",
+          "observedAt": "2026-09-28T00:00:00Z",
+          "age": "TEST_ONLY 10 years",
+          "phenotypeObservations": [
+            "TEST_ONLY fictional Café feature; not a real disease"
+          ],
+          "exclusions": [
+            "TEST_ONLY clinical differential assessment completed"
+          ],
+          "phenotypeCategory": "HIGHLY_SPECIFIC",
+          "heterogeneity": "NOT_HIGH",
+          "familyHistory": "REVIEWED",
+          "familyHistoryBasis": "TEST_ONLY explicitly reviewed available three-generation history",
+          "mosaicism": "REVIEWED_NONMOSAIC",
+          "scopeBasis": "TEST_ONLY no known mosaicism in supplied facts; reviewed assay limits apply",
+          "siblingRecurrence": "REVIEWED_ABSENT",
+          "sourceIds": [
+            "TEST_REPORT_ALPHA"
+          ],
+          "applicability": {
+            "schemaVersion": "case-family-clinical-applicability-v1",
+            "relatedFamilyHistory": "ABSENT",
+            "singleTrioScope": "APPLICABLE",
+            "sourceIds": [
+              "TEST_REPORT_ALPHA"
+            ],
+            "reviewer": "TEST_ONLY R1 family-history and single-trio applicability reviewer",
+            "date": "2026-09-28T12:00:00Z",
+            "basis": "TEST_ONLY newly issued structured conclusion: no related family history identified in reviewed fictional facts; this single-trio scope applies subject to the recorded detection limits. Parent affected-status UNKNOWN is preserved, not interpreted as UNAFFECTED."
+          }
+        },
+        "review": {
+          "schemaVersion": "case-family-assessment-v1",
+          "assessmentId": "test-assessment-alpha-r1",
+          "assessmentVersion": "2",
+          "factsSha256": "cd9963e432437bfcb808730e9aabbb5957bdaded7e33a30273c049940210b351",
+          "quality": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY quality reviewer",
+            "date": "2026-09-28T00:00:00Z",
+            "basis": "TEST_ONLY explicit quality review of bound facts and detection limitations; no professional approval",
+            "sourceIds": [
+              "TEST_REPORT_ALPHA"
+            ]
+          },
+          "parentage": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY parentage reviewer",
+            "date": "2026-09-28T00:00:00Z",
+            "basis": "TEST_ONLY explicit parentage review of bound facts and detection limitations; no professional approval",
+            "sourceIds": [
+              "TEST_REPORT_ALPHA"
+            ]
+          },
+          "clinical": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY R1 reviewer",
+            "date": "2026-09-28T12:00:00Z",
+            "basis": "TEST_ONLY explicit clinical review of bound facts and detection limitations; no professional approval; explicitly reviewed the new structured ABSENT/APPLICABLE conclusions",
+            "sourceIds": [
+              "TEST_REPORT_ALPHA"
+            ]
+          },
+          "scope": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY R1 reviewer",
+            "date": "2026-09-28T12:00:00Z",
+            "basis": "TEST_ONLY explicit scope review of bound facts and detection limitations; no professional approval; explicitly reviewed the new structured ABSENT/APPLICABLE conclusions",
+            "sourceIds": [
+              "TEST_REPORT_ALPHA"
+            ]
+          },
+          "contentSha256": "062c925dbce033dd8c2b92c1ba531336aff60d7011d51428ca57004b0f1eb143"
+        },
+        "preparationToken": "PS2_DENOVO_CONTEXT@1.0.0:d0267b9654e33033c6d42b74c5b6fca45c911a1766e32a1ef81fe4c3420da145"
+      },
+      "materialPins": {
+        "bundleRawSha256": "6e961b2a1584a706fc79b37f8ba29891834851b74291a18a32464249c37430e1",
+        "bundleCanonicalSha256": "bb9d112a389425401851d8dcbabf4a5a49e79349e44b551df243f3b0c8f60be7"
+      },
+      "expectedRequestSha256": "8522d80cb7a7804d11ea0818d8a55befd56652f0a6d541464bae19b0e7147af0"
+    },
+    {
+      "background": "beta",
+      "request": {
+        "topN": 1,
+        "declarationVersion": "ordinary-ps2-denovo-v1",
+        "sampleId": "test-sample-beta-proband",
+        "dataClass": "SYNTHETIC",
+        "hypotheses": [],
+        "patient": {
+          "patientContextId": "patient-context-test-ps2-beta",
+          "familyContextId": "family-context-test-ps2-beta",
+          "role": "PROBAND",
+          "sex": "UNKNOWN"
+        },
+        "ps2Selection": {
+          "candidateId": "exomiser-v1-00000001",
+          "contextId": "context-sha256-f782cd02faafa010b6d4315bf61edc9d945356861d6f56478da3f8e587690b08",
+          "observationId": "test-observation-beta",
+          "occurrenceId": "test-occurrence-family-beta-proband",
+          "caseId": "test-case-beta",
+          "materialBindingSha256": "604c1187da64f50cfa9e568f51c190546d37766082407cd706c6a2bea637b91d",
+          "preparationToken": "PS2_DENOVO_CONTEXT@1.0.0:57f9c0cb5d713d73ef3113c0f750eab9c0a92c06d4f47d96544866a940b75c24",
+          "policyVersion": "1.0.0-ps2-denovo-development",
+          "confirmed": true
+        }
+      },
+      "executionProfile": {
+        "profileId": "acmg-ps2-denovo-development-v1",
+        "profileVersion": "1.0.0",
+        "requiredDeclaration": "ordinary-ps2-denovo-v1",
+        "formalEnabled": false,
+        "automaticTrigger": false,
+        "classificationEnabled": false,
+        "adoptionSupported": false,
+        "enabledCriteria": [
+          "ACMG_AMP_2015:PS2"
+        ],
+        "ps2MaterialPins": {
+          "bundleRawSha256": "93c249caaa5af50169322fc846eab68f80692869ae4710247be6effd9c6c14a0",
+          "bundleCanonicalSha256": "1df6023e85983b01e43d4f2464425bcb06a4b5f162826996a480d9ecba04132e"
+        },
+        "contextPreparation": {
+          "schemaVersion": "ps2-denovo-context-preparation-v1",
+          "version": "1.0.0"
+        },
+        "manifestSha256": "08c20957e26e093abe2b8fcf4de6948efb048d6592f47e31bc9d69f633586a6b"
+      },
+      "publishedInputIdentity": {
+        "analysisId": "592b81cb-6ac9-4fda-8238-da033227ca2c",
+        "sampleId": "test-sample-beta-proband",
+        "uploadSha256": "9f065d651226d9bd0698f6da47eede8caa54c81c265982e6de807be705a15dd0",
+        "inputAssembly": "GRCh38",
+        "analysisMode": "WES",
+        "candidatesRawSha256": "1a3f486a45d61ae718afb1d2a7a1ca7fdf8e70cce9f18c554774022b7f678843",
+        "executionSourceSha256": "940c4ea61b09dd104e9670b0784347e8b9b2d1912be849e9d287c277a5fe99e2"
+      },
+      "preparation": {
+        "schemaVersion": "ps2-denovo-context-preparation-v1",
+        "version": "1.0.0",
+        "policyVersion": "1.0.0-ps2-denovo-development",
+        "status": "BOUND_NOT_EVALUATED",
+        "scientificApplicability": "NOT_EVALUATED",
+        "analysisId": "592b81cb-6ac9-4fda-8238-da033227ca2c",
+        "candidateId": "exomiser-v1-00000001",
+        "sampleId": "test-sample-beta-proband",
+        "materialBindingSha256": "604c1187da64f50cfa9e568f51c190546d37766082407cd706c6a2bea637b91d",
+        "criterionPolicySelected": false,
+        "predictionCompatibilityClaimed": false,
+        "publishedInputIdentity": {
+          "analysisId": "592b81cb-6ac9-4fda-8238-da033227ca2c",
+          "sampleId": "test-sample-beta-proband",
+          "uploadSha256": "9f065d651226d9bd0698f6da47eede8caa54c81c265982e6de807be705a15dd0",
+          "inputAssembly": "GRCh38",
+          "analysisMode": "WES",
+          "candidatesRawSha256": "1a3f486a45d61ae718afb1d2a7a1ca7fdf8e70cce9f18c554774022b7f678843",
+          "executionSourceSha256": "940c4ea61b09dd104e9670b0784347e8b9b2d1912be849e9d287c277a5fe99e2"
+        },
+        "materialBinding": {
+          "schemaVersion": "ps2-denovo-business-binding-v1",
+          "materialPins": {
+            "bundleRawSha256": "93c249caaa5af50169322fc846eab68f80692869ae4710247be6effd9c6c14a0",
+            "bundleCanonicalSha256": "1df6023e85983b01e43d4f2464425bcb06a4b5f162826996a480d9ecba04132e"
+          },
+          "context": {
+            "schemaVersion": "evidence-context-v3",
+            "contextId": "context-sha256-f782cd02faafa010b6d4315bf61edc9d945356861d6f56478da3f8e587690b08",
+            "canonicalizationProfile": "varvis-json-c14n-v1",
+            "dataClass": "SYNTHETIC",
+            "scope": {
+              "analysisDomain": "GERMLINE",
+              "diseaseModel": "MENDELIAN",
+              "variantScope": "SMALL_SEQUENCE_VARIANT"
+            },
+            "variant": {
+              "alleleId": "allele-sha256-6b10a2f919d860e42b7d5079b12add999a344429c33104b491bb7067196227e2",
+              "variantType": "SNV",
+              "inputAllele": {
+                "assembly": "GRCh38",
+                "contig": "12",
+                "position": 20202,
+                "reference": "C",
+                "alternate": "T"
+              },
+              "normalizedAllele": {
+                "assembly": "GRCh38",
+                "contig": "12",
+                "position": 20202,
+                "reference": "C",
+                "alternate": "T"
+              },
+              "evidenceQueryAllele": {
+                "assembly": "GRCh38",
+                "contig": "12",
+                "position": 20202,
+                "reference": "C",
+                "alternate": "T"
+              },
+              "normalization": {
+                "status": "UNCHANGED",
+                "method": "synthetic-left-normalizer",
+                "methodVersion": "1.0.0",
+                "referenceSequenceSha256": "360cc8a51f2b79a6c4894de0614da5c7809a5740f84cb1fee70949469b389287",
+                "refValidation": "MATCH"
+              },
+              "assemblyLineage": {
+                "mappingStatus": "NATIVE"
+              }
+            },
+            "gene": {
+              "hgncId": "HGNC:900002",
+              "symbol": "TEST_ONLY_BETA"
+            },
+            "disease": {
+              "mondoId": "MONDO:0900002",
+              "label": "Fictional TEST_ONLY Café beta"
+            },
+            "moi": "AUTOSOMAL_DOMINANT",
+            "patientContext": {
+              "patientContextId": "patient-context-test-ps2-beta",
+              "familyContextId": "family-context-test-ps2-beta",
+              "role": "PROBAND",
+              "affectedStatus": "AFFECTED",
+              "sex": "UNKNOWN"
+            },
+            "contextCompleteness": {
+              "status": "COMPLETE",
+              "missingFields": []
+            }
+          },
+          "caseId": "test-case-beta",
+          "observationId": "test-observation-beta",
+          "observationVersion": "test-r1-2",
+          "occurrenceId": "test-occurrence-family-beta-proband",
+          "familyId": "family-context-test-ps2-beta",
+          "factsSha256": "874389302e4456e738a837e2af2fb6d2d5b6f83cac7dc06ce83eb78b5c863c92",
+          "assessmentSha256": "3b20fbc58c78de2ddcb9fa02a8d03ed08b3f82f5eda6eef85b1756791e111b59",
+          "policySha256": "980cf243160ca94f419eddc3d5cd21cb3795daca353a2bf00f1787297b5b7317",
+          "catalogSha256": "0d1dd5a6c8e272e746921f6e5ff4687723f2a911ec0e85d32ae42286adcba767",
+          "registryBinding": {
+            "registryId": "acmg-rule-registry-ps2-denovo-core-2026-09-28",
+            "registrySha256": "5262951a58366e7a1ae33c36d1821510ccc37b521ad07ec1a4b3e7b9133f8d8f",
+            "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-ps2-denovo-core-2026-09-28.json"
+          },
+          "executionProfile": {
+            "profileId": "acmg-ps2-denovo-development-v1",
+            "profileVersion": "1.0.0",
+            "requiredDeclaration": "ordinary-ps2-denovo-v1",
+            "formalEnabled": false,
+            "automaticTrigger": false,
+            "classificationEnabled": false,
+            "adoptionSupported": false,
+            "enabledCriteria": [
+              "ACMG_AMP_2015:PS2"
+            ],
+            "ps2MaterialPins": {
+              "bundleRawSha256": "93c249caaa5af50169322fc846eab68f80692869ae4710247be6effd9c6c14a0",
+              "bundleCanonicalSha256": "1df6023e85983b01e43d4f2464425bcb06a4b5f162826996a480d9ecba04132e"
+            },
+            "contextPreparation": {
+              "schemaVersion": "ps2-denovo-context-preparation-v1",
+              "version": "1.0.0"
+            },
+            "manifestSha256": "08c20957e26e093abe2b8fcf4de6948efb048d6592f47e31bc9d69f633586a6b"
+          }
+        },
+        "clinicalFacts": {
+          "binding": {
+            "observationId": "test-observation-beta",
+            "contextId": "context-sha256-f782cd02faafa010b6d4315bf61edc9d945356861d6f56478da3f8e587690b08",
+            "alleleId": "allele-sha256-6b10a2f919d860e42b7d5079b12add999a344429c33104b491bb7067196227e2",
+            "allele": {
+              "assembly": "GRCh38",
+              "contig": "12",
+              "position": 20202,
+              "reference": "C",
+              "alternate": "T"
+            },
+            "hgncId": "HGNC:900002",
+            "mondoId": "MONDO:0900002",
+            "moi": "AUTOSOMAL_DOMINANT",
+            "patientContextId": "patient-context-test-ps2-beta",
+            "familyContextId": "family-context-test-ps2-beta"
+          },
+          "probandMemberId": "patient-context-test-ps2-beta",
+          "observedAt": "2026-09-28T00:00:00Z",
+          "age": "TEST_ONLY 10 years",
+          "phenotypeObservations": [
+            "TEST_ONLY fictional Café feature; not a real disease"
+          ],
+          "exclusions": [
+            "TEST_ONLY clinical differential assessment completed"
+          ],
+          "phenotypeCategory": "CONSISTENT",
+          "heterogeneity": "HIGH",
+          "familyHistory": "REVIEWED",
+          "familyHistoryBasis": "TEST_ONLY explicitly reviewed available three-generation history",
+          "mosaicism": "REVIEWED_NONMOSAIC",
+          "scopeBasis": "TEST_ONLY no known mosaicism in supplied facts; reviewed assay limits apply",
+          "siblingRecurrence": "REVIEWED_ABSENT",
+          "sourceIds": [
+            "TEST_REPORT_BETA"
+          ],
+          "applicability": {
+            "schemaVersion": "case-family-clinical-applicability-v1",
+            "relatedFamilyHistory": "ABSENT",
+            "singleTrioScope": "APPLICABLE",
+            "sourceIds": [
+              "TEST_REPORT_BETA"
+            ],
+            "reviewer": "TEST_ONLY R1 family-history and single-trio applicability reviewer",
+            "date": "2026-09-28T12:00:00Z",
+            "basis": "TEST_ONLY newly issued structured conclusion: no related family history identified in reviewed fictional facts; this single-trio scope applies subject to the recorded detection limits. Parent affected-status UNKNOWN is preserved, not interpreted as UNAFFECTED."
+          }
+        },
+        "review": {
+          "schemaVersion": "case-family-assessment-v1",
+          "assessmentId": "test-assessment-beta-r1",
+          "assessmentVersion": "2",
+          "factsSha256": "874389302e4456e738a837e2af2fb6d2d5b6f83cac7dc06ce83eb78b5c863c92",
+          "quality": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY quality reviewer",
+            "date": "2026-09-28T00:00:00Z",
+            "basis": "TEST_ONLY explicit quality review of bound facts and detection limitations; no professional approval",
+            "sourceIds": [
+              "TEST_REPORT_BETA"
+            ]
+          },
+          "parentage": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY parentage reviewer",
+            "date": "2026-09-28T00:00:00Z",
+            "basis": "TEST_ONLY explicit parentage review of bound facts and detection limitations; no professional approval",
+            "sourceIds": [
+              "TEST_REPORT_BETA"
+            ]
+          },
+          "clinical": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY R1 reviewer",
+            "date": "2026-09-28T12:00:00Z",
+            "basis": "TEST_ONLY explicit clinical review of bound facts and detection limitations; no professional approval; explicitly reviewed the new structured ABSENT/APPLICABLE conclusions",
+            "sourceIds": [
+              "TEST_REPORT_BETA"
+            ]
+          },
+          "scope": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY R1 reviewer",
+            "date": "2026-09-28T12:00:00Z",
+            "basis": "TEST_ONLY explicit scope review of bound facts and detection limitations; no professional approval; explicitly reviewed the new structured ABSENT/APPLICABLE conclusions",
+            "sourceIds": [
+              "TEST_REPORT_BETA"
+            ]
+          },
+          "contentSha256": "9ff68701765756aa176645be4c2a83d596c89b22cb308ea747c04c8fa04df12f"
+        },
+        "preparationToken": "PS2_DENOVO_CONTEXT@1.0.0:57f9c0cb5d713d73ef3113c0f750eab9c0a92c06d4f47d96544866a940b75c24"
+      },
+      "materialPins": {
+        "bundleRawSha256": "93c249caaa5af50169322fc846eab68f80692869ae4710247be6effd9c6c14a0",
+        "bundleCanonicalSha256": "1df6023e85983b01e43d4f2464425bcb06a4b5f162826996a480d9ecba04132e"
+      },
+      "expectedRequestSha256": "0dae31db9ee68db228fede78fa68fe54394c9ad53c69328d6faa91d3e8d80f1a"
+    }
+  ]
+}

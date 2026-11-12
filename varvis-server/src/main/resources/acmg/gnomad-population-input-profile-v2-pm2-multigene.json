@@ -1,0 +1,3365 @@
+{
+  "profileSchemaVersion": "gnomad-population-input-profile-v2",
+  "profileId": "GNOMAD_POPULATION_INPUT_V2_PM2_SUPPORTING",
+  "profileVersion": "2.3.0",
+  "status": "RUNTIME_EVALUATION_SLICE",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-09-09",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "lineage": {
+    "predecessorProfileId": "GNOMAD_POPULATION_INPUT_V2_PM2_SUPPORTING",
+    "predecessorProfileVersion": "2.2.0",
+    "predecessorProfileSha256": "649f05daac794da9ca57075f394b8e86f57ebd400e1e9e2734028bf41dbe69e7"
+  },
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-e3-p1b-2026-09-02",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "e2941718dbfa5f8eb59f7dd4498c1494215e18c9f6ff63acdec0cce02efae7ad",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-p1b-2026-09-02.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:BA1",
+      "ACMG_AMP_2015:BS1",
+      "ACMG_AMP_2015:PM2"
+    ]
+  },
+  "authorityBindings": [
+    {
+      "authoritySourceId": "authority-acmg-amp-2015-richards",
+      "snapshotSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3"
+    },
+    {
+      "authoritySourceId": "authority-clingen-svi-ba1-2018",
+      "snapshotSha256": "fdf0dc466fc7405dfffce88f95c16137a23edd570f56c2622ec8fa8a01bf84d8"
+    },
+    {
+      "authoritySourceId": "authority-clingen-vcep-gnomad-v4-v3.0",
+      "snapshotSha256": "b84b9c30696aea6fa5cddc0916fe07a3ca647fcbd89d77b3d510bd5cf499106f"
+    },
+    {
+      "authoritySourceId": "authority-clingen-svi-pm2-v1.0",
+      "snapshotSha256": "30745e928c7146a479afdfb7f22230192a8d1d66f9239a463c53667dd9598c59"
+    }
+  ],
+  "evaluation": {
+    "evaluationEnabled": true,
+    "permittedResultStates": [
+      "MET",
+      "NOT_MET",
+      "NOT_EVALUATED"
+    ],
+    "criteria": [
+      {
+        "criterionId": "ACMG_AMP_2015:BA1",
+        "currentDesignation": "BA1",
+        "baseStrength": "STANDALONE",
+        "evaluationEnabled": true,
+        "frequencyRule": {
+          "metricId": "gnomad.joint.faf95max",
+          "sourceInfoId": "fafmax_faf95_max_joint",
+          "comparisonOperator": "GREATER_THAN",
+          "minimumSelectedAncestryAlleleNumber": {
+            "rawValue": "2000",
+            "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+          },
+          "threshold": {
+            "mode": "FIXED",
+            "rawValue": "0.05",
+            "normalizedValue": "0.05",
+            "unit": "fraction"
+          },
+          "missingOrInvalidInputResult": "NOT_EVALUATED",
+          "authoritySourceIds": [
+            "authority-clingen-svi-ba1-2018",
+            "authority-clingen-vcep-gnomad-v4-v3.0"
+          ],
+          "exceptionPolicy": {
+            "policyId": "clingen-svi-ba1-exception-process-2018",
+            "authoritySourceId": "authority-clingen-svi-ba1-2018",
+            "sourceUrl": "https://clinicalgenome.org/site/assets/files/3460/ba1_exception_list_07_30_2018.pdf",
+            "snapshotDate": "2018-07-30",
+            "sourceSnapshotSha256": "fdf0dc466fc7405dfffce88f95c16137a23edd570f56c2622ec8fa8a01bf84d8",
+            "snapshotStatus": "READY",
+            "entryCount": 9,
+            "entrySetSha256": "27624dccfc9719cfe5361296b96fbb64df2edaa7703b815d1b29c7c796383c0d",
+            "entries": [
+              {
+                "caid": "CA114709",
+                "assembly": "GRCh38",
+                "contig": "3",
+                "position": 128879647,
+                "reference": "C",
+                "alternate": "CTAAG"
+              },
+              {
+                "caid": "CA172210",
+                "assembly": "GRCh38",
+                "contig": "13",
+                "position": 20189473,
+                "reference": "C",
+                "alternate": "T"
+              },
+              {
+                "caid": "CA113797",
+                "assembly": "GRCh38",
+                "contig": "6",
+                "position": 26090951,
+                "reference": "C",
+                "alternate": "G"
+              },
+              {
+                "caid": "CA113795",
+                "assembly": "GRCh38",
+                "contig": "6",
+                "position": 26092913,
+                "reference": "G",
+                "alternate": "A"
+              },
+              {
+                "caid": "CA280114",
+                "assembly": "GRCh38",
+                "contig": "16",
+                "position": 3249586,
+                "reference": "G",
+                "alternate": "A"
+              },
+              {
+                "caid": "CA280116",
+                "assembly": "GRCh38",
+                "contig": "16",
+                "position": 3249468,
+                "reference": "C",
+                "alternate": "T"
+              },
+              {
+                "caid": "CA210261",
+                "assembly": "GRCh38",
+                "contig": "13",
+                "position": 72835359,
+                "reference": "G",
+                "alternate": "A"
+              },
+              {
+                "caid": "CA312214",
+                "assembly": "GRCh38",
+                "contig": "12",
+                "position": 120737875,
+                "reference": "C",
+                "alternate": "T"
+              },
+              {
+                "caid": "CA090886",
+                "assembly": "GRCh38",
+                "contig": "3",
+                "position": 15645186,
+                "reference": "G",
+                "alternate": "C"
+              }
+            ],
+            "matchMode": "EXACT_ASSEMBLY_CONTIG_POSITION_REF_ALT",
+            "allowedOutcomes": [
+              "NOT_HIT",
+              "HIT",
+              "UNKNOWN",
+              "AMBIGUOUS"
+            ],
+            "requiredOutcomeForMet": "NOT_HIT",
+            "hitOrUnknownOrAmbiguousResult": "NOT_EVALUATED"
+          }
+        }
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "currentDesignation": "BS1",
+        "baseStrength": "STRONG",
+        "evaluationEnabled": true,
+        "frequencyRule": {
+          "metricId": "gnomad.joint.faf95max",
+          "sourceInfoId": "fafmax_faf95_max_joint",
+          "comparisonOperator": "GREATER_THAN",
+          "threshold": {
+            "mode": "VERSIONED_DISEASE_MOI_REQUIRED",
+            "selectionKeys": [
+              "gene.hgncId",
+              "disease.mondoId",
+              "moi"
+            ],
+            "noDefaultThreshold": true,
+            "missingAmbiguousOrUnversionedResult": "NOT_EVALUATED"
+          },
+          "thresholdSnapshot": {
+            "snapshotId": "bs1-disease-moi-thresholds-e3-p1a-empty",
+            "version": "1.0.0",
+            "sha256": "1ea515f01f73542b5e3759cec06660ee9b942148413a5a4d905a609b484d11fa",
+            "records": []
+          },
+          "missingOrInvalidInputResult": "NOT_EVALUATED",
+          "authoritySourceIds": [
+            "authority-acmg-amp-2015-richards",
+            "authority-clingen-vcep-gnomad-v4-v3.0"
+          ]
+        }
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:PM2",
+        "currentDesignation": "PM2_SUPPORTING",
+        "baseStrength": "SUPPORTING",
+        "evaluationEnabled": true,
+        "populationRule": {
+          "jointResourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+          "jointAbsenceRequirement": {
+            "exactAlleleRequired": true,
+            "requiredResourceExecutionStatus": "SUCCEEDED",
+            "requiredResourceAvailabilityStatus": "AVAILABLE",
+            "requiredQueryOutcomeStatus": "NO_RECORD",
+            "requiredResourceApplicabilityStatus": "APPLICABLE",
+            "noRecordCreatesFrequencyMeasurement": false
+          },
+          "jointHitRequirement": {
+            "frequencyMetricId": "POLICY_SELECTED_METRIC",
+            "contextPolicyRequired": true,
+            "missingContextPolicyResult": "NOT_EVALUATED",
+            "metricSelectionReason": "Versioned PM2-specific policy; never inferred from BA1 or BS1."
+          },
+          "policySelectionKeys": [
+            "gene.hgncId",
+            "disease.mondoId",
+            "moi"
+          ],
+          "policyRecordContract": {
+            "requiredFields": [
+              "policyId",
+              "version",
+              "gene.hgncId",
+              "disease.mondoId",
+              "moi",
+              "resourceReleaseBindings",
+              "allowWellCoveredAbsence",
+              "allSitesCallability",
+              "authority"
+            ],
+            "resourceReleaseBindingFields": [
+              "resourceId",
+              "resourceVersion",
+              "identityFingerprintSha256"
+            ],
+            "maximumAlleleFrequencyFields": [
+              "metricId",
+              "rawValue",
+              "comparisonOperator"
+            ],
+            "allowedFrequencyComparisonOperators": [
+              "LESS_THAN",
+              "LESS_THAN_OR_EQUAL"
+            ],
+            "callability": {
+              "satisfactionMode": "ANY_INDEPENDENT",
+              "datasetTokens": [
+                "EXOMES",
+                "GENOMES"
+              ],
+              "minimumAdjAlleleNumberFields": [
+                "rawValue",
+                "comparisonOperator"
+              ],
+              "allowedAlleleNumberComparisonOperators": [
+                "GREATER_THAN",
+                "GREATER_THAN_OR_EQUAL"
+              ],
+              "exomeExcludedWhenAnyFlagsTrue": [
+                "outside_broad_capture_region",
+                "outside_ukb_capture_region",
+                "outside_broad_calling_region",
+                "outside_ukb_calling_region"
+              ],
+              "exomeAndGenomeAlleleNumbersCombined": false
+            },
+            "authorityFields": [
+              "authoritySourceId",
+              "authorityVersion",
+              "snapshotSha256"
+            ],
+            "exactlyOneOf": [
+              "maximumAlleleFrequency",
+              "maximumAlleleCount"
+            ],
+            "alleleCountRequiredFields": [
+              "maximumAlleleCount",
+              "minimumObservedAlleleNumber"
+            ]
+          },
+          "policySnapshot": {
+            "snapshotId": "pm2-cspec-context-policies-2026-09-09",
+            "version": "2.0.0",
+            "records": [
+              {
+                "policyId": "PM2_VHL_VON_HIPPEL_LINDAU_AD_V1",
+                "version": "1.1.0",
+                "gene": {
+                  "hgncId": "HGNC:12687"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0008667"
+                },
+                "moi": "AUTOSOMAL_DOMINANT",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.00000156",
+                  "comparisonOperator": "LESS_THAN_OR_EQUAL",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "status": "NOT_ENABLED_WITHOUT_POSITION_COVERAGE_PROOF",
+                  "reasonCode": "PM2_ABSENCE_DETECTION_INSUFFICIENT",
+                  "noRecordIsZero": false
+                },
+                "missingFafResult": "NOT_EVALUATED",
+                "authority": {
+                  "authoritySourceId": "authority-clingen-vhl-cspec-1.1",
+                  "authorityVersion": "1.1",
+                  "snapshotSha256": "0e599b94d0e15d1cf41db4ea8a920a766fa150cb47a320f7d00ca963686335cb",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN078?version=1.1",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "HGNC:12687 / MONDO:0008667 / AUTOSOMAL_DOMINANT; PM2 Supporting only",
+                  "specificationId": "GN078"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "limitations": [
+                  "Absence requires an independently justified callability policy; no universal AN threshold is inferred.",
+                  "Other no-FAF cases require review; the singleton branch requires AC=1 and consistent population measurements."
+                ],
+                "missingFafPolicy": {
+                  "mode": "VERIFIED_SINGLETON",
+                  "maximumAlleleCount": "1"
+                }
+              },
+              {
+                "policyId": "PM2_GN017_HGNC:11621_MONDO:0015967_AUTOSOMAL_DOMINANT",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:11621"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0015967"
+                },
+                "moi": "AUTOSOMAL_DOMINANT",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn017-3.1",
+                  "authorityVersion": "3.1",
+                  "snapshotSha256": "5076b6036f8d1bce84bac1813eefef3625f7a1d58e9519dce72648e98631cb07",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+                  "specificationId": "GN017",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.000003",
+                  "comparisonOperator": "LESS_THAN_OR_EQUAL",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                }
+              },
+              {
+                "policyId": "PM2_GN085_HGNC:5024_MONDO:0015967_AUTOSOMAL_DOMINANT",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:5024"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0015967"
+                },
+                "moi": "AUTOSOMAL_DOMINANT",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn085-4.0",
+                  "authorityVersion": "4.0",
+                  "snapshotSha256": "1762c47d7309285054c45c8931549782db4b7b12854312bd1e3ed810e4ec57df",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN085?version=4.0",
+                  "specificationId": "GN085",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.000003",
+                  "comparisonOperator": "LESS_THAN_OR_EQUAL",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                }
+              },
+              {
+                "policyId": "PM2_GN114_HGNC:186_MONDO:0007064_AUTOSOMAL_RECESSIVE",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:186"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0007064"
+                },
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn114-2.2",
+                  "authorityVersion": "2.2",
+                  "snapshotSha256": "b35687f326e78135c404c815601de955b701993464a5cd7541478f0df23ec313",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN114?version=2.2",
+                  "specificationId": "GN114",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.0001742",
+                  "comparisonOperator": "LESS_THAN",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "maximumHomozygoteCount": "0"
+              },
+              {
+                "policyId": "PM2_GN116_HGNC:17642_MONDO:0011225_AUTOSOMAL_RECESSIVE",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:17642"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0011225"
+                },
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn116-2.2",
+                  "authorityVersion": "2.2",
+                  "snapshotSha256": "19bf22e15a2c12d2b58f0c2647edddf62f7f12bc6cec8c3e29d3afbfabff1f0b",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN116?version=2.2",
+                  "specificationId": "GN116",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.00003266",
+                  "comparisonOperator": "LESS_THAN",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "maximumHomozygoteCount": "0"
+              },
+              {
+                "policyId": "PM2_GN119_HGNC:6024_MONDO:0012163_AUTOSOMAL_RECESSIVE",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:6024"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0012163"
+                },
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn119-2.2",
+                  "authorityVersion": "2.2",
+                  "snapshotSha256": "dfbfb10b06c4f770ce014fb17f68241fb3d268605f6b7b7602df4199564577d7",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN119?version=2.2",
+                  "specificationId": "GN119",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.00004129",
+                  "comparisonOperator": "LESS_THAN",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "maximumHomozygoteCount": "0"
+              },
+              {
+                "policyId": "PM2_GN121_HGNC:6193_MONDO:0010938_AUTOSOMAL_RECESSIVE",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:6193"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0010938"
+                },
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn121-2.3",
+                  "authorityVersion": "2.3",
+                  "snapshotSha256": "e97786c230a8b6bfbb4df452b91c92f1ad191fb3c0348a552cfe30c38f41440a",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN121?version=2.3",
+                  "specificationId": "GN121",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.000115",
+                  "comparisonOperator": "LESS_THAN",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "maximumHomozygoteCount": "0"
+              },
+              {
+                "policyId": "PM2_GN123_HGNC:9831_MONDO:0000572_AUTOSOMAL_RECESSIVE",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:9831"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0000572"
+                },
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn123-2.2",
+                  "authorityVersion": "2.2",
+                  "snapshotSha256": "41dafe044af07e0dc927c1672eae7b45f43eb9425f87cca3bb0c5ce89990daa0",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN123?version=2.2",
+                  "specificationId": "GN123",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.000102",
+                  "comparisonOperator": "LESS_THAN",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "maximumHomozygoteCount": "0"
+              },
+              {
+                "policyId": "PM2_GN124_HGNC:9832_MONDO:0000573_AUTOSOMAL_RECESSIVE",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:9832"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0000573"
+                },
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn124-2.2",
+                  "authorityVersion": "2.2",
+                  "snapshotSha256": "c5561e871044640d35e4c918aaf16fbcb458c9f0723c1d8b5204946c248da02b",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN124?version=2.2",
+                  "specificationId": "GN124",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": false,
+                "allSitesCallability": {
+                  "reasonCode": "PM2_ABSENCE_DETECTION_POLICY_REQUIRED"
+                },
+                "maximumAlleleFrequency": {
+                  "metricId": "gnomad.joint.faf95max",
+                  "rawValue": "0.0000588",
+                  "comparisonOperator": "LESS_THAN",
+                  "unit": "fraction"
+                },
+                "jointQualityRequirements": {
+                  "exactAllele": true,
+                  "filter": "PASS",
+                  "ancestrySelection": "GNOMAD_JOINT_FAF95MAX",
+                  "permittedAncestries": [
+                    "afr",
+                    "amr",
+                    "eas",
+                    "mid",
+                    "nfe",
+                    "sas"
+                  ],
+                  "selectedAnMustBePositive": true,
+                  "observedAcMustBePositive": true
+                },
+                "maximumHomozygoteCount": "0"
+              },
+              {
+                "policyId": "PM2_GN147_HGNC:129_MONDO:0100084_AUTOSOMAL_DOMINANT",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:129"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0100084"
+                },
+                "moi": "AUTOSOMAL_DOMINANT",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn147-2.0",
+                  "authorityVersion": "2.0",
+                  "snapshotSha256": "48d8efea9a3cebc3666d3f43055f98c05512864db667b75cd998613fd9613649",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN147?version=2.0",
+                  "specificationId": "GN147",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": true,
+                "allSitesCallability": {
+                  "satisfactionMode": "ANY_INDEPENDENT",
+                  "independentlySufficientDatasets": [
+                    "EXOMES",
+                    "GENOMES"
+                  ],
+                  "exomes": {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "minimumAdjAlleleNumber": {
+                      "rawValue": "2000",
+                      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+                    },
+                    "excludedWhenAnyFlagsTrue": [
+                      "outside_broad_capture_region",
+                      "outside_ukb_capture_region",
+                      "outside_broad_calling_region",
+                      "outside_ukb_calling_region"
+                    ]
+                  },
+                  "genomes": {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "minimumAdjAlleleNumber": {
+                      "rawValue": "2000",
+                      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+                    }
+                  }
+                },
+                "maximumAlleleCount": "1",
+                "minimumObservedAlleleNumber": "2000"
+              },
+              {
+                "policyId": "PM2_GN148_HGNC:2974_MONDO:0018947_AUTOSOMAL_DOMINANT",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:2974"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0018947"
+                },
+                "moi": "AUTOSOMAL_DOMINANT",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn148-1.0",
+                  "authorityVersion": "1.0",
+                  "snapshotSha256": "dce7a73a616ed90b6909e29157f55cc29cca990894a6d72ef5230f1501b988f2",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN148?version=1.0",
+                  "specificationId": "GN148",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": true,
+                "allSitesCallability": {
+                  "satisfactionMode": "ANY_INDEPENDENT",
+                  "independentlySufficientDatasets": [
+                    "EXOMES",
+                    "GENOMES"
+                  ],
+                  "exomes": {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "minimumAdjAlleleNumber": {
+                      "rawValue": "2000",
+                      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+                    },
+                    "excludedWhenAnyFlagsTrue": [
+                      "outside_broad_capture_region",
+                      "outside_ukb_capture_region",
+                      "outside_broad_calling_region",
+                      "outside_ukb_calling_region"
+                    ]
+                  },
+                  "genomes": {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "minimumAdjAlleleNumber": {
+                      "rawValue": "2000",
+                      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+                    }
+                  }
+                },
+                "maximumAlleleCount": "1",
+                "minimumObservedAlleleNumber": "2000"
+              },
+              {
+                "policyId": "PM2_GN150_HGNC:10483_MONDO:0100150_AUTOSOMAL_DOMINANT",
+                "version": "1.0.0",
+                "gene": {
+                  "hgncId": "HGNC:10483"
+                },
+                "disease": {
+                  "mondoId": "MONDO:0100150"
+                },
+                "moi": "AUTOSOMAL_DOMINANT",
+                "resourceReleaseBindings": [
+                  {
+                    "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+                    "resourceVersion": "gnomAD joint v4.1 GRCh38",
+                    "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+                  },
+                  {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+                  },
+                  {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+                    "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+                  }
+                ],
+                "authority": {
+                  "authoritySourceId": "authority-clingen-gn150-2.0",
+                  "authorityVersion": "2.0",
+                  "snapshotSha256": "c1c3c70a9828809ce9d59ebc0b28be9adcc7515897bd5d9b85214ec680e08334",
+                  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN150?version=2.0",
+                  "specificationId": "GN150",
+                  "retrievedOn": "2026-09-09",
+                  "scope": "PM2 only; exact official RuleSet scope"
+                },
+                "scope": {
+                  "assembly": "GRCh38",
+                  "variantType": "NORMALIZED_SMALL_SEQUENCE_VARIANT",
+                  "strength": "SUPPORTING"
+                },
+                "allowWellCoveredAbsence": true,
+                "allSitesCallability": {
+                  "satisfactionMode": "ANY_INDEPENDENT",
+                  "independentlySufficientDatasets": [
+                    "EXOMES",
+                    "GENOMES"
+                  ],
+                  "exomes": {
+                    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "minimumAdjAlleleNumber": {
+                      "rawValue": "2000",
+                      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+                    },
+                    "excludedWhenAnyFlagsTrue": [
+                      "outside_broad_capture_region",
+                      "outside_ukb_capture_region",
+                      "outside_broad_calling_region",
+                      "outside_ukb_calling_region"
+                    ]
+                  },
+                  "genomes": {
+                    "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+                    "minimumAdjAlleleNumber": {
+                      "rawValue": "2000",
+                      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+                    }
+                  }
+                },
+                "maximumAlleleCount": "1",
+                "minimumObservedAlleleNumber": "2000"
+              }
+            ],
+            "defaultResolution": {
+              "status": "REVIEW_REQUIRED",
+              "reasonCode": "PM2_DISEASE_FREQUENCY_PARAMETERS_REQUIRED",
+              "requiredInputs": [
+                "PM2-specific frequency/callability policy with authoritative disease parameters"
+              ],
+              "universalNumericalThreshold": false,
+              "populationEvidencePreparedIndependently": true
+            },
+            "knownSpecificationScopes": [
+              {
+                "specificationId": "GN002",
+                "version": "2.0",
+                "hgncId": "HGNC:7577",
+                "symbol": "MYH7",
+                "mondoId": "MONDO:0005021",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN002?version=2.0",
+                "authoritySha256": "3e233606e89e2e80b978f3925e042bb54a25888f8751bddaa41405e8731e3427"
+              },
+              {
+                "specificationId": "GN002",
+                "version": "2.0",
+                "hgncId": "HGNC:7577",
+                "symbol": "MYH7",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN002?version=2.0",
+                "authoritySha256": "3e233606e89e2e80b978f3925e042bb54a25888f8751bddaa41405e8731e3427"
+              },
+              {
+                "specificationId": "GN003",
+                "version": "3.2",
+                "hgncId": "HGNC:9588",
+                "symbol": "PTEN",
+                "mondoId": "MONDO:0017623",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN003?version=3.2",
+                "authoritySha256": "f38517db78443a68e9a651ae68c7828740b66f82ad19756462187ef752720d18"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:13733",
+                "symbol": "CDH23",
+                "mondoId": "MONDO:0019501",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:13733",
+                "symbol": "CDH23",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:2180",
+                "symbol": "COCH",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal Dominant",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:4284",
+                "symbol": "GJB2",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:6298",
+                "symbol": "KCNQ4",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal Dominant",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:7605",
+                "symbol": "MYO6",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal Dominant",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:7606",
+                "symbol": "MYO7A",
+                "mondoId": "MONDO:0019501",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:7606",
+                "symbol": "MYO7A",
+                "mondoId": "MONDO:0019497",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:8818",
+                "symbol": "SLC26A4",
+                "mondoId": "MONDO:0010134",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:11720",
+                "symbol": "TECTA",
+                "mondoId": "MONDO:0019497",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN005",
+                "version": "2.0",
+                "hgncId": "HGNC:12601",
+                "symbol": "USH2A",
+                "mondoId": "MONDO:0019501",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN005?version=2.0",
+                "authoritySha256": "ba91e6c060da9ce88b8735fdb8068e1a3173aa69f88fac5d4a038881ce8bf342"
+              },
+              {
+                "specificationId": "GN006",
+                "version": "2.0",
+                "hgncId": "HGNC:8582",
+                "symbol": "PAH",
+                "mondoId": "MONDO:0009861",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN006?version=2.0",
+                "authoritySha256": "51ce29c6600547ff9ca4da03d5437a4e8a3121883ec006da250b01114142ec37"
+              },
+              {
+                "specificationId": "GN007",
+                "version": "3.1",
+                "hgncId": "HGNC:1748",
+                "symbol": "CDH1",
+                "mondoId": "MONDO:0007648",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN007?version=3.1",
+                "authoritySha256": "fb9b756b440b37b09c9bd8f52cb2e68bd785c11ac4023c2fa719a04869593b28"
+              },
+              {
+                "specificationId": "GN008",
+                "version": "3.1",
+                "hgncId": "HGNC:10471",
+                "symbol": "RUNX1",
+                "mondoId": "MONDO:0011071",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN008?version=3.1",
+                "authoritySha256": "5edf0f9ff8d24a79f2fec1ba12b02d971bda5a3f5352c7f28c58e17fbbd85e36"
+              },
+              {
+                "specificationId": "GN009",
+                "version": "2.4",
+                "hgncId": "HGNC:11998",
+                "symbol": "TP53",
+                "mondoId": "MONDO:0018875",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN009?version=2.4",
+                "authoritySha256": "cde9178e2904004cf714cd3fe48f41016ba0d10ca7adf07edf7a908a066144d3"
+              },
+              {
+                "specificationId": "GN010",
+                "version": "2.0",
+                "hgncId": "HGNC:4065",
+                "symbol": "GAA",
+                "mondoId": "MONDO:0009290",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN010?version=2.0",
+                "authoritySha256": "1577386d456023d4495983ee1bd8d12ef2a594456430cf1d770da4626bc52c58"
+              },
+              {
+                "specificationId": "GN011",
+                "version": "2.1",
+                "hgncId": "HGNC:6138",
+                "symbol": "ITGA2B",
+                "mondoId": "MONDO:0100326",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN011?version=2.1",
+                "authoritySha256": "ffc8076ccbc2bc0dda81f73a6c683c91556330192f4ac39b4d0f2d6b3f126de9"
+              },
+              {
+                "specificationId": "GN011",
+                "version": "2.1",
+                "hgncId": "HGNC:6156",
+                "symbol": "ITGB3",
+                "mondoId": "MONDO:0100326",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN011?version=2.1",
+                "authoritySha256": "ffc8076ccbc2bc0dda81f73a6c683c91556330192f4ac39b4d0f2d6b3f126de9"
+              },
+              {
+                "specificationId": "GN012",
+                "version": "2.0",
+                "hgncId": "HGNC:10483",
+                "symbol": "RYR1",
+                "mondoId": "MONDO:0018493",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN012?version=2.0",
+                "authoritySha256": "bf6e6816075639b26d121ee0a9200eb3d8cd500cbdf1d20c55be631039e0b8b6"
+              },
+              {
+                "specificationId": "GN013",
+                "version": "1.2",
+                "hgncId": "HGNC:6547",
+                "symbol": "LDLR",
+                "mondoId": "MONDO:0007750",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN013?version=1.2",
+                "authoritySha256": "2111e5fbf9713d980b332219a36eb5e207c4a2f9ffce72e4a23f4fd3d0153ee4"
+              },
+              {
+                "specificationId": "GN014",
+                "version": "1.0",
+                "hgncId": "HGNC:9179",
+                "symbol": "POLG",
+                "mondoId": "MONDO:0044970",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN014?version=1.0",
+                "authoritySha256": "c03a6abfdee1115e64a3547e5fcd1c35a8f9ca64ac3cc631c33422eb810ab59e"
+              },
+              {
+                "specificationId": "GN014",
+                "version": "1.0",
+                "hgncId": "HGNC:8806",
+                "symbol": "PDHA1",
+                "mondoId": "MONDO:0019169",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN014?version=1.0",
+                "authoritySha256": "c03a6abfdee1115e64a3547e5fcd1c35a8f9ca64ac3cc631c33422eb810ab59e"
+              },
+              {
+                "specificationId": "GN014",
+                "version": "1.0",
+                "hgncId": "HGNC:23287",
+                "symbol": "ETHE1",
+                "mondoId": "MONDO:0011229",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN014?version=1.0",
+                "authoritySha256": "c03a6abfdee1115e64a3547e5fcd1c35a8f9ca64ac3cc631c33422eb810ab59e"
+              },
+              {
+                "specificationId": "GN014",
+                "version": "1.0",
+                "hgncId": "HGNC:16266",
+                "symbol": "SLC19A3",
+                "mondoId": "MONDO:0011841",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN014?version=1.0",
+                "authoritySha256": "c03a6abfdee1115e64a3547e5fcd1c35a8f9ca64ac3cc631c33422eb810ab59e"
+              },
+              {
+                "specificationId": "GN017",
+                "version": "3.1",
+                "hgncId": "HGNC:11621",
+                "symbol": "HNF1A",
+                "mondoId": "MONDO:0015967",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal Dominant",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+                "authoritySha256": "5076b6036f8d1bce84bac1813eefef3625f7a1d58e9519dce72648e98631cb07"
+              },
+              {
+                "specificationId": "GN018",
+                "version": "1.1",
+                "hgncId": "HGNC:393",
+                "symbol": "AKT3",
+                "mondoId": "MONDO:0016054",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN018?version=1.1",
+                "authoritySha256": "976c38a0318a1b367126b4e4a8540005d6ddc23c87c31dd0e7f602d4f4ee3df0"
+              },
+              {
+                "specificationId": "GN018",
+                "version": "1.1",
+                "hgncId": "HGNC:3942",
+                "symbol": "MTOR",
+                "mondoId": "MONDO:0016054",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN018?version=1.1",
+                "authoritySha256": "976c38a0318a1b367126b4e4a8540005d6ddc23c87c31dd0e7f602d4f4ee3df0"
+              },
+              {
+                "specificationId": "GN018",
+                "version": "1.1",
+                "hgncId": "HGNC:8975",
+                "symbol": "PIK3CA",
+                "mondoId": "MONDO:0016054",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN018?version=1.1",
+                "authoritySha256": "976c38a0318a1b367126b4e4a8540005d6ddc23c87c31dd0e7f602d4f4ee3df0"
+              },
+              {
+                "specificationId": "GN018",
+                "version": "1.1",
+                "hgncId": "HGNC:8980",
+                "symbol": "PIK3R2",
+                "mondoId": "MONDO:0016054",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN018?version=1.1",
+                "authoritySha256": "976c38a0318a1b367126b4e4a8540005d6ddc23c87c31dd0e7f602d4f4ee3df0"
+              },
+              {
+                "specificationId": "GN019",
+                "version": "2.1",
+                "hgncId": "HGNC:7610",
+                "symbol": "MYOC",
+                "mondoId": "MONDO:0005338",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN019?version=2.1",
+                "authoritySha256": "64883d201cad20d3866935aedba00755249dbae08b8fc5e09a33ca979776fcb4"
+              },
+              {
+                "specificationId": "GN021",
+                "version": "2.2",
+                "hgncId": "HGNC:92",
+                "symbol": "ACADVL",
+                "mondoId": "MONDO:0008723",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN021?version=2.2",
+                "authoritySha256": "7d21c8d7360e74aa03e0fbf622b3400f694f405c492ed31c75ae3bc24add6db2"
+              },
+              {
+                "specificationId": "GN022",
+                "version": "1.0",
+                "hgncId": "HGNC:3603",
+                "symbol": "FBN1",
+                "mondoId": "MONDO:0007947",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN022?version=1.0",
+                "authoritySha256": "4a2e069d80452ca8ae0a1a72f7f4e5d315941c1957ed51483493130aba5f239a"
+              },
+              {
+                "specificationId": "GN023",
+                "version": "1.0",
+                "hgncId": "HGNC:7594",
+                "symbol": "MYO15A",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN023?version=1.0",
+                "authoritySha256": "97104fa21f50d655db708f58eae56d40a63f044bf47f503e0cf029fd792d4ad9"
+              },
+              {
+                "specificationId": "GN023",
+                "version": "1.0",
+                "hgncId": "HGNC:8515",
+                "symbol": "OTOF",
+                "mondoId": "MONDO:0019497",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal Recessive",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN023?version=1.0",
+                "authoritySha256": "97104fa21f50d655db708f58eae56d40a63f044bf47f503e0cf029fd792d4ad9"
+              },
+              {
+                "specificationId": "GN025",
+                "version": "2.0",
+                "hgncId": "HGNC:4175",
+                "symbol": "GATM",
+                "mondoId": "MONDO:0012996",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN025?version=2.0",
+                "authoritySha256": "335d221199bdd0cb0f90b5884758026af67cef7b51ba5a07203ef53e933d6ad3"
+              },
+              {
+                "specificationId": "GN026",
+                "version": "2.0",
+                "hgncId": "HGNC:4136",
+                "symbol": "GAMT",
+                "mondoId": "MONDO:0012999",
+                "moi": null,
+                "sourceMoi": null,
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN026?version=2.0",
+                "authoritySha256": "2841beff59e7ddf9e72d7f84c96426b50adac609c4fae701bc7f85db9d3fda97"
+              },
+              {
+                "specificationId": "GN027",
+                "version": "2.1",
+                "hgncId": "HGNC:11055",
+                "symbol": "SLC6A8",
+                "mondoId": "MONDO:0010305",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN027?version=2.1",
+                "authoritySha256": "06d04dffd1e993f55e7fe186276a360de04bfb8ea4a3c7f919c553e6357c8323"
+              },
+              {
+                "specificationId": "GN067",
+                "version": "2.0",
+                "hgncId": "HGNC:10585",
+                "symbol": "SCN1A",
+                "mondoId": "MONDO:0100135",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN067?version=2.0",
+                "authoritySha256": "f103a0f6a207f8cca6220495a9e594987289ef7b52482815906dd05853e74721"
+              },
+              {
+                "specificationId": "GN067",
+                "version": "2.0",
+                "hgncId": "HGNC:10585",
+                "symbol": "SCN1A",
+                "mondoId": "MONDO:0018214",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN067?version=2.0",
+                "authoritySha256": "f103a0f6a207f8cca6220495a9e594987289ef7b52482815906dd05853e74721"
+              },
+              {
+                "specificationId": "GN067",
+                "version": "2.0",
+                "hgncId": "HGNC:10585",
+                "symbol": "SCN1A",
+                "mondoId": "MONDO:0100062",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN067?version=2.0",
+                "authoritySha256": "f103a0f6a207f8cca6220495a9e594987289ef7b52482815906dd05853e74721"
+              },
+              {
+                "specificationId": "GN068",
+                "version": "2.0",
+                "hgncId": "HGNC:10588",
+                "symbol": "SCN2A",
+                "mondoId": "MONDO:0100038",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN068?version=2.0",
+                "authoritySha256": "9683bd6b68cb34f4fd886df52239cbbfb3ad6f5f5ca3f7aefbf10760ecd4b5c4"
+              },
+              {
+                "specificationId": "GN069",
+                "version": "2.1",
+                "hgncId": "HGNC:10590",
+                "symbol": "SCN3A",
+                "mondoId": "MONDO:0100062",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN069?version=2.1",
+                "authoritySha256": "cc60f8996c6f8193e74d1daf9acfd2d1a2941cec9a28cfb9817aa067f01822d5"
+              },
+              {
+                "specificationId": "GN070",
+                "version": "2.0",
+                "hgncId": "HGNC:10596",
+                "symbol": "SCN8A",
+                "mondoId": "MONDO:0100038",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN070?version=2.0",
+                "authoritySha256": "3390e8c0542a4e1a1ac55cf47111cce85904676c648e0ba8d369736e9c9187c9"
+              },
+              {
+                "specificationId": "GN071",
+                "version": "2.0",
+                "hgncId": "HGNC:3546",
+                "symbol": "F8",
+                "mondoId": "MONDO:0010602",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN071?version=2.0",
+                "authoritySha256": "7b2cfd66fe0ced26a982be84c8f9ae4ca6f08b14e208986b466470e9affebe1e"
+              },
+              {
+                "specificationId": "GN076",
+                "version": "2.0",
+                "hgncId": "HGNC:10586",
+                "symbol": "SCN1B",
+                "mondoId": "MONDO:0018214",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN076?version=2.0",
+                "authoritySha256": "edfbd651ac93cb240113a1af6ba201a71078d6fb238398375f2d4bfd3d1ea5e1"
+              },
+              {
+                "specificationId": "GN076",
+                "version": "2.0",
+                "hgncId": "HGNC:10586",
+                "symbol": "SCN1B",
+                "mondoId": "MONDO:0100062",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN076?version=2.0",
+                "authoritySha256": "edfbd651ac93cb240113a1af6ba201a71078d6fb238398375f2d4bfd3d1ea5e1"
+              },
+              {
+                "specificationId": "GN078",
+                "version": "1.1",
+                "hgncId": "HGNC:12687",
+                "symbol": "VHL",
+                "mondoId": "MONDO:0008667",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN078?version=1.1",
+                "authoritySha256": "358d93211443394a3dc1c5a995a8ce88b29a70d126ace0797abbc11dd563cd70"
+              },
+              {
+                "specificationId": "GN079",
+                "version": "1.1",
+                "hgncId": "HGNC:4439",
+                "symbol": "GP1BA",
+                "mondoId": "MONDO:0009276",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN079?version=1.1",
+                "authoritySha256": "1861fd06e2a6a8b65fd767f9fea7cdcd8c52755d21772de8fc6cbc5e246e41bd"
+              },
+              {
+                "specificationId": "GN080",
+                "version": "2.1",
+                "hgncId": "HGNC:3551",
+                "symbol": "F9",
+                "mondoId": "MONDO:0010604",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN080?version=2.1",
+                "authoritySha256": "fcb042fd696b57ac1e36350884ecf07dcf25b05d319e70c18440579019b46159"
+              },
+              {
+                "specificationId": "GN081",
+                "version": "1.0",
+                "hgncId": "HGNC:12726",
+                "symbol": "VWF",
+                "mondoId": "MONDO:0015628",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN081?version=1.0",
+                "authoritySha256": "1b3ce7ff5126b4537603a0a21e001acc33439add9b10e8d89b050bd78295bc72"
+              },
+              {
+                "specificationId": "GN081",
+                "version": "1.0",
+                "hgncId": "HGNC:12726",
+                "symbol": "VWF",
+                "mondoId": "MONDO:0015629",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN081?version=1.0",
+                "authoritySha256": "1b3ce7ff5126b4537603a0a21e001acc33439add9b10e8d89b050bd78295bc72"
+              },
+              {
+                "specificationId": "GN081",
+                "version": "1.0",
+                "hgncId": "HGNC:12726",
+                "symbol": "VWF",
+                "mondoId": "MONDO:0015630",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN081?version=1.0",
+                "authoritySha256": "1b3ce7ff5126b4537603a0a21e001acc33439add9b10e8d89b050bd78295bc72"
+              },
+              {
+                "specificationId": "GN081",
+                "version": "1.0",
+                "hgncId": "HGNC:12726",
+                "symbol": "VWF",
+                "mondoId": "MONDO:0013304",
+                "moi": null,
+                "sourceMoi": "Undetermined mode of inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN081?version=1.0",
+                "authoritySha256": "1b3ce7ff5126b4537603a0a21e001acc33439add9b10e8d89b050bd78295bc72"
+              },
+              {
+                "specificationId": "GN081",
+                "version": "1.0",
+                "hgncId": "HGNC:12726",
+                "symbol": "VWF",
+                "mondoId": "MONDO:0024574",
+                "moi": null,
+                "sourceMoi": "Other",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN081?version=1.0",
+                "authoritySha256": "1b3ce7ff5126b4537603a0a21e001acc33439add9b10e8d89b050bd78295bc72"
+              },
+              {
+                "specificationId": "GN082",
+                "version": "1.1",
+                "hgncId": "HGNC:4440",
+                "symbol": "GP1BB",
+                "mondoId": "MONDO:0009276",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN082?version=1.1",
+                "authoritySha256": "12fee67b6824dfe1bdf6736f27a9b20f0dd13f71e318acae633c64856d292ee9"
+              },
+              {
+                "specificationId": "GN083",
+                "version": "1.1",
+                "hgncId": "HGNC:4444",
+                "symbol": "GP9",
+                "mondoId": "MONDO:0009276",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN083?version=1.1",
+                "authoritySha256": "221fef100a294ee6e7b64c15bf714dafb8304d48b215328b959acf0bd2c117d5"
+              },
+              {
+                "specificationId": "GN085",
+                "version": "4.0",
+                "hgncId": "HGNC:5024",
+                "symbol": "HNF4A",
+                "mondoId": "MONDO:0015967",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN085?version=4.0",
+                "authoritySha256": "1762c47d7309285054c45c8931549782db4b7b12854312bd1e3ed810e4ec57df"
+              },
+              {
+                "specificationId": "GN086",
+                "version": "3.1",
+                "hgncId": "HGNC:4195",
+                "symbol": "GCK",
+                "mondoId": "MONDO:0015967",
+                "moi": null,
+                "sourceMoi": "Semidominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN086?version=3.1",
+                "authoritySha256": "20f771eed1137dca9c29b3ebc9eb7123415da82dcd5b163c6e5d279a6f9522ad"
+              },
+              {
+                "specificationId": "GN087",
+                "version": "1.4",
+                "hgncId": "HGNC:7227",
+                "symbol": "MRAS",
+                "mondoId": "MONDO:0021060",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN087?version=1.4",
+                "authoritySha256": "7afc65e79362782d3b4bccf61d1b11e7bbfc3fc63e2027bdbd656f14dce67219"
+              },
+              {
+                "specificationId": "GN088",
+                "version": "1.3",
+                "hgncId": "HGNC:10031",
+                "symbol": "RMRP",
+                "mondoId": "MONDO:0009595",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN088?version=1.3",
+                "authoritySha256": "87def64e97b4485383ffd0eba8dc2a9d1c121ca4231a7f0e7b1650b8a30b6cb0"
+              },
+              {
+                "specificationId": "GN089",
+                "version": "2.1",
+                "hgncId": "HGNC:583",
+                "symbol": "APC",
+                "mondoId": "MONDO:0021056",
+                "moi": null,
+                "sourceMoi": " Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN089?version=2.1",
+                "authoritySha256": "c424ada4f8e9b0eff534613e59fece66b52d6a5a54f2b7d288e32b13cf34eddd"
+              },
+              {
+                "specificationId": "GN090",
+                "version": "1.0",
+                "hgncId": "HGNC:12726",
+                "symbol": "VWF",
+                "mondoId": "MONDO:0015631",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN090?version=1.0",
+                "authoritySha256": "8c0af39350b9a133d1228661b933a44300fb5baf327cc95ddc563c490739f9a1"
+              },
+              {
+                "specificationId": "GN091",
+                "version": "1.2",
+                "hgncId": "HGNC:5391",
+                "symbol": "IDUA",
+                "mondoId": "MONDO:0001586",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN091?version=1.2",
+                "authoritySha256": "575d6135898054da28cece3b91544028ac789fec96ea06e3f8d235f4d68aabdf"
+              },
+              {
+                "specificationId": "GN092",
+                "version": "1.2",
+                "hgncId": "HGNC:1100",
+                "symbol": "BRCA1",
+                "mondoId": "MONDO:0700268",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN092?version=1.2",
+                "authoritySha256": "32ab2249c580c4b64170a7f523e0ca7161860aafe3eef2cdc184c1643078cd0c"
+              },
+              {
+                "specificationId": "GN094",
+                "version": "1.3",
+                "hgncId": "HGNC:6742",
+                "symbol": "LZTR1",
+                "mondoId": "MONDO:0021060",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN094?version=1.3",
+                "authoritySha256": "e620001bc026c27950fbd444213f364cd203ff3609659c053b5a10d792328b2c"
+              },
+              {
+                "specificationId": "GN095",
+                "version": "1.0",
+                "hgncId": "HGNC:7551",
+                "symbol": "MYBPC3",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN095?version=1.0",
+                "authoritySha256": "b90677f2ffb07801cc17efdc412d758c17494eec0eeae733cc79836bf26c7fbb"
+              },
+              {
+                "specificationId": "GN097",
+                "version": "1.2",
+                "hgncId": "HGNC:1101",
+                "symbol": "BRCA2",
+                "mondoId": "MONDO:0700269",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN097?version=1.2",
+                "authoritySha256": "535a7832e43d6ea1a89ce15513127fcbd1038ab8cb198d56a87fc7379725671c"
+              },
+              {
+                "specificationId": "GN098",
+                "version": "1.0",
+                "hgncId": "HGNC:11947",
+                "symbol": "TNNI3",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN098?version=1.0",
+                "authoritySha256": "33f6a3b79f38c8013d2a819f2ed5018c976382d3b460947ad730fd5fc9f61232"
+              },
+              {
+                "specificationId": "GN099",
+                "version": "1.0",
+                "hgncId": "HGNC:11949",
+                "symbol": "TNNT2",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN099?version=1.0",
+                "authoritySha256": "b1424706eecfde78c8007b825f7960779088495044494c4395b4997179dc0dc4"
+              },
+              {
+                "specificationId": "GN099",
+                "version": "1.0",
+                "hgncId": "HGNC:11949",
+                "symbol": "TNNT2",
+                "mondoId": "MONDO:0005021",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN099?version=1.0",
+                "authoritySha256": "b1424706eecfde78c8007b825f7960779088495044494c4395b4997179dc0dc4"
+              },
+              {
+                "specificationId": "GN100",
+                "version": "1.0",
+                "hgncId": "HGNC:12010",
+                "symbol": "TPM1",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN100?version=1.0",
+                "authoritySha256": "f8b45206f199aaa5f07209a527701b62f9fed80ffb8652fab38fb447da27a865"
+              },
+              {
+                "specificationId": "GN101",
+                "version": "1.0",
+                "hgncId": "HGNC:143",
+                "symbol": "ACTC1",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN101?version=1.0",
+                "authoritySha256": "ccd75de60668368fb527d8b5d3c417eaaf0a8c6caa8b2a860dd5c45622cadf05"
+              },
+              {
+                "specificationId": "GN102",
+                "version": "1.0",
+                "hgncId": "HGNC:7583",
+                "symbol": "MYL2",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN102?version=1.0",
+                "authoritySha256": "b47de07a7e66f449afc6689ebbe118da867bf90401192d8679ee45dcf375ce84"
+              },
+              {
+                "specificationId": "GN103",
+                "version": "1.0",
+                "hgncId": "HGNC:7584",
+                "symbol": "MYL3",
+                "mondoId": "MONDO:0005045",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN103?version=1.0",
+                "authoritySha256": "eb1a65bdec58b57f42644ef2c1a3d86b7c381af6bb0feb5864e0d9dab3da9cce"
+              },
+              {
+                "specificationId": "GN104",
+                "version": "2.0",
+                "hgncId": "HGNC:2597",
+                "symbol": "CYP1B1",
+                "mondoId": "MONDO:0800472",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN104?version=2.0",
+                "authoritySha256": "85ca975e7453ead4b88616fd1be263fc49035835012af0d659838fbfe06b4588"
+              },
+              {
+                "specificationId": "GN105",
+                "version": "1.0",
+                "hgncId": "HGNC:61",
+                "symbol": "ABCD1",
+                "mondoId": "MONDO:0018544",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN105?version=1.0",
+                "authoritySha256": "45a7a7aacea8292e3aa5197461522fc64a970664762f9e2903481aaf704f351e"
+              },
+              {
+                "specificationId": "GN106",
+                "version": "1.0",
+                "hgncId": "HGNC:10295",
+                "symbol": "RPGR",
+                "mondoId": "MONDO:0100437",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN106?version=1.0",
+                "authoritySha256": "c4b2fc2741337b51db77b952eb0b98ab9be563ee7fa3232df676e79fdd6310fc"
+              },
+              {
+                "specificationId": "GN112",
+                "version": "1.0",
+                "hgncId": "HGNC:6294",
+                "symbol": "KCNQ1",
+                "mondoId": "MONDO:0100316",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN112?version=1.0",
+                "authoritySha256": "8a93826b62156d9478648be0337f8555ad3cee1ab508d7af12f8fbd7e038700d"
+              },
+              {
+                "specificationId": "GN113",
+                "version": "2.3",
+                "hgncId": "HGNC:12765",
+                "symbol": "FOXN1",
+                "mondoId": "MONDO:0011132",
+                "moi": null,
+                "sourceMoi": "Semidominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN113?version=2.3",
+                "authoritySha256": "8ec16d327267e2b765c0228edb240507af1c7b2d7250358034453bc682a0494c"
+              },
+              {
+                "specificationId": "GN114",
+                "version": "2.2",
+                "hgncId": "HGNC:186",
+                "symbol": "ADA",
+                "mondoId": "MONDO:0007064",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN114?version=2.2",
+                "authoritySha256": "b35687f326e78135c404c815601de955b701993464a5cd7541478f0df23ec313"
+              },
+              {
+                "specificationId": "GN116",
+                "version": "2.2",
+                "hgncId": "HGNC:17642",
+                "symbol": "DCLRE1C",
+                "mondoId": "MONDO:0011225",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN116?version=2.2",
+                "authoritySha256": "19bf22e15a2c12d2b58f0c2647edddf62f7f12bc6cec8c3e29d3afbfabff1f0b"
+              },
+              {
+                "specificationId": "GN119",
+                "version": "2.2",
+                "hgncId": "HGNC:6024",
+                "symbol": "IL7R",
+                "mondoId": "MONDO:0012163",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN119?version=2.2",
+                "authoritySha256": "dfbfb10b06c4f770ce014fb17f68241fb3d268605f6b7b7602df4199564577d7"
+              },
+              {
+                "specificationId": "GN120",
+                "version": "1.0",
+                "hgncId": "HGNC:10294",
+                "symbol": "RPE65",
+                "mondoId": "MONDO:0100368",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN120?version=1.0",
+                "authoritySha256": "1d86dff25c9a644add846d05b02cb0f6a7476be5ffc0dcb76826bcfe22835587"
+              },
+              {
+                "specificationId": "GN121",
+                "version": "2.3",
+                "hgncId": "HGNC:6193",
+                "symbol": "JAK3",
+                "mondoId": "MONDO:0010938",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN121?version=2.3",
+                "authoritySha256": "e97786c230a8b6bfbb4df452b91c92f1ad191fb3c0348a552cfe30c38f41440a"
+              },
+              {
+                "specificationId": "GN122",
+                "version": "2.0",
+                "hgncId": "HGNC:2505",
+                "symbol": "CTLA4",
+                "mondoId": "MONDO:0014493",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN122?version=2.0",
+                "authoritySha256": "f5d5f573f661f806478841a952883e739b22b27bfd4ec364715e6b3ad507b007"
+              },
+              {
+                "specificationId": "GN123",
+                "version": "2.2",
+                "hgncId": "HGNC:9831",
+                "symbol": "RAG1",
+                "mondoId": "MONDO:0000572",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN123?version=2.2",
+                "authoritySha256": "41dafe044af07e0dc927c1672eae7b45f43eb9425f87cca3bb0c5ce89990daa0"
+              },
+              {
+                "specificationId": "GN124",
+                "version": "2.2",
+                "hgncId": "HGNC:9832",
+                "symbol": "RAG2",
+                "mondoId": "MONDO:0000573",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN124?version=2.2",
+                "authoritySha256": "c5561e871044640d35e4c918aaf16fbcb458c9f0723c1d8b5204946c248da02b"
+              },
+              {
+                "specificationId": "GN125",
+                "version": "2.0",
+                "hgncId": "HGNC:1078",
+                "symbol": "BMPR2",
+                "mondoId": "MONDO:0015924",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN125?version=2.0",
+                "authoritySha256": "ba9c2967ede7a363662cef9994fe8f427e93be23b736524c7692483469c9cafc"
+              },
+              {
+                "specificationId": "GN126",
+                "version": "1.0",
+                "hgncId": "HGNC:10457",
+                "symbol": "RS1",
+                "mondoId": "MONDO:0010725",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN126?version=1.0",
+                "authoritySha256": "474fbbb85789cc77be8d2b669a67c074e4e9c6d09fcb72656cfcea1cde2f2cf9"
+              },
+              {
+                "specificationId": "GN127",
+                "version": "1.3",
+                "hgncId": "HGNC:17271",
+                "symbol": "RRAS2",
+                "mondoId": "MONDO:0021060",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN127?version=1.3",
+                "authoritySha256": "cb2e691311e79142ac02bdf41604817dfbdb6f48b30e31a019e6c4424012b01b"
+              },
+              {
+                "specificationId": "GN128",
+                "version": "1.3",
+                "hgncId": "HGNC:9282",
+                "symbol": "PPP1CB",
+                "mondoId": "MONDO:0021060",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN128?version=1.3",
+                "authoritySha256": "f29be7c0eaf0943828716d10562cf402f7526775de73d77d55591c58d8de1408"
+              },
+              {
+                "specificationId": "GN129",
+                "version": "2.2",
+                "hgncId": "HGNC:6010",
+                "symbol": "IL2RG",
+                "mondoId": "MONDO:0010315",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN129?version=2.2",
+                "authoritySha256": "542021607dfede3febcd51d478eaf5a1916e832e43c7b98a370ecfd14be08e23"
+              },
+              {
+                "specificationId": "GN135",
+                "version": "1.1",
+                "hgncId": "HGNC:175",
+                "symbol": "ACVRL1",
+                "mondoId": "MONDO:0010880",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN135?version=1.1",
+                "authoritySha256": "8cc1e8f5db653ba89551bf5394e5654ee96b0b38f55ed533c264feff3195d0a7"
+              },
+              {
+                "specificationId": "GN136",
+                "version": "1.1",
+                "hgncId": "HGNC:3349",
+                "symbol": "ENG",
+                "mondoId": "MONDO:0008535",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN136?version=1.1",
+                "authoritySha256": "aa4593c930639e10c8c2b47fc5790cd6438bcd33f26c317b0734fa29e7af6f34"
+              },
+              {
+                "specificationId": "GN141",
+                "version": "1.0",
+                "hgncId": "HGNC:8977",
+                "symbol": "PIK3CD",
+                "mondoId": "MONDO:0014222",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN141?version=1.0",
+                "authoritySha256": "53c025108da65d153f32a9e7df7652c5071cc7d784735eff0fe28515998589b7"
+              },
+              {
+                "specificationId": "GN146",
+                "version": "1.0",
+                "hgncId": "HGNC:7720",
+                "symbol": "NEB",
+                "mondoId": "MONDO:0018958",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN146?version=1.0",
+                "authoritySha256": "55e60665b3bba38b0f78e39f5ab176f23a90dbf7b72f82d58d8784901ec71ef0"
+              },
+              {
+                "specificationId": "GN147",
+                "version": "2.0",
+                "hgncId": "HGNC:129",
+                "symbol": "ACTA1",
+                "mondoId": "MONDO:0100084",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN147?version=2.0",
+                "authoritySha256": "48d8efea9a3cebc3666d3f43055f98c05512864db667b75cd998613fd9613649"
+              },
+              {
+                "specificationId": "GN148",
+                "version": "1.0",
+                "hgncId": "HGNC:2974",
+                "symbol": "DNM2",
+                "mondoId": "MONDO:0018947",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN148?version=1.0",
+                "authoritySha256": "dce7a73a616ed90b6909e29157f55cc29cca990894a6d72ef5230f1501b988f2"
+              },
+              {
+                "specificationId": "GN149",
+                "version": "1.0",
+                "hgncId": "HGNC:7448",
+                "symbol": "MTM1",
+                "mondoId": "MONDO:0018947",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN149?version=1.0",
+                "authoritySha256": "e5b977b43577f415a4973d9f0d56a97b29ad5e8c2beace79016e8048c712bf86"
+              },
+              {
+                "specificationId": "GN150",
+                "version": "2.0",
+                "hgncId": "HGNC:10483",
+                "symbol": "RYR1",
+                "mondoId": "MONDO:0100150",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN150?version=2.0",
+                "authoritySha256": "c1c3c70a9828809ce9d59ebc0b28be9adcc7515897bd5d9b85214ec680e08334"
+              },
+              {
+                "specificationId": "GN156",
+                "version": "1.0",
+                "hgncId": "HGNC:8512",
+                "symbol": "OTC",
+                "mondoId": "MONDO:0010703",
+                "moi": null,
+                "sourceMoi": "X-linked inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN156?version=1.0",
+                "authoritySha256": "4273cb9299394040d84a16826cb11f27b60e63716f83ec68cad07dca47dc6b9d"
+              },
+              {
+                "specificationId": "GN157",
+                "version": "1.0",
+                "hgncId": "HGNC:4235",
+                "symbol": "GFAP",
+                "mondoId": "MONDO:0008752",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN157?version=1.0",
+                "authoritySha256": "f88a2b8e4cdc4b0b976078cf9924555901bb2da043f487ae567309e8a8eee81b"
+              },
+              {
+                "specificationId": "GN158",
+                "version": "1.1",
+                "hgncId": "HGNC:4135",
+                "symbol": "GALT",
+                "mondoId": "MONDO:0018116",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN158?version=1.1",
+                "authoritySha256": "e569833c704077e67b2ed717f12aa07fd9a04bfc62ca3fcb6629b54d3b4d936f"
+              },
+              {
+                "specificationId": "GN160",
+                "version": "1.0",
+                "hgncId": "HGNC:8979",
+                "symbol": "PIK3R1",
+                "mondoId": "MONDO:1060136",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN160?version=1.0",
+                "authoritySha256": "0c500e662912b60e5b9f462a50f56edd4f2ea6ed8e7cb8fdbd4714a5ddfa8bae"
+              },
+              {
+                "specificationId": "GN162",
+                "version": "1.0",
+                "hgncId": "HGNC:8620",
+                "symbol": "PAX6",
+                "mondoId": "MONDO:0800183",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "sourceMoi": "Autosomal dominant inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN162?version=1.0",
+                "authoritySha256": "d714d099aa0c287b1f1c6f252cfb8abfec92301808c68037aafecd02b317eac8"
+              },
+              {
+                "specificationId": "GN164",
+                "version": "1.0",
+                "hgncId": "HGNC:34",
+                "symbol": "ABCA4",
+                "mondoId": "MONDO:0800406",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN164?version=1.0",
+                "authoritySha256": "9e2b3147c317ea6512ad881aa7e223033fc67a1a410aa66284bd13c721b0d100"
+              },
+              {
+                "specificationId": "GN167",
+                "version": "1.0",
+                "hgncId": "HGNC:4689",
+                "symbol": "GUCY2D",
+                "mondoId": "MONDO:0100453",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN167?version=1.0",
+                "authoritySha256": "2cc357413bab42a9d38311e508e14736703692a11ecf5f0da0bc4f9c5df50987"
+              },
+              {
+                "specificationId": "GN169",
+                "version": "1.0",
+                "hgncId": "HGNC:129",
+                "symbol": "ACTA1",
+                "mondoId": "MONDO:0100084",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN169?version=1.0",
+                "authoritySha256": "80ea08337f8189aace8513c1ae59163a0ba2337e038e98df7452079596369ad0"
+              },
+              {
+                "specificationId": "GN170",
+                "version": "1.0",
+                "hgncId": "HGNC:4827",
+                "symbol": "HBB",
+                "mondoId": "MONDO:0013517",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN170?version=1.0",
+                "authoritySha256": "fc3134299cd903e1dccd549202dee9c34ec237cb2a07c5fa5e8a0d7e14025d3c"
+              },
+              {
+                "specificationId": "GN173",
+                "version": "1.0",
+                "hgncId": "HGNC:4824",
+                "symbol": "HBA2",
+                "mondoId": "MONDO:0100562",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN173?version=1.0",
+                "authoritySha256": "258a6c35e50e10c6c8505e3976f134e265b6991e74eb3e54913ccd1e7a8e4881"
+              },
+              {
+                "specificationId": "GN179",
+                "version": "2.0",
+                "hgncId": "HGNC:10483",
+                "symbol": "RYR1",
+                "mondoId": "MONDO:0100150",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN179?version=2.0",
+                "authoritySha256": "bdead811f501ed1b85701abd4d4115accaa4604929ba1ae0276e60899bdcbec3"
+              },
+              {
+                "specificationId": "GN180",
+                "version": "2.0",
+                "hgncId": "HGNC:3097",
+                "symbol": "DYSF",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN180?version=2.0",
+                "authoritySha256": "8b3cf99b46f66f3d640856a6dff65d04b9cdafe9af21d48b20d73c8ccbc9662c"
+              },
+              {
+                "specificationId": "GN184",
+                "version": "2.0",
+                "hgncId": "HGNC:10806",
+                "symbol": "SGCB",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN184?version=2.0",
+                "authoritySha256": "5347e7bdea6575faf634936808339df3fffe76d24f3bd067eb88aa107e69dfc6"
+              },
+              {
+                "specificationId": "GN185",
+                "version": "2.0",
+                "hgncId": "HGNC:10809",
+                "symbol": "SGCG",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN185?version=2.0",
+                "authoritySha256": "fdb796e5414f91a16f6e9143432c2a9dca2209ed2d043d519d0c4ca8f6c48599"
+              },
+              {
+                "specificationId": "GN186",
+                "version": "2.0",
+                "hgncId": "HGNC:10807",
+                "symbol": "SGCD",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN186?version=2.0",
+                "authoritySha256": "f64d8e330d5edc1015c8f27d7cf4031bc57ea8538cc3dc3f214461fee6fe0a51"
+              },
+              {
+                "specificationId": "GN187",
+                "version": "2.0",
+                "hgncId": "HGNC:1480",
+                "symbol": "CAPN3",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN187?version=2.0",
+                "authoritySha256": "ac90f38a8532c6a0718334739ded7a8b47d673fb18fba39bbc9cdb078f6c0161"
+              },
+              {
+                "specificationId": "GN188",
+                "version": "2.0",
+                "hgncId": "HGNC:27337",
+                "symbol": "ANO5",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN188?version=2.0",
+                "authoritySha256": "5f285f7c6de7a20c32604f5581ce60715c4cffdd306c4c08d489968450217dce"
+              },
+              {
+                "specificationId": "GN189",
+                "version": "2.0",
+                "hgncId": "HGNC:10805",
+                "symbol": "SGCA",
+                "mondoId": "MONDO:0015152",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN189?version=2.0",
+                "authoritySha256": "197cb2bdad94cf85f6995532d0e40ed384e56d70128e07806ea6a6b7da7c46cf"
+              },
+              {
+                "specificationId": "GN208",
+                "version": "1.0",
+                "hgncId": "HGNC:359",
+                "symbol": "AIPL1",
+                "mondoId": "MONDO:0100438",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN208?version=1.0",
+                "authoritySha256": "1edd4047775771340606bbd628b57a74511ac6c760b07c7b8bd566c095bbfcc7"
+              },
+              {
+                "specificationId": "GN226",
+                "version": "1.0",
+                "hgncId": "HGNC:29021",
+                "symbol": "CEP290",
+                "mondoId": "MONDO:0100451",
+                "moi": "AUTOSOMAL_RECESSIVE",
+                "sourceMoi": "Autosomal recessive inheritance",
+                "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN226?version=1.0",
+                "authoritySha256": "90b7da6c46e029c3d401573f028f66d31d9d9c75538614e5bd20adefa4fcecb5"
+              }
+            ],
+            "sourcePackSha256": "b09d54e12efbef7eed6a65d6271a6a8b5300b6ae3f9e53b7200fcd27f0bab2c3",
+            "sha256": "402f4cc63629d2089cae7905c13ae7f56a6098b1814d1e678e62502eba4b0082"
+          },
+          "missingAmbiguousOrUnversionedPolicyResult": "NOT_EVALUATED",
+          "missingOrInvalidInputResult": "NOT_EVALUATED",
+          "authoritySourceIds": [
+            "authority-clingen-svi-pm2-v1.0",
+            "authority-clingen-vcep-gnomad-v4-v3.0"
+          ]
+        }
+      }
+    ]
+  },
+  "outputPolicy": {
+    "atomicEvidenceEnabled": true,
+    "criterionEvaluationEnabled": true,
+    "legacySuggestionEnabled": false,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false,
+    "direction": "UNDETERMINED",
+    "retainRawQueryRecord": true
+  },
+  "resourceIdentitySemantics": {
+    "scope": "CANONICAL_RESOURCE_IDENTITY_NOT_FULL_BYTES",
+    "byteIntegrityClaimed": false,
+    "profileSelfHashStored": false
+  },
+  "resources": [
+    {
+      "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+      "provider": "GNOMAD",
+      "assembly": "GRCh38",
+      "resourceVersion": "gnomAD joint v4.1 GRCh38",
+      "role": "COMBINED_EXOME_GENOME_VARIANT_FREQUENCY",
+      "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+      "identity": {
+        "provider": "GNOMAD",
+        "release": "4.1",
+        "dataset": "joint",
+        "combinedDatasets": [
+          "exomes",
+          "genomes"
+        ],
+        "assembly": "GRCh38",
+        "sourceAssemblyLabel": "gnomAD_GRCh38",
+        "format": "VCFv4.2 BGZF",
+        "dataUriTemplate": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/joint/gnomad.joint.v4.1.sites.chr{chromosome}.vcf.bgz",
+        "indexUriTemplate": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/joint/gnomad.joint.v4.1.sites.chr{chromosome}.vcf.bgz.tbi",
+        "logicalNamePattern": "gnomad/joint/gnomad.joint.v4.1.sites.chr{chromosome}.vcf.bgz",
+        "indexLogicalNamePattern": "gnomad/joint/gnomad.joint.v4.1.sites.chr{chromosome}.vcf.bgz.tbi",
+        "indexType": "TABIX_TBI",
+        "dataComponentCount": 24,
+        "dataTotalBytes": 876875887798,
+        "indexComponentCount": 24,
+        "indexTotalBytes": 2831328,
+        "chromosomes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "X",
+          "Y"
+        ],
+        "fieldContract": {
+          "altIndexBase": 0,
+          "primaryFields": [
+            {
+              "infoId": "AC_joint",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AN_joint",
+              "number": "1",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AF_joint",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "nhomalt_joint",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "grpmax_joint",
+              "number": "A",
+              "type": "String"
+            },
+            {
+              "infoId": "AC_grpmax_joint",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AN_grpmax_joint",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AF_grpmax_joint",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "nhomalt_grpmax_joint",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "faf95_joint",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "fafmax_faf95_max_joint",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "fafmax_faf95_max_gen_anc_joint",
+              "number": "A",
+              "type": "String"
+            }
+          ],
+          "componentFields": [
+            {
+              "infoId": "AC_exomes",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AN_exomes",
+              "number": "1",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AF_exomes",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "AC_genomes",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AN_genomes",
+              "number": "1",
+              "type": "Integer"
+            },
+            {
+              "infoId": "AF_genomes",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "exomes_filters",
+              "number": ".",
+              "type": "String"
+            },
+            {
+              "infoId": "genomes_filters",
+              "number": ".",
+              "type": "String"
+            }
+          ],
+          "ancestryGroups": [
+            "afr",
+            "ami",
+            "amr",
+            "asj",
+            "eas",
+            "fin",
+            "mid",
+            "nfe",
+            "remaining",
+            "sas"
+          ],
+          "ancestryFieldTemplates": [
+            {
+              "infoIdTemplate": "AC_joint_{ancestry}",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoIdTemplate": "AN_joint_{ancestry}",
+              "number": "1",
+              "type": "Integer"
+            },
+            {
+              "infoIdTemplate": "AF_joint_{ancestry}",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoIdTemplate": "nhomalt_joint_{ancestry}",
+              "number": "A",
+              "type": "Integer"
+            },
+            {
+              "infoIdTemplate": "faf95_joint_{ancestry}",
+              "number": "A",
+              "type": "Float",
+              "appliesTo": [
+                "afr",
+                "amr",
+                "eas",
+                "mid",
+                "nfe",
+                "sas"
+              ]
+            }
+          ],
+          "sexStrata": [
+            "XX",
+            "XY"
+          ],
+          "rawSuffix": "raw",
+          "auxiliaryQcFields": [
+            {
+              "infoId": "stat_union_p_value",
+              "number": "A",
+              "type": "Float"
+            },
+            {
+              "infoId": "stat_union_test_name",
+              "number": "A",
+              "type": "String"
+            },
+            {
+              "infoId": "stat_union_gen_ancs",
+              "number": ".",
+              "type": "String"
+            }
+          ]
+        }
+      },
+      "inputSemantics": {
+        "filterSemantics": {
+          "PASS": "Either passed all variant filters in both exomes and genomes, or passed all variant filters in either exomes or genomes while being absent from the other dataset",
+          "EXOMES_FILTERED": "Failed variant filters in the exomes dataset and either passed all variant filters in the genomes dataset or the variant was not present in the genomes dataset. Refer to 'exomes_filters' within INFO for more information",
+          "GENOMES_FILTERED": "Failed variant filters in the genomes dataset and either passed all variant filters in the exomes dataset or the variant was not present in the exomes dataset. Refer to 'genomes_filters' within INFO for more information",
+          "BOTH_FILTERED": "Failed variant filters in both exomes and genomes datasets. Refer to 'exomes_filters' and 'genomes_filters' within INFO for more information"
+        },
+        "frequencyConflictQc": {
+          "sourceField": "stat_union_p_value",
+          "conflictOperator": "LESS_THAN",
+          "thresholdRaw": "1e-4",
+          "status": "QC_ONLY",
+          "rawFieldsRetained": [
+            "stat_union_p_value",
+            "stat_union_test_name",
+            "stat_union_gen_ancs"
+          ],
+          "missingValueStatus": "UNKNOWN",
+          "automaticDecisionEffect": "NONE"
+        },
+        "rawFilterRetained": true
+      }
+    },
+    {
+      "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+      "provider": "GNOMAD",
+      "assembly": "GRCh38",
+      "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+      "role": "EXOME_LOCUS_ALLELE_NUMBER",
+      "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18",
+      "identity": {
+        "provider": "GNOMAD",
+        "release": "4.1",
+        "dataset": "exomes",
+        "assembly": "GRCh38",
+        "format": "HAIL_TABLE",
+        "tableUri": "gs://gcp-public-data--gnomad/release/4.1/ht/exomes/gnomad.exomes.v4.1.allele_number_all_sites.ht",
+        "totalBytes": 69713764492,
+        "partitionCount": 9557,
+        "rowCount": 222684797,
+        "writerHailVersion": "0.2.122-be9d88a80695",
+        "nativeFileVersion": 67328,
+        "metadataAnchors": [
+          {
+            "logicalSuffix": "README.txt",
+            "httpsUri": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/ht/exomes/gnomad.exomes.v4.1.allele_number_all_sites.ht/README.txt",
+            "byteLength": 148,
+            "generation": 1713312041430075,
+            "etag": "d936393dd3b1be6b091f31c325681a6c"
+          },
+          {
+            "logicalSuffix": "metadata.json.gz",
+            "httpsUri": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/ht/exomes/gnomad.exomes.v4.1.allele_number_all_sites.ht/metadata.json.gz",
+            "byteLength": 26036,
+            "generation": 1713312295446395,
+            "etag": "515af03ae299cfbda26026e935ff7372"
+          }
+        ],
+        "keyFields": [
+          "locus"
+        ],
+        "rowSchema": [
+          {
+            "field": "locus",
+            "type": "Locus<GRCh38>"
+          },
+          {
+            "field": "AN",
+            "type": "Array<Int64>"
+          },
+          {
+            "field": "outside_broad_capture_region",
+            "type": "Boolean"
+          },
+          {
+            "field": "outside_ukb_capture_region",
+            "type": "Boolean"
+          },
+          {
+            "field": "outside_broad_calling_region",
+            "type": "Boolean"
+          },
+          {
+            "field": "outside_ukb_calling_region",
+            "type": "Boolean"
+          }
+        ],
+        "globalsSchema": [
+          {
+            "field": "strata_meta",
+            "type": "Array[Dict[str,str]]"
+          },
+          {
+            "field": "strata_sample_count",
+            "type": "Array[Int32]"
+          }
+        ],
+        "strataResolution": {
+          "selector": {
+            "group": "adj"
+          },
+          "indexResolution": "MATCH_STRATA_META_ENTRY_AT_QUERY_TIME",
+          "fixedArrayIndexAllowed": false
+        }
+      }
+    },
+    {
+      "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+      "provider": "GNOMAD",
+      "assembly": "GRCh38",
+      "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+      "role": "GENOME_LOCUS_ALLELE_NUMBER",
+      "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57",
+      "identity": {
+        "provider": "GNOMAD",
+        "release": "4.1",
+        "dataset": "genomes",
+        "assembly": "GRCh38",
+        "format": "HAIL_TABLE",
+        "tableUri": "gs://gcp-public-data--gnomad/release/4.1/ht/genomes/gnomad.genomes.v4.1.allele_number_all_sites.ht",
+        "totalBytes": 120595947830,
+        "partitionCount": 9546,
+        "rowCount": 2873082661,
+        "writerHailVersion": "0.2.122-be9d88a80695",
+        "nativeFileVersion": 67328,
+        "metadataAnchors": [
+          {
+            "logicalSuffix": "README.txt",
+            "httpsUri": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/ht/genomes/gnomad.genomes.v4.1.allele_number_all_sites.ht/README.txt",
+            "byteLength": 148,
+            "generation": 1713312131592548,
+            "etag": "d9f6f9db717e9b098bb481f2123aa976"
+          },
+          {
+            "logicalSuffix": "metadata.json.gz",
+            "httpsUri": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/ht/genomes/gnomad.genomes.v4.1.allele_number_all_sites.ht/metadata.json.gz",
+            "byteLength": 10444,
+            "generation": 1713312085432898,
+            "etag": "5fe09a8b8fc3211ad5430fdca793f440"
+          }
+        ],
+        "keyFields": [
+          "locus"
+        ],
+        "rowSchema": [
+          {
+            "field": "locus",
+            "type": "Locus<GRCh38>"
+          },
+          {
+            "field": "AN",
+            "type": "Array<Int64>"
+          }
+        ],
+        "globalsSchema": [
+          {
+            "field": "strata_meta",
+            "type": "Array[Dict[str,str]]"
+          },
+          {
+            "field": "strata_sample_count",
+            "type": "Array[Int32]"
+          }
+        ],
+        "strataResolution": {
+          "selector": {
+            "group": "adj"
+          },
+          "indexResolution": "MATCH_STRATA_META_ENTRY_AT_QUERY_TIME",
+          "fixedArrayIndexAllowed": false
+        }
+      }
+    }
+  ],
+  "datasetSemantics": {
+    "datasetType": "JOINT_WITH_SEPARATE_ALL_SITES_AN",
+    "assembly": "GRCh38",
+    "jointOrCombinedAvailable": true,
+    "genomesAvailable": true,
+    "allSitesAlleleNumberAvailable": true,
+    "hitInputMayBeReady": true,
+    "noRecordInputReady": true,
+    "noRecordMeaning": "A successful exact-allele NO_RECORD is not AF=0 and requires a matching versioned PM2 context policy plus independently sufficient exome or genome all-sites adj AN.",
+    "generalCriterionDatasetReadiness": {
+      "status": "READY_FOR_BA1_BS1_AND_POLICY_GATED_PM2_SUPPORTING",
+      "reasonCodes": [
+        "PM2_CONTEXT_POLICY_REQUIRED"
+      ]
+    },
+    "allSitesAnMergeSemantics": "SEPARATE_EXOME_GENOME_NEVER_SUMMED_ANY_INDEPENDENT_POLICY_DEFINED"
+  },
+  "qualityGate": {
+    "acceptedFilters": [
+      "PASS"
+    ],
+    "minimumOverallAlleleNumber": 1,
+    "nonPassReadiness": "NOT_READY",
+    "missingOrInvalidFieldReadiness": "NOT_READY"
+  },
+  "criterionInputGates": {
+    "exactAlleleMatchMetricId": "gnomad.exactAlleleMatch",
+    "exactAlleleRequiredValue": true,
+    "filterMetricId": "gnomad.joint.filter",
+    "acceptedFilterValues": [
+      "PASS"
+    ],
+    "frequencyMetricId": "gnomad.joint.faf95max",
+    "frequencyAncestryMetricId": "gnomad.joint.faf95max.ancestry",
+    "selectedAncestryAlleleCountMetricTemplate": "gnomad.joint.ancestry.{ancestry}.ac",
+    "selectedAncestryAlleleNumberMetricTemplate": "gnomad.joint.ancestry.{ancestry}.an",
+    "minimumSelectedAncestryAlleleNumber": 2000,
+    "pm2Supporting": {
+      "jointExactAlleleNoRecordRequired": true,
+      "noRecordCreatesFrequencyMeasurement": false,
+      "allSitesStrataSelector": {
+        "group": "adj"
+      },
+      "exomeAdjAlleleNumberMetricId": "gnomad.exomes.allSites.adjAn",
+      "genomeAdjAlleleNumberMetricId": "gnomad.genomes.allSites.adjAn",
+      "exomeAndGenomeAlleleNumbersCombined": false,
+      "contextPolicyRequired": true
+    }
+  },
+  "numericSemantics": {
+    "integerRuntimeType": "java.math.BigInteger",
+    "decimalRuntimeType": "java.math.BigDecimal",
+    "rawLexemePreserved": true,
+    "canonicalDecimalFormat": "PLAIN_NO_EXPONENT_STRIP_TRAILING_ZEROES",
+    "binaryFloatingPointAllowedForDecisions": false
+  },
+  "fieldContract": {
+    "altIndexBase": 0,
+    "fields": [
+      {
+        "metricId": "gnomad.joint.ac",
+        "infoId": "AC_joint",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.joint.an",
+        "infoId": "AN_joint",
+        "number": "1",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.joint.af",
+        "infoId": "AF_joint",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.joint.nhomalt",
+        "infoId": "nhomalt_joint",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "individuals",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.joint.groupmax.ancestry",
+        "infoId": "grpmax_joint",
+        "number": "A",
+        "valueType": "ANCESTRY",
+        "unit": "genetic-ancestry-group",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.groupmax.ac",
+        "infoId": "AC_grpmax_joint",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.groupmax.an",
+        "infoId": "AN_grpmax_joint",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.groupmax.af",
+        "infoId": "AF_grpmax_joint",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.groupmax.nhomalt",
+        "infoId": "nhomalt_grpmax_joint",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "individuals",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.faf95",
+        "infoId": "faf95_joint",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.faf95max",
+        "infoId": "fafmax_faf95_max_joint",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.faf95max.ancestry",
+        "infoId": "fafmax_faf95_max_gen_anc_joint",
+        "number": "A",
+        "valueType": "ANCESTRY",
+        "unit": "genetic-ancestry-group",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.exomes.ac",
+        "infoId": "AC_exomes",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.exomes.an",
+        "infoId": "AN_exomes",
+        "number": "1",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.exomes.af",
+        "infoId": "AF_exomes",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.genomes.ac",
+        "infoId": "AC_genomes",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.genomes.an",
+        "infoId": "AN_genomes",
+        "number": "1",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.genomes.af",
+        "infoId": "AF_genomes",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.exomes.filters",
+        "infoId": "exomes_filters",
+        "number": ".",
+        "valueType": "RAW_STRING",
+        "unit": "vcf-filter-list",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.genomes.filters",
+        "infoId": "genomes_filters",
+        "number": ".",
+        "valueType": "RAW_STRING",
+        "unit": "vcf-filter-list",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.qc.statUnionPValue",
+        "infoId": "stat_union_p_value",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "p-value",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.qc.statUnionTestName",
+        "infoId": "stat_union_test_name",
+        "number": "A",
+        "valueType": "RAW_STRING",
+        "unit": "test-name",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.qc.statUnionGeneticAncestries",
+        "infoId": "stat_union_gen_ancs",
+        "number": ".",
+        "valueType": "RAW_STRING",
+        "unit": "genetic-ancestry-group-list",
+        "required": false
+      }
+    ],
+    "ancestryGroups": [
+      "afr",
+      "ami",
+      "amr",
+      "asj",
+      "eas",
+      "fin",
+      "mid",
+      "nfe",
+      "remaining",
+      "sas"
+    ],
+    "ancestryFieldTemplates": [
+      {
+        "metricId": "gnomad.joint.ancestry.{ancestry}.ac",
+        "infoId": "AC_joint_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.ancestry.{ancestry}.an",
+        "infoId": "AN_joint_{ancestry}",
+        "number": "1",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.ancestry.{ancestry}.af",
+        "infoId": "AF_joint_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.ancestry.{ancestry}.nhomalt",
+        "infoId": "nhomalt_joint_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "individuals",
+        "required": false
+      },
+      {
+        "metricId": "gnomad.joint.ancestry.{ancestry}.faf95",
+        "infoId": "faf95_joint_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false,
+        "appliesTo": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ]
+      }
+    ],
+    "selectedGroupRequiredInfoTemplates": [
+      "AC_joint_{ancestry}",
+      "AN_joint_{ancestry}",
+      "AF_joint_{ancestry}",
+      "nhomalt_joint_{ancestry}"
+    ],
+    "faf95AncestryGroups": [
+      "afr",
+      "amr",
+      "eas",
+      "mid",
+      "nfe",
+      "sas"
+    ]
+  },
+  "contextPolicyAuthorityBindings": [
+    {
+      "authoritySourceId": "authority-clingen-vhl-cspec-1.1",
+      "authorityVersion": "1.1",
+      "snapshotSha256": "0e599b94d0e15d1cf41db4ea8a920a766fa150cb47a320f7d00ca963686335cb",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN078?version=1.1",
+      "retrievedOn": "2026-09-09",
+      "scope": "HGNC:12687 / MONDO:0008667 / AUTOSOMAL_DOMINANT; PM2 Supporting only",
+      "specificationId": "GN078"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn017-3.1",
+      "authorityVersion": "3.1",
+      "snapshotSha256": "5076b6036f8d1bce84bac1813eefef3625f7a1d58e9519dce72648e98631cb07",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "specificationId": "GN017",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn085-4.0",
+      "authorityVersion": "4.0",
+      "snapshotSha256": "1762c47d7309285054c45c8931549782db4b7b12854312bd1e3ed810e4ec57df",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN085?version=4.0",
+      "specificationId": "GN085",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn114-2.2",
+      "authorityVersion": "2.2",
+      "snapshotSha256": "b35687f326e78135c404c815601de955b701993464a5cd7541478f0df23ec313",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN114?version=2.2",
+      "specificationId": "GN114",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn116-2.2",
+      "authorityVersion": "2.2",
+      "snapshotSha256": "19bf22e15a2c12d2b58f0c2647edddf62f7f12bc6cec8c3e29d3afbfabff1f0b",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN116?version=2.2",
+      "specificationId": "GN116",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn119-2.2",
+      "authorityVersion": "2.2",
+      "snapshotSha256": "dfbfb10b06c4f770ce014fb17f68241fb3d268605f6b7b7602df4199564577d7",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN119?version=2.2",
+      "specificationId": "GN119",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn121-2.3",
+      "authorityVersion": "2.3",
+      "snapshotSha256": "e97786c230a8b6bfbb4df452b91c92f1ad191fb3c0348a552cfe30c38f41440a",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN121?version=2.3",
+      "specificationId": "GN121",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn123-2.2",
+      "authorityVersion": "2.2",
+      "snapshotSha256": "41dafe044af07e0dc927c1672eae7b45f43eb9425f87cca3bb0c5ce89990daa0",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN123?version=2.2",
+      "specificationId": "GN123",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn124-2.2",
+      "authorityVersion": "2.2",
+      "snapshotSha256": "c5561e871044640d35e4c918aaf16fbcb458c9f0723c1d8b5204946c248da02b",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN124?version=2.2",
+      "specificationId": "GN124",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn147-2.0",
+      "authorityVersion": "2.0",
+      "snapshotSha256": "48d8efea9a3cebc3666d3f43055f98c05512864db667b75cd998613fd9613649",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN147?version=2.0",
+      "specificationId": "GN147",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn148-1.0",
+      "authorityVersion": "1.0",
+      "snapshotSha256": "dce7a73a616ed90b6909e29157f55cc29cca990894a6d72ef5230f1501b988f2",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN148?version=1.0",
+      "specificationId": "GN148",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    },
+    {
+      "authoritySourceId": "authority-clingen-gn150-2.0",
+      "authorityVersion": "2.0",
+      "snapshotSha256": "c1c3c70a9828809ce9d59ebc0b28be9adcc7515897bd5d9b85214ec680e08334",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN150?version=2.0",
+      "specificationId": "GN150",
+      "retrievedOn": "2026-09-09",
+      "scope": "PM2 only; exact official RuleSet scope"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "ba1-native-subtype-source-policy-v1",
+  "policyId": "GNOMAD_V4_1_NATIVE_SUBTYPE_FILTER",
+  "version": "1.0.0",
+  "assembly": "GRCh38",
+  "jointResourceVersion": "4.1",
+  "review": {
+    "status": "REVIEWED",
+    "reviewId": "A01-BA1-NATIVE-SUBTYPE-QC-SUPPLEMENT-20260914-01",
+    "receiptSha256": "3003b79b6db02b7715590c8583de39a460876e3ca4aec6ca5d088ad54da72585"
+  },
+  "sources": [
+    {
+      "subtype": "exomes",
+      "version": "4.1",
+      "dataUrlTemplate": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/exomes/gnomad.exomes.v4.1.sites.chr{chromosome}.vcf.bgz",
+      "indexUrlTemplate": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/exomes/gnomad.exomes.v4.1.sites.chr{chromosome}.vcf.bgz.tbi",
+      "headerSha256": "66875ac50f53b8f491c263394fc85e17308c639bae4b7d5daa43fea6f773ca83",
+      "headerProbeChromosome": "1",
+      "headerHashScope": "CHR1_HEADER_ONLY_NOT_WHOLE_DATASET"
+    },
+    {
+      "subtype": "genomes",
+      "version": "4.1",
+      "dataUrlTemplate": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chr{chromosome}.vcf.bgz",
+      "indexUrlTemplate": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chr{chromosome}.vcf.bgz.tbi",
+      "headerSha256": "7ce96bf41d60770cb7b97753b5f761a2fd3f66a0fd14d35d63a68dd3cf318097",
+      "headerProbeChromosome": "1",
+      "headerHashScope": "CHR1_HEADER_ONLY_NOT_WHOLE_DATASET"
+    }
+  ]
+}

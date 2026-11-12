@@ -1,0 +1,7 @@
+scenario	status	code	strength	quarterPoints
+confirmed	MET	PS2	MODERATE	4
+assumed	MET	PM6	SUPPORTING	2
+father-missing	NOT_EVALUATED	NONE	NONE	0
+inherited	NOT_MET	NONE	NONE	0
+phenotype-missing	NOT_EVALUATED	NONE	NONE	0
+separate-reports	MET	PS2	MODERATE	4

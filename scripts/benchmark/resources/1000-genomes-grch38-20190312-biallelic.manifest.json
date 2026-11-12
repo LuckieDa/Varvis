@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "benchmark-background-source-manifest-v1",
+  "resourceId": "1000-genomes-grch38-20190312-biallelic-snv-indel",
+  "assembly": "GRCh38",
+  "sampleId": "NA12878",
+  "sampleAliases": [
+    "HG001"
+  ],
+  "checksumAlgorithm": "MD5",
+  "officialManifest": "20190312_biallelic_SNV_and_INDEL_MANIFEST.txt",
+  "officialBaseUri": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/",
+  "transferCandidates": [
+    {
+      "id": "ucsc-grch38-1000genomes",
+      "baseUri": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/1000Genomes/",
+      "checksumAuthority": false
+    }
+  ],
+  "requiredPrimaryChromosomes": [
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
+    "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"
+  ],
+  "conditionalChromosomes": [
+    "X"
+  ],
+  "unavailableChromosomes": {
+    "Y": "NOT_APPLICABLE_FOR_SELECTED_FEMALE_SAMPLE_AND_ABSENT_FROM_SELECTED_RELEASE",
+    "MT": "SOURCE_UNAVAILABLE_IN_SELECTED_RELEASE"
+  },
+  "resources": [
+    {"chromosome":"1","vcf":{"filename":"ALL.chr1.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":1040182789,"md5":"77f154e53c2b7c36b04d03bab3af8b74"},"index":{"filename":"ALL.chr1.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":214641,"md5":"fddc39a4f2357ad0211d6aace27210ae"}},
+    {"chromosome":"2","vcf":{"filename":"ALL.chr2.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":1121169725,"md5":"f9d29c4935e591b2b269eed7cd7e35d8"},"index":{"filename":"ALL.chr2.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":226657,"md5":"3e9ce6dd07c127373e7839cdf2216e04"}},
+    {"chromosome":"3","vcf":{"filename":"ALL.chr3.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":953352016,"md5":"6e59d00235de71562b4199e09b7e5934"},"index":{"filename":"ALL.chr3.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":187054,"md5":"4e9ef4c674f649e10d4636e4ab3ba925"}},
+    {"chromosome":"4","vcf":{"filename":"ALL.chr4.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":958588352,"md5":"70a2c1ede97eceb7baeea06c8e46cf3c"},"index":{"filename":"ALL.chr4.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":179899,"md5":"1eaf4797698de8369733dcd65ca6c4d6"}},
+    {"chromosome":"5","vcf":{"filename":"ALL.chr5.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":860630364,"md5":"74d5486c0fd29b0e6add24d3740fc3b4"},"index":{"filename":"ALL.chr5.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":168354,"md5":"c4bf980bc99535fe350da4170c180e33"}},
+    {"chromosome":"6","vcf":{"filename":"ALL.chr6.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":863701545,"md5":"8c5d83c1a9253058120368af39baf0c8"},"index":{"filename":"ALL.chr6.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":161463,"md5":"2f30ab8cfce7e25c96855aef254ce511"}},
+    {"chromosome":"7","vcf":{"filename":"ALL.chr7.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":779219186,"md5":"dfaa282712fc1292146173dd2ffeb1d9"},"index":{"filename":"ALL.chr7.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":148517,"md5":"66ee472cfd06c658e179eef3f1e8f5f9"}},
+    {"chromosome":"8","vcf":{"filename":"ALL.chr8.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":739295619,"md5":"ddf7b370fcee63462037c237f12b4444"},"index":{"filename":"ALL.chr8.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":136055,"md5":"3bcf0aee0874e08d23902269e6b32b7a"}},
+    {"chromosome":"9","vcf":{"filename":"ALL.chr9.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":574815423,"md5":"5ade69521dc50d88ad7c91bf4ec6fcd8"},"index":{"filename":"ALL.chr9.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":111086,"md5":"da7c0f0f57c1d4160dff9d2db4ce0034"}},
+    {"chromosome":"10","vcf":{"filename":"ALL.chr10.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":672447277,"md5":"1c409a674426eda2fd29b49078137c5d"},"index":{"filename":"ALL.chr10.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":125922,"md5":"bcf9138cbd900ddc91a04997e2f1c425"}},
+    {"chromosome":"11","vcf":{"filename":"ALL.chr11.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":657936602,"md5":"65339bffc61bc97f2130832fe9f84d7c"},"index":{"filename":"ALL.chr11.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":125174,"md5":"23fb1478f59c93d2eae7d1ae156e1361"}},
+    {"chromosome":"12","vcf":{"filename":"ALL.chr12.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":639916114,"md5":"9a1bda389121140d30c768ef6a1b1370"},"index":{"filename":"ALL.chr12.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":124956,"md5":"9c806021c9423fb1d7bc081d1c70aabd"}},
+    {"chromosome":"13","vcf":{"filename":"ALL.chr13.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":483626279,"md5":"47b0463541be137a8bbfe40f6aade864"},"index":{"filename":"ALL.chr13.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":92149,"md5":"dede706205ddaeb0f7b320c062f83ff1"}},
+    {"chromosome":"14","vcf":{"filename":"ALL.chr14.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":434804716,"md5":"241aedf0792c45d5345d421105c782af"},"index":{"filename":"ALL.chr14.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":85199,"md5":"23f08efd7d2c796579a1c9cb025e7aba"}},
+    {"chromosome":"15","vcf":{"filename":"ALL.chr15.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":389409753,"md5":"b48e7c64e35b727d34786faa76467f94"},"index":{"filename":"ALL.chr15.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":77783,"md5":"2143b93e344e1ab7258de27c50d4b1ae"}},
+    {"chromosome":"16","vcf":{"filename":"ALL.chr16.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":417683578,"md5":"1ce7d66799cab6718852d78dd2aab765"},"index":{"filename":"ALL.chr16.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":74969,"md5":"8a9cfda58e38e2bdfd62f96ed64379c4"}},
+    {"chromosome":"17","vcf":{"filename":"ALL.chr17.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":367812249,"md5":"ecc22783fd1ee7a1c66b053491873192"},"index":{"filename":"ALL.chr17.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":75232,"md5":"018b04025b351d8c78ecba48131cea22"}},
+    {"chromosome":"18","vcf":{"filename":"ALL.chr18.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":378445850,"md5":"fdf3e460e91cd955a9e8cebf01b5d815"},"index":{"filename":"ALL.chr18.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":71799,"md5":"b860ddf3c60da498530a3397ff5c1598"}},
+    {"chromosome":"19","vcf":{"filename":"ALL.chr19.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":308195715,"md5":"a2f17e4ec552fc07cbd05c1eac0cf7ec"},"index":{"filename":"ALL.chr19.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":52482,"md5":"40023c976802ec803de48bd6583b3e23"}},
+    {"chromosome":"20","vcf":{"filename":"ALL.chr20.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":307668528,"md5":"155c3b440d7990630132e4756f7fcc85"},"index":{"filename":"ALL.chr20.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":58246,"md5":"1147ee378d6cb11d5ab298fee5221bbf"}},
+    {"chromosome":"21","vcf":{"filename":"ALL.chr21.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":187727112,"md5":"52882490028507e5d4e606b0905072b1"},"index":{"filename":"ALL.chr21.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":34579,"md5":"cc7cc0192dd895c17df93096982f8e53"}},
+    {"chromosome":"22","vcf":{"filename":"ALL.chr22.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":185517414,"md5":"57a1722e6ed7d9df08cb3c0e42b62d53"},"index":{"filename":"ALL.chr22.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":35212,"md5":"da1882439baba63f630d7935d46d8663"}},
+    {"chromosome":"X","vcf":{"filename":"ALL.chrX.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz","bytes":24046766,"md5":"e6a3d41811faee60de177061edcd6fe6"},"index":{"filename":"ALL.chrX.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi","bytes":2541,"md5":"d7dac3b3c41e7d44c65e349c73ed3495"}}
+  ]
+}

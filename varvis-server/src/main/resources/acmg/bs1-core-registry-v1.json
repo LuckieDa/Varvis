@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "bs1-core-registry-v1",
+  "registryId": "acmg-rule-registry-bs1-core-v1",
+  "version": "1.0.0",
+  "criterionId": "ACMG_AMP_2015:BS1",
+  "baseStrength": "STRONG",
+  "supportedStrengths": [
+    "STRONG",
+    "SUPPORTING"
+  ],
+  "status": "ISOLATED_DEVELOPMENT_ONLY",
+  "authoritySourceIds": [
+    "authority-acmg-amp-2015-richards",
+    "authority-clingen-vcep-gnomad-v4-v3.0"
+  ]
+}

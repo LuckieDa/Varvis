@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "sex-chromosome-region-catalog-v1",
+  "catalogVersion": "1.0.0",
+  "coordinateSystem": "ONE_BASED_CLOSED",
+  "authority": "NCBI_GRC_PRIMARY_ASSEMBLY",
+  "sources": [
+    {
+      "sourceId": "GCF_000001405.25_GRCh37.p13_assembly_regions.txt",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_assembly_regions.txt",
+      "sha256": "47e9b1456638b8b25fb6cc8fb7f82c9b37b8a0ca907f55548e09c6c9e32c9085",
+      "bytes": 17116
+    },
+    {
+      "sourceId": "GCF_000001405.25_GRCh37.p13_assembly_report.txt",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_assembly_report.txt",
+      "sha256": "0097e6b24cc9ae5cb4fb5c075dffbae36b4ec0c90a61d428f039eb82e64e4a17",
+      "bytes": 28669
+    },
+    {
+      "sourceId": "GCF_000001405.40_GRCh38.p14_assembly_regions.txt",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_assembly_regions.txt",
+      "sha256": "6b8a795d16e6902ed55dbd9177f8126928e9d6a63138ea805a63f7a2779c1502",
+      "bytes": 44024
+    },
+    {
+      "sourceId": "GCF_000001405.40_GRCh38.p14_assembly_report.txt",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_assembly_report.txt",
+      "sha256": "04e40091e427dae4f0c7dcc1b67792b8d4d5413903ea6b1d171840664e2da989",
+      "bytes": 79172
+    }
+  ],
+  "chromosomes": [
+    {
+      "assembly": "GRCh37",
+      "assemblyAccession": "GCF_000001405.25",
+      "patchRelease": "GRCh37.p13",
+      "contig": "X",
+      "referenceAccession": "NC_000023.10",
+      "length": 155270560,
+      "regionsSourceId": "GCF_000001405.25_GRCh37.p13_assembly_regions.txt",
+      "referenceSourceId": "GCF_000001405.25_GRCh37.p13_assembly_report.txt",
+      "referenceSourceLocator": "line:59",
+      "pseudoautosomalRegions": [
+        {
+          "regionId": "PAR1",
+          "start": 60001,
+          "end": 2699520,
+          "sourceLocator": "line:221"
+        },
+        {
+          "regionId": "PAR2",
+          "start": 154931044,
+          "end": 155260560,
+          "sourceLocator": "line:247"
+        }
+      ]
+    },
+    {
+      "assembly": "GRCh37",
+      "assemblyAccession": "GCF_000001405.25",
+      "patchRelease": "GRCh37.p13",
+      "contig": "Y",
+      "referenceAccession": "NC_000024.9",
+      "length": 59373566,
+      "regionsSourceId": "GCF_000001405.25_GRCh37.p13_assembly_regions.txt",
+      "referenceSourceId": "GCF_000001405.25_GRCh37.p13_assembly_report.txt",
+      "referenceSourceLocator": "line:60",
+      "pseudoautosomalRegions": [
+        {
+          "regionId": "PAR1",
+          "start": 10001,
+          "end": 2649520,
+          "sourceLocator": "line:248"
+        },
+        {
+          "regionId": "PAR2",
+          "start": 59034050,
+          "end": 59363566,
+          "sourceLocator": "line:249"
+        }
+      ]
+    },
+    {
+      "assembly": "GRCh38",
+      "assemblyAccession": "GCF_000001405.40",
+      "patchRelease": "GRCh38.p14",
+      "contig": "X",
+      "referenceAccession": "NC_000023.11",
+      "length": 156040895,
+      "regionsSourceId": "GCF_000001405.40_GRCh38.p14_assembly_regions.txt",
+      "referenceSourceId": "GCF_000001405.40_GRCh38.p14_assembly_report.txt",
+      "referenceSourceLocator": "line:86",
+      "pseudoautosomalRegions": [
+        {
+          "regionId": "PAR1",
+          "start": 10001,
+          "end": 2781479,
+          "sourceLocator": "line:586"
+        },
+        {
+          "regionId": "PAR2",
+          "start": 155701383,
+          "end": 156030895,
+          "sourceLocator": "line:603"
+        }
+      ]
+    },
+    {
+      "assembly": "GRCh38",
+      "assemblyAccession": "GCF_000001405.40",
+      "patchRelease": "GRCh38.p14",
+      "contig": "Y",
+      "referenceAccession": "NC_000024.10",
+      "length": 57227415,
+      "regionsSourceId": "GCF_000001405.40_GRCh38.p14_assembly_regions.txt",
+      "referenceSourceId": "GCF_000001405.40_GRCh38.p14_assembly_report.txt",
+      "referenceSourceLocator": "line:87",
+      "pseudoautosomalRegions": [
+        {
+          "regionId": "PAR1",
+          "start": 10001,
+          "end": 2781479,
+          "sourceLocator": "line:604"
+        },
+        {
+          "regionId": "PAR2",
+          "start": 56887903,
+          "end": 57217415,
+          "sourceLocator": "line:610"
+        }
+      ]
+    }
+  ]
+}

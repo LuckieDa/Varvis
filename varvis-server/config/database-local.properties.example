@@ -1,0 +1,18 @@
+# Copy this file to database-local.properties and replace the example values.
+# database-local.properties is ignored by Git.
+varvis.datasource.jdbc-url=jdbc:mysql://localhost:3306/Varvis?useSSL=true&useUnicode=true&characterEncoding=utf-8&serverTimeZone=Asia/Shanghai
+varvis.datasource.username=replace_me
+varvis.datasource.password=replace_me
+# Optional Hikari lifecycle tuning. Short max-lifetime helps remote MySQL links that close idle sessions.
+# File-backed and in-memory H2 automatically disable max-lifetime and keepalive
+# unless these values are explicitly supplied, so long external-engine stages do
+# not retire the embedded database pool before final persistence.
+varvis.datasource.connection-timeout=PT30S
+varvis.datasource.validation-timeout=PT5S
+varvis.datasource.idle-timeout=PT1M
+varvis.datasource.max-lifetime=PT2M
+varvis.datasource.keepalive-time=PT1M
+# MySQL Connector/J settings for large prepared batches over remote links.
+varvis.datasource.jdbc-connect-timeout=PT30S
+varvis.datasource.jdbc-socket-timeout=PT5M
+varvis.datasource.rewrite-batched-statements=true

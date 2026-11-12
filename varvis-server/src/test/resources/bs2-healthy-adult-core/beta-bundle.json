@@ -1,0 +1,683 @@
+{
+  "schemaVersion": "bs2-healthy-adult-core-bundle-v1",
+  "context": {
+    "schemaVersion": "evidence-context-v3",
+    "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+    "canonicalizationProfile": "varvis-json-c14n-v1",
+    "dataClass": "SYNTHETIC",
+    "scope": {
+      "analysisDomain": "GERMLINE",
+      "diseaseModel": "MENDELIAN",
+      "variantScope": "SMALL_SEQUENCE_VARIANT"
+    },
+    "variant": {
+      "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+      "variantType": "SNV",
+      "inputAllele": {
+        "assembly": "GRCh38",
+        "contig": "16",
+        "position": 70403,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "normalizedAllele": {
+        "assembly": "GRCh38",
+        "contig": "16",
+        "position": 70403,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "evidenceQueryAllele": {
+        "assembly": "GRCh38",
+        "contig": "16",
+        "position": 70403,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "normalization": {
+        "status": "UNCHANGED",
+        "method": "synthetic-left-normalizer",
+        "methodVersion": "1.0.0",
+        "referenceSequenceSha256": "360cc8a51f2b79a6c4894de0614da5c7809a5740f84cb1fee70949469b389287",
+        "refValidation": "MATCH"
+      },
+      "assemblyLineage": {
+        "mappingStatus": "NATIVE"
+      }
+    },
+    "gene": {
+      "hgncId": "HGNC:980022",
+      "symbol": "TEST_ONLY_BS2_beta_GENE"
+    },
+    "disease": {
+      "mondoId": "MONDO:0980022",
+      "label": "TEST_ONLY_BS2_beta_DISEASE"
+    },
+    "moi": "AUTOSOMAL_DOMINANT",
+    "patientContext": {
+      "patientContextId": "patient-context-test-bs2-beta",
+      "familyContextId": "family-context-test-bs2-beta",
+      "role": "PROBAND",
+      "affectedStatus": "UNAFFECTED",
+      "sex": "MALE"
+    },
+    "contextCompleteness": {
+      "status": "COMPLETE",
+      "missingFields": []
+    }
+  },
+  "observations": [
+    {
+      "facts": {
+        "schemaVersion": "case-family-observation-v1",
+        "observationId": "TEST_ONLY_BS2_beta_observation",
+        "observationVersion": "TEST_ONLY_BS2_v1",
+        "occurrenceId": "TEST_ONLY_BS2_beta_occurrence",
+        "caseId": "TEST_ONLY_BS2_beta_case",
+        "familyId": "family-context-test-bs2-beta",
+        "binding": {
+          "observationId": "TEST_ONLY_BS2_beta_observation",
+          "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+          "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+          "allele": {
+            "assembly": "GRCh38",
+            "contig": "16",
+            "position": 70403,
+            "reference": "G",
+            "alternate": "A"
+          },
+          "hgncId": "HGNC:980022",
+          "mondoId": "MONDO:0980022",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bs2-beta",
+          "familyContextId": "family-context-test-bs2-beta"
+        },
+        "members": [
+          {
+            "memberId": "patient-context-test-bs2-beta",
+            "sampleId": "TEST_ONLY_BS2_beta_sample",
+            "role": "PROBAND",
+            "affectedStatus": "UNAFFECTED",
+            "detection": {
+              "binding": {
+                "observationId": "TEST_ONLY_BS2_beta_observation",
+                "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+                "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+                "allele": {
+                  "assembly": "GRCh38",
+                  "contig": "16",
+                  "position": 70403,
+                  "reference": "G",
+                  "alternate": "A"
+                },
+                "hgncId": "HGNC:980022",
+                "mondoId": "MONDO:0980022",
+                "moi": "AUTOSOMAL_DOMINANT",
+                "patientContextId": "patient-context-test-bs2-beta",
+                "familyContextId": "family-context-test-bs2-beta"
+              },
+              "memberId": "patient-context-test-bs2-beta",
+              "targetAltIndex": 1,
+              "ploidy": 2,
+              "sampleFormat": "GT:DP:GQ:AD:FT",
+              "method": "TEST_ONLY_PANEL_B_V3",
+              "coverage": "COVERED",
+              "capability": "TARGET_DETECTION",
+              "quality": "VALID",
+              "basis": "TEST_ONLY exact raw record and coverage report",
+              "limitations": "TEST_ONLY native autosomal single SNV",
+              "sourceIds": [
+                "TEST_ONLY_BS2_beta_facts_source"
+              ]
+            }
+          }
+        ],
+        "records": [
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "chromosome": "16",
+              "position": 70403,
+              "reference": "G",
+              "alternate": "A"
+            },
+            "role": "PROBAND",
+            "sampleId": "TEST_ONLY_BS2_beta_sample",
+            "geneSymbol": "TEST_ONLY_BS2_beta_GENE",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "1|0:50:72:23,27:PASS",
+            "observation": {
+              "role": "PROBAND",
+              "genotype": "1|0",
+              "call": "HET_ALT",
+              "depth": 50,
+              "genotypeQuality": 72,
+              "alleleDepth": "23,27",
+              "phased": true
+            }
+          }
+        ],
+        "parentage": [],
+        "clinical": {
+          "binding": {
+            "observationId": "TEST_ONLY_BS2_beta_observation",
+            "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+            "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+            "allele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 70403,
+              "reference": "G",
+              "alternate": "A"
+            },
+            "hgncId": "HGNC:980022",
+            "mondoId": "MONDO:0980022",
+            "moi": "AUTOSOMAL_DOMINANT",
+            "patientContextId": "patient-context-test-bs2-beta",
+            "familyContextId": "family-context-test-bs2-beta"
+          },
+          "probandMemberId": "patient-context-test-bs2-beta",
+          "observedAt": "2026-10-04T00:00:00Z",
+          "age": "64",
+          "phenotypeObservations": [],
+          "exclusions": [
+            "TEST_ONLY_BS2_beta_finding_0",
+            "TEST_ONLY_BS2_beta_finding_1",
+            "TEST_ONLY_BS2_beta_finding_2"
+          ],
+          "phenotypeCategory": "NOT_CONSISTENT",
+          "heterogeneity": "UNKNOWN",
+          "familyHistory": "UNKNOWN",
+          "familyHistoryBasis": "TEST_ONLY not established and not inferred",
+          "mosaicism": "REVIEWED_NONMOSAIC",
+          "scopeBasis": "TEST_ONLY single clinically evaluated unaffected adult",
+          "siblingRecurrence": "UNKNOWN",
+          "sourceIds": [
+            "TEST_ONLY_BS2_beta_facts_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_BS2_beta_facts_source",
+            "recordId": "TEST_ONLY_BS2_beta_facts_record",
+            "version": "TEST_ONLY_1",
+            "locator": "https://example.invalid/TEST_ONLY/bs2/beta/facts",
+            "acquiredAt": "2026-10-04T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"case-family-observation-v1\",\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"observationVersion\":\"TEST_ONLY_BS2_v1\",\"occurrenceId\":\"TEST_ONLY_BS2_beta_occurrence\",\"caseId\":\"TEST_ONLY_BS2_beta_case\",\"familyId\":\"family-context-test-bs2-beta\",\"binding\":{\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"contextId\":\"context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"hgncId\":\"HGNC:980022\",\"mondoId\":\"MONDO:0980022\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bs2-beta\",\"familyContextId\":\"family-context-test-bs2-beta\"},\"members\":[{\"memberId\":\"patient-context-test-bs2-beta\",\"sampleId\":\"TEST_ONLY_BS2_beta_sample\",\"role\":\"PROBAND\",\"affectedStatus\":\"UNAFFECTED\",\"detection\":{\"binding\":{\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"contextId\":\"context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"hgncId\":\"HGNC:980022\",\"mondoId\":\"MONDO:0980022\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bs2-beta\",\"familyContextId\":\"family-context-test-bs2-beta\"},\"memberId\":\"patient-context-test-bs2-beta\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"TEST_ONLY_PANEL_B_V3\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY exact raw record and coverage report\",\"limitations\":\"TEST_ONLY native autosomal single SNV\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_facts_source\"]}}],\"records\":[{\"variantKey\":{\"assembly\":\"GRCh38\",\"chromosome\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"role\":\"PROBAND\",\"sampleId\":\"TEST_ONLY_BS2_beta_sample\",\"geneSymbol\":\"TEST_ONLY_BS2_beta_GENE\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"1|0:50:72:23,27:PASS\",\"observation\":{\"role\":\"PROBAND\",\"genotype\":\"1|0\",\"call\":\"HET_ALT\",\"depth\":50,\"genotypeQuality\":72,\"alleleDepth\":\"23,27\",\"phased\":true}}],\"parentage\":[],\"clinical\":{\"binding\":{\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"contextId\":\"context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"hgncId\":\"HGNC:980022\",\"mondoId\":\"MONDO:0980022\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bs2-beta\",\"familyContextId\":\"family-context-test-bs2-beta\"},\"probandMemberId\":\"patient-context-test-bs2-beta\",\"observedAt\":\"2026-10-04T00:00:00Z\",\"age\":\"64\",\"phenotypeObservations\":[],\"exclusions\":[\"TEST_ONLY_BS2_beta_finding_0\",\"TEST_ONLY_BS2_beta_finding_1\",\"TEST_ONLY_BS2_beta_finding_2\"],\"phenotypeCategory\":\"NOT_CONSISTENT\",\"heterogeneity\":\"UNKNOWN\",\"familyHistory\":\"UNKNOWN\",\"familyHistoryBasis\":\"TEST_ONLY not established and not inferred\",\"mosaicism\":\"REVIEWED_NONMOSAIC\",\"scopeBasis\":\"TEST_ONLY single clinically evaluated unaffected adult\",\"siblingRecurrence\":\"UNKNOWN\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_facts_source\"]}}",
+            "rawSha256": "3798199324051b4ff8c7a3f31611fe038e0f42ba8a4c19ecfe3d454a779530a5",
+            "canonicalSha256": "9414fd8bc6531ed2c0907a00a3b575c7a4fbc44025ac55576794fd3d9a7805f5"
+          }
+        ]
+      },
+      "healthyAdultReview": {
+        "schemaVersion": "bs2-healthy-adult-review-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_BS2_beta_observation",
+          "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+          "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+          "allele": {
+            "assembly": "GRCh38",
+            "contig": "16",
+            "position": 70403,
+            "reference": "G",
+            "alternate": "A"
+          },
+          "hgncId": "HGNC:980022",
+          "mondoId": "MONDO:0980022",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bs2-beta",
+          "familyContextId": "family-context-test-bs2-beta"
+        },
+        "caseId": "TEST_ONLY_BS2_beta_case",
+        "occurrenceId": "TEST_ONLY_BS2_beta_occurrence",
+        "probandMemberId": "patient-context-test-bs2-beta",
+        "assessedAt": "2026-10-04T00:00:00Z",
+        "ageYears": 64,
+        "ageUnit": "YEARS",
+        "healthStatus": "REVIEWED_UNAFFECTED",
+        "sourceType": "DIRECT_INDIVIDUAL_CLINICAL_ASSESSMENT",
+        "mechanism": "TEST_ONLY_CHANNEL_GAIN_OF_FUNCTION",
+        "subtype": "TEST_ONLY_BS2_beta_subtype",
+        "populationId": "TEST_ONLY_BS2_beta_population",
+        "sex": "MALE",
+        "definitionId": "TEST_ONLY_BS2_beta_definition",
+        "definitionVersion": "3",
+        "rosterStatus": "COMPLETE_FROZEN_ROSTER",
+        "findings": [
+          {
+            "findingId": "TEST_ONLY_BS2_beta_finding_0",
+            "featureId": "TEST_ONLY_B_ECG",
+            "methodId": "TEST_ONLY_BS2_beta_validated_exam_0",
+            "result": "NORMAL",
+            "examination": "PERFORMED",
+            "applicability": "APPLICABLE",
+            "reliability": "REVIEWED_RELIABLE",
+            "observedAt": "2026-10-04T00:00:00Z",
+            "ageYears": 64,
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          },
+          {
+            "findingId": "TEST_ONLY_BS2_beta_finding_1",
+            "featureId": "TEST_ONLY_B_EXERCISE",
+            "methodId": "TEST_ONLY_BS2_beta_validated_exam_1",
+            "result": "ABSENT",
+            "examination": "PERFORMED",
+            "applicability": "APPLICABLE",
+            "reliability": "REVIEWED_RELIABLE",
+            "observedAt": "2026-10-04T00:00:00Z",
+            "ageYears": 64,
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          },
+          {
+            "findingId": "TEST_ONLY_BS2_beta_finding_2",
+            "featureId": "TEST_ONLY_B_NEURO",
+            "methodId": "TEST_ONLY_BS2_beta_validated_exam_2",
+            "result": "NORMAL",
+            "examination": "PERFORMED",
+            "applicability": "APPLICABLE",
+            "reliability": "REVIEWED_RELIABLE",
+            "observedAt": "2026-10-04T00:00:00Z",
+            "ageYears": 64,
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          }
+        ],
+        "masking": [
+          {
+            "kind": "TREATMENT",
+            "status": "REVIEWED_ABSENT",
+            "basis": "TEST_ONLY independently reviewed individual exposure history",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          },
+          {
+            "kind": "PREVENTIVE_INTERVENTION",
+            "status": "REVIEWED_ABSENT",
+            "basis": "TEST_ONLY independently reviewed individual exposure history",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          },
+          {
+            "kind": "TRANSPLANT",
+            "status": "REVIEWED_ABSENT",
+            "basis": "TEST_ONLY independently reviewed individual exposure history",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          },
+          {
+            "kind": "OTHER_MASKING_OR_UNRESOLVED_FACTOR",
+            "status": "REVIEWED_ABSENT",
+            "basis": "TEST_ONLY independently reviewed individual exposure history",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ]
+          }
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_BS2_beta_reviewer",
+          "date": "2026-10-04T00:00:00Z",
+          "basis": "TEST_ONLY fictional source-bound review, not clinical approval",
+          "sourceIds": [
+            "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_BS2_beta_healthyAdultReview_source",
+            "recordId": "TEST_ONLY_BS2_beta_healthyAdultReview_record",
+            "version": "TEST_ONLY_1",
+            "locator": "https://example.invalid/TEST_ONLY/bs2/beta/healthyAdultReview",
+            "acquiredAt": "2026-10-04T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"bs2-healthy-adult-review-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"contextId\":\"context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"hgncId\":\"HGNC:980022\",\"mondoId\":\"MONDO:0980022\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bs2-beta\",\"familyContextId\":\"family-context-test-bs2-beta\"},\"caseId\":\"TEST_ONLY_BS2_beta_case\",\"occurrenceId\":\"TEST_ONLY_BS2_beta_occurrence\",\"probandMemberId\":\"patient-context-test-bs2-beta\",\"assessedAt\":\"2026-10-04T00:00:00Z\",\"ageYears\":64,\"ageUnit\":\"YEARS\",\"healthStatus\":\"REVIEWED_UNAFFECTED\",\"sourceType\":\"DIRECT_INDIVIDUAL_CLINICAL_ASSESSMENT\",\"mechanism\":\"TEST_ONLY_CHANNEL_GAIN_OF_FUNCTION\",\"subtype\":\"TEST_ONLY_BS2_beta_subtype\",\"populationId\":\"TEST_ONLY_BS2_beta_population\",\"sex\":\"MALE\",\"definitionId\":\"TEST_ONLY_BS2_beta_definition\",\"definitionVersion\":\"3\",\"rosterStatus\":\"COMPLETE_FROZEN_ROSTER\",\"findings\":[{\"findingId\":\"TEST_ONLY_BS2_beta_finding_0\",\"featureId\":\"TEST_ONLY_B_ECG\",\"methodId\":\"TEST_ONLY_BS2_beta_validated_exam_0\",\"result\":\"NORMAL\",\"examination\":\"PERFORMED\",\"applicability\":\"APPLICABLE\",\"reliability\":\"REVIEWED_RELIABLE\",\"observedAt\":\"2026-10-04T00:00:00Z\",\"ageYears\":64,\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]},{\"findingId\":\"TEST_ONLY_BS2_beta_finding_1\",\"featureId\":\"TEST_ONLY_B_EXERCISE\",\"methodId\":\"TEST_ONLY_BS2_beta_validated_exam_1\",\"result\":\"ABSENT\",\"examination\":\"PERFORMED\",\"applicability\":\"APPLICABLE\",\"reliability\":\"REVIEWED_RELIABLE\",\"observedAt\":\"2026-10-04T00:00:00Z\",\"ageYears\":64,\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]},{\"findingId\":\"TEST_ONLY_BS2_beta_finding_2\",\"featureId\":\"TEST_ONLY_B_NEURO\",\"methodId\":\"TEST_ONLY_BS2_beta_validated_exam_2\",\"result\":\"NORMAL\",\"examination\":\"PERFORMED\",\"applicability\":\"APPLICABLE\",\"reliability\":\"REVIEWED_RELIABLE\",\"observedAt\":\"2026-10-04T00:00:00Z\",\"ageYears\":64,\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]}],\"masking\":[{\"kind\":\"TREATMENT\",\"status\":\"REVIEWED_ABSENT\",\"basis\":\"TEST_ONLY independently reviewed individual exposure history\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]},{\"kind\":\"PREVENTIVE_INTERVENTION\",\"status\":\"REVIEWED_ABSENT\",\"basis\":\"TEST_ONLY independently reviewed individual exposure history\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]},{\"kind\":\"TRANSPLANT\",\"status\":\"REVIEWED_ABSENT\",\"basis\":\"TEST_ONLY independently reviewed individual exposure history\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]},{\"kind\":\"OTHER_MASKING_OR_UNRESOLVED_FACTOR\",\"status\":\"REVIEWED_ABSENT\",\"basis\":\"TEST_ONLY independently reviewed individual exposure history\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_BS2_beta_reviewer\",\"date\":\"2026-10-04T00:00:00Z\",\"basis\":\"TEST_ONLY fictional source-bound review, not clinical approval\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"]}}",
+            "rawSha256": "4bb309978d665141b5b5e9edb9e4c50e71759019c455d859e0091ebc67841193",
+            "canonicalSha256": "62f6535a254c4803491a2e8ede8f4599857ebdaaa295cfb9fdc7dae167faa1b7"
+          }
+        ]
+      },
+      "diseaseApplicability": {
+        "schemaVersion": "bs2-disease-applicability-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_BS2_beta_observation",
+          "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+          "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+          "allele": {
+            "assembly": "GRCh38",
+            "contig": "16",
+            "position": 70403,
+            "reference": "G",
+            "alternate": "A"
+          },
+          "hgncId": "HGNC:980022",
+          "mondoId": "MONDO:0980022",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bs2-beta",
+          "familyContextId": "family-context-test-bs2-beta"
+        },
+        "mechanism": "TEST_ONLY_CHANNEL_GAIN_OF_FUNCTION",
+        "subtype": "TEST_ONLY_BS2_beta_subtype",
+        "validity": "ESTABLISHED",
+        "independence": "INDEPENDENT_OF_CURRENT_VARIANT_PERSON_AND_BS2",
+        "excludedAlleleIds": [
+          "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b"
+        ],
+        "excludedPersonIds": [
+          "patient-context-test-bs2-beta"
+        ],
+        "model": "FULL_BY_EARLY_AGE",
+        "onset": "EARLY_ONSET",
+        "fullyPenetrantAgeYears": 16,
+        "ageUnit": "YEARS",
+        "sexScope": [
+          "MALE"
+        ],
+        "populationIds": [
+          "TEST_ONLY_BS2_beta_population"
+        ],
+        "variantClass": "HET_SNV",
+        "definition": {
+          "definitionId": "TEST_ONLY_BS2_beta_definition",
+          "version": "3",
+          "mode": "ALL_OF",
+          "requirements": [
+            {
+              "featureId": "TEST_ONLY_B_ECG",
+              "methodId": "TEST_ONLY_BS2_beta_validated_exam_0",
+              "expectedResult": "NORMAL",
+              "ageMinimumYears": 18,
+              "ageMaximumYears": 130,
+              "validityDays": 90
+            },
+            {
+              "featureId": "TEST_ONLY_B_EXERCISE",
+              "methodId": "TEST_ONLY_BS2_beta_validated_exam_1",
+              "expectedResult": "ABSENT",
+              "ageMinimumYears": 18,
+              "ageMaximumYears": 130,
+              "validityDays": 90
+            },
+            {
+              "featureId": "TEST_ONLY_B_NEURO",
+              "methodId": "TEST_ONLY_BS2_beta_validated_exam_2",
+              "expectedResult": "NORMAL",
+              "ageMinimumYears": 18,
+              "ageMaximumYears": 130,
+              "validityDays": 90
+            }
+          ]
+        },
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_BS2_beta_reviewer",
+          "date": "2026-10-04T00:00:00Z",
+          "basis": "TEST_ONLY fictional source-bound review, not clinical approval",
+          "sourceIds": [
+            "TEST_ONLY_BS2_beta_diseaseApplicability_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_BS2_beta_diseaseApplicability_source",
+            "recordId": "TEST_ONLY_BS2_beta_diseaseApplicability_record",
+            "version": "TEST_ONLY_1",
+            "locator": "https://example.invalid/TEST_ONLY/bs2/beta/diseaseApplicability",
+            "acquiredAt": "2026-10-04T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"bs2-disease-applicability-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"contextId\":\"context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"hgncId\":\"HGNC:980022\",\"mondoId\":\"MONDO:0980022\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bs2-beta\",\"familyContextId\":\"family-context-test-bs2-beta\"},\"mechanism\":\"TEST_ONLY_CHANNEL_GAIN_OF_FUNCTION\",\"subtype\":\"TEST_ONLY_BS2_beta_subtype\",\"validity\":\"ESTABLISHED\",\"independence\":\"INDEPENDENT_OF_CURRENT_VARIANT_PERSON_AND_BS2\",\"excludedAlleleIds\":[\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\"],\"excludedPersonIds\":[\"patient-context-test-bs2-beta\"],\"model\":\"FULL_BY_EARLY_AGE\",\"onset\":\"EARLY_ONSET\",\"fullyPenetrantAgeYears\":16,\"ageUnit\":\"YEARS\",\"sexScope\":[\"MALE\"],\"populationIds\":[\"TEST_ONLY_BS2_beta_population\"],\"variantClass\":\"HET_SNV\",\"definition\":{\"definitionId\":\"TEST_ONLY_BS2_beta_definition\",\"version\":\"3\",\"mode\":\"ALL_OF\",\"requirements\":[{\"featureId\":\"TEST_ONLY_B_ECG\",\"methodId\":\"TEST_ONLY_BS2_beta_validated_exam_0\",\"expectedResult\":\"NORMAL\",\"ageMinimumYears\":18,\"ageMaximumYears\":130,\"validityDays\":90},{\"featureId\":\"TEST_ONLY_B_EXERCISE\",\"methodId\":\"TEST_ONLY_BS2_beta_validated_exam_1\",\"expectedResult\":\"ABSENT\",\"ageMinimumYears\":18,\"ageMaximumYears\":130,\"validityDays\":90},{\"featureId\":\"TEST_ONLY_B_NEURO\",\"methodId\":\"TEST_ONLY_BS2_beta_validated_exam_2\",\"expectedResult\":\"NORMAL\",\"ageMinimumYears\":18,\"ageMaximumYears\":130,\"validityDays\":90}]},\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_BS2_beta_reviewer\",\"date\":\"2026-10-04T00:00:00Z\",\"basis\":\"TEST_ONLY fictional source-bound review, not clinical approval\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_diseaseApplicability_source\"]}}",
+            "rawSha256": "1a59be89b653ab8d8104319ef938da38bbdaa6709619848b305fa35fa6081141",
+            "canonicalSha256": "bd7332eef699db21bdd00b9c988fea25cadd6094fb982aca8edfa2bfb4a5e2a1"
+          }
+        ]
+      },
+      "evidenceUse": {
+        "schemaVersion": "bs2-evidence-use-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_BS2_beta_observation",
+          "contextId": "context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4",
+          "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+          "allele": {
+            "assembly": "GRCh38",
+            "contig": "16",
+            "position": 70403,
+            "reference": "G",
+            "alternate": "A"
+          },
+          "hgncId": "HGNC:980022",
+          "mondoId": "MONDO:0980022",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bs2-beta",
+          "familyContextId": "family-context-test-bs2-beta"
+        },
+        "personId": "patient-context-test-bs2-beta",
+        "caseId": "TEST_ONLY_BS2_beta_case",
+        "occurrenceId": "TEST_ONLY_BS2_beta_occurrence",
+        "familyId": "family-context-test-bs2-beta",
+        "evidenceGroupId": "pp1-pp4-group-sha256-fe415ccedd06e3bc1848958df07824f22f793fba25e62b2e1efab67f120ce6ac",
+        "clinicalSourceIds": [
+          "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+        ],
+        "rosterStatus": "COMPLETE_FROZEN_ROSTER",
+        "uses": [
+          {
+            "criterionId": "ACMG_AMP_2015:BS2",
+            "personId": "patient-context-test-bs2-beta",
+            "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+            "clinicalSourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ],
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete package-local use ledger only",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_evidenceUse_source"
+            ]
+          },
+          {
+            "criterionId": "ACMG_AMP_2015:BS4",
+            "personId": "patient-context-test-bs2-beta",
+            "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+            "clinicalSourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ],
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete package-local use ledger only",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_evidenceUse_source"
+            ]
+          },
+          {
+            "criterionId": "ACMG_AMP_2015:PP1",
+            "personId": "patient-context-test-bs2-beta",
+            "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+            "clinicalSourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ],
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete package-local use ledger only",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_evidenceUse_source"
+            ]
+          },
+          {
+            "criterionId": "ACMG_AMP_2015:PP4",
+            "personId": "patient-context-test-bs2-beta",
+            "alleleId": "allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b",
+            "clinicalSourceIds": [
+              "TEST_ONLY_BS2_beta_healthyAdultReview_source"
+            ],
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete package-local use ledger only",
+            "sourceIds": [
+              "TEST_ONLY_BS2_beta_evidenceUse_source"
+            ]
+          }
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_BS2_beta_reviewer",
+          "date": "2026-10-04T00:00:00Z",
+          "basis": "TEST_ONLY fictional source-bound review, not clinical approval",
+          "sourceIds": [
+            "TEST_ONLY_BS2_beta_evidenceUse_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_BS2_beta_evidenceUse_source",
+            "recordId": "TEST_ONLY_BS2_beta_evidenceUse_record",
+            "version": "TEST_ONLY_1",
+            "locator": "https://example.invalid/TEST_ONLY/bs2/beta/evidenceUse",
+            "acquiredAt": "2026-10-04T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"bs2-evidence-use-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_BS2_beta_observation\",\"contextId\":\"context-sha256-5274966bd435d4ef22f8e20c475d277ea4cca5c9c4b7576df5ea501fd749d6a4\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":70403,\"reference\":\"G\",\"alternate\":\"A\"},\"hgncId\":\"HGNC:980022\",\"mondoId\":\"MONDO:0980022\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bs2-beta\",\"familyContextId\":\"family-context-test-bs2-beta\"},\"personId\":\"patient-context-test-bs2-beta\",\"caseId\":\"TEST_ONLY_BS2_beta_case\",\"occurrenceId\":\"TEST_ONLY_BS2_beta_occurrence\",\"familyId\":\"family-context-test-bs2-beta\",\"evidenceGroupId\":\"pp1-pp4-group-sha256-fe415ccedd06e3bc1848958df07824f22f793fba25e62b2e1efab67f120ce6ac\",\"clinicalSourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"],\"rosterStatus\":\"COMPLETE_FROZEN_ROSTER\",\"uses\":[{\"criterionId\":\"ACMG_AMP_2015:BS2\",\"personId\":\"patient-context-test-bs2-beta\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"clinicalSourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"],\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete package-local use ledger only\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_evidenceUse_source\"]},{\"criterionId\":\"ACMG_AMP_2015:BS4\",\"personId\":\"patient-context-test-bs2-beta\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"clinicalSourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"],\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete package-local use ledger only\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_evidenceUse_source\"]},{\"criterionId\":\"ACMG_AMP_2015:PP1\",\"personId\":\"patient-context-test-bs2-beta\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"clinicalSourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"],\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete package-local use ledger only\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_evidenceUse_source\"]},{\"criterionId\":\"ACMG_AMP_2015:PP4\",\"personId\":\"patient-context-test-bs2-beta\",\"alleleId\":\"allele-sha256-d86378c2f47e02fa32a765c20ac7a0ba6846bb66545cdb557ebb3d0d42f2371b\",\"clinicalSourceIds\":[\"TEST_ONLY_BS2_beta_healthyAdultReview_source\"],\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete package-local use ledger only\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_evidenceUse_source\"]}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_BS2_beta_reviewer\",\"date\":\"2026-10-04T00:00:00Z\",\"basis\":\"TEST_ONLY fictional source-bound review, not clinical approval\",\"sourceIds\":[\"TEST_ONLY_BS2_beta_evidenceUse_source\"]}}",
+            "rawSha256": "97e3f4f0ad5691486fe66f11c787e21eb940a86fa48385b0a2f61769f9fea40d",
+            "canonicalSha256": "5c9a532a81e8a2fac0a5b449a1af36e4af0c5ea4e0779280c769acea8442f5f3"
+          }
+        ]
+      },
+      "assessment": {
+        "schemaVersion": "bs2-assessment-v1",
+        "assessmentId": "TEST_ONLY_BS2_beta_assessment",
+        "assessmentVersion": "1",
+        "partPins": {
+          "facts": "e7a18bf10d56f2bde2489f207bbc16e217e806191de1bfc106183f45f048aae8",
+          "healthyAdultReview": "c600d0b2ef7678b04b8da2e8e58cc4f34b99551f1dd40921144ef4712496e923",
+          "diseaseApplicability": "8ad7835af2375ce000a19cfd2914051e51f917a2bf319afccc39f77d75042756",
+          "evidenceUse": "b2260face315282434265f9ed0d6382be79a2ee7d820844cfccca2c7c6ea4790"
+        },
+        "factsReview": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_BS2_beta_reviewer",
+          "date": "2026-10-04T00:00:00Z",
+          "basis": "TEST_ONLY fictional source-bound review, not clinical approval",
+          "sourceIds": [
+            "TEST_ONLY_BS2_beta_facts_source"
+          ]
+        },
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_BS2_beta_reviewer",
+          "date": "2026-10-04T00:00:00Z",
+          "basis": "TEST_ONLY fictional source-bound review, not clinical approval",
+          "sourceIds": [
+            "TEST_ONLY_BS2_beta_facts_source",
+            "TEST_ONLY_BS2_beta_healthyAdultReview_source",
+            "TEST_ONLY_BS2_beta_diseaseApplicability_source",
+            "TEST_ONLY_BS2_beta_evidenceUse_source"
+          ]
+        },
+        "contentSha256": "b5f84f893d3c40b27532e7b71ddcd616ebd4d45ce912faf1d44627abdc836c10"
+      }
+    }
+  ],
+  "policy": {
+    "schemaVersion": "bs2-reviewed-healthy-adult-policy-v1",
+    "policyId": "TEST_ONLY_BS2_beta_policy",
+    "policyVersion": "1.0.1-test-material",
+    "mode": "SINGLE_HEALTHY_ADULT_AD",
+    "criterionIds": [
+      "ACMG_AMP_2015:BS2"
+    ],
+    "scope": {
+      "hgncId": "HGNC:980022",
+      "mondoId": "MONDO:0980022",
+      "moi": "AUTOSOMAL_DOMINANT",
+      "assembly": "GRCh38",
+      "transcriptMode": "TRANSCRIPT_NOT_REQUIRED",
+      "variantType": "NATIVE_NONPROJECTED_SNV"
+    },
+    "review": {
+      "status": "REVIEWED_IMPLEMENTED",
+      "reviewId": "TEST_ONLY_BS2_beta_policy_review"
+    },
+    "partPins": {
+      "facts": "e7a18bf10d56f2bde2489f207bbc16e217e806191de1bfc106183f45f048aae8",
+      "healthyAdultReview": "c600d0b2ef7678b04b8da2e8e58cc4f34b99551f1dd40921144ef4712496e923",
+      "diseaseApplicability": "8ad7835af2375ce000a19cfd2914051e51f917a2bf319afccc39f77d75042756",
+      "evidenceUse": "b2260face315282434265f9ed0d6382be79a2ee7d820844cfccca2c7c6ea4790"
+    },
+    "assessmentSha256": "6a5e14cb8c44691983cd84b09a18e6cdc1da5070730a66f3fe8efe1a8dea982d",
+    "authoritySourceIds": [
+      "authority-acmg-amp-2015-richards"
+    ],
+    "scientificSources": [
+      {
+        "sourceId": "authority-acmg-amp-2015-richards",
+        "version": "2015",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4544753/",
+        "sha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+        "publicationDate": "2015-03-05",
+        "publicationStatus": "RELEASED",
+        "normativeEligibility": "ELIGIBLE",
+        "authorityCutoff": "2026-09-11"
+      }
+    ],
+    "qualityProfile": "bs2-diploid-snv-dp20-gq20-explicit-ft-v1"
+  },
+  "catalog": {
+    "schemaVersion": "acmg-specification-catalog-v1",
+    "catalogId": "TEST_ONLY_BS2_beta_catalog",
+    "catalogVersion": "2-r1",
+    "searchScope": "TEST_ONLY_BS2_beta_exact_scope",
+    "searchedAt": "2026-09-29T00:00:00Z",
+    "review": {
+      "status": "REVIEWED",
+      "reviewId": "TEST_ONLY_PP4_beta_catalog_review"
+    },
+    "sources": [
+      {
+        "sourceId": "TEST_ONLY_PP4_beta_catalog_source",
+        "version": "TEST_ONLY_1",
+        "url": "https://example.invalid/TEST_ONLY/pp4/beta/catalog",
+        "sha256": "58158fb9fb646dc9b3f58d050ce7d213f8bfd44176b62295ca05fa87bb80d555"
+      }
+    ],
+    "entries": [
+      {
+        "entryId": "TEST_ONLY_BS2_beta_entry",
+        "criterionId": "ACMG_AMP_2015:BS2",
+        "scope": {
+          "hgncId": "HGNC:980022",
+          "mondoId": "MONDO:0980022",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "assembly": "GRCh38",
+          "transcriptMode": "TRANSCRIPT_NOT_REQUIRED",
+          "variantType": "NATIVE_NONPROJECTED_SNV"
+        },
+        "searchStatus": "COMPLETE",
+        "review": {
+          "status": "REVIEWED",
+          "reviewId": "TEST_ONLY_PP4_beta_entry_review"
+        },
+        "sourceIds": [
+          "TEST_ONLY_PP4_beta_catalog_source"
+        ],
+        "disposition": "NO_APPLICABLE_SPECIALIZATION",
+        "baseRuleRelationship": "TEST_ONLY independent general BS2 applicability reviewed",
+        "generalPrerequisites": {
+          "status": "COMPLETE",
+          "sourceIds": [
+            "TEST_ONLY_PP4_beta_catalog_source"
+          ]
+        },
+        "policyBinding": {
+          "policyId": "TEST_ONLY_BS2_beta_policy",
+          "policyVersion": "1.0.1-test-material",
+          "policySha256": "9d67fe60b5fced641458e55d91d63fd7969ecd8bb8bd95355314f0c4f07d48b0"
+        }
+      }
+    ]
+  },
+  "catalogSha256": "bce093f35c3d0e62c21b2192d7b7bf03a945e0a4dba8b04c32f0a981abda3813",
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-bs2-healthy-adult-core-2026-10-04",
+    "registrySha256": "d575392e88375afb04867cb2e0af95d41b2ce2143315ad7ca469ff146c18d6ff",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-bs2-healthy-adult-core-2026-10-04.json"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion" : "benchmark-case-result-v1",
+  "resultId" : "synthetic-result-ranked",
+  "createdAt" : "2026-01-01T00:03:00Z",
+  "runId" : "synthetic-run-001",
+  "datasetId" : "synthetic-public-like-dataset",
+  "caseId" : "case-alpha",
+  "groupId" : "G0",
+  "caseExecutionStatus" : "COMPLETED",
+  "analysisReference" : "analysis-synthetic-alpha-g0",
+  "truthMatches" : [ {
+    "truthGene" : "SYNGENE1",
+    "truthCanonicalIdentity" : {
+      "genomeAssembly" : "GRCh38",
+      "chromosome" : "1",
+      "position" : 100,
+      "reference" : "A",
+      "alternate" : "G"
+    },
+    "matchedCanonicalIdentity" : {
+      "genomeAssembly" : "GRCh38",
+      "chromosome" : "1",
+      "position" : 100,
+      "reference" : "A",
+      "alternate" : "G"
+    },
+    "matchStatus" : "MATCHED",
+    "assembly" : "GRCh38",
+    "ambiguityStatus" : "UNAMBIGUOUS",
+    "rankingContractVersion" : "ranking-contract-v1",
+    "rankStatus" : "RANKED",
+    "rank" : 6001,
+    "rankingUniverseSize" : 10000
+  } ],
+  "stageRetention" : [
+    { "stage" : "RAW_INPUT", "presence" : "PRESENT", "observedCount" : 10000 },
+    { "stage" : "RANKING", "presence" : "PRESENT", "observedCount" : 10000 },
+    { "stage" : "PERSISTED", "presence" : "PRESENT", "observedCount" : 10000 }
+  ]
+}

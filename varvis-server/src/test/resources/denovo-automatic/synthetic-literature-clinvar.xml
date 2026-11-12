@@ -1,0 +1,11 @@
+<ClinVarResult-Set><VariationArchive VariationID="999999997" Accession="VCV999999997" Version="1">
+<RecordStatus>current</RecordStatus><Species>Homo sapiens</Species><ClassifiedRecord>
+<SimpleAllele VariationID="999999997"><GeneList><Gene Symbol="EXAMPLE" HGNC_ID="HGNC:1748">
+<Location><SequenceLocation Assembly="GRCh38" Chr="2" positionVCF="999" referenceAlleleVCF="G" alternateAlleleVCF="T"/></Location>
+</Gene></GeneList><Location><SequenceLocation Assembly="GRCh38" Chr="11" positionVCF="2" referenceAlleleVCF="T" alternateAlleleVCF="A"/></Location>
+<HGVSlist><HGVS Type="coding"><NucleotideExpression sequenceAccessionVersion="NM_999999997.1" change="c.123A&gt;G">
+<Expression>NM_999999997.1:c.123A&gt;G</Expression></NucleotideExpression>
+<ProteinExpression sequenceAccessionVersion="NP_999999997.1" change="p.Thr41Ala"><Expression>NP_999999997.1:p.Thr41Ala</Expression></ProteinExpression>
+</HGVS></HGVSlist></SimpleAllele><Classifications><GermlineClassification><Description>Uncertain significance</Description>
+<Citation><ID Source="PubMed">999999997</ID></Citation></GermlineClassification></Classifications>
+</ClassifiedRecord></VariationArchive></ClinVarResult-Set>

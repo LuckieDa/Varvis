@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "cspec-overlay-registry-v1",
+  "registryId": "cspec-overlay-registry-hnf1a-ps1-pm5-2026-09-11",
+  "authorityCatalogId": "authority-catalog-hnf1a-ps1-pm5-2026-09-11",
+  "authorityCatalogSha256": "f828d2e02a7d84ed74254321f91a66d1fff2d50b803dd442edee54f473c4f8f3",
+  "baseRuleRegistryId": "acmg-rule-registry-hnf1a-ps1-pm5-2026-09-11",
+  "baseRuleRegistrySha256": "40d888045b803acd3fe9f088dec4ac0113e1fcffb4d15be341c2d129eea9460f",
+  "authorityCutoff": "2026-09-11",
+  "asOf": "2026-09-11T01:42:34Z",
+  "selectionPolicy": {
+    "policyId": "CSPEC_EXACT_CONTEXT_SELECTION_V1",
+    "matchMode": "EXACT_STABLE_IDENTIFIERS_SINGLE_MATCH",
+    "requiredDimensions": [
+      "HGNC_ID",
+      "MONDO_ID",
+      "MOI"
+    ],
+    "transcriptMode": "EXACT_IF_REQUIRED_BY_OVERLAY",
+    "outcomes": {
+      "zeroMatch": {
+        "overlaySelectionStatus": "NO_MATCH",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_GENERAL_RULES",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleSelectableMatch": {
+        "overlaySelectionStatus": "SELECTED",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_SELECTED_OVERLAY",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleNonSelectableMatch": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MATCH_NOT_EXECUTABLE"
+      },
+      "multipleExactMatches": {
+        "overlaySelectionStatus": "AMBIGUOUS",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MULTIPLE_EXACT_MATCHES"
+      },
+      "contextConflict": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_CONTEXT_CONFLICT"
+      }
+    }
+  },
+  "overlays": [
+    {
+      "overlayId": "cspec-overlay-gn017-3.1.0",
+      "cspecId": "GN017",
+      "version": "3.1.0",
+      "vcepId": "50016",
+      "vcepName": "Monogenic Diabetes VCEP",
+      "publicationStatus": "RELEASED",
+      "normativeEligibility": "ELIGIBLE",
+      "approvalDate": "2025-10-10",
+      "lifecycleStatus": "CURRENT",
+      "implementationStatus": "IMPLEMENTED",
+      "selectionStatus": "SELECTABLE",
+      "transcriptRequired": true,
+      "selector": {
+        "hgncId": "HGNC:11621",
+        "mondoId": "MONDO:0015967",
+        "moi": "AUTOSOMAL_DOMINANT",
+        "transcript": {
+          "accession": "ENST00000257555",
+          "version": 11
+        }
+      },
+      "authoritySourceIds": [
+        "authority-clingen-cspec-gn017-v3.1.0"
+      ],
+      "sourceLocators": [
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Official GN017 3.1.0 export; protein PS1 Strong/Moderate and single-reference PM5 Moderate/Supporting",
+          "sourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+          "artifactUrl": "https://zenodo.org/api/records/21421568/files/GN017_3.1.0.json/content",
+          "artifactMediaType": "application/json",
+          "artifactRole": "CSPEC_API_EXPORT_JSON",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+          "retrievedAt": "2026-09-10T13:45:00Z"
+        },
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Official GN017 display specification PDF version 3.1",
+          "sourceRecordId": "Zenodo:21421568/ClinGen_ACMG_Specifications_GN017_3.1.pdf",
+          "artifactUrl": "https://zenodo.org/records/21421568/files/ClinGen_ACMG_Specifications_GN017_3.1.pdf?download=1",
+          "artifactMediaType": "application/pdf",
+          "artifactRole": "CSPEC_SPECIFICATION_PDF",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "e419abc37b429289c15057e202da87e006e95479ae6f50f65a527fa9a1f9ecdb",
+          "retrievedAt": "2026-09-10T14:12:35.013042Z"
+        }
+      ],
+      "snapshotSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+      "snapshotSourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+      "versionCanonicalizationProfile": "cspec-explicit-alias-map-v1",
+      "versionAliases": [
+        {
+          "rawVersion": "3.1",
+          "canonicalVersion": "3.1.0",
+          "sourceRecordId": "CSpec:GN017@3.1",
+          "apiLdhId": "467903868",
+          "apiRevision": "_ka7YRPu---",
+          "snapshotSourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+          "snapshotSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1"
+        },
+        {
+          "rawVersion": "3.1.0",
+          "canonicalVersion": "3.1.0",
+          "sourceRecordId": "CSpec:GN017@3.1.0",
+          "apiLdhId": "467903868",
+          "apiRevision": "_ka7YRPu---",
+          "snapshotSourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+          "snapshotSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1"
+        }
+      ],
+      "versionAliasSetSha256": "551595f4fb32097c36f7d4f04cd5b206c963850fd32dbdd1943f427822f4a11d",
+      "versionDeduplication": {
+        "status": "DEDUPLICATED",
+        "identityFields": [
+          "CSPEC_ID",
+          "CANONICAL_VERSION",
+          "API_LDH_ID",
+          "API_REVISION",
+          "SNAPSHOT_SHA256"
+        ],
+        "onIdentityConflict": "RETAIN_ALL_REQUIRE_REVIEW_AND_ABSTAIN",
+        "reasonCode": "CSPEC_VERSION_ALIAS_IDENTITY_CONFLICT"
+      },
+      "criterionSpecifications": [
+        {
+          "criterionId": "ACMG_AMP_2015:PS1",
+          "action": "MODIFY",
+          "designation": "PS1",
+          "strength": "STRONG",
+          "authoritySourceIds": [
+            "authority-clingen-cspec-gn017-v3.1.0"
+          ],
+          "sourceLocators": [
+            {
+              "locatorType": "REPOSITORY_ARTIFACT",
+              "locatorValue": "Official GN017 3.1.0 export; protein PS1 Strong/Moderate and single-reference PM5 Moderate/Supporting",
+              "sourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+              "artifactUrl": "https://zenodo.org/api/records/21421568/files/GN017_3.1.0.json/content",
+              "artifactMediaType": "application/json",
+              "artifactRole": "CSPEC_API_EXPORT_JSON",
+              "hashScope": "RAW_BYTES",
+              "artifactSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+              "retrievedAt": "2026-09-10T13:45:00Z"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "business.profileId",
+              "value": "HNF1A_GN017_3_1_PS1_PM5"
+            },
+            {
+              "name": "business.profileVersion",
+              "value": "1.0.0"
+            },
+            {
+              "name": "allowedStrengths",
+              "value": "STRONG,MODERATE"
+            },
+            {
+              "name": "referencePolicy",
+              "value": "EXACT_INDEPENDENT_MDEP_SCV_AND_EREPO"
+            },
+            {
+              "name": "splicePolicy",
+              "value": "CONSERVATIVE_RAW_SPLICEAI_LE_0_1_BOTH; NOT_GN017_NUMERIC_REQUIREMENT"
+            }
+          ]
+        },
+        {
+          "criterionId": "ACMG_AMP_2015:PM5",
+          "action": "MODIFY",
+          "designation": "PM5",
+          "strength": "MODERATE",
+          "authoritySourceIds": [
+            "authority-clingen-cspec-gn017-v3.1.0"
+          ],
+          "sourceLocators": [
+            {
+              "locatorType": "REPOSITORY_ARTIFACT",
+              "locatorValue": "Official GN017 3.1.0 export; protein PS1 Strong/Moderate and single-reference PM5 Moderate/Supporting",
+              "sourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+              "artifactUrl": "https://zenodo.org/api/records/21421568/files/GN017_3.1.0.json/content",
+              "artifactMediaType": "application/json",
+              "artifactRole": "CSPEC_API_EXPORT_JSON",
+              "hashScope": "RAW_BYTES",
+              "artifactSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+              "retrievedAt": "2026-09-10T13:45:00Z"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "business.profileId",
+              "value": "HNF1A_GN017_3_1_PS1_PM5"
+            },
+            {
+              "name": "business.profileVersion",
+              "value": "1.0.0"
+            },
+            {
+              "name": "allowedStrengths",
+              "value": "MODERATE,SUPPORTING"
+            },
+            {
+              "name": "referencePolicy",
+              "value": "EXACT_INDEPENDENT_MDEP_SCV_AND_EREPO"
+            },
+            {
+              "name": "splicePolicy",
+              "value": "CONSERVATIVE_RAW_SPLICEAI_LE_0_1_BOTH; NOT_GN017_NUMERIC_REQUIREMENT"
+            }
+          ]
+        }
+      ],
+      "notes": "Native GRCh38 missense SNV only; exact NM_000545.8/ENST00000257555.11/ENSP00000257555.5; two audited independent references. PM5 Strong and RNA PS1 disabled. No final clinical classification."
+    }
+  ]
+}

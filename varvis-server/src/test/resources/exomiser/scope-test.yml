@@ -1,0 +1,14 @@
+analysisMode: PASS_ONLY
+inheritanceModes: { AUTOSOMAL_DOMINANT: 0.1, AUTOSOMAL_RECESSIVE_HOM_ALT: 0.1, AUTOSOMAL_RECESSIVE_COMP_HET: 2.0, X_DOMINANT: 0.1, X_RECESSIVE_HOM_ALT: 0.1, X_RECESSIVE_COMP_HET: 2.0, MITOCHONDRIAL: 0.2 }
+frequencySources: [GNOMAD_G_EAS]
+pathogenicitySources: [REVEL, MVP, ALPHA_MISSENSE, SPLICE_AI]
+steps: [
+  failedVariantFilter: {},
+  alleleBalanceFilter: {},
+  variantEffectFilter: { remove: [CODING_TRANSCRIPT_INTRON_VARIANT, INTERGENIC_VARIANT] },
+  frequencyFilter: { maxFrequency: 2.0 },
+  pathogenicityFilter: { keepNonPathogenic: true },
+  inheritanceFilter: {},
+  omimPrioritiser: {},
+  hiPhivePrioritiser: {}
+]

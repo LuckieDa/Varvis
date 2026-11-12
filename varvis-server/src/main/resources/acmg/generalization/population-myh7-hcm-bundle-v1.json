@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "population-frequency-bundle-v1",
+  "bundleId": "MYH7_HCM_NFE_POPULATION_OPT_IN_CANDIDATE_V1",
+  "bundleVersion": "1.0.0",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "review": {
+    "status": "REVIEWED_IMPLEMENTED",
+    "reviewId": "VARVIS_INDEPENDENT_SOURCE_AND_ENGINEERING_REVIEW_MYH7_HCM_20260913",
+    "kind": "Independent scientific-source and limited-engineering review; not clinical sign-off and not real-resource or business acceptance"
+  },
+  "activation": {
+    "mode": "EXPLICIT_OPT_IN_CANDIDATE",
+    "defaultEnabled": false,
+    "classificationEnabled": false,
+    "businessAcceptanceStatus": "PENDING_ROOT_ENGINEERING_AND_REAL_BUSINESS_VALIDATION"
+  },
+  "resourceRoot": "${VARVIS_RESOURCE_ROOT}/ten-rule-generalization-20260913",
+  "catalog": {
+    "schemaVersion": "acmg-specification-catalog-v1",
+    "catalogId": "MYH7_HCM_POPULATION_CSPEC_20260913",
+    "catalogVersion": "1.0.0",
+    "searchedAt": "2026-09-13T15:15:05Z",
+    "searchScope": "Public ClinGen CSpec current summary and GN002 current/version-history snapshots; exact MYH7 HGNC:7577, AD hypertrophic cardiomyopathy MONDO:0005045, BA1/BS1/PM2 only. Related DCM scope is known but deliberately outside this candidate. Search completion is bounded to these published sources.",
+    "review": {
+      "status": "REVIEWED",
+      "reviewId": "VARVIS_INDEPENDENT_SOURCE_AND_ENGINEERING_REVIEW_MYH7_HCM_20260913",
+      "kind": "Independent source and software-scope review, not clinical sign-off"
+    },
+    "sources": [
+      {
+        "sourceId": "authority-clingen-myh7-gn002-v2.0-20260913",
+        "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN002?version=2.0",
+        "version": "2.0",
+        "sha256": "0be8ad1d1a3df87d16c3a0b8595e115f7e82e607347f46ae770c011bb0656c24",
+        "relativePath": "sources/GN002-v2.0.html",
+        "role": "Active MYH7 HCM/DCM population clauses; only HCM is enabled by this candidate"
+      },
+      {
+        "sourceId": "authority-clingen-myh7-gn002-history-20260913",
+        "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN002/versions",
+        "version": "observed-2026-09-13",
+        "sha256": "992f1b8e232691ea093611574d8876979a9d2f56e00cf14aabbd208cb9d586a3",
+        "relativePath": "sources/GN002-versions.html",
+        "role": "Version lineage and release identity"
+      },
+      {
+        "sourceId": "authority-clingen-gnomad-v4-guidance-20250623-fulltext",
+        "url": "https://www.clinicalgenome.org/site/assets/files/9445/june_2025_communication_to_clingen_vceps_from_clingen_vcep_review_committee.pdf",
+        "version": "3.0-2025-06-23",
+        "sha256": "9b350163d45df62c506279a08002ced090af7f66f20979db62465e68d54bbd63",
+        "relativePath": "sources/clingen-vcep-gnomad-v4-20250623.pdf",
+        "role": "gnomAD v4 joint FAF95max and ancestry exclusions"
+      },
+      {
+        "sourceId": "authority-hts-specs-vcf-v4.5-20260913",
+        "url": "https://samtools.github.io/hts-specs/VCFv4.5.pdf",
+        "version": "VCFv4.5-captured-2026-09-13",
+        "sha256": "7a1f6990dbfca4a20d9b6f21a4cb0bcbfd876853bfc86a832af2de6153abffa5",
+        "relativePath": "sources/VCFv4.5.pdf",
+        "role": "Section1.3 p4 Float32; Section6.3 p42 BCF single precision; count-AF QC only"
+      },
+      {
+        "sourceId": "authority-clingen-cspec-summary-20260913",
+        "url": "https://cspec.genome.network/cspec/ui/svi/summary",
+        "version": "observed-2026-09-13",
+        "sha256": "382e7e1a77e0c6bf45d696f77662a88629046ffa3cfb4441c96577012b3d5ec1",
+        "relativePath": "sources/CSpec-summary-20260913.html",
+        "role": "Current public criteria directory and exact gene/disease scope search"
+      }
+    ],
+    "entries": [
+      {
+        "entryId": "MYH7_HCM_GN002_2_0_BA1",
+        "criterionId": "ACMG_AMP_2015:BA1",
+        "scope": {
+          "hgncId": "HGNC:7577",
+          "mondoId": "MONDO:0005045",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "assembly": "GRCh38",
+          "variantType": "NATIVE_NONPROJECTED_SNV",
+          "transcriptMode": "ANY_VALIDATED_TRANSCRIPT"
+        },
+        "searchStatus": "COMPLETE",
+        "disposition": "SPECIALIZED_IMPLEMENTED",
+        "sourceIds": [
+          "authority-clingen-myh7-gn002-v2.0-20260913",
+          "authority-clingen-myh7-gn002-history-20260913",
+          "authority-clingen-gnomad-v4-guidance-20250623-fulltext",
+          "authority-hts-specs-vcf-v4.5-20260913",
+          "authority-clingen-cspec-summary-20260913"
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewId": "VARVIS_INDEPENDENT_SOURCE_AND_ENGINEERING_REVIEW_MYH7_HCM_20260913"
+        },
+        "baseRuleRelationship": "GN002 v2.0 replaces the general disease frequency threshold for this exact MYH7 HCM context. ClinGen 2025 guidance supplies the joint gnomAD v4 FAF95 observation semantics; extra Varvis input gates are explicit.",
+        "policyBinding": {
+          "policyId": "MYH7_HCM_GN002_2_0_NFE_JOINT_FAF95_V1",
+          "policyVersion": "1.0.0",
+          "policySha256": "2358674b5aeff5af110ee34c4db2f53565a1c1d9c8023bde2c5167f584a3f29d"
+        }
+      },
+      {
+        "entryId": "MYH7_HCM_GN002_2_0_BS1",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "scope": {
+          "hgncId": "HGNC:7577",
+          "mondoId": "MONDO:0005045",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "assembly": "GRCh38",
+          "variantType": "NATIVE_NONPROJECTED_SNV",
+          "transcriptMode": "ANY_VALIDATED_TRANSCRIPT"
+        },
+        "searchStatus": "COMPLETE",
+        "disposition": "SPECIALIZED_IMPLEMENTED",
+        "sourceIds": [
+          "authority-clingen-myh7-gn002-v2.0-20260913",
+          "authority-clingen-myh7-gn002-history-20260913",
+          "authority-clingen-gnomad-v4-guidance-20250623-fulltext",
+          "authority-hts-specs-vcf-v4.5-20260913",
+          "authority-clingen-cspec-summary-20260913"
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewId": "VARVIS_INDEPENDENT_SOURCE_AND_ENGINEERING_REVIEW_MYH7_HCM_20260913"
+        },
+        "baseRuleRelationship": "GN002 v2.0 replaces the general disease frequency threshold for this exact MYH7 HCM context. ClinGen 2025 guidance supplies the joint gnomAD v4 FAF95 observation semantics; extra Varvis input gates are explicit.",
+        "policyBinding": {
+          "policyId": "MYH7_HCM_GN002_2_0_NFE_JOINT_FAF95_V1",
+          "policyVersion": "1.0.0",
+          "policySha256": "2358674b5aeff5af110ee34c4db2f53565a1c1d9c8023bde2c5167f584a3f29d"
+        }
+      },
+      {
+        "entryId": "MYH7_HCM_GN002_2_0_PM2_KNOWN_GAP",
+        "criterionId": "ACMG_AMP_2015:PM2",
+        "scope": {
+          "hgncId": "HGNC:7577",
+          "mondoId": "MONDO:0005045",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "assembly": "GRCh38",
+          "variantType": "NATIVE_NONPROJECTED_SNV",
+          "transcriptMode": "ANY_VALIDATED_TRANSCRIPT"
+        },
+        "searchStatus": "COMPLETE",
+        "disposition": "SPECIALIZED_UNIMPLEMENTED",
+        "sourceIds": [
+          "authority-clingen-myh7-gn002-v2.0-20260913",
+          "authority-clingen-myh7-gn002-history-20260913",
+          "authority-clingen-cspec-summary-20260913"
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewId": "VARVIS_INDEPENDENT_SOURCE_AND_ENGINEERING_REVIEW_MYH7_HCM_20260913"
+        },
+        "baseRuleRelationship": "Applicable MYH7 PM2 Supporting uses an upper 95 percent confidence bound <= 0.00004 with further population premises. This bundle does not implement that clause; lower FAF95 or generic absence must not be substituted."
+      }
+    ]
+  },
+  "catalogSha256": "285318e5700cce985cc4906cfc2eadd23a60957a8c1f551f00657e5b4353ed5e",
+  "policies": [
+    {
+      "schemaVersion": "population-frequency-policy-v1",
+      "policyId": "MYH7_HCM_GN002_2_0_NFE_JOINT_FAF95_V1",
+      "policyVersion": "1.0.0",
+      "criterionIds": [
+        "ACMG_AMP_2015:BA1",
+        "ACMG_AMP_2015:BS1"
+      ],
+      "scope": {
+        "hgncId": "HGNC:7577",
+        "mondoId": "MONDO:0005045",
+        "moi": "AUTOSOMAL_DOMINANT",
+        "assembly": "GRCh38",
+        "variantType": "NATIVE_NONPROJECTED_SNV",
+        "transcriptMode": "ANY_VALIDATED_TRANSCRIPT"
+      },
+      "inputProfileSha256": "626320cc24bb480adb4d34c97646326c3ca358c5c68b8282eb7edf177731a0a3",
+      "review": {
+        "status": "REVIEWED_IMPLEMENTED",
+        "reviewId": "VARVIS_INDEPENDENT_SOURCE_AND_ENGINEERING_REVIEW_MYH7_HCM_20260913",
+        "kind": "Independent source review and bounded algorithm review; not clinical expert sign-off or business acceptance",
+        "algorithmReviewCommit": "4cdd60334d3156328c2a44fae4ba0064fd21692b",
+        "sourceExpectationCommit": "952008aa2fb015e9f69e599735fcf3dba962efe6"
+      },
+      "sources": [
+        {
+          "authoritySourceId": "authority-clingen-myh7-gn002-v2.0-20260913",
+          "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN002?version=2.0",
+          "version": "2.0",
+          "snapshotSha256": "0be8ad1d1a3df87d16c3a0b8595e115f7e82e607347f46ae770c011bb0656c24",
+          "relativePath": "sources/GN002-v2.0.html",
+          "role": "Active MYH7 HCM/DCM population clauses; only HCM is enabled by this candidate"
+        },
+        {
+          "authoritySourceId": "authority-clingen-myh7-gn002-history-20260913",
+          "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN002/versions",
+          "version": "observed-2026-09-13",
+          "snapshotSha256": "992f1b8e232691ea093611574d8876979a9d2f56e00cf14aabbd208cb9d586a3",
+          "relativePath": "sources/GN002-versions.html",
+          "role": "Version lineage and release identity"
+        },
+        {
+          "authoritySourceId": "authority-clingen-gnomad-v4-guidance-20250623-fulltext",
+          "url": "https://www.clinicalgenome.org/site/assets/files/9445/june_2025_communication_to_clingen_vceps_from_clingen_vcep_review_committee.pdf",
+          "version": "3.0-2025-06-23",
+          "snapshotSha256": "9b350163d45df62c506279a08002ced090af7f66f20979db62465e68d54bbd63",
+          "relativePath": "sources/clingen-vcep-gnomad-v4-20250623.pdf",
+          "role": "gnomAD v4 joint FAF95max and ancestry exclusions"
+        },
+        {
+          "authoritySourceId": "authority-hts-specs-vcf-v4.5-20260913",
+          "url": "https://samtools.github.io/hts-specs/VCFv4.5.pdf",
+          "version": "VCFv4.5-captured-2026-09-13",
+          "snapshotSha256": "7a1f6990dbfca4a20d9b6f21a4cb0bcbfd876853bfc86a832af2de6153abffa5",
+          "relativePath": "sources/VCFv4.5.pdf",
+          "role": "Section1.3 p4 Float32; Section6.3 p42 BCF single precision; count-AF QC only"
+        }
+      ],
+      "officialConditions": {
+        "metric": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "infoId": "fafmax_faf95_max_joint",
+        "ancestryInfoId": "fafmax_faf95_max_gen_anc_joint",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "groupSelection": "HIGHEST_FAF_NOT_HIGHEST_AF",
+        "BA1": {
+          "operator": "GREATER_THAN_OR_EQUAL",
+          "decimal": "0.001",
+          "strength": "STANDALONE"
+        },
+        "BS1": {
+          "operator": "GREATER_THAN_OR_EQUAL",
+          "decimal": "0.0001",
+          "strength": "STRONG"
+        }
+      },
+      "engineeringConditions": {
+        "minimumSelectedAncestryAn": {
+          "BA1": "10000",
+          "BS1": "10000"
+        },
+        "minimumAnBasis": "GN002 v2.0 cautions about cohorts below approximately 10000 alleles. Varvis conservatively requires AN >= 10000 for each selected criterion. This is an additional engineering abstention gate, not a mandatory VCEP cutoff and not clinical NOT_MET.",
+        "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+        "afCountPrecisionSourceIds": [
+          "authority-hts-specs-vcf-v4.5-20260913"
+        ],
+        "selectedAn": "POSITIVE_INTEGER",
+        "selectedAc": "INTEGER_BETWEEN_ZERO_AND_AN",
+        "fafMatchesSelectedAncestry": true,
+        "discordancePolicy": "ABSTAIN_IF_P_LT_0_0001_OR_UNKNOWN",
+        "subtypeFlags": "PRESERVE_AND_REQUIRE_PASS_OR_DOT",
+        "applicableAncestries": [
+          "nfe"
+        ],
+        "ancestryApplicability": [
+          {
+            "ancestry": "nfe",
+            "status": "REVIEWED_APPLICABLE",
+            "basis": "Reviewed inference from the Northern European derivation in GN002 v2.0 and its preferred gnomAD use, with the ClinGen 2025 joint-FAF95 migration guidance. Limited to the native gnomAD non-Finnish European ancestry label, subject to actual resource identity and quality checks. No direct gnomAD v4 cohort prevalence measurement is asserted. Other otherwise FAF-eligible ancestries are not approved by this candidate.",
+            "authoritySourceIds": [
+              "authority-clingen-myh7-gn002-v2.0-20260913",
+              "authority-clingen-gnomad-v4-guidance-20250623-fulltext"
+            ]
+          }
+        ]
+      },
+      "exceptionReview": {
+        "reviewId": "MYH7_HCM_BOUNDED_FREQUENCY_EXCEPTION_REVIEW_20260913",
+        "status": "REVIEWED_NO_RELEVANT_EXCEPTION_IDENTIFIED_IN_PINNED_SOURCES",
+        "scope": "GN002 v2.0 active BA1/BS1 clauses, ClinGen 2025 gnomAD migration guidance, and the unchanged nine exact-allele BA1 exceptions in the bound input profile. This is a bounded reviewed source set, not a globally exhaustive exception database.",
+        "unresolvedAlleles": [],
+        "inheritedGlobalExceptionEntryCount": 9,
+        "inheritedGlobalExceptionEntrySetSha256": "27624dccfc9719cfe5361296b96fbb64df2edaa7703b815d1b29c7c796383c0d",
+        "limitations": "Future relevant, conflicting or unresolved exceptions require abstention and a new versioned review."
+      },
+      "scientificBoundaryNotes": [
+        "Only MYH7 hypertrophic cardiomyopathy MONDO:0005045 in AD scope; no DCM activation.",
+        "The population clause has no official transcript accession restriction. A complete valid transcript carrier is not proof of clinical transcript relevance for other criteria.",
+        "FAF95 is the lower 95 percent bound and must not replace MYH7 PM2 upper confidence limits.",
+        "The historical BS1 threshold 0.0002 is not the active GN002 v2.0 threshold.",
+        "BA1 and BS1 share one population observation; preserve both evaluations and prefer BA1 without additive population strength.",
+        "Source precision tolerance is count-AF QC only. FAF threshold comparisons retain exact decimal boundaries.",
+        "A compiled candidate resource does not enable a business path, a final clinical classification, or BS3."
+      ]
+    }
+  ]
+}

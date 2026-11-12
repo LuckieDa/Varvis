@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "cspec-overlay-registry-v1",
+  "registryId": "cspec-overlay-registry-e3-l1a-2026-09-05",
+  "authorityCatalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+  "authorityCatalogSha256": "9c4d12df8eba350318624e25d50321f845c023f1d136bff934ecfbb89d45e627",
+  "baseRuleRegistryId": "acmg-rule-registry-e3-l1a-2026-09-05",
+  "baseRuleRegistrySha256": "3cd5b36002a00c39b3af54ac9c2c409337f8e05b76482c274216c2e3c5f9db42",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-08-31T11:20:00Z",
+  "selectionPolicy": {
+    "policyId": "CSPEC_EXACT_CONTEXT_SELECTION_V1",
+    "matchMode": "EXACT_STABLE_IDENTIFIERS_SINGLE_MATCH",
+    "requiredDimensions": [
+      "HGNC_ID",
+      "MONDO_ID",
+      "MOI"
+    ],
+    "transcriptMode": "EXACT_IF_REQUIRED_BY_OVERLAY",
+    "outcomes": {
+      "zeroMatch": {
+        "overlaySelectionStatus": "NO_MATCH",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_GENERAL_RULES",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleSelectableMatch": {
+        "overlaySelectionStatus": "SELECTED",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_SELECTED_OVERLAY",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleNonSelectableMatch": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MATCH_NOT_EXECUTABLE"
+      },
+      "multipleExactMatches": {
+        "overlaySelectionStatus": "AMBIGUOUS",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MULTIPLE_EXACT_MATCHES"
+      },
+      "contextConflict": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_CONTEXT_CONFLICT"
+      }
+    }
+  },
+  "overlays": [
+    {
+      "overlayId": "cspec-overlay-gn007-3.1.0",
+      "cspecId": "GN007",
+      "version": "3.1.0",
+      "vcepId": "50014",
+      "vcepName": "CDH1 Variant Curation Expert Panel",
+      "publicationStatus": "RELEASED",
+      "normativeEligibility": "ELIGIBLE",
+      "approvalDate": "2022-03-29",
+      "lifecycleStatus": "CURRENT",
+      "implementationStatus": "METADATA_ONLY",
+      "selectionStatus": "NOT_SELECTABLE",
+      "transcriptRequired": true,
+      "selector": {
+        "hgncId": "HGNC:1748",
+        "mondoId": "MONDO:0007648",
+        "moi": "AUTOSOMAL_DOMINANT",
+        "transcript": {
+          "accession": "NM_004360",
+          "version": 5
+        }
+      },
+      "authoritySourceIds": [
+        "authority-clingen-cspec-gn007-v3.1.0"
+      ],
+      "sourceLocators": [
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Zenodo release 21421473, canonical CSpec API export",
+          "sourceRecordId": "Zenodo:21421473/GN007_3.1.0.json",
+          "artifactUrl": "https://zenodo.org/api/records/21421473/files/GN007_3.1.0.json/content",
+          "artifactMediaType": "application/json",
+          "artifactRole": "CSPEC_API_EXPORT_JSON",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "6f340df40991990af73f95feb8285e8831a983f78479584ece96711fbabeecd9",
+          "retrievedAt": "2026-08-31T11:16:00Z"
+        },
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Zenodo release 21421473, display specification PDF version 3.1",
+          "sourceRecordId": "Zenodo:21421473/ClinGen_ACMG_Specifications_GN007_3.1.pdf",
+          "artifactUrl": "https://zenodo.org/api/records/21421473/files/ClinGen_ACMG_Specifications_GN007_3.1.pdf/content",
+          "artifactMediaType": "application/pdf",
+          "artifactRole": "CSPEC_SPECIFICATION_PDF",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "3d235e192b58fd564009cd2600f1f1823df829c18eeca43c632d18aad9785636",
+          "retrievedAt": "2026-08-31T11:16:00Z"
+        }
+      ],
+      "snapshotSha256": "6f340df40991990af73f95feb8285e8831a983f78479584ece96711fbabeecd9",
+      "snapshotSourceRecordId": "Zenodo:21421473/GN007_3.1.0.json",
+      "versionCanonicalizationProfile": "cspec-explicit-alias-map-v1",
+      "versionAliases": [
+        {
+          "rawVersion": "3.1",
+          "canonicalVersion": "3.1.0",
+          "sourceRecordId": "CSpec:GN007@3.1",
+          "apiLdhId": "135637579",
+          "apiRevision": "_gFqivn6--_",
+          "snapshotSourceRecordId": "Zenodo:21421473/GN007_3.1.0.json",
+          "snapshotSha256": "6f340df40991990af73f95feb8285e8831a983f78479584ece96711fbabeecd9"
+        },
+        {
+          "rawVersion": "3.1.0",
+          "canonicalVersion": "3.1.0",
+          "sourceRecordId": "CSpec:GN007@3.1.0",
+          "apiLdhId": "135637579",
+          "apiRevision": "_gFqivn6--_",
+          "snapshotSourceRecordId": "Zenodo:21421473/GN007_3.1.0.json",
+          "snapshotSha256": "6f340df40991990af73f95feb8285e8831a983f78479584ece96711fbabeecd9"
+        },
+        {
+          "rawVersion": "3.1.1",
+          "canonicalVersion": "3.1.0",
+          "sourceRecordId": "CSpec:GN007@3.1.1",
+          "apiLdhId": "135637579",
+          "apiRevision": "_gFqivn6--_",
+          "snapshotSourceRecordId": "Zenodo:21421473/GN007_3.1.0.json",
+          "snapshotSha256": "6f340df40991990af73f95feb8285e8831a983f78479584ece96711fbabeecd9"
+        }
+      ],
+      "versionAliasSetSha256": "cbbe5552bf6eac664596e4d32a784e859eacea01dab9705b591848fe01deabce",
+      "versionDeduplication": {
+        "status": "DEDUPLICATED",
+        "identityFields": [
+          "CSPEC_ID",
+          "CANONICAL_VERSION",
+          "API_LDH_ID",
+          "API_REVISION",
+          "SNAPSHOT_SHA256"
+        ],
+        "onIdentityConflict": "RETAIN_ALL_REQUIRE_REVIEW_AND_ABSTAIN",
+        "reasonCode": "CSPEC_VERSION_ALIAS_IDENTITY_CONFLICT"
+      },
+      "criterionSpecifications": [],
+      "notes": "The immutable Zenodo JSON/PDF artifacts bind the canonical 3.1.0 API export and display document 3.1. Live CSpec routes 3.1, 3.1.0 and 3.1.1 were observed at the cutoff to resolve to the same entity revision and are explicit aliases; any later identity or normative-snapshot disagreement must be retained for review and abstention. This released record is deliberately metadata-only and not selectable because E1 did not independently review every criterion specification."
+    }
+  ]
+}

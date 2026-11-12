@@ -1,0 +1,159 @@
+{
+  "profileSchemaVersion": "pvs1-prerequisite-input-profile-v1",
+  "profileId": "HNF1A_EARLY_EXON_STOP_GAINED_PVS1_PREREQUISITE",
+  "profileVersion": "1.0.0",
+  "status": "INPUT_ONLY",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-09-05",
+  "asOf": "2026-09-05T00:00:00Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "activation": {
+    "runtimeBound": true,
+    "inputResolutionEnabled": true,
+    "evaluationEnabled": false,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "selector": {
+    "assembly": "GRCh38",
+    "requiredAssemblyLineage": "NATIVE",
+    "variantType": "SNV",
+    "allele": {
+      "contig": "12",
+      "position": 120989032,
+      "reference": "C",
+      "alternate": "T"
+    },
+    "gene": {
+      "hgncId": "HGNC:11621",
+      "symbol": "HNF1A"
+    },
+    "disease": {
+      "mondoId": "MONDO:0015967",
+      "label": "monogenic diabetes"
+    },
+    "moi": "AUTOSOMAL_DOMINANT",
+    "selectedTranscript": {
+      "accession": "ENST00000257555",
+      "version": 11,
+      "versionedAccession": "ENST00000257555.11",
+      "selectionPolicy": "PINNED_MANE_SELECT",
+      "annotationSourceVersion": "116.0",
+      "refSeqManeSelect": "NM_000545.8",
+      "maneVersion": "1.3",
+      "proteinMappings": [
+        "ENSP00000257555.5",
+        "NP_000536.6"
+      ]
+    },
+    "allowedConsequences": [
+      "stop_gained"
+    ],
+    "allowedExon": {
+      "rawValue": "2/10",
+      "ordinal": 2,
+      "total": 10
+    }
+  },
+  "vepInput": {
+    "resourceId": "VEP_116_GRCH38",
+    "provider": "VEP",
+    "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+    "assembly": "GRCh38",
+    "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+    "requiredEvidenceType": "VARIANT_CONSEQUENCE",
+    "producerId": "varvis-runtime-v2-adapter",
+    "producerVersion": "2.0.0-e2",
+    "requiredAxes": {
+      "resourceExecution": "SUCCEEDED",
+      "resourceAvailability": "AVAILABLE",
+      "queryOutcome": "HIT",
+      "resourceApplicability": "APPLICABLE"
+    },
+    "requiredMeasurements": {
+      "selectedTranscript": "vep.selectedTranscriptId",
+      "consequence": "consequenceTerm",
+      "exon": "vep.exon"
+    },
+    "lofteeRequired": false
+  },
+  "fixedInputDecision": {
+    "matchingOutcome": {
+      "status": "INPUT_READY",
+      "nmdPrediction": "PREDICTED_NMD"
+    },
+    "nonMatchingOutcome": "INPUT_NOT_READY",
+    "method": "EXACT_PROFILE_MATCH_ONLY",
+    "genericNmdAlgorithmImplemented": false,
+    "pvs1CriterionEvaluationImplemented": false,
+    "strengthAssigned": false
+  },
+  "authorityBindings": [
+    {
+      "role": "CURRENT_GENE_DISEASE_LOF_MECHANISM_AND_PVS1_RULE",
+      "sourceId": "CLINGEN_CSPEC_GN017",
+      "releaseVersion": "3.1",
+      "artifactVersion": "3.1.0",
+      "approvedDate": "2025-10-10",
+      "immutableLocator": "https://zenodo.org/api/records/21421568/files/GN017_3.1.0.json/content",
+      "doi": "10.5281/zenodo.21421568",
+      "artifactFileName": "GN017_3.1.0.json",
+      "artifactSizeBytes": 154639,
+      "artifactSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+      "assertionsUsed": [
+        "HNF1A-HGNC:11621-MONDO:0015967-AUTOSOMAL_DOMINANT loss-of-function disease mechanism",
+        "PVS1 applicable to HNF1A nonsense or frameshift variants 5-prime of c.1768"
+      ]
+    },
+    {
+      "role": "HISTORICAL_FIXED_POINT_EXON_NMD_AND_LOF_EVIDENCE_ONLY",
+      "sourceId": "CLINGEN_EREPO_INTERPRETATION",
+      "interpretationId": "5d825561-7155-4df0-9661-ceff7d791b78",
+      "documentVersion": "1.1.0",
+      "approvedDate": "2022-04-10",
+      "publishedDate": "2022-07-12",
+      "versionedLocator": "https://erepo.genome.network/evrepo/api/summary/classification/5d825561-7155-4df0-9661-ceff7d791b78/doc/sepio/version/1.1.0",
+      "hashScope": "STABLE_DATA_SUBDOCUMENT_JSON_BYTES",
+      "hashJsonPointer": "/data",
+      "artifactSizeBytes": 20818,
+      "artifactSha256": "1293ca26fdf80715482f5cba7ff66458bcec76a5d3fde8d69c2f9c2b90d88178",
+      "assertionsUsed": [
+        "the exon containing the fixed variant is present in a biologically relevant transcript",
+        "a transcript carrying the fixed variant is predicted to undergo nonsense-mediated decay",
+        "loss of function is an established disease mechanism"
+      ],
+      "identityCaveat": "The UI renders NCBI Gene ID 6927 as HGNC:6927; this profile takes HGNC:11621 from current CSpec and ClinVar, not from that UI label."
+    },
+    {
+      "role": "FIXED_POINT_VARIATION_AND_EXACT_ALLELE_IDENTITY",
+      "sourceId": "NCBI_CLINVAR_GRCH38_VCF",
+      "resourceId": "CLINVAR_2026_03_21_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-21 GRCh38",
+      "identityFingerprintSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836",
+      "variationId": "372380",
+      "recordLocator": "GRCh38:12:120989032:C:T;VariationID=372380",
+      "recordSizeBytes": 1220,
+      "recordSha256": "568eee6512c9c58ff82c25e533834209bc6b6dd09c089aa0ce4d4a86e0246f88",
+      "humanLocator": "https://www.ncbi.nlm.nih.gov/clinvar/variation/372380/"
+    },
+    {
+      "role": "FIXED_POINT_TRANSCRIPT_AND_PROTEIN_MANE_MAPPING",
+      "sourceId": "CLINGEN_ALLELE_REGISTRY",
+      "caid": "CA6831769",
+      "apiVersion": "5.1.0",
+      "maneVersion": "1.3",
+      "retrievedAt": "2026-09-05",
+      "recordLocator": "https://reg.genome.network/allele/CA6831769.json",
+      "artifactSizeBytes": 30370,
+      "artifactSha256": "55eedf80f2b268702f920ee8d0f7167f365d92caeb6b2ab0da1afac52db72245",
+      "versionCaveat": "CAID is stable but the JSON record has no publisher-issued snapshot version; retrieved date and bytes hash bind the observed record."
+    }
+  ],
+  "clinicalBoundary": {
+    "inputReadinessOnly": true,
+    "criterionEvaluationProduced": false,
+    "pvs1StrengthProduced": false,
+    "classificationProduced": false,
+    "clinicalValidationClaimed": false
+  }
+}

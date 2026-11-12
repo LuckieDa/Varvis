@@ -1,0 +1,231 @@
+{
+  "profileSchemaVersion": "pm1-hnf1a-business-profile-v1",
+  "profileId": "HNF1A_PROTEIN_REGION_PM1",
+  "profileVersion": "1.0.0",
+  "activation": {
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "context": {
+    "hgncId": "HGNC:11621",
+    "geneSymbol": "HNF1A",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "assembly": "GRCh38",
+    "transcript": "ENST00000257555.11"
+  },
+  "policy": {
+    "policyId": "HNF1A_GN017_3_1_PROTEIN_PM1",
+    "criterionId": "ACMG_AMP_2015:PM1",
+    "authority": {
+      "specificationId": "GN017",
+      "authorityVersion": "3.1",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "sourceSha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "sourceJsonSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+      "sourceSection": "PM1; PS3 transactivation-domain exclusion note"
+    },
+    "moderateResidues": [
+      {
+        "position": 130,
+        "referenceAminoAcid": "Q"
+      },
+      {
+        "position": 131,
+        "referenceAminoAcid": "R"
+      },
+      {
+        "position": 132,
+        "referenceAminoAcid": "E"
+      },
+      {
+        "position": 143,
+        "referenceAminoAcid": "H"
+      },
+      {
+        "position": 144,
+        "referenceAminoAcid": "L"
+      },
+      {
+        "position": 145,
+        "referenceAminoAcid": "S"
+      },
+      {
+        "position": 146,
+        "referenceAminoAcid": "Q"
+      },
+      {
+        "position": 147,
+        "referenceAminoAcid": "H"
+      },
+      {
+        "position": 148,
+        "referenceAminoAcid": "L"
+      },
+      {
+        "position": 149,
+        "referenceAminoAcid": "N"
+      },
+      {
+        "position": 155,
+        "referenceAminoAcid": "K"
+      },
+      {
+        "position": 156,
+        "referenceAminoAcid": "T"
+      },
+      {
+        "position": 157,
+        "referenceAminoAcid": "Q"
+      },
+      {
+        "position": 158,
+        "referenceAminoAcid": "K"
+      },
+      {
+        "position": 203,
+        "referenceAminoAcid": "R"
+      },
+      {
+        "position": 204,
+        "referenceAminoAcid": "F"
+      },
+      {
+        "position": 205,
+        "referenceAminoAcid": "K"
+      },
+      {
+        "position": 206,
+        "referenceAminoAcid": "W"
+      },
+      {
+        "position": 263,
+        "referenceAminoAcid": "R"
+      },
+      {
+        "position": 264,
+        "referenceAminoAcid": "V"
+      },
+      {
+        "position": 265,
+        "referenceAminoAcid": "Y"
+      },
+      {
+        "position": 270,
+        "referenceAminoAcid": "N"
+      },
+      {
+        "position": 271,
+        "referenceAminoAcid": "R"
+      },
+      {
+        "position": 272,
+        "referenceAminoAcid": "R"
+      },
+      {
+        "position": 273,
+        "referenceAminoAcid": "K"
+      }
+    ],
+    "supportingRegions": [
+      {
+        "first": 1,
+        "last": 32
+      },
+      {
+        "first": 107,
+        "last": 174
+      },
+      {
+        "first": 201,
+        "last": 280
+      }
+    ],
+    "excludedRegions": [
+      {
+        "first": 281,
+        "last": 631,
+        "reason": "GN017_TAD_NOT_PM1",
+        "sourceSection": "PS3 additional explanatory note"
+      }
+    ],
+    "variantTypes": [
+      "SNV"
+    ],
+    "consequence": "missense_variant",
+    "strengthPrecedence": [
+      "MODERATE",
+      "SUPPORTING"
+    ],
+    "noncanonicalSplicing": "OUTSIDE_THIS_PROTEIN_BRANCH",
+    "mechanism": "DISEASE_SPECIFIC_CRITICAL_PROTEIN_LOCATION",
+    "classificationEnabled": false
+  },
+  "transcriptModel": {
+    "classpathResource": "/acmg/pvs1-hnf1a-transcript-model-v1.json",
+    "canonicalSha256": "270076043014c34aba9e7719ba7fa7bc7ecf090989c0bdb0fc08f7fa7cb0bacf"
+  },
+  "sourceBinding": {
+    "classpathResource": "/acmg/pm1-hnf1a-source-v1.json",
+    "canonicalSha256": "e0f8dd368edb808f65474a5e1393e0d8b01cab81ec15769cad1fa3113cd97027"
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-pm1-hnf1a-2026-09-10",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "70d49856973154aab532b018fea4cd9ba707d033634371e3e73c434e133bac58",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-pm1-hnf1a-2026-09-10.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PM1"
+    ]
+  },
+  "resources": [
+    {
+      "resourceId": "VEP_116_GRCH38",
+      "provider": "VEP",
+      "assembly": "GRCh38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+      "identity": {
+        "provider": "VEP",
+        "tool": {
+          "name": "ensembl-vep",
+          "version": "116.0"
+        },
+        "cache": {
+          "species": "homo_sapiens",
+          "version": "116_GRCh38",
+          "logicalName": "vep/cache/homo_sapiens/116_GRCh38",
+          "infoSha256": "b7298ffe9c8aba8e283d2e647a28a8345e6b7c4cd71e8d42eae66acfb94dd3ad"
+        },
+        "fasta": {
+          "assembly": "GRCh38",
+          "logicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa",
+          "indexLogicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa.fai",
+          "byteLength": 3151425851,
+          "indexSha256": "0998f61682f4041b11f0d156e1db6dae3e4c743e26643a3f45ea7faea70cb604",
+          "indexedContigCount": 194
+        },
+        "assembly": "GRCh38",
+        "options": {
+          "offline": true,
+          "cache": true,
+          "format": "vcf",
+          "output": "json",
+          "symbol": true,
+          "canonical": true,
+          "mane": true,
+          "hgvs": true,
+          "protein": true,
+          "biotype": true,
+          "numbers": true,
+          "noStats": true,
+          "forceOverwrite": true,
+          "lofteeEnabled": false
+        },
+        "wrapperIdentity": "varvis-vep-relative-root-v2",
+        "wrapperSha256": "da90d70e87a1f479239e1fc8857e76d61604a0006fa19ae40e4260d20f7bfbfe"
+      }
+    }
+  ]
+}

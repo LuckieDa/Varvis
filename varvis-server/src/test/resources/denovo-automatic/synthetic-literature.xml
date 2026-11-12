@@ -1,0 +1,10 @@
+<article><front><article-meta><article-id pub-id-type="pmcid">PMC999999997</article-id>
+<article-id pub-id-type="pmid">999999997</article-id><title-group><article-title>SYNTHETIC only</article-title></title-group>
+</article-meta></front><body><sec><title>Results</title>
+<table-wrap><table><tr><th></th><th>Case A</th></tr><tr><td>Gene</td><td>EXAMPLE</td></tr>
+<tr><td>Nucleotide</td><td>123A&gt;G</td></tr><tr><td>Protein</td><td>T41A</td></tr>
+<tr><td>Main clinical features</td><td>Synthetic trait</td></tr><tr><td>Family history</td><td>None</td></tr></table></table-wrap>
+<sec><title>Case A: T41A in EXAMPLE</title><p>The EXAMPLE variant c.123A&gt;G, p.T41A, was observed.
+Sanger sequencing confirmed the heterozygous variant in the proband and its absence in both parents.
+<fig><caption><p>(A) Other panel. (B) Sanger sequencing of the patient and parents to show that the heterozygous mutation is de novo.</p></caption></fig>
+SNP analysis confirmed both maternity and paternity.</p></sec></sec></body></article>

@@ -1,0 +1,164 @@
+{
+  "profileSchemaVersion": "clinvar-missense-business-profile-v1",
+  "profileId": "CLINVAR_BRAF_RASOPATHY_PS1_PM5",
+  "profileVersion": "2.0.0",
+  "authorityUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN049",
+  "authorityVersion": "2.3",
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": true,
+    "classificationEnabled": false
+  },
+  "predecessorProfileId": "CLINVAR_BRAF_RASOPATHY_PS1_PM5",
+  "predecessorProfileVersion": "1.0.0",
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-ps1-pm5-2026-09-09",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "a2e0619ca89a139741ff0d1c79596af4c8ee0f2d39965a55035ead36c8032db6",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-ps1-pm5-2026-09-09.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PS1",
+      "ACMG_AMP_2015:PM5"
+    ]
+  },
+  "resources": [
+    {
+      "role": "BOUNDED_COMPARATOR_DISCOVERY_AND_ALLELE_IDENTITY_CROSSCHECK_ONLY",
+      "resourceId": "CLINVAR_2026_03_21_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-21 GRCh38",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836"
+    },
+    {
+      "role": "SELECTED_TRANSCRIPT_PROTEIN_RELATION",
+      "resourceId": "VEP_116_GRCH38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+    },
+    {
+      "role": "CONDITION_LINKED_ASSERTION_SEMANTICS_ONLY",
+      "resourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+      "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+      "assembly": "GRCh38",
+      "identityFingerprintSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde"
+    },
+    {
+      "resourceId": "SPLICEAI_V1_3_1_RAW_GRCH38_LOCAL_COMPUTE",
+      "provider": "SPLICEAI",
+      "assembly": "GRCh38",
+      "resourceVersion": "SpliceAI 1.3.1 raw, distance 4999",
+      "identityFingerprintSha256": "e2f652e52955a0c6aaed434a3424cb69bb29413908d7dba8aaded016aa537542",
+      "identity": {
+        "provider": "SPLICEAI",
+        "assembly": "GRCh38",
+        "package": {
+          "name": "SpliceAI",
+          "version": "1.3.1",
+          "installArtifactSha256": "63c633b8de6803d4ffb613e6ef62f1a896fec9fc13245c0f000ff7adea279776"
+        },
+        "parameters": {
+          "scoreMode": "RAW_UNMASKED_CLI",
+          "distanceArgument": 4999,
+          "maskArgument": 0
+        },
+        "candidateResourceIdentityFingerprintSha256": "451a42ab28edab2f542816b51495a79e225217735e65040ceac0fb9cac7517d9",
+        "referenceIdentityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+      },
+      "identitySource": {
+        "profileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+        "profileVersion": "1.0.0-candidate.1",
+        "canonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d"
+      }
+    }
+  ],
+  "applicability": {
+    "assembly": "GRCh38",
+    "geneSymbol": "BRAF",
+    "hgncId": "HGNC:1097",
+    "mondoId": "MONDO:0021060",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "variantType": "SNV",
+    "transcript": "ENST00000646891.2",
+    "refseqTranscript": "NM_004333.6",
+    "protein": "ENSP00000493543.1",
+    "refseqProtein": "NP_004324.2"
+  },
+  "strengthPolicy": {
+    "PS1": "STRONG",
+    "PM5": "MODERATE",
+    "pm5StrongEnabled": false,
+    "PS1PrecludesPM5": true,
+    "classificationEnabled": false,
+    "PS1PrecludesPM5Basis": "VARVIS_CONSERVATIVE_NON_ADDITIVE_COMPARISON_POLICY_NOT_GN049_REQUIRED_PRECEDENCE"
+  },
+  "referencePolicy": {
+    "resource": "/acmg/clinvar-missense-braf-reference-audit-v2.json",
+    "requireExactScv": true,
+    "requireIndependentCriteria": true,
+    "requireExactAlleleAndProtein": true,
+    "diseaseSource": "EREPO_EXACT_MONDO_NOT_CLINVAR_ALIAS",
+    "auditSha256": "90abf0c8d235a7e164644fa81bab6cad8b08cf3462d2df3e02c44becbaa51016",
+    "dateNormalization": "ISO_LOCAL_DATE_OR_ENGLISH_MMM_D_UUUU_RAW_PRESERVED"
+  },
+  "splicePolicy": {
+    "method": "SpliceAI",
+    "distanceBp": 4999,
+    "mask": 0,
+    "maximumScore": "0.1",
+    "requireTargetAndReference": true,
+    "missingOutcome": "NOT_EVALUATED",
+    "aboveThresholdOutcome": "NOT_MET",
+    "basis": "Varvis conservative SVI 2024 gate implementing GN049 splicing caveat; GN049 does not specify this numeric threshold",
+    "sourceUrl": "https://www.clinicalgenome.org/site/assets/files/9588/clingen_svi_splicing_subgroup_dynamic_document_-_response_to_feedback.pdf",
+    "annotationEquivalenceResource": "/acmg/spliceai-braf-mane-window-equivalence-v1.json",
+    "annotationEquivalenceSha256": "29002661c5d55e16f2d65c5671cbc390411fb5518aa96c4510acead1f027c3d5"
+  },
+  "pm5RelationshipPolicy": {
+    "mode": "AUDITED_AMINO_ACID_TRIPLES",
+    "outsideAuditedRelationships": "NOT_EVALUATED",
+    "relationships": [
+      {
+        "referenceAminoAcid": "F",
+        "targetAlternate": "V",
+        "comparatorAlternate": "L",
+        "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/ui/interpretation/d691f327-120d-4c5c-b56e-fbfdc3f820f3",
+        "snapshotSha256": "c42bbc9418730357b07f44afa061ca159f43f9c82a6539788432a22f6eff8383"
+      },
+      {
+        "referenceAminoAcid": "T",
+        "targetAlternate": "R",
+        "comparatorAlternate": "K",
+        "sourceUrl": "https://erepo.genome.network/evrepo/ui/interpretation/096bf007-b1b2-467c-a7b2-e9fbea9db17a",
+        "snapshotSha256": "b41977633e210cfa258e4004632c42495bb309266197306a1e5a87f8c2b5f86f"
+      }
+    ]
+  },
+  "predictionIdentity": {
+    "candidateProfileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+    "candidateProfileVersion": "1.0.0-candidate.1",
+    "candidateProfileCanonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d",
+    "candidateProfileRawSha256": "8efd4d5f34e238bab94abaaec99f7ea394729a8bf79083e618814ff837536edc",
+    "authorityCatalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+    "authorityCatalogSchemaVersion": "authority-source-catalog-v1",
+    "authorityCatalogCanonicalSha256": "63db590058808737bdd03af7fd82533c572b80bfabae9b50f0632da78cd803f9"
+  },
+  "scientificArtifactBinding": {
+    "authorityResource": "/acmg/authority-catalog-ps1-pm5-2026-09-09.json",
+    "authoritySha256": "a8c5fb1d16eb4727b23a4d63d3ad9bd8ba5269e84c0a0fccc84f1048ee0f9828",
+    "overlayResource": "/acmg/cspec-overlay-registry-v1/cspec-overlay-registry-ps1-pm5-2026-09-09.json",
+    "overlaySha256": "e53738c63cd1337bcfe55dced2c697e898d12566f2380f8f28bb53b137deab83",
+    "cspecJsonSha256": "c4d6bd2dab599a4b2e66a4704dc1238ca873dfc9be0e3a9f5f9944d7b7133aa4",
+    "cspecPdfSha256": "c278d6a9fa666996546100236492085463d3ab0e37f5c1ed801d44afab0c3ea1"
+  },
+  "rnaReviewPolicy": {
+    "snapshotResource": "/acmg/braf-missense-rna-review-v1.json",
+    "snapshotSha256": "37cd15b64ac32c37fec2ee490712aa4fec5102d4411198888e8f80c088bdbaa7",
+    "mode": "VERSIONED_LIMITED_PUBLIC_EVIDENCE_REVIEW",
+    "newReferencesRequireExplicitReview": true,
+    "noAutomaticRnaLiteratureSearch": true,
+    "unknownRnaEffectIsNotNormalRna": true,
+    "unresolvedPublicConcernOutcome": "NOT_EVALUATED"
+  }
+}

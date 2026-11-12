@@ -1,0 +1,92 @@
+{
+  "profileSchemaVersion": "hnf1a-functional-business-profile-v1",
+  "profileId": "HNF1A_OXFORD_FUNCTIONAL_PS3",
+  "profileVersion": "1.0.0",
+  "activation": {
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "context": {
+    "hgncId": "HGNC:11621",
+    "geneSymbol": "HNF1A",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "assembly": "GRCh38",
+    "variantType": "SNV",
+    "refseq": "NM_000545.8",
+    "refseqProtein": "NP_000536.6",
+    "ensembl": "ENST00000257555.11",
+    "ensemblProtein": "ENSP00000257555.5"
+  },
+  "enabledCriteria": [
+    "ACMG_AMP_2015:PS3"
+  ],
+  "disabledCriteria": [
+    {
+      "criterionId": "ACMG_AMP_2015:BS3",
+      "reasonCode": "BS3_SCIENTIFIC_GATE_NOT_PASSED"
+    }
+  ],
+  "policy": {
+    "policyId": "HNF1A_GN017_3_1_OXFORD_PS3",
+    "authority": {
+      "sourceId": "GN017",
+      "fileName": "GN017-v3.1.html",
+      "sha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "bytes": 342281,
+      "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "locator": "GN017 v3.1, released2025-10-10; PS3 Moderate/Supporting and BS3 Supporting; re-read2026-09-10"
+    },
+    "ps3Oxford": {
+      "operator": "LTE",
+      "threshold": 40,
+      "strength": "MODERATE"
+    },
+    "ps3General": {
+      "operator": "LT",
+      "threshold": 40,
+      "strength": "SUPPORTING",
+      "enabled": false
+    },
+    "bs3": {
+      "operator": "GTE",
+      "threshold": 75,
+      "strength": "SUPPORTING",
+      "enabled": false
+    },
+    "approvedPs3Records": [
+      "P112L"
+    ],
+    "combination": "NOT_IMPLEMENTED",
+    "userReviewRequired": true
+  },
+  "factPackage": {
+    "classpathResource": "/acmg/hnf1a-functional-facts-v1.json",
+    "canonicalSha256": "105b6224195bfb33a6bcc9580d2f885203bcb808ef1cff3f45692eeeaaac5046"
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-functional-hnf1a-2026-09-10",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "1949ca52a7a16b9607aad47706f1cc9081f9f9d9662b0dfd3428b7dcc08631c0",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-functional-hnf1a-2026-09-10.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PS3"
+    ]
+  },
+  "resources": [
+    {
+      "resourceId": "HNF1A_OXFORD_FACTS",
+      "resourceVersion": "1.0.0",
+      "identityFingerprintSha256": "105b6224195bfb33a6bcc9580d2f885203bcb808ef1cff3f45692eeeaaac5046"
+    }
+  ],
+  "authorityBinding": {
+    "classpathResource": "/acmg/authority-catalog-functional-hnf1a-2026-09-10.json",
+    "sha256": "4db8c72683ebaa2afc31b593ae97a2e1a481451f2ab5d8c0ca810ff49567998d"
+  },
+  "overlayBinding": {
+    "classpathResource": "/acmg/cspec-overlay-registry-v1/cspec-overlay-registry-functional-hnf1a-2026-09-10.json",
+    "sha256": "9b621b2c7967b92bce677b11aa4c247b203d15d789f1d9e2e9fbc4c48f797782"
+  }
+}

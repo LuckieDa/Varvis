@@ -1,0 +1,10 @@
+# Optional PM3 native-text PDF reader; install into Code-local tool lib only.
+# Exact resolved versions from the 2026-10-24 PyPI installation receipt.
+pdfplumber==0.11.9
+pdfminer.six==20251230
+Pillow==13.0.0
+pypdfium2==5.14.0
+cryptography==50.0.2
+cffi==2.1.1
+pycparser==3.12
+charset-normalizer==3.5.2

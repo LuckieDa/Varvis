@@ -1,0 +1,10 @@
+{
+  "rawPoints": 1,
+  "appliedPoints": 1,
+  "strength": "SUPPORTING",
+  "transmittingParent": "TEST_ONLY_pp1_beta_father",
+  "countedChildren": [
+    "patient-context-test-pp1-beta"
+  ],
+  "uncountedChildren": []
+}

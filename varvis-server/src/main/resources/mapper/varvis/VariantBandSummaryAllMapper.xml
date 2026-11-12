@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nbscn.varvis.mapper.varvis.VariantBandSummaryAllMapper">
+
+    <resultMap id="bandDiseaseCountMap" type="org.nbscn.varvis.dto.variant.response.BandDiseaseCountDTO">
+        <result property="bandId" column="band_id"/>
+        <result property="diseaseCount" column="disease_count"/>
+    </resultMap>
+
+    <select id="listAllBandDiseaseCounts" resultMap="bandDiseaseCountMap">
+        SELECT b.cytoband_id AS band_id,
+               COUNT(DISTINCT dbm.disease_id) AS disease_count
+        FROM cytoband b
+                 LEFT JOIN disease_band_map dbm ON dbm.cytoband_id = b.cytoband_id
+        GROUP BY b.cytoband_id
+        ORDER BY b.cytoband_id
+    </select>
+
+</mapper>

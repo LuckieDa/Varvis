@@ -1,0 +1,66 @@
+{
+  "dataClass": "TEST_ONLY_FICTIONAL_NOT_SCIENTIFIC_APPROVAL",
+  "scope": {
+    "id": "minus",
+    "strand": -1,
+    "contig": "13",
+    "hgncId": "HGNC:999002",
+    "geneSymbol": "TEST_PP2_MINUS",
+    "mondoId": "MONDO:0999002",
+    "moi": "AUTOSOMAL_RECESSIVE",
+    "transcript": "ENST000002.1",
+    "protein": "ENSP000002.1",
+    "cds": "ATGGACTTTCCAAAATAA",
+    "alteredCds": "ATGGGCTTTCCAAAATAA",
+    "referenceProtein": "MDFPK",
+    "alteredProtein": "MGFPK",
+    "pos": 113,
+    "ref": "T",
+    "alt": "C",
+    "coding": "5A>G",
+    "proteinChange": "Asp2Gly",
+    "refCodon": "GAC",
+    "altCodon": "GGC",
+    "aminoAcids": "D/G",
+    "proteinVariantKey": "D2G",
+    "basisType": "REVIEWED_COHORT"
+  },
+  "conditions": {
+    "missenseMechanism": {
+      "conclusion": "SUPPORTED",
+      "locator": "TEST_ONLY minus mechanism statement",
+      "explanation": "Invented statement: missense is a common pathogenic mechanism in this exact disease/MOI/transcript.",
+      "statistics": {
+        "population": "TEST_ONLY invented population",
+        "cohort": "TEST_ONLY invented cohort",
+        "sampleInclusion": "TEST_ONLY unrelated samples, exclusions recorded",
+        "variantInclusion": "TEST_ONLY all coding missense; exclude duplicates",
+        "count": 20,
+        "denominator": 25,
+        "benignClassificationBasis": "TEST_ONLY independently curated assertions, not inferred from absence or scores",
+        "deduplication": "TEST_ONLY distinct alleles and unrelated samples",
+        "selectionBiasReview": "REVIEWED_APPLICABLE",
+        "scopeApplicability": "WHOLE_GENE_EXACT_SCOPE_REVIEWED",
+        "limitations": "Invented engineering fixture; no threshold or real population claim"
+      }
+    },
+    "lowBenignMissense": {
+      "conclusion": "SUPPORTED",
+      "locator": "TEST_ONLY minus benign spectrum statement",
+      "explanation": "Invented independently reviewed statement: low benign missense background for this exact scope.",
+      "statistics": {
+        "population": "TEST_ONLY invented population",
+        "cohort": "TEST_ONLY invented cohort",
+        "sampleInclusion": "TEST_ONLY unrelated samples, exclusions recorded",
+        "variantInclusion": "TEST_ONLY all coding missense; exclude duplicates",
+        "count": 2,
+        "denominator": 100,
+        "benignClassificationBasis": "TEST_ONLY independently curated assertions, not inferred from absence or scores",
+        "deduplication": "TEST_ONLY distinct alleles and unrelated samples",
+        "selectionBiasReview": "REVIEWED_APPLICABLE",
+        "scopeApplicability": "WHOLE_GENE_EXACT_SCOPE_REVIEWED",
+        "limitations": "Invented engineering fixture; no threshold or real population claim"
+      }
+    }
+  }
+}

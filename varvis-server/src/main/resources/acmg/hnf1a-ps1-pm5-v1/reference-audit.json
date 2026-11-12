@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "hnf1a-ps1-pm5-reference-audit-v1",
+  "reviewVersion": "1.0.0",
+  "references": [
+    {
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "12",
+        "position": 120978826,
+        "reference": "G",
+        "alternate": "A"
+      },
+      "scv": "SCV002032337.1",
+      "variationId": "1033090",
+      "erepoId": "890f4355-b322-4d63-ab2e-02ceb1436a6a",
+      "erepoVersion": "1.0.0",
+      "classification": "Pathogenic",
+      "evaluationDate": "2021-08-18",
+      "geneSymbol": "HNF1A",
+      "hgncId": "HGNC:11621",
+      "mondoId": "MONDO:0015967",
+      "transcriptId": "ENST00000257555.11",
+      "refseqTranscript": "NM_000545.8",
+      "proteinPosition": 20,
+      "referenceAminoAcid": "G",
+      "alternateAminoAcid": "R",
+      "proteinChange": "ENSP00000257555.5:p.Gly20Arg",
+      "codingChange": "NM_000545.8:c.58G>A",
+      "expertPanel": "ClinGen Monogenic Diabetes Variant Curation Expert Panel",
+      "expertOrgId": "508240",
+      "originalSpecificationVersion": "1.0",
+      "clinvarAssertionMethod": "ClinGen Diabetes ACMG Specifications v1 1",
+      "historicalVersionNote": "ERepo/SCV classification narrative version retained verbatim; ClinVar assertion-method label retained separately, not normalized or relabelled as GN017 3.1.",
+      "independentEvidenceStatus": "VERIFIED",
+      "independentCriteria": [
+        "PP4_Moderate",
+        "PP1_Strong",
+        "PM2_Supporting",
+        "PS3_Supporting",
+        "PM1_Supporting",
+        "PS4_Moderate",
+        "PP3"
+      ],
+      "independentCriteriaSufficient": true,
+      "independentEvidenceReason": "Exact MDEP P/LP assertion with no PS1/PM5; classification retained at original specification version, not recomputed.",
+      "submittedAssembly": "GRCh37",
+      "coordinateLineage": "PUBLISHED_NATIVE_GRCH38_MAPPING_VERIFIED_AGAINST_FASTA_FULL_CDS_AND_VEP; ORIGINAL_SUBMISSION_ASSEMBLY_RETAINED",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/1033090/",
+      "erepoUrl": "https://erepo.clinicalgenome.org/evrepo/ui/interpretation/890f4355-b322-4d63-ab2e-02ceb1436a6a",
+      "selectedVep": {
+        "impact": "MODERATE",
+        "gene_id": "ENSG00000135100",
+        "hgvsc": "ENST00000257555.11:c.58G>A",
+        "gene_symbol": "HNF1A",
+        "protein_id": "ENSP00000257555",
+        "hgvsp": "ENSP00000257555.5:p.Gly20Arg",
+        "amino_acids": "G/R",
+        "strand": 1,
+        "cdna_end": 284,
+        "protein_end": 20,
+        "hgnc_id": "HGNC:11621",
+        "exon": "1/10",
+        "biotype": "protein_coding",
+        "transcript_id": "ENST00000257555",
+        "codons": "Ggg/Agg",
+        "mane_select": "NM_000545.8",
+        "cds_end": 58,
+        "cds_start": 58,
+        "mane": [
+          "MANE_Select"
+        ],
+        "canonical": 1,
+        "cdna_start": 284,
+        "consequence_terms": [
+          "missense_variant"
+        ],
+        "variant_allele": "A",
+        "protein_start": 20,
+        "gene_symbol_source": "HGNC"
+      },
+      "vepRawSha256": "f8daa7a3a38f1f4c5c7985b1542f2b89d9f2c9be31e7439b78fbad4c61b93227",
+      "sourceArtifacts": [
+        {
+          "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-sepio.json",
+          "sha256": "f98ad4751234641b58d8b3889cc8270c7c3b6c6deba9d8fb9abc65bd00075965",
+          "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/890f4355-b322-4d63-ab2e-02ceb1436a6a/doc/sepio/version/1.0.0",
+          "retrievedAt": "2026-09-11T01:28:30.170810+00:00",
+          "bytes": 32479
+        },
+        {
+          "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-g20r.xml",
+          "sha256": "1d4df594b2a13d7bbb4583378f484a49c471b6b0c1a72482f9a8f9fa7cd1dbe5",
+          "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=1033090&rettype=vcv&is_variationid",
+          "retrievedAt": "2026-09-11T01:29:06.715683+00:00",
+          "bytes": 28072
+        },
+        {
+          "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-target.json",
+          "sha256": "cc6d72447193f22c3cc7156a2c9fdab635ea6ccb58152d1d0315bca12b4598c7",
+          "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classifications?columns=gene,hgvs&values=HNF1A,c.58G%3EC&matchTypes=exact,contains&matchMode=and",
+          "retrievedAt": "2026-09-11T01:42:34.771849+00:00",
+          "bytes": 5207
+        }
+      ],
+      "rnaReview": {
+        "status": "REVIEWED_NO_CONTRADICTORY_REPORT_IDENTIFIED",
+        "rnaEffect": "UNKNOWN",
+        "normalRnaClaimed": false,
+        "scope": "Exact public expert evidence and SCV text; G20R original protein assay abstract PMID12107757. No proof of normal RNA.",
+        "sourceUrls": [
+          "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/890f4355-b322-4d63-ab2e-02ceb1436a6a/doc/sepio/version/1.0.0",
+          "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=1033090&rettype=vcv&is_variationid",
+          "https://erepo.clinicalgenome.org/evrepo/api/summary/classifications?columns=gene,hgvs&values=HNF1A,c.58G%3EC&matchTypes=exact,contains&matchMode=and"
+        ]
+      }
+    },
+    {
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "12",
+        "position": 120993609,
+        "reference": "T",
+        "alternate": "A"
+      },
+      "scv": "SCV002499518.2",
+      "variationId": "393434",
+      "erepoId": "8bdb1080-f9e5-4bab-83e2-28a709bdcb9b",
+      "erepoVersion": "1.2.0",
+      "classification": "Likely Pathogenic",
+      "evaluationDate": "2025-07-24",
+      "geneSymbol": "HNF1A",
+      "hgncId": "HGNC:11621",
+      "mondoId": "MONDO:0015967",
+      "transcriptId": "ENST00000257555.11",
+      "refseqTranscript": "NM_000545.8",
+      "proteinPosition": 206,
+      "referenceAminoAcid": "W",
+      "alternateAminoAcid": "R",
+      "proteinChange": "ENSP00000257555.5:p.Trp206Arg",
+      "codingChange": "NM_000545.8:c.616T>A",
+      "expertPanel": "ClinGen Monogenic Diabetes Variant Curation Expert Panel",
+      "expertOrgId": "508240",
+      "originalSpecificationVersion": "3.0.0",
+      "clinvarAssertionMethod": "ClinGen Diabetes ACMG Specifications HNF1A V3.0.0",
+      "historicalVersionNote": "ERepo/SCV classification narrative version retained verbatim; ClinVar assertion-method label retained separately, not normalized or relabelled as GN017 3.1.",
+      "independentEvidenceStatus": "VERIFIED",
+      "independentCriteria": [
+        "PP4_Moderate",
+        "PM2_Supporting",
+        "PM1",
+        "PP3"
+      ],
+      "independentCriteriaSufficient": true,
+      "independentEvidenceReason": "Exact MDEP P/LP assertion with no PS1/PM5; classification retained at original specification version, not recomputed.",
+      "submittedAssembly": "GRCh38",
+      "coordinateLineage": "PUBLISHED_NATIVE_GRCH38_MAPPING_VERIFIED_AGAINST_FASTA_FULL_CDS_AND_VEP; ORIGINAL_SUBMISSION_ASSEMBLY_RETAINED",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/393434/",
+      "erepoUrl": "https://erepo.clinicalgenome.org/evrepo/ui/interpretation/8bdb1080-f9e5-4bab-83e2-28a709bdcb9b",
+      "selectedVep": {
+        "biotype": "protein_coding",
+        "exon": "3/10",
+        "transcript_id": "ENST00000257555",
+        "protein_end": 206,
+        "hgnc_id": "HGNC:11621",
+        "mane_select": "NM_000545.8",
+        "cds_end": 616,
+        "codons": "Tgg/Agg",
+        "hgvsc": "ENST00000257555.11:c.616T>A",
+        "impact": "MODERATE",
+        "gene_id": "ENSG00000135100",
+        "amino_acids": "W/R",
+        "strand": 1,
+        "cdna_end": 842,
+        "gene_symbol": "HNF1A",
+        "hgvsp": "ENSP00000257555.5:p.Trp206Arg",
+        "protein_id": "ENSP00000257555",
+        "protein_start": 206,
+        "gene_symbol_source": "HGNC",
+        "cds_start": 616,
+        "mane": [
+          "MANE_Select"
+        ],
+        "variant_allele": "A",
+        "cdna_start": 842,
+        "canonical": 1,
+        "consequence_terms": [
+          "missense_variant"
+        ]
+      },
+      "vepRawSha256": "f8daa7a3a38f1f4c5c7985b1542f2b89d9f2c9be31e7439b78fbad4c61b93227",
+      "sourceArtifacts": [
+        {
+          "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206r-sepio.json",
+          "sha256": "d57b78340c507145ff8fe831097f686bcd2aafc2e1a21924a8a0c121b6b5ecbb",
+          "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/8bdb1080-f9e5-4bab-83e2-28a709bdcb9b/doc/sepio/version/1.2.0",
+          "retrievedAt": "2026-09-11T01:28:29.966884+00:00",
+          "bytes": 22457
+        },
+        {
+          "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-w206r.xml",
+          "sha256": "fc778804531da6381b215e6e822f6a26c1bd5bba9fd057ec896b04b8e5f91dc8",
+          "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=393434&rettype=vcv&is_variationid",
+          "retrievedAt": "2026-09-11T01:29:06.651994+00:00",
+          "bytes": 21876
+        }
+      ],
+      "rnaReview": {
+        "status": "REVIEWED_NO_CONTRADICTORY_REPORT_IDENTIFIED",
+        "rnaEffect": "UNKNOWN",
+        "normalRnaClaimed": false,
+        "scope": "Exact public expert evidence and SCV text; G20R original protein assay abstract PMID12107757. No proof of normal RNA.",
+        "sourceUrls": [
+          "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/8bdb1080-f9e5-4bab-83e2-28a709bdcb9b/doc/sepio/version/1.2.0",
+          "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=393434&rettype=vcv&is_variationid"
+        ]
+      }
+    }
+  ],
+  "sourceManifest": [
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-sepio.json",
+      "sha256": "f98ad4751234641b58d8b3889cc8270c7c3b6c6deba9d8fb9abc65bd00075965",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/890f4355-b322-4d63-ab2e-02ceb1436a6a/doc/sepio/version/1.0.0",
+      "retrievedAt": "2026-09-11T01:28:30.170810+00:00",
+      "bytes": 32479
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206r-sepio.json",
+      "sha256": "d57b78340c507145ff8fe831097f686bcd2aafc2e1a21924a8a0c121b6b5ecbb",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/8bdb1080-f9e5-4bab-83e2-28a709bdcb9b/doc/sepio/version/1.2.0",
+      "retrievedAt": "2026-09-11T01:28:29.966884+00:00",
+      "bytes": 22457
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-g20r.xml",
+      "sha256": "1d4df594b2a13d7bbb4583378f484a49c471b6b0c1a72482f9a8f9fa7cd1dbe5",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=1033090&rettype=vcv&is_variationid",
+      "retrievedAt": "2026-09-11T01:29:06.715683+00:00",
+      "bytes": 28072
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/clinvar-w206r.xml",
+      "sha256": "fc778804531da6381b215e6e822f6a26c1bd5bba9fd057ec896b04b8e5f91dc8",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=393434&rettype=vcv&is_variationid",
+      "retrievedAt": "2026-09-11T01:29:06.651994+00:00",
+      "bytes": 21876
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-g20r-target.json",
+      "sha256": "cc6d72447193f22c3cc7156a2c9fdab635ea6ccb58152d1d0315bca12b4598c7",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classifications?columns=gene,hgvs&values=HNF1A,c.58G%3EC&matchTypes=exact,contains&matchMode=and",
+      "retrievedAt": "2026-09-11T01:42:34.771849+00:00",
+      "bytes": 5207
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/erepo-w206c-sepio.json",
+      "sha256": "0e1da5e84024a59084075f5f9e6273e6f9d648cd59627b593e1960506f7d8e86",
+      "sourceUrl": "https://erepo.clinicalgenome.org/evrepo/api/summary/classification/dcc36a54-f78e-4db9-954d-3f02dfbbb72c/doc/sepio/version/1.1.0",
+      "retrievedAt": "2026-09-11T01:42:34.450763+00:00",
+      "bytes": 18524
+    },
+    {
+      "resource": "/acmg/hnf1a-ps1-pm5-v1/pubmed-reference-and-grantham.xml",
+      "sha256": "133c586df0faf22bef788283bea892b5d833f71321106605948e9d8870f26ecb",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=12107757,15657605,4843792,37352859&retmode=xml",
+      "retrievedAt": "2026-09-11T01:42:34.866210+00:00",
+      "bytes": 68761
+    }
+  ],
+  "selection": "ALL_EXACT_AUDITED_SCVS_SCREENED; SAME_ALLELE_DEDUPLICATED; CONTRADICTORY_EXPERT_REFERENCE_BLOCKS; NO_AUTO_REFERENCE_CLASSIFICATION",
+  "discoveryLimitation": "Bounded ERepo searches and two references; not a complete HNF1A catalog"
+}

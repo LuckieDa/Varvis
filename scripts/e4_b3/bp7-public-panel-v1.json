@@ -1,0 +1,30 @@
+{
+  "panelId": "E4_B3_BP7_PUBLIC_REACHABLE_V1",
+  "dataClass": "SYNTHETIC",
+  "selectionBasis": "Public exact GRCh38 SNV identity, intronic position and unchanged Exomiser frequency/MOI filters; no prediction scores or expected MET used",
+  "queryOrder": ["GRCh38:11:5226561:C:G", "GRCh38:11:5226820:C:T"],
+  "maximumNewPanelAlleles": 1,
+  "stopCondition": "One fixed panel real analysis after preflight; retain any blocker, do not expand or relax filters",
+  "excludedHistoricalAllele": {
+    "allele": "GRCh38:11:5226561:C:G",
+    "reason": "Exomiser 15.1.0/2602 selected frequency maximum 88.079414 percent exceeds frequencyFilter 2.0 percent"
+  },
+  "variants": [{
+    "id": "public-hbb-intron-minus21",
+    "assembly": "GRCh38",
+    "contig": "11",
+    "position": 5226820,
+    "reference": "C",
+    "alternate": "T",
+    "genotype": "1/1",
+    "genotypeProvenance": "Synthetic engineering sample, not a patient observation",
+    "source": "https://www.ncbi.nlm.nih.gov/clinvar/RCV000030008/",
+    "sourceHgvs": "NC_000011.10:g.5226820C>T",
+    "transcriptHgvs": "NM_000518.5:c.93-21G>A",
+    "selectedTranscript": "ENST00000335295.4",
+    "hgncId": "HGNC:4827",
+    "mondoId": "MONDO:0013517",
+    "moi": "AUTOSOMAL_RECESSIVE",
+    "declarationProvenance": "Explicit synthetic hypothesis; must independently match current catalog and candidate MOI, not a clinical diagnosis"
+  }]
+}

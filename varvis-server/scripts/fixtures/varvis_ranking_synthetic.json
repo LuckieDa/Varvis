@@ -1,0 +1,76 @@
+{
+  "fixtureType": "synthetic-only",
+  "description": "Synthetic-only Varvis ranking fixture for comparison script tests. Not a real patient case and not real clinical output.",
+  "caseId": "SYNTH-EXO-001",
+  "genomeBuild": "GRCh38",
+  "candidates": [
+    {
+      "rank": 1,
+      "gene": "KCNQ2",
+      "variant": {
+        "chrom": "20",
+        "pos": 62076081,
+        "ref": "G",
+        "alt": "A",
+        "variantId": "SYNTH_VAR_001"
+      },
+      "tier": "TIER_1",
+      "phenotypeSupport": {
+        "supported": true,
+        "score": 0.72,
+        "note": "Synthetic phenotype-prior support only."
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "FGFR3",
+      "variant": {
+        "chrom": "4",
+        "pos": 1806119,
+        "ref": "G",
+        "alt": "A",
+        "variantId": "SYNTH_VAR_003"
+      },
+      "tier": "TIER_2",
+      "phenotypeSupport": {
+        "supported": true,
+        "score": 0.64,
+        "note": "Synthetic gene-level support only."
+      }
+    },
+    {
+      "rank": 3,
+      "gene": "TTN",
+      "variant": {
+        "chrom": "2",
+        "pos": 178525989,
+        "ref": "C",
+        "alt": "T",
+        "variantId": "SYNTH_VAR_004"
+      },
+      "tier": "TIER_3",
+      "phenotypeSupport": {
+        "supported": false,
+        "score": 0.0,
+        "note": "Synthetic no-prior example; not benign."
+      }
+    },
+    {
+      "rank": 4,
+      "gene": "PEX19",
+      "variant": {
+        "chrom": "1",
+        "pos": 16000100,
+        "ref": "C",
+        "alt": "T",
+        "variantId": "SYNTH_VAR_005"
+      },
+      "tier": "TIER_3",
+      "phenotypeSupport": {
+        "supported": false,
+        "score": 0.12,
+        "note": "Synthetic discordance example."
+      }
+    }
+  ]
+}

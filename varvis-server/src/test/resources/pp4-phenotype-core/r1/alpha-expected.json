@@ -1,0 +1,10 @@
+{
+  "status": "MET",
+  "rawPoints": "2",
+  "appliedPoints": "2",
+  "strength": "MODERATE",
+  "thresholdPerThousand": 330,
+  "numerator": 33,
+  "denominator": 100,
+  "evidenceGroupId": "pp1-pp4-group-sha256-0a621440f803a75fd705cb63b1e34e822434fc0ca7516e2699f68dbc3536bd04"
+}

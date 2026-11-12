@@ -1,0 +1,107 @@
+{
+  "schemaVersion" : "benchmark-dataset-manifest-v1",
+  "datasetId" : "synthetic-public-like-dataset",
+  "datasetVersion" : "2026.01",
+  "protocolVersion" : "1.0",
+  "createdAt" : "2026-01-01T00:00:00Z",
+  "status" : "FROZEN",
+  "description" : "Synthetic manifest contract fixture only",
+  "phenopacketStoreVersion" : "synthetic-fixture",
+  "officialSourceUri" : "https://example.invalid/phenopackets",
+  "license" : "synthetic-test-license",
+  "archiveFileName" : "synthetic-phenopackets.json",
+  "archiveByteSize" : 128,
+  "archiveSha256" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "selectionRuleVersion" : "selection-rule-v1",
+  "backgroundDatasetId" : "synthetic-background",
+  "backgroundDatasetVersion" : "2026.01",
+  "backgroundAssembly" : "GRCh38",
+  "backgroundSampleId" : "SYNTHETIC_BACKGROUND_001",
+  "backgroundSelectionBasis" : "fixed synthetic sample",
+  "chromosomeScope" : [ "1", "2", "X" ],
+  "backgroundResources" : [ {
+    "resourceId" : "synthetic-background-vcf",
+    "resourceType" : "BACKGROUND_VCF",
+    "version" : "2026.01",
+    "assembly" : "GRCh38",
+    "sourceUri" : "https://example.invalid/background.vcf.gz",
+    "localRelativePath" : "grch38/background.vcf.gz",
+    "fileName" : "background.vcf.gz",
+    "byteSize" : 256,
+    "checksumAlgorithm" : "SHA-256",
+    "checksumValue" : "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "status" : "SYNTHETIC_ONLY",
+    "derivationProvenance" : "fixed synthetic content"
+  } ],
+  "immutableBackgroundFingerprint" : "synthetic-background-fingerprint-v1",
+  "cases" : [ {
+    "caseId" : "case-alpha",
+    "sourceRecordId" : "synthetic-record-alpha",
+    "sourceUri" : "https://example.invalid/case-alpha",
+    "sourceLicense" : "synthetic-test-license",
+    "inclusionStatus" : "INCLUDED",
+    "assembly" : "GRCh38",
+    "inheritanceMode" : "UNKNOWN",
+    "truthGenes" : [ "SYNGENE1" ],
+    "truthVariants" : [ {
+      "canonicalIdentity" : {
+        "genomeAssembly" : "GRCh38",
+        "chromosome" : "1",
+        "position" : 100,
+        "reference" : "A",
+        "alternate" : "G"
+      },
+      "truthProvenance" : "synthetic curator record",
+      "confidence" : "HIGH_SYNTHETIC",
+      "relationId" : "single-truth-alpha"
+    } ],
+    "truthProvenance" : "synthetic fixture",
+    "truthConfidence" : "HIGH_SYNTHETIC",
+    "truthRelationship" : "SINGLE_VARIANT",
+    "originalHpoTerms" : [ "HP:0000001" ],
+    "hpoProvenance" : "synthetic fixture"
+  }, {
+    "caseId" : "case-beta",
+    "sourceRecordId" : "synthetic-record-beta",
+    "sourceUri" : "https://example.invalid/case-beta",
+    "sourceLicense" : "synthetic-test-license",
+    "inclusionStatus" : "INCLUDED",
+    "assembly" : "GRCh38",
+    "inheritanceMode" : "UNKNOWN",
+    "truthGenes" : [ "SYNGENE2" ],
+    "truthVariants" : [ {
+      "canonicalIdentity" : {
+        "genomeAssembly" : "GRCh38",
+        "chromosome" : "2",
+        "position" : 200,
+        "reference" : "C",
+        "alternate" : "T"
+      },
+      "truthProvenance" : "synthetic curator record",
+      "confidence" : "MEDIUM_SYNTHETIC",
+      "relationId" : "multi-truth-beta-a"
+    }, {
+      "canonicalIdentity" : {
+        "genomeAssembly" : "GRCh38",
+        "chromosome" : "2",
+        "position" : 201,
+        "reference" : "G",
+        "alternate" : "A"
+      },
+      "truthProvenance" : "synthetic curator record",
+      "confidence" : "MEDIUM_SYNTHETIC",
+      "relationId" : "multi-truth-beta-b"
+    } ],
+    "truthProvenance" : "synthetic fixture",
+    "truthConfidence" : "MEDIUM_SYNTHETIC",
+    "truthRelationship" : "MULTI_VARIANT_SYNTHETIC_ONLY",
+    "originalHpoTerms" : [ "HP:0000002" ],
+    "hpoProvenance" : "synthetic fixture"
+  } ],
+  "singleton" : true,
+  "monogenic" : true,
+  "smallVariantsOnly" : true,
+  "assemblyRequirement" : "GRCh38",
+  "truthAcceptancePolicy" : "synthetic exact identity only",
+  "exclusionPolicy" : "exclude unsupported or ambiguous cases"
+}

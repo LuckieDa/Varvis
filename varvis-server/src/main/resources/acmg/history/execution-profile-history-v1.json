@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "acmg-execution-profile-history-v1",
+  "purpose": "IDENTITY_DISAMBIGUATION_ONLY_NO_SAVED_RESULT_MIGRATION",
+  "profiles": [
+    {
+      "profileId": "acmg-explicit-business-joint-v1",
+      "manifestVersion": "1.2.0",
+      "manifestCanonicalSha256": "313b0b82bc836d7a1ec379fb68e0a9e06e55eafcf5699793064346506d6de2b9",
+      "rawSha256": "779f42780cbcf356ad5fb707d2629cf643f0baa3dded79984ecd1099a83b0186",
+      "resourceClasspath": "/acmg/acmg-business-execution-profile-joint-v1.json",
+      "sourceCommit": "5847abcc83758d1ccbcdea0c511ff1830d64500f"
+    },
+    {
+      "profileId": "acmg-explicit-business-joint-v4",
+      "manifestVersion": "1.4.0",
+      "manifestCanonicalSha256": "769b9868f1f9977b69fec72bbee0cec5b08e97d078cd723aa61fd4226b20208b",
+      "rawSha256": "650091b28840d93fc375cd7ea755c912cc352fbaf966f7caafa3ee69bd296039",
+      "resourceClasspath": "/acmg/acmg-business-execution-profile-joint-v4.json",
+      "sourceCommit": "5847abcc83758d1ccbcdea0c511ff1830d64500f"
+    },
+    {
+      "profileId": "acmg-explicit-business-joint-v5",
+      "manifestVersion": "1.5.0",
+      "manifestCanonicalSha256": "13e7d85aab3f95c68add847aad9ec196a89c7974e8fcdd1b9cbbefd9a88133f7",
+      "rawSha256": "af40b39daf8288b74daf4358ca2061a1834a57f72e295a96dc1aa74f1995739c",
+      "resourceClasspath": "/acmg/acmg-business-execution-profile-joint-v5.json",
+      "sourceCommit": "5847abcc83758d1ccbcdea0c511ff1830d64500f"
+    },
+    {
+      "profileId": "acmg-explicit-business-joint-v6",
+      "manifestVersion": "1.5.1",
+      "manifestCanonicalSha256": "28f28fd0b08ceeca7aa00515a77f004e7f45885091bc0c4110774e0388a29760",
+      "rawSha256": "2c858820118e893f95c2cf93ff3176f3bd890a33ae7b0f10c3ceed394b0a28a5",
+      "resourceClasspath": "/acmg/acmg-business-execution-profile-joint-v6.json",
+      "sourceCommit": "5847abcc83758d1ccbcdea0c511ff1830d64500f"
+    },
+    {
+      "profileId": "acmg-explicit-business-joint-v4",
+      "manifestVersion": "1.4.0",
+      "manifestCanonicalSha256": "57a357360ea9312ae7f4a3c37f9bf3ec9da30c9ed43716cdbccc01a09874e4c1",
+      "rawSha256": "19eab2af564a9e968309fe339c31d433d80fe7082022883731ac64ca151f6503",
+      "resourceClasspath": "/acmg/history/bs1-335c8ac/acmg-business-execution-profile-joint-v4.json",
+      "sourceCommit": "335c8acdf6aebcc3e7cff0129dfa72c1534f3bcf"
+    },
+    {
+      "profileId": "acmg-explicit-business-joint-v1",
+      "manifestVersion": "1.3.0",
+      "manifestCanonicalSha256": "3e25a0a886e654aa30b52570d4b0ace89a1515900de3077a0538a811688bdd24",
+      "rawSha256": "e65f5b40dcae0a04274727043ac263f0fe623d463a28191af3d5491156b497a8",
+      "resourceClasspath": "/acmg/history/ps3-40a6b51/acmg-business-execution-profile-joint-v1.json",
+      "sourceCommit": "40a6b51ae47bae3106c1dcacff36c462c2ef2882"
+    },
+    {
+      "profileId": "acmg-explicit-business-joint-v1",
+      "manifestVersion": "1.3.1",
+      "manifestCanonicalSha256": "f71fde7c4265a393dec414235421fdb855d449162f17602e642d6334af20f798",
+      "rawSha256": "fd4a02c06c87b7d567482b47b81798748e902325e37f89bb825bf120aed6694f",
+      "resourceClasspath": "/acmg/history/ps3-ee7289c/acmg-business-execution-profile-joint-v1.json",
+      "sourceCommit": "ee7289cdc7e2516efb830970e26be87a74660fae"
+    }
+  ],
+  "scientificSnapshots": [
+    {
+      "resourceClasspath": "/acmg/history/ps3-40a6b51/hnf1a-functional-facts-v1.json",
+      "canonicalSha256": "105b6224195bfb33a6bcc9580d2f885203bcb808ef1cff3f45692eeeaaac5046",
+      "rawSha256": "e8acb3399d6c53777ad021f5c298812fee568d96bf7984ee33538deb34e2fd1e",
+      "sourceCommit": "40a6b51ae47bae3106c1dcacff36c462c2ef2882"
+    },
+    {
+      "resourceClasspath": "/acmg/history/ps3-40a6b51/hnf1a-functional-business-profile-v1.json",
+      "canonicalSha256": "d9a6375c6adf8eb6a92258d9d703a907e4c6c9a60ef58f121b36ac5d42bb5184",
+      "rawSha256": "d39f4c49b55bd75aab457651bdf4d3b4c1c2323f47314d16447c5cb9684b34b9",
+      "sourceCommit": "40a6b51ae47bae3106c1dcacff36c462c2ef2882"
+    },
+    {
+      "resourceClasspath": "/acmg/history/ps3-ee7289c/hnf1a-functional-facts-v1.json",
+      "canonicalSha256": "a70b1e1640293bd43897a7a8d8517fbc1b3fdcb9e0b45ff6bb24113bf341a427",
+      "rawSha256": "e09509bcab9e536fddd667c5cf1abdac399ce647296e26e47860c94d40ddf58d",
+      "sourceCommit": "ee7289cdc7e2516efb830970e26be87a74660fae"
+    },
+    {
+      "resourceClasspath": "/acmg/history/ps3-ee7289c/hnf1a-functional-business-profile-v1.json",
+      "canonicalSha256": "aecb00a1f5f0c65cba3484e0d1dc4b62856fa6e7d66f7219eb1915bf4044970a",
+      "rawSha256": "c2c79073d32fa9c1762c13f415ea4197f239f2a0c399f4f85f64c69a492b960a",
+      "sourceCommit": "ee7289cdc7e2516efb830970e26be87a74660fae"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="1033090" VariationName="NM_000545.8(HNF1A):c.58G&gt;A (p.Gly20Arg)" VariationType="single nucleotide variant" Accession="VCV001033090" Version="6" RecordType="classified" NumberOfSubmissions="4" NumberOfSubmitters="3" DateLastUpdated="2026-05-09" DateCreated="2021-03-22" MostRecentSubmission="2023-10-07">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="1020995" VariationID="1033090">
+      <GeneList>
+        <Gene Symbol="HNF1A" FullName="HNF1 homeobox A" GeneID="6927" HGNC_ID="HGNC:11621" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>12q24.31</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="12" Accession="NC_000012.12" start="120978543" stop="121002512" display_start="120978543" display_stop="121002512" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="12" Accession="NC_000012.11" start="121416548" stop="121440314" display_start="121416548" display_stop="121440314" Strand="+"/>
+          </Location>
+          <OMIM>142410</OMIM>
+          <Haploinsufficiency last_evaluated="2023-12-13" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=HNF1A">Sufficient evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2023-12-13" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=HNF1A">No evidence available</Triplosensitivity>
+          <Property>gene_acmg_incidental_2021</Property>
+          <Property>gene_acmg_incidental_2022</Property>
+        </Gene>
+      </GeneList>
+      <Name>NM_000545.8(HNF1A):c.58G&gt;A (p.Gly20Arg)</Name>
+      <CanonicalSPDI>NC_000012.12:120978825:G:A</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>12q24.31</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="12" Accession="NC_000012.12" start="120978826" stop="120978826" display_start="120978826" display_stop="120978826" variantLength="1" positionVCF="120978826" referenceAlleleVCF="G" alternateAlleleVCF="A"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="12" Accession="NC_000012.11" start="121416629" stop="121416629" display_start="121416629" display_stop="121416629" variantLength="1" positionVCF="121416629" referenceAlleleVCF="G" alternateAlleleVCF="A"/>
+      </Location>
+      <OtherNameList>
+        <Name>NM_001306179.2:c.58G&gt;A</Name>
+      </OtherNameList>
+      <ProteinChange>G20R</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_522" sequenceAccession="LRG_522">
+            <Expression>LRG_522:g.5081G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_522t1" sequenceAccession="LRG_522t1">
+            <Expression>LRG_522t1:c.58G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000012.11" sequenceAccession="NC_000012" sequenceVersion="11" change="g.121416629G&gt;A" Assembly="GRCh37">
+            <Expression>NC_000012.11:g.121416629G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000012.12" sequenceAccession="NC_000012" sequenceVersion="12" change="g.120978826G&gt;A" Assembly="GRCh38">
+            <Expression>NC_000012.12:g.120978826G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_011731.2" sequenceAccession="NG_011731" sequenceVersion="2" change="g.5081G&gt;A">
+            <Expression>NG_011731.2:g.5081G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000545.8" sequenceAccession="NM_000545" sequenceVersion="8" change="c.58G&gt;A" MANESelect="true">
+            <Expression>NM_000545.8:c.58G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_000536.6" sequenceAccession="NP_000536" sequenceVersion="6" change="p.Gly20Arg" singleLetterProteinChange="G20R">
+            <Expression>NP_000536.6:p.Gly20Arg</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001306179.2" sequenceAccession="NM_001306179" sequenceVersion="2" change="c.58G&gt;A">
+            <Expression>NM_001306179.2:c.58G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001293108.2" sequenceAccession="NP_001293108" sequenceVersion="2" change="p.Gly20Arg" singleLetterProteinChange="G20R">
+            <Expression>NP_001293108.2:p.Gly20Arg</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA386952577" DB="ClinGen"/>
+        <XRef Type="rs" ID="1249563793" DB="dbSNP"/>
+      </XRefList>
+      <AlleleFrequencyList>
+        <AlleleFrequency Value="0.00000" Source="The Genome Aggregation Database (gnomAD), exomes"/>
+      </AlleleFrequencyList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_000545.8(HNF1A):c.58G&gt;A (p.Gly20Arg) AND Type 1 diabetes mellitus 20" Accession="RCV001335402" Version="2">
+        <ClassifiedConditionList TraitSetID="4149">
+          <ClassifiedCondition DB="MedGen" ID="C2675866">Type 1 diabetes mellitus 20</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2018-01-17" SubmissionCount="1">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000545.8(HNF1A):c.58G&gt;A (p.Gly20Arg) AND Maturity-onset diabetes of the young" Accession="RCV002464450" Version="1">
+        <ClassifiedConditionList TraitSetID="9499">
+          <ClassifiedCondition DB="MedGen" ID="C0342276">Maturity-onset diabetes of the young</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000545.8(HNF1A):c.58G&gt;A (p.Gly20Arg) AND Monogenic diabetes" Accession="RCV001796448" Version="4">
+        <ClassifiedConditionList TraitSetID="35375">
+          <ClassifiedCondition DB="MedGen" ID="C3888631">Monogenic diabetes</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>reviewed by expert panel</ReviewStatus>
+            <Description DateLastEvaluated="2021-08-18" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000545.8(HNF1A):c.58G&gt;A (p.Gly20Arg) AND Maturity-onset diabetes of the young type 3" Accession="RCV003333155" Version="1">
+        <ClassifiedConditionList TraitSetID="4146">
+          <ClassifiedCondition DB="MedGen" ID="C1838100">Maturity-onset diabetes of the young type 3</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2023-01-07" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2021-08-18" NumberOfSubmissions="4" NumberOfSubmitters="3" DateCreated="2021-03-22" MostRecentSubmission="2023-10-07">
+        <ReviewStatus>reviewed by expert panel</ReviewStatus>
+        <Description>Pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (1)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">16930618</ID>
+        </Citation>
+        <Citation Type="general">
+          <URL>https://erepo.clinicalgenome.org/evrepo/ui/interpretation/890f4355-b322-4d63-ab2e-02ceb1436a6a</URL>
+        </Citation>
+        <DescriptionHistory Dated="2021-12-18">
+          <Description>Uncertain significance</Description>
+        </DescriptionHistory>
+        <ConditionList>
+          <TraitSet ID="4149" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="1476" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Diabetes mellitus, insulin-dependent, 20</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Type 1 diabetes mellitus 20</ElementValue>
+                <XRef ID="MONDO:0012919" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">T1D20</ElementValue>
+                <XRef Type="MIM" ID="612520" DB="OMIM"/>
+              </Symbol>
+              <XRef ID="C2675866" DB="MedGen"/>
+              <XRef ID="MONDO:0012919" DB="MONDO"/>
+              <XRef Type="MIM" ID="612520" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="35375" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="37052" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Monogenic diabetes</ElementValue>
+                <XRef ID="MONDO:0015967" DB="MONDO"/>
+                <XRef ID="PDMP0008" DB="Personalized Diabetes Medicine Program, University of Maryland School of Medicine"/>
+              </Name>
+              <XRef ID="183625" DB="Orphanet"/>
+              <XRef ID="C3888631" DB="MedGen"/>
+              <XRef ID="MONDO:0015967" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="9499" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="5457" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Maturity onset diabetes mellitus in young</ElementValue>
+                <XRef ID="28453007" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Maturity-onset diabetes of the young</ElementValue>
+                <XRef ID="HP:0004904" DB="Human Phenotype Ontology"/>
+                <XRef ID="MONDO:0018911" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">MODY</ElementValue>
+                <XRef ID="HP:0004904" DB="Human Phenotype Ontology"/>
+                <XRef ID="125850" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="3697"/>
+                <XRef ID="3697" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">29792621</ID>
+                <ID Source="BookShelf">NBK500456</ID>
+              </Citation>
+              <XRef ID="552" DB="Orphanet"/>
+              <XRef ID="C0342276" DB="MedGen"/>
+              <XRef ID="MONDO:0018911" DB="MONDO"/>
+              <XRef Type="Phenotypic series" ID="PS125850" DB="OMIM"/>
+              <XRef Type="primary" ID="HP:0004904" DB="Human Phenotype Ontology"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="4146" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="2650" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">MODY  type 3</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">MODY, type III</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Maturity-onset diabetes of the young type 3</ElementValue>
+                <XRef ID="MONDO:0010894" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">MODY3</ElementValue>
+                <XRef Type="MIM" ID="600496" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="10658"/>
+                <XRef ID="10658" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000552325" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000522248" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000558434" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">29792621</ID>
+                <ID Source="BookShelf">NBK500456</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <XRef ID="552" DB="Orphanet"/>
+              <XRef ID="C1838100" DB="MedGen"/>
+              <XRef ID="C563933" DB="MeSH"/>
+              <XRef ID="MONDO:0010894" DB="MONDO"/>
+              <XRef Type="MIM" ID="600496" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="3003756" SubmissionDate="2021-03-05" ContributesToAggregateClassification="false" DateLastUpdated="2021-03-22" DateCreated="2021-03-22">
+        <ClinVarSubmissionID localKey="NM_000545.5:c.58G&gt;A|OMIM:612520" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV001528541" DateUpdated="2021-03-22" DateCreated="2021-03-22" Type="SCV" Version="1" SubmitterName="Baylor Genetics" OrgID="1006" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2018-01-17">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Uncertain significance</GermlineClassification>
+          <Comment>This variant was determined to be of uncertain significance according to ACMG Guidelines, 2015 [PMID:25741868].</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>maternal</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="HNF1A"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000545.5:c.58G&gt;A</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="612520" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB9201740</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion FDARecognizedDatabase="true" ID="3987866" SubmissionDate="2021-12-14" ContributesToAggregateClassification="true" DateLastUpdated="2021-12-18" DateCreated="2021-12-18">
+        <ClinVarSubmissionID localKey="890f4355-b322-4d63-ab2e-02ceb1436a6a" localKeyIsSubmitted="1" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV002032337" DateUpdated="2021-12-18" DateCreated="2021-12-18" Type="SCV" Version="1" SubmitterName="ClinGen Monogenic Diabetes Variant Curation Expert Panel" OrgID="508240" OrganizationCategory="consortium" OrgAbbreviation="Diabetes VCEP"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2021-08-18">
+          <ReviewStatus>reviewed by expert panel</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <URL>https://erepo.clinicalgenome.org/evrepo/ui/interpretation/890f4355-b322-4d63-ab2e-02ceb1436a6a</URL>
+          </Citation>
+          <Comment>The c.58G&gt;A variant in the HNF1 homeobox A gene, HNF1A, causes an amino acid change of glycine to arginine at codon 20 (p.(G20R)) of NM_000545.8. This variant is located within the dimerization domain (codons 1-32) of HNF1A, which is defined as critical for the protein’s function by the ClinGen MDEP (PM1_Supporting). This variant is predicted to be deleterious by computational evidence, with a REVEL score of 0.956, which is greater than the MDEP threshold of 0.70 (PP3), and functional studies demonstrated the p.Gly20Arg protein has transactivation below 40% of wildtype, indicating that this variant impacts protein function (PS3_Supporting; PMID:12107757). This variant is absent in the gnomAD v2.1.1 European non-Finnish population and has one copy in another subpopulation, which is less than the ClinGen MDEP threshold for PM2_Supporting (≤0.00002 and ≤1 copy in any other subpopulation) (PM2_Supporting). This variant was identified in an individual with a clinical history highly specific for HNF1A-MODY (MODY probability calculator result &gt;50%, negative genetic testing for HNF4A, and sulfonylurea sensitive) (PP4_Moderate; internal lab contributor), with at least one of these individuals having a clinical history highly specific for HNF1A-MODY (MODY probability calculator result &gt;50%, negative genetic testing for HNF4A, and sulfonylurea sensitive) (PP4_Moderate; internal lab contributor). This variant segregated with diabetes, with at least 5 informative meioses in two families with MODY (PP1_Strong; PMID:15657605, internal lab contributors). Taken together, this evidence supports the classification of this variant as pathogenic for monogenic diabetes. ACMG/AMP criteria applied, as specified by the ClinGen MDEP VCEP (specification version 1.0): PP1_Strong, PP4_Moderate, PS4_Moderate, PP3, PM1_Supporting, PM2_Supporting, PS3_Supporting).</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="ModeOfInheritance">Autosomal dominant inheritance</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ClinGen Diabetes ACMG Specifications v1 1</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/2gqvx1fn/clingen_diabetes_acmg_specifications_v1_1.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>curation</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="HNF1A"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name>NM_001306179.2:c.58G&gt;A</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000012.12:g.120978826G&gt;A</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MONDO" ID="MONDO:0015967"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB10801356</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="5398461" SubmissionDate="2022-11-22" ContributesToAggregateClassification="false" DateLastUpdated="2022-12-11" DateCreated="2022-12-11">
+        <ClinVarSubmissionID localKey="SUB12314988" submittedAssembly="GRCh38" title="SUB12314988"/>
+        <ClinVarAccession Accession="SCV002605466" DateUpdated="2022-12-11" DateCreated="2022-12-11" Type="SCV" Version="1" SubmitterName="Clinical Genomics, Uppaluri K&amp;H Personalized Medicine Clinic" OrgID="508223" OrganizationCategory="clinic" OrgAbbreviation="K&amp;H CLINIC"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification>
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation Type="general">
+            <ID Source="PubMed">16930618</ID>
+          </Citation>
+          <Comment>Mutations in HNF1A gene can predispose to MODY3. It is associated with both micro and macrovascular complications of diabetes, especially cardiovascular complications. Associated with glucosuria. May respond well to sulfonylureas. Sufficient evidence is found to confer the association of this particular variant rs1249563793 with MODY3.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="ModeOfInheritance">Autosomal dominant inheritance</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">K &amp; H Uppaluri Personalized Medicine Clinic Variant Classification &amp; Assertion Criteria_Updated V.1</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/var90ofb/k_h_uppaluri_personalized_medicine_clinic_variant_classification_assertion_criteria_updated_1_.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>research</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="HNF1A">
+              <Name>HNF1 homeobox A</Name>
+            </Gene>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <XRefList>
+            <XRef DB="dbSNP" ID="rs1249563793"/>
+          </XRefList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000012.12:g.120978826G&gt;A</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="HP" ID="HP:0004904"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB12314988</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7562866" SubmissionDate="2023-10-02" ContributesToAggregateClassification="false" DateLastUpdated="2023-10-07" DateCreated="2023-10-07">
+        <ClinVarSubmissionID localKey="38438|OMIM:600496" submittedAssembly="GRCh38"/>
+        <ClinVarAccession Accession="SCV004041372" DateUpdated="2023-10-07" DateCreated="2023-10-07" Type="SCV" Version="1" SubmitterName="Baylor Genetics" OrgID="1006" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2023-01-07">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000545.8:c.58G&gt;A</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="600496" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB13858663</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="3003756" TraitType="Disease" MappingType="XRef" MappingValue="612520" MappingRef="OMIM">
+        <MedGen CUI="C2675866" Name="Type 1 diabetes mellitus 20"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="3987866" TraitType="Disease" MappingType="XRef" MappingValue="MONDO:0015967" MappingRef="MONDO">
+        <MedGen CUI="C3888631" Name="Monogenic diabetes"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="5398461" TraitType="Disease" MappingType="XRef" MappingValue="HP:0004904" MappingRef="HP">
+        <MedGen CUI="C0342276" Name="Maturity-onset diabetes of the young"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7562866" TraitType="Disease" MappingType="XRef" MappingValue="600496" MappingRef="OMIM">
+        <MedGen CUI="C1838100" Name="Maturity-onset diabetes of the young type 3"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

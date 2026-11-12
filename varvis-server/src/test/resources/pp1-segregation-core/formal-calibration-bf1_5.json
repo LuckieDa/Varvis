@@ -1,0 +1,26 @@
+{
+  "provenance": {
+    "kind": "REAL_PYTHON_CALIBRATE_ON_SYNTHETIC_BAYES_FACTOR",
+    "module": "scripts/denovo/pp1_formal_segregation.py",
+    "moduleSha256": "9616f8bc57370e17bdb34b54ecd9065a0f55ed02cc8a4d122dd3e935076e1326",
+    "function": "calibrate",
+    "bayesFactor": {
+      "numerator": "3",
+      "denominator": "2"
+    },
+    "remaining": "5",
+    "clinicalExample": false
+  },
+  "calibration": {
+    "status": "NOT_MET",
+    "strength": null,
+    "awardedPP1Points": 0,
+    "rawCalibratedPoints": "0.5536358319210159268828055830515418380331820986457383324550042588",
+    "positiveCalibratedPoints": "0.5536358319210159268828055830515418380331820986457383324550042588",
+    "allocatedPP1Points": "0.5536358319210159268828055830515418380331820986457383324550042588",
+    "log10BayesFactor": "0.1760912590556812420812890085306222824319389827285873235194381793",
+    "log10BayesFactorStatus": "FINITE",
+    "strengthDetermination": "EXACT_FRACTION_THRESHOLDS",
+    "displayLogPrecision": 64
+  }
+}

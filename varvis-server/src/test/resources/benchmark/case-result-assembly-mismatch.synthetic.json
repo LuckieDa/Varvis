@@ -1,0 +1,32 @@
+{
+  "schemaVersion" : "benchmark-case-result-v1",
+  "resultId" : "synthetic-result-assembly-mismatch",
+  "createdAt" : "2026-01-01T00:06:00Z",
+  "runId" : "synthetic-run-001",
+  "datasetId" : "synthetic-public-like-dataset",
+  "caseId" : "case-beta",
+  "groupId" : "G2",
+  "caseExecutionStatus" : "COMPLETED_WITH_FAILURES",
+  "analysisReference" : "analysis-synthetic-beta-g2",
+  "truthMatches" : [ {
+    "truthGene" : "SYNGENE2",
+    "truthCanonicalIdentity" : {
+      "genomeAssembly" : "GRCh37",
+      "chromosome" : "2",
+      "position" : 200,
+      "reference" : "C",
+      "alternate" : "T"
+    },
+    "matchStatus" : "ASSEMBLY_MISMATCH",
+    "assembly" : "GRCh38",
+    "ambiguityStatus" : "UNAVAILABLE",
+    "rankingContractVersion" : "ranking-contract-v1",
+    "rankStatus" : "RANK_UNAVAILABLE",
+    "rankingUniverseSize" : 0
+  } ],
+  "stageRetention" : [
+    { "stage" : "RAW_INPUT", "presence" : "ABSENT", "note" : "assembly mismatch" }
+  ],
+  "primaryFailureCode" : "F2",
+  "failureNote" : "assembly-aware identity comparison rejected the mismatch"
+}

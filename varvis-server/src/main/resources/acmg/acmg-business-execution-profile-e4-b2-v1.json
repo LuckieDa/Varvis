@@ -1,0 +1,70 @@
+{
+  "manifestVersion": "1.0.0",
+  "profileId": "acmg-explicit-business-e4-b2-v1",
+  "enabledCriteria": [
+    "ACMG_AMP_2015:PP3",
+    "ACMG_AMP_2015:BP4",
+    "ACMG_AMP_2015:BA1"
+  ],
+  "automaticTrigger": false,
+  "classificationEnabled": false,
+  "activationScope": "EXPLICIT_BUSINESS_ONLY",
+  "acceptanceScope": "NATIVE_GRCH38_EXPLICIT_INPUTS",
+  "slices": [
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:PP3",
+        "ACMG_AMP_2015:BP4"
+      ],
+      "profileId": "ALPHAMISSENSE_PP3_BP4_SUPPORTING",
+      "profileVersion": "1.0.0",
+      "profileCanonicalSha256": "b8f040d58ee6ef19f687886a742cacaa0a96dc3b5f803e8f423578e1aaa4cb83",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-c1-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "73fca655b6d76700242fc6b12ba4c6c4b9f34ac5c79b38621fe03fecc8303469",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-c1-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PP3",
+          "ACMG_AMP_2015:BP4"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "ALPHAMISSENSE_2023_08_03_GRCH38_TABIX",
+          "resourceVersion": "2023-08-03",
+          "identityFingerprintSha256": "ba423141a1bcbdc37cff155a7f579d2d90629ed5bd7891d220cb95ec0b481ba2"
+        }
+      ],
+      "scope": "COMPLETE_DISEASE_CONTEXT",
+      "frozenContextBundleRequired": true
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:BA1"
+      ],
+      "profileId": "GNOMAD_POPULATION_INPUT_V2",
+      "profileVersion": "2.0.0",
+      "profileCanonicalSha256": "626320cc24bb480adb4d34c97646326c3ca358c5c68b8282eb7edf177731a0a3",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-p1a-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "fa036bb3ca9eecc1f6272e8d7170d965eb21555e5656a5fea9eeba42e8118c88",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-p1a-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:BA1",
+          "ACMG_AMP_2015:BS1"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+          "resourceVersion": "gnomAD joint v4.1 GRCh38",
+          "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+        }
+      ],
+      "scope": "CANDIDATE_ALLELE",
+      "frozenContextBundleRequired": false
+    }
+  ]
+}

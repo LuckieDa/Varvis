@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "pm2-public-controls-v1",
+  "fixedOn": "2026-09-09",
+  "policyId": "PM2_VHL_VON_HIPPEL_LINDAU_AD_V1",
+  "profileSha256": "649f05daac794da9ca57075f394b8e86f57ebd400e1e9e2734028bf41dbe69e7",
+  "gene": "HGNC:12687",
+  "disease": "MONDO:0008667",
+  "moi": "AUTOSOMAL_DOMINANT",
+  "transcript": "ENST00000256474.3",
+  "sample": "synthetic-proband",
+  "genotype": "0/1",
+  "analysisScope": "STANDARD",
+  "topN": 20,
+  "purpose": "Expected branch coverage using public observations; not clinical classification or independent model performance validation.",
+  "controls": [
+    {
+      "allele": "GRCh38:3:10149823:G:A",
+      "hgvs": "NM_000551.4:c.500G>A",
+      "source": "https://www.ncbi.nlm.nih.gov/clinvar/variation/2216/",
+      "expected": "NOT_EVALUATED",
+      "reason": "Official v4.1 joint region query has no exact record. VCEP historical absence assertion does not supply this runtime's independent positional detection evidence."
+    },
+    {
+      "allele": "GRCh38:3:10149921:C:T",
+      "hgvs": "NM_000551.4:c.598C>T",
+      "source": "https://www.ncbi.nlm.nih.gov/clinvar/variation/2232/",
+      "expected": "NOT_MET",
+      "expectedJointFaf95max": "0.000466100",
+      "reason": "Observed PASS record exceeds the VHL AD PM2 threshold. Its separate recessive erythrocytosis association is not the selected disease hypothesis."
+    },
+    {
+      "allele": "GRCh38:3:10149958:G:T",
+      "hgvs": "NM_000551.4:c.635G>T",
+      "source": "https://gnomad.broadinstitute.org/variant/3-10149958-G-T?dataset=gnomad_r4",
+      "rsId": "rs2125130884",
+      "expected": "MET",
+      "expectedJointFaf95max": "0.000000680",
+      "reason": "Independent public joint v4.1 raw VCF has PASS, nfe AC=3/AN=1179716 and FAF95max=6.80000e-07. Selected after fixing the CSpec threshold, without prediction-score selection."
+    }
+  ]
+}

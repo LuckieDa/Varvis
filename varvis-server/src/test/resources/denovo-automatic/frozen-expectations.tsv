@@ -1,0 +1,9 @@
+case	confirmed	phenotype	quarterPoints	status	strength
+confirmed-specific	true	HIGHLY_SPECIFIC	8	MET	STRONG
+assumed-specific	false	HIGHLY_SPECIFIC	4	MET	MODERATE
+confirmed-consistent	true	CONSISTENT	4	MET	MODERATE
+assumed-consistent	false	CONSISTENT	2	MET	SUPPORTING
+confirmed-heterogeneous	true	CONSISTENT_HIGH_HETEROGENEITY	2	MET	SUPPORTING
+assumed-heterogeneous	false	CONSISTENT_HIGH_HETEROGENEITY	1	NOT_MET	NONE
+confirmed-inconsistent	true	NOT_CONSISTENT	0	NOT_MET	NONE
+assumed-inconsistent	false	NOT_CONSISTENT	0	NOT_MET	NONE

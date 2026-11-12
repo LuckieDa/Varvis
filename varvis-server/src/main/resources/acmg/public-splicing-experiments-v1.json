@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "public-splicing-experiments-v1",
+  "catalogId": "varvis-public-splice-observations",
+  "version": "1.0.0",
+  "coverage": "Two public synonymous SNVs: LMNA c.1824C>T and CFTR c.915C>T; native GRCh38 matching and exact versioned MANE pairs only. Absence means not covered, not experimentally normal. Not a comprehensive RNA database.",
+  "updateMethod": "Repository-maintained read-only releases. Verify primary observations and allele/transcript mappings, increment record/catalog versions, recompute hashes and run focused validation. No live scraping, user JSON or silent background catalog update.",
+  "records": [
+    {
+      "recordId": "eriksson-2003-lmna-g608g",
+      "version": "1.0.0",
+      "geneId": "HGNC:6636",
+      "geneSymbol": "LMNA",
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "1",
+        "position": 156138613,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "reportedAllele": {
+        "assembly": "NOT_SPECIFIED_IN_2003_PAPER",
+        "description": "G608G (GGC>GGT); current native GRCh38 identity established separately"
+      },
+      "consequence": "synonymous_variant",
+      "transcriptMapping": {
+        "ensembl": "ENST00000368300.9",
+        "refseq": "NM_170707.4",
+        "sourceVersion": "1.5",
+        "sourceUrl": "https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/release_1.5/MANE.GRCh38.v1.5.summary.txt.gz",
+        "sourceSha256": "d10ace2720681a3b2e0eefd9da4f551274a6b4141ac9bfd6a2565dfb6e9ad55c",
+        "sourceRowNumber": 2725,
+        "sourceRow": "GeneID:4000\tENSG00000160789.27\tHGNC:6636\tLMNA\tlamin A/C\tNM_170707.4\tNP_733821.1\tENST00000368300.9\tENSP00000357283.4\tMANE Select\tNC_000001.11\t156114711\t156140081\t+",
+        "alleleMappingEvidence": "Paper G608G/GGC>GGT; NCBI ClinVar VCV000014500.31 HGVS identity only: NC_000001.11:g.156138613C>T = NM_170707.4:c.1824C>T. Exact MANE 1.5 pair; Ensembl version 9 exon ENSE00003606184, GRCh38 156138488-156138757, positive strand. No ClinVar classification used.",
+        "identitySourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/",
+        "annotationSourceUrl": "https://rest.ensembl.org/lookup/id/ENST00000368300?expand=1;content-type=application/json",
+        "annotationSha256": "1bc0f72c72414fb2fa069ef7cbd54cf2afca37e792d5bee70e89489ee8a015c5"
+      },
+      "source": {
+        "doi": "10.1038/nature01629",
+        "pmid": "12714972",
+        "url": "https://www.nature.com/articles/nature01629",
+        "locator": "Figure 2; RT-PCR methods; pp. 294-295 and 297",
+        "artifactUrl": "https://www.tmd.ac.jp/artsci/biol/HGSnature01629.pdf",
+        "artifactSha256": "15929b3609a5b90fcaf252099f6cbf9e9b57212eac7114b608c83b4116f0e7b5"
+      },
+      "summary": "HGPS samples with G608G showed an aberrant lamin A transcript lacking 150 nucleotides of exon 11.",
+      "experiment": {
+        "observation": "ALTERED_SPLICING_OBSERVED",
+        "rnaEvent": "Internal exon 11 donor activation; 150 nt deletion. Current NM_170707.4 r.1819_1968del is a derived correspondence.",
+        "type": "Patient-cell RNA RT-PCR and product sequencing",
+        "system": "HGPS cell lines; primary fibroblasts for retained full-length mutant transcripts. Protein blots also used lymphoblastoid and fibroblast cells; these are distinct assays.",
+        "controls": "Non-HGPS samples and minus-RT controls in Figure 2.",
+        "limitations": "Incomplete splicing; retained full-length mutant clones do not quantify the fraction of all RNA. No DCM assay or pathogenicity inference."
+      },
+      "molecularScope": "Exact allele and versioned transcript correspondence, within the recorded assay limitations. No model-transcript identity or clinical causality claim.",
+      "diseaseScope": "Original experiment: Hutchinson-Gilford progeria syndrome. The molecular observation does not establish pathogenicity for DCM or other disease contexts.",
+      "provenance": {
+        "compilationMethod": "Codex-assisted primary-paper extraction and source/coordinate verification in this repository task; no human reviewer or clinical sign-off claimed.",
+        "sourceVerifiedAt": "2026-09-09",
+        "clinicalReview": "NOT_PERFORMED"
+      },
+      "contentSha256": "604ffb466dccf18992a85802d0015611ce4df3f70d59ae97ce7cbcbad48ef485"
+    },
+    {
+      "recordId": "scott-2012-cftr-c915ct",
+      "version": "1.0.0",
+      "geneId": "HGNC:1884",
+      "geneSymbol": "CFTR",
+      "allele": {
+        "assembly": "GRCh38",
+        "contig": "7",
+        "position": 117540145,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "reportedAllele": {
+        "assembly": "NCBI36/hg18",
+        "contig": "7",
+        "position": 116967435,
+        "reference": "C",
+        "alternate": "T"
+      },
+      "consequence": "synonymous_variant",
+      "transcriptMapping": {
+        "ensembl": "ENST00000003084.11",
+        "refseq": "NM_000492.4",
+        "sourceVersion": "1.5",
+        "sourceUrl": "https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/release_1.5/MANE.GRCh38.v1.5.summary.txt.gz",
+        "sourceSha256": "d10ace2720681a3b2e0eefd9da4f551274a6b4141ac9bfd6a2565dfb6e9ad55c",
+        "sourceRowNumber": 783,
+        "sourceRow": "GeneID:1080\tENSG00000001626.20\tHGNC:1884\tCFTR\tCF transmembrane conductance regulator\tNM_000492.4\tNP_000483.3\tENST00000003084.11\tENSP00000003084.6\tMANE Select\tNC_000007.14\t117480025\t117668665\t+",
+        "alleleMappingEvidence": "Paper Tables 1/3: rs1800083, hg18 116967435C>T, c.915C>T, reporter region 116967329-116967719. That region equals GRCh38 117540039-117540429 at all 391 bases, REF C at zero-based offset 106. Ensembl CDS map c.915 -> 117540145 and version 11 lookup independently checked. Explicit record harmonization; no runtime assembly projection.",
+        "mappingSourceUrl": "https://rest.ensembl.org/map/cds/ENST00000003084/915..915?content-type=application/json",
+        "annotationSourceUrl": "https://rest.ensembl.org/lookup/id/ENST00000003084?expand=1;content-type=application/json",
+        "reportedSequenceSourceUrl": "https://api.genome.ucsc.edu/getData/sequence?genome=hg18;chrom=chr7;start=116967328;end=116967719",
+        "nativeSequenceSourceUrl": "https://rest.ensembl.org/sequence/region/human/7:117540039..117540429:1?content-type=application/json",
+        "equalSequenceSha256": "896946ed29435cdd34cde4b604ca89dc57ca623b7e0bb45e9a23c44b38f95252",
+        "annotationSha256": "409722a2d777cc95638e9ef78b94df9222f5187edeedd15d1a1a5b525b7878a5",
+        "mappingSha256": "3708665ac41ace9c63e5623937aa7a1ba62b20514f16bcf5b5e039957e34907e"
+      },
+      "source": {
+        "doi": "10.1016/j.jcf.2012.04.009",
+        "pmid": "22591852",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3440543/",
+        "locator": "Tables 1/3, variant 2; Figures 2A/B and 3A; Minigene constructs and RT-PCR methods",
+        "artifactUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3440543/?report=xml",
+        "artifactSha256": "f44816e2d1330d4c841e60fbd2c5861d77be92a830da6087c452e429d3da7f5e"
+      },
+      "summary": "The c.915C>T minigene activated a cryptic acceptor, removing 71 bases from the start of CFTR exon 8.",
+      "experiment": {
+        "observation": "ALTERED_SPLICING_OBSERVED",
+        "rnaEvent": "71 nt deletion at the exon 8 5-prime end, confirmed by product sequencing; exon skipping also increased.",
+        "type": "pDESTsplice minigene RT-PCR, capillary analysis and product sequencing",
+        "system": "K562 cells, replicated in IB3-1 lung epithelial cells; rat insulin exon reporter containing CFTR exon and intronic flanks, not endogenous patient RNA.",
+        "controls": "Sequence-verified reference and variant constructs; triplicate transfections pooled before RNA harvest.",
+        "limitations": "Reporter context cannot establish in-vivo outcome or patient transcript fractions; carrier RNA unavailable. Other haplotype variants could modify splicing."
+      },
+      "molecularScope": "Exact allele and versioned transcript correspondence, within the recorded reporter assay limitations. No clinical causality claim.",
+      "diseaseScope": "CFTR molecular reporter observation; no automatic cystic fibrosis or other disease pathogenicity assertion.",
+      "provenance": {
+        "compilationMethod": "Codex-assisted primary-paper extraction and source/coordinate verification in this repository task; no human reviewer or clinical sign-off claimed.",
+        "sourceVerifiedAt": "2026-09-09",
+        "clinicalReview": "NOT_PERFORMED"
+      },
+      "contentSha256": "f4255119edbc7481e71d35ea35ea49b841ad6ac16db01ce0fee69f7d74472edb"
+    }
+  ],
+  "contentSha256": "87d1888e606bbef6a781ebf9c59b171f7dfd668a14623ccb26f57c6a9223db2a"
+}

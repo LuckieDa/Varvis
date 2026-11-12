@@ -1,0 +1,4929 @@
+{
+  "purpose": "SYNTHETIC_ONLY_PYTHON_COMPILED_NOT_PUBLISHED",
+  "compilerVersion": "1.1.1",
+  "compilerSha256": "9942aa128b8d21a4e3f304eb6bc9ca6eb0dedc97ce31262859680622c196f915",
+  "rows": [
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN > 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "d729e5831344c1c1eef43ff30dfb34c0b28cf35a13dc4fa7991e1a0711247c54",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN > 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN >= 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "faf6af0e201a338b55657d3f2ab239bd7da85677dc32ff09f72c24dcb740cd4f",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN >= 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN > 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "f3b23b2289b5ea3c14460ca4520469cfd5c548a9c774351e903d9d54d6cd8181",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN > 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN >= 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "5aad0accbecf7e2c2dbd7dc23926f5063a8153ee45f1e6e2164e6e3151af3d54",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN >= 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN > 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "b45095f1bc6d9ed717d3aa842e0fb2c29d07dc0fb119b4cfc18d6c19fe37f56d",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN > 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN >= 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "a07b79d3e47154c54edffdf83a28167af2e3ddd5880b9f8abb68cc349c4025d6",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN >= 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN > 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "491bd0634119dfb70d7cc1f1b7c772707ed191d4353d94d222522e2ef5aad8c9",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN > 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN >= 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "0d55744217af5e015136c4e37a61ee21bf3016350abb37232bfeb39758e03b89",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN >= 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN > 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "d835576c3ad1b90a71e6fda2bf7826fd1580cc1c5bb2e26ac92133fbd3c61086",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN > 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN >= 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "11741c762de99289ca981e9f06a40a28261a27aadf5943a6325afbce29c189bb",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.001; same population AN >= 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN > 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "fa1ee764bff77c05b42c945cd757f0c8d2983cde23fe1bc7a4b44e6b88e848e3",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN > 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN >= 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "4cb7517f957b82fabe6b583af0e5d6709a96c74cbc0d982977df165b7c761175",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN >= 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN > 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "9d362623913bb30f9056f44c1f25a5beb7ac225a13a389b4116037475183975e",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN > 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN >= 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "21bc9457df5d5ae3b376c144cbb060b45e6a0c26863ac1fbba5d01897472750c",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 > 0.0070; same population AN >= 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN > 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "e8de409774b67cbb385394fe5e158eee36320c4adc8283eaebe2572319e2ec78",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN > 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN >= 2500."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.0070",
+        "unit": "fraction",
+        "minimumAn": "2500",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "794bc1fe7b5353ad2758727e8e709c0db25ca67fa4bbee10d2b3847f2cb8cff6",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.0070",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.0070; same population AN >= 2500."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00699999",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2500",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00699999",
+          "an": "2501",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2500",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.0070",
+          "an": "2501",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2499",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2500",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00700001",
+          "an": "2501",
+          "expected": "MET"
+        }
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD Grpmax FAF > 1:10,000 (> 0.01% or 0.0001)"
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "RECIPROCAL_GRPMAX_FAF_THRESHOLD_V1",
+        "originalMetric": "FAF",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.0001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "f03c385b8a8933d460b933db8ca8b6e1ae972a1a2180ea58dcdea37a388f82f8",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "FAF",
+        "originalThresholdText": "0.0001",
+        "derivedPolicyVersion": "a01-ba1-reciprocal-faf-derived-v1",
+        "migration": {
+          "status": "REVIEWED",
+          "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+          "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "sources": [
+            {
+              "url": "https://example.test/synthetic-guidance",
+              "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+              "url": "https://example.test/synthetic-only",
+              "sha256": "f03c385b8a8933d460b933db8ca8b6e1ae972a1a2180ea58dcdea37a388f82f8",
+              "jsonPointer": "/",
+              "specificationId": "GN7577",
+              "version": "1.0"
+            }
+          ],
+          "basis": "EXPLICIT_FAF_DEFINITION_ALIGNMENT",
+          "reviewRole": "PROJECT_SOURCE_DERIVATION_NOT_NEW_VCEP_OR_CLINICAL_APPROVAL"
+        },
+        "calculationProvenance": {
+          "reciprocalDenominator": "10000",
+          "sourcePercent": "0.01",
+          "equivalentRepresentationsVerified": true,
+          "cutoffRecomputed": false
+        },
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD Grpmax FAF > 1:10,000 (> 0.01% or 0.0001)"
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00009999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00009999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00009999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0001",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0001",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ],
+      "semanticReview": {
+        "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+        "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "sources": [
+          {
+            "url": "https://example.test/synthetic-guidance",
+            "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          }
+        ]
+      }
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD Grpmax FAF >= 1:10,000 (>= 0.01% or 0.0001)"
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "RECIPROCAL_GRPMAX_FAF_THRESHOLD_V1",
+        "originalMetric": "FAF",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.0001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "bbf1652a09be9f4d86c91ac39429e94682787ad42935c8bb74fb48cc14270e73",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "FAF",
+        "originalThresholdText": "0.0001",
+        "derivedPolicyVersion": "a01-ba1-reciprocal-faf-derived-v1",
+        "migration": {
+          "status": "REVIEWED",
+          "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+          "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "sources": [
+            {
+              "url": "https://example.test/synthetic-guidance",
+              "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+              "url": "https://example.test/synthetic-only",
+              "sha256": "bbf1652a09be9f4d86c91ac39429e94682787ad42935c8bb74fb48cc14270e73",
+              "jsonPointer": "/",
+              "specificationId": "GN7577",
+              "version": "1.0"
+            }
+          ],
+          "basis": "EXPLICIT_FAF_DEFINITION_ALIGNMENT",
+          "reviewRole": "PROJECT_SOURCE_DERIVATION_NOT_NEW_VCEP_OR_CLINICAL_APPROVAL"
+        },
+        "calculationProvenance": {
+          "reciprocalDenominator": "10000",
+          "sourcePercent": "0.01",
+          "equivalentRepresentationsVerified": true,
+          "cutoffRecomputed": false
+        },
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD Grpmax FAF >= 1:10,000 (>= 0.01% or 0.0001)"
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00009999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00009999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00009999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.0001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ],
+      "semanticReview": {
+        "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+        "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "sources": [
+          {
+            "url": "https://example.test/synthetic-guidance",
+            "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          }
+        ]
+      }
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD Grpmax FAF > 1:20,000 (> 0.005% or 0.00005)"
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "RECIPROCAL_GRPMAX_FAF_THRESHOLD_V1",
+        "originalMetric": "FAF",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN",
+        "value": "0.00005",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "6a60fc81c10de567c77e3c86b389d535397bdc5ba9287f2cb7c71132f43ba3f5",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "FAF",
+        "originalThresholdText": "0.00005",
+        "derivedPolicyVersion": "a01-ba1-reciprocal-faf-derived-v1",
+        "migration": {
+          "status": "REVIEWED",
+          "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+          "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "sources": [
+            {
+              "url": "https://example.test/synthetic-guidance",
+              "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+              "url": "https://example.test/synthetic-only",
+              "sha256": "6a60fc81c10de567c77e3c86b389d535397bdc5ba9287f2cb7c71132f43ba3f5",
+              "jsonPointer": "/",
+              "specificationId": "GN9999",
+              "version": "1.0"
+            }
+          ],
+          "basis": "EXPLICIT_FAF_DEFINITION_ALIGNMENT",
+          "reviewRole": "PROJECT_SOURCE_DERIVATION_NOT_NEW_VCEP_OR_CLINICAL_APPROVAL"
+        },
+        "calculationProvenance": {
+          "reciprocalDenominator": "20000",
+          "sourcePercent": "0.005",
+          "equivalentRepresentationsVerified": true,
+          "cutoffRecomputed": false
+        },
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD Grpmax FAF > 1:20,000 (> 0.005% or 0.00005)"
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00004999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00004999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00004999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00005",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00005",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00005",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00005001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00005001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00005001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ],
+      "semanticReview": {
+        "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+        "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "sources": [
+          {
+            "url": "https://example.test/synthetic-guidance",
+            "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          }
+        ]
+      }
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD Grpmax FAF >= 1:20,000 (>= 0.005% or 0.00005)"
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "RECIPROCAL_GRPMAX_FAF_THRESHOLD_V1",
+        "originalMetric": "FAF",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.00005",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "d3a5dbb64410039942341a0be16b2227d932b1d0a317cc8ec0ba4247daf17d14",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "FAF",
+        "originalThresholdText": "0.00005",
+        "derivedPolicyVersion": "a01-ba1-reciprocal-faf-derived-v1",
+        "migration": {
+          "status": "REVIEWED",
+          "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+          "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "sources": [
+            {
+              "url": "https://example.test/synthetic-guidance",
+              "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+              "url": "https://example.test/synthetic-only",
+              "sha256": "d3a5dbb64410039942341a0be16b2227d932b1d0a317cc8ec0ba4247daf17d14",
+              "jsonPointer": "/",
+              "specificationId": "GN9999",
+              "version": "1.0"
+            }
+          ],
+          "basis": "EXPLICIT_FAF_DEFINITION_ALIGNMENT",
+          "reviewRole": "PROJECT_SOURCE_DERIVATION_NOT_NEW_VCEP_OR_CLINICAL_APPROVAL"
+        },
+        "calculationProvenance": {
+          "reciprocalDenominator": "20000",
+          "sourcePercent": "0.005",
+          "equivalentRepresentationsVerified": true,
+          "cutoffRecomputed": false
+        },
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD Grpmax FAF >= 1:20,000 (>= 0.005% or 0.00005)"
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00004999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00004999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00004999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00005",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00005",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00005",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00005001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00005001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00005001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ],
+      "semanticReview": {
+        "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+        "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "sources": [
+          {
+            "url": "https://example.test/synthetic-guidance",
+            "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          }
+        ]
+      }
+    },
+    {
+      "rawEntity": {
+        "entId": "GN7577",
+        "ldhId": "17577",
+        "rev": "synthetic-rev-7577",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN7577",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC7577",
+                  "hgnc_id": "HGNC:7577",
+                  "ensembl_gene_id": "ENSG7577",
+                  "entrez_id": "7577"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs7577",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC7577",
+                    "preferredTranscript": "NM_7577.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0007577",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba17577",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC7577"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN >= 2000."
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            },
+            {
+              "entContent": {
+                "label": "PM2",
+                "instructionsToUse": "Recommend using as supporting level of evidence (PM2_Supporting) per ClinGen guidance. Per guidance from ClinGen/SVI, PM2_Supporting + PVS1 is sufficient evidence of a variant being likely pathogenic. We recommend investigating the genotype metrics in gnomAD for variants that have been flagged for having failed one or more quality parameters, as it is possible that some of these filtered variants are actually real. The number of filtered alleles can be counted to determine whether PM2_Supporting would be met even if they were genuine calls. If the filtered calls are sufficient in number to not meet PM2_Supporting, then we would not use it. Because it is also possible that these calls are false positives, we would not use filtered variants to support BA1 or BS1."
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:7577"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC7577"
+        ],
+        "ensemblGeneIds": [
+          "ENSG7577"
+        ],
+        "entrezGeneIds": [
+          "7577"
+        ],
+        "mondoIds": [
+          "MONDO:0007577"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_7577.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "SIMPLE_FAF95_THRESHOLD_V1",
+        "originalMetric": "gnomad.joint.faf95max",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [
+          "GNOMAD_FILTERED_VARIANTS_EXCLUDED"
+        ],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "22cbeaec4e484aaa8c73fdd64b8b197f885c9d37b3b8cc7b07476463339502db",
+            "jsonPointer": "/",
+            "specificationId": "GN7577",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "joint GroupMax FAF95",
+        "originalThresholdText": "0.001",
+        "derivedPolicyVersion": "a01-ba1-scalar-derived-v1",
+        "clauses": [
+          {
+            "ldhId": "ba17577",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC7577"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD joint GroupMax FAF95 >= 0.001; same population AN >= 2000."
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00099999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00099999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00100001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ],
+      "qualityFaults": [
+        "EXOMES_FILTER",
+        "GENOMES_FILTER",
+        "MISSING_EXOMES",
+        "MISSING_GENOMES",
+        "EMPTY_GENOMES",
+        "NO_RECORD",
+        "INCOMPLETE_SUPPLEMENT"
+      ]
+    },
+    {
+      "rawEntity": {
+        "entId": "GN9999",
+        "ldhId": "19999",
+        "rev": "synthetic-rev-9999",
+        "modified": "2026-09-14T00:00:00Z",
+        "entContent": {
+          "version": "1.0",
+          "namespace": "GN9999",
+          "title": "SYNTHETIC ONLY",
+          "states": [
+            {
+              "name": "Released",
+              "current": true
+            }
+          ],
+          "notes": ""
+        },
+        "ld": {
+          "Gene": [
+            {
+              "entContent": {
+                "HGNC": {
+                  "symbol": "SYNTHETIC9999",
+                  "hgnc_id": "HGNC:9999",
+                  "ensembl_gene_id": "ENSG9999",
+                  "entrez_id": "9999"
+                }
+              }
+            }
+          ],
+          "RuleSet": [
+            {
+              "ldhId": "rs9999",
+              "entContent": {
+                "genes": [
+                  {
+                    "gene": "SYNTHETIC9999",
+                    "preferredTranscript": "NM_9999.1",
+                    "diseases": [
+                      {
+                        "preferredMondoId": "MONDO:0009999",
+                        "preferredModeOfInheritance": "Autosomal recessive inheritance"
+                      }
+                    ]
+                  }
+                ],
+                "references": []
+              }
+            }
+          ],
+          "CriteriaCode": [
+            {
+              "ldhId": "ba19999",
+              "entContent": {
+                "label": "BA1",
+                "gene": [
+                  "SYNTHETIC9999"
+                ],
+                "applicability": "Applicable",
+                "additionalComments": "",
+                "originalACMGSummary": "Template is never an executable condition.",
+                "strengthDescriptor": [
+                  {
+                    "strength": "Stand Alone",
+                    "applicability": "Applicable",
+                    "instructionsToUse": "",
+                    "text": "gnomAD Grpmax FAF >= 1:10,000 (>= 0.01% or 0.0001)"
+                  },
+                  {
+                    "strength": "Strong",
+                    "applicability": "Not applicable",
+                    "text": ""
+                  }
+                ]
+              }
+            },
+            {
+              "entContent": {
+                "label": "PM2",
+                "instructionsToUse": "Recommend using as supporting level of evidence (PM2_Supporting) per ClinGen guidance. Per guidance from ClinGen/SVI, PM2_Supporting + PVS1 is sufficient evidence of a variant being likely pathogenic. We recommend investigating the genotype metrics in gnomAD for variants that have been flagged for having failed one or more quality parameters, as it is possible that some of these filtered variants are actually real. The number of filtered alleles can be counted to determine whether PM2_Supporting would be met even if they were genuine calls. If the filtered calls are sufficient in number to not meet PM2_Supporting, then we would not use it. Because it is also possible that these calls are false positives, we would not use filtered variants to support BA1 or BS1."
+              }
+            }
+          ]
+        }
+      },
+      "scope": {
+        "hgncIds": [
+          "HGNC:9999"
+        ],
+        "geneSymbols": [
+          "SYNTHETIC9999"
+        ],
+        "ensemblGeneIds": [
+          "ENSG9999"
+        ],
+        "entrezGeneIds": [
+          "9999"
+        ],
+        "mondoIds": [
+          "MONDO:0009999"
+        ],
+        "moi": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "transcripts": [
+          "NM_9999.1"
+        ],
+        "transcriptScope": "EXACT",
+        "status": "RESOLVED",
+        "sourcePointer": "/ld/RuleSet/0/entContent/genes/0/diseases/0"
+      },
+      "ba1": {
+        "disposition": "THRESHOLD",
+        "reasonCode": "CSPEC_BA1_COMPLETE_SCALAR_FREQUENCY_FAMILY",
+        "semanticFamily": "RECIPROCAL_GRPMAX_FAF_THRESHOLD_V1",
+        "originalMetric": "FAF",
+        "metric": "gnomad.joint.faf95max",
+        "comparator": "GREATER_THAN_OR_EQUAL",
+        "value": "0.0001",
+        "unit": "fraction",
+        "minimumAn": "2000",
+        "minimumAnComparator": "GREATER_THAN_OR_EQUAL",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ],
+        "conditions": [
+          "GNOMAD_FILTERED_VARIANTS_EXCLUDED"
+        ],
+        "sourceRefs": [
+          {
+            "url": "https://example.test/synthetic-only",
+            "sha256": "61a2c03b84dcf39ec90e9f48e521be6729168a51fe378468d591a5c1c45954e5",
+            "jsonPointer": "/",
+            "specificationId": "GN9999",
+            "version": "1.0"
+          }
+        ],
+        "originalStatisticText": "FAF",
+        "originalThresholdText": "0.0001",
+        "derivedPolicyVersion": "a01-ba1-reciprocal-faf-derived-v1",
+        "migration": {
+          "status": "REVIEWED",
+          "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+          "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "sources": [
+            {
+              "url": "https://example.test/synthetic-guidance",
+              "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+              "url": "https://example.test/synthetic-only",
+              "sha256": "61a2c03b84dcf39ec90e9f48e521be6729168a51fe378468d591a5c1c45954e5",
+              "jsonPointer": "/",
+              "specificationId": "GN9999",
+              "version": "1.0"
+            }
+          ],
+          "basis": "EXPLICIT_FAF_DEFINITION_ALIGNMENT",
+          "reviewRole": "PROJECT_SOURCE_DERIVATION_NOT_NEW_VCEP_OR_CLINICAL_APPROVAL"
+        },
+        "calculationProvenance": {
+          "reciprocalDenominator": "10000",
+          "sourcePercent": "0.01",
+          "equivalentRepresentationsVerified": true,
+          "cutoffRecomputed": false
+        },
+        "clauses": [
+          {
+            "ldhId": "ba19999",
+            "entContent": {
+              "label": "BA1",
+              "gene": [
+                "SYNTHETIC9999"
+              ],
+              "applicability": "Applicable",
+              "additionalComments": "",
+              "originalACMGSummary": "Template is never an executable condition.",
+              "strengthDescriptor": [
+                {
+                  "strength": "Stand Alone",
+                  "applicability": "Applicable",
+                  "instructionsToUse": "",
+                  "text": "gnomAD Grpmax FAF >= 1:10,000 (>= 0.01% or 0.0001)"
+                },
+                {
+                  "strength": "Strong",
+                  "applicability": "Not applicable",
+                  "text": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "cases": [
+        {
+          "faf": "0.00009999",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00009999",
+          "an": "2000",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.00009999",
+          "an": "2001",
+          "expected": "NOT_MET"
+        },
+        {
+          "faf": "0.0001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.0001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.0001",
+          "an": "2001",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "1999",
+          "expected": "NOT_EVALUATED"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "2000",
+          "expected": "MET"
+        },
+        {
+          "faf": "0.00010001",
+          "an": "2001",
+          "expected": "MET"
+        }
+      ],
+      "semanticReview": {
+        "reviewId": "SYNTHETIC_ONLY_NOT_PUBLICATION",
+        "reviewSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "sources": [
+          {
+            "url": "https://example.test/synthetic-guidance",
+            "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          }
+        ]
+      },
+      "qualityFaults": [
+        "EXOMES_FILTER",
+        "GENOMES_FILTER",
+        "MISSING_EXOMES",
+        "MISSING_GENOMES",
+        "EMPTY_GENOMES",
+        "NO_RECORD",
+        "INCOMPLETE_SUPPLEMENT"
+      ]
+    }
+  ]
+}

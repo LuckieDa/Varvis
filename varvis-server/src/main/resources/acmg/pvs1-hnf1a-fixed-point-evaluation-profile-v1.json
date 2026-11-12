@@ -1,0 +1,83 @@
+{
+  "profileSchemaVersion": "pvs1-hnf1a-fixed-point-evaluation-profile-v1",
+  "profileId": "HNF1A_FIXED_POINT_PVS1_VERY_STRONG",
+  "profileVersion": "1.0.0",
+  "status": "RUNTIME_EVALUATION_SLICE",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-09-05",
+  "asOf": "2026-09-05T00:00:00Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "prerequisiteBinding": {
+    "profileId": "HNF1A_EARLY_EXON_STOP_GAINED_PVS1_PREREQUISITE",
+    "profileVersion": "1.0.0",
+    "profileCanonicalSha256": "66b9c089cbcf6f4eaedb6ba6de387fd00a11cfb0e52449ada9f0386bb8192822",
+    "profileClasspathResource": "/acmg/pvs1-early-exon-stop-gained-prerequisite-profile-v1.json",
+    "requiredStatus": "INPUT_READY",
+    "requiredNmdPrediction": "PREDICTED_NMD"
+  },
+  "authorityCatalogBinding": {
+    "catalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+    "catalogSha256": "9c4d12df8eba350318624e25d50321f845c023f1d136bff934ecfbb89d45e627",
+    "catalogClasspathBoundary": "docs/contracts/acmg-evidence-v2/AUTHORITY_SOURCES.json"
+  },
+  "ruleRegistryBinding": {
+    "registryId": "acmg-rule-registry-e3-l1a-2026-09-05",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "3cd5b36002a00c39b3af54ac9c2c409337f8e05b76482c274216c2e3c5f9db42",
+    "registryCanonicalSha256": "2aacc86af0b974a4f52120a32350bfd5912cf641f8c41014519ac16020c1d6f3",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-l1a-2026-09-05.json"
+  },
+  "cspecRegistryBinding": {
+    "registryId": "cspec-overlay-registry-e3-l1a-2026-09-05",
+    "registrySchemaVersion": "cspec-overlay-registry-v1",
+    "registrySha256": "26c1e5a5cbd1dca3b4b5af53c6b413ee869aa665246bc918d2ec022a12f34273",
+    "registryCanonicalSha256": "647b4031c1ba2573887939810127cf13044733ead2223633320e0f2308f7abf4",
+    "registryClasspathResource": "/acmg/cspec-overlay-registry-v1/cspec-overlay-registry-e3-l1a-2026-09-05.json",
+    "selectionPolicyId": "CSPEC_EXACT_CONTEXT_SELECTION_V1",
+    "requiredOutcome": "ZERO_MATCH",
+    "requiredCandidateOverlayIds": [],
+    "zeroMatchMeaning": "NO_EXECUTABLE_EXACT_MATCH_IN_BOUND_REGISTRY_NOT_AN_ASSERTION_THAT_GN017_DOES_NOT_EXIST"
+  },
+  "criterion": {
+    "criterionId": "ACMG_AMP_2015:PVS1",
+    "currentGeneralDesignation": "PVS1",
+    "baseStrength": "VERY_STRONG",
+    "appliedStrength": "VERY_STRONG",
+    "authoritySourceIds": [
+      "authority-clingen-svi-pvs1-2018",
+      "authority-clingen-svi-splicing-2023"
+    ]
+  },
+  "evaluationPolicy": {
+    "matchingResult": {
+      "criterionApplicability": "APPLICABLE",
+      "evaluationResult": "MET",
+      "conflict": "NONE",
+      "review": "NOT_REQUIRED"
+    },
+    "nonReadyResult": {
+      "criterionApplicability": "UNKNOWN",
+      "evaluationResult": "NOT_EVALUATED",
+      "appliedStrength": "NONE"
+    },
+    "notMetOutputAllowed": false,
+    "evidenceReferencePolicy": "SOLE_VEP_ATOMIC_EVIDENCE",
+    "legacyPvs1CandidateAllowed": false,
+    "lofteeAllowed": false,
+    "combinationPerformed": false,
+    "classificationPerformed": false
+  },
+  "clinicalBoundary": {
+    "exactFixedPointOnly": true,
+    "generalPvs1Implemented": false,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false,
+    "clinicalValidationClaimed": false
+  }
+}

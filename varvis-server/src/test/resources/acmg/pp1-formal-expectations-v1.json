@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "pp1-formal-independent-expectations-v1",
+  "status": "EXPECTED_BEFORE_IMPLEMENTATION",
+  "dataClass": "SYNTHETIC_TEST",
+  "definition": "Z(Y,O,C)Z(1,C)/(Z(Y,C)Z(1,O,C)); typed founders and designated proband are conditioned",
+  "vectors": {
+    "ad_anchor_only": "1",
+    "ad_affected_het": "3/2",
+    "ad_unaffected_het": "1/2",
+    "ad_affected_noncarrier": "1/2",
+    "ad_affected_and_unaffected_noncarrier": "9/4",
+    "ar_affected_homozygous": "2",
+    "ar_unaffected_het": "6/5",
+    "ar_affected_and_unaffected_het": "12/5",
+    "ad_unknown_intermediate_two_grandchildren": "18/5",
+    "ar_first_cousins_two_affected": "48/7",
+    "ar_first_cousins_complete_penetrance": "64",
+    "genotype_independent_phenotype": "1",
+    "ad_tiny_probabilities": "3/2"
+  },
+  "firstCousinsFourSums": {"genotypeAnchor": "1/4", "genotypeAll": "1/256", "phenotypeAnchor": "63/4096", "phenotypeAll": "27/16384"},
+  "limits": ["not theta linkage LOD", "not clinical adoption", "independent family and phase cannot be guessed", "no implicit founder prior"]
+}

@@ -1,0 +1,667 @@
+{
+  "schemaVersion": "published-pm5-ptc-table-v1",
+  "weightBasis": "STOP_CODON_EXON",
+  "assembly": "GRCh38",
+  "tableSheet": "Table 4 - Annotated Exons",
+  "tableSha256": "85af4043ebf9f8965a5879dbe11674c6e62e3aef7f1b8773b07620ee02f03fd9",
+  "scopes": [
+    {
+      "specification": "GN092@1.2",
+      "gene": "BRCA1",
+      "hgnc": "HGNC:1100",
+      "disease": "MONDO:0700268",
+      "inheritance": "AUTOSOMAL_DOMINANT",
+      "origin": "GERMLINE",
+      "transcript": "NM_007294.4",
+      "referenceStopProteinPosition": 1864,
+      "pm5Pointer": "/ld/RuleSet/0/ld/CriteriaCode/22/entContent",
+      "pvs1Pointer": "/ld/RuleSet/0/ld/CriteriaCode/24/entContent",
+      "tableFileId": "ca5cf57b-94df-4ad6-a001-c62ceccb3845",
+      "releaseSha256": "290c0f25cd367fe68d2b854a77f2ec9b5bc0a190da907adf995b4f3a51415534",
+      "specificationUrl": "https://cspec.clinicalgenome.org/cspec/ui/svi/doc/GN092?version=1.2",
+      "tableUrl": "https://cspec.genome.network/cspec/File/id/ca5cf57b-94df-4ad6-a001-c62ceccb3845/data",
+      "maneTranscript": "ENST00000357654.9",
+      "rows": [
+        {
+          "id": "T4-12",
+          "stopExonOrdinal": 2,
+          "sourceExonLabel": "E2",
+          "referenceExonSenseCdsSpanInclusive": [
+            1,
+            80
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-22",
+          "stopExonOrdinal": 3,
+          "sourceExonLabel": "E3",
+          "referenceExonSenseCdsSpanInclusive": [
+            81,
+            134
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-32",
+          "stopExonOrdinal": 4,
+          "sourceExonLabel": "E4(5)",
+          "referenceExonSenseCdsSpanInclusive": [
+            135,
+            212
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-42",
+          "stopExonOrdinal": 5,
+          "sourceExonLabel": "E5(6)",
+          "referenceExonSenseCdsSpanInclusive": [
+            213,
+            301
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-51",
+          "stopExonOrdinal": 6,
+          "sourceExonLabel": "E6(7)",
+          "referenceExonSenseCdsSpanInclusive": [
+            302,
+            441
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-60",
+          "stopExonOrdinal": 7,
+          "sourceExonLabel": "E7(8)",
+          "referenceExonSenseCdsSpanInclusive": [
+            442,
+            547
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "SUPPORTING"
+        },
+        {
+          "id": "T4-69",
+          "stopExonOrdinal": 8,
+          "sourceExonLabel": "E8(9)",
+          "referenceExonSenseCdsSpanInclusive": [
+            548,
+            593
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1_N/A",
+          "pm5Strength": null
+        },
+        {
+          "id": "T4-78",
+          "stopExonOrdinal": 9,
+          "sourceExonLabel": "E9(10)",
+          "referenceExonSenseCdsSpanInclusive": [
+            594,
+            670
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1_N/A",
+          "pm5Strength": null
+        },
+        {
+          "id": "T4-87",
+          "stopExonOrdinal": 10,
+          "sourceExonLabel": "E10(11)",
+          "referenceExonSenseCdsSpanInclusive": [
+            671,
+            4096
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-96",
+          "stopExonOrdinal": 11,
+          "sourceExonLabel": "E11(12)",
+          "referenceExonSenseCdsSpanInclusive": [
+            4097,
+            4185
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-106",
+          "stopExonOrdinal": 12,
+          "sourceExonLabel": "E12(13)",
+          "referenceExonSenseCdsSpanInclusive": [
+            4186,
+            4357
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-116",
+          "stopExonOrdinal": 13,
+          "sourceExonLabel": "E13(14)",
+          "referenceExonSenseCdsSpanInclusive": [
+            4358,
+            4484
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-125",
+          "stopExonOrdinal": 14,
+          "sourceExonLabel": "E14(15)",
+          "referenceExonSenseCdsSpanInclusive": [
+            4485,
+            4675
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-134",
+          "stopExonOrdinal": 15,
+          "sourceExonLabel": "E15(16)",
+          "referenceExonSenseCdsSpanInclusive": [
+            4676,
+            4986
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-143",
+          "stopExonOrdinal": 16,
+          "sourceExonLabel": "E16(17)",
+          "referenceExonSenseCdsSpanInclusive": [
+            4987,
+            5074
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-152",
+          "stopExonOrdinal": 17,
+          "sourceExonLabel": "E17(18)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5075,
+            5152
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-161",
+          "stopExonOrdinal": 18,
+          "sourceExonLabel": "E18(19)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5153,
+            5193
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-172",
+          "stopExonOrdinal": 19,
+          "sourceExonLabel": "E19(20)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5194,
+            5277
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-181",
+          "stopExonOrdinal": 20,
+          "sourceExonLabel": "E20(21)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5278,
+            5332
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-190",
+          "stopExonOrdinal": 21,
+          "sourceExonLabel": "E21(22)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5333,
+            5406
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-199",
+          "stopExonOrdinal": 22,
+          "sourceExonLabel": "E22(23)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5407,
+            5467
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-210",
+          "stopExonOrdinal": 23,
+          "sourceExonLabel": "E23(24)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5468,
+            5589
+          ],
+          "stopProteinPositionCondition": {
+            "operator": "LT",
+            "referenceResidue": "I",
+            "position": 1855
+          },
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-211",
+          "stopExonOrdinal": 23,
+          "sourceExonLabel": "E23(24)",
+          "referenceExonSenseCdsSpanInclusive": [
+            5468,
+            5589
+          ],
+          "stopProteinPositionCondition": {
+            "operator": "GT",
+            "referenceResidue": "L",
+            "position": 1854
+          },
+          "sourcePvs1Label": "PVS1_N/A",
+          "pm5Strength": null
+        }
+      ],
+      "refseqCdsSha256": "2a8bfbf3a33c29bc232c0624f2e685fbe1ca2f114d7e452e1e09d87c597e1929",
+      "refseqSourceSha256": "511a93a2f163f0155883b818d94cd483b48acfa8873ce8521096c05cfc3345a0"
+    },
+    {
+      "specification": "GN097@1.2",
+      "gene": "BRCA2",
+      "hgnc": "HGNC:1101",
+      "disease": "MONDO:0700269",
+      "inheritance": "AUTOSOMAL_DOMINANT",
+      "origin": "GERMLINE",
+      "transcript": "NM_000059.4",
+      "referenceStopProteinPosition": 3419,
+      "pm5Pointer": "/ld/RuleSet/0/ld/CriteriaCode/26/entContent",
+      "pvs1Pointer": "/ld/RuleSet/0/ld/CriteriaCode/4/entContent",
+      "tableFileId": "10301df8-45e0-4309-adba-c121eb057d3e",
+      "releaseSha256": "693ffda43eb128b13677bbba9084cc969fab6b09eb6ae05fb2c6867d9dddddea",
+      "specificationUrl": "https://cspec.clinicalgenome.org/cspec/ui/svi/doc/GN097?version=1.2",
+      "tableUrl": "https://cspec.genome.network/cspec/File/id/10301df8-45e0-4309-adba-c121eb057d3e/data",
+      "maneTranscript": "ENST00000380152.8",
+      "rows": [
+        {
+          "id": "T4-233",
+          "stopExonOrdinal": 2,
+          "sourceExonLabel": "E2",
+          "referenceExonSenseCdsSpanInclusive": [
+            1,
+            67
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-245",
+          "stopExonOrdinal": 3,
+          "sourceExonLabel": "E3",
+          "referenceExonSenseCdsSpanInclusive": [
+            68,
+            316
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-256",
+          "stopExonOrdinal": 4,
+          "sourceExonLabel": "E4",
+          "referenceExonSenseCdsSpanInclusive": [
+            317,
+            425
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "MODERATE"
+        },
+        {
+          "id": "T4-265",
+          "stopExonOrdinal": 5,
+          "sourceExonLabel": "E5",
+          "referenceExonSenseCdsSpanInclusive": [
+            426,
+            475
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-274",
+          "stopExonOrdinal": 6,
+          "sourceExonLabel": "E6",
+          "referenceExonSenseCdsSpanInclusive": [
+            476,
+            516
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": null
+        },
+        {
+          "id": "T4-283",
+          "stopExonOrdinal": 7,
+          "sourceExonLabel": "E7",
+          "referenceExonSenseCdsSpanInclusive": [
+            517,
+            631
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-292",
+          "stopExonOrdinal": 8,
+          "sourceExonLabel": "E8",
+          "referenceExonSenseCdsSpanInclusive": [
+            632,
+            681
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-301",
+          "stopExonOrdinal": 9,
+          "sourceExonLabel": "E9",
+          "referenceExonSenseCdsSpanInclusive": [
+            682,
+            793
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-310",
+          "stopExonOrdinal": 10,
+          "sourceExonLabel": "E10",
+          "referenceExonSenseCdsSpanInclusive": [
+            794,
+            1909
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-319",
+          "stopExonOrdinal": 11,
+          "sourceExonLabel": "E11",
+          "referenceExonSenseCdsSpanInclusive": [
+            1910,
+            6841
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-328",
+          "stopExonOrdinal": 12,
+          "sourceExonLabel": "E12",
+          "referenceExonSenseCdsSpanInclusive": [
+            6842,
+            6937
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": null
+        },
+        {
+          "id": "T4-337",
+          "stopExonOrdinal": 13,
+          "sourceExonLabel": "E13",
+          "referenceExonSenseCdsSpanInclusive": [
+            6938,
+            7007
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-346",
+          "stopExonOrdinal": 14,
+          "sourceExonLabel": "E14",
+          "referenceExonSenseCdsSpanInclusive": [
+            7008,
+            7435
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-355",
+          "stopExonOrdinal": 15,
+          "sourceExonLabel": "E15",
+          "referenceExonSenseCdsSpanInclusive": [
+            7436,
+            7617
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-367",
+          "stopExonOrdinal": 16,
+          "sourceExonLabel": "E16",
+          "referenceExonSenseCdsSpanInclusive": [
+            7618,
+            7805
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-377",
+          "stopExonOrdinal": 17,
+          "sourceExonLabel": "E17",
+          "referenceExonSenseCdsSpanInclusive": [
+            7806,
+            7976
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-388",
+          "stopExonOrdinal": 18,
+          "sourceExonLabel": "E18",
+          "referenceExonSenseCdsSpanInclusive": [
+            7977,
+            8331
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-399",
+          "stopExonOrdinal": 19,
+          "sourceExonLabel": "E19",
+          "referenceExonSenseCdsSpanInclusive": [
+            8332,
+            8487
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-410",
+          "stopExonOrdinal": 20,
+          "sourceExonLabel": "E20",
+          "referenceExonSenseCdsSpanInclusive": [
+            8488,
+            8632
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-421",
+          "stopExonOrdinal": 21,
+          "sourceExonLabel": "E21",
+          "referenceExonSenseCdsSpanInclusive": [
+            8633,
+            8754
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "SUPPORTING"
+        },
+        {
+          "id": "T4-431",
+          "stopExonOrdinal": 22,
+          "sourceExonLabel": "E22",
+          "referenceExonSenseCdsSpanInclusive": [
+            8755,
+            8953
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-443",
+          "stopExonOrdinal": 23,
+          "sourceExonLabel": "E23",
+          "referenceExonSenseCdsSpanInclusive": [
+            8954,
+            9117
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-454",
+          "stopExonOrdinal": 24,
+          "sourceExonLabel": "E24",
+          "referenceExonSenseCdsSpanInclusive": [
+            9118,
+            9256
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-464",
+          "stopExonOrdinal": 25,
+          "sourceExonLabel": "E25",
+          "referenceExonSenseCdsSpanInclusive": [
+            9257,
+            9501
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-474",
+          "stopExonOrdinal": 26,
+          "sourceExonLabel": "E26",
+          "referenceExonSenseCdsSpanInclusive": [
+            9502,
+            9648
+          ],
+          "stopProteinPositionCondition": null,
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "SUPPORTING"
+        },
+        {
+          "id": "T4-484",
+          "stopExonOrdinal": 27,
+          "sourceExonLabel": "E27",
+          "referenceExonSenseCdsSpanInclusive": [
+            9649,
+            10254
+          ],
+          "stopProteinPositionCondition": {
+            "operator": "LT",
+            "referenceResidue": "T",
+            "position": 3310
+          },
+          "sourcePvs1Label": "PVS1",
+          "pm5Strength": "STRONG"
+        },
+        {
+          "id": "T4-485",
+          "stopExonOrdinal": 27,
+          "sourceExonLabel": "E27",
+          "referenceExonSenseCdsSpanInclusive": [
+            9649,
+            10254
+          ],
+          "stopProteinPositionCondition": {
+            "operator": "GT",
+            "referenceResidue": "E",
+            "position": 3309
+          },
+          "sourcePvs1Label": "PVS1_N/A",
+          "pm5Strength": null
+        }
+      ],
+      "refseqCdsSha256": "6a4585fe48cb975fe30eac1e509a8868df3e04d7fd0f7cbc8c01debe1e136d94",
+      "refseqSourceSha256": "da3778f0ab1e1ec49345ee1ec09814f21a882b901e7eefea3f848fcffeb4f113"
+    }
+  ]
+}

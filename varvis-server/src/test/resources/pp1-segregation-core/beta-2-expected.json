@@ -1,0 +1,11 @@
+{
+  "rawPoints": 2,
+  "appliedPoints": 2,
+  "strength": "MODERATE",
+  "transmittingParent": "TEST_ONLY_pp1_beta_father",
+  "countedChildren": [
+    "patient-context-test-pp1-beta",
+    "TEST_ONLY_pp1_beta_child2"
+  ],
+  "uncountedChildren": []
+}

@@ -1,0 +1,38 @@
+{
+  "dataClass": "SYNTHETIC_TEST_ONLY_NOT_CLINICAL",
+  "recordId": "BP1_TRUNCATING_BACKGROUND_minus",
+  "disclaimer": "Fictional independently specified truncating-dominant background; not PP2 NOT_MET, LoF label, absence of RNA or prediction-derived approval.",
+  "truncatingMechanism": {
+    "conclusion": "SUPPORTED",
+    "basisType": "REVIEWED_COHORT",
+    "statistics": {
+      "cohort": "TEST_ONLY selected familial series",
+      "sampleInclusion": "Unrelated fictional affected families",
+      "variantInclusion": "Reviewed causative alleles in exact disease/MOI/model",
+      "denominator": 12,
+      "count": 11,
+      "deduplication": "One causative allele per unrelated family",
+      "selectionBiasReview": "REVIEWED_APPLICABLE",
+      "scopeApplicability": "EXACT_SCOPE_REVIEWED",
+      "limitations": "Fictional counts; no universal ratio threshold; supporting conclusion supplied by review"
+    }
+  },
+  "exceptions": {
+    "conclusion": "NO_APPLICABLE_EXCEPTION",
+    "searchStatus": "COMPLETE",
+    "searchedDomains": [
+      "PATHOGENIC_MISSENSE",
+      "FUNCTIONAL_REGIONS",
+      "GOF_DN",
+      "MIXED_MECHANISM"
+    ],
+    "locator": "TEST_ONLY minus expert search memorandum sections1-4 exact variant",
+    "findings": []
+  },
+  "splicing": {
+    "conclusion": "SUPPORTED",
+    "locator": "TEST_ONLY minus variant applicability memorandum section5",
+    "method": "Fictional reviewed multi-source applicability assessment; no RNA requirement or predictor threshold imposed",
+    "limitations": "Synthetic gate only, not real testing or clinical approval"
+  }
+}

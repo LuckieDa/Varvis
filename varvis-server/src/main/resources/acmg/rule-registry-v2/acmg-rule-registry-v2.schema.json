@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:varvis:schema:acmg-rule-registry-v2",
+  "title": "Varvis original 2015 ACMG/AMP criteria and current-general successor registry v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "registryId",
+    "lineage",
+    "authorityCatalogId",
+    "authorityCatalogSha256",
+    "authorityCutoff",
+    "asOf",
+    "scope",
+    "criteria"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "acmg-rule-registry-v2"},
+    "registryId": {
+      "type": "string",
+      "pattern": "^acmg-rule-registry-[a-z0-9][a-z0-9._-]{2,95}$"
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "baseRegistryId",
+        "baseSchemaVersion",
+        "baseRegistrySha256"
+      ],
+      "properties": {
+        "baseRegistryId": {
+          "type": "string",
+          "pattern": "^acmg-rule-registry-[a-z0-9][a-z0-9._-]{2,95}$"
+        },
+        "baseSchemaVersion": {"const": "acmg-rule-registry-v1"},
+        "baseRegistrySha256": {
+          "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/sha256"
+        }
+      }
+    },
+    "authorityCatalogId": {
+      "type": "string",
+      "pattern": "^authority-catalog-[a-z0-9][a-z0-9._-]{2,95}$"
+    },
+    "authorityCatalogSha256": {
+      "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/sha256"
+    },
+    "authorityCutoff": {"type": "string", "format": "date"},
+    "asOf": {"type": "string", "format": "date-time"},
+    "scope": {"const": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT"},
+    "criteria": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/criterion"},
+      "minItems": 28,
+      "maxItems": 28,
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterionId",
+        "code",
+        "direction",
+        "original2015",
+        "currentGeneral",
+        "automationDisposition",
+        "implementationStatus"
+      ],
+      "properties": {
+        "criterionId": {
+          "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/criterionId"
+        },
+        "code": {
+          "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/criterionCode"
+        },
+        "direction": {"enum": ["PATHOGENIC", "BENIGN"]},
+        "original2015": {"$ref": "#/$defs/original2015"},
+        "currentGeneral": {"$ref": "#/$defs/currentGeneral"},
+        "automationDisposition": {
+          "enum": [
+            "DETERMINISTIC_CANDIDATE",
+            "PARTIALLY_STRUCTURED",
+            "MANUAL_ONLY",
+            "NOT_USED"
+          ]
+        },
+        "implementationStatus": {
+          "enum": ["NOT_IMPLEMENTED", "LEGACY_HEURISTIC_ONLY", "V2_IMPLEMENTED"]
+        },
+        "notes": {"type": "string", "minLength": 1, "maxLength": 1000}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"code": {"enum": ["PP5", "BP6"]}},
+            "required": ["code"]
+          },
+          "then": {
+            "properties": {
+              "currentGeneral": {
+                "allOf": [
+                  {"properties": {"useStatus": {"const": "NOT_IN_CURRENT_USE"}}},
+                  {"properties": {"strength": {"const": "NONE"}}}
+                ]
+              },
+              "automationDisposition": {"const": "NOT_USED"}
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {"code": {"const": "PM2"}},
+            "required": ["code"]
+          },
+          "then": {
+            "properties": {
+              "original2015": {
+                "properties": {"strength": {"const": "MODERATE"}}
+              },
+              "currentGeneral": {
+                "allOf": [
+                  {"properties": {"useStatus": {"const": "ACTIVE_MODIFIED"}}},
+                  {"properties": {"designation": {"const": "PM2_SUPPORTING"}}},
+                  {"properties": {"strength": {"const": "SUPPORTING"}}}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "original2015": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "strength",
+        "authoritySourceIds",
+        "sourceLocators"
+      ],
+      "properties": {
+        "status": {"const": "ORIGINAL_2015"},
+        "strength": {
+          "enum": ["STANDALONE", "VERY_STRONG", "STRONG", "MODERATE", "SUPPORTING"]
+        },
+        "authoritySourceIds": {
+          "type": "array",
+          "const": ["authority-acmg-amp-2015-richards"]
+        },
+        "sourceLocators": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/sourceLocator"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "currentGeneral": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "useStatus",
+        "designation",
+        "strength",
+        "authoritySourceIds",
+        "sourceLocators",
+        "changeReasonCode"
+      ],
+      "properties": {
+        "useStatus": {
+          "enum": ["ACTIVE_BASELINE_2015", "ACTIVE_MODIFIED", "NOT_IN_CURRENT_USE"]
+        },
+        "designation": {"type": "string", "minLength": 1, "maxLength": 128},
+        "strength": {
+          "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/evidenceStrength"
+        },
+        "allowedStrengths": {
+          "type": "array",
+          "items": {
+            "enum": ["STANDALONE", "VERY_STRONG", "STRONG", "MODERATE", "SUPPORTING"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "strengthResolutionPolicy": {
+          "enum": ["FIXED_GENERAL", "PINNED_CALIBRATION_PROFILE"]
+        },
+        "authoritySourceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/authoritySourceId"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sourceLocators": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/sourceLocator"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "changeReasonCode": {
+          "$ref": "urn:varvis:schema:common-definitions-v1#/$defs/reasonCode"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"useStatus": {"const": "NOT_IN_CURRENT_USE"}},
+            "required": ["useStatus"]
+          },
+          "then": {"properties": {"strength": {"const": "NONE"}}},
+          "else": {
+            "properties": {
+              "strength": {
+                "enum": ["STANDALONE", "VERY_STRONG", "STRONG", "MODERATE", "SUPPORTING"]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

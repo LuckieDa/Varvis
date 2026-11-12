@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr1>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	1000000	e2_vep_grch38_smoke	G	A	.	PASS	.

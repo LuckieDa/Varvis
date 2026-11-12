@@ -1,0 +1,8 @@
+hpo_id	gene_symbol	gene_id	score	rank	evidence
+HP:0001250	MECP2	ENSG00000169057	0.95	1	Mock seizure phenotype association
+HP:0001250	SCN1A	ENSG00000144285	0.90	2	Mock seizure phenotype association
+HP:0004322	FGFR3	ENSG00000068078	0.82	3	Mock short stature phenotype association
+HP:0004322	MECP2	ENSG00000169057	0.70	4	Mock secondary phenotype association
+HP:9999999	UNUSED	ENSG00000000000	0.99	1	Mock unrelated phenotype association
+bad	row
+HP:0001250	BADGENE	ENSG_BAD	not-a-score	10	Mock malformed score

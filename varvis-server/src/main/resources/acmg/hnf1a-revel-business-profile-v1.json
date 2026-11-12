@@ -1,0 +1,154 @@
+{
+  "profileSchemaVersion": "hnf1a-revel-business-profile-v1",
+  "profileId": "HNF1A_GN017_3_1_REVEL",
+  "profileVersion": "1.0.0",
+  "activation": {
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "context": {
+    "hgncId": "HGNC:11621",
+    "geneSymbol": "HNF1A",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "assembly": "GRCh38",
+    "transcript": "ENST00000257555.11",
+    "refseqTranscript": "NM_000545.8",
+    "variantType": "SNV",
+    "consequence": "missense_variant"
+  },
+  "policy": {
+    "policyId": "HNF1A_GN017_3_1_REVEL",
+    "authority": {
+      "specificationId": "GN017",
+      "authorityVersion": "3.1",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "sourceSha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "canonicalVersion": "3.1.0",
+      "canonicalSnapshotUrl": "https://zenodo.org/api/records/21421568/files/GN017_3.1.0.json/content",
+      "canonicalSnapshotSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+      "sourceVersionAlias": "3.1 -> 3.1.0, explicitly verified official GN017 display and export"
+    },
+    "criteria": [
+      {
+        "criterionId": "ACMG_AMP_2015:PP3",
+        "comparison": "GE",
+        "threshold": "0.70",
+        "strength": "SUPPORTING"
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:BP4",
+        "comparison": "LE",
+        "threshold": "0.15",
+        "strength": "SUPPORTING"
+      }
+    ],
+    "evidenceMechanism": "PROTEIN_MISSENSE_PREDICTION",
+    "bp7DependencyEligible": false,
+    "toolSelection": "BEFORE_SCORE_QUERY_BY_CONFIRMED_GENE_DISEASE_MOI_TRANSCRIPT",
+    "missingResourceFallback": "NOT_EVALUATED_NO_ALPHAMISSENSE_FALLBACK",
+    "excludedConsequences": [
+      "splice",
+      "intron_variant",
+      "stop_gained",
+      "stop_lost",
+      "start_lost",
+      "frameshift_variant"
+    ],
+    "transcriptIdentity": "NO_SOURCE_VERSION_EQUIVALENCE_CLAIM; SELECTED_VERSIONED_CDS_GENOMIC_CODON_AND_VEP_AA_MUST_MATCH_EACH_SOURCE_ROW",
+    "resourceCoordinateLineage": "INPUT_NATIVE_GRCH38; REVEL_PUBLISHER_GRCH37_TO_GRCH38_LIFTOVER; VERIFY_PUBLISHED_GRCH38_REF_ALT; NO_INPUT_LIFTOVER"
+  },
+  "transcriptModel": {
+    "classpathResource": "/acmg/pvs1-hnf1a-transcript-model-v1.json",
+    "canonicalSha256": "270076043014c34aba9e7719ba7fa7bc7ecf090989c0bdb0fc08f7fa7cb0bacf"
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-hnf1a-revel-2026-09-10",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "fd8e055666261e19ae7a46e9c78f7f58d8c516c9587d45e06664c57172025d9e",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-hnf1a-revel-2026-09-10.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PP3",
+      "ACMG_AMP_2015:BP4"
+    ]
+  },
+  "resources": [
+    {
+      "resourceId": "VEP_116_GRCH38",
+      "provider": "VEP",
+      "assembly": "GRCh38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+      "identity": {
+        "provider": "VEP",
+        "tool": {
+          "name": "ensembl-vep",
+          "version": "116.0"
+        },
+        "cache": {
+          "species": "homo_sapiens",
+          "version": "116_GRCh38",
+          "logicalName": "vep/cache/homo_sapiens/116_GRCh38",
+          "infoSha256": "b7298ffe9c8aba8e283d2e647a28a8345e6b7c4cd71e8d42eae66acfb94dd3ad"
+        },
+        "fasta": {
+          "assembly": "GRCh38",
+          "logicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa",
+          "indexLogicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa.fai",
+          "byteLength": 3151425851,
+          "indexSha256": "0998f61682f4041b11f0d156e1db6dae3e4c743e26643a3f45ea7faea70cb604",
+          "indexedContigCount": 194
+        },
+        "assembly": "GRCh38",
+        "options": {
+          "offline": true,
+          "cache": true,
+          "format": "vcf",
+          "output": "json",
+          "symbol": true,
+          "canonical": true,
+          "mane": true,
+          "hgvs": true,
+          "protein": true,
+          "biotype": true,
+          "numbers": true,
+          "noStats": true,
+          "forceOverwrite": true,
+          "lofteeEnabled": false
+        },
+        "wrapperIdentity": "varvis-vep-relative-root-v2",
+        "wrapperSha256": "da90d70e87a1f479239e1fc8857e76d61604a0006fa19ae40e4260d20f7bfbfe"
+      }
+    }
+  ],
+  "revelResource": {
+    "resourceId": "REVEL_HNF1A_2021",
+    "manifestSchemaVersion": "revel-hnf1a-resource-v1",
+    "resourceVersion": "1.3",
+    "publicationDate": "2021-05-03",
+    "derivationVersion": "hnf1a-revel-cds-map-v1",
+    "sourceUrl": "https://sites.google.com/site/revelgenomics/downloads",
+    "scoreType": "PRECOMPUTED_ENSEMBLE_MISSENSE_SCORE",
+    "sourceTranscriptHasVersion": false,
+    "sourceHasProteinPosition": false
+  },
+  "implementation": {
+    "evaluatorId": "hnf1a-revel-pp3-bp4",
+    "evaluatorVersion": "1.0.0",
+    "proteinValidation": "FULL_PINNED_CDS_GENOMIC_REF_CODON_VERSIONED_HGVSC_HGVSP_AND_VEP_AMINO_ACIDS"
+  },
+  "overlayBinding": {
+    "registryId": "cspec-overlay-registry-hnf1a-revel-2026-09-10",
+    "registrySha256": "0447988a5ba38924afb4fb64890fdbb37f02653ad975b13b2986c0dcdf07139e",
+    "registryClasspathResource": "/acmg/cspec-overlay-registry-v1/cspec-overlay-registry-hnf1a-revel-2026-09-10.json",
+    "overlayId": "cspec-overlay-gn017-3.1.0",
+    "overlaySha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+    "authorityCatalogId": "authority-catalog-hnf1a-revel-2026-09-10",
+    "authorityCatalogSha256": "ab9174d56b41a11cf43fccb54c013885c0d669f0023c43bfcc1f4b0924aea0ec",
+    "authorityCatalogClasspathResource": "/acmg/authority-catalog-hnf1a-revel-2026-09-10.json",
+    "authorityCutoff": "2026-09-10",
+    "asOf": "2026-09-10T14:12:35.013042Z",
+    "overlayCanonicalSha256": "293292d8937be6a904a73bc5de4d91826633f5887b5d6eee099e4bbfb41a3c14"
+  }
+}

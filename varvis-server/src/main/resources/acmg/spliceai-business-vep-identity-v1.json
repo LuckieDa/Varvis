@@ -1,0 +1,51 @@
+{
+  "resources": [
+    {
+      "resourceId": "VEP_116_GRCH38",
+      "provider": "VEP",
+      "assembly": "GRCh38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+      "identity": {
+        "provider": "VEP",
+        "tool": {
+          "name": "ensembl-vep",
+          "version": "116.0"
+        },
+        "cache": {
+          "species": "homo_sapiens",
+          "version": "116_GRCh38",
+          "logicalName": "vep/cache/homo_sapiens/116_GRCh38",
+          "infoSha256": "b7298ffe9c8aba8e283d2e647a28a8345e6b7c4cd71e8d42eae66acfb94dd3ad"
+        },
+        "fasta": {
+          "assembly": "GRCh38",
+          "logicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa",
+          "indexLogicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa.fai",
+          "byteLength": 3151425851,
+          "indexSha256": "0998f61682f4041b11f0d156e1db6dae3e4c743e26643a3f45ea7faea70cb604",
+          "indexedContigCount": 194
+        },
+        "assembly": "GRCh38",
+        "options": {
+          "offline": true,
+          "cache": true,
+          "format": "vcf",
+          "output": "json",
+          "symbol": true,
+          "canonical": true,
+          "mane": true,
+          "hgvs": true,
+          "protein": true,
+          "biotype": true,
+          "numbers": true,
+          "noStats": true,
+          "forceOverwrite": true,
+          "lofteeEnabled": false
+        },
+        "wrapperIdentity": "varvis-vep-relative-root-v2",
+        "wrapperSha256": "da90d70e87a1f479239e1fc8857e76d61604a0006fa19ae40e4260d20f7bfbfe"
+      }
+    }
+  ]
+}

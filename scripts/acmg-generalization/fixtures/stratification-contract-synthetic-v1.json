@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "public-allele-final-stratification-contract-v1",
+  "contractId": "SYNTHETIC_IDENTITIES_FIXED_OPERATOR_TEST_ONLY",
+  "version": "1.0.0",
+  "fixedAt": "2026-09-13T19:46:22Z",
+  "reviewer": "SYNTHETIC_FIXTURE_NO_PUBLIC_ALLELES",
+  "status": "PROSPECTIVELY_FIXED_BEFORE_REVIEWER_SEES_NORMALIZATION_OUTPUTS",
+  "scope": "Synthetic identities only; unchanged operator blocks from frozen contract d2bd980, original file SHA 05438b76236d0e411a6ad0ecd06ac60ec9c8778c0d139872e09c89a98595e40f. No real allele input or scientific acceptance.",
+  "bindings": {
+    "frameFile": "TWENTY_GENE_PUBLIC_ALLELE_SAMPLING_FRAME_V1.json",
+    "frameSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "queryPlanFile": "PUBLIC_ALLELE_LOCAL_CLINVAR_QUERY_PLAN_V2.json",
+    "queryPlanSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "normalizationPlanFile": "PUBLIC_ALLELE_REFERENCE_NORMALIZATION_PLAN_V1.json",
+    "normalizationPlanVersion": "1.0.1",
+    "normalizationPlanSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "poolManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "maskedProjectionSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "queryOccurrencesSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "privatePrerankManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "nativeModelsManifestFileSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "nativeModelSourceReviewFile": "NATIVE_TWENTY_MODEL_SOURCE_REVIEW_V1.json",
+    "nativeModelSourceReviewSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "populationHeaderReceiptLogicalPath": "${VARVIS_ACCEPTANCE_ARCHIVE}/ten-rule-generalization-20260913/clinvar-three-population-header-v1.json",
+    "populationHeaderReceiptSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "populationHeaderSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "normalizationExecutionBinding": "Pending actual complete artifact identities; caller must pin and verify the original output manifest and every referenced artifact before joining. Never fill with invented hashes."
+  },
+  "unchangedRequirements": {
+    "geneCount": 20,
+    "perGeneQuota": 10,
+    "globallyDistinctPublicAlleles": 200,
+    "minimumMechanismFamilies": 5,
+    "actualFrameMechanismFamilies": 7,
+    "seed": "VARVIS-TEN-RULE-GENERALIZATION-PUBLIC-V1-20260913",
+    "geneOrder": "The existing frame contexts array order, unchanged",
+    "noRuleOutputOrClinvarClassificationSelection": true,
+    "noSyntheticProbeCredit": true,
+    "noQuotaTransfer": true
+  },
+  "requiredInputs": [
+    {
+      "id": "COMPLETE_NORMALIZATION_OUTPUT",
+      "minimumFields": [
+        "manifest status",
+        "fixed plan and source bindings",
+        "per-source original key",
+        "source raw-line SHA and locator",
+        "normalization status and reason",
+        "canonical allele and canonical key when proven",
+        "all aliases and gene membership flags",
+        "all referenced output hashes and byte counts"
+      ],
+      "gate": "Every input/partition/window and every linked source record must reconcile. A FAILED or INCOMPLETE normalization execution cannot authorize prefix sampling. COMPLETE normalizer samplingAllowed=false is intentional: this independent contract provides the next stage, not an implicit upgrade of that flag."
+    },
+    {
+      "id": "EXACT_CURRENT_TWENTY_NATIVE_MODELS",
+      "minimumFields": [
+        "exact gene/HGNC",
+        "GRCh38 and canonical contig",
+        "strand",
+        "versioned transcript/protein",
+        "CDS sequence",
+        "all physical exon coordinates and original ordinal",
+        "CDS-relative exon coordinates",
+        "source and model byte/canonical hashes"
+      ],
+      "gate": "Use exactly one already bound current Select model per frame gene for mechanical sampling. Model availability does not approve the corresponding clinical transcript, LoF mechanism, relevance or tolerance. No Plus Clinical or versionless substitution."
+    },
+    {
+      "id": "MASKED_SOURCE_AND_FROZEN_ANCHOR_IDENTITIES",
+      "minimumFields": [
+        "original exact GENEINFO membership",
+        "sourceKey to canonical aliases",
+        "original AF_ESP/AF_EXAC/AF_TGP cells and raw-row SHA",
+        "previously frozen public anchor identity",
+        "original anchor file/hash/record locator",
+        "original exposure role and expectation date"
+      ],
+      "gate": "Only the original frame/private-prerank-bound anchor universe receives anchor priority. No new anchor is chosen from a score, classification, runtime success or current assay availability. Retain all previously fixed anchors even when outside the 200-slot panel."
+    }
+  ],
+  "mechanicalMapping": {
+    "assembly": "GRCh38",
+    "sequenceUnit": "Canonical genomic SNV or simple anchored insertion/deletion with maximum REF and ALT length 50; inserted/deleted payload at most 49",
+    "proof": "Join exact original source provenance to reference-verified canonical allele. Map only against the exact bound transcript; never infer consequence or NMD from source MC labels.",
+    "minimalEdit": "Remove maximal common prefix and then maximal common suffix from REF/ALT to locate the changed bases or interbase insertion site. This is an event-location calculation, not a second normalization algorithm. Preserve the original canonical representation.",
+    "singleExonEdits": "For a deletion or replacement, all changed reference bases must map to one coding exon. For insertion, both immediately flanking bases must belong to the same coding exon and insertion must lie within its coding interval. An unchanged VCF anchor may be outside that interval; it must not be mistaken for the changed base.",
+    "negativeStrand": "Map genomic positions to transcript biological order and reverse-complement REF/ALT payloads. Insert at the biological interbase position; do not reuse a positive-strand insertion index unchanged.",
+    "referenceCrossCheck": "For the changed coding region, compare oriented genomic REF with the independent model CDS before applying the edit. A canonical allele normalized against a different GRCh38 packaging still requires this exact CDS check. Any disagreement is unresolved source identity, not a new stratum.",
+    "translation": "Use the standard nuclear code and complete native CDS including its natural stop. For SNVs, compare the actual native codon and changed codon. Exclude codon 1 start changes, native-stop changes, stop-lost and stop-retained from missense/synonymous/stop-gained strata. For frameshift, determine nonzero length change modulo 3 independently; record the translated mutant CDS and first new stop or NO_STOP_WITHIN_AVAILABLE_MUTANT_CDS separately when deriving rule expectations. Absence of a PTC is not grounds to move a preselected frameshift to a different class.",
+    "unsupported": "Retain explicit reasons for MNV/delins/haplotype, multiallelic unsplit input, crossing-exon events, splice-boundary insertion, untranslated/extragenic event, noncanonical DNA bases or unresolved transcript mapping. Do not atomize an unsupported public allele into invented SNVs.",
+    "multiGeneAttribution": "Exact GENEINFO membership plus independently mapped position/consequence in the selected gene's model may establish that gene's mechanical stratum even when another gene is named. Preserve MULTIPLE_GENE_IDENTITY_REVIEW_REQUIRED as original source provenance and add a separate mechanical-attribution result. Do not erase overlap, infer disease attribution or count one canonical allele twice."
+  },
+  "strata": [
+    {
+      "id": "TRUNCATING_TERMINAL_CHALLENGE",
+      "quota": 1,
+      "precedence": 1,
+      "test": "A stop-gained SNV or frameshift whose changed-base interval lies in the final coding exon, or intersects the last 55 coding bases of the penultimate coding exon. For insertion use its two biological flanking coding positions and require both within the same exon; intersection with the terminal window assigns this challenge before the internal stratum.",
+      "boundary": "This 55-base window is the fixed sampling challenge definition, not a scientific NMD cutoff. Classification is based on the actual edited site, not a predicted shifted PTC. Keep NMD distance and critical-tail mechanisms separate."
+    },
+    {
+      "id": "CODING_STOP_INTERNAL",
+      "quota": 1,
+      "precedence": 2,
+      "test": "A single-nucleotide substitution changes a native sense codon after the initiation codon to a stop, in a coding exon before the final coding exon, and does not meet the terminal challenge definition.",
+      "boundary": "No PVS1 applicability, NMD, strength or relevant-exon claim follows."
+    },
+    {
+      "id": "CODING_FRAMESHIFT_INTERNAL",
+      "quota": 1,
+      "precedence": 3,
+      "test": "A simple insertion/deletion wholly attributable to one coding exon changes CDS length by a nonzero value modulo three, is before the final coding exon and does not meet the terminal challenge definition.",
+      "boundary": "Do not select only frameshifts with a convenient PTC, supported exon, NMD output or favorable LoF gate."
+    },
+    {
+      "id": "MISSENSE",
+      "quota": 4,
+      "precedence": 4,
+      "test": "A coding SNV after codon 1 changes exactly one native sense amino acid to a different sense amino acid.",
+      "anchorSlotsMaximum": 2,
+      "independentHashSlotsMinimum": 2,
+      "boundary": "When fewer than two eligible fixed anchors exist, fill their unused slots by the same independent hash ordering. Never replace the minimum two independent slots with extra anchors."
+    },
+    {
+      "id": "SYNONYMOUS",
+      "quota": 2,
+      "precedence": 5,
+      "test": "A coding SNV changes a sense codon after codon 1 to a different codon encoding the same amino acid.",
+      "slots": [
+        "HIGHEST_OBSERVED_HISTORICAL_RAW_AF",
+        "HASH_SELECTED_DISTINCT_REMAINING"
+      ],
+      "boundary": "Mechanical synonymous status does not establish splice neutrality, BP4, BP7 or BA1."
+    },
+    {
+      "id": "NONCANONICAL_INTRONIC",
+      "quota": 1,
+      "precedence": 6,
+      "test": "The entire changed reference interval, or both insertion flanks, lies in the same intron between consecutive physical exons and outside the first two and last two intronic bases. Use the selected transcript's strand and all exons, including UTR exons.",
+      "boundary": "Do not impose +7/-21 or SpliceAI thresholds to sample this class. Those are independent rule-specific gates and challenge annotations. Existing independently fixed splice-evidence anchors may take this slot; their evidence result is not a selection filter."
+    }
+  ],
+  "historicalPopulationAfSampling": {
+    "metricId": "MAX_OBSERVED_HISTORICAL_SOURCE_AF_FOR_SAMPLING_ONLY",
+    "fields": [
+      {
+        "id": "AF_ESP",
+        "number": "1",
+        "type": "Float",
+        "description": "allele frequencies from GO-ESP"
+      },
+      {
+        "id": "AF_EXAC",
+        "number": "1",
+        "type": "Float",
+        "description": "allele frequencies from ExAC"
+      },
+      {
+        "id": "AF_TGP",
+        "number": "1",
+        "type": "Float",
+        "description": "allele frequencies from TGP"
+      }
+    ],
+    "units": "Allele-frequency fractions; parse finite single decimal/scientific-notation literals in [0,1] with exact decimal comparison. Do not infer percent from magnitude or divide by 100.",
+    "missing": "Absent field, an empty value or '.' is unavailable, not zero. Preserve which representation occurred. Numeric zero is an observed zero in that historic field only and never proves absence in current gnomAD.",
+    "malformed": "A comma-separated value for Number=1, nonfinite value, out-of-range number or unrecognized token is an invalid observation with its exact source preserved. Do not coerce it or silently strip to the first element. A malformed eligible synonymous AF observation leaves this AF-selected slot unresolved until source review; do not pretend the maximum over the remaining known values proves the intended complete-pool maximum.",
+    "applicabilityForSampling": "Only original single-ALT source rows with exact source-to-canonical identity and independent selected-gene synonymous mapping contribute. Header provenance establishes the named historical source field; it does not establish current ancestry, coverage, AC/AN, QC or clinical applicability.",
+    "perAlleleMetric": "Take the maximum valid observed value over the three predeclared fields and all alias raw rows for that canonical allele. Preserve every cell/source hash. This predeclared stress-sampling maximum is not a harmonized population estimate.",
+    "conflict": "Different values from different named studies are separate observations. Multiple different values for the same named field across alias rows must be flagged SOURCE_AF_DISCORDANCE; preserve the range and all originals. Because this slot explicitly chooses the highest observed raw value, the metric remains the maximum of those observed values and is labelled discordant, never silently averaged or called adjudicated.",
+    "selection": "Among eligible canonical synonymous candidates not already globally credited, choose the highest observed sampling metric. Tie-break using the unchanged gene/SYNONYMOUS/canonical hash, then canonical key byte order. Choose the second distinct synonymous candidate by the unchanged hash ordering from the remainder regardless of AF availability.",
+    "allMissing": "If every eligible candidate lacks a valid numeric observation, keep the highest-AF slot missing with reason NO_OBSERVED_HISTORICAL_AF. Do not substitute zero or a hash-only allele for that slot. The independent second synonymous slot remains selectable.",
+    "clinicalBoundary": "No gnomAD v4, FAF, ancestry, denominator, coverage, BA1, BS1, PM2 or benign conclusion is produced from these historical sampling annotations. Rule expectations use their separately bound actual source and prerequisites."
+  },
+  "rankingAndAnchors": {
+    "canonicalKey": "GRCh38|canonicalContig|leftNormalizedPosition1|REF|ALT",
+    "hash": "SHA256(UTF8(seed + LF + geneSymbol + LF + stratumId + LF + canonicalKey)); no final LF",
+    "sort": "Unsigned hexadecimal hash ascending, then canonicalKey UTF-8 byte order ascending. Recompute from the proven canonical key; provisional source-key order is not final order.",
+    "allocationOrder": "Visit genes in the original frame contexts order. Within each gene assign each candidate to its one mechanical stratum using the precedence above, then fill original frame quota slots. Apply global canonical deduplication before awarding a slot; an already credited alias/context is retained without second denominator credit and the later gene takes the next eligible pre-ranked candidate.",
+    "missenseClarification": "The explicit frame definition of two anchors plus two independently identified missense variants controls the ambiguous excess-anchor wording. Choose at most two matching pre-existing anchors by the same fixed canonical hash; all further anchors remain in the preserved supplementary input set. Fill at least two slots from candidates outside the entire already frozen anchor universe, using the same hash. Fewer anchors may yield more independent slots, never fewer than two.",
+    "otherAnchors": "For a single-slot stratum, an existing fixed matching anchor has the original frame priority, with ties resolved by the fixed hash. Preserve additional anchors outside its slot. For synonymous sampling preserve the explicit highest-AF and independent remaining-slot requirements; an existing anchor consumes a slot only when selected by that slot's specified operation, and otherwise remains supplementary.",
+    "unresolvedFixedAnchors": "Retain all fixed anchor records, original expectations and exposure roles. If an anchor's source/reference/canonical/stratum identity is unresolved, record that limitation; it cannot receive an invented canonical key or silently vanish. No claim of complete all-anchor accounting is allowed until reconciled. Failed previously selected anchors stay in their original all-case denominator even if not eligible for new distinct-allele credit.",
+    "exposure": "Retain developer and criterion-specific held-out roles from the original records. Source discovery probe overlap is recorded independently; do not drop or exchange a naturally overlapping selected allele to improve apparent independence.",
+    "shortfall": "Record exact missing gene/stratum slots and reason. Do not move quota to a different gene/class, borrow extra anchor slots, duplicate aliases or inspect rule outcomes to choose a substitute. Any new source supplement must be frozen prospectively under the original frame before use."
+  },
+  "requiredOutput": {
+    "preselectionManifest": [
+      "all input byte and canonical identities",
+      "algorithm source/version identity",
+      "all source rows and canonical alias accounting",
+      "all candidate stratum assignments and explicit exclusions",
+      "per-gene/per-stratum candidate counts",
+      "complete fixed hash order or independently reproducible equivalent",
+      "all preserved anchors and exposure provenance",
+      "all missing or conflicting inputs"
+    ],
+    "selectedRecord": [
+      "canonical allele/key",
+      "all original source aliases/locators",
+      "gene-disease-MOI",
+      "exact mechanical transcript/model hash",
+      "assigned stratum/slot",
+      "native codon or exact event mapping proof",
+      "seed hash and ranking reason",
+      "historical AF source cells if relevant",
+      "anchor/exposure status",
+      "independent rule expectations initially pending when not established"
+    ],
+    "completion": "Only exactly 20 genes with their unchanged ten slots and 200 globally distinct verified public alleles can be labelled the required panel complete. Separately preserve all extra fixed anchors, gaps, source exclusions and exposed contexts. Panel selection completion is not scientific rule or formal TopN acceptance.",
+    "executionRetention": "After selection, missing policy/resource/coverage, unsupported mechanism, source conflict or TopN rejection remains in all-case rule denominators. A refusal is counted by reason, not as successful biological coverage."
+  },
+  "remainingIndependentRuleInputs": [
+    "Exact clinical transcript/exon and gene-disease-MOI source applicability; a mechanically matching MANE model does not itself complete this review.",
+    "Rule-specific source clause/version/operator and every additional condition, with expected state/strength frozen before first execution.",
+    "Population observations from the actual selected and reviewed native gnomAD statistic/ancestry/QC source; historical sampling AF does not substitute.",
+    "Exact preselected predictor rows and resource identity; no score-dependent model switching.",
+    "PVS1 exact mutated CDS/PTC/NMD derivation plus separate relevance/LoF-tolerance/engineering gates.",
+    "PS1/PM5 active independently justified references and bilateral RNA/splice review; PS3 original measured assay/construct/calibration and required multi-study conflict logic."
+  ],
+  "reviewerActivityAtFreeze": {
+    "normalizationOutputRowsViewed": 0,
+    "criterionOutputsViewedForSelection": 0,
+    "rawClinvarClassificationRowsViewed": 0,
+    "newFastaReads": 0,
+    "newVepCalls": 0,
+    "selectedFinalAlleles": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "dataClass": "SYNTHETIC",
+  "fixedAt": "2026-09-07T07:37:24.841511+00:00",
+  "scoreSelectionPerformed": false,
+  "sampleId": "ORDINARY_PUBLIC_20260907",
+  "vcfSha256": "2022072f875ed2084e5e737bca2744cfa7607ac15b29b2326405e9b8b097bbb7",
+  "variants": [
+    {
+      "gene": "BRAF",
+      "contig": "chr7",
+      "position": 140753336,
+      "reference": "A",
+      "alternate": "T",
+      "genotype": "0/1",
+      "transcript": "ENST00000646891.2",
+      "hgncId": "HGNC:1097",
+      "mondoId": "MONDO:0015280",
+      "moi": "AD"
+    },
+    {
+      "gene": "HBB",
+      "contig": "chr11",
+      "position": 5227002,
+      "reference": "T",
+      "alternate": "A",
+      "genotype": "1/1",
+      "transcript": "ENST00000647020.1",
+      "hgncId": "HGNC:4827",
+      "mondoId": "MONDO:0013517",
+      "moi": "AR"
+    },
+    {
+      "gene": "KRAS",
+      "contig": "chr12",
+      "position": 25245350,
+      "reference": "C",
+      "alternate": "T",
+      "genotype": "0/1",
+      "transcript": "ENST00000311936.8",
+      "hgncId": "HGNC:6407",
+      "mondoId": "MONDO:0018997",
+      "moi": "AD"
+    },
+    {
+      "gene": "GJB2",
+      "contig": "chr13",
+      "position": 20189473,
+      "reference": "C",
+      "alternate": "T",
+      "genotype": "1/1",
+      "transcript": "ENST00000382848.5",
+      "hgncId": "HGNC:4284",
+      "mondoId": "MONDO:0019497",
+      "moi": "AR"
+    },
+    {
+      "gene": "TP53",
+      "contig": "chr17",
+      "position": 7674220,
+      "reference": "C",
+      "alternate": "T",
+      "genotype": "0/1",
+      "transcript": "ENST00000269305.9",
+      "hgncId": "HGNC:11998",
+      "mondoId": "MONDO:0018875",
+      "moi": "AD"
+    }
+  ],
+  "selectionBasis": "BRAF/KRAS/TP53 fixed archived public alleles and MANE choices; HBB/GJB2 explicitly confirmed compatibility TEST choices. No clinical optimum claim. New VCF and real ranking required."
+}

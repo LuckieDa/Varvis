@@ -1,0 +1,323 @@
+{
+  "manifestVersion": "1.3.1",
+  "profileId": "acmg-explicit-business-joint-v1",
+  "enabledCriteria": [
+    "ACMG_AMP_2015:PP3",
+    "ACMG_AMP_2015:BP4",
+    "ACMG_AMP_2015:BA1",
+    "ACMG_AMP_2015:BP7",
+    "ACMG_AMP_2015:PM2",
+    "ACMG_AMP_2015:PS1",
+    "ACMG_AMP_2015:PM5",
+    "ACMG_AMP_2015:PVS1",
+    "ACMG_AMP_2015:PS3"
+  ],
+  "automaticTrigger": false,
+  "classificationEnabled": false,
+  "activationScope": "EXPLICIT_BUSINESS_ONLY",
+  "acceptanceScope": "NATIVE_GRCH38_EXPLICIT_INPUTS",
+  "slices": [
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:PP3",
+        "ACMG_AMP_2015:BP4"
+      ],
+      "profileId": "ALPHAMISSENSE_PP3_BP4_SUPPORTING",
+      "profileVersion": "1.0.0",
+      "profileCanonicalSha256": "b8f040d58ee6ef19f687886a742cacaa0a96dc3b5f803e8f423578e1aaa4cb83",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-c1-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "73fca655b6d76700242fc6b12ba4c6c4b9f34ac5c79b38621fe03fecc8303469",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-c1-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PP3",
+          "ACMG_AMP_2015:BP4"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "ALPHAMISSENSE_2023_08_03_GRCH38_TABIX",
+          "resourceVersion": "2023-08-03",
+          "identityFingerprintSha256": "ba423141a1bcbdc37cff155a7f579d2d90629ed5bd7891d220cb95ec0b481ba2"
+        }
+      ],
+      "scope": "COMPLETE_DISEASE_CONTEXT",
+      "frozenContextBundleRequired": true,
+      "predictionPath": "ALPHAMISSENSE_MISSENSE"
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:BA1"
+      ],
+      "profileId": "GNOMAD_POPULATION_INPUT_V2",
+      "profileVersion": "2.0.0",
+      "profileCanonicalSha256": "626320cc24bb480adb4d34c97646326c3ca358c5c68b8282eb7edf177731a0a3",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-p1a-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "fa036bb3ca9eecc1f6272e8d7170d965eb21555e5656a5fea9eeba42e8118c88",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-p1a-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:BA1",
+          "ACMG_AMP_2015:BS1"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+          "resourceVersion": "gnomAD joint v4.1 GRCh38",
+          "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+        }
+      ],
+      "scope": "CANDIDATE_ALLELE",
+      "frozenContextBundleRequired": false
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:PP3",
+        "ACMG_AMP_2015:BP4"
+      ],
+      "predictionPath": "SPLICEAI_INTRONIC",
+      "profileId": "SPLICEAI_PP3_BP4_SUPPORTING",
+      "profileVersion": "1.0.0",
+      "profileCanonicalSha256": "4115c944f70eb7c2586f876a7083a6825b853cf9afd7c03588eb7e1ca970f099",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-c1-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "73fca655b6d76700242fc6b12ba4c6c4b9f34ac5c79b38621fe03fecc8303469",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-c1-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PP3",
+          "ACMG_AMP_2015:BP4"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "SPLICEAI_V1_3_1_RAW_GRCH38_LOCAL_COMPUTE",
+          "resourceVersion": "SpliceAI 1.3.1 raw, distance 4999",
+          "identityFingerprintSha256": "e2f652e52955a0c6aaed434a3424cb69bb29413908d7dba8aaded016aa537542"
+        }
+      ],
+      "scope": "COMPLETE_DISEASE_CONTEXT",
+      "frozenContextBundleRequired": true,
+      "additionalPredictionPaths": [
+        "SPLICEAI_SYNONYMOUS"
+      ]
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:BP7"
+      ],
+      "predictionPath": "SPLICEAI_INTRONIC",
+      "profileId": "SPLICEAI_PP3_BP4_BP7_SUPPORTING",
+      "profileVersion": "1.1.0",
+      "profileCanonicalSha256": "b128e11f4d0e074422b771d195adbc3acdd893a66a56b600de9ff0e1518803e6",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-c3-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "5fb10c64a0d157708529e3617247375170117ee25d64f5a970efd484008b6f64",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-c3-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PP3",
+          "ACMG_AMP_2015:BP4",
+          "ACMG_AMP_2015:BP7"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "SPLICEAI_V1_3_1_RAW_GRCH38_LOCAL_COMPUTE",
+          "resourceVersion": "SpliceAI 1.3.1 raw, distance 4999",
+          "identityFingerprintSha256": "e2f652e52955a0c6aaed434a3424cb69bb29413908d7dba8aaded016aa537542"
+        }
+      ],
+      "scope": "COMPLETE_DISEASE_CONTEXT",
+      "frozenContextBundleRequired": true,
+      "additionalPredictionPaths": [
+        "SPLICEAI_SYNONYMOUS"
+      ]
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:PM2"
+      ],
+      "profileId": "GNOMAD_POPULATION_INPUT_V2_PM2_SUPPORTING",
+      "profileVersion": "2.3.0",
+      "profileCanonicalSha256": "a4b716c75857b60ce4dd6a05f867a1ec1fb95ecf9d548888e76aca2d6861ae88",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-e3-p1b-2026-09-02",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "e2941718dbfa5f8eb59f7dd4498c1494215e18c9f6ff63acdec0cce02efae7ad",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-p1b-2026-09-02.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:BA1",
+          "ACMG_AMP_2015:BS1",
+          "ACMG_AMP_2015:PM2"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "GNOMAD_JOINT_V4_1_GRCH38_SITES",
+          "resourceVersion": "gnomAD joint v4.1 GRCh38",
+          "identityFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f"
+        },
+        {
+          "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_ALL_SITES_AN",
+          "resourceVersion": "gnomAD exomes v4.1 all-sites allele number GRCh38",
+          "identityFingerprintSha256": "374ff5d05de95fd5ddecce732b89fd34ab91492dd4dfd820ff7d4157f591cb18"
+        },
+        {
+          "resourceId": "GNOMAD_GENOMES_V4_1_GRCH38_ALL_SITES_AN",
+          "resourceVersion": "gnomAD genomes v4.1 all-sites allele number GRCh38",
+          "identityFingerprintSha256": "0f957b54aa0f5c08bb12cd2e5210aac878a4b35e86ee7eaeb55b7f6d18554b57"
+        }
+      ],
+      "scope": "COMPLETE_DISEASE_CONTEXT",
+      "frozenContextBundleRequired": false,
+      "policySelectionSchema": "pm2-cspec-policy-selection-v1"
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:PVS1"
+      ],
+      "profileId": "HNF1A_STOP_GAINED_NMD_PVS1",
+      "profileVersion": "1.0.0",
+      "profileCanonicalSha256": "bd9702b1ea32b63c6ce0ee9f3a786cf601bc00192fdddb21a2814f096d74bafc",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-pvs1-hnf1a-2026-09-09",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "45b7a3cb765a88de72bd13041aacf23f03673e6a52e785a78d263cf5553c388d",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-pvs1-hnf1a-2026-09-09.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PVS1"
+        ]
+      },
+      "resources": [
+        {
+          "resourceId": "VEP_116_GRCH38",
+          "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+          "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+        }
+      ],
+      "scope": "HNF1A_GN017_3_1_STOP_GAINED_NMD",
+      "frozenContextBundleRequired": false
+    },
+    {
+      "criterionIds": [
+        "ACMG_AMP_2015:PS1",
+        "ACMG_AMP_2015:PM5"
+      ],
+      "profileId": "CLINVAR_BRAF_RASOPATHY_PS1_PM5",
+      "profileVersion": "2.0.0",
+      "profileCanonicalSha256": "8a6ee459ad3dfa637cc873fef96bea1e3a691f77ea3ce842118d639ac867d257",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-ps1-pm5-2026-09-09",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "a2e0619ca89a139741ff0d1c79596af4c8ee0f2d39965a55035ead36c8032db6",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-ps1-pm5-2026-09-09.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PS1",
+          "ACMG_AMP_2015:PM5"
+        ]
+      },
+      "resources": [
+        {
+          "role": "BOUNDED_COMPARATOR_DISCOVERY_AND_ALLELE_IDENTITY_CROSSCHECK_ONLY",
+          "resourceId": "CLINVAR_2026_03_21_GRCH38",
+          "resourceVersion": "ClinVar 2026-03-21 GRCh38",
+          "assembly": "GRCh38",
+          "identityFingerprintSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836"
+        },
+        {
+          "role": "SELECTED_TRANSCRIPT_PROTEIN_RELATION",
+          "resourceId": "VEP_116_GRCH38",
+          "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+          "assembly": "GRCh38",
+          "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+        },
+        {
+          "role": "CONDITION_LINKED_ASSERTION_SEMANTICS_ONLY",
+          "resourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+          "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+          "assembly": "GRCh38",
+          "identityFingerprintSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde"
+        },
+        {
+          "resourceId": "SPLICEAI_V1_3_1_RAW_GRCH38_LOCAL_COMPUTE",
+          "provider": "SPLICEAI",
+          "assembly": "GRCh38",
+          "resourceVersion": "SpliceAI 1.3.1 raw, distance 4999",
+          "identityFingerprintSha256": "e2f652e52955a0c6aaed434a3424cb69bb29413908d7dba8aaded016aa537542",
+          "identity": {
+            "provider": "SPLICEAI",
+            "assembly": "GRCh38",
+            "package": {
+              "name": "SpliceAI",
+              "version": "1.3.1",
+              "installArtifactSha256": "63c633b8de6803d4ffb613e6ef62f1a896fec9fc13245c0f000ff7adea279776"
+            },
+            "parameters": {
+              "scoreMode": "RAW_UNMASKED_CLI",
+              "distanceArgument": 4999,
+              "maskArgument": 0
+            },
+            "candidateResourceIdentityFingerprintSha256": "451a42ab28edab2f542816b51495a79e225217735e65040ceac0fb9cac7517d9",
+            "referenceIdentityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+          },
+          "identitySource": {
+            "profileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+            "profileVersion": "1.0.0-candidate.1",
+            "canonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d"
+          }
+        }
+      ],
+      "scope": "COMPLETE_DISEASE_CONTEXT",
+      "frozenContextBundleRequired": true,
+      "predictionPath": "PROTEIN_COMPARATOR_WITH_INDEPENDENT_REFERENCE_AND_SPLICE_GATES"
+    },
+    {
+      "profileId": "HNF1A_OXFORD_FUNCTIONAL_PS3",
+      "profileVersion": "1.0.1",
+      "profileCanonicalSha256": "aecb00a1f5f0c65cba3484e0d1dc4b62856fa6e7d66f7219eb1915bf4044970a",
+      "registryBinding": {
+        "registryId": "acmg-rule-registry-functional-hnf1a-2026-09-10",
+        "registrySchemaVersion": "acmg-rule-registry-v2",
+        "registrySha256": "1949ca52a7a16b9607aad47706f1cc9081f9f9d9662b0dfd3428b7dcc08631c0",
+        "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-functional-hnf1a-2026-09-10.json",
+        "criterionIds": [
+          "ACMG_AMP_2015:PS3"
+        ]
+      },
+      "criterionIds": [
+        "ACMG_AMP_2015:PS3"
+      ],
+      "resources": [
+        {
+          "resourceId": "HNF1A_OXFORD_FACTS",
+          "resourceVersion": "1.0.1",
+          "identityFingerprintSha256": "a70b1e1640293bd43897a7a8d8517fbc1b3fdcb9e0b45ff6bb24113bf341a427"
+        }
+      ]
+    }
+  ],
+  "predecessorProfileId": "acmg-explicit-business-pm2-v1",
+  "predictionRouting": "CONSEQUENCE_FIRST_EXPLICIT_PATHS_WITH_INDEPENDENT_POPULATION_PVS1_AND_MISSENSE_COMPARISON",
+  "supersedesInvocationActivationOnly": true,
+  "spliceBusinessBinding": {
+    "invocationVersion": "1.0.0-e4-b3",
+    "ruleRegistryId": "acmg-rule-registry-e3-c3-2026-09-02",
+    "ruleRegistrySha256": "5fb10c64a0d157708529e3617247375170117ee25d64f5a970efd484008b6f64",
+    "cspecRegistryId": "cspec-overlay-registry-e4-b3-2026-09-08",
+    "cspecRegistrySha256": "7cf63ccf1c7d4544ed907483a331d21eb853f9037b5d587792da9b8ebb11e9cf",
+    "inheritedPp3Bp4RegistryRecords": "IDENTICAL_E3_C1_TO_E3_C3",
+    "calibrationUnchanged": true,
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "synonymousPositionPolicy": {
+    "policyId": "VEP116_NEAREST_EXON_JB_SYNONYMOUS_V1",
+    "pluginSha256": "8789d689c7929fca77a0d742a3cb8c9b1a2986d217686e623a3c9e549888026a",
+    "missingProof": "NOT_EVALUATED"
+  }
+}

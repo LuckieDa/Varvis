@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "bs1-local-business-release-v1",
+  "version": "1.0.0",
+  "sourcePublicationState": "RELEASED_SOURCE_NOT_APPLICATION_APPROVAL",
+  "localAcceptance": "User-confirmed limited native GRCh38 SNV business and display acceptance, 2026-09-17; not independent scientific approval or clinical validation",
+  "predecessor": {
+    "policyId": "GN017_3_1_BS1",
+    "version": "1.1.1",
+    "policySha256": "d5e48e168e22082ed784a889481b8d9aa794e1880985b3a7d8895f12ab7490e0"
+  },
+  "policies": [
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN017_3_1_BS1",
+      "version": "1.2.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn017-3.1",
+          "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+          "version": "3.1",
+          "sha256": "87d34bf90904413720591669d431018ea271d313da92b0d10fe46fc7d4fe2022",
+          "locator": "raw-010-contents-10.json#/data/3; complete rules and PM2 cross-rule FILTER restriction"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "LOCAL_BUSINESS_RELEASE_V1",
+      "scope": {
+        "hgncId": "HGNC:11621",
+        "mondoId": "MONDO:0015967",
+        "modes": [
+          "AUTOSOMAL_DOMINANT"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_DOMINANT_STRONG",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.000033",
+              "unit": "fraction",
+              "originalText": ">= 1:30,000 (>=0.0033% or 0.000033); published decimal used, not exact reciprocal",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN017 v3.1 BS1"
+            }
+          ],
+          "sourceLocator": "GN017 v3.1 BS1"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN017_3_1_BS1-exceptions",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [],
+        "sourceLocator": "raw-010-contents-10.json#/data/3; complete rules and PM2 cross-rule FILTER restriction"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.2.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "bs1-joint-filter-source-v1.json#/headers/12; retrievedAt=2026-09-17T05:13:59.243030+00:00; CHR12_HEADER_NOT_WHOLE_DATASET_SHA; header digest is not a whole-dataset digest",
+          "subtypeDot": "RAW_UNKNOWN_FILTER_BY_BOUND_JOINT",
+          "missingSubtype": "OPTIONAL_WITH_BOUND_JOINT_FILTER",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": "",
+          "jointFilterDefinition": "GNOMAD_4_1_JOINT_FILTER"
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "COMPATIBLE",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN017 Grpmax FAF and ClinGen 2025-06-23 v3.0 combined FAF; conservative native-quality verification; no general exception waiver"
+      },
+      "interpretation": "Development adaptation, not ClinGen approval. No epidemiological threshold calculation. Transcript is not a frequency variable; exact versions remain necessary for unresolved nomenclature/exception mappings."
+    }
+  ]
+}

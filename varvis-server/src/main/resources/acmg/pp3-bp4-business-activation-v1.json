@@ -1,0 +1,32 @@
+{
+  "registrationId": "pp3-bp4-explicit-business-e4-b1-v1",
+  "registrationVersion": "1.0.0",
+  "asOf": "2026-09-06T00:00:00Z",
+  "scope": "NATIVE_GRCH38_EXPLICIT_INPUTS",
+  "invocation": "EXPLICIT_SINGLE_PROBAND_BUSINESS_SUBMISSION",
+  "calibrationProfileId": "ALPHAMISSENSE_PP3_BP4_SUPPORTING",
+  "calibrationProfileVersion": "1.0.0",
+  "calibrationProfileCanonicalSha256": "b8f040d58ee6ef19f687886a742cacaa0a96dc3b5f803e8f423578e1aaa4cb83",
+  "ruleRegistryId": "acmg-rule-registry-e3-c1-2026-09-02",
+  "ruleRegistrySha256": "73fca655b6d76700242fc6b12ba4c6c4b9f34ac5c79b38621fe03fecc8303469",
+  "cspecRegistryId": "cspec-overlay-registry-e4-a2a-2026-09-05",
+  "cspecRegistrySha256": "5ffe4ebb0d2b0509271203427802307ab4443a1ae974a344b8fadb5b46708b48",
+  "supersedesInvocationActivation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "effectiveInvocationActivation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": true,
+    "classificationEnabled": false
+  },
+  "automaticTrigger": false,
+  "requiresServerOptIn": true,
+  "clinicalValidationCompleted": false,
+  "criterionIds": ["ACMG_AMP_2015:PP3", "ACMG_AMP_2015:BP4"],
+  "strengthCap": "SUPPORTING",
+  "calibrationAndEvaluatorUnchanged": true
+}

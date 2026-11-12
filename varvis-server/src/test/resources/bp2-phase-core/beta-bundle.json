@@ -1,0 +1,1094 @@
+{
+  "schemaVersion": "bp2-phase-core-bundle-v1",
+  "context": {
+    "schemaVersion": "evidence-context-v3",
+    "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+    "canonicalizationProfile": "varvis-json-c14n-v1",
+    "dataClass": "SYNTHETIC",
+    "scope": {
+      "analysisDomain": "GERMLINE",
+      "diseaseModel": "MENDELIAN",
+      "variantScope": "SMALL_SEQUENCE_VARIANT"
+    },
+    "variant": {
+      "alleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+      "variantType": "SNV",
+      "inputAllele": {
+        "assembly": "GRCh38",
+        "contig": "16",
+        "position": 1612481,
+        "reference": "T",
+        "alternate": "G"
+      },
+      "normalizedAllele": {
+        "assembly": "GRCh38",
+        "contig": "16",
+        "position": 1612481,
+        "reference": "T",
+        "alternate": "G"
+      },
+      "evidenceQueryAllele": {
+        "assembly": "GRCh38",
+        "contig": "16",
+        "position": 1612481,
+        "reference": "T",
+        "alternate": "G"
+      },
+      "normalization": {
+        "status": "UNCHANGED",
+        "method": "TEST_ONLY_native_identity",
+        "methodVersion": "1.0",
+        "referenceSequenceSha256": "824a16d49bca874061b4c46ce0bda8587393564ee3149b92e5d4ae977d2f401a",
+        "refValidation": "MATCH"
+      },
+      "assemblyLineage": {
+        "mappingStatus": "NATIVE"
+      }
+    },
+    "gene": {
+      "hgncId": "HGNC:930162",
+      "symbol": "TEST_ONLY_BP2_WILLOW"
+    },
+    "disease": {
+      "mondoId": "MONDO:0930162",
+      "label": "TEST_ONLY BP2 fictional beta"
+    },
+    "moi": "AUTOSOMAL_DOMINANT",
+    "patientContext": {
+      "patientContextId": "patient-context-test-bp2-beta",
+      "familyContextId": "family-context-test-bp2-beta",
+      "role": "PROBAND",
+      "affectedStatus": "AFFECTED",
+      "sex": "UNKNOWN"
+    },
+    "contextCompleteness": {
+      "status": "COMPLETE",
+      "missingFields": []
+    }
+  },
+  "observations": [
+    {
+      "facts": {
+        "schemaVersion": "case-family-observation-v2",
+        "observationId": "TEST_ONLY_bp2_beta_observation",
+        "observationVersion": "TEST_ONLY_BP2_1",
+        "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+        "caseId": "TEST_ONLY_bp2_beta_case",
+        "familyId": "family-context-test-bp2-beta",
+        "binding": {
+          "observationId": "TEST_ONLY_bp2_beta_observation",
+          "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+          "caseId": "TEST_ONLY_bp2_beta_case",
+          "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+          "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+          "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+          "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+          "hgncId": "HGNC:930162",
+          "mondoId": "MONDO:0930162",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bp2-beta",
+          "familyContextId": "family-context-test-bp2-beta"
+        },
+        "alleles": {
+          "target": {
+            "alleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+            "variantType": "SNV",
+            "inputAllele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 1612481,
+              "reference": "T",
+              "alternate": "G"
+            },
+            "normalizedAllele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 1612481,
+              "reference": "T",
+              "alternate": "G"
+            },
+            "evidenceQueryAllele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 1612481,
+              "reference": "T",
+              "alternate": "G"
+            },
+            "normalization": {
+              "status": "UNCHANGED",
+              "method": "TEST_ONLY_native_identity",
+              "methodVersion": "1.0",
+              "referenceSequenceSha256": "824a16d49bca874061b4c46ce0bda8587393564ee3149b92e5d4ae977d2f401a",
+              "refValidation": "MATCH"
+            },
+            "assemblyLineage": {
+              "mappingStatus": "NATIVE"
+            }
+          },
+          "partner": {
+            "alleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+            "variantType": "SNV",
+            "inputAllele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 1620059,
+              "reference": "A",
+              "alternate": "C"
+            },
+            "normalizedAllele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 1620059,
+              "reference": "A",
+              "alternate": "C"
+            },
+            "evidenceQueryAllele": {
+              "assembly": "GRCh38",
+              "contig": "16",
+              "position": 1620059,
+              "reference": "A",
+              "alternate": "C"
+            },
+            "normalization": {
+              "status": "UNCHANGED",
+              "method": "TEST_ONLY_native_identity",
+              "methodVersion": "1.0",
+              "referenceSequenceSha256": "824a16d49bca874061b4c46ce0bda8587393564ee3149b92e5d4ae977d2f401a",
+              "refValidation": "MATCH"
+            },
+            "assemblyLineage": {
+              "mappingStatus": "NATIVE"
+            }
+          }
+        },
+        "members": [
+          {
+            "memberId": "patient-context-test-bp2-beta",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "role": "PROBAND",
+            "affectedStatus": "AFFECTED"
+          },
+          {
+            "memberId": "TEST_ONLY_bp2_beta_father",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER",
+            "role": "FATHER",
+            "affectedStatus": "UNKNOWN"
+          },
+          {
+            "memberId": "TEST_ONLY_bp2_beta_mother",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER",
+            "role": "MOTHER",
+            "affectedStatus": "UNKNOWN"
+          }
+        ],
+        "records": [
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "position": 1612481,
+              "reference": "T",
+              "alternate": "G",
+              "chromosome": "16"
+            },
+            "role": "PROBAND",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "geneSymbol": "TEST_ONLY_BP2_WILLOW",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "0/1:68:60:34,34:PASS",
+            "observation": {
+              "role": "PROBAND",
+              "genotype": "0/1",
+              "call": "HET_ALT",
+              "depth": 68,
+              "genotypeQuality": 60,
+              "alleleDepth": "34,34",
+              "phased": false
+            }
+          },
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "position": 1620059,
+              "reference": "A",
+              "alternate": "C",
+              "chromosome": "16"
+            },
+            "role": "PROBAND",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "geneSymbol": "TEST_ONLY_BP2_WILLOW",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "0/1:70:60:35,35:PASS",
+            "observation": {
+              "role": "PROBAND",
+              "genotype": "0/1",
+              "call": "HET_ALT",
+              "depth": 70,
+              "genotypeQuality": 60,
+              "alleleDepth": "35,35",
+              "phased": false
+            }
+          },
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "position": 1612481,
+              "reference": "T",
+              "alternate": "G",
+              "chromosome": "16"
+            },
+            "role": "FATHER",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER",
+            "geneSymbol": "TEST_ONLY_BP2_WILLOW",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "0/0:74:60:74,0:PASS",
+            "observation": {
+              "role": "FATHER",
+              "genotype": "0/0",
+              "call": "HOM_REF",
+              "depth": 74,
+              "genotypeQuality": 60,
+              "alleleDepth": "74,0",
+              "phased": false
+            }
+          },
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "position": 1620059,
+              "reference": "A",
+              "alternate": "C",
+              "chromosome": "16"
+            },
+            "role": "FATHER",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER",
+            "geneSymbol": "TEST_ONLY_BP2_WILLOW",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "0/1:76:60:38,38:PASS",
+            "observation": {
+              "role": "FATHER",
+              "genotype": "0/1",
+              "call": "HET_ALT",
+              "depth": 76,
+              "genotypeQuality": 60,
+              "alleleDepth": "38,38",
+              "phased": false
+            }
+          },
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "position": 1612481,
+              "reference": "T",
+              "alternate": "G",
+              "chromosome": "16"
+            },
+            "role": "MOTHER",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER",
+            "geneSymbol": "TEST_ONLY_BP2_WILLOW",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "0/1:62:60:31,31:PASS",
+            "observation": {
+              "role": "MOTHER",
+              "genotype": "0/1",
+              "call": "HET_ALT",
+              "depth": 62,
+              "genotypeQuality": 60,
+              "alleleDepth": "31,31",
+              "phased": false
+            }
+          },
+          {
+            "variantKey": {
+              "assembly": "GRCh38",
+              "position": 1620059,
+              "reference": "A",
+              "alternate": "C",
+              "chromosome": "16"
+            },
+            "role": "MOTHER",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER",
+            "geneSymbol": "TEST_ONLY_BP2_WILLOW",
+            "recordFilter": "PASS",
+            "sampleFilter": "PASS",
+            "rawSampleValue": "0/0:64:60:64,0:PASS",
+            "observation": {
+              "role": "MOTHER",
+              "genotype": "0/0",
+              "call": "HOM_REF",
+              "depth": 64,
+              "genotypeQuality": 60,
+              "alleleDepth": "64,0",
+              "phased": false
+            }
+          }
+        ],
+        "detections": [
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "role": "PROBAND",
+            "alleleRole": "target",
+            "memberId": "patient-context-test-bp2-beta",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "targetAltIndex": 1,
+            "ploidy": 2,
+            "sampleFormat": "GT:DP:GQ:AD:FT",
+            "method": "SEQUENCE_ASSAY",
+            "coverage": "COVERED",
+            "capability": "TARGET_DETECTION",
+            "quality": "VALID",
+            "basis": "TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff",
+            "limitations": "TEST_ONLY no real instrument, excludes mosaic and structural variants",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          },
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "role": "PROBAND",
+            "alleleRole": "partner",
+            "memberId": "patient-context-test-bp2-beta",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "targetAltIndex": 1,
+            "ploidy": 2,
+            "sampleFormat": "GT:DP:GQ:AD:FT",
+            "method": "SEQUENCE_ASSAY",
+            "coverage": "COVERED",
+            "capability": "TARGET_DETECTION",
+            "quality": "VALID",
+            "basis": "TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff",
+            "limitations": "TEST_ONLY no real instrument, excludes mosaic and structural variants",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          },
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "role": "FATHER",
+            "alleleRole": "target",
+            "memberId": "TEST_ONLY_bp2_beta_father",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER",
+            "targetAltIndex": 1,
+            "ploidy": 2,
+            "sampleFormat": "GT:DP:GQ:AD:FT",
+            "method": "SEQUENCE_ASSAY",
+            "coverage": "COVERED",
+            "capability": "TARGET_DETECTION",
+            "quality": "VALID",
+            "basis": "TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff",
+            "limitations": "TEST_ONLY no real instrument, excludes mosaic and structural variants",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          },
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "role": "FATHER",
+            "alleleRole": "partner",
+            "memberId": "TEST_ONLY_bp2_beta_father",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER",
+            "targetAltIndex": 1,
+            "ploidy": 2,
+            "sampleFormat": "GT:DP:GQ:AD:FT",
+            "method": "SEQUENCE_ASSAY",
+            "coverage": "COVERED",
+            "capability": "TARGET_DETECTION",
+            "quality": "VALID",
+            "basis": "TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff",
+            "limitations": "TEST_ONLY no real instrument, excludes mosaic and structural variants",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          },
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "role": "MOTHER",
+            "alleleRole": "target",
+            "memberId": "TEST_ONLY_bp2_beta_mother",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER",
+            "targetAltIndex": 1,
+            "ploidy": 2,
+            "sampleFormat": "GT:DP:GQ:AD:FT",
+            "method": "SEQUENCE_ASSAY",
+            "coverage": "COVERED",
+            "capability": "TARGET_DETECTION",
+            "quality": "VALID",
+            "basis": "TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff",
+            "limitations": "TEST_ONLY no real instrument, excludes mosaic and structural variants",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          },
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "role": "MOTHER",
+            "alleleRole": "partner",
+            "memberId": "TEST_ONLY_bp2_beta_mother",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER",
+            "targetAltIndex": 1,
+            "ploidy": 2,
+            "sampleFormat": "GT:DP:GQ:AD:FT",
+            "method": "SEQUENCE_ASSAY",
+            "coverage": "COVERED",
+            "capability": "TARGET_DETECTION",
+            "quality": "VALID",
+            "basis": "TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff",
+            "limitations": "TEST_ONLY no real instrument, excludes mosaic and structural variants",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          }
+        ],
+        "parentage": [
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "parentRole": "FATHER",
+            "parentMemberId": "TEST_ONLY_bp2_beta_father",
+            "probandMemberId": "patient-context-test-bp2-beta",
+            "parentSampleId": "TEST_ONLY_bp2_beta_sample_FATHER",
+            "probandSampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "testStatus": "COMPLETED",
+            "conclusion": "CONFIRMED",
+            "method": "INDEPENDENT_RELATIONSHIP_TEST",
+            "result": "RELATIONSHIP_SUPPORTED",
+            "limitations": "TEST_ONLY synthetic confirmed relationship, not inferred from target/partner GT",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          },
+          {
+            "binding": {
+              "observationId": "TEST_ONLY_bp2_beta_observation",
+              "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+              "caseId": "TEST_ONLY_bp2_beta_case",
+              "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+              "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+              "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+              "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+              "hgncId": "HGNC:930162",
+              "mondoId": "MONDO:0930162",
+              "moi": "AUTOSOMAL_DOMINANT",
+              "patientContextId": "patient-context-test-bp2-beta",
+              "familyContextId": "family-context-test-bp2-beta"
+            },
+            "parentRole": "MOTHER",
+            "parentMemberId": "TEST_ONLY_bp2_beta_mother",
+            "probandMemberId": "patient-context-test-bp2-beta",
+            "parentSampleId": "TEST_ONLY_bp2_beta_sample_MOTHER",
+            "probandSampleId": "TEST_ONLY_bp2_beta_sample_PROBAND",
+            "testStatus": "COMPLETED",
+            "conclusion": "CONFIRMED",
+            "method": "INDEPENDENT_RELATIONSHIP_TEST",
+            "result": "RELATIONSHIP_SUPPORTED",
+            "limitations": "TEST_ONLY synthetic confirmed relationship, not inferred from target/partner GT",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY fictional facts reviewer beta",
+              "date": "2026-09-29T00:00:00Z",
+              "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+              "sourceIds": [
+                "TEST_ONLY_bp2_beta_facts"
+              ]
+            }
+          }
+        ],
+        "clinical": {
+          "binding": {
+            "observationId": "TEST_ONLY_bp2_beta_observation",
+            "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+            "caseId": "TEST_ONLY_bp2_beta_case",
+            "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+            "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+            "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+            "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+            "hgncId": "HGNC:930162",
+            "mondoId": "MONDO:0930162",
+            "moi": "AUTOSOMAL_DOMINANT",
+            "patientContextId": "patient-context-test-bp2-beta",
+            "familyContextId": "family-context-test-bp2-beta"
+          },
+          "probandMemberId": "patient-context-test-bp2-beta",
+          "diseaseApplicability": "APPLICABLE",
+          "affectedStatus": "AFFECTED",
+          "mosaicism": "REVIEWED_NONMOSAIC",
+          "observations": [
+            "TEST_ONLY AFFECTED proband in reviewed AUTOSOMAL_DOMINANT background beta; no real clinical assertion"
+          ],
+          "review": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY fictional facts reviewer beta",
+            "date": "2026-09-29T00:00:00Z",
+            "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_facts"
+            ]
+          }
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_bp2_beta_facts",
+            "recordId": "TEST_ONLY_bp2_beta_facts_record",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY/beta/facts",
+            "acquiredAt": "2026-09-29T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"case-family-observation-v2\",\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"observationVersion\":\"TEST_ONLY_BP2_1\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"familyId\":\"family-context-test-bp2-beta\",\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"alleles\":{\"target\":{\"alleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"variantType\":\"SNV\",\"inputAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":1612481,\"reference\":\"T\",\"alternate\":\"G\"},\"normalizedAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":1612481,\"reference\":\"T\",\"alternate\":\"G\"},\"evidenceQueryAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":1612481,\"reference\":\"T\",\"alternate\":\"G\"},\"normalization\":{\"status\":\"UNCHANGED\",\"method\":\"TEST_ONLY_native_identity\",\"methodVersion\":\"1.0\",\"referenceSequenceSha256\":\"824a16d49bca874061b4c46ce0bda8587393564ee3149b92e5d4ae977d2f401a\",\"refValidation\":\"MATCH\"},\"assemblyLineage\":{\"mappingStatus\":\"NATIVE\"}},\"partner\":{\"alleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"variantType\":\"SNV\",\"inputAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":1620059,\"reference\":\"A\",\"alternate\":\"C\"},\"normalizedAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":1620059,\"reference\":\"A\",\"alternate\":\"C\"},\"evidenceQueryAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"16\",\"position\":1620059,\"reference\":\"A\",\"alternate\":\"C\"},\"normalization\":{\"status\":\"UNCHANGED\",\"method\":\"TEST_ONLY_native_identity\",\"methodVersion\":\"1.0\",\"referenceSequenceSha256\":\"824a16d49bca874061b4c46ce0bda8587393564ee3149b92e5d4ae977d2f401a\",\"refValidation\":\"MATCH\"},\"assemblyLineage\":{\"mappingStatus\":\"NATIVE\"}}},\"members\":[{\"memberId\":\"patient-context-test-bp2-beta\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"role\":\"PROBAND\",\"affectedStatus\":\"AFFECTED\"},{\"memberId\":\"TEST_ONLY_bp2_beta_father\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\",\"role\":\"FATHER\",\"affectedStatus\":\"UNKNOWN\"},{\"memberId\":\"TEST_ONLY_bp2_beta_mother\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\",\"role\":\"MOTHER\",\"affectedStatus\":\"UNKNOWN\"}],\"records\":[{\"variantKey\":{\"assembly\":\"GRCh38\",\"position\":1612481,\"reference\":\"T\",\"alternate\":\"G\",\"chromosome\":\"16\"},\"role\":\"PROBAND\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"geneSymbol\":\"TEST_ONLY_BP2_WILLOW\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"0/1:68:60:34,34:PASS\",\"observation\":{\"role\":\"PROBAND\",\"genotype\":\"0/1\",\"call\":\"HET_ALT\",\"depth\":68,\"genotypeQuality\":60,\"alleleDepth\":\"34,34\",\"phased\":false}},{\"variantKey\":{\"assembly\":\"GRCh38\",\"position\":1620059,\"reference\":\"A\",\"alternate\":\"C\",\"chromosome\":\"16\"},\"role\":\"PROBAND\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"geneSymbol\":\"TEST_ONLY_BP2_WILLOW\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"0/1:70:60:35,35:PASS\",\"observation\":{\"role\":\"PROBAND\",\"genotype\":\"0/1\",\"call\":\"HET_ALT\",\"depth\":70,\"genotypeQuality\":60,\"alleleDepth\":\"35,35\",\"phased\":false}},{\"variantKey\":{\"assembly\":\"GRCh38\",\"position\":1612481,\"reference\":\"T\",\"alternate\":\"G\",\"chromosome\":\"16\"},\"role\":\"FATHER\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\",\"geneSymbol\":\"TEST_ONLY_BP2_WILLOW\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"0/0:74:60:74,0:PASS\",\"observation\":{\"role\":\"FATHER\",\"genotype\":\"0/0\",\"call\":\"HOM_REF\",\"depth\":74,\"genotypeQuality\":60,\"alleleDepth\":\"74,0\",\"phased\":false}},{\"variantKey\":{\"assembly\":\"GRCh38\",\"position\":1620059,\"reference\":\"A\",\"alternate\":\"C\",\"chromosome\":\"16\"},\"role\":\"FATHER\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\",\"geneSymbol\":\"TEST_ONLY_BP2_WILLOW\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"0/1:76:60:38,38:PASS\",\"observation\":{\"role\":\"FATHER\",\"genotype\":\"0/1\",\"call\":\"HET_ALT\",\"depth\":76,\"genotypeQuality\":60,\"alleleDepth\":\"38,38\",\"phased\":false}},{\"variantKey\":{\"assembly\":\"GRCh38\",\"position\":1612481,\"reference\":\"T\",\"alternate\":\"G\",\"chromosome\":\"16\"},\"role\":\"MOTHER\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\",\"geneSymbol\":\"TEST_ONLY_BP2_WILLOW\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"0/1:62:60:31,31:PASS\",\"observation\":{\"role\":\"MOTHER\",\"genotype\":\"0/1\",\"call\":\"HET_ALT\",\"depth\":62,\"genotypeQuality\":60,\"alleleDepth\":\"31,31\",\"phased\":false}},{\"variantKey\":{\"assembly\":\"GRCh38\",\"position\":1620059,\"reference\":\"A\",\"alternate\":\"C\",\"chromosome\":\"16\"},\"role\":\"MOTHER\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\",\"geneSymbol\":\"TEST_ONLY_BP2_WILLOW\",\"recordFilter\":\"PASS\",\"sampleFilter\":\"PASS\",\"rawSampleValue\":\"0/0:64:60:64,0:PASS\",\"observation\":{\"role\":\"MOTHER\",\"genotype\":\"0/0\",\"call\":\"HOM_REF\",\"depth\":64,\"genotypeQuality\":60,\"alleleDepth\":\"64,0\",\"phased\":false}}],\"detections\":[{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"role\":\"PROBAND\",\"alleleRole\":\"target\",\"memberId\":\"patient-context-test-bp2-beta\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"SEQUENCE_ASSAY\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff\",\"limitations\":\"TEST_ONLY no real instrument, excludes mosaic and structural variants\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}},{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"role\":\"PROBAND\",\"alleleRole\":\"partner\",\"memberId\":\"patient-context-test-bp2-beta\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"SEQUENCE_ASSAY\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff\",\"limitations\":\"TEST_ONLY no real instrument, excludes mosaic and structural variants\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}},{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"role\":\"FATHER\",\"alleleRole\":\"target\",\"memberId\":\"TEST_ONLY_bp2_beta_father\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"SEQUENCE_ASSAY\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff\",\"limitations\":\"TEST_ONLY no real instrument, excludes mosaic and structural variants\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}},{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"role\":\"FATHER\",\"alleleRole\":\"partner\",\"memberId\":\"TEST_ONLY_bp2_beta_father\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"SEQUENCE_ASSAY\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff\",\"limitations\":\"TEST_ONLY no real instrument, excludes mosaic and structural variants\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}},{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"role\":\"MOTHER\",\"alleleRole\":\"target\",\"memberId\":\"TEST_ONLY_bp2_beta_mother\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"SEQUENCE_ASSAY\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff\",\"limitations\":\"TEST_ONLY no real instrument, excludes mosaic and structural variants\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}},{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"role\":\"MOTHER\",\"alleleRole\":\"partner\",\"memberId\":\"TEST_ONLY_bp2_beta_mother\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\",\"targetAltIndex\":1,\"ploidy\":2,\"sampleFormat\":\"GT:DP:GQ:AD:FT\",\"method\":\"SEQUENCE_ASSAY\",\"coverage\":\"COVERED\",\"capability\":\"TARGET_DETECTION\",\"quality\":\"VALID\",\"basis\":\"TEST_ONLY raw call and detection report concordant; no universal DP/GQ cutoff\",\"limitations\":\"TEST_ONLY no real instrument, excludes mosaic and structural variants\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}}],\"parentage\":[{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"parentRole\":\"FATHER\",\"parentMemberId\":\"TEST_ONLY_bp2_beta_father\",\"probandMemberId\":\"patient-context-test-bp2-beta\",\"parentSampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\",\"probandSampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"testStatus\":\"COMPLETED\",\"conclusion\":\"CONFIRMED\",\"method\":\"INDEPENDENT_RELATIONSHIP_TEST\",\"result\":\"RELATIONSHIP_SUPPORTED\",\"limitations\":\"TEST_ONLY synthetic confirmed relationship, not inferred from target/partner GT\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}},{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"parentRole\":\"MOTHER\",\"parentMemberId\":\"TEST_ONLY_bp2_beta_mother\",\"probandMemberId\":\"patient-context-test-bp2-beta\",\"parentSampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\",\"probandSampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\",\"testStatus\":\"COMPLETED\",\"conclusion\":\"CONFIRMED\",\"method\":\"INDEPENDENT_RELATIONSHIP_TEST\",\"result\":\"RELATIONSHIP_SUPPORTED\",\"limitations\":\"TEST_ONLY synthetic confirmed relationship, not inferred from target/partner GT\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}}],\"clinical\":{\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"probandMemberId\":\"patient-context-test-bp2-beta\",\"diseaseApplicability\":\"APPLICABLE\",\"affectedStatus\":\"AFFECTED\",\"mosaicism\":\"REVIEWED_NONMOSAIC\",\"observations\":[\"TEST_ONLY AFFECTED proband in reviewed AUTOSOMAL_DOMINANT background beta; no real clinical assertion\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional facts reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_facts\"]}}}",
+            "rawSha256": "a5448a5156d16ff48cdafb3c30a61cd63e259f877a3fd0d7111eba7cc8e99d13",
+            "canonicalSha256": "0d9df17f36c330286c7ff602ced382234d3a4defec15480bba82c59c30640045"
+          }
+        ]
+      },
+      "phase": {
+        "schemaVersion": "bp2-phase-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_bp2_beta_observation",
+          "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+          "caseId": "TEST_ONLY_bp2_beta_case",
+          "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+          "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+          "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+          "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+          "hgncId": "HGNC:930162",
+          "mondoId": "MONDO:0930162",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bp2-beta",
+          "familyContextId": "family-context-test-bp2-beta"
+        },
+        "conclusion": "CONFIRMED_TRANS",
+        "method": "TRIO_SEGREGATION",
+        "targetParent": "MOTHER",
+        "partnerParent": "FATHER",
+        "recordRefs": [
+          {
+            "role": "PROBAND",
+            "alleleRole": "target",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND"
+          },
+          {
+            "role": "PROBAND",
+            "alleleRole": "partner",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_PROBAND"
+          },
+          {
+            "role": "FATHER",
+            "alleleRole": "target",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER"
+          },
+          {
+            "role": "FATHER",
+            "alleleRole": "partner",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_FATHER"
+          },
+          {
+            "role": "MOTHER",
+            "alleleRole": "target",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER"
+          },
+          {
+            "role": "MOTHER",
+            "alleleRole": "partner",
+            "sampleId": "TEST_ONLY_bp2_beta_sample_MOTHER"
+          }
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY fictional phase reviewer beta",
+          "date": "2026-09-29T00:00:00Z",
+          "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+          "sourceIds": [
+            "TEST_ONLY_bp2_beta_phase"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_bp2_beta_phase",
+            "recordId": "TEST_ONLY_bp2_beta_phase_record",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY/beta/phase",
+            "acquiredAt": "2026-09-29T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"bp2-phase-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"conclusion\":\"CONFIRMED_TRANS\",\"method\":\"TRIO_SEGREGATION\",\"targetParent\":\"MOTHER\",\"partnerParent\":\"FATHER\",\"recordRefs\":[{\"role\":\"PROBAND\",\"alleleRole\":\"target\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\"},{\"role\":\"PROBAND\",\"alleleRole\":\"partner\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_PROBAND\"},{\"role\":\"FATHER\",\"alleleRole\":\"target\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\"},{\"role\":\"FATHER\",\"alleleRole\":\"partner\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_FATHER\"},{\"role\":\"MOTHER\",\"alleleRole\":\"target\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\"},{\"role\":\"MOTHER\",\"alleleRole\":\"partner\",\"sampleId\":\"TEST_ONLY_bp2_beta_sample_MOTHER\"}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional phase reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_phase\"]}}",
+            "rawSha256": "0a731cdacef6deeb0a349f6b5d37b5e744ff4cc81cc720a24987e11dccaf8a2c",
+            "canonicalSha256": "8fba36523d6ea8f077ffa9f62a7a6ea7a88b0948314d538d9d6c3bc1ee548fe4"
+          }
+        ]
+      },
+      "partnerClassification": {
+        "schemaVersion": "bp2-partner-classification-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_bp2_beta_observation",
+          "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+          "caseId": "TEST_ONLY_bp2_beta_case",
+          "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+          "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+          "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+          "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+          "hgncId": "HGNC:930162",
+          "mondoId": "MONDO:0930162",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bp2-beta",
+          "familyContextId": "family-context-test-bp2-beta"
+        },
+        "alleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+        "classification": "PATHOGENIC",
+        "assertion": {
+          "classification": "PATHOGENIC",
+          "conflict": "NONE",
+          "status": "REVIEWED",
+          "sourceIds": [
+            "TEST_ONLY_bp2_beta_partnerClassification"
+          ]
+        },
+        "independence": {
+          "conclusion": "INDEPENDENT",
+          "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+          "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+          "caseId": "TEST_ONLY_bp2_beta_case",
+          "targetContribution": "REVIEWED_EXCLUDED",
+          "pairContribution": "REVIEWED_EXCLUDED",
+          "caseContribution": "REVIEWED_EXCLUDED",
+          "bp2Contribution": "REVIEWED_EXCLUDED",
+          "dependencies": [
+            {
+              "kind": "INDEPENDENT_FUNCTIONAL_STUDY",
+              "identity": "TEST_ONLY unrelated study beta"
+            }
+          ],
+          "review": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY fictional partnerClassification reviewer beta",
+            "date": "2026-09-29T00:00:00Z",
+            "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+            "sourceIds": [
+              "TEST_ONLY_bp2_beta_partnerClassification"
+            ]
+          },
+          "compoundContribution": "REVIEWED_EXCLUDED",
+          "exclusionBasis": "TEST_ONLY independent functional experiment on partner alone; target, pair, occurrence, family and BP2 excluded."
+        },
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY fictional partnerClassification reviewer beta",
+          "date": "2026-09-29T00:00:00Z",
+          "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+          "sourceIds": [
+            "TEST_ONLY_bp2_beta_partnerClassification"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_bp2_beta_partnerClassification",
+            "recordId": "TEST_ONLY_bp2_beta_partnerClassification_record",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY/beta/partnerClassification",
+            "acquiredAt": "2026-09-29T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"bp2-partner-classification-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"alleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"classification\":\"PATHOGENIC\",\"assertion\":{\"classification\":\"PATHOGENIC\",\"conflict\":\"NONE\",\"status\":\"REVIEWED\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_partnerClassification\"]},\"independence\":{\"conclusion\":\"INDEPENDENT\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"targetContribution\":\"REVIEWED_EXCLUDED\",\"pairContribution\":\"REVIEWED_EXCLUDED\",\"caseContribution\":\"REVIEWED_EXCLUDED\",\"bp2Contribution\":\"REVIEWED_EXCLUDED\",\"dependencies\":[{\"kind\":\"INDEPENDENT_FUNCTIONAL_STUDY\",\"identity\":\"TEST_ONLY unrelated study beta\"}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional partnerClassification reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_partnerClassification\"]},\"compoundContribution\":\"REVIEWED_EXCLUDED\",\"exclusionBasis\":\"TEST_ONLY independent functional experiment on partner alone; target, pair, occurrence, family and BP2 excluded.\"},\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY fictional partnerClassification reviewer beta\",\"date\":\"2026-09-29T00:00:00Z\",\"basis\":\"TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval\",\"sourceIds\":[\"TEST_ONLY_bp2_beta_partnerClassification\"]}}",
+            "rawSha256": "660a1c4d65651bd860e64f2194134d4da606cd60573e7b4d03456627e912acbb",
+            "canonicalSha256": "120965a7f0454467ab23c4503d591c6309f5f775b7b78e0dc4c6dff0f9cd61aa"
+          }
+        ]
+      },
+      "assessment": {
+        "schemaVersion": "bp2-assessment-v1",
+        "assessmentId": "TEST_ONLY_bp2_beta_assessment",
+        "assessmentVersion": "1.0",
+        "partPins": {
+          "facts": "eade6c5dc2ca1bfd1c4139a82ceddfdbf29c8f52670e3d065aeff8b5c2a52f23",
+          "phase": "866d68252235b5343aa3c88c331c648ff8e819e4495f0bf770e9a3d8c815a5fb",
+          "partnerClassification": "e7969c5f0dbc59fb0fbe453c7f9180c0fb6304437eb7812320e8b87d82a75c87",
+          "diseaseApplicability": "76ba2c3eab13d0131f5db66178be39b25ec1ea5242c6174d3aae036c38088c3e"
+        },
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY fictional facts reviewer beta",
+          "date": "2026-09-29T00:00:00Z",
+          "basis": "TEST_ONLY explicit structured observations checked for this exact family and pair; not professional approval",
+          "sourceIds": [
+            "TEST_ONLY_bp2_beta_facts",
+            "TEST_ONLY_bp2_beta_phase",
+            "TEST_ONLY_bp2_beta_partnerClassification",
+            "TEST_ONLY_BP2_disease_beta"
+          ]
+        },
+        "contentSha256": "318be3708e426a7a05e0e51f03018eed12f3fe153d5ac579f646b0f7894d753f"
+      },
+      "diseaseApplicability": {
+        "schemaVersion": "bp2-disease-applicability-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_bp2_beta_observation",
+          "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+          "caseId": "TEST_ONLY_bp2_beta_case",
+          "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+          "targetAlleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+          "partnerAlleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+          "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03",
+          "hgncId": "HGNC:930162",
+          "mondoId": "MONDO:0930162",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-bp2-beta",
+          "familyContextId": "family-context-test-bp2-beta"
+        },
+        "mode": "CONFIRMED_TRANS_FULLY_PENETRANT_AD",
+        "applicability": "APPLICABLE",
+        "mechanism": "LOSS_OF_FUNCTION",
+        "affectedStatus": "AFFECTED",
+        "phenotypeConsistency": "REVIEWED_CONSISTENT",
+        "additionalEffect": "REVIEWED_EXCLUDED",
+        "alleleApplicability": [
+          {
+            "alleleRole": "target",
+            "alleleId": "allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780",
+            "hgncId": "HGNC:930162",
+            "conclusion": "APPLICABLE",
+            "annotationVersion": "TEST_ONLY_two_allele_review_v1",
+            "basis": "TEST_ONLY explicit allele/gene/mechanism applicability; not inferred from gene symbol",
+            "sourceIds": [
+              "TEST_ONLY_BP2_disease_beta"
+            ]
+          },
+          {
+            "alleleRole": "partner",
+            "alleleId": "allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae",
+            "hgncId": "HGNC:930162",
+            "conclusion": "APPLICABLE",
+            "annotationVersion": "TEST_ONLY_two_allele_review_v1",
+            "basis": "TEST_ONLY explicit allele/gene/mechanism applicability; not inferred from gene symbol",
+            "sourceIds": [
+              "TEST_ONLY_BP2_disease_beta"
+            ]
+          }
+        ],
+        "penetrance": {
+          "conclusion": "FULLY_PENETRANT",
+          "patientApplicability": "APPLICABLE",
+          "population": "TEST_ONLY POPULATION unrestricted in specified fictional disease",
+          "ageCondition": "TEST_ONLY AGE unrestricted in specified fictional disease",
+          "sexCondition": "TEST_ONLY SEX unrestricted in specified fictional disease",
+          "limitations": "TEST_ONLY fictional background only",
+          "basis": "TEST_ONLY independently reviewed full penetrance for the specified disease and mechanism",
+          "conditions": [
+            {
+              "kind": "POPULATION",
+              "requirement": "TEST_ONLY POPULATION unrestricted in specified fictional disease",
+              "patientFact": "TEST_ONLY reviewed proband beta",
+              "conclusion": "REVIEWED_UNRESTRICTED",
+              "basis": "TEST_ONLY reviewed unrestricted condition with explicit patient binding",
+              "sourceIds": [
+                "TEST_ONLY_BP2_disease_beta"
+              ]
+            },
+            {
+              "kind": "AGE",
+              "requirement": "TEST_ONLY AGE unrestricted in specified fictional disease",
+              "patientFact": "TEST_ONLY reviewed proband beta",
+              "conclusion": "REVIEWED_UNRESTRICTED",
+              "basis": "TEST_ONLY reviewed unrestricted condition with explicit patient binding",
+              "sourceIds": [
+                "TEST_ONLY_BP2_disease_beta"
+              ]
+            },
+            {
+              "kind": "SEX",
+              "requirement": "TEST_ONLY SEX unrestricted in specified fictional disease",
+              "patientFact": "TEST_ONLY reviewed proband beta",
+              "conclusion": "REVIEWED_UNRESTRICTED",
+              "basis": "TEST_ONLY reviewed unrestricted condition with explicit patient binding",
+              "sourceIds": [
+                "TEST_ONLY_BP2_disease_beta"
+              ]
+            }
+          ],
+          "review": {
+            "status": "REVIEWED",
+            "reviewer": "TEST_ONLY_BP2_reviewer_beta",
+            "date": "2026-09-30T00:00:00Z",
+            "basis": "TEST_ONLY reviewed two alleles, disease mechanism, phenotype and additional-effect exclusions; no clinical adoption",
+            "sourceIds": [
+              "TEST_ONLY_BP2_disease_beta"
+            ]
+          }
+        },
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_BP2_reviewer_beta",
+          "date": "2026-09-30T00:00:00Z",
+          "basis": "TEST_ONLY reviewed two alleles, disease mechanism, phenotype and additional-effect exclusions; no clinical adoption",
+          "sourceIds": [
+            "TEST_ONLY_BP2_disease_beta"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_BP2_disease_beta",
+            "recordId": "TEST_ONLY_BP2_disease_record_beta",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY disease/penetrance/beta",
+            "acquiredAt": "2026-09-30T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"bp2-disease-applicability-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_bp2_beta_observation\",\"occurrenceId\":\"TEST_ONLY_bp2_beta_occurrence\",\"caseId\":\"TEST_ONLY_bp2_beta_case\",\"contextId\":\"context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2\",\"targetAlleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"partnerAlleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"pairId\":\"pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03\",\"hgncId\":\"HGNC:930162\",\"mondoId\":\"MONDO:0930162\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-bp2-beta\",\"familyContextId\":\"family-context-test-bp2-beta\"},\"mode\":\"CONFIRMED_TRANS_FULLY_PENETRANT_AD\",\"applicability\":\"APPLICABLE\",\"mechanism\":\"LOSS_OF_FUNCTION\",\"affectedStatus\":\"AFFECTED\",\"phenotypeConsistency\":\"REVIEWED_CONSISTENT\",\"additionalEffect\":\"REVIEWED_EXCLUDED\",\"alleleApplicability\":[{\"alleleRole\":\"target\",\"alleleId\":\"allele-sha256-829e27b16dae8aeff2e2f5332f9f9e774c439e51e2c11573ee6027036f400780\",\"hgncId\":\"HGNC:930162\",\"conclusion\":\"APPLICABLE\",\"annotationVersion\":\"TEST_ONLY_two_allele_review_v1\",\"basis\":\"TEST_ONLY explicit allele/gene/mechanism applicability; not inferred from gene symbol\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]},{\"alleleRole\":\"partner\",\"alleleId\":\"allele-sha256-25cf0c55ca7178601aff5bec5e4a01f91d2a4252d69b352145b0865bf6d379ae\",\"hgncId\":\"HGNC:930162\",\"conclusion\":\"APPLICABLE\",\"annotationVersion\":\"TEST_ONLY_two_allele_review_v1\",\"basis\":\"TEST_ONLY explicit allele/gene/mechanism applicability; not inferred from gene symbol\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]}],\"penetrance\":{\"conclusion\":\"FULLY_PENETRANT\",\"patientApplicability\":\"APPLICABLE\",\"population\":\"TEST_ONLY POPULATION unrestricted in specified fictional disease\",\"ageCondition\":\"TEST_ONLY AGE unrestricted in specified fictional disease\",\"sexCondition\":\"TEST_ONLY SEX unrestricted in specified fictional disease\",\"limitations\":\"TEST_ONLY fictional background only\",\"basis\":\"TEST_ONLY independently reviewed full penetrance for the specified disease and mechanism\",\"conditions\":[{\"kind\":\"POPULATION\",\"requirement\":\"TEST_ONLY POPULATION unrestricted in specified fictional disease\",\"patientFact\":\"TEST_ONLY reviewed proband beta\",\"conclusion\":\"REVIEWED_UNRESTRICTED\",\"basis\":\"TEST_ONLY reviewed unrestricted condition with explicit patient binding\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]},{\"kind\":\"AGE\",\"requirement\":\"TEST_ONLY AGE unrestricted in specified fictional disease\",\"patientFact\":\"TEST_ONLY reviewed proband beta\",\"conclusion\":\"REVIEWED_UNRESTRICTED\",\"basis\":\"TEST_ONLY reviewed unrestricted condition with explicit patient binding\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]},{\"kind\":\"SEX\",\"requirement\":\"TEST_ONLY SEX unrestricted in specified fictional disease\",\"patientFact\":\"TEST_ONLY reviewed proband beta\",\"conclusion\":\"REVIEWED_UNRESTRICTED\",\"basis\":\"TEST_ONLY reviewed unrestricted condition with explicit patient binding\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_BP2_reviewer_beta\",\"date\":\"2026-09-30T00:00:00Z\",\"basis\":\"TEST_ONLY reviewed two alleles, disease mechanism, phenotype and additional-effect exclusions; no clinical adoption\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]}},\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_BP2_reviewer_beta\",\"date\":\"2026-09-30T00:00:00Z\",\"basis\":\"TEST_ONLY reviewed two alleles, disease mechanism, phenotype and additional-effect exclusions; no clinical adoption\",\"sourceIds\":[\"TEST_ONLY_BP2_disease_beta\"]}}",
+            "rawSha256": "5562ed7bc292366eeee38cc668390510a7d79c421d2ffcff403f6a8f70db8f86",
+            "canonicalSha256": "5af6d43c17db0b9672ad6bd2de16f9397ac1d16834cc8d24c0afd0f6e9666f72"
+          }
+        ]
+      }
+    }
+  ],
+  "policy": {
+    "schemaVersion": "bp2-reviewed-phase-policy-v1",
+    "policyId": "TEST_ONLY_bp2_beta_policy",
+    "policyVersion": "1.0",
+    "mode": "CONFIRMED_TRANS_FULLY_PENETRANT_AD",
+    "criterionIds": [
+      "ACMG_AMP_2015:BP2"
+    ],
+    "scope": {
+      "hgncId": "HGNC:930162",
+      "mondoId": "MONDO:0930162",
+      "moi": "AUTOSOMAL_DOMINANT",
+      "assembly": "GRCh38",
+      "transcriptMode": "TRANSCRIPT_NOT_REQUIRED",
+      "variantType": "NATIVE_NONPROJECTED_SNV"
+    },
+    "review": {
+      "status": "REVIEWED_IMPLEMENTED",
+      "reviewId": "TEST_ONLY_bp2_beta_policy_review"
+    },
+    "partPins": {
+      "facts": "eade6c5dc2ca1bfd1c4139a82ceddfdbf29c8f52670e3d065aeff8b5c2a52f23",
+      "phase": "866d68252235b5343aa3c88c331c648ff8e819e4495f0bf770e9a3d8c815a5fb",
+      "partnerClassification": "e7969c5f0dbc59fb0fbe453c7f9180c0fb6304437eb7812320e8b87d82a75c87",
+      "diseaseApplicability": "76ba2c3eab13d0131f5db66178be39b25ec1ea5242c6174d3aae036c38088c3e"
+    },
+    "assessmentSha256": "cc0faff9238c5556448a91559b797475c5fad002a2b7775ba7ab8f3a3456ee21",
+    "authoritySourceIds": [
+      "authority-acmg-amp-2015-richards"
+    ],
+    "scientificSources": [
+      {
+        "sourceId": "authority-acmg-amp-2015-richards",
+        "version": "2015",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4544753/",
+        "sha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3"
+      }
+    ],
+    "qualityProfile": "bp2-six-record-quality-v1"
+  },
+  "catalog": {
+    "schemaVersion": "acmg-specification-catalog-v1",
+    "catalogId": "TEST_ONLY_bp2_beta_catalog",
+    "catalogVersion": "1.0",
+    "searchScope": "TEST_ONLY exact fictional BP2 background beta; no real VCEP claim",
+    "searchedAt": "2026-09-29T00:00:00Z",
+    "review": {
+      "status": "REVIEWED",
+      "reviewId": "TEST_ONLY_catalog_review_beta"
+    },
+    "sources": [
+      {
+        "sourceId": "TEST_ONLY_BP2_catalog_source_beta",
+        "version": "TEST_ONLY_1",
+        "url": "https://example.invalid/TEST_ONLY/bp2/beta",
+        "sha256": "59ce7e84fff2469860a4828e416ea985058cbf44107e1837d44012de83b92884"
+      }
+    ],
+    "entries": [
+      {
+        "entryId": "TEST_ONLY_bp2_beta_entry",
+        "criterionId": "ACMG_AMP_2015:BP2",
+        "scope": {
+          "hgncId": "HGNC:930162",
+          "mondoId": "MONDO:0930162",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "assembly": "GRCh38",
+          "transcriptMode": "TRANSCRIPT_NOT_REQUIRED",
+          "variantType": "NATIVE_NONPROJECTED_SNV"
+        },
+        "searchStatus": "COMPLETE",
+        "review": {
+          "status": "REVIEWED",
+          "reviewId": "TEST_ONLY_entry_review_beta"
+        },
+        "sourceIds": [
+          "TEST_ONLY_BP2_catalog_source_beta"
+        ],
+        "disposition": "NO_APPLICABLE_SPECIALIZATION",
+        "baseRuleRelationship": "TEST_ONLY complete exact-scope search permits general BP2 single-case branch",
+        "generalPrerequisites": {
+          "status": "COMPLETE",
+          "sourceIds": [
+            "TEST_ONLY_BP2_catalog_source_beta"
+          ]
+        },
+        "policyBinding": {
+          "policyId": "TEST_ONLY_bp2_beta_policy",
+          "policyVersion": "1.0",
+          "policySha256": "e67f299cd2cd0f22048a9be2381cd8ca0952ad56b48079747e9151292ce3eb09"
+        }
+      }
+    ]
+  },
+  "catalogSha256": "ca6d4f87e45d830758febd8f1525bd7a1437ad7d7413104bb86e88897c93fbde",
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-bp2-phase-core-2026-09-30",
+    "registrySha256": "edf467a5f97a287b88a482fd2b31467a5e907b41d3c982d8bd8f38cccdab4bc1",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-bp2-phase-core-2026-09-30.json"
+  }
+}

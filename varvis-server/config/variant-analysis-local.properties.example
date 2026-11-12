@@ -1,0 +1,274 @@
+# Copy this file to variant-analysis-local.properties and update local overrides.
+# variant-analysis-local.properties is ignored by Git.
+# start-varvis-server.ps1 infers VARVIS_PROJECT_ROOT from the repository location
+# with VARVIS_RESOURCE_ROOT=Code/local/resources and VARVIS_TOOL_ROOT=Code/local/tools.
+# Keep each data file together with its matching indexes and manifests.
+# Product runtime: use an explicit Windows Java 21 and Exomiser 15.1.0 install.
+# Do not use WSL paths, hg19/2512 resources, or a system-selected Java runtime.
+variant-analysis.default-engine=EXOMISER
+variant-analysis.storage-root=file:${VARVIS_PROJECT_ROOT}/local/runtime/product-variant-analyses
+variant-analysis.exomiser.enabled=true
+variant-analysis.exomiser.version=15.1.0
+variant-analysis.exomiser.data-version=2602
+variant-analysis.exomiser.java-executable=${VARVIS_TOOL_ROOT}/exomiser/java/temurin-21.0.11+10-x64-windows/bin/java.exe
+variant-analysis.exomiser.cli-jar=${VARVIS_TOOL_ROOT}/exomiser/env/exomiser-15.1.0/exomiser-cli-15.1.0.jar
+variant-analysis.exomiser.data-directory=${VARVIS_RESOURCE_ROOT}/exomiser/data
+variant-analysis.exomiser.analysis-template=${VARVIS_TOOL_ROOT}/exomiser/env/exomiser-15.1.0/examples/preset-exome-analysis.yml
+variant-analysis.exomiser.resource-fingerprint=replace-with-verified-local-fingerprint
+variant-analysis.exomiser.timeout=PT30M
+
+variant-analysis.normalization.mode=BCFTOOLS
+variant-analysis.normalization.bcftools-executable=${VARVIS_TOOL_ROOT}/msys64/ucrt64/bin/bcftools.exe
+variant-analysis.normalization.grch37-reference=${VARVIS_RESOURCE_ROOT}/reference/GRCh37.primary-chr.fa
+variant-analysis.normalization.grch38-reference=${VARVIS_RESOURCE_ROOT}/reference/grch38.p14.primary-chr.fa
+variant-analysis.normalization.grch37-profile-id=grch37-primary-chr
+variant-analysis.normalization.grch38-profile-id=grch38-primary-chr
+# Use this only when uploaded GRCh37 VCF contigs use chr1..chr22/chrX/chrY/chrM
+# but the selected FASTA uses 1..22/X/Y/MT.
+variant-analysis.normalization.grch37-contig-alias-file=${VARVIS_PROJECT_ROOT}/varvis-server/config/grch37-chr-to-ensembl-contigs.tsv
+variant-analysis.persistence.batch-size=500
+variant-analysis.persistence.persist-observations=false
+variant-analysis.persistence.observation-batch-size=1000
+variant-analysis.persistence.interpretation-batch-size=2000
+variant-analysis.persistence.interpretation-batch-max-bytes=1048576
+variant-analysis.persistence.deletion-batch-size=10000
+# Set both to false only when the target catalog already has legacy analysis tables and
+# the deployment is authorized to create only exomiser_analysis_job.
+# variant-analysis.persistence.legacy-schema-bootstrap-enabled=false
+# variant-analysis.persistence.legacy-schema-migration-enabled=false
+variant-analysis.persistence.retry-attempts=3
+variant-analysis.persistence.retry-backoff=PT1S
+# Controlled acceptance only: use an explicit disposable prefix in an existing
+# development catalog. It creates no rows in the established analysis tables.
+# Set bootstrap to true only for the acceptance run; drop the prefixed tables
+# after the recorded audit completes.
+# variant-analysis.persistence.table-prefix=exomiser_acceptance_
+# variant-analysis.persistence.acceptance-table-bootstrap-enabled=false
+
+# Optional GRCh37/hg19 input adapter. Keep this disabled when using native
+# dual-assembly VEP profiles with PRESERVE_INPUT.
+variant-analysis.lift-over.mode=DISABLED
+variant-analysis.lift-over.java-executable=java
+variant-analysis.lift-over.java-heap=6g
+variant-analysis.lift-over.picard-jar=${VARVIS_TOOL_ROOT}/liftover/picard.jar
+variant-analysis.lift-over.hg19-to-hg38-chain=${VARVIS_RESOURCE_ROOT}/liftover/hg19ToHg38.over.chain.gz
+variant-analysis.lift-over.evidence-projection-enabled=true
+variant-analysis.lift-over.evidence-projection-max-candidates=20000
+variant-analysis.lift-over.timeout=PT30M
+variant-analysis.lift-over.min-match=0.95
+
+# CADD v1.7 files are optional. Missing files produce UNAVAILABLE evidence
+# without failing the analysis job.
+variant-analysis.cadd.enabled=false
+variant-analysis.cadd.version=v1.7
+variant-analysis.cadd.tabix-executable=${VARVIS_TOOL_ROOT}/msys64/ucrt64/bin/tabix.exe
+variant-analysis.cadd.timeout=PT30M
+variant-analysis.cadd.grch38-snv-file=${VARVIS_RESOURCE_ROOT}/cadd/whole_genome_snvs.tsv.gz
+variant-analysis.cadd.grch38-indel-file=${VARVIS_RESOURCE_ROOT}/cadd/gnomad.genomes.r4.0.indel.tsv.gz
+variant-analysis.cadd.query-window-bp=1000
+variant-analysis.cadd.query-merge-gap-bp=200
+variant-analysis.cadd.parallelism=1
+# 0 disables the cap. Keep a positive limit for large WES/WGS-like uploads so
+# CADD remains auxiliary evidence instead of blocking the whole analysis.
+variant-analysis.cadd.max-candidates=5000
+variant-analysis.cadd.batch-size=500
+variant-analysis.cadd.batch-timeout=PT60S
+# Keep fallback disabled by default. Large failed CADD batches should return
+# UNAVAILABLE instead of spending hours in the slower in-process fallback path.
+variant-analysis.cadd.fallback-max-variants=0
+
+# ClinVar native GRCh37/GRCh38 local lookup is used before VCF INFO fallback.
+# Each input assembly is queried only against its matching file. Missing files
+# produce UNAVAILABLE evidence without failing the analysis job.
+variant-analysis.clin-var.enabled=false
+variant-analysis.clin-var.version=local-dual-assembly
+variant-analysis.clin-var.grch37-version=not-configured
+variant-analysis.clin-var.grch38-version=not-configured
+variant-analysis.clin-var.grch37-file=${VARVIS_RESOURCE_ROOT}/clinvar/grch37/clinvar.vcf.gz
+variant-analysis.clin-var.grch38-file=${VARVIS_RESOURCE_ROOT}/clinvar/clinvar.vcf.gz
+variant-analysis.clin-var.allow-vcf-info-fallback=false
+variant-analysis.clin-var.timeout=PT10S
+variant-analysis.clin-var.compact-index.enabled=false
+variant-analysis.clin-var.compact-index.file=${VARVIS_RESOURCE_ROOT}/clinvar/clinvar.compact.tsv
+variant-analysis.clin-var.compact-index.source-version=
+variant-analysis.clin-var.compact-index.batch-size=5000
+variant-analysis.clin-var.compact-index.allow-tabix-fallback=true
+
+# gnomAD is used as a rare-disease candidate frequency gate. Prefer one compact,
+# tabix-indexed GRCh38 TSV per chromosome when local lookup is enabled.
+variant-analysis.gnomad.enabled=false
+variant-analysis.gnomad.version=local-grch38
+variant-analysis.gnomad.grch38-files=${VARVIS_RESOURCE_ROOT}/gnomad/gnomad.exomes.v4.1.sites.chr1.vcf.bgz;${VARVIS_RESOURCE_ROOT}/gnomad/gnomad.exomes.v4.1.sites.chr2.vcf.bgz
+variant-analysis.gnomad.grch38-compact-files=${VARVIS_RESOURCE_ROOT}/gnomad/compact/gnomad.exomes.v4.1.max-af.chr1.tsv.gz;${VARVIS_RESOURCE_ROOT}/gnomad/compact/gnomad.exomes.v4.1.max-af.chr2.tsv.gz
+variant-analysis.gnomad.allow-full-vcf-fallback=false
+variant-analysis.gnomad.allow-vcf-info-fallback=false
+variant-analysis.gnomad.allele-frequency-fields=AF,AF_popmax,gnomAD_AF,gnomADg_AF,gnomADe_AF
+variant-analysis.gnomad.timeout=PT10S
+variant-analysis.gnomad.query-window-bp=1000
+variant-analysis.gnomad.query-merge-gap-bp=200
+# Optional persistent, version-specific directory for indexes cached by remote Tabix queries.
+# If omitted, queries use varvis-gnomad-index-cache below java.io.tmpdir.
+# variant-analysis.gnomad.remote-index-cache-dir=<local-cache-root>/gnomad-joint-v4.1
+
+# Transparent rare-disease ranking thresholds.
+variant-analysis.ranking.common-allele-frequency-threshold=0.01
+variant-analysis.ranking.very-common-allele-frequency-threshold=0.05
+variant-analysis.ranking.min-depth=10
+variant-analysis.ranking.min-genotype-quality=20
+variant-analysis.ranking.min-allele-balance=0.2
+variant-analysis.ranking.compact-mode-threshold=100000
+variant-analysis.ranking.detailed-max-candidates=5000
+variant-analysis.ranking.version=tier-breakdown-v1
+
+# M3 specialist providers are independent and optional. Each missing or
+# disabled source produces structured NOT_APPLICABLE or UNAVAILABLE evidence.
+variant-analysis.splice-ai.enabled=false
+variant-analysis.splice-ai.version=v1.3.1
+# SNV / indel split resources are preferred for Illumina hg38 precomputed scores.
+variant-analysis.splice-ai.snv-resource-path=${VARVIS_RESOURCE_ROOT}/spliceai/masked/spliceai_scores.masked.snv.hg38.vcf.gz
+variant-analysis.splice-ai.snv-index-path=${VARVIS_RESOURCE_ROOT}/spliceai/masked/spliceai_scores.masked.snv.hg38.vcf.gz.tbi
+variant-analysis.splice-ai.indel-resource-path=${VARVIS_RESOURCE_ROOT}/spliceai/masked/spliceai_scores.masked.indel.hg38.vcf.gz
+variant-analysis.splice-ai.indel-index-path=${VARVIS_RESOURCE_ROOT}/spliceai/masked/spliceai_scores.masked.indel.hg38.vcf.gz.tbi
+# resource-path is still supported for single-file resources; grch38-file remains a backward-compatible alias.
+variant-analysis.splice-ai.resource-path=
+variant-analysis.splice-ai.index-path=
+variant-analysis.splice-ai.grch38-file=
+variant-analysis.splice-ai.genome-build=GRCh38
+variant-analysis.splice-ai.allow-vcf-info-fallback=true
+variant-analysis.splice-ai.timeout=PT10S
+variant-analysis.splice-ai.max-candidates=0
+variant-analysis.splice-ai.batch-size=500
+variant-analysis.splice-ai.high-threshold=0.8
+variant-analysis.splice-ai.moderate-threshold=0.5
+variant-analysis.splice-ai.low-threshold=0.2
+
+# Use scripts/build-alphamissense-tabix.sh to build this indexed file from
+# DeepMind's official AlphaMissense_hg38.tsv.gz download.
+variant-analysis.alpha-missense.enabled=false
+variant-analysis.alpha-missense.version=2023-08-03
+variant-analysis.alpha-missense.grch38-file=${VARVIS_RESOURCE_ROOT}/alphamissense/alphamissense_hg38.tabix.tsv.gz
+variant-analysis.alpha-missense.timeout=PT10S
+
+# M4 AlphaGenome enhancement is submitted separately after the base analysis.
+# It sends only the selected de-identified GRCh38 candidate coordinate and
+# alleles to DeepMind's official API. Keep ALPHAGENOME_API_KEY outside this file.
+variant-analysis.alpha-genome.enabled=false
+variant-analysis.alpha-genome.version=official-api
+variant-analysis.alpha-genome.python-executable=python
+variant-analysis.alpha-genome.script-path=scripts/alphagenome_score_variant.py
+variant-analysis.alpha-genome.timeout=PT5M
+variant-analysis.alpha-genome.default-candidate-limit=20
+variant-analysis.alpha-genome.max-candidate-limit=100
+variant-analysis.alpha-genome.sequence-length=1048576
+variant-analysis.alpha-genome.max-attempts=2
+
+# VEP / MANE / LOFTEE transcript annotation foundation. For normal local
+# startup with both GRCh37 and GRCh38 bare VCF support, prefer PRESERVE_INPUT
+# plus explicit assembly-specific profiles. This avoids sending GRCh37
+# coordinates to GRCh38 resources.
+variant-analysis.analysis-assembly-policy=PRESERVE_INPUT
+variant-analysis.vep.enabled=false
+variant-analysis.vep.executable=${VARVIS_TOOL_ROOT}/vep/bin/varvis-vep.cmd
+variant-analysis.vep.cache-dir=${VARVIS_TOOL_ROOT}/vep/cache
+variant-analysis.vep.fasta=${VARVIS_TOOL_ROOT}/vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+variant-analysis.vep.plugins-dir=${VARVIS_TOOL_ROOT}/vep/plugins
+variant-analysis.vep.loftee-enabled=false
+variant-analysis.vep.execution-enabled=false
+variant-analysis.vep.pre-ranking-enabled=true
+variant-analysis.vep.pre-ranking-cache-enabled=true
+variant-analysis.vep.pre-ranking-fail-open=true
+variant-analysis.vep.pre-ranking-max-candidates=3000
+variant-analysis.vep.max-candidates=300
+variant-analysis.vep.batch-size=100
+variant-analysis.vep.timeout-seconds=600
+variant-analysis.vep.mode=top-candidates
+variant-analysis.vep.temp-dir=${VARVIS_TOOL_ROOT}/vep/tmp
+variant-analysis.vep.cleanup-temp=true
+variant-analysis.vep.version=not-configured
+variant-analysis.vep.ensembl-cache-version=not-configured
+variant-analysis.vep.mane-version=not-configured
+variant-analysis.vep.loftee-version=not-configured
+
+# Native GRCh37 profile. cache-dir is the VEP cache root containing
+# homo_sapiens/116_GRCh37, not the compressed tarball and not the
+# homo_sapiens/116_GRCh37 leaf directory.
+variant-analysis.vep.resources.GRCh37.enabled=false
+variant-analysis.vep.resources.GRCh37.assembly=GRCh37
+variant-analysis.vep.resources.GRCh37.executable=${VARVIS_TOOL_ROOT}/vep/bin/varvis-vep.cmd
+variant-analysis.vep.resources.GRCh37.cache-dir=${VARVIS_TOOL_ROOT}/vep/cache
+variant-analysis.vep.resources.GRCh37.fasta=${VARVIS_TOOL_ROOT}/vep/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+variant-analysis.vep.resources.GRCh37.plugins-dir=${VARVIS_TOOL_ROOT}/vep/plugins
+variant-analysis.vep.resources.GRCh37.species=homo_sapiens
+variant-analysis.vep.resources.GRCh37.version=116.0
+variant-analysis.vep.resources.GRCh37.ensembl-cache-version=116_GRCh37
+variant-analysis.vep.resources.GRCh37.mane-version=Ensembl_VEP_116_cache
+variant-analysis.vep.resources.GRCh37.loftee-version=not-configured
+
+# Native GRCh38 profile. GRCh38 remains supported through the explicit profile;
+# legacy single-profile keys above are kept only for backward compatibility.
+variant-analysis.vep.resources.GRCh38.enabled=false
+variant-analysis.vep.resources.GRCh38.assembly=GRCh38
+variant-analysis.vep.resources.GRCh38.executable=${VARVIS_TOOL_ROOT}/vep/bin/varvis-vep.cmd
+variant-analysis.vep.resources.GRCh38.cache-dir=${VARVIS_TOOL_ROOT}/vep/cache
+variant-analysis.vep.resources.GRCh38.fasta=${VARVIS_TOOL_ROOT}/vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+variant-analysis.vep.resources.GRCh38.plugins-dir=${VARVIS_TOOL_ROOT}/vep/plugins
+variant-analysis.vep.resources.GRCh38.species=homo_sapiens
+variant-analysis.vep.resources.GRCh38.version=116.0
+variant-analysis.vep.resources.GRCh38.ensembl-cache-version=116_GRCh38
+variant-analysis.vep.resources.GRCh38.mane-version=Ensembl_VEP_116_cache
+variant-analysis.vep.resources.GRCh38.loftee-version=not-configured
+
+# Optional explicit SpliceAI raw business path (JSON argument array, configured by the server operator).
+# Use the existing run_spliceai_raw_batch_wsl.sh with the pinned Python and scripts/e4_b3/run_spliceai_business.py.
+# variant-analysis.acmg-business.spliceai-raw-command-json=${VARVIS_SPLICEAI_RAW_COMMAND_JSON}
+# variant-analysis.acmg-business.spliceai-reference-fasta=${VARVIS_SPLICEAI_RAW_REFERENCE_FASTA}
+# variant-analysis.acmg-business.spliceai-timeout-seconds=600
+
+# Explicit BA1/PM2 remote joint queries, independent of the ranking provider timeout.
+# At most two attempts per locus, sharing one 120-second resource-group budget (plus bounded process cleanup).
+# A failed multi-locus group splits once into two smaller retries; successful children survive a sibling failure.
+# Defaults are applied to both rules; inspect pm2QueryDiagnostics / ba1QueryDiagnostics in saved runs.
+# variant-analysis.acmg-business.gnomad-timeout-seconds=60
+# variant-analysis.acmg-business.gnomad-total-timeout-seconds=120
+# variant-analysis.acmg-business.gnomad-max-attempts=2
+
+# PM4 simple in-frame backend engineering scope; OFF unless explicitly selected.
+# This replaces the execution scope for explicit submissions; it does not extend
+# the formal BA1/PM2/BS1 default or enable clinical adoption/classification.
+# Supply a server-trusted reviewed-rule-bundle-pm4-v2 and its varvis-json-c14n-v1
+# canonical SHA-256, including exact coding models, PM4 policies and covered
+# repeat/function materials. TEST_ONLY fixtures are not production knowledge.
+# Reuse input-options and submit with declarationVersion=ordinary-pm4-inframe-v1.
+# variant-analysis.acmg-business.enabled=true
+# variant-analysis.acmg-business.acceptance-scope=PM4_INFRAME_DEVELOPMENT
+# variant-analysis.acmg-business.reviewed-rule-policy-enabled=true
+# variant-analysis.acmg-business.reviewed-rule-bundle-file=${VARVIS_PM4_BUNDLE_FILE}
+# variant-analysis.acmg-business.reviewed-rule-bundle-sha256=${VARVIS_PM4_BUNDLE_SHA256}
+
+# PS2 single-trio backend engineering scope; disabled by default. One independently
+# reviewed core bundle per service instance; topN=1 and explicit ps2Selection only.
+# No transcript preparation, automatic execution, classification or clinical adoption.
+# File reads are lazy: unavailable material blocks new preparation, while trusted
+# saved GET and an exact request/profile/pins/published-input reuse remain readable.
+# variant-analysis.acmg-business.enabled=true
+# variant-analysis.acmg-business.acceptance-scope=PS2_DENOVO_DEVELOPMENT
+# variant-analysis.acmg-business.ps2-bundle-file=${VARVIS_PS2_BUNDLE_FILE}
+# variant-analysis.acmg-business.ps2-bundle-file-sha256=${VARVIS_PS2_BUNDLE_RAW_SHA256}
+# variant-analysis.acmg-business.ps2-bundle-sha256=${VARVIS_PS2_BUNDLE_CANONICAL_SHA256}
+# BA1 local exomes v1: requires local full-sites v4.1 GRCh38 files and indexes.
+# Explicit opt-in; values MET/NOT_MET apply to exomes only. Missing/invalid facts stay NE.
+# In this instance the ordinary population entry does not query remote data or execute PM2.
+# The former unqualified BA1 API/cache experiment has been retired.
+# variant-analysis.acmg-business.ba1-local-exomes-enabled=true
+
+# BS1 reuses same-identity local exomes facts; opt-in requires the BA1 local mode.
+# A pinned batch knowledge bundle supplies relationships and reviewed structured
+# thresholds. Captured associations alone never become executable thresholds.
+# See scripts/acmg-generalization/bs1-knowledge.md. Omit BOTH knowledge fields
+# to retain only the existing local expert policies. No online per-variant lookup.
+# variant-analysis.acmg-business.bs1-local-exomes-enabled=true
+# variant-analysis.acmg-business.bs1-knowledge-file=${VARVIS_BS1_KNOWLEDGE_FILE}
+# variant-analysis.acmg-business.bs1-knowledge-sha256=${VARVIS_BS1_KNOWLEDGE_SHA256}
+
+# Explicit primary chromosome naming for the pinned GRCh38 reference.
+variant-analysis.normalization.grch38-contig-alias-file=${VARVIS_PROJECT_ROOT}/varvis-server/config/grch38-canonical-to-chr-contigs.tsv

@@ -1,0 +1,71 @@
+{
+  "baseClinvarResource": {
+    "identityFingerprintSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836",
+    "resourceId": "CLINVAR_2026_03_21_GRCH38",
+    "resourceVersion": "ClinVar 2026-03-21 GRCh38"
+  },
+  "clinicalValidation": false,
+  "counts": {
+    "ambiguousVariationIdsExcluded": 2238,
+    "eligibleVariationIds": 4084758,
+    "grch38SimpleSnvRows": 4089234,
+    "matchedSubmissionRows": 5746096,
+    "outputRows": 4084758,
+    "submissionSummaryRowsRead": 6282226,
+    "variantSummaryRowsRead": 8887816
+  },
+  "derivation": {
+    "assembly": "GRCh38",
+    "builder": "build_clinvar_comparator_sidecar.py",
+    "builderVersion": "1.1.0",
+    "conditionHandling": "preserve each source row and raw condition grouping",
+    "joinKey": "VariationID",
+    "pythonVersion": "3.11.7",
+    "submittedAssertionHandling": "one submission_summary row per submissions JSON element",
+    "variantScope": "simple unique SNV",
+    "vcfClnsigscvUsage": "not used as submitted assertion content"
+  },
+  "identity": {
+    "assembly": "GRCh38",
+    "baseClinvarIdentityFingerprint": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836",
+    "format": "CLINVAR_CONDITION_AWARE_COMPARATOR_SIDECAR_V1",
+    "sourceRelease": "ClinVar 2026-03-05 monthly tab-delimited archive",
+    "submissionSummaryPublishedAt": "2026-03-05T05:05:41Z",
+    "submissionSummarySha256": "dfc875bc831292b857d8d0a85eb57157452e12f04fbc3591addbf59208de727f",
+    "variantSummaryPublishedAt": "2026-03-05T05:05:02Z",
+    "variantSummarySha256": "0d6c0c8760529befdfc1fbfcfa90cfb0aa11bfc5fe72176ac9bc9820884f710e"
+  },
+  "identityFingerprintSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde",
+  "manifestVersion": "clinvar-comparator-sidecar-manifest-v1",
+  "output": {
+    "bgzipVersion": "bgzip (htslib) 1.23.1",
+    "byteLength": 341602097,
+    "indexByteLength": 3382,
+    "indexCoordinates": "Variation ID; native GRCh38 exact allele is revalidated on lookup",
+    "indexLogicalName": "clinvar-comparator-sidecar.2026-03.grch38.tsv.gz.tbi",
+    "indexSha256": "67b302bcf2069714de8258c31416ef87ad4f4f5bf2f52cd03be7c52045f895eb",
+    "indexType": "TABIX_TBI",
+    "logicalName": "clinvar-comparator-sidecar.2026-03.grch38.tsv.gz",
+    "sha256": "de013843114fdc31667e8be52d75faa994d5c7ffc9abf26a7ab38a54ec7acd7d",
+    "tabixVersion": "tabix (htslib) 1.23.1"
+  },
+  "patientDataIncluded": false,
+  "resourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+  "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+  "sources": {
+    "submissionSummary": {
+      "byteLength": 372547268,
+      "logicalName": "submission_summary_2026-03.txt.gz",
+      "publishedAt": "2026-03-05T05:05:41Z",
+      "sha256": "dfc875bc831292b857d8d0a85eb57157452e12f04fbc3591addbf59208de727f",
+      "sourceUrl": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/archive/submission_summary_2026-03.txt.gz"
+    },
+    "variantSummary": {
+      "byteLength": 434541812,
+      "logicalName": "variant_summary_2026-03.txt.gz",
+      "publishedAt": "2026-03-05T05:05:02Z",
+      "sha256": "0d6c0c8760529befdfc1fbfcfa90cfb0aa11bfc5fe72176ac9bc9820884f710e",
+      "sourceUrl": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/archive/variant_summary_2026-03.txt.gz"
+    }
+  }
+}

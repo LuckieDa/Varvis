@@ -1,0 +1,49 @@
+{
+  "variantId": "legacy-fixture-v0",
+  "observation": {
+    "key": {
+      "genomeAssembly": "GRCh38",
+      "chromosome": "1",
+      "position": 101,
+      "reference": "A",
+      "alternate": "G"
+    },
+    "sampleId": "SYNTHETIC_CASE",
+    "genotype": "0/1",
+    "depth": 42,
+    "genotypeQuality": 99,
+    "alleleDepths": "21,21",
+    "alleleBalance": 0.5,
+    "filterStatus": "PASS",
+    "variantType": "SNV",
+    "originalRecord": "chr1\t101\t.\tA\tG"
+  },
+  "consequences": null,
+  "evidence": [
+    {
+      "source": "GNOMAD",
+      "sourceVersion": "legacy-fixture-v0",
+      "evidenceType": "POPULATION",
+      "applicability": "NO_RECORD",
+      "rawScore": null,
+      "label": "No record",
+      "summary": "No matching allele in the configured legacy source",
+      "details": {}
+    },
+    {
+      "source": "CLINVAR",
+      "sourceVersion": null,
+      "evidenceType": "CLINICAL",
+      "applicability": "UNAVAILABLE",
+      "rawScore": null,
+      "label": "Unavailable",
+      "summary": "Legacy local clinical source was unavailable",
+      "details": {}
+    }
+  ],
+  "priorityTier": null,
+  "rankingScore": null,
+  "scoreBreakdown": {},
+  "rationale": [],
+  "warnings": null
+}

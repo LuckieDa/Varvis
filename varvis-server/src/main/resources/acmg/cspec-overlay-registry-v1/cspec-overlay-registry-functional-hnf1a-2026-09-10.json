@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "cspec-overlay-registry-v1",
+  "registryId": "cspec-overlay-registry-functional-hnf1a-2026-09-10",
+  "authorityCatalogId": "authority-catalog-functional-hnf1a-2026-09-10",
+  "authorityCatalogSha256": "4db8c72683ebaa2afc31b593ae97a2e1a481451f2ab5d8c0ca810ff49567998d",
+  "baseRuleRegistryId": "acmg-rule-registry-functional-hnf1a-2026-09-10",
+  "baseRuleRegistrySha256": "1949ca52a7a16b9607aad47706f1cc9081f9f9d9662b0dfd3428b7dcc08631c0",
+  "authorityCutoff": "2026-09-10",
+  "asOf": "2026-09-10T11:00:18.389393Z",
+  "selectionPolicy": {
+    "policyId": "CSPEC_EXACT_CONTEXT_SELECTION_V1",
+    "matchMode": "EXACT_STABLE_IDENTIFIERS_SINGLE_MATCH",
+    "requiredDimensions": [
+      "HGNC_ID",
+      "MONDO_ID",
+      "MOI"
+    ],
+    "transcriptMode": "EXACT_IF_REQUIRED_BY_OVERLAY",
+    "outcomes": {
+      "zeroMatch": {
+        "overlaySelectionStatus": "NO_MATCH",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_GENERAL_RULES",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleSelectableMatch": {
+        "overlaySelectionStatus": "SELECTED",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_SELECTED_OVERLAY",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleNonSelectableMatch": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MATCH_NOT_EXECUTABLE"
+      },
+      "multipleExactMatches": {
+        "overlaySelectionStatus": "AMBIGUOUS",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MULTIPLE_EXACT_MATCHES"
+      },
+      "contextConflict": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_CONTEXT_CONFLICT"
+      }
+    }
+  },
+  "overlays": [
+    {
+      "overlayId": "cspec-overlay-gn017-3.1.0",
+      "cspecId": "GN017",
+      "version": "3.1.0",
+      "vcepId": "50016",
+      "vcepName": "ClinGen Monogenic Diabetes Variant Curation Expert Panel",
+      "publicationStatus": "RELEASED",
+      "normativeEligibility": "ELIGIBLE",
+      "approvalDate": "2025-10-10",
+      "lifecycleStatus": "CURRENT",
+      "implementationStatus": "IMPLEMENTED",
+      "selectionStatus": "SELECTABLE",
+      "transcriptRequired": true,
+      "selector": {
+        "hgncId": "HGNC:11621",
+        "mondoId": "MONDO:0015967",
+        "moi": "AUTOSOMAL_DOMINANT",
+        "transcript": {
+          "accession": "ENST00000257555",
+          "version": 11
+        }
+      },
+      "authoritySourceIds": [
+        "authority-clingen-cspec-gn017-v3.1"
+      ],
+      "sourceLocators": [
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Official ClinGen Zenodo GN017 3.1 publication",
+          "sourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+          "artifactUrl": "https://zenodo.org/records/21421568/files/GN017_3.1.0.json?download=1",
+          "artifactMediaType": "application/json",
+          "artifactRole": "CSPEC_API_EXPORT_JSON",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+          "retrievedAt": "2026-09-10T11:00:18.389393Z"
+        },
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Official ClinGen Zenodo GN017 3.1 publication",
+          "sourceRecordId": "Zenodo:21421568/ClinGen_ACMG_Specifications_GN017_3.1.pdf",
+          "artifactUrl": "https://zenodo.org/records/21421568/files/ClinGen_ACMG_Specifications_GN017_3.1.pdf?download=1",
+          "artifactMediaType": "application/pdf",
+          "artifactRole": "CSPEC_SPECIFICATION_PDF",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "e419abc37b429289c15057e202da87e006e95479ae6f50f65a527fa9a1f9ecdb",
+          "retrievedAt": "2026-09-10T11:00:18.389393Z"
+        }
+      ],
+      "snapshotSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+      "snapshotSourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+      "versionCanonicalizationProfile": "cspec-explicit-alias-map-v1",
+      "versionAliases": [
+        {
+          "rawVersion": "3.1.0",
+          "canonicalVersion": "3.1.0",
+          "sourceRecordId": "CSpec:GN017@3.1.0",
+          "apiLdhId": "467903868",
+          "apiRevision": "_ka7YRPu---",
+          "snapshotSourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+          "snapshotSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1"
+        }
+      ],
+      "versionAliasSetSha256": "8736e05d7aed23a06a6a694e376cea79c4c70d8d1df4a8c0e0369110687c7624",
+      "versionDeduplication": {
+        "status": "UNIQUE",
+        "identityFields": [
+          "CSPEC_ID",
+          "CANONICAL_VERSION",
+          "API_LDH_ID",
+          "API_REVISION",
+          "SNAPSHOT_SHA256"
+        ],
+        "onIdentityConflict": "RETAIN_ALL_REQUIRE_REVIEW_AND_ABSTAIN",
+        "reasonCode": "CSPEC_VERSION_ALIAS_IDENTITY_CONFLICT"
+      },
+      "criterionSpecifications": [
+        {
+          "criterionId": "ACMG_AMP_2015:PS3",
+          "action": "MODIFY",
+          "designation": "PS3",
+          "strength": "MODERATE",
+          "authoritySourceIds": [
+            "authority-clingen-cspec-gn017-v3.1"
+          ],
+          "sourceLocators": [
+            {
+              "locatorType": "REPOSITORY_ARTIFACT",
+              "locatorValue": "Official ClinGen Zenodo GN017 3.1 publication",
+              "sourceRecordId": "Zenodo:21421568/GN017_3.1.0.json",
+              "artifactUrl": "https://zenodo.org/records/21421568/files/GN017_3.1.0.json?download=1",
+              "artifactMediaType": "application/json",
+              "artifactRole": "CSPEC_API_EXPORT_JSON",
+              "hashScope": "RAW_BYTES",
+              "artifactSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+              "retrievedAt": "2026-09-10T11:00:18.389393Z"
+            },
+            {
+              "locatorType": "REPOSITORY_ARTIFACT",
+              "locatorValue": "Official ClinGen Zenodo GN017 3.1 publication",
+              "sourceRecordId": "Zenodo:21421568/ClinGen_ACMG_Specifications_GN017_3.1.pdf",
+              "artifactUrl": "https://zenodo.org/records/21421568/files/ClinGen_ACMG_Specifications_GN017_3.1.pdf?download=1",
+              "artifactMediaType": "application/pdf",
+              "artifactRole": "CSPEC_SPECIFICATION_PDF",
+              "hashScope": "RAW_BYTES",
+              "artifactSha256": "e419abc37b429289c15057e202da87e006e95479ae6f50f65a527fa9a1f9ecdb",
+              "retrievedAt": "2026-09-10T11:00:18.389393Z"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "business.profileId",
+              "value": "HNF1A_OXFORD_FUNCTIONAL_PS3"
+            },
+            {
+              "name": "business.profileVersion",
+              "value": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "notes": "Only the named Oxford PS3 slice is executable. Native GRCh38/P112L/assay gates remain in the bound profile. Other GN017 criteria including BS3 and RNA are not implemented by this overlay. Uses the immutable published 3.1.0 JSON with its observed revision. The live API spelling 3.1 has a later revision and is retained as a separate audit source, not silently deduplicated into this snapshot."
+    }
+  ]
+}

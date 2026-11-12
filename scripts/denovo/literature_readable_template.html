@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>文献核心资料卡</title>
+  <style>
+    :root { font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; color: #24334c; background: #f3f6fb; font-size: 16px; line-height: 1.65; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid #739bf0; outline-offset: 3px; }
+    a { color: #2859ad; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    [hidden] { display: none !important; }
+    .shell { width: min(1080px, calc(100% - 48px)); margin: 32px auto 56px; }
+    .topline { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+    .eyebrow { margin: 0 0 5px; color: #315ca4; font-size: .84rem; font-weight: 600; letter-spacing: .08em; }
+    h1 { margin: 0; color: #17396e; font-size: 1.75rem; line-height: 1.35; font-weight: 650; }
+    .subtitle { margin: 9px 0 0; color: #61708a; font-size: .93rem; max-width: 48em; }
+    .button { display: inline-flex; justify-content: center; align-items: center; gap: 6px; border: 1px solid #c9d6e9; background: #fff; color: #28539a; border-radius: 8px; padding: 8px 14px; white-space: nowrap; }
+    .button:hover { background: #edf3ff; border-color: #92acd5; }
+    .button.small { padding: 5px 10px; font-size: .88rem; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 20px; }
+    .tab { text-align: left; border: 1px solid #cfdaeb; border-radius: 10px; background: #fff; color: #52647f; padding: 10px 17px; min-height: 46px; }
+    .tab[aria-selected="true"] { border-color: #3763b1; background: #eaf1ff; color: #204c95; box-shadow: inset 0 -2px 0 #3763b1; }
+    .paper { padding: 28px 30px 30px; background: #fff; border: 1px solid #dce4ef; border-radius: 15px; box-shadow: 0 5px 22px rgb(31 61 105 / 4%); }
+    .paper-heading { padding-bottom: 23px; border-bottom: 1px solid #e3eaf3; }
+    .paper-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 0 0 11px; color: #6a7890; font-size: .86rem; }
+    .paper-kicker .kind { color: #3159a0; background: #edf3ff; border-radius: 5px; padding: 2px 8px; }
+    h2 { margin: 0; color: #1c3760; font-size: 1.3rem; line-height: 1.5; overflow-wrap: anywhere; }
+    .context { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 15px 0 0; }
+    .context-item { margin: 0; min-width: 0; }
+    .context-label { display: inline; color: #718099; margin-right: 8px; font-size: .9rem; }
+    .context-value { display: inline; color: #344a69; overflow-wrap: anywhere; }
+    .variant-list { margin-top: 8px; }
+    .purpose { margin: 13px 0 0; color: #5f7089; font-size: .92rem; }
+    .finding { margin: 23px 0; padding: 17px 19px; border-left: 4px solid #bf8626; border-radius: 0 9px 9px 0; background: #fff8e9; }
+    .finding strong { color: #745118; display: block; font-size: 1rem; }
+    .finding p { margin: 6px 0 0; color: #7f6842; font-size: .93rem; }
+    .finding.positive { border-left-color: #38816b; background: #eef8f3; }
+    .finding.positive strong { color: #24604d; }
+    .finding.positive p { color: #4b6c5e; }
+    .section-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; margin: 27px 0 13px; }
+    h3 { margin: 0; font-size: 1.08rem; color: #25466f; }
+    .section-caption { color: #778398; font-size: .85rem; }
+    .case { margin: 18px 0 24px; }
+    .case-name { color: #3c5477; font-weight: 600; margin: 0 0 10px; font-size: .96rem; }
+    .case-name span { margin-left: 12px; color: #7b879a; font-weight: 400; font-size: .86rem; }
+    .facts { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: .94rem; }
+    .facts th, .facts td { padding: 13px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid #e8edf4; overflow-wrap: anywhere; }
+    .facts thead th { background: #f4f7fb; color: #5a6f8b; font-size: .86rem; font-weight: 500; }
+    .facts th:first-child { width: 19%; border-radius: 7px 0 0 0; }
+    .facts th:nth-child(2) { width: 43%; }
+    .facts th:nth-child(3) { width: 25%; }
+    .facts th:last-child { width: 13%; border-radius: 0 7px 0 0; }
+    .field-name { color: #48617e; font-weight: 500; }
+    .field-value { color: #253b57; white-space: pre-line; }
+    .field-note { color: #7a8698; font-size: .83rem; margin-top: 6px; white-space: pre-line; }
+    .badge { display: inline-block; padding: 3px 8px; font-size: .82rem; line-height: 1.5; border-radius: 5px; }
+    .supported { background: #edf6f1; color: #35745a; }
+    .pending { background: #fff5de; color: #8a641e; }
+    .conflict { background: #fff0eb; color: #a45736; }
+    .missing { background: #f0f3f7; color: #6f7d91; }
+    .no-source { color: #8b96a7; font-size: .83rem; }
+    .gap-list { display: grid; gap: 13px; }
+    .gap { border: 1px solid #eadfca; background: #fffdf7; padding: 16px 18px; border-radius: 9px; }
+    .gap h4 { margin: 0 0 11px; color: #7e5e29; font-size: .97rem; }
+    .gap dl { display: grid; grid-template-columns: 5em minmax(0, 1fr); gap: 7px 14px; margin: 0; font-size: .91rem; }
+    .gap dt { color: #7f735e; }
+    .gap dd { margin: 0; color: #4c5360; white-space: pre-line; overflow-wrap: anywhere; }
+    .empty-section { margin: 8px 0; padding: 16px 0; color: #7b879a; }
+    .limits { margin: 22px 0 0; padding-left: 21px; color: #6c7890; font-size: .87rem; }
+    .limits li { margin: 7px 0; }
+    .provenance { border-top: 1px solid #e3eaf3; margin-top: 27px; padding-top: 17px; font-size: .88rem; color: #63738c; }
+    .provenance summary { cursor: pointer; color: #4b6792; width: fit-content; padding: 4px 0; }
+    .provenance dl { display: grid; grid-template-columns: 6em minmax(0, 1fr); gap: 10px 16px; margin: 14px 0 0; }
+    .provenance dt { color: #8490a2; }
+    .provenance dd { margin: 0; overflow-wrap: anywhere; }
+    .file-path { font-family: ui-monospace, Consolas, monospace; font-size: .79rem; }
+    .footline { margin: 17px 4px 0; font-size: .82rem; color: #8490a4; }
+    .load-error { color: #90483d; padding: 25px; border: 1px solid #e4c8c4; background: #fff4f1; border-radius: 10px; }
+    dialog { width: min(920px, calc(100% - 32px)); max-height: 88vh; padding: 0; border: 1px solid #cfd9e8; border-radius: 12px; color: #2c3f58; background: #fff; box-shadow: 0 22px 70px rgb(24 43 74 / 24%); }
+    dialog::backdrop { background: rgb(29 43 65 / 45%); }
+    .dialog-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; padding: 20px 23px; border-bottom: 1px solid #e3eaf3; }
+    .dialog-heading h2 { font-size: 1.1rem; }
+    .dialog-heading p { margin: 4px 0 0; color: #7a8799; font-size: .85rem; }
+    .dialog-content { padding: 0 23px 23px; }
+    .citation { padding-top: 20px; }
+    .citation + .citation { margin-top: 20px; border-top: 1px solid #e4eaf2; }
+    .citation-label { color: #456493; font-size: .88rem; margin: 0 0 9px; }
+    blockquote { margin: 0; padding: 12px 15px; background: #f5f7fb; border-left: 3px solid #becde5; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .94rem; line-height: 1.8; }
+    .locator { margin: 12px 0 0; color: #7c899c; font-size: .8rem; overflow-wrap: anywhere; }
+    .dialog-help { margin: 18px 0 0; color: #7a8799; font-size: .85rem; }
+    .source-actions, .source-gallery { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .source-actions { margin: 12px 0 0; }
+    .source-actions a { text-decoration: none; }
+    .source-image { display: block; width: 100%; height: auto; }
+    .image-error { margin: 12px 0 0; color: #8a641e; font-size: .88rem; }
+    .source-gallery { margin: 22px 0; }
+    .source-gallery h3 { font-size: .95rem; margin-right: 4px; }
+    @media (max-width: 640px) {
+      .shell { width: calc(100% - 24px); margin-top: 20px; }
+      .topline { gap: 12px; }
+      h1 { font-size: 1.45rem; }
+      .topline .button { padding: 7px 10px; font-size: .85rem; }
+      .paper { padding: 20px 16px 24px; border-radius: 12px; }
+      .tab { flex: 1 1 auto; padding: 9px 12px; }
+      .context { gap: 8px 20px; }
+      .facts, .facts tbody, .facts tr, .facts td { display: block; width: 100%; }
+      .facts thead { display: none; }
+      .facts tr { margin: 0 0 12px; padding: 13px 14px; border: 1px solid #e0e7f1; border-radius: 9px; }
+      .facts td { border: 0; padding: 0; }
+      .facts .field-name { font-size: .88rem; color: #6a7d97; }
+      .facts .field-value { margin-top: 5px; }
+      .facts .field-status { margin-top: 10px; }
+      .facts .field-source { margin-top: 10px; }
+      .gap { padding: 14px; }
+      .gap dl { grid-template-columns: 1fr; gap: 3px; }
+      .gap dd { margin-bottom: 8px; }
+      .provenance dl { grid-template-columns: 1fr; gap: 3px; }
+      .provenance dd { margin-bottom: 9px; }
+      .case-name span { display: block; margin-left: 0; }
+    }
+    @media print {
+      :root { background: #fff; font-size: 11pt; }
+      .shell { width: 100%; margin: 0; }
+      .topline { margin-bottom: 15px; }
+      .tabs, .print-button, .field-source .button, dialog, .provenance summary { display: none !important; }
+      .paper { padding: 0; border: 0; box-shadow: none; }
+      .finding, .gap { break-inside: avoid; }
+      .facts tr { break-inside: avoid; }
+      .provenance { font-size: .8rem; }
+      .provenance > *:not(summary) { display: block; }
+      .footline { margin-left: 0; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topline">
+      <div>
+        <p class="eyebrow">VARVIS · 文献资料</p>
+        <h1 id="report-title">资料信息提取</h1>
+      </div>
+      <button class="button print-button" id="print-report" type="button">打印资料卡</button>
+    </header>
+    <nav class="tabs" id="document-tabs" role="tablist" aria-label="选择文献"></nav>
+    <section id="document-panel" role="tabpanel" aria-live="polite"></section>
+    <noscript><p class="load-error">此资料卡需要浏览器开启脚本才能显示已保存内容；它不发送网络请求。</p></noscript>
+  </main>
+
+  <dialog id="source-dialog" aria-labelledby="source-title">
+    <div class="dialog-heading">
+      <div>
+        <h2 id="source-title">原文依据</h2>
+        <p id="source-subtitle"></p>
+      </div>
+      <button class="button small" id="close-source" type="button">关闭</button>
+    </div>
+    <div class="dialog-content" id="source-content"></div>
+  </dialog>
+
+  <script type="application/json" id="report-data">__LITERATURE_READABLE_DATA__</script>
+  <script>
+    'use strict';
+    (function () {
+      const tabs = document.getElementById('document-tabs');
+      const panel = document.getElementById('document-panel');
+      const reportTitle = document.getElementById('report-title');
+      const printButton = document.getElementById('print-report');
+      const dialog = document.getElementById('source-dialog');
+      const dialogTitle = document.getElementById('source-title');
+      const dialogSubtitle = document.getElementById('source-subtitle');
+      const dialogContent = document.getElementById('source-content');
+      const closeButton = document.getElementById('close-source');
+      const statuses = { supported: '有原文支持', pending: '仍需核对', conflict: '存在不同说法', missing: '资料未提供' };
+      let selectedIndex = 0;
+      let sourceTrigger = null;
+      let report;
+
+      function string(value, fallback) {
+        if (typeof value === 'string' && value.trim()) return value;
+        if (typeof value === 'number' && Number.isFinite(value)) return String(value);
+        if (Array.isArray(value)) return value.filter(item => typeof item === 'string' && item.trim()).join('；') || fallback;
+        return fallback;
+      }
+      function node(tag, className, value) {
+        const element = document.createElement(tag);
+        if (className) element.className = className;
+        if (value !== undefined) element.textContent = value;
+        return element;
+      }
+      function field(container, label, value, className) {
+        container.append(node('dt', '', label), node('dd', className || '', string(value, '未记录')));
+      }
+      function contextField(container, label, value) {
+        const item = node('p', 'context-item');
+        item.append(node('span', 'context-label', label), node('span', 'context-value', string(value, '尚未明确')));
+        container.append(item);
+      }
+      function safeArticleLink(value) {
+        if (typeof value !== 'string') return null;
+        try {
+          const parsed = new URL(value);
+          return parsed.protocol === 'https:' || parsed.protocol === 'http:' ? parsed.href : null;
+        } catch (_) { return null; }
+      }
+      function safeLocalLink(value, extension, rootValue) {
+        if (typeof value !== 'string' || typeof rootValue !== 'string') return null;
+        try {
+          const parsed = new URL(value);
+          const root = new URL(rootValue);
+          return parsed.protocol === 'file:' && root.protocol === 'file:' && !parsed.hostname && !root.hostname &&
+            !parsed.search && parsed.pathname.startsWith(root.pathname) && extension.test(parsed.pathname) ? parsed.href : null;
+        } catch (_) { return null; }
+      }
+      function sourceLink(label, href, className) {
+        const link = node('a', className || 'button small', label);
+        link.href = href; link.target = '_blank'; link.rel = 'noopener noreferrer';
+        return link;
+      }
+      function showSource(row, documentRecord, trigger) {
+        sourceTrigger = trigger;
+        dialogTitle.textContent = string(row.label, '原文依据');
+        dialogSubtitle.textContent = string(documentRecord.pmcid, '对应资料') + ' · 原文依据';
+        dialogContent.replaceChildren();
+        const allRefs = Array.isArray(row.sourceRefs) ? row.sourceRefs.filter(ref => ref && typeof ref === 'object') : [];
+        // Multiple fields can cite one passage. Keep its complete excerpt once,
+        // while preserving different locations and non-contained quotations.
+        const refs = allRefs.filter((ref, index) => !allRefs.some((other, otherIndex) => {
+          if (otherIndex === index || string(other.unitId, '') !== string(ref.unitId, '')) return false;
+          const quote = string(ref.quote, '');
+          const otherQuote = string(other.quote, '');
+          if (quote === otherQuote) return otherIndex < index;
+          return Boolean(string(ref.unitId, '') && quote && otherQuote.includes(quote));
+        }));
+        const shownImages = new Set();
+        refs.forEach((ref, index) => {
+          const candidates = documentRecord.sourceScreenshots && documentRecord.sourceScreenshots[ref.unitId];
+          const snapshot = Array.isArray(candidates) ? candidates.find(item => item && item.quote === ref.quote)
+            : candidates;
+          const screenshotRoot = documentRecord.sources && documentRecord.sources.localScreenshotRoot;
+          const imageUrl = snapshot && safeLocalLink(snapshot.imageUrl, /\.(png|jpe?g|webp)$/i, screenshotRoot);
+          const fullTextUrl = snapshot && safeLocalLink(snapshot.fullTextUrl, /\.html$/i, screenshotRoot);
+          if (imageUrl && shownImages.has(imageUrl)) return;
+          const section = node('section', 'citation');
+          section.append(node('p', 'citation-label', string(ref.label, '依据 ' + (index + 1))));
+          if (imageUrl) {
+            shownImages.add(imageUrl);
+            const image = node('img', 'source-image');
+            image.src = imageUrl; image.alt = '原文相关区域截图'; image.loading = 'lazy'; image.decoding = 'async';
+            const error = node('p', 'image-error', '截图暂时无法显示，请查看完整原文。');
+            error.hidden = true;
+            image.addEventListener('error', () => { image.hidden = true; error.hidden = false; });
+            section.append(image, error);
+            const actions = node('div', 'source-actions');
+            if (fullTextUrl) actions.append(sourceLink('查看完整原文', fullTextUrl));
+            if (fullTextUrl) section.append(actions);
+          } else {
+            section.append(node('blockquote', '', string(ref.quote, '本记录没有保存可展示的原文摘录。')));
+            if (ref.unitId) section.append(node('p', 'locator', '原文位置：' + string(ref.unitId, '未记录')));
+          }
+          dialogContent.append(section);
+        });
+        dialogContent.append(node('p', 'dialog-help', '原文支持表示这条信息有可追溯的出处；它本身不等于证据已经满足。'));
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else dialog.setAttribute('open', '');
+        closeButton.focus();
+      }
+      function closeSource() {
+        if (typeof dialog.close === 'function') dialog.close();
+        else dialog.removeAttribute('open');
+        if (sourceTrigger && sourceTrigger.isConnected) sourceTrigger.focus();
+      }
+      function buildFacts(caseRecord, documentRecord) {
+        const section = node('section', 'case');
+        const caseHeading = node('h4', 'case-name', string(caseRecord.label, '文中病例'));
+        if (caseRecord.family) caseHeading.append(node('span', '', string(caseRecord.family, '')));
+        section.append(caseHeading);
+        const rows = Array.isArray(caseRecord.rows) ? caseRecord.rows.filter(row => row && typeof row === 'object') : [];
+        if (!rows.length) {
+          section.append(node('p', 'empty-section', '本病例暂未保存可展示的核心字段。'));
+          return section;
+        }
+        const table = node('table', 'facts');
+        table.setAttribute('aria-label', string(caseRecord.label, '病例') + '核心信息');
+        const head = node('thead');
+        const headRow = node('tr');
+        ['核心信息', '已提取内容', '当前核查情况', '出处'].forEach(label => {
+          const th = node('th', '', label); th.scope = 'col'; headRow.append(th);
+        });
+        head.append(headRow);
+        const body = node('tbody');
+        rows.forEach(row => {
+          const tr = node('tr');
+          tr.append(node('td', 'field-name', string(row.label, '资料项')));
+          const value = node('td', 'field-value', string(row.value, '尚未取得明确记录'));
+          if (row.note) value.append(node('div', 'field-note', string(row.note, '')));
+          tr.append(value);
+          const statusCell = node('td', 'field-status');
+          const status = Object.hasOwn(statuses, row.status) ? row.status : 'pending';
+          statusCell.append(node('span', 'badge ' + status, string(row.statusText, statuses[status])));
+          tr.append(statusCell);
+          const sourceCell = node('td', 'field-source');
+          if (Array.isArray(row.sourceRefs) && row.sourceRefs.some(ref => ref && typeof ref === 'object')) {
+            const button = node('button', 'button small', '原文');
+            button.type = 'button';
+            button.setAttribute('aria-label', '查看“' + string(row.label, '本条信息') + '”的原文依据');
+            button.addEventListener('click', () => showSource(row, documentRecord, button));
+            sourceCell.append(button);
+          } else sourceCell.append(node('span', 'no-source', '未记录定位'));
+          tr.append(sourceCell);
+          body.append(tr);
+        });
+        table.append(head, body);
+        section.append(table);
+        return section;
+      }
+      function renderDocument(index) {
+        selectedIndex = index;
+        const documentRecord = report.documents[index];
+        if (!documentRecord || typeof documentRecord !== 'object') return;
+        Array.from(tabs.children).forEach((tab, i) => tab.setAttribute('aria-selected', String(i === index)));
+        panel.setAttribute('aria-labelledby', 'document-tab-' + index);
+        panel.replaceChildren();
+        const article = node('article', 'paper');
+        const heading = node('header', 'paper-heading');
+        const kicker = node('p', 'paper-kicker');
+        kicker.append(node('span', 'kind', string(documentRecord.kind, '资料')));
+        kicker.append(node('span', '', string(documentRecord.pmcid, '已登记资料')));
+        heading.append(kicker, node('h2', '', string(documentRecord.title, '文献核心资料')));
+        const context = node('div', 'context');
+        contextField(context, '基因', documentRecord.gene);
+        contextField(context, '疾病背景', documentRecord.disease);
+        if (documentRecord.contextLabel) contextField(context, '本卡对象', documentRecord.contextLabel);
+        heading.append(context);
+        const variants = node('div', 'variant-list');
+        contextField(variants, '目标变异', documentRecord.targetVariants);
+        heading.append(variants);
+        if (documentRecord.purpose) heading.append(node('p', 'purpose', string(documentRecord.purpose, '')));
+        article.append(heading);
+        const summary = documentRecord.summary && typeof documentRecord.summary === 'object' ? documentRecord.summary : {};
+        const finding = node('section', summary.tone === 'positive' ? 'finding positive' : 'finding');
+        finding.setAttribute('aria-label', '本次资料结论');
+        finding.append(node('strong', '', string(summary.headline, '已提取资料，仍需结合本次背景核查')));
+        if (summary.detail) finding.append(node('p', '', string(summary.detail, '')));
+        article.append(finding);
+        const sectionTitle = node('div', 'section-title');
+        sectionTitle.append(node('h3', '', '已提取的核心信息'), node('span', 'section-caption', '有原文支持 ≠ 已取得计分资格'));
+        article.append(sectionTitle);
+        const cases = Array.isArray(documentRecord.cases) ? documentRecord.cases.filter(value => value && typeof value === 'object') : [];
+        if (cases.length && documentRecord.kind === 'PP1') {
+          const families = new Map();
+          cases.forEach(caseRecord => {
+            const family = string(caseRecord.family, '文中家系');
+            if (!families.has(family)) families.set(family, []);
+            (caseRecord.rows || []).forEach(row => families.get(family).push({ ...row,
+              label: string(caseRecord.label, '文中成员') + ' · ' + string(row.label, '资料项') }));
+          });
+          families.forEach((rows, label) => article.append(buildFacts({ label, rows }, documentRecord)));
+        } else if (cases.length) cases.forEach(caseRecord => article.append(buildFacts(caseRecord, documentRecord)));
+        else article.append(node('p', 'empty-section', '当前资料尚未保存可展示的病例核心信息。'));
+        const galleryItems = Array.isArray(documentRecord.sourceGallery) ? documentRecord.sourceGallery.filter(item => item && Array.isArray(item.sourceRefs)) : [];
+        if (galleryItems.length) {
+          const gallery = node('div', 'source-gallery');
+          gallery.append(node('h3', '', '原文图表'));
+          galleryItems.forEach(item => {
+            const button = node('button', 'button small', string(item.label, '查看图表'));
+            button.type = 'button';
+            button.addEventListener('click', () => showSource(item, documentRecord, button));
+            gallery.append(button);
+          });
+          article.append(gallery);
+        }
+        const gaps = Array.isArray(documentRecord.gaps) ? documentRecord.gaps.filter(value => value && typeof value === 'object') : [];
+        if (gaps.length) {
+          const gapHeading = node('div', 'section-title');
+          gapHeading.append(node('h3', '', string(report.gapsHeading, '尚未完成的判定条件')));
+          article.append(gapHeading);
+          const list = node('div', 'gap-list');
+          gaps.forEach(gap => {
+            const item = node('section', 'gap');
+            item.append(node('h4', '', string(gap.title, '待补充信息')));
+            const definitions = node('dl');
+            field(definitions, '需要', gap.required);
+            field(definitions, '已有', gap.available);
+            field(definitions, '差异', gap.difference);
+            item.append(definitions);
+            list.append(item);
+          });
+          article.append(list);
+        }
+        const limitations = Array.isArray(documentRecord.limits) ? documentRecord.limits.filter(value => typeof value === 'string' && value.trim()) : [];
+        if (limitations.length) {
+          const list = node('ul', 'limits');
+          limitations.forEach(value => list.append(node('li', '', value)));
+          article.append(list);
+        }
+        const provenance = node('details', 'provenance');
+        provenance.append(node('summary', '', '查看来源与阅读范围'));
+        const info = node('dl');
+        const sources = documentRecord.sources && typeof documentRecord.sources === 'object' ? documentRecord.sources : {};
+        const articleUrl = safeArticleLink(sources.articleUrl);
+        if (articleUrl) {
+          info.append(node('dt', '', '公开原文'));
+          const dd = node('dd'); const a = node('a', '', '打开论文来源');
+          a.href = articleUrl; a.target = '_blank'; a.rel = 'noopener noreferrer';
+          dd.append(a); info.append(dd);
+        }
+        const coverage = documentRecord.coverage && typeof documentRecord.coverage === 'object' ? documentRecord.coverage : {};
+        field(info, '阅读范围', coverage.text);
+        if (typeof coverage.modelCalls === 'number') field(info, '本任务阅读', '模型调用 ' + coverage.modelCalls + ' 次');
+        if (typeof coverage.cachedExtractionChunks === 'number' || typeof coverage.cachedReviewChunks === 'number') {
+          const parts = [];
+          if (typeof coverage.cachedExtractionChunks === 'number') parts.push('复用提取片段 ' + coverage.cachedExtractionChunks + ' 个');
+          if (typeof coverage.cachedReviewChunks === 'number') parts.push('复用复核片段 ' + coverage.cachedReviewChunks + ' 个');
+          field(info, '已保存复用', parts.join('，'));
+        }
+        if (sources.inputPath) field(info, '提取记录', sources.inputPath, 'file-path');
+        if (sources.originalPath) field(info, '原始资料', sources.originalPath, 'file-path');
+        provenance.append(info); article.append(provenance);
+        panel.append(article);
+      }
+      printButton.addEventListener('click', () => window.print());
+      closeButton.addEventListener('click', closeSource);
+      dialog.addEventListener('click', event => {
+        if (event.target === dialog) {
+          const bounds = dialog.getBoundingClientRect();
+          if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeSource();
+        }
+      });
+      dialog.addEventListener('close', () => { if (sourceTrigger && sourceTrigger.isConnected) sourceTrigger.focus(); });
+      tabs.addEventListener('keydown', event => {
+        if (!report || !Array.isArray(report.documents) || !report.documents.length) return;
+        const total = report.documents.length;
+        let index = selectedIndex;
+        if (event.key === 'ArrowRight') index = (index + 1) % total;
+        else if (event.key === 'ArrowLeft') index = (index - 1 + total) % total;
+        else if (event.key === 'Home') index = 0;
+        else if (event.key === 'End') index = total - 1;
+        else return;
+        event.preventDefault(); renderDocument(index); tabs.children[index].focus();
+      });
+      try {
+        report = JSON.parse(document.getElementById('report-data').textContent);
+        if (!report || report.schemaVersion !== 'literature-readable-view-v1' || !Array.isArray(report.documents) || !report.documents.length) throw new Error('资料内容不完整');
+        if (report.title) reportTitle.textContent = string(report.title, '资料信息提取');
+        report.documents = report.documents.filter(value => value && typeof value === 'object');
+        if (!report.documents.length) throw new Error('没有可读的资料卡');
+        report.documents.forEach((documentRecord, index) => {
+          const button = node('button', 'tab', string(documentRecord.gene, '文献 ' + (index + 1)) + ' · ' + string(documentRecord.pmcid, '资料 ' + (index + 1)));
+          button.type = 'button'; button.role = 'tab'; button.id = 'document-tab-' + index;
+          button.setAttribute('aria-controls', 'document-panel'); button.setAttribute('aria-selected', String(index === 0));
+          button.addEventListener('click', () => renderDocument(index)); tabs.append(button);
+        });
+        renderDocument(0);
+      } catch (_) {
+        tabs.hidden = true; printButton.hidden = true;
+        panel.append(node('p', 'load-error', '无法读取资料卡内容。请重新导出后打开；原始资料不会因此被修改。'));
+      }
+    }());
+  </script>
+</body>
+</html>

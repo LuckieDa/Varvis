@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nbscn.varvis.mapper.varvis.VariantDiseaseMapper">
+
+    <resultMap id="diseaseSummaryMap" type="org.nbscn.varvis.dto.variant.response.DiseaseSummaryDTO">
+        <result property="diseaseId" column="disease_id"/>
+        <result property="diseaseName" column="disease_name"/>
+        <result property="diseaseNameCn" column="disease_name_cn"/>
+        <result property="orphaNumber" column="orpha_number"/>
+        <result property="omimId" column="omim_id"/>
+        <result property="locus" column="locus"/>
+        <result property="locusType" column="locus_type"/>
+        <result property="bandId" column="band_id"/>
+    </resultMap>
+
+    <resultMap id="diseaseDetailMap" type="org.nbscn.varvis.dto.variant.response.DiseaseDetailDTO">
+        <result property="diseaseId" column="disease_id"/>
+        <result property="diseaseName" column="disease_name"/>
+        <result property="diseaseNameCn" column="disease_name_cn"/>
+        <result property="orphaNumber" column="orpha_number"/>
+        <result property="omimId" column="omim_id"/>
+        <result property="locus" column="locus"/>
+        <result property="locusType" column="locus_type"/>
+        <result property="bandId" column="band_id"/>
+    </resultMap>
+
+    <resultMap id="geneSummaryMap" type="org.nbscn.varvis.dto.variant.response.GeneSummaryDTO">
+        <result property="geneSymbol" column="gene_symbol"/>
+        <result property="geneName" column="gene_name"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="startBp" column="start_bp"/>
+        <result property="endBp" column="end_bp"/>
+        <result property="diseaseCount" column="disease_count"/>
+    </resultMap>
+
+    <select id="listDiseasesByBandId" parameterType="long" resultMap="diseaseSummaryMap">
+        SELECT d.disease_id,
+               d.disease_name,
+               NULL AS disease_name_cn,
+               d.orpha_code AS orpha_number,
+               NULL AS omim_id,
+               d.locus_text AS locus,
+               d.locus_type,
+               dbm.cytoband_id AS band_id
+        FROM disease_band_map dbm
+                 JOIN disease d ON d.disease_id = dbm.disease_id
+        WHERE dbm.cytoband_id = #{bandId}
+        ORDER BY d.disease_name, d.disease_id
+    </select>
+
+    <select id="listDiseasesByRegion" resultMap="diseaseSummaryMap">
+        SELECT DISTINCT d.disease_id,
+               d.disease_name,
+               NULL AS disease_name_cn,
+               d.orpha_code AS orpha_number,
+               NULL AS omim_id,
+               d.locus_text AS locus,
+               d.locus_type,
+               dbm.cytoband_id AS band_id
+        FROM cytoband cb
+                 JOIN chromosome chr ON chr.chromosome_id = cb.chromosome_id
+                 JOIN disease_band_map dbm ON dbm.cytoband_id = cb.cytoband_id
+                 JOIN disease d ON d.disease_id = dbm.disease_id
+        WHERE chr.chr_name = #{chromosome}
+          AND cb.start_bp &lt;= #{endBp}
+          AND cb.stop_bp &gt;= #{startBp}
+        ORDER BY d.disease_name, d.disease_id
+    </select>
+
+    <select id="getDiseaseDetail" parameterType="java.lang.String" resultMap="diseaseDetailMap">
+        SELECT d.disease_id,
+               d.disease_name,
+               NULL AS disease_name_cn,
+               d.orpha_code AS orpha_number,
+               NULL AS omim_id,
+               d.locus_text AS locus,
+               d.locus_type,
+               (
+                   SELECT dbm.cytoband_id
+                   FROM disease_band_map dbm
+                   WHERE dbm.disease_id = d.disease_id
+                   ORDER BY dbm.cytoband_id
+                   LIMIT 1
+               ) AS band_id
+        FROM disease d
+        WHERE d.disease_id = #{diseaseId}
+        LIMIT 1
+    </select>
+
+    <select id="listGenesByDisease" parameterType="java.lang.String" resultMap="geneSummaryMap">
+        SELECT g.gene_symbol,
+               g.gene_symbol AS gene_name,
+               chr.chr_name AS chromosome,
+               g.start_bp,
+               g.end_bp,
+               (
+                   SELECT COUNT(DISTINCT dgm2.disease_id)
+                   FROM disease_gene_map dgm2
+                   WHERE dgm2.gene_id = g.gene_id
+               ) AS disease_count
+        FROM disease_gene_map dgm
+                 JOIN gene g ON g.gene_id = dgm.gene_id
+                 LEFT JOIN chromosome chr ON chr.chromosome_id = g.chromosome_id
+        WHERE dgm.disease_id = #{diseaseId}
+        ORDER BY g.gene_symbol
+    </select>
+
+    <select id="listGenesByBandId" parameterType="long" resultMap="geneSummaryMap">
+        SELECT g.gene_symbol,
+               g.gene_symbol AS gene_name,
+               chr.chr_name AS chromosome,
+               COALESCE(gc.start_bp, g.start_bp) AS start_bp,
+               COALESCE(gc.end_bp, g.end_bp) AS end_bp,
+               COUNT(DISTINCT dgm.disease_id) AS disease_count
+        FROM disease_band_map dbm
+                 JOIN disease_gene_map dgm ON dgm.disease_id = dbm.disease_id
+                 JOIN gene g ON g.gene_id = dgm.gene_id
+                 LEFT JOIN chromosome chr ON chr.chromosome_id = g.chromosome_id
+                 LEFT JOIN gene_coordinate gc ON gc.gene_coordinate_id = (
+                    SELECT gc2.gene_coordinate_id
+                    FROM gene_coordinate gc2
+                    WHERE gc2.gene_symbol = g.gene_symbol
+                    ORDER BY gc2.is_basic DESC, gc2.source_db, gc2.gene_coordinate_id
+                    LIMIT 1
+                 )
+        WHERE dbm.cytoband_id = #{bandId}
+        GROUP BY g.gene_id,
+                 g.gene_symbol,
+                 chr.chr_name,
+                 COALESCE(gc.start_bp, g.start_bp),
+                 COALESCE(gc.end_bp, g.end_bp)
+        ORDER BY disease_count DESC, g.gene_symbol
+    </select>
+
+    <select id="listDiseaseMoi" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT moi_value
+        FROM disease_moi
+        WHERE disease_id = #{diseaseId}
+        ORDER BY moi_value
+    </select>
+
+    <select id="listDiseaseOnset" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT onset_value
+        FROM disease_onset
+        WHERE disease_id = #{diseaseId}
+        ORDER BY onset_value
+    </select>
+
+    <select id="listDiseaseLinks" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT CONCAT(link_source, ': ', link_url)
+        FROM disease_gene_link
+        WHERE disease_id = #{diseaseId}
+        ORDER BY link_source, link_id
+    </select>
+</mapper>

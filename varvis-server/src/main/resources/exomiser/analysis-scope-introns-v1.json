@@ -1,0 +1,7 @@
+{
+  "policyId": "VARVIS_INCLUDE_INTRONS_V2",
+  "outputCoveragePolicy": "EXOMISER_15_1_ZERO_PASS_V1",
+  "removeFromVariantEffectExclusions": "CODING_TRANSCRIPT_INTRON_VARIANT",
+  "nonCodingKeepNonPathogenic": true,
+  "preserveOtherFiltersAndRanking": true
+}

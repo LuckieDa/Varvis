@@ -1,0 +1,32 @@
+{
+  "schemaVersion" : "benchmark-case-result-v1",
+  "resultId" : "synthetic-result-unavailable",
+  "createdAt" : "2026-01-01T00:05:00Z",
+  "runId" : "synthetic-run-001",
+  "datasetId" : "synthetic-public-like-dataset",
+  "caseId" : "case-alpha",
+  "groupId" : "G1",
+  "caseExecutionStatus" : "FAILED",
+  "analysisReference" : "analysis-synthetic-alpha-g1",
+  "truthMatches" : [ {
+    "truthGene" : "SYNGENE1",
+    "truthCanonicalIdentity" : {
+      "genomeAssembly" : "GRCh38",
+      "chromosome" : "1",
+      "position" : 100,
+      "reference" : "A",
+      "alternate" : "G"
+    },
+    "matchStatus" : "RANK_UNAVAILABLE",
+    "assembly" : "GRCh38",
+    "ambiguityStatus" : "UNAVAILABLE",
+    "rankingContractVersion" : "ranking-contract-v1",
+    "rankStatus" : "RANK_UNAVAILABLE",
+    "rankingUniverseSize" : 0
+  } ],
+  "stageRetention" : [
+    { "stage" : "RAW_INPUT", "presence" : "UNKNOWN", "note" : "synthetic infrastructure failure" }
+  ],
+  "primaryFailureCode" : "F11",
+  "failureNote" : "ranking reader unavailable; no rank inferred"
+}

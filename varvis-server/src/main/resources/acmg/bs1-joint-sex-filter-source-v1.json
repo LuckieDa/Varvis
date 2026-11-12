@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "bs1-joint-sex-filter-source-v1",
+  "version": "1.0.0",
+  "release": "4.1",
+  "dataset": "joint",
+  "assembly": "GRCh38",
+  "resourceFingerprintSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+  "definitionId": "GNOMAD_4_1_JOINT_FILTER",
+  "sourceLocator": "https://discuss.gnomad.broadinstitute.org/t/is-joint-combined-genome-exome-faf-unreliable-if-either-genome-or-exome-fails-filters/88/3",
+  "sourceAuthor": "jkgoodrich",
+  "sourcePublishedAt": "2024-09-06T17:22:22.133Z",
+  "semantics": {
+    "PASS": "Both datasets pass, or one passes and the other lacks the variant; does not establish presence in both.",
+    "failureValues": [
+      "EXOMES_FILTERED",
+      "GENOMES_FILTERED",
+      "BOTH_FILTERED"
+    ]
+  },
+  "headers": {
+    "X": {
+      "url": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/joint/gnomad.joint.v4.1.sites.chrX.vcf.bgz",
+      "retrievedAt": "2026-11-03T12:26:37.755933+00:00",
+      "range": "bytes=0-65535",
+      "httpStatus": 206,
+      "etag": "\"a5288ced0c2fe893fcfae4d2022b9cd9\"",
+      "generation": "1714521654025510",
+      "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+      "scope": "CHRX_HEADER_NOT_WHOLE_DATASET_SHA",
+      "fieldDefinitionsSha256": "a312db66ead5aa1678d2339c07c6b2b9562ebcb1b6415e65a2fa26ce6a56a416"
+    },
+    "Y": {
+      "url": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/joint/gnomad.joint.v4.1.sites.chrY.vcf.bgz",
+      "retrievedAt": "2026-11-03T12:26:39.408362+00:00",
+      "range": "bytes=0-65535",
+      "httpStatus": 206,
+      "etag": "\"7b882f00919d582139acbc116a7a559f\"",
+      "generation": "1714521651326650",
+      "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+      "scope": "CHRY_HEADER_NOT_WHOLE_DATASET_SHA",
+      "fieldDefinitionsSha256": "a312db66ead5aa1678d2339c07c6b2b9562ebcb1b6415e65a2fa26ce6a56a416"
+    }
+  },
+  "scope": "BS1_ADAPTER_BINDING_NOT_CLINICAL_APPROVAL",
+  "fieldDefinitionsSha256": "a312db66ead5aa1678d2339c07c6b2b9562ebcb1b6415e65a2fa26ce6a56a416",
+  "fieldDefinitionsCount": 35
+}

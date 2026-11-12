@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "PCERDocID": "PCER000002843",
+      "_id": "AlleleRecords/1573019845",
+      "_key": "1573019845",
+      "_rev": "_lZDYL7S--B",
+      "affiliationId": "50016",
+      "approvedDate": "2025-11-07",
+      "caId": "CA386952573",
+      "classification": "Pathogenic",
+      "condition": "monogenic diabetes",
+      "cvId": "1327599",
+      "docVersion": "2.0.0",
+      "ep": "Monogenic Diabetes VCEP",
+      "gene": "HNF1A",
+      "geneNcbiId": "6927",
+      "hgvs": [
+        "NM_000545.8:c.58G>C",
+        "NC_000012.12:g.120978826G>C",
+        "CM000674.2:g.120978826G>C",
+        "NC_000012.11:g.121416629G>C",
+        "CM000674.1:g.121416629G>C",
+        "NC_000012.10:g.119901012G>C",
+        "NG_011731.2:g.5081G>C",
+        "LRG_522:g.5081G>C",
+        "ENST00000560968.6:c.58G>C",
+        "ENST00000257555.11:c.58G>C",
+        "ENST00000257555.10:c.58G>C",
+        "ENST00000400024.6:c.58G>C",
+        "ENST00000402929.5:n.193G>C",
+        "ENST00000535955.5:n.42+134G>C",
+        "ENST00000538626.2:n.176G>C",
+        "ENST00000538646.5:c.58G>C",
+        "ENST00000540108.1:c.58G>C",
+        "ENST00000541395.5:c.58G>C",
+        "ENST00000541924.5:c.58G>C",
+        "ENST00000543427.5:c.58G>C",
+        "ENST00000544413.2:c.58G>C",
+        "ENST00000544574.5:c.58G>C",
+        "ENST00000560968.5:c.201G>C",
+        "ENST00000615446.4:c.-258+115G>C",
+        "ENST00000617366.4:c.58G>C",
+        "NM_000545.5:c.58G>C",
+        "LRG_522t1:c.58G>C",
+        "NM_000545.6:c.58G>C",
+        "NM_001306179.1:c.58G>C",
+        "XM_005253931.2:c.58G>C",
+        "XM_024449168.1:c.58G>C",
+        "NM_001306179.2:c.58G>C",
+        "NM_000545.8(HNF1A):c.58G>C (p.Gly20Arg)"
+      ],
+      "hgvsSearch": "nm_000545.8:c.58g>c nc_000012.12:g.120978826g>c cm000674.2:g.120978826g>c nc_000012.11:g.121416629g>c cm000674.1:g.121416629g>c nc_000012.10:g.119901012g>c ng_011731.2:g.5081g>c lrg_522:g.5081g>c enst00000560968.6:c.58g>c enst00000257555.11:c.58g>c enst00000257555.10:c.58g>c enst00000400024.6:c.58g>c enst00000402929.5:n.193g>c enst00000535955.5:n.42+134g>c enst00000538626.2:n.176g>c enst00000538646.5:c.58g>c enst00000540108.1:c.58g>c enst00000541395.5:c.58g>c enst00000541924.5:c.58g>c enst00000543427.5:c.58g>c enst00000544413.2:c.58g>c enst00000544574.5:c.58g>c enst00000560968.5:c.201g>c enst00000615446.4:c.-258+115g>c enst00000617366.4:c.58g>c nm_000545.5:c.58g>c lrg_522t1:c.58g>c nm_000545.6:c.58g>c nm_001306179.1:c.58g>c xm_005253931.2:c.58g>c xm_024449168.1:c.58g>c nm_001306179.2:c.58g>c nm_000545.8(hnf1a):c.58g>c (p.gly20arg)",
+      "metCodes": [
+        "PP4_Moderate",
+        "PM2_Supporting",
+        "PM5_Supporting",
+        "PS1",
+        "PM1_Supporting",
+        "PP3"
+      ],
+      "metCodesSearch": "pp4_moderate pm2_supporting pm5_supporting ps1 pm1_supporting pp3",
+      "moi": "Autosomal dominant inheritance",
+      "mondoId": "MONDO:0015967",
+      "preferredVarTitle": "NM_000545.8(HNF1A):c.58G>C (p.Gly20Arg)",
+      "publishedDate": "2025-11-26",
+      "retracted": false,
+      "summaryDesc": "The c.58G>C variant in the HNF1 homeobox A gene, HNF1A, causes an amino acid change of glycine to arginine at codon 20 (p.(Gly20Arg)) of NM_000545.8. This variant is located within the dimerization domain (codons 1-32) of HNF1A, which is defined as critical for the protein’s function by the ClinGen MDEP (PM1_Supporting). This variant is predicted to be deleterious by computational evidence, with a REVEL score of 0.956, which is greater than the MDEP threshold of 0.70 (PP3). This variant has a gnomAD v4.1.0 Grpmax filtering allele frequency of 6.199e-7, which is below the ClinGen MDEP threshold of 0.000003 (PM2_Supporting). This variant was identified in two unrelated individuals with non-autoimmune and non-absolute/near-absolute insulin-deficient diabetes; however, PS4_Moderate cannot be applied because this number is below the ClinGen MDEP threshold (internal lab contributors). It was identified in an individual with a clinical history highly specific for HNF1A-monogenic diabetes (MODY probability calculator result >50%, negative genetic testing for HNF4A, and negative autoantibodies) (PP4_Moderate; internal lab contributors). The nucleotide change c.58G>A, which causes the same amino acid change, has been classified as pathogenic for monogenic diabetes by the ClinGen MDEP (PS1). Another missense variant, c.59G>A (p.Gly20Glu), has been classified as likely pathogenic by the ClinGen MDEP (PM5_Supporting). Taken together, the evidence supports the classification of this variant as pathogenic for monogenic diabetes. ACMG/AMP criteria applied, as specified by the ClinGen MDEP VCEP (specification version 3.1.0 approved 10/10/2025): PS1, PP4_Moderate, PP3, PM1_Supporting, PM2_Supporting, PM5_Supporting. ",
+      "unMetCodes": [
+        "PS4"
+      ],
+      "unMetCodesSearch": "ps4",
+      "uuid": "7d6401b1-eb48-47e6-bb85-5d49afa7a19f",
+      "versionsList": [
+        "2.0.0",
+        "1.0.0"
+      ]
+    }
+  ],
+  "metadata": {
+    "rendered": {
+      "by": "https://erepo.genome.network/evrepo/api/summary/srvc",
+      "when": "2026-09-11T01:42:35.001Z"
+    }
+  },
+  "status": {
+    "code": 200,
+    "name": "OK"
+  }
+}

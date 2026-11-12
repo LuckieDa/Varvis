@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "phenopacket-v2",
+  "id": "synthetic-case-beta",
+  "phenotypicFeatures": [{"type": {"id": "HP:0001627"}}],
+  "diseases": [{"term": {"id": "MONDO:synthetic-beta"}}],
+  "interpretations": [{
+    "diagnosis": {
+      "genomicInterpretations": [
+        {"gene": {"id": "HGNC:9002", "symbol": "SYNGENE2"}, "variantInterpretation": {"variationDescriptor": {"vcfRecord": {
+          "genomeAssembly": "GRCh38", "chromosome": "chr2", "position": 200, "ref": "AT", "alt": "A"
+        }}}},
+        {"gene": {"id": "HGNC:9002", "symbol": "SYNGENE2"}, "variantInterpretation": {"variationDescriptor": {"vcfRecord": {
+          "genomeAssembly": "GRCh38", "chromosome": "chr3", "position": 300, "ref": "C", "alt": "T"
+        }}}}
+      ]
+    }
+  }]
+}

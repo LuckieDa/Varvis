@@ -1,0 +1,153 @@
+{
+  "profileSchemaVersion": "gnomad-population-input-profile-v1",
+  "profileId": "GNOMAD_POPULATION_INPUT_V1",
+  "profileVersion": "1.0.0",
+  "status": "INPUT_ONLY",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-08-31T23:59:59Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-general-2026-08-31",
+    "registrySha256": "b703596adc3e61cbf088a8b0acc21b4911653e2ddaebe96eb496db65bc72da1d",
+    "criterionIds": [
+      "ACMG_AMP_2015:BA1",
+      "ACMG_AMP_2015:BS1",
+      "ACMG_AMP_2015:PM2"
+    ]
+  },
+  "authorityBindings": [
+    {
+      "authoritySourceId": "authority-clingen-vcep-gnomad-v4-v3.0",
+      "snapshotSha256": "b84b9c30696aea6fa5cddc0916fe07a3ca647fcbd89d77b3d510bd5cf499106f"
+    },
+    {
+      "authoritySourceId": "authority-clingen-svi-pm2-v1.0",
+      "snapshotSha256": "30745e928c7146a479afdfb7f22230192a8d1d66f9239a463c53667dd9598c59"
+    }
+  ],
+  "evaluation": {
+    "evaluationEnabled": false,
+    "criteria": [
+      {
+        "criterionId": "ACMG_AMP_2015:BA1",
+        "currentDesignation": "BA1",
+        "evaluationEnabled": false
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "currentDesignation": "BS1",
+        "evaluationEnabled": false
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:PM2",
+        "currentDesignation": "PM2_SUPPORTING",
+        "original2015Strength": "MODERATE",
+        "currentGeneralStrength": "SUPPORTING",
+        "evaluationEnabled": false
+      }
+    ],
+    "permittedResultStates": ["READY", "NOT_READY"],
+    "forbiddenCriterionResults": ["MET", "NOT_MET"]
+  },
+  "outputPolicy": {
+    "atomicEvidenceOnly": true,
+    "legacySuggestionEnabled": false,
+    "classificationEnabled": false,
+    "direction": "UNDETERMINED",
+    "readinessMeaning": "MATCHED_RECORD_FIELDS_READY_FOR_FUTURE_CONTEXTUAL_EVALUATION_NOT_CRITERION_READY"
+  },
+  "resourceIdentitySemantics": {
+    "scope": "CANONICAL_RESOURCE_IDENTITY_NOT_FULL_BYTES",
+    "byteIntegrityClaimed": false
+  },
+  "resources": [
+    {
+      "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_FULL_SITES",
+      "provider": "GNOMAD",
+      "assembly": "GRCh38",
+      "resourceVersion": "gnomAD exomes v4.1 GRCh38",
+      "identityFingerprintSha256": "e4c39eef8a4f1481e1277e62fec61a00ccdb4a8bd0e3c8ca70a6da6465e87639",
+      "identity": {
+        "provider": "GNOMAD",
+        "release": "4.1",
+        "dataset": "exomes",
+        "assembly": "GRCh38",
+        "format": "gnomAD VCFv4.2 BGZF",
+        "logicalNamePattern": "gnomad/gnomad.exomes.v4.1.sites.chr{chromosome}.vcf.bgz",
+        "indexLogicalNamePattern": "gnomad/gnomad.exomes.v4.1.sites.chr{chromosome}.vcf.bgz.tbi",
+        "indexType": "TABIX_TBI",
+        "dataComponentCount": 24,
+        "dataTotalBytes": 198439013056,
+        "indexComponentCount": 24,
+        "indexTotalBytes": 1437195,
+        "chromosomes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "X", "Y"]
+      }
+    }
+  ],
+  "retrievalOnlyResourceReference": {
+    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_COMPACT",
+    "identityManifestId": "resource-identity-manifest-v1",
+    "use": "RETRIEVAL_ONLY",
+    "criterionInputAllowed": false
+  },
+  "datasetSemantics": {
+    "datasetType": "EXOMES",
+    "assembly": "GRCh38",
+    "jointOrCombinedAvailable": false,
+    "genomesAvailable": false,
+    "allSitesAlleleNumberAvailable": false,
+    "hitInputMayBeReady": true,
+    "noRecordInputReady": false,
+    "noRecordReasonCode": "NO_RECORD_WITHOUT_ALL_SITES_AN",
+    "generalCriterionDatasetReadiness": {
+      "status": "NOT_READY",
+      "reasonCodes": [
+        "JOINT_OR_COMBINED_DATASET_UNAVAILABLE",
+        "ALL_SITES_AN_UNAVAILABLE"
+      ]
+    },
+    "combinedFrequencyRequirement": "DEFERRED_TO_E3_P1",
+    "coverageAdequacyRequirement": "DEFERRED_TO_E3_P1"
+  },
+  "qualityGate": {
+    "acceptedFilters": ["PASS"],
+    "minimumOverallAlleleNumber": 1,
+    "nonPassReadiness": "NOT_READY",
+    "missingOrInvalidFieldReadiness": "NOT_READY"
+  },
+  "numericSemantics": {
+    "integerRuntimeType": "java.math.BigInteger",
+    "decimalRuntimeType": "java.math.BigDecimal",
+    "rawLexemePreserved": true,
+    "canonicalDecimalFormat": "PLAIN_NO_EXPONENT_STRIP_TRAILING_ZEROES",
+    "binaryFloatingPointAllowedForDecisions": false
+  },
+  "fieldContract": {
+    "altIndexBase": 0,
+    "fields": [
+      {"metricId": "gnomad.exomes.ac", "infoId": "AC", "number": "A", "valueType": "BIG_INTEGER", "unit": "alleles", "required": true},
+      {"metricId": "gnomad.exomes.an", "infoId": "AN", "number": "1", "valueType": "BIG_INTEGER", "unit": "alleles", "required": true},
+      {"metricId": "gnomad.exomes.af", "infoId": "AF", "number": "A", "valueType": "BIG_DECIMAL_FRACTION", "unit": "fraction", "required": true},
+      {"metricId": "gnomad.exomes.nhomalt", "infoId": "nhomalt", "number": "A", "valueType": "BIG_INTEGER", "unit": "individuals", "required": true},
+      {"metricId": "gnomad.exomes.groupmax.ancestry", "infoId": "grpmax", "number": "A", "valueType": "ANCESTRY", "unit": "genetic-ancestry-group", "required": true},
+      {"metricId": "gnomad.exomes.groupmax.ac", "infoId": "AC_grpmax", "number": "A", "valueType": "BIG_INTEGER", "unit": "alleles", "required": true},
+      {"metricId": "gnomad.exomes.groupmax.an", "infoId": "AN_grpmax", "number": "A", "valueType": "BIG_INTEGER", "unit": "alleles", "required": true},
+      {"metricId": "gnomad.exomes.groupmax.af", "infoId": "AF_grpmax", "number": "A", "valueType": "BIG_DECIMAL_FRACTION", "unit": "fraction", "required": true},
+      {"metricId": "gnomad.exomes.groupmax.nhomalt", "infoId": "nhomalt_grpmax", "number": "A", "valueType": "BIG_INTEGER", "unit": "individuals", "required": true},
+      {"metricId": "gnomad.exomes.faf95", "infoId": "faf95", "number": "A", "valueType": "BIG_DECIMAL_FRACTION", "unit": "fraction", "required": true},
+      {"metricId": "gnomad.exomes.faf95max", "infoId": "fafmax_faf95_max", "number": "A", "valueType": "BIG_DECIMAL_FRACTION", "unit": "fraction", "required": true},
+      {"metricId": "gnomad.exomes.faf95max.ancestry", "infoId": "fafmax_faf95_max_gen_anc", "number": "A", "valueType": "ANCESTRY", "unit": "genetic-ancestry-group", "required": true}
+    ],
+    "ancestryGroups": ["afr", "amr", "asj", "eas", "fin", "mid", "nfe", "remaining", "sas"],
+    "ancestryFieldTemplates": [
+      {"metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.ac", "infoIdTemplate": "AC_{ancestry}", "number": "A", "valueType": "BIG_INTEGER", "unit": "alleles", "required": false},
+      {"metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.an", "infoIdTemplate": "AN_{ancestry}", "number": "1", "valueType": "BIG_INTEGER", "unit": "alleles", "required": false},
+      {"metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.af", "infoIdTemplate": "AF_{ancestry}", "number": "A", "valueType": "BIG_DECIMAL_FRACTION", "unit": "fraction", "required": false},
+      {"metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.nhomalt", "infoIdTemplate": "nhomalt_{ancestry}", "number": "A", "valueType": "BIG_INTEGER", "unit": "individuals", "required": false},
+      {"metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.faf95", "infoIdTemplate": "faf95_{ancestry}", "number": "A", "valueType": "BIG_DECIMAL_FRACTION", "unit": "fraction", "required": false, "appliesTo": ["afr", "amr", "eas", "mid", "nfe", "sas"]}
+    ],
+    "selectedGroupRequiredSuffixes": ["ac", "an", "af", "nhomalt"],
+    "faf95AncestryGroups": ["afr", "amr", "eas", "mid", "nfe", "sas"]
+  }
+}

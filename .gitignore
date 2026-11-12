@@ -1,0 +1,98 @@
+# Node / front-end artifacts
+node_modules/
+dist/
+build/
+coverage/
+.umi/
+.umi-production/
+.mfsu-cache/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Java / Maven artifacts
+target/
+*.class
+*.jar
+*.war
+
+# Temporary files
+logs/
+tmp/
+temp/
+cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.history/
+__pycache__/
+
+# IDE metadata
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Large local datasets
+part_data_database/
+history/
+!varvis-server/src/main/resources/acmg/history/
+!varvis-server/src/main/resources/acmg/history/**
+*.vcf
+*.vcf.gz
+*.bcf
+*.bam
+*.cram
+*.fa
+*.fasta
+*.zip
+*.gz
+*.tbi
+*.csi
+*.db
+*.sqlite
+
+# Local server secrets
+varvis-server/config/database-local.properties
+varvis-server/config/variant-analysis-local.properties
+database-local.properties
+variant-analysis-local.properties
+application-local.yml
+.env
+.env.local
+
+# Generic secret-bearing local files
+.env.*
+!.env.example
+credentials.*
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+
+# Project-specific local/generated folders
+codex_temp_admissions/
+varvis-server/local/
+.git_invalid_empty_*/
+migration-reports/
+*.pre-migration-*
+
+# Public alleles with artificial genotypes: the dedicated teaching input only.
+!varvis-client-pro/public/demo/group-meeting/varvis-group-demo.vcf
+
+# Private Code-local resources, tools, runtime and migration records
+/local/

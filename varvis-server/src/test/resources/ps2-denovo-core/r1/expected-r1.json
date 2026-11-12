@@ -1,0 +1,16 @@
+{
+  "basis": "Explicit user R1 gate requirements; original SVI single-case point expected.json unchanged",
+  "validConclusions": {
+    "relatedFamilyHistory": "ABSENT",
+    "singleTrioScope": "APPLICABLE"
+  },
+  "missingOrOtherConclusion": "NOT_EVALUATED",
+  "rawFtConflict": "NOT_EVALUATED",
+  "nfcDuplicateIdentity": "NOT_EVALUATED",
+  "originalIntegerRequirement": {
+    "targetAltIndex": 1,
+    "ploidy": 2
+  },
+  "maximumStrength": "STRONG",
+  "phenotypePointExpectations": "../expected.json"
+}

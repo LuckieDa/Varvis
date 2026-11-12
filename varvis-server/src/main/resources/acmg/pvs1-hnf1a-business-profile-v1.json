@@ -1,0 +1,103 @@
+{
+  "profileSchemaVersion": "pvs1-hnf1a-business-profile-v1",
+  "profileId": "HNF1A_STOP_GAINED_NMD_PVS1",
+  "profileVersion": "1.0.0",
+  "predecessorProfileId": "HNF1A_FIXED_POINT_PVS1_VERY_STRONG",
+  "activation": {
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "context": {
+    "hgncId": "HGNC:11621",
+    "geneSymbol": "HNF1A",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "assembly": "GRCh38",
+    "transcript": "ENST00000257555.11"
+  },
+  "policy": {
+    "policyId": "HNF1A_GN017_3_1_STOP_GAINED_NMD",
+    "criterionId": "ACMG_AMP_2015:PVS1",
+    "appliedStrength": "VERY_STRONG",
+    "authority": {
+      "specificationId": "GN017",
+      "authorityVersion": "3.1",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "sourceSha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "decisionTreeUrl": "https://cspec.genome.network/cspec/File/id/5af96ed6-b35b-4704-be42-fe069d5e7426/data",
+      "decisionTreeSha256": "6ae8621438a4fdfb7b3ab51bb29043d9fc7b98b9a23c95a76ccf513b3440f9fd"
+    },
+    "minimumCdsPosition": 355,
+    "exclusivePtcEnd": 1714,
+    "firstExon": 2,
+    "lastExon": 9,
+    "maximumExonLength": 400,
+    "startProximalScope": "AFTER_MET118; engineering scope restriction, not a new ClinGen threshold",
+    "nmdEscapeScope": "NOT_IMPLEMENTED; GN017 may still support PVS1 outside this NMD branch",
+    "spliceConsequencesScope": "NOT_IMPLEMENTED",
+    "evidenceMechanism": "PREDICTED_LOSS_OF_FUNCTION"
+  },
+  "transcriptModel": {
+    "classpathResource": "/acmg/pvs1-hnf1a-transcript-model-v1.json",
+    "canonicalSha256": "270076043014c34aba9e7719ba7fa7bc7ecf090989c0bdb0fc08f7fa7cb0bacf"
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-pvs1-hnf1a-2026-09-09",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "45b7a3cb765a88de72bd13041aacf23f03673e6a52e785a78d263cf5553c388d",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-pvs1-hnf1a-2026-09-09.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PVS1"
+    ]
+  },
+  "resources": [
+    {
+      "resourceId": "VEP_116_GRCH38",
+      "provider": "VEP",
+      "assembly": "GRCh38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+      "identity": {
+        "provider": "VEP",
+        "tool": {
+          "name": "ensembl-vep",
+          "version": "116.0"
+        },
+        "cache": {
+          "species": "homo_sapiens",
+          "version": "116_GRCh38",
+          "logicalName": "vep/cache/homo_sapiens/116_GRCh38",
+          "infoSha256": "b7298ffe9c8aba8e283d2e647a28a8345e6b7c4cd71e8d42eae66acfb94dd3ad"
+        },
+        "fasta": {
+          "assembly": "GRCh38",
+          "logicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa",
+          "indexLogicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa.fai",
+          "byteLength": 3151425851,
+          "indexSha256": "0998f61682f4041b11f0d156e1db6dae3e4c743e26643a3f45ea7faea70cb604",
+          "indexedContigCount": 194
+        },
+        "assembly": "GRCh38",
+        "options": {
+          "offline": true,
+          "cache": true,
+          "format": "vcf",
+          "output": "json",
+          "symbol": true,
+          "canonical": true,
+          "mane": true,
+          "hgvs": true,
+          "protein": true,
+          "biotype": true,
+          "numbers": true,
+          "noStats": true,
+          "forceOverwrite": true,
+          "lofteeEnabled": false
+        },
+        "wrapperIdentity": "varvis-vep-relative-root-v2",
+        "wrapperSha256": "da90d70e87a1f479239e1fc8857e76d61604a0006fa19ae40e4260d20f7bfbfe"
+      }
+    }
+  ]
+}

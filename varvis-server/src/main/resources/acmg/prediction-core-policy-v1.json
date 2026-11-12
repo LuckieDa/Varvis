@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "prediction-core-policy-v1",
+  "policyId": "PP3_BP4_GENERIC_CORE",
+  "version": "1.0.0-candidate.1",
+  "activation": "ISOLATED_DEVELOPMENT_ONLY",
+  "modelSelection": "BEFORE_SCORE_LOOKUP_NO_FALLBACK",
+  "primaryMechanism": "PROTEIN_MISSENSE",
+  "allowedPp3Mechanisms": [
+    "PROTEIN_MISSENSE",
+    "SPLICING"
+  ],
+  "requiredBp4Mechanisms": [
+    "PROTEIN_MISSENSE",
+    "SPLICING"
+  ],
+  "secondaryPp3Route": "WHEN_PRIMARY_NOT_HARMFUL",
+  "applicationContract": "MECHANISM_APPLICATION_V1",
+  "requiredInputs": [
+    "VERIFIED_DISEASE_CONTEXT",
+    "VERIFIED_SELECTED_TRANSCRIPT",
+    "SAME_EFFECT_ADOPTION_STATUS"
+  ],
+  "specSearchScope": "LOCAL_SUPPORTED_CSPEC_ONLY",
+  "specializations": [
+    {
+      "hgncId": "HGNC:11621",
+      "mondoId": "MONDO:0015967",
+      "moi": "AUTOSOMAL_DOMINANT",
+      "policyId": "GN017_3_1_PREDICTION",
+      "preselectedModel": "REVEL",
+      "sourceLocator": "classpath:/acmg/hnf1a-ps1-pm5-v1/GN017_3.1.0.json#/ld/RuleSet/0/ld/CriteriaCode",
+      "status": "UNSUPPORTED",
+      "reasonCode": "GN017_COMPLETE_PREDICTION_ADAPTATION_PENDING",
+      "splicePp3Operator": "GT",
+      "splicePp3Threshold": "0.2",
+      "spliceBp4Operator": "LT",
+      "spliceBp4Threshold": "0.2",
+      "sourceSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1"
+    }
+  ]
+}

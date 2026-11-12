@@ -1,0 +1,786 @@
+{
+  "testScope": "ENGINEERING FIXTURE: original reviewed public spreadsheet cells and real RefSeq CDS, SYNTHETIC genomic coordinates and stored annotation. Not a real VCF, VEP execution, clinical calibration, production policy or adoption. Hash bindings are calculated by the test using the frozen Java canonicalizer.",
+  "independentInputCommit": "d897d041981a04859e23daebc72dd4c9e9487b8e",
+  "rawSourceInputSha256": "52d8dc017b2e7c37a4d912afe5e180ac03746c7eace2b93eb455b0478335e478",
+  "policy": {
+    "schemaVersion": "functional-evidence-policy-v1",
+    "policyId": "PTEN_GN003_3_2_MIGHELL_DEVELOPER_FIXTURE",
+    "policyVersion": "1",
+    "criterionIds": [
+      "ACMG_AMP_2015:PS3"
+    ],
+    "review": {
+      "status": "REVIEWED_IMPLEMENTED",
+      "reviewId": "ENGINEERING_FIXTURE_ONLY_NOT_PRODUCTION_APPROVAL"
+    },
+    "scope": {
+      "hgncId": "HGNC:9588",
+      "geneSymbol": "PTEN",
+      "mondoId": "MONDO:0017623",
+      "moi": "AUTOSOMAL_DOMINANT",
+      "assembly": "GRCh38",
+      "variantType": "NATIVE_NONPROJECTED_SNV",
+      "transcripts": [
+        {
+          "accession": "NM_000314",
+          "version": 8
+        }
+      ],
+      "protein": "NP_000305.3",
+      "supportedVariantEffects": [
+        "MISSENSE"
+      ],
+      "startCodonPolicy": "EXCLUDE"
+    },
+    "sources": [
+      {
+        "sourceId": "CLINGEN_GN003_3_2",
+        "version": "3.2",
+        "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN003?version=3.2",
+        "sha256": "5cec6462ebe27b2c640de1ebfd75ac11851d15e50105d28e9ed394adc915af23"
+      },
+      {
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0002929718301071-mmc2.xlsx",
+        "sha256": "06dd9abf631ac43b128afa276192380401570ddada2d82c52bafa7a2e56e756d",
+        "version": "2018 publisher supplementary Tables S1-S6"
+      },
+      {
+        "sourceId": "MIGHELL2018_FULLTEXT",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5986715/",
+        "sha256": "cd20ab21750055bb86f246671e61bcc8dfdf49f67932c1f764bd9b4ac22a2a2e",
+        "version": "2018"
+      },
+      {
+        "sourceId": "REFSEQ_NM_000314_8",
+        "version": "NM_000314.8",
+        "url": "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8",
+        "sha256": "1cc9aa20c29222d2e77fc73744766a4817a053a13d36febde18fb2fa2e202384"
+      },
+      {
+        "sourceId": "SYNTHETIC_TEST_GENOMIC_MAPPING",
+        "version": "fixture-v1",
+        "url": "https://example.org/synthetic-test-mapping",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ],
+    "registryBinding": {
+      "registryId": "acmg-rule-registry-functional-hnf1a-2026-09-10",
+      "registrySchemaVersion": "acmg-rule-registry-v2",
+      "registrySha256": "1949ca52a7a16b9607aad47706f1cc9081f9f9d9662b0dfd3428b7dcc08631c0",
+      "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-functional-hnf1a-2026-09-10.json",
+      "criterionIds": [
+        "ACMG_AMP_2015:PS3"
+      ]
+    },
+    "assay": {
+      "representation": "MEASURED_SCALAR",
+      "qualityGate": "EXCEL_BOOLEAN_TRUE",
+      "sourceId": "MIGHELL2018_TABLES_S1_S6",
+      "sourceColumns": {
+        "proteinVariantKey": "A",
+        "proteinVariantThreeLetter": "B",
+        "mutationType": "F",
+        "wildTypeCodon": "D",
+        "experimentalMutantCodon": "E",
+        "measuredScore": "G",
+        "highConfidence": "I",
+        "imputedScore": "K"
+      },
+      "threshold": {
+        "operator": "LTE",
+        "decimal": "-1.11",
+        "strength": "MODERATE"
+      },
+      "unit": "NATURAL_LOG_WT_NORMALIZED_FITNESS"
+    }
+  },
+  "facts": {
+    "schemaVersion": "reviewed-functional-facts-v1",
+    "factBundleId": "PTEN_DEVELOPER_ROWS_SYNTHETIC_GENOMIC_MODEL",
+    "version": "1",
+    "review": {
+      "status": "REVIEWED",
+      "reviewId": "ENGINEERING_FIXTURE_ONLY_NOT_PRODUCTION_APPROVAL",
+      "reviewedAt": "2026-09-13T16:00:00Z"
+    },
+    "scope": {
+      "hgncId": "HGNC:9588",
+      "geneSymbol": "PTEN",
+      "mondoId": "MONDO:0017623",
+      "moi": "AUTOSOMAL_DOMINANT",
+      "assembly": "GRCh38",
+      "variantType": "NATIVE_NONPROJECTED_SNV",
+      "transcripts": [
+        {
+          "accession": "NM_000314",
+          "version": 8
+        }
+      ],
+      "protein": "NP_000305.3",
+      "supportedVariantEffects": [
+        "MISSENSE"
+      ],
+      "startCodonPolicy": "EXCLUDE"
+    },
+    "method": {
+      "methodId": "PTEN_MIGHELL2018_NAMED_ASSAY_DEVELOPER",
+      "assayId": "MIGHELL2018_HUMANIZED_YEAST",
+      "studyId": "PMID:29706350",
+      "conditionId": "PI3K_P110_ALPHA_CAAX_YEAST_RESCUE",
+      "readout": "Growth rescue as proxy for PTEN lipid phosphatase function",
+      "unit": "NATURAL_LOG_WT_NORMALIZED_FITNESS",
+      "mechanismId": "PTEN_LIPID_PHOSPHATASE_LOSS_OF_FUNCTION",
+      "evidenceDomain": "PROTEIN_FUNCTION",
+      "constructTransfer": "REVIEWED_SAME_PROTEIN_CHANGE",
+      "constructDescription": "Human PTEN in humanized yeast; amino-acid variants use yeast-preferred mutant codons",
+      "constructTransferRationale": "Original WT codons reconcile to RefSeq CDS. Match exact protein substitution, not experimental codon equality; no RNA-splicing inference. Synthetic genomic mapping in this fixture is not source evidence.",
+      "calibrationId": "GN003_3_2_MIGHELL2018_PS3_MODERATE",
+      "calibrationStatus": "VCEP_NAMED_ASSAY",
+      "calibrationRationale": "GN003 v3.2 expressly accepts high-confidence measured cumulative score <= -1.11; no re-estimation using classification labels.",
+      "maximumStrength": "MODERATE",
+      "biologicalReplicatesDescription": "Two independent yeast libraries, three selections each. Original high-confidence boolean uses SE OR concordance, not both.",
+      "combination": "SINGLE_ASSAY_NO_STRENGTH_ADDITION",
+      "spliceConsequenceHandling": "ABSTAIN",
+      "sourceIds": [
+        "CLINGEN_GN003_3_2",
+        "MIGHELL2018_TABLES_S1_S6",
+        "MIGHELL2018_FULLTEXT",
+        "REFSEQ_NM_000314_8"
+      ],
+      "reviewId": "DEVELOPER_SOURCE_TRANSCRIPTION_NOT_PRODUCTION_APPROVAL",
+      "evidenceOrigin": "PUBLISHED_EXPERIMENTAL_MEASUREMENT",
+      "sourceColumns": {
+        "proteinVariantKey": "A",
+        "proteinVariantThreeLetter": "B",
+        "mutationType": "F",
+        "wildTypeCodon": "D",
+        "experimentalMutantCodon": "E",
+        "measuredScore": "G",
+        "highConfidence": "I",
+        "imputedScore": "K"
+      }
+    },
+    "nativeModel": {
+      "schemaVersion": "pvs1-transcript-model-v1",
+      "modelId": "SYNTHETIC_GENOMIC_INTERVAL_PTEN_REAL_CDS",
+      "modelVersion": "1",
+      "hgncId": "HGNC:9588",
+      "geneSymbol": "PTEN",
+      "assembly": "GRCh38",
+      "contig": "10",
+      "strand": 1,
+      "transcript": "NM_000314.8",
+      "protein": "NP_000305.3",
+      "cdsLength": 1212,
+      "proteinLength": 403,
+      "cdsSequence": "ATGACAGCCATCATCAAAGAGATCGTTAGCAGAAACAAAAGGAGATATCAAGAGGATGGATTCGACTTAGACTTGACCTATATTTATCCAAACATTATTGCTATGGGATTTCCTGCAGAAAGACTTGAAGGCGTATACAGGAACAATATTGATGATGTAGTAAGGTTTTTGGATTCAAAGCATAAAAACCATTACAAGATATACAATCTTTGTGCTGAAAGACATTATGACACCGCCAAATTTAATTGCAGAGTTGCACAATATCCTTTTGAAGACCATAACCCACCACAGCTAGAACTTATCAAACCCTTTTGTGAAGATCTTGACCAATGGCTAAGTGAAGATGACAATCATGTTGCAGCAATTCACTGTAAAGCTGGAAAGGGACGAACTGGTGTAATGATATGTGCATATTTATTACATCGGGGCAAATTTTTAAAGGCACAAGAGGCCCTAGATTTCTATGGGGAAGTAAGGACCAGAGACAAAAAGGGAGTAACTATTCCCAGTCAGAGGCGCTATGTGTATTATTATAGCTACCTGTTAAAGAATCATCTGGATTATAGACCAGTGGCACTGTTGTTTCACAAGATGATGTTTGAAACTATTCCAATGTTCAGTGGCGGAACTTGCAATCCTCAGTTTGTGGTCTGCCAGCTAAAGGTGAAGATATATTCCTCCAATTCAGGACCCACACGACGGGAAGACAAGTTCATGTACTTTGAGTTCCCTCAGCCGTTACCTGTGTGTGGTGATATCAAAGTAGAGTTCTTCCACAAACAGAACAAGATGCTAAAAAAGGACAAAATGTTTCACTTTTGGGTAAATACATTCTTCATACCAGGACCAGAGGAAACCTCAGAAAAAGTAGAAAATGGAAGTCTATGTGATCAAGAAATCGATAGCATTTGCAGTATAGAGCGTGCAGATAATGACAAGGAATATCTAGTACTTACTTTAACAAAAAATGATCTTGACAAAGCAAATAAAGACAAAGCCAACCGATACTTTTCTCCAAATTTTAAGGTGAAGCTGTACTTCACAAAAACAGTAGAGGAGCCGTCAAATCCAGAGGCTAGCAGTTCAACTTCTGTAACACCAGATGTTAGTGACAATGAACCTGATCATTATAGATATTCTGACACCACTGACTCTGATCCAGAGAATGAACCTTTTGATGAAGATCAGCATACACAAATTACAAAAGTCTGA",
+      "exons": [
+        {
+          "ordinal": 1,
+          "genomicStart": 1000,
+          "genomicEnd": 2211,
+          "cdsStart": 1,
+          "cdsEnd": 1212
+        }
+      ],
+      "sourceRecords": [
+        {
+          "sourceId": "REFSEQ_NM_000314_8",
+          "version": "NM_000314.8",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8",
+          "sha256": "1cc9aa20c29222d2e77fc73744766a4817a053a13d36febde18fb2fa2e202384"
+        },
+        {
+          "sourceId": "SYNTHETIC_TEST_GENOMIC_MAPPING",
+          "version": "fixture-v1",
+          "url": "https://example.org/synthetic-test-mapping",
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      ]
+    },
+    "annotationResource": {
+      "resourceId": "VEP_116_GRCH38",
+      "provider": "VEP",
+      "assembly": "GRCh38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+      "identity": {
+        "provider": "VEP",
+        "tool": {
+          "name": "ensembl-vep",
+          "version": "116.0"
+        },
+        "cache": {
+          "species": "homo_sapiens",
+          "version": "116_GRCh38",
+          "logicalName": "vep/cache/homo_sapiens/116_GRCh38",
+          "infoSha256": "b7298ffe9c8aba8e283d2e647a28a8345e6b7c4cd71e8d42eae66acfb94dd3ad"
+        },
+        "fasta": {
+          "assembly": "GRCh38",
+          "logicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa",
+          "indexLogicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa.fai",
+          "byteLength": 3151425851,
+          "indexSha256": "0998f61682f4041b11f0d156e1db6dae3e4c743e26643a3f45ea7faea70cb604",
+          "indexedContigCount": 194
+        },
+        "assembly": "GRCh38",
+        "options": {
+          "offline": true,
+          "cache": true,
+          "format": "vcf",
+          "output": "json",
+          "symbol": true,
+          "canonical": true,
+          "mane": true,
+          "hgvs": true,
+          "protein": true,
+          "biotype": true,
+          "numbers": true,
+          "noStats": true,
+          "forceOverwrite": true,
+          "lofteeEnabled": false
+        },
+        "wrapperIdentity": "varvis-vep-relative-root-v2",
+        "wrapperSha256": "da90d70e87a1f479239e1fc8857e76d61604a0006fa19ae40e4260d20f7bfbfe"
+      }
+    },
+    "records": [
+      {
+        "recordId": "MIGHELL2018_S2_ROW_3",
+        "proteinVariantKey": "M1A",
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "sheet": "Table S2",
+        "row": 3,
+        "sourceCells": {
+          "A": {
+            "type": "s",
+            "raw": "M1A",
+            "xmlStorageValue": "17"
+          },
+          "B": {
+            "type": "s",
+            "raw": "Met1Ala",
+            "xmlStorageValue": "27418"
+          },
+          "D": {
+            "type": "s",
+            "raw": "ATG",
+            "xmlStorageValue": "27354"
+          },
+          "E": {
+            "type": "s",
+            "raw": "GCT",
+            "xmlStorageValue": "27355"
+          },
+          "F": {
+            "type": "s",
+            "raw": "missense",
+            "xmlStorageValue": "8889"
+          },
+          "G": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "H": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "I": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "J": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "K": {
+            "type": "n",
+            "raw": "-0.63643535299999998",
+            "xmlStorageValue": "-0.63643535299999998"
+          },
+          "X": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "Y": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "Z": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "AA": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          }
+        },
+        "role": "DEVELOPER_SOURCE_ROW_NOT_HELD_OUT",
+        "publicDnaIdentityInProspectiveInput": false,
+        "wildTypeCodon": "ATG",
+        "experimentalMutantCodon": "GCT",
+        "proteinHgvs": "NP_000305.3:p.Met1Ala",
+        "mutationType": "MISSENSE",
+        "conflictReview": {
+          "status": "CLEAR_FOR_THIS_ASSAY",
+          "reviewId": "SYNTHETIC_SCOPE_REVIEW_SINGLE_PINNED_ASSAY_ONLY"
+        }
+      },
+      {
+        "recordId": "MIGHELL2018_S2_ROW_6",
+        "proteinVariantKey": "M1L",
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "sheet": "Table S2",
+        "row": 6,
+        "sourceCells": {
+          "A": {
+            "type": "s",
+            "raw": "M1L",
+            "xmlStorageValue": "22"
+          },
+          "B": {
+            "type": "s",
+            "raw": "Met1Leu",
+            "xmlStorageValue": "27424"
+          },
+          "D": {
+            "type": "s",
+            "raw": "ATG",
+            "xmlStorageValue": "27354"
+          },
+          "E": {
+            "type": "s",
+            "raw": "TTG",
+            "xmlStorageValue": "27358"
+          },
+          "F": {
+            "type": "s",
+            "raw": "missense",
+            "xmlStorageValue": "8889"
+          },
+          "G": {
+            "type": "n",
+            "raw": "-1.5456136629999999",
+            "xmlStorageValue": "-1.5456136629999999"
+          },
+          "H": {
+            "type": "n",
+            "raw": "0.88348298400000003",
+            "xmlStorageValue": "0.88348298400000003"
+          },
+          "I": {
+            "type": "b",
+            "raw": "0",
+            "xmlStorageValue": "0"
+          },
+          "J": {
+            "type": "s",
+            "raw": "Fail Both",
+            "xmlStorageValue": "21"
+          },
+          "K": {
+            "type": "n",
+            "raw": "-0.27336996400000002",
+            "xmlStorageValue": "-0.27336996400000002"
+          },
+          "X": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "Y": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "Z": {
+            "type": "n",
+            "raw": "-1.5456136629999999",
+            "xmlStorageValue": "-1.5456136629999999"
+          },
+          "AA": {
+            "type": "n",
+            "raw": "0.88348298400000003",
+            "xmlStorageValue": "0.88348298400000003"
+          }
+        },
+        "role": "DEVELOPER_SOURCE_ROW_NOT_HELD_OUT",
+        "publicDnaIdentityInProspectiveInput": false,
+        "wildTypeCodon": "ATG",
+        "experimentalMutantCodon": "TTG",
+        "proteinHgvs": "NP_000305.3:p.Met1Leu",
+        "mutationType": "MISSENSE",
+        "conflictReview": {
+          "status": "CLEAR_FOR_THIS_ASSAY",
+          "reviewId": "SYNTHETIC_SCOPE_REVIEW_SINGLE_PINNED_ASSAY_ONLY"
+        }
+      },
+      {
+        "recordId": "MIGHELL2018_S2_ROW_528",
+        "proteinVariantKey": "D24E",
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "sheet": "Table S2",
+        "row": 528,
+        "sourceCells": {
+          "A": {
+            "type": "s",
+            "raw": "D24E",
+            "xmlStorageValue": "547"
+          },
+          "B": {
+            "type": "s",
+            "raw": "Asp24Glu",
+            "xmlStorageValue": "27965"
+          },
+          "D": {
+            "type": "s",
+            "raw": "GAC",
+            "xmlStorageValue": "27383"
+          },
+          "E": {
+            "type": "s",
+            "raw": "GAA",
+            "xmlStorageValue": "27372"
+          },
+          "F": {
+            "type": "s",
+            "raw": "missense",
+            "xmlStorageValue": "8889"
+          },
+          "G": {
+            "type": "n",
+            "raw": "-0.86762700000000004",
+            "xmlStorageValue": "-0.86762700000000004"
+          },
+          "H": {
+            "type": "n",
+            "raw": "0.163831752",
+            "xmlStorageValue": "0.163831752"
+          },
+          "I": {
+            "type": "b",
+            "raw": "1",
+            "xmlStorageValue": "1"
+          },
+          "J": {
+            "type": "s",
+            "raw": "Pass SE Filter",
+            "xmlStorageValue": "27"
+          },
+          "K": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "X": {
+            "type": "n",
+            "raw": "-0.99531321399999995",
+            "xmlStorageValue": "-0.99531321399999995"
+          },
+          "Y": {
+            "type": "n",
+            "raw": "0.23142390400000001",
+            "xmlStorageValue": "0.23142390400000001"
+          },
+          "Z": {
+            "type": "n",
+            "raw": "-0.73934498100000001",
+            "xmlStorageValue": "-0.73934498100000001"
+          },
+          "AA": {
+            "type": "n",
+            "raw": "0.231963208",
+            "xmlStorageValue": "0.231963208"
+          }
+        },
+        "role": "DEVELOPER_SOURCE_ROW_NOT_HELD_OUT",
+        "publicDnaIdentityInProspectiveInput": false,
+        "wildTypeCodon": "GAC",
+        "experimentalMutantCodon": "GAA",
+        "proteinHgvs": "NP_000305.3:p.Asp24Glu",
+        "mutationType": "MISSENSE",
+        "conflictReview": {
+          "status": "CLEAR_FOR_THIS_ASSAY",
+          "reviewId": "SYNTHETIC_SCOPE_REVIEW_SINGLE_PINNED_ASSAY_ONLY"
+        }
+      },
+      {
+        "recordId": "MIGHELL2018_S2_ROW_2717",
+        "proteinVariantKey": "C124S",
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "sheet": "Table S2",
+        "row": 2717,
+        "sourceCells": {
+          "A": {
+            "type": "s",
+            "raw": "C124S",
+            "xmlStorageValue": "2736"
+          },
+          "B": {
+            "type": "s",
+            "raw": "Cys124Ser",
+            "xmlStorageValue": "30154"
+          },
+          "D": {
+            "type": "s",
+            "raw": "TGT",
+            "xmlStorageValue": "27365"
+          },
+          "E": {
+            "type": "s",
+            "raw": "TCT",
+            "xmlStorageValue": "27362"
+          },
+          "F": {
+            "type": "s",
+            "raw": "missense",
+            "xmlStorageValue": "8889"
+          },
+          "G": {
+            "type": "n",
+            "raw": "-4.8956429090000002",
+            "xmlStorageValue": "-4.8956429090000002"
+          },
+          "H": {
+            "type": "n",
+            "raw": "0.41023389700000001",
+            "xmlStorageValue": "0.41023389700000001"
+          },
+          "I": {
+            "type": "b",
+            "raw": "1",
+            "xmlStorageValue": "1"
+          },
+          "J": {
+            "type": "s",
+            "raw": "Pass SE Filter",
+            "xmlStorageValue": "27"
+          },
+          "K": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "X": {
+            "type": "n",
+            "raw": "-4.8798801569999997",
+            "xmlStorageValue": "-4.8798801569999997"
+          },
+          "Y": {
+            "type": "n",
+            "raw": "0.63394388499999998",
+            "xmlStorageValue": "0.63394388499999998"
+          },
+          "Z": {
+            "type": "n",
+            "raw": "-5.2010348779999998",
+            "xmlStorageValue": "-5.2010348779999998"
+          },
+          "AA": {
+            "type": "n",
+            "raw": "0.76278754900000001",
+            "xmlStorageValue": "0.76278754900000001"
+          }
+        },
+        "role": "DEVELOPER_SOURCE_ROW_NOT_HELD_OUT",
+        "publicDnaIdentityInProspectiveInput": true,
+        "wildTypeCodon": "TGT",
+        "experimentalMutantCodon": "TCT",
+        "proteinHgvs": "NP_000305.3:p.Cys124Ser",
+        "mutationType": "MISSENSE",
+        "conflictReview": {
+          "status": "CLEAR_FOR_THIS_ASSAY",
+          "reviewId": "SYNTHETIC_SCOPE_REVIEW_SINGLE_PINNED_ASSAY_ONLY"
+        }
+      },
+      {
+        "recordId": "MIGHELL2018_S2_ROW_2838",
+        "proteinVariantKey": "G129E",
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "sheet": "Table S2",
+        "row": 2838,
+        "sourceCells": {
+          "A": {
+            "type": "s",
+            "raw": "G129E",
+            "xmlStorageValue": "2857"
+          },
+          "B": {
+            "type": "s",
+            "raw": "Gly129Glu",
+            "xmlStorageValue": "30275"
+          },
+          "D": {
+            "type": "s",
+            "raw": "GGA",
+            "xmlStorageValue": "27381"
+          },
+          "E": {
+            "type": "s",
+            "raw": "GAA",
+            "xmlStorageValue": "27372"
+          },
+          "F": {
+            "type": "s",
+            "raw": "missense",
+            "xmlStorageValue": "8889"
+          },
+          "G": {
+            "type": "n",
+            "raw": "-5.4097635159999999",
+            "xmlStorageValue": "-5.4097635159999999"
+          },
+          "H": {
+            "type": "n",
+            "raw": "0.57859017199999996",
+            "xmlStorageValue": "0.57859017199999996"
+          },
+          "I": {
+            "type": "b",
+            "raw": "1",
+            "xmlStorageValue": "1"
+          },
+          "J": {
+            "type": "s",
+            "raw": "Concordance Filter",
+            "xmlStorageValue": "152"
+          },
+          "K": {
+            "type": "n",
+            "raw": "-3.2014190450000002",
+            "xmlStorageValue": "-3.2014190450000002"
+          },
+          "X": {
+            "type": "n",
+            "raw": "-5.053413527",
+            "xmlStorageValue": "-5.053413527"
+          },
+          "Y": {
+            "type": "n",
+            "raw": "0.81794697800000005",
+            "xmlStorageValue": "0.81794697800000005"
+          },
+          "Z": {
+            "type": "n",
+            "raw": "-5.7666421769999996",
+            "xmlStorageValue": "-5.7666421769999996"
+          },
+          "AA": {
+            "type": "n",
+            "raw": "0.81855349600000005",
+            "xmlStorageValue": "0.81855349600000005"
+          }
+        },
+        "role": "DEVELOPER_SOURCE_ROW_NOT_HELD_OUT",
+        "publicDnaIdentityInProspectiveInput": true,
+        "wildTypeCodon": "GGA",
+        "experimentalMutantCodon": "GAA",
+        "proteinHgvs": "NP_000305.3:p.Gly129Glu",
+        "mutationType": "MISSENSE",
+        "conflictReview": {
+          "status": "CLEAR_FOR_THIS_ASSAY",
+          "reviewId": "SYNTHETIC_SCOPE_REVIEW_SINGLE_PINNED_ASSAY_ONLY"
+        }
+      },
+      {
+        "recordId": "MIGHELL2018_S2_ROW_2852",
+        "proteinVariantKey": "R130Q",
+        "sourceId": "MIGHELL2018_TABLES_S1_S6",
+        "sheet": "Table S2",
+        "row": 2852,
+        "sourceCells": {
+          "A": {
+            "type": "s",
+            "raw": "R130Q",
+            "xmlStorageValue": "2871"
+          },
+          "B": {
+            "type": "s",
+            "raw": "Arg130Gln",
+            "xmlStorageValue": "30289"
+          },
+          "D": {
+            "type": "s",
+            "raw": "CGA",
+            "xmlStorageValue": "27401"
+          },
+          "E": {
+            "type": "s",
+            "raw": "CAA",
+            "xmlStorageValue": "18485"
+          },
+          "F": {
+            "type": "s",
+            "raw": "missense",
+            "xmlStorageValue": "8889"
+          },
+          "G": {
+            "type": "n",
+            "raw": "-2.0401641100000001",
+            "xmlStorageValue": "-2.0401641100000001"
+          },
+          "H": {
+            "type": "n",
+            "raw": "0.347855319",
+            "xmlStorageValue": "0.347855319"
+          },
+          "I": {
+            "type": "b",
+            "raw": "1",
+            "xmlStorageValue": "1"
+          },
+          "J": {
+            "type": "s",
+            "raw": "Pass SE Filter",
+            "xmlStorageValue": "27"
+          },
+          "K": {
+            "type": "s",
+            "raw": "NA",
+            "xmlStorageValue": "18"
+          },
+          "X": {
+            "type": "n",
+            "raw": "-1.480441109",
+            "xmlStorageValue": "-1.480441109"
+          },
+          "Y": {
+            "type": "n",
+            "raw": "0.56484798199999997",
+            "xmlStorageValue": "0.56484798199999997"
+          },
+          "Z": {
+            "type": "n",
+            "raw": "-2.4760753229999999",
+            "xmlStorageValue": "-2.4760753229999999"
+          },
+          "AA": {
+            "type": "n",
+            "raw": "0.18789872699999999",
+            "xmlStorageValue": "0.18789872699999999"
+          }
+        },
+        "role": "DEVELOPER_SOURCE_ROW_NOT_HELD_OUT",
+        "publicDnaIdentityInProspectiveInput": true,
+        "wildTypeCodon": "CGA",
+        "experimentalMutantCodon": "CAA",
+        "proteinHgvs": "NP_000305.3:p.Arg130Gln",
+        "mutationType": "MISSENSE",
+        "conflictReview": {
+          "status": "CLEAR_FOR_THIS_ASSAY",
+          "reviewId": "SYNTHETIC_SCOPE_REVIEW_SINGLE_PINNED_ASSAY_ONLY"
+        }
+      }
+    ]
+  }
+}

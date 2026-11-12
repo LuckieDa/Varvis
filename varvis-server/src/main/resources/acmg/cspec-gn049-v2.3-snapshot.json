@@ -1,0 +1,3532 @@
+{
+  "entContent": {
+    "approvedOn": "2024-12-03T02:25:53.978Z",
+    "description": "These are the ACMG/AMP variant classification specifications developed by the RASopathy VCEP for BRAF.",
+    "hideFlag": false,
+    "legacyFullySuperseded": true,
+    "namespace": "GN049",
+    "notes": "These criteria should only be used to classify germline variants potentially associated with a RASopathy phenotype. Please note that these adapted criteria are not currently designed to classify variants relative to non-RASopathy phenotypes (e.g. loss of function variants in PTPN11 related to metachondromatosis); however, information about these other genotype:phenotype correlations are noted within the supplemental material. These criteria are also not designed to classify somatic variation in these genes. It is well-known that information about known somatic mutations can be utilized as supporting evidence for classifying variants relative to the RASopathy spectrum disorders given the disease mechanisms are directly correlated. Future initiatives in conjunction with the ClinGen somatic working group will aim to define this relationship in subsequent versions of this documentation. Currently, specific phenotype:genotype correlations regarding somatic variants should not be used as evidence to support germline pathogenicity.",
+    "references": [
+      {
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29493581"
+      }
+    ],
+    "releaseNotes": "Submitting Pilot Rules. All pilot variants are attached in the LZTR1 submission. “Observed in ≥5 probands” removed from PM5 at Moderate strength.",
+    "releasedUnderRevision": true,
+    "shortTitle": "ACMG variant classification (RASopathy)",
+    "specificationSource": "",
+    "states": [
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "cspecAdministrator",
+          "name": "cspec-created",
+          "prevState": "START",
+          "timeStamp": "2022-08-18T19:13:24.322Z"
+        },
+        "name": "Pilot Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "RFWebb",
+          "name": "pilot-rules-submitted",
+          "prevState": "Pilot Rules In Prep",
+          "timeStamp": "2024-12-02T21:26:55.538Z"
+        },
+        "name": "Pilot Rules Submitted"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "RFWebb",
+          "name": "pilot-rules-withdrawn",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2023-06-07T18:18:12.960Z"
+        },
+        "name": "Pilot Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "cspecAdministrator",
+          "name": "pilot-rules-moved",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2023-07-19T17:49:03.904Z"
+        },
+        "name": "Classification Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "cspecAdministrator",
+          "name": "classified-rules-moved",
+          "prevState": "Classification Rules In Prep",
+          "timeStamp": "2023-07-19T17:49:03.904Z"
+        },
+        "name": "Classification Rules Submitted"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "sharriso",
+          "name": "classified-rules-approved",
+          "prevState": "Classification Rules Submitted",
+          "timeStamp": "2023-09-06T21:13:05.564Z"
+        },
+        "name": "Pilot Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "sharriso",
+          "name": "pilot-rules-reviewed",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2024-06-11T16:18:46.766Z"
+        },
+        "name": "Pilot Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "abyrne",
+          "name": "pilot-rules-approved",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2024-12-02T23:48:37.609Z"
+        },
+        "name": "Approved For Release"
+      },
+      {
+        "current": true,
+        "event": {
+          "modifiedBy": "RFWebb",
+          "name": "cspec-released",
+          "prevState": "Approved For Release",
+          "timeStamp": "2024-12-03T02:25:53.978Z"
+        },
+        "name": "Released"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "RFWebb",
+          "name": "cspec-reopened",
+          "prevState": "Released",
+          "timeStamp": "2024-12-02T21:25:57.370Z"
+        },
+        "name": "Pilot Rules In Prep"
+      }
+    ],
+    "tagNameSpaces": [
+      "049"
+    ],
+    "title": "ClinGen RASopathy Expert Panel Specifications to the ACMG/AMP Variant Interpretation Guidelines for BRAF Version 2.3.0",
+    "version": "2.3.0",
+    "versioned": true
+  },
+  "entId": "GN049",
+  "entType": "SequenceVariantInterpretation",
+  "ld": {
+    "Disease": [
+      {
+        "entContent": {
+          "MONDO": {
+            "id": "http://purl.obolibrary.org/obo/MONDO_0021060",
+            "lbl": "RASopathy",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://www.orpha.net/ORDO/Orphanet_536391"
+                },
+                {
+                  "pred": "http://purl.org/dc/terms/conformsTo",
+                  "val": "http://purl.obolibrary.org/obo/mondo/patterns/basis_in_disruption_of_process.yaml"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://purl.obolibrary.org/obo/NCIT_C179667"
+                },
+                {
+                  "pred": "http://purl.org/dc/terms/conformsTo",
+                  "val": "http://purl.obolibrary.org/obo/mondo/patterns/disrupts_process.yaml"
+                }
+              ],
+              "definition": {
+                "val": "Developmental syndromes caused by germline mutations (or in rare cases by somatic mosaicism) in genes that alter the Ras subfamily and mitogen-activated protein kinases that control signal transduction.",
+                "xrefs": [
+                  "Wikipedia:RASopathy"
+                ]
+              },
+              "subsets": [
+                "http://purl.obolibrary.org/obo/mondo#disease_grouping",
+                "http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders"
+              ],
+              "synonyms": [
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "disorder of Ras protein signal transduction",
+                  "xrefs": [
+                    "MONDO:patterns/basis_in_disruption_of_process"
+                  ]
+                },
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "RASopathy",
+                  "xrefs": []
+                },
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "Ras protein signal transduction disease",
+                  "xrefs": [
+                    "MONDO:design_pattern"
+                  ]
+                }
+              ],
+              "xrefs": [
+                {
+                  "val": "Orphanet:536391"
+                },
+                {
+                  "val": "NCIT:C179667"
+                },
+                {
+                  "val": "EFO:1001502"
+                }
+              ]
+            },
+            "type": "CLASS"
+          },
+          "MONDOID": "MONDO:0021060",
+          "name": "RASopathy"
+        },
+        "entId": "MONDO:0021060",
+        "entIri": "http://purl.obolibrary.org/obo/MONDO_0021060",
+        "entType": "Disease",
+        "ldhId": "135642022",
+        "modified": 1674855764683,
+        "modifier": "cspecAdministrator",
+        "rev": "_inf5Bji---"
+      },
+      {
+        "entContent": {
+          "MONDO": {
+            "id": "http://purl.obolibrary.org/obo/MONDO_0021060",
+            "lbl": "RASopathy",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://www.orpha.net/ORDO/Orphanet_536391"
+                },
+                {
+                  "pred": "http://purl.org/dc/terms/conformsTo",
+                  "val": "http://purl.obolibrary.org/obo/mondo/patterns/basis_in_disruption_of_process.yaml"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://purl.obolibrary.org/obo/NCIT_C179667"
+                },
+                {
+                  "pred": "http://purl.org/dc/terms/conformsTo",
+                  "val": "http://purl.obolibrary.org/obo/mondo/patterns/disrupts_process.yaml"
+                }
+              ],
+              "definition": {
+                "val": "Developmental syndromes caused by germline mutations (or in rare cases by somatic mosaicism) in genes that alter the Ras subfamily and mitogen-activated protein kinases that control signal transduction.",
+                "xrefs": [
+                  "Wikipedia:RASopathy"
+                ]
+              },
+              "subsets": [
+                "http://purl.obolibrary.org/obo/mondo#disease_grouping",
+                "http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders"
+              ],
+              "synonyms": [
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "disorder of Ras protein signal transduction",
+                  "xrefs": [
+                    "MONDO:patterns/basis_in_disruption_of_process"
+                  ]
+                },
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "RASopathy",
+                  "xrefs": []
+                },
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "Ras protein signal transduction disease",
+                  "xrefs": [
+                    "MONDO:design_pattern"
+                  ]
+                }
+              ],
+              "xrefs": [
+                {
+                  "val": "Orphanet:536391"
+                },
+                {
+                  "val": "NCIT:C179667"
+                },
+                {
+                  "val": "EFO:1001502"
+                }
+              ]
+            },
+            "type": "CLASS"
+          },
+          "MONDOID": "MONDO:0021060",
+          "name": "RASopathy",
+          "preferredModeOfInheritance": {
+            "inheritance": "Autosomal dominant inheritance",
+            "sepioID": "HP:0000006"
+          }
+        },
+        "entId": "MONDO:0021060",
+        "entIri": "http://purl.obolibrary.org/obo/MONDO_0021060",
+        "entType": "Disease",
+        "ldhId": "135642020",
+        "modified": 1674855764683,
+        "modifier": "cspecAdministrator",
+        "rev": "_inf5Bjm--c"
+      }
+    ],
+    "RuleSet": [
+      {
+        "entContent": {
+          "_uniqueProp": "049_nuclear_BRAF",
+          "geneType": "nuclear",
+          "genes": [
+            {
+              "diseases": [
+                {
+                  "modesOfInheritance": [
+                    {
+                      "modeOfInheritance": "Autosomal dominant inheritance"
+                    }
+                  ],
+                  "preferredModeOfInheritance": "Autosomal dominant inheritance",
+                  "preferredMondoId": "MONDO:0021060",
+                  "preferredTitle": "RASopathy"
+                }
+              ],
+              "gene": "BRAF",
+              "preferredTranscript": "NM_004333.6",
+              "transcripts": [
+                "NM_004333.6"
+              ]
+            }
+          ],
+          "ns": "049",
+          "references": [
+            {
+              "id": "b0506798-8a83-5d23-9755-cf54bb021067",
+              "namespace": "url",
+              "value": "https://clinicalgenome.org/site/assets/files/3461/svi_proposal_for_de_novo_criteria_v1_1.pdf"
+            }
+          ],
+          "rules": {
+            "mainRules": [
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Very Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule1, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": ">=1",
+                    "label": "Rule1, Condition2",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule1"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Very Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule2, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule2, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule2"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Very Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule3, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule3, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule3, Condition3",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule3"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Very Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule4, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule4, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule4"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule5, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule5"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule6, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": ">=3",
+                    "label": "Rule6, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule6"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule7, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==2",
+                    "label": "Rule7, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule7, Condition3",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule7"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule8, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule8, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": ">=4",
+                    "label": "Rule8, Condition3",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule8"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Very Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule10, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule10, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule10"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule11, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule11, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule11"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1",
+                      "PS2",
+                      "PS4",
+                      "PM5_Strong",
+                      "PM6_Strong",
+                      "PP1_Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule12, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule12, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule12"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": ">=3",
+                    "label": "Rule13, Condition1",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule13"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==2",
+                    "label": "Rule14, Condition1",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule14, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule14"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS2_Moderate",
+                      "PS4_Moderate",
+                      "PM1",
+                      "PM4",
+                      "PM5",
+                      "PM6",
+                      "PP1_Moderate"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule15, Condition1",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS3_Supporting",
+                      "PS4_Supporting",
+                      "PM2_Supporting",
+                      "PM6_Supporting",
+                      "PP1",
+                      "PP2",
+                      "PP3"
+                    ],
+                    "condition": ">=4",
+                    "label": "Rule15, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule15"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "BS1",
+                      "BS2",
+                      "BS4",
+                      "BP2_Strong",
+                      "BP5_Strong"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule16, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  }
+                ],
+                "inference": "Benign",
+                "rule": "Rule16"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "BA1"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule17, Condition1",
+                    "partitionPath": "Benign.Stand Alone"
+                  }
+                ],
+                "inference": "Benign",
+                "rule": "Rule17"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "BS1",
+                      "BS2",
+                      "BS4",
+                      "BP2_Strong",
+                      "BP5_Strong"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule18, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "BS2_Supporting",
+                      "BP1",
+                      "BP2",
+                      "BP4",
+                      "BP5",
+                      "BP7"
+                    ],
+                    "condition": "==1",
+                    "label": "Rule18, Condition2",
+                    "partitionPath": "Benign.Supporting"
+                  }
+                ],
+                "inference": "Likely Benign",
+                "rule": "Rule18"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "BS2_Supporting",
+                      "BP1",
+                      "BP2",
+                      "BP4",
+                      "BP5",
+                      "BP7"
+                    ],
+                    "condition": ">=2",
+                    "label": "Rule19, Condition1",
+                    "partitionPath": "Benign.Supporting"
+                  }
+                ],
+                "inference": "Likely Benign",
+                "rule": "Rule19"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "BS1",
+                      "BS2",
+                      "BS4",
+                      "BP2_Strong",
+                      "BP5_Strong"
+                    ],
+                    "condition": "==1",
+                    "getpartitionPath": "",
+                    "label": "Rule20, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  }
+                ],
+                "inference": "Likely Benign",
+                "rule": "Rule20"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "BS1"
+                    ],
+                    "condition": "==1",
+                    "getpartitionPath": "",
+                    "label": "Rule20, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  }
+                ],
+                "inference": "Likely Benign",
+                "rule": "Rule20"
+              }
+            ]
+          }
+        },
+        "entType": "RuleSet",
+        "ld": {
+          "CriteriaCode": [
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BA1_nuclear_BRAF",
+                "additionalComments": "An allele frequency ≥0.05% was approved. See supplemental material for additional frequency information.",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Stand Alone",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "GnomAD filtering allele frequency ≥0.05%.",
+                "label": "BA1",
+                "ns": "049",
+                "originalACMGSummary": "Allele frequency is above 5% in Exome Sequencing Project, 1000 Genomes or Exome Aggregation Consortium.",
+                "sepioID": "SEPIO-CG:99038",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Applicable",
+                    "id": "0087",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "GnomAD filtering allele frequency ≥0.05%.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0201",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0202",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0203",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0089",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325244",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpKC---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PP3_nuclear_BRAF",
+                "additionalComments": "",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "For missense variants: REVEL ≥ 0.7. For splicing impact, predicted outcome must match disease mechanism.",
+                "label": "PP3",
+                "ns": "049",
+                "originalACMGSummary": "Multiple lines of computational evidence support a deleterious effect on the gene or gene product (conservation, evolutionary, splicing impact, etc.).\nCaveat: As many in silico algorithms use the same or very similar input for their predictions, each algorithm should not be counted as an independent criterion. PP3 can be used only once in any evaluation of a variant.",
+                "sepioID": "SEPIO-CG:99035",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0238",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0024",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0019",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0025",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0062",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "For missense variants: REVEL ≥ 0.7. For splicing impact, predicted outcome must match disease mechanism.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325239",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpMK---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PM4_nuclear_BRAF",
+                "additionalComments": "",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Protein length changes due to in-frame deletions/insertions in a non-repeat region or stop-loss variants.",
+                "label": "PM4",
+                "ns": "049",
+                "originalACMGSummary": "Protein length changes due to in-frame deletions/insertions in a non-repeat region or stop-loss variants.",
+                "sepioID": "SEPIO-CG:99030",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0233",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0012",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0035",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "009",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "No known repetitive areas in gene. Use as described.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0059",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325236",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpbG---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PVS1_nuclear_BRAF",
+                "additionalComments": "Not applicable.",
+                "applicability": "Not applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Very Strong",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "label": "PVS1",
+                "ns": "049",
+                "originalACMGSummary": "Null variant (nonsense, frameshift, canonical +/−1 or 2 splice sites, initiation codon, single or multi-exon deletion) in a gene where loss of function (LOF) is a known mechanism of disease.\nCaveats:\n * Beware of genes where LOF is not a known disease mechanism (e.g. GFAP, MYH7).\n * Use caution interpreting LOF variants at the extreme 3’ end of a gene.\n * Use caution with splice variants that are predicted to lead to exon skipping but leave the remainder of the protein intact.\n * Use caution in the presence of multiple transcripts.",
+                "sepioID": "SEPIO-CG:99022",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0245",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0244",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0020",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0026",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "001",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325230",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpjy---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BS3_nuclear_BRAF",
+                "additionalComments": "Approved functional studies are available for each individual gene in the supplemental material. Additional functional studies can be submitted to the expert panel for approval.",
+                "applicability": "Not applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Well-established in vitro or in vivo functional studies show no damaging effect on protein function or splicing.",
+                "label": "BS3",
+                "ns": "049",
+                "originalACMGSummary": "Well-established in vitro or in vivo functional studies show no damaging effect on protein function or splicing.",
+                "sepioID": "SEPIO-CG:99041",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0226",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0225",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0072",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0100",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0001327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0085",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific",
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325228",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpVG---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BS1_nuclear_BRAF",
+                "additionalComments": "An allele frequency ≥0.025% was approved. See supplemental material for additional frequency information.",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "GnomAD filtering allele frequency ≥0.025%.",
+                "label": "BS1",
+                "ns": "049",
+                "originalACMGSummary": "Allele frequency is greater than expected for disorder.",
+                "sepioID": "SEPIO-CG:99039",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0090",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0222",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0070",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "GnomAD filtering allele frequency ≥0.025%.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0223",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0086",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325255",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpOO---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PM5_nuclear_BRAF",
+                "additionalComments": "Previously established variant must be established as pathogenic per these criteria. Amino acid changes of variants should be concordant with pathogenicity based on how conservative or non-conservative (within the context of amino acid chain groupings) the residue change is relative to the known pathogenic residue changes. This evidence rule can also be used for pathogenic missense variants seen in the same analogous residue position in highly analogous groupings below:\nGroup 1: HRAS, NRAS, KRAS\nGroup 2: MAP2K1, MAP2K2\nGroup 3: SOS1, SOS2\n\nThis rule should not be used as independent criteria for calculating pathogenicity in conjunction with PM1 if the amino acid residue being interrogated is explicitly designated as a “mutational hot-spot”. For example, Gly12 in HRAS is listed as a hot-spot for PM1 usage. In these situations, only PM1 should be used when combining criteria for final variant classification in order to avoid premature designation of a likely pathogenic classification in the absence of other evidence for pathogenicity.",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Applicable for observed analogous residue positions in _BRAF_ and _RAF1_. PM1 and PM5 may be used in conjunction at moderate levels, however, PM1 may not be applied if PM5\\_Strong is applied to avoid overweighting.",
+                "label": "PM5",
+                "ns": "049",
+                "originalACMGSummary": "Novel missense change at an amino acid residue where a different missense change determined to be pathogenic has been seen before.\nExample: Arg156His is pathogenic; now you observe Arg156Cys.\nCaveat: Beware of changes that impact splicing rather than at the amino acid/protein level.",
+                "sepioID": "SEPIO-CG:99031",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0234",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0047",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0056",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Analogous Gene",
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "≥2 different \\[likely\\] pathogenic residues changes at the same codon observed in ≥5 probands.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "008",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Analogous Gene",
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "1 \\[likely\\] pathogenic residue change at the same codon.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0048",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325252",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpQS---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP5_nuclear_BRAF",
+                "additionalComments": "",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Other Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Points are awarded for an alternative molecular cause of a RASopathy in a different gene (and/or in conjunction with BP2) and the phenotype is consistent with expected severity of the RASopathy. Points are also awarded for phenotypes inconsistent with a RASopathy and fully explained by a different causative variant (e.g. WES testing).",
+                "label": "BP5",
+                "ns": "049",
+                "originalACMGSummary": "Variant found in a case with an alternate molecular basis for disease.",
+                "sepioID": "SEPIO-CG:99047",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0218",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0216",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0073",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "≥ (-4) Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0217",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "≥ (-2) Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0078",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "None"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "≥ (-1) Point.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325251",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpdy---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP2_nuclear_BRAF",
+                "additionalComments": "",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Allelic Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Points are awarded for an alternative molecular cause of a RASopathy in the same gene (and/or in conjunction with BP5) and the phenotype is consistent with expected severity of the RASopathy.",
+                "label": "BP2",
+                "ns": "049",
+                "originalACMGSummary": "Observed in trans with a pathogenic variant for a fully penetrant dominant gene/disorder or observed in cis with a pathogenic variant in any inheritance pattern.",
+                "sepioID": "SEPIO-CG:99044",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0209",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0207",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0068",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "≥ (-4) Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0208",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "≥ (-2) Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0084",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "None"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "≥ (-1) Point.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325245",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpRm---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PP2_nuclear_BRAF",
+                "additionalComments": "PP2 is applicable to all RASopathy genes described and curated herein.",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Missense variant in a gene that has a low rate of benign missense variation and where missense variants are a common mechanism of disease.",
+                "label": "PP2",
+                "ns": "049",
+                "originalACMGSummary": "Missense variant in a gene that has a low rate of benign missense variation and where missense variants are a common mechanism of disease.",
+                "sepioID": "SEPIO-CG:99034",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0237",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0049",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0033",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0034",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0061",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Missense z score is >3.09 in gnomAD.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325242",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpZS---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PP4_nuclear_BRAF",
+                "additionalComments": "Not applicable, see PS4.",
+                "applicability": "Not applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Other Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "label": "PP4",
+                "ns": "049",
+                "originalACMGSummary": "Patient’s phenotype or family history is highly specific for a disease with a single genetic etiology.",
+                "sepioID": "SEPIO-CG:99036",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0239",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "002",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "005",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0018",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0063",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325237",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpaO---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BS4_nuclear_BRAF",
+                "additionalComments": "Requires only one informative meiosis and does not require an additional piece of supporting evidence to classify variant as likely benign.",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Segregation Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Lack of segregation in affected members of a family.",
+                "label": "BS4",
+                "ns": "049",
+                "originalACMGSummary": "Lack of segregation in affected members of a family.\nCaveat: The presence of phenocopies for common phenotypes (i.e. cancer, epilepsy) can mimic lack of segregation among affected individuals. Also, families may have more than one pathogenic variant contributing to an autosomal dominant disorder, further confounding an apparent lack of segregation.",
+                "sepioID": "SEPIO-CG:99042",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0229",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0227",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0071",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "Requires only one informative meiosis.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0228",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0077",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325235",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpTK---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PS2_nuclear_BRAF",
+                "additionalComments": "PS2_Very Strong: ≥2 independent occurrences of PS2 OR ≥2 independent occurrences of PM6 and one occurrence of PS2. Evidence from literature must be fully evaluated to support independent events.",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "De novo Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Follow SVI recommendations for point-based scoring in conjunction with PM6 (see Reference 1) and phenotypic specifications: full points awarded with RASopathy phenotypes, reduced points applicable to cases with minimal phenotypic information (i.e. prenatal cases, cases with a clinical order of a RASopathy panel without clinical information, and cases with limited clinical information in other global tests (such as WES)).",
+                "label": "PS2",
+                "ns": "049",
+                "originalACMGSummary": "De novo (both maternity and paternity confirmed) in a patient with the disease and no family history.\nNote: Confirmation of paternity only is insufficient. Egg donation, surrogate motherhood, errors in embryo transfer, etc. can contribute to non-maternity.",
+                "sepioID": "SEPIO-CG:99024",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0241",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0016",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "4 Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0051",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "None"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "2 Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "004",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "1 Point.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0043",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325233",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUphK--_"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP6_nuclear_BRAF",
+                "additionalComments": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                "applicability": "Not Applicable for this VCEP",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Other Database",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "",
+                "label": "BP6",
+                "ns": "049",
+                "originalACMGSummary": "Reputable source recently reports variant as benign, but the evidence is not available to the laboratory to perform an independent evaluation.",
+                "references": [
+                  {
+                    "id": "29543229",
+                    "source": "PubMed",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/29543229"
+                  }
+                ],
+                "sepioID": "SEPIO-CG:99048",
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000326",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325229",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpU----"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PP5_nuclear_BRAF",
+                "additionalComments": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                "applicability": "Not Applicable for this VCEP",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Other Database",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "",
+                "label": "PP5",
+                "ns": "049",
+                "originalACMGSummary": "Reputable source recently reports variant as pathogenic, but the evidence is not available to the laboratory to perform an independent evaluation.",
+                "references": [
+                  {
+                    "id": "29543229",
+                    "source": "PubMed",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/29543229"
+                  }
+                ],
+                "sepioID": "SEPIO-CG:99049",
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325254",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpW----"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PM1_nuclear_BRAF",
+                "additionalComments": "See supplemental material for approved functional domains and residues. This evidence rule can also be applied for the same analogous residue positions/regions in highly analogous groupings below:\n * Group 1: HRAS, NRAS, KRAS\n * Group 2: MAP2K1, MAP2K2\n * Group 3: SOS1, SOS2",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Located in a mutational hot spot and/or critical and well-established functional domain (e.g. active site of an enzyme) without benign variation. PM1 and PM5 may be used in conjunction at moderate levels, however, PM1 may not be applied if PM5\\_Strong is applied to avoid overweighting.",
+                "label": "PM1",
+                "ns": "049",
+                "originalACMGSummary": "Located in a mutational hot spot and/or critical and well-established functional domain (e.g. active site of an enzyme) without benign variation.",
+                "sepioID": "SEPIO-CG:99027",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0230",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0015",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0028",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "006",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "Applicable only to critical and well-established functional domains available in the supplementary table (exon 6, exon 11, P-loop \\[AA 459-474\\], CR3 activation segment \\[AA 594-627\\]). Not applicable to specific amino acid residues (see PM5).",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0054",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325250",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpf----"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP4_nuclear_BRAF",
+                "additionalComments": "",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "For missense variants: REVEL ≤0.3. For splicing variants: predicted outcome is negligible or does not match disease mechanism.",
+                "label": "BP4",
+                "ns": "049",
+                "originalACMGSummary": "Multiple lines of computational evidence suggest no impact on gene or gene product (conservation, evolutionary, splicing impact, etc)\nCaveat: As many in silico algorithms use the same or very similar input for their predictions, each algorithm cannot be counted as an independent criterion. BP4 can be used only once in any evaluation of a variant.",
+                "sepioID": "SEPIO-CG:99046",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0215",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0213",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0066",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0214",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0080",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "For missense variants: REVEL ≤0.3.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325246",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpby---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PS3_nuclear_BRAF",
+                "additionalComments": "Approved functional studies are available for each individual gene in the supplemental material. Additional functional studies can be submitted to the expert panel for approval.",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Well-established in vitro or in vivo functional studies supportive of a damaging effect on the gene or gene product. Approved assays are available in the supplemental materials.",
+                "label": "PS3",
+                "ns": "049",
+                "originalACMGSummary": "Well-established in vitro or in vivo functional studies supportive of a damaging effect on the gene or gene product.\nNote: Functional studies that have been validated and shown to be reproducible and robust in a clinical diagnostic laboratory setting are considered the most well-established.",
+                "sepioID": "SEPIO-CG:99025",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0242",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0031",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0052",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0039",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific",
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "Two or more different approved assays.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0045",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific",
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "One approved assay.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325240",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpL----"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PP1_nuclear_BRAF",
+                "additionalComments": "PP1_Moderate: ≥5 informative meioses\nPP1_Strong: ≥7 informative meioses",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Segregation Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Segregation in more than one family is recommended.",
+                "label": "PP1",
+                "ns": "049",
+                "originalACMGSummary": "Co-segregation with disease in multiple affected family members in a gene definitively known to cause the disease.\nNote: May be used as stronger evidence with increasing segregation data.",
+                "sepioID": "SEPIO-CG:99033",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0236",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0042",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0023",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "≥7 informative meioses.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0040",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "≥5 informative meioses.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0060",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "≥3 informative meioses.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325232",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpiG--_"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PS4_nuclear_BRAF",
+                "additionalComments": "PS4: ≥5 independent occurrences\nPS4_Moderate: ≥3 independent occurrences\nPS4_Supporting: ≥1 independent occurrences",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Strength adjustment using point-based scoring for autosomal dominant cases with phenotypic specifications: full points awarded with RASopathy phenotypes, reduced points applicable to cases with minimal phenotypic information (i.e. prenatal cases, cases with a clinical order of a RASopathy panel without clinical information, and cases with limited clinical information in other global tests (such as WES)).",
+                "label": "PS4",
+                "ns": "049",
+                "originalACMGSummary": "The prevalence of the variant in affected individuals is significantly increased compared to the prevalence in controls.\nNote 1: Relative risk (RR) or odds ratio (OR), as obtained from case-control studies, is >5.0 and the confidence interval around the estimate of RR or OR does not include 1.0. See manuscript for detailed guidance.\nNote 2: In instances of very rare variants where case-control studies may not reach statistical significance, the prior observation of the variant in multiple unrelated patients with the same phenotype, and its absence in controls, may be used as moderate level of evidence.",
+                "sepioID": "SEPIO-CG:99026",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0243",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0029",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0053",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "≥5 points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0057",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "≥3 points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0032",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "≥1 points.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325231",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpii---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP1_nuclear_BRAF",
+                "additionalComments": "This rule has contraindications for use with RASopathies. Given the disease mechanism is gain-of-function for RASopathies, BP1 should be used for any truncating variant (nonsense, frameshift, affects canonical splice sites, initiation codon, entire gene or multi exon deletion) in genes without established LOF correlation to disease. See the supplemental material regarding dosage sensitivity information for each individual gene and potential association to disorders associated with LOF variants.",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Truncating, LOF variant in a gene for which primarily missense, GOF variants are known to cause disease.",
+                "label": "BP1",
+                "ns": "049",
+                "originalACMGSummary": "Missense variant in a gene for which primarily truncating variants are known to cause disease.",
+                "sepioID": "SEPIO-CG:99043",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0206",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0204",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0075",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0205",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0082",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Disease-specific"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "This rule has contraindications for use with RASopathies. Given the disease mechanism is gain-of-function for RASopathies, BP1 should be used for any truncating variant (nonsense, frameshift, affects canonical splice sites, initiation codon, entire gene or multi exon deletion) in genes without established LOF correlation to disease. See the supplemental material regarding dosage sensitivity information for each individual gene and potential association to disorders associated with LOF variants.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325247",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpYK---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP7_nuclear_BRAF",
+                "additionalComments": "This rule is also applicable for intronic positions (except canonical splice sites) or non-coding variants and should be used in conjunction with BP4.",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "A synonymous variant for which splicing prediction algorithms predict no impact to the splice consensus sequence nor the creation of a new splice site AND the nucleotide is not highly conserved.",
+                "label": "BP7",
+                "ns": "049",
+                "originalACMGSummary": "A synonymous variant for which splicing prediction algorithms predict no impact to the splice consensus sequence nor the creation of a new splice site AND the nucleotide is not highly conserved.",
+                "sepioID": "SEPIO-CG:99049",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0221",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0219",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0065",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0220",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0079",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "A synonymous (silent) variant for which splicing prediction algorithms predict no impact to the splice consensus sequence nor the creation of a new splice site AND the nucleotide is not highly conserved. This rule is also applicable for intronic positions (except canonical splice sites) or non-coding variants and should be used in conjunction with BP4.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325253",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpPa---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BS2_nuclear_BRAF",
+                "additionalComments": "Due to variable expressivity and severity, extensive clinical workup for RASopathy spectrum features is warranted, thus general population data should not be used for this criterion. Clinical laboratories are encouraged to accumulate more than 3 instances of well phenotyped family members before applying this strong criterion.",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Strength adjustment using point-based scoring based on phenotypic specifications. Phenotypic specifications: based on healthy homozygote or heterozygote individuals, reduced points for apparently unaffected heterozygous individuals, applicable to parent or sibling samples during clinical family evaluations.",
+                "label": "BS2",
+                "ns": "049",
+                "originalACMGSummary": "Observed in a healthy adult individual for a recessive (homozygous), dominant (heterozygous), or X-linked (hemizygous) disorder, with full penetrance expected at an early age.",
+                "sepioID": "SEPIO-CG:99040",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0091",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000357",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0224",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0069",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "\\-4 Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0098",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0076",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "\\-1 Point.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325249",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpJC---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PS1_nuclear_BRAF",
+                "additionalComments": "Previously established variant must be established as pathogenic per these criteria for germline RASopathy variants. This evidence rule can also be applied for the any observed analogous residue positions/regions throughout the gene in highly analogous groupings below:\n * Group 1: HRAS, NRAS, KRAS\n * Group 2: MAP2K1, MAP2K2\n * Group 3: SOS1, SOS2",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Same amino acid change as a previously established pathogenic variant regardless of nucleotide change.",
+                "label": "PS1",
+                "ns": "049",
+                "originalACMGSummary": "Same amino acid change as a previously established pathogenic variant regardless of nucleotide change.\nExample: Val->Leu caused by either G>C or G>T in the same codon.\nCaveat: Beware of changes that impact splicing rather than at the amino acid/protein level.",
+                "sepioID": "SEPIO-CG:99023",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0240",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0021",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0050",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Analogous Gene"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Same amino acid change as a previously established pathogenic variant regardless of nucleotide change. Applicable for observed analogous residue positions in _BRAF_ and _RAF1_.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0046",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0036",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325248",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpX----"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_BP3_nuclear_BRAF",
+                "additionalComments": "No known benign repetitive areas in RASopathy genes.",
+                "applicability": "Not applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "label": "BP3",
+                "ns": "049",
+                "originalACMGSummary": "In frame-deletions/insertions in a repetitive region without a known function.",
+                "sepioID": "SEPIO-CG:99045",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0212",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0210",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0074",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0211",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0081",
+                    "instructionsToUse": "",
+                    "specificationType": "None",
+                    "status": "approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325243",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpdO---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PM6_nuclear_BRAF",
+                "additionalComments": "PM6_Strong: ≥2 independent occurrences of PM6. Evidence from literature must be fully evaluated to support independent events.\nPS2_VeryStrong: ≥2 independent occurrences of PS2 OR ≥2 independent occurrences of PM6 and one occurrence of PS2. Evidence from literature must be fully evaluated to support independent events.",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "De novo Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Follow SVI recommendations for point-based scoring in conjunction with PS2 (see Reference 1) and phenotypic specifications: full points awarded with RASopathy phenotypes, reduced points applicable to cases with minimal phenotypic information (i.e. prenatal cases, cases with a clinical order of a RASopathy panel without clinical information, and cases with limited clinical information in other global tests (such as WES)).",
+                "label": "PM6",
+                "ns": "049",
+                "originalACMGSummary": "Assumed de novo, but without confirmation of paternity and maternity.",
+                "sepioID": "SEPIO-CG:99032",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0235",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0014",
+                    "instructionsToUse": "",
+                    "status": "approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0037",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "2 Points.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0010",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "None"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "1 Point.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0022",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "0.5 Points.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325241",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpSS---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PM3_nuclear_BRAF",
+                "additionalComments": "Not applicable.",
+                "applicability": "Not applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Allelic Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "label": "PM3",
+                "ns": "049",
+                "originalACMGSummary": "For recessive disorders, detected in trans with a pathogenic variant\nNote: This requires testing of parents (or offspring) to determine phase.",
+                "sepioID": "SEPIO-CG:99029",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0232",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0038",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0058",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "007",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0027",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325238",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpNW---"
+            },
+            {
+              "created": 1722647406892,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "_uniqueProp": "049_PM2_nuclear_BRAF",
+                "additionalComments": "The variant must be completely absent from all population databases.",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "BRAF"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "The variant must be absent from controls (gnomAD).",
+                "label": "PM2",
+                "ns": "049",
+                "originalACMGSummary": "Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes or Exome Aggregation Consortium.\nCaveat: Population data for indels may be poorly called by next generation sequencing.",
+                "sepioID": "SEPIO-CG:99028",
+                "specificationType": [],
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0231",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0044",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0013",
+                    "instructionsToUse": "",
+                    "status": "not approved",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0011",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "approved",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0030",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "status": "not approved",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "The variant must be absent from controls (gnomAD).",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "1828325234",
+              "modified": 1733192756358,
+              "modifier": "RFWebb",
+              "rev": "_i2nUpgG---"
+            }
+          ],
+          "File": [
+            {
+              "created": 1733174730583,
+              "creator": "RFWebb",
+              "entContent": {
+                "description": "De novo occurrences in a proband(s) with the disease and no family history and ACMG/AMP evidence strength level for de novo occurrence(s).",
+                "fileLabel": "PS2/PM6 Scoring",
+                "fileName": "PS2%3APM6.jpeg",
+                "path": "/data/srvc-files/cspec-reg/organizations/50021/rulesets/643243126/5321c428-caeb-4178-8e12-26b4bc1e5152.jpeg",
+                "public": true,
+                "size": 256369,
+                "type": "jpeg"
+              },
+              "entId": "5321c428-caeb-4178-8e12-26b4bc1e5152",
+              "entType": "File",
+              "ldhId": "84162918",
+              "modified": 1733192758367,
+              "modifier": "RFWebb",
+              "rev": "_i2nUrKy---"
+            },
+            {
+              "created": 1733174730583,
+              "creator": "RFWebb",
+              "entContent": {
+                "description": "Phenotypic information to apply BS2 and ACMG/AMP evidence strength level for applying BS2.",
+                "fileLabel": "BS2 Scoring",
+                "fileName": "BS2.jpeg",
+                "path": "/data/srvc-files/cspec-reg/organizations/50021/rulesets/643243126/14a67e3d-a76e-4caf-8578-8ad73c6b3963.jpeg",
+                "public": true,
+                "size": 182391,
+                "type": "jpeg"
+              },
+              "entId": "14a67e3d-a76e-4caf-8578-8ad73c6b3963",
+              "entType": "File",
+              "ldhId": "84162916",
+              "modified": 1733192758367,
+              "modifier": "RFWebb",
+              "rev": "_i2nUrJu---"
+            },
+            {
+              "created": 1733174730583,
+              "creator": "RFWebb",
+              "entContent": {
+                "description": "Information to apply BP5/BP2 and ACMG/AMP evidence strength level for applying BP5/BP2.",
+                "fileLabel": "BP5/BP2 Scoring",
+                "fileName": "BP5%3ABP2.jpeg",
+                "path": "/data/srvc-files/cspec-reg/organizations/50021/rulesets/643243126/418e6e48-ca27-459e-9bf3-97003e9c0c28.jpeg",
+                "public": true,
+                "size": 186242,
+                "type": "jpeg"
+              },
+              "entId": "418e6e48-ca27-459e-9bf3-97003e9c0c28",
+              "entType": "File",
+              "ldhId": "84162917",
+              "modified": 1733192758367,
+              "modifier": "RFWebb",
+              "rev": "_i2nUrLu---"
+            },
+            {
+              "created": 1722647407272,
+              "creator": "cspecAdministrator",
+              "entContent": {
+                "description": "This documentation specifies which assays can be used in the application of PS3/BS3 and at what strength.",
+                "fileLabel": "Approved Functional Studies",
+                "fileName": "SVI-RASopathy-VCEP-V2-Approved-Functional-Studies.xlsx",
+                "path": "/data/srvc-files/cspec-reg/organizations/50021/rulesets/643243126/c73514de-466a-4cda-b3bb-1185c98ace42.xlsx",
+                "public": true,
+                "size": 263954,
+                "type": "xlsx"
+              },
+              "entId": "c73514de-466a-4cda-b3bb-1185c98ace42",
+              "entType": "File",
+              "ldhId": "1836292874",
+              "modified": 1733192758367,
+              "modifier": "RFWebb",
+              "rev": "_i2nUrHa---"
+            },
+            {
+              "created": 1733174730583,
+              "creator": "RFWebb",
+              "entContent": {
+                "description": "Phenotypic information to apply PS4 and ACMG/AMP evidence strength level for applying PS4.",
+                "fileLabel": "PS4 Scoring",
+                "fileName": "PS4.jpeg",
+                "path": "/data/srvc-files/cspec-reg/organizations/50021/rulesets/643243126/1c66a50b-8ca3-4402-83a3-fda4faa92472.jpeg",
+                "public": true,
+                "size": 274448,
+                "type": "jpeg"
+              },
+              "entId": "1c66a50b-8ca3-4402-83a3-fda4faa92472",
+              "entType": "File",
+              "ldhId": "84162919",
+              "modified": 1733192758367,
+              "modifier": "RFWebb",
+              "rev": "_i2nUrIO---"
+            },
+            {
+              "created": 1726602091662,
+              "creator": "RFWebb",
+              "entContent": {
+                "description": "This documentation specifies which residues are analogous between given genes associated with RASopathies.",
+                "fileLabel": "Analogous Residues",
+                "fileName": "RAF-Alignment.xlsx",
+                "path": "/data/srvc-files/cspec-reg/organizations/50021/rulesets/643243126/32f80d27-eb67-40f5-b85c-57d03eda7ca1.xlsx",
+                "public": true,
+                "size": 393119,
+                "type": "xlsx"
+              },
+              "entId": "32f80d27-eb67-40f5-b85c-57d03eda7ca1",
+              "entType": "File",
+              "ldhId": "1836292940",
+              "modified": 1733192758367,
+              "modifier": "RFWebb",
+              "rev": "_i2nUrJG---"
+            }
+          ]
+        },
+        "ldhId": "643243126",
+        "modified": 1733192756017,
+        "modifier": "RFWebb",
+        "rev": "_i2nUozS---"
+      }
+    ]
+  },
+  "ldFor": {
+    "Organization": [
+      {
+        "entContent": {
+          "approval": {
+            "step1": {
+              "approved": true
+            },
+            "step2": {
+              "approved": true
+            },
+            "step3": {
+              "approvalDate": "2017-07-30T00:00:00.000Z",
+              "approved": true
+            },
+            "step4": {
+              "approvalDate": "2017-07-30T00:00:00.000Z",
+              "approved": true
+            }
+          },
+          "curationActivity": "Variant Pathogenicity",
+          "fullBaseName": "RASopathy",
+          "shortBaseName": "RASopathy",
+          "shortTitle": "RASopathy VCEP",
+          "title": "RASopathy Variant Curation Expert Panel",
+          "type": "Variant Curation Expert Panel"
+        },
+        "entId": "50021",
+        "entIri": "http://clinicalgenome.org/affiliation/50021",
+        "entType": "Organization",
+        "ldhId": "135637642",
+        "modified": 1680879306014,
+        "modifier": "cspecAdministrator",
+        "rev": "_inf5B_G--D"
+      }
+    ]
+  },
+  "ldhId": "643243119",
+  "modified": 1733192755692,
+  "modifier": "RFWebb",
+  "rev": "_i2nUog----"
+}

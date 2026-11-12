@@ -1,0 +1,39 @@
+{
+  "panelId": "BP7_SYNONYMOUS_LMNA_PUBLIC_V1",
+  "dataClass": "SYNTHETIC",
+  "assembly": "GRCh38",
+  "sampleId": "synthetic-proband",
+  "genotype": "0/1",
+  "syntheticPhenotype": "HP:0001644",
+  "syntheticContext": {"hgncId": "HGNC:6636", "mondoId": "MONDO:0007269", "moi": "AD", "affectedStatus": "UNKNOWN"},
+  "selectedTranscript": "ENST00000368300.9",
+  "maneRefseq": "NM_170707.4",
+  "independentExon": {
+    "id": "ENSE00003606184.1", "start": 156138488, "end": 156138757, "strand": 1,
+    "source": "https://rest.ensembl.org/lookup/id/ENST00000368300?expand=1&content-type=application/json"
+  },
+  "controls": [
+    {
+      "allele": "GRCh38:1:156138613:C:T", "hgvsc": "ENST00000368300.9:c.1824C>T", "protein": "p.Gly608=",
+      "clinvar": "https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/",
+      "independentSplicingSource": "https://pubmed.ncbi.nlm.nih.gov/12714972/",
+      "expectedDirectionBeforePrediction": "BP7 must not be MET; known cryptic splice activation",
+      "distanceFromTranscriptExonStart": 125, "distanceFromTranscriptExonEnd": 144
+    },
+    {
+      "allele": "GRCh38:1:156138697:C:T", "hgvsc": "ENST00000368300.9:c.1908C>T", "protein": "p.Ser636=",
+      "clinvar": "https://www.ncbi.nlm.nih.gov/clinvar/variation/66875/",
+      "expectedDirectionBeforePrediction": "Position-eligible positive candidate; MET additionally requires actual same-run BP4. ClinVar likely benign is not a BP7 gold standard.",
+      "distanceFromTranscriptExonStart": 209, "distanceFromTranscriptExonEnd": 60
+    }
+  ],
+  "additionalBoundaryControl": {
+    "allele": "GRCh38:1:156138757:G:A", "hgvsc": "ENST00000368300.9:c.1968G>A", "protein": "p.Gln656=",
+    "clinvar": "https://www.ncbi.nlm.nih.gov/clinvar/variation/162412/",
+    "independentPositionSource": "https://www.ncbi.nlm.nih.gov/clinvar/RCV000190822.5/",
+    "distanceFromTranscriptExonStart": 269, "distanceFromTranscriptExonEnd": 0,
+    "expectedDirectionBeforePrediction": "BP7 NOT_APPLICABLE regardless of SpliceAI score; additional control, never replaces c.1824C>T biological failure",
+    "syntheticPhenotype": null
+  },
+  "scopeNote": "Synthetic LMNA DCM catalog context exercises business binding; the negative allele's published splice effect is established in progeria. This does not establish DCM pathogenicity or classify a patient. Preserve unexpected predictions; no score-driven substitution."
+}

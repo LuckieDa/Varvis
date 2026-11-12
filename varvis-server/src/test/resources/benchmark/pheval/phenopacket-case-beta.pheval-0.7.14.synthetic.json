@@ -1,0 +1,64 @@
+{
+  "id": "synthetic-case-beta",
+  "subject": {
+    "id": "SYNTHETIC_SAMPLE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001627"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "diagnosis": {
+        "genomicInterpretations": [
+          {
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "vcfRecord": {
+                  "genomeAssembly": "GRCh38",
+                  "chrom": "2",
+                  "pos": "200",
+                  "ref": "AT",
+                  "alt": "A"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "vcfRecord": {
+                  "genomeAssembly": "GRCh38",
+                  "chrom": "3",
+                  "pos": "300",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "files": [
+    {
+      "uri": "file:///D:/LSD/Project/Tool/benchmark/generated/stage_2b_3b/beta-repro/phenopacket-case-beta.pheval-0.7.14.synthetic.vcf.gz",
+      "fileAttributes": {
+        "fileFormat": "vcf",
+        "genomeAssembly": "GRCh38"
+      }
+    }
+  ]
+}

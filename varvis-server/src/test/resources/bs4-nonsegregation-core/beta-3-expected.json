@@ -1,0 +1,11 @@
+{
+  "status": "MET",
+  "rawPoints": -4,
+  "appliedPoints": -4,
+  "strength": "STRONG",
+  "eventCount": 2,
+  "countedChildren": [
+    "TEST_ONLY_bs4_beta_child2",
+    "TEST_ONLY_bs4_beta_child3"
+  ]
+}

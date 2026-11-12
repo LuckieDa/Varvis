@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "pm3-published-case-rules-v1",
+  "rules": [
+    {
+      "specificationKey": "GN120@1.0",
+      "apiVersion": "1.0.0",
+      "releaseSha256": "ebc518cf129ba91e9095ca6e949c8781e83ca4e6ae76489aafd970ecce744b23",
+      "pm3Pointer": "/ld/CriteriaCode/11",
+      "pm2Pointer": "/ld/CriteriaCode/0",
+      "phenotype": "ROD_ERG_OR_CONGENITAL_NYCTALOPIA_OR_EARLY_RETINAL_DYSTROPHY",
+      "rarity": "JOINT_POPMAX_FAF95_INCLUSIVE",
+      "classification": "SAME_RELEASE_TARGET_EXCLUSION_POINTS",
+      "assertionMethod": {
+        "label": "ClinGen LCAeoRD ACMG Specifications RPE65 V1.0.0",
+        "url": "https://submit.ncbi.nlm.nih.gov/api/2.0/files/f0jffitz/clingen_lcaeord_acmg_specifications_rpe65_v1.0.0.pdf/?format=attachment",
+        "issuer": "ClinGen Leber Congenital Amaurosis/early Onset Retinal Dystrophy Variant Curation Expert Panel, ClinGen"
+      },
+      "attachments": {
+        "casePoints": {
+          "fileId": "eb7fd87c-b11d-454f-97fa-eb906c5efe5a",
+          "pointer": "/ld/RuleSet/0/ld/File/2",
+          "sha256": "dc98a046be9109967c07f637f1a5c946ff879d5311b1b06065fd71c955a8084d",
+          "locator": "Page 1, Tables 1 and 2"
+        },
+        "classificationPoints": {
+          "fileId": "443c8f82-f88c-48d1-8ca9-63e1c9ec5613",
+          "pointer": "/ld/RuleSet/0/ld/File/3",
+          "sha256": "77be0165cb290878fc8adf9948932cbff4f27a79439bb9dae3c092354f0da5c0",
+          "locator": "Pages 1–2, Tables 2 and 3"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "profileSchemaVersion": "pvs1-hnf1a-business-profile-v2",
+  "profileId": "HNF1A_TRUNCATING_NMD_PVS1",
+  "profileVersion": "2.0.1",
+  "predecessorProfileId": "HNF1A_TRUNCATING_NMD_PVS1",
+  "activation": {
+    "patientFlowEnabled": true,
+    "automaticTrigger": false,
+    "classificationEnabled": false
+  },
+  "context": {
+    "hgncId": "HGNC:11621",
+    "geneSymbol": "HNF1A",
+    "mondoId": "MONDO:0015967",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "assembly": "GRCh38",
+    "transcript": "ENST00000257555.11"
+  },
+  "policy": {
+    "policyId": "HNF1A_GN017_3_1_TRUNCATING_NMD",
+    "criterionId": "ACMG_AMP_2015:PVS1",
+    "appliedStrength": "VERY_STRONG",
+    "authority": {
+      "specificationId": "GN017",
+      "authorityVersion": "3.1",
+      "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "sourceSha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "decisionTreeUrl": "https://cspec.genome.network/cspec/File/id/5af96ed6-b35b-4704-be42-fe069d5e7426/data",
+      "decisionTreeSha256": "6ae8621438a4fdfb7b3ab51bb29043d9fc7b98b9a23c95a76ccf513b3440f9fd"
+    },
+    "minimumCdsPosition": 355,
+    "exclusivePtcEnd": 1714,
+    "firstExon": 2,
+    "lastExon": 9,
+    "maximumExonLength": 400,
+    "startProximalScope": "AFTER_MET118; engineering scope restriction, not a new ClinGen threshold",
+    "nmdEscapeScope": "NOT_IMPLEMENTED; GN017 may still support PVS1 outside this NMD branch",
+    "spliceConsequencesScope": "NOT_IMPLEMENTED",
+    "evidenceMechanism": "PREDICTED_LOSS_OF_FUNCTION",
+    "authorityReverifiedOn": "2026-09-10",
+    "frameshift": {
+      "variantTypes": [
+        "SMALL_INSERTION",
+        "SMALL_DELETION"
+      ],
+      "maximumAlleleLengthIncludingAnchor": 50,
+      "maximumInsertedOrDeletedBases": 49,
+      "lengthBoundary": "ENGINEERING: current evidence-v2 normalized REF/ALT limit, including the VCF anchor",
+      "minimumDistanceToLastJunction": 55,
+      "nmdCoordinates": "ALTERED_CDS_PTC_END_AND_ALTERED_LAST_JUNCTION",
+      "nmdMarginBoundary": "Conservative engineering margin preserving predecessor strict PTC-end < reference c.1714; not a new ClinGen threshold",
+      "sequenceDerivation": "ENTIRE_VERIFIED_CDS_ALLELE_EDIT_HGVSC_EQUIVALENCE_AND_FIRST_TRANSLATED_STOP",
+      "proteinValidation": "EXACT_VERSIONED_HGVSP_AND_ALLELE_LOCAL_VEP_CODONS_AMINO_ACIDS",
+      "exonBoundary": "ENTIRE_SIMPLE_EDIT_AND_NEW_PTC_WITHIN_VERIFIED_CODING_EXONS",
+      "exonLengthScope": "ALTERED_VARIANT_EXON_AND_ALTERED_PTC_EXON_MUST_EACH_SATISFY_EXISTING_MAXIMUM",
+      "unknownTermination": "NOT_EVALUATED; no unverified UTR extension or assumed terminal stop",
+      "excluded": [
+        "COMPLEX_DELINS",
+        "SPLICE_CONSEQUENCES",
+        "CROSS_EXON_EDITS",
+        "PTC_SPANNING_EXON_JUNCTION",
+        "HAPLOTYPE_COMPENSATION",
+        "START_PROXIMAL",
+        "NMD_ESCAPE",
+        "LONG_EXONS",
+        "OTHER_TRANSCRIPTS"
+      ]
+    }
+  },
+  "transcriptModel": {
+    "classpathResource": "/acmg/pvs1-hnf1a-transcript-model-v1.json",
+    "canonicalSha256": "270076043014c34aba9e7719ba7fa7bc7ecf090989c0bdb0fc08f7fa7cb0bacf"
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-pvs1-hnf1a-frameshift-2026-09-10",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "bca423719647d3306b2eb5b042c2068ac894ed53c156a8732e172f65e0c45ba4",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-pvs1-hnf1a-frameshift-2026-09-10.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PVS1"
+    ]
+  },
+  "resources": [
+    {
+      "resourceId": "VEP_116_GRCH38",
+      "provider": "VEP",
+      "assembly": "GRCh38",
+      "resourceVersion": "VEP 116.0 / cache 116_GRCh38",
+      "identityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+      "identity": {
+        "provider": "VEP",
+        "tool": {
+          "name": "ensembl-vep",
+          "version": "116.0"
+        },
+        "cache": {
+          "species": "homo_sapiens",
+          "version": "116_GRCh38",
+          "logicalName": "vep/cache/homo_sapiens/116_GRCh38",
+          "infoSha256": "b7298ffe9c8aba8e283d2e647a28a8345e6b7c4cd71e8d42eae66acfb94dd3ad"
+        },
+        "fasta": {
+          "assembly": "GRCh38",
+          "logicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa",
+          "indexLogicalName": "vep/Homo_sapiens.GRCh38.dna.primary_assembly.fa.fai",
+          "byteLength": 3151425851,
+          "indexSha256": "0998f61682f4041b11f0d156e1db6dae3e4c743e26643a3f45ea7faea70cb604",
+          "indexedContigCount": 194
+        },
+        "assembly": "GRCh38",
+        "options": {
+          "offline": true,
+          "cache": true,
+          "format": "vcf",
+          "output": "json",
+          "symbol": true,
+          "canonical": true,
+          "mane": true,
+          "hgvs": true,
+          "protein": true,
+          "biotype": true,
+          "numbers": true,
+          "noStats": true,
+          "forceOverwrite": true,
+          "lofteeEnabled": false
+        },
+        "wrapperIdentity": "varvis-vep-relative-root-v2",
+        "wrapperSha256": "da90d70e87a1f479239e1fc8857e76d61604a0006fa19ae40e4260d20f7bfbfe"
+      }
+    }
+  ],
+  "predecessorProfileSha256": "4869683da641fbf3b0adc3bb494d638a61decc9ba10baa6a0d952358e14ae6bc",
+  "predecessorProfileVersion": "2.0.0",
+  "implementation": {
+    "evaluatorId": "hnf1a-truncating-nmd-pvs1",
+    "evaluatorVersion": "2.0.1",
+    "revision": "VEP116_ALLELE_LOCAL_PEPTIDE_COMPATIBILITY",
+    "sourceCommit": "db7394a02523a6e519cb0d89f84b2889bac12737",
+    "sourceUrl": "https://github.com/Ensembl/ensembl-variation/blob/db7394a02523a6e519cb0d89f84b2889bac12737/modules/Bio/EnsEMBL/Variation/TranscriptVariationAllele.pm",
+    "localPeptide": "TRANSLATE_ALL_COMPLETE_LOCAL_CODONS; APPEND_X_FOR_PARTIAL_UNLESS_PEPTIDE_IS_SINGLE_STOP; EMPTY_IS_DASH; EQUAL_PEPTIDES_COLLAPSE",
+    "scientificPolicyChanged": false
+  }
+}

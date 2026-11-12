@@ -1,0 +1,181 @@
+{
+  "profileSchemaVersion": "alphamissense-pp3-bp4-profile-v1",
+  "profileId": "ALPHAMISSENSE_PP3_BP4_SUPPORTING",
+  "profileVersion": "1.0.0",
+  "status": "RUNTIME_EVALUATION_SLICE",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-09-02T00:00:00Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "lineage": {
+    "authorityCatalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+    "authorityCatalogSchemaVersion": "authority-source-catalog-v1",
+    "authorityCatalogCanonicalSha256": "63db590058808737bdd03af7fd82533c572b80bfabae9b50f0632da78cd803f9",
+    "baseRegistryId": "acmg-rule-registry-general-2026-08-31",
+    "baseRegistrySchemaVersion": "acmg-rule-registry-v1",
+    "baseRegistrySha256": "1865ae07534d90244df4d9f77f94d824befbe88e31b6e138611f425c7e19a557"
+  },
+  "predictor": {
+    "name": "AlphaMissense",
+    "providerSource": "ALPHAMISSENSE",
+    "resourceVersion": "2023-08-03",
+    "exclusiveComputationalPredictor": true
+  },
+  "resources": [
+    {
+      "resourceId": "ALPHAMISSENSE_2023_08_03_GRCH38_TABIX",
+      "provider": "ALPHAMISSENSE",
+      "assembly": "GRCh38",
+      "resourceVersion": "2023-08-03",
+      "identityFingerprintSha256": "ba423141a1bcbdc37cff155a7f579d2d90629ed5bd7891d220cb95ec0b481ba2",
+      "identity": {
+        "provider": "ALPHAMISSENSE",
+        "assembly": "GRCh38",
+        "officialReleaseDate": "2023-08-03",
+        "officialSourceLocator": "https://storage.googleapis.com/dm_alphamissense/AlphaMissense_hg38.tsv.gz",
+        "officialSourceArtifact": {
+          "fileName": "AlphaMissense_hg38.tsv.gz",
+          "sha256": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+          "sizeBytes": 642961469
+        },
+        "runtimeDataArtifact": {
+          "format": "BGZF_TSV",
+          "sha256": "9657246d5ed328ea13e28432130847cd11d2662657ed8ec56a65c08e6984c4d3",
+          "sizeBytes": 628407716
+        },
+        "runtimeIndexArtifact": {
+          "format": "TABIX_TBI",
+          "sha256": "9340e53c57b8a14a92e5d6d14d786714f65447d64a1c536b11adc2dd29dae58c",
+          "sizeBytes": 684511
+        },
+        "derivation": "REPACK_OFFICIAL_TSV_AS_BGZF_AND_TABIX_INDEX"
+      }
+    }
+  ],
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-e3-c1-2026-09-02",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "73fca655b6d76700242fc6b12ba4c6c4b9f34ac5c79b38621fe03fecc8303469",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-c1-2026-09-02.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PP3",
+      "ACMG_AMP_2015:BP4"
+    ]
+  },
+  "authorityBindings": [
+    {
+      "authoritySourceId": "authority-clingen-svi-pp3-bp4-extension-2025",
+      "documentVersion": "2025 publication",
+      "sourceRecordId": "PMID:40084623",
+      "snapshotSha256": "f14b420b96ee479b87f7acf18c58a1c7fd006a5d888403bc0ea6425b2fcd619f"
+    }
+  ],
+  "applicability": {
+    "assembly": "GRCh38",
+    "nativeAssemblyOnly": true,
+    "requiredAssemblyLineage": "NATIVE",
+    "variantType": "SNV",
+    "consequence": "missense_variant",
+    "nonMatchingOutcome": "NOT_APPLICABLE"
+  },
+  "matching": {
+    "exactAlleleRequired": true,
+    "transcriptSelectionSource": "VEP_EVIDENCE_CONTEXT",
+    "transcriptVersionRequired": true,
+    "proteinIdentityRequired": true,
+    "aminoAcidChangeRequired": true,
+    "transcriptAndProteinExactMatchRequired": true,
+    "scoreBasedTranscriptSelectionAllowed": false,
+    "multiTranscriptMaximumSelectionAllowed": false,
+    "missingOrConflictingMatchOutcome": "NOT_EVALUATED"
+  },
+  "fieldContract": {
+    "scoreMeasurementId": "alphamissense.amPathogenicity",
+    "requiredDetailFields": [
+      "alphamissense.exactAlleleMatch",
+      "alphamissense.transcriptProteinMatch",
+      "alphamissense.transcriptId",
+      "alphamissense.proteinVariant",
+      "alphamissense.uniprotId"
+    ],
+    "requiredTrueFields": [
+      "alphamissense.exactAlleleMatch",
+      "alphamissense.transcriptProteinMatch"
+    ],
+    "transcriptIdentityField": "alphamissense.transcriptId",
+    "proteinChangeField": "alphamissense.proteinVariant",
+    "proteinIdentityField": "alphamissense.uniprotId"
+  },
+  "numericSemantics": {
+    "rawLexemePreserved": true,
+    "decimalRuntimeType": "java.math.BigDecimal",
+    "implicitRoundingAllowed": false,
+    "binaryFloatingPointAllowedForDecisions": false
+  },
+  "thresholds": {
+    "benignMaxInclusive": {
+      "rawValue": "0.169",
+      "comparisonOperator": "LESS_THAN_OR_EQUAL",
+      "bp4Result": "MET",
+      "pp3Result": "NOT_MET"
+    },
+    "pathogenicMinInclusive": {
+      "rawValue": "0.792",
+      "comparisonOperator": "GREATER_THAN_OR_EQUAL",
+      "pp3Result": "MET",
+      "bp4Result": "NOT_MET"
+    },
+    "intermediateInterval": {
+      "lowerBoundRawValue": "0.169",
+      "lowerBoundExclusive": true,
+      "upperBoundRawValue": "0.792",
+      "upperBoundExclusive": true,
+      "pp3Result": "NOT_MET",
+      "bp4Result": "NOT_MET"
+    }
+  },
+  "strengthPolicy": {
+    "strengthCap": "SUPPORTING",
+    "publishedStrongerIntervalsConservativelyDowngraded": true,
+    "moderateEnabled": false,
+    "strongEnabled": false,
+    "threePointSystemEnabled": false
+  },
+  "evaluation": {
+    "criteria": [
+      {
+        "criterionId": "ACMG_AMP_2015:PP3",
+        "currentDesignation": "PP3",
+        "baseStrength": "SUPPORTING",
+        "appliedStrengthCap": "SUPPORTING"
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:BP4",
+        "currentDesignation": "BP4",
+        "baseStrength": "SUPPORTING",
+        "appliedStrengthCap": "SUPPORTING"
+      }
+    ],
+    "mutualExclusion": {
+      "criteriaMayBothBeMet": false
+    }
+  },
+  "failurePolicy": {
+    "notEvaluatedConditions": [
+      "SCORE_MISSING",
+      "NO_RECORD",
+      "RESOURCE_FAILED",
+      "RESOURCE_TIMEOUT",
+      "CONTEXT_INCOMPLETE",
+      "TRANSCRIPT_PROTEIN_MATCH_MISSING",
+      "TRANSCRIPT_PROTEIN_MATCH_CONFLICT"
+    ],
+    "outcome": "NOT_EVALUATED"
+  }
+}

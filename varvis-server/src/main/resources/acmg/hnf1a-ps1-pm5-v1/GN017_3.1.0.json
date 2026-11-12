@@ -1,0 +1,3439 @@
+{
+  "entContent": {
+    "approvedOn": "2025-10-10T18:20:25.421Z",
+    "description": "This version specified for the following genes: HNF1A",
+    "namespace": "GN017",
+    "releaseNotes": "Updating PS2 to clarify when a family history of diabetes prevents the application of this criterion.\n\nMinor edits for clarity and avoiding redundancy in the specifications.\n\nUpdating citations so reference list populates.",
+    "shortTitle": "Monogenic Diabetes Specification",
+    "specificationSource": "",
+    "states": [
+      {
+        "current": true,
+        "event": {
+          "modifiedBy": "cjodarski",
+          "name": "cspec-released",
+          "prevState": "Approved For Release",
+          "timeStamp": "2025-10-10T18:20:25.421Z"
+        },
+        "name": "Released"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "cjodarski",
+          "name": "cspec-reopened",
+          "prevState": "Released",
+          "timeStamp": "2025-08-29T17:55:06.658Z"
+        },
+        "name": "Pilot Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "cjodarski",
+          "name": "pilot-rules-submitted",
+          "prevState": "Pilot Rules In Prep",
+          "timeStamp": "2025-09-19T17:56:01.049Z"
+        },
+        "name": "Pilot Rules Submitted"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "sharriso",
+          "name": "pilot-rules-approved",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2025-10-10T16:16:48.892Z"
+        },
+        "name": "Approved For Release"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "tonipollin",
+          "name": "pilot-rules-withdrawn",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2025-09-12T17:12:29.517Z"
+        },
+        "name": "Pilot Rules In Prep"
+      },
+      {
+        "current": false,
+        "event": {
+          "modifiedBy": "mrichardson",
+          "name": "pilot-rules-reviewed",
+          "prevState": "Pilot Rules Submitted",
+          "timeStamp": "2025-06-29T18:45:57.787Z"
+        },
+        "name": "Pilot Rules In Prep"
+      }
+    ],
+    "tagNameSpaces": [
+      "017"
+    ],
+    "title": "ClinGen Monogenic Diabetes Expert Panel Specifications to the ACMG/AMP Variant Interpretation Guidelines for HNF1A Version 3.1.0",
+    "type": "Richards et.al., 2015 - Combining rules",
+    "version": "3.1.0",
+    "versioned": true
+  },
+  "entId": "GN017",
+  "entType": "SequenceVariantInterpretation",
+  "ld": {
+    "Disease": [
+      {
+        "entContent": {
+          "MONDO": {
+            "id": "http://purl.obolibrary.org/obo/MONDO_0015967",
+            "lbl": "monogenic diabetes",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                  "val": "https://github.com/monarch-initiative/mondo/issues/254"
+                },
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                  "val": "https://github.com/monarch-initiative/mondo/issues/8319"
+                },
+                {
+                  "pred": "http://purl.obolibrary.org/obo/mondo#curated_content_resource",
+                  "val": "https://search.clinicalgenome.org/kb/conditions/MONDO:0015967"
+                },
+                {
+                  "pred": "http://purl.obolibrary.org/obo/mondo#curated_content_resource",
+                  "val": "https://www.malacards.org/card/rare_genetic_diabetes_mellitus"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://identifiers.org/medgen/1392102"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://linkedlifedata.com/resource/umls/id/C3888631"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://purl.obolibrary.org/obo/NCIT_C129739"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://www.ebi.ac.uk/efo/EFO_1001511"
+                },
+                {
+                  "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                  "val": "http://www.orpha.net/ORDO/Orphanet_183625"
+                }
+              ],
+              "definition": {
+                "val": "Diabetes mellitus that is caused by mutations in a single gene.",
+                "xrefs": [
+                  "https://doi.org/10.2337/dci20-0065"
+                ]
+              },
+              "subsets": [
+                "http://purl.obolibrary.org/obo/mondo#clingen",
+                "http://purl.obolibrary.org/obo/mondo#disease_grouping",
+                "http://purl.obolibrary.org/obo/mondo#inferred_rare",
+                "http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders",
+                "http://purl.obolibrary.org/obo/mondo#otar",
+                "http://purl.obolibrary.org/obo/mondo#rare"
+              ],
+              "synonyms": [
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "monogenic diabetes",
+                  "xrefs": [
+                    "NCIT:C129739"
+                  ]
+                },
+                {
+                  "pred": "hasExactSynonym",
+                  "val": "rare genetic diabetes mellitus",
+                  "xrefs": [
+                    "Orphanet:183625"
+                  ]
+                }
+              ],
+              "xrefs": [
+                {
+                  "val": "EFO:1001511"
+                },
+                {
+                  "val": "MEDGEN:1392102"
+                },
+                {
+                  "val": "NCIT:C129739"
+                },
+                {
+                  "val": "Orphanet:183625"
+                },
+                {
+                  "val": "UMLS:C3888631"
+                }
+              ]
+            },
+            "type": "CLASS"
+          },
+          "MONDOID": "MONDO:0015967",
+          "name": "monogenic diabetes"
+        },
+        "entId": "MONDO:0015967",
+        "entIri": "http://purl.obolibrary.org/obo/MONDO_0015967",
+        "entType": "Disease",
+        "ldhId": "467884025",
+        "modified": 1759853667279,
+        "modifier": "cspecAdministrator",
+        "rev": "_kZ7x3Hu---"
+      }
+    ],
+    "RuleSet": [
+      {
+        "entContent": {
+          "_uniqueProp": "017_nuclear_HNF1A",
+          "geneType": "nuclear",
+          "genes": [
+            {
+              "diseases": [
+                {
+                  "preferredModeOfInheritance": "Autosomal Dominant",
+                  "preferredMondoId": "MONDO:0015967",
+                  "preferredTitle": "monogenic diabetes"
+                }
+              ],
+              "gene": "HNF1A",
+              "preferredTranscript": "NM_000545.8"
+            }
+          ],
+          "ns": "017",
+          "references": [
+            {
+              "auths": [
+                "Brnich SE",
+                "Abou Tayoun AN",
+                "et al."
+              ],
+              "doiStr": "10.1186/s13073-019-0690-2",
+              "id": "31892348",
+              "iss": "(1)",
+              "namespace": "pmid",
+              "pages": "p. 3.",
+              "source": "Genome Med",
+              "title": "Recommendations for application of the functional evidence PS3/BS3 criterion using the ACMG/AMP sequence variant interpretation framework.",
+              "vol": "12",
+              "year": "2019"
+            },
+            {
+              "auths": [
+                "Popp MW",
+                "Maquat LE"
+              ],
+              "doiStr": "10.1146/annurev-genet-111212-133424",
+              "id": "24274751",
+              "iss": "",
+              "namespace": "pmid",
+              "pages": "p. 139-65.",
+              "source": "Annu Rev Genet",
+              "title": "Organizing principles of mammalian nonsense-mediated mRNA decay.",
+              "vol": "47",
+              "year": "2013"
+            },
+            {
+              "auths": [
+                "Walker LC",
+                "Hoya M",
+                "et al."
+              ],
+              "doiStr": "10.1016/j.ajhg.2023.06.002",
+              "id": "37352859",
+              "iss": "(7)",
+              "namespace": "pmid",
+              "pages": "p. 1046-1067.",
+              "source": "Am J Hum Genet",
+              "title": "Using the ACMG/AMP framework to capture evidence related to predicted and observed impact on splicing: Recommendations from the ClinGen SVI Splicing Subgroup.",
+              "vol": "110",
+              "year": "2023"
+            },
+            {
+              "auths": [
+                "Bjørkhaug L",
+                "Ye H",
+                "et al."
+              ],
+              "doiStr": "10.1006/bbrc.2000.4024",
+              "id": "11162430",
+              "iss": "(3)",
+              "namespace": "pmid",
+              "pages": "p. 792-8.",
+              "source": "Biochem Biophys Res Commun",
+              "title": "MODY associated with two novel hepatocyte nuclear factor-1alpha loss-of-function mutations (P112L and Q466X).",
+              "vol": "279",
+              "year": "2000"
+            },
+            {
+              "auths": [
+                "Bjørkhaug L",
+                "Sagen JV",
+                "et al."
+              ],
+              "doiStr": "10.1210/jc.2002-020945",
+              "id": "12574234",
+              "iss": "(2)",
+              "namespace": "pmid",
+              "pages": "p. 920-31.",
+              "source": "J Clin Endocrinol Metab",
+              "title": "Hepatocyte nuclear factor-1 alpha gene mutations and diabetes in Norway.",
+              "vol": "88",
+              "year": "2003"
+            },
+            {
+              "auths": [
+                "SIGMA Type 2 Diabetes Consortium",
+                "Estrada K",
+                "et al."
+              ],
+              "doiStr": "10.1001/jama.2014.6511",
+              "id": "24915262",
+              "iss": "(22)",
+              "namespace": "pmid",
+              "pages": "p. 2305-14.",
+              "source": "JAMA",
+              "title": "Association of a low-frequency variant in HNF1A with type 2 diabetes in a Latino population.",
+              "vol": "311",
+              "year": "2014"
+            },
+            {
+              "auths": [
+                "Jarvik GP",
+                "Browning BL"
+              ],
+              "doiStr": "10.1016/j.ajhg.2016.04.003",
+              "id": "27236918",
+              "iss": "(6)",
+              "namespace": "pmid",
+              "pages": "p. 1077-1081.",
+              "source": "Am J Hum Genet",
+              "title": "Consideration of Cosegregation in the Pathogenicity Classification of Genomic Variants.",
+              "vol": "98",
+              "year": "2016"
+            },
+            {
+              "auths": [
+                "Wai HA",
+                "Lord J",
+                "et al."
+              ],
+              "doiStr": "10.1038/s41436-020-0766-9",
+              "id": "32123317",
+              "iss": "(6)",
+              "namespace": "pmid",
+              "pages": "p. 1005-1014.",
+              "source": "Genet Med",
+              "title": "Blood RNA analysis can increase clinical diagnostic rate and resolve variants of uncertain significance.",
+              "vol": "22",
+              "year": "2020"
+            },
+            {
+              "auths": [
+                "Jaganathan K",
+                "Kyriazopoulou Panagiotopoulou S",
+                "et al."
+              ],
+              "doiStr": "10.1016/j.cell.2018.12.015",
+              "id": "30661751",
+              "iss": "(3)",
+              "namespace": "pmid",
+              "pages": "p. 535-548.e24.",
+              "source": "Cell",
+              "title": "Predicting Splicing from Primary Sequence with Deep Learning.",
+              "vol": "176",
+              "year": "2019"
+            },
+            {
+              "auths": [
+                "Althari S",
+                "Najmi LA",
+                "et al."
+              ],
+              "doiStr": "10.1016/j.ajhg.2020.08.016",
+              "id": "32910913",
+              "iss": "(4)",
+              "namespace": "pmid",
+              "pages": "p. 670-682.",
+              "source": "Am J Hum Genet",
+              "title": "Unsupervised Clustering of Missense Variants in HNF1A Using Multidimensional Functional Data Aids Clinical Interpretation.",
+              "vol": "107",
+              "year": "2020"
+            },
+            {
+              "auths": [
+                "McDonald TJ",
+                "Colclough K",
+                "et al."
+              ],
+              "doiStr": "10.1111/j.1464-5491.2011.03287.x",
+              "id": "21395678",
+              "iss": "(9)",
+              "namespace": "pmid",
+              "pages": "p. 1028-33.",
+              "source": "Diabet Med",
+              "title": "Islet autoantibodies can discriminate maturity-onset diabetes of the young (MODY) from Type 1 diabetes.",
+              "vol": "28",
+              "year": "2011"
+            },
+            {
+              "auths": [
+                "Shields BM",
+                "Shepherd M",
+                "et al."
+              ],
+              "doiStr": "10.2337/dc17-0224",
+              "id": "28701371",
+              "iss": "(8)",
+              "namespace": "pmid",
+              "pages": "p. 1017-1025.",
+              "source": "Diabetes Care",
+              "title": "Population-Based Assessment of a Biomarker-Based Screening Pathway to Aid Diagnosis of Monogenic Diabetes in Young-Onset Patients.",
+              "vol": "40",
+              "year": "2017"
+            },
+            {
+              "auths": [
+                "Patel KA",
+                "Weedon MN",
+                "et al."
+              ],
+              "doiStr": "10.2337/dc18-0373",
+              "id": "30409810",
+              "iss": "(2)",
+              "namespace": "pmid",
+              "pages": "p. e16-e17.",
+              "source": "Diabetes Care",
+              "title": "Zinc Transporter 8 Autoantibodies (ZnT8A) and a Type 1 Diabetes Genetic Risk Score Can Exclude Individuals With Type 1 Diabetes From Inappropriate Genetic Testing for Monogenic Diabetes.",
+              "vol": "42",
+              "year": "2019"
+            },
+            {
+              "auths": [
+                "Carlsson A",
+                "Shepherd M",
+                "et al."
+              ],
+              "doiStr": "10.2337/dc19-0747",
+              "id": "31704690",
+              "iss": "(1)",
+              "namespace": "pmid",
+              "pages": "p. 82-89.",
+              "source": "Diabetes Care",
+              "title": "Absence of Islet Autoantibodies and Modestly Raised Glucose Values at Diabetes Diagnosis Should Lead to Testing for MODY: Lessons From a 5-Year Pediatric Swedish National Cohort Study.",
+              "vol": "43",
+              "year": "2020"
+            },
+            {
+              "auths": [
+                "Hattersley AT",
+                "Greeley SAW",
+                "et al."
+              ],
+              "doiStr": "10.1111/pedi.12772",
+              "id": "30225972",
+              "iss": "",
+              "namespace": "pmid",
+              "pages": "p. 47-63.",
+              "source": "Pediatr Diabetes",
+              "title": "ISPAD Clinical Practice Consensus Guidelines 2018: The diagnosis and management of monogenic diabetes in children and adolescents.",
+              "vol": "19 Suppl 27",
+              "year": "2018"
+            },
+            {
+              "auths": [
+                "Pihoker C",
+                "Gilliam LK",
+                "et al."
+              ],
+              "doiStr": "10.1210/jc.2013-1279",
+              "id": "23771925",
+              "iss": "(10)",
+              "namespace": "pmid",
+              "pages": "p. 4055-62.",
+              "source": "J Clin Endocrinol Metab",
+              "title": "Prevalence, characteristics and clinical diagnosis of maturity onset diabetes of the young due to mutations in HNF1A, HNF4A, and glucokinase: results from the SEARCH for Diabetes in Youth.",
+              "vol": "98",
+              "year": "2013"
+            },
+            {
+              "auths": [
+                "Abou Tayoun AN",
+                "Pesaran T",
+                "et al."
+              ],
+              "doiStr": "10.1002/humu.23626",
+              "id": "30192042",
+              "iss": "(11)",
+              "namespace": "pmid",
+              "pages": "p. 1517-1524.",
+              "source": "Hum Mutat",
+              "title": "Recommendations for interpreting the loss of function PVS1 ACMG/AMP variant criterion.",
+              "vol": "39",
+              "year": "2018"
+            }
+          ],
+          "rules": {
+            "mainRules": [
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule1, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule1, Condition2",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule1"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule2, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "condition": ">=2",
+                    "label": "Rule2, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule2"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule3, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "condition": "==1",
+                    "label": "Rule3, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "condition": "==1",
+                    "label": "Rule3, Condition3",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule3"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule4, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "condition": ">=2",
+                    "label": "Rule4, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule4"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=2",
+                    "label": "Rule5, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule5"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule6, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "condition": ">=3",
+                    "label": "Rule6, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule6"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule7, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "condition": "==2",
+                    "label": "Rule7, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "condition": ">=2",
+                    "label": "Rule7, Condition3",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule7"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule8, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "condition": "==1",
+                    "label": "Rule8, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "condition": ">=4",
+                    "label": "Rule8, Condition3",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Pathogenic",
+                "rule": "Rule8"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule10, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "condition": "==1",
+                    "label": "Rule10, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule10"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule11, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "condition": "==1",
+                    "label": "Rule11, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule11"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule12, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "condition": ">=2",
+                    "label": "Rule12, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule12"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=3",
+                    "label": "Rule13, Condition1",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule13"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==2",
+                    "label": "Rule14, Condition1",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "condition": ">=2",
+                    "label": "Rule14, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule14"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule15, Condition1",
+                    "partitionPath": "Pathogenic.Moderate"
+                  },
+                  {
+                    "condition": ">=4",
+                    "label": "Rule15, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule15"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=2",
+                    "label": "Rule16, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  }
+                ],
+                "inference": "Benign",
+                "rule": "Rule16"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule17, Condition1",
+                    "partitionPath": "Benign.Stand Alone"
+                  }
+                ],
+                "inference": "Benign",
+                "rule": "Rule17"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule18, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  },
+                  {
+                    "condition": "==1",
+                    "label": "Rule18, Condition2",
+                    "partitionPath": "Benign.Supporting"
+                  }
+                ],
+                "inference": "Likely Benign",
+                "rule": "Rule18"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=2",
+                    "label": "Rule19, Condition1",
+                    "partitionPath": "Benign.Supporting"
+                  }
+                ],
+                "inference": "Likely Benign",
+                "rule": "Rule19"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": "==1",
+                    "label": "Rule20, Condition1",
+                    "partitionPath": "Pathogenic.Strong"
+                  },
+                  {
+                    "condition": "==2",
+                    "label": "Rule20, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule20"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule21, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule21, Condition2",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule21"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule22, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule22, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule22"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule23, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule23, Condition2",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule23"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule24, Condition1",
+                    "partitionPath": "Benign.Strong"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule24, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule24"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule25, Condition1",
+                    "partitionPath": "Benign.Stand Alone"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule25, Condition2",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule25"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule26, Condition1",
+                    "partitionPath": "Benign.Stand Alone"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule26, Condition2",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule26"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule27, Condition1",
+                    "partitionPath": "Benign.Stand Alone"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule27, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule27"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule28, Condition1",
+                    "partitionPath": "Benign.Stand Alone"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule28, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule28"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule29, Condition1",
+                    "partitionPath": "Benign.Supporting"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule29, Condition2",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule29"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule30, Condition1",
+                    "partitionPath": "Benign.Supporting"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule30, Condition2",
+                    "partitionPath": "Pathogenic.Strong"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule30"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule31, Condition1",
+                    "partitionPath": "Benign.Supporting"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule31, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule31"
+              },
+              {
+                "conditions": [
+                  {
+                    "condition": ">=1",
+                    "label": "Rule32, Condition1",
+                    "partitionPath": "Benign.Supporting"
+                  },
+                  {
+                    "condition": ">=1",
+                    "label": "Rule32, Condition2",
+                    "partitionPath": "Pathogenic.Moderate"
+                  }
+                ],
+                "inference": "Uncertain Significance - Conflicting Evidence",
+                "rule": "Rule32"
+              },
+              {
+                "conditions": [
+                  {
+                    "applicableCriteriaCodes": [
+                      "PVS1",
+                      "PS2_Very Strong"
+                    ],
+                    "condition": "==1",
+                    "getpartitionPath": "",
+                    "label": "Rule20, Condition1",
+                    "partitionPath": "Pathogenic.Very Strong"
+                  },
+                  {
+                    "applicableCriteriaCodes": [
+                      "PS1_Supporting",
+                      "PS2_Supporting",
+                      "PS3_Supporting",
+                      "PM1_Supporting",
+                      "PM2_Supporting",
+                      "PM4_Supporting",
+                      "PM5_Supporting"
+                    ],
+                    "condition": "==1",
+                    "getpartitionPath": "",
+                    "label": "Rule20, Condition2",
+                    "partitionPath": "Pathogenic.Supporting"
+                  }
+                ],
+                "inference": "Likely Pathogenic",
+                "rule": "Rule20"
+              }
+            ]
+          },
+          "type": "Richards et.al., 2015 - Combining rules"
+        },
+        "entType": "RuleSet",
+        "ld": {
+          "CriteriaCode": [
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP2_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Allelic Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BP2",
+                "ns": "017",
+                "originalACMGSummary": "Observed in trans with a pathogenic variant for a fully penetrant dominant gene/disorder or observed in cis with a pathogenic variant in any inheritance pattern.",
+                "sepioID": "SEPIO-CG:99044",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0209",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0207",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0068",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0208",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0084",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "Also applicable when in cis or trans with a likely pathogenic variant.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903893",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRci---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BS3_nuclear_HNF1A",
+                "additionalComments": "To use BS3, functional study must have been performed on a transfected variant.  If a study was performed on a cell line generated from a patient sample (and therefore contains the variant plus wild-type allele and other variants in the patient’s genome) it cannot count as BS3. ",
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BS3",
+                "ns": "017",
+                "originalACMGSummary": "Well-established in vitro or in vivo functional studies show no damaging effect on protein function or splicing.",
+                "sepioID": "SEPIO-CG:99041",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0226",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0225",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0072",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "Applicable to non-canonical splice site variants that have RNA and in silico evidence of normal splicing.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0100",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0001327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0085",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "BS3 should be applied at the supporting level for the following approved functional studies and cutoffs: \n\n1.  Luciferase assays for transactivation: ≥ 75% activity of wildtype \n2.  EMSA for DNA binding:  ≥ 75% activity of wildtype. \n3.  Western blotting and indirect immunoflorescence for protein expression and localization - Determining appropriate thresholds for protein expression is more difficult due to variability in results between different experimental protocols. Altered protein expression can be indirectly captured through the read-out from a transactivation assay and reduced protein expression can provide an explanation for reduced transactivation.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903890",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YReu---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BS1_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BS1",
+                "ns": "017",
+                "originalACMGSummary": "Allele frequency is greater than expected for disorder.",
+                "sepioID": "SEPIO-CG:99039",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0090",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0222",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0070",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "gnomAD Grpmax FAF ≥ 1:30,000 (≥0.0033% or 0.000033)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0223",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0086",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903888",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YReC---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PP3_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PP3",
+                "ns": "017",
+                "originalACMGSummary": "Multiple lines of computational evidence support a deleterious effect on the gene or gene product (conservation, evolutionary, splicing impact, etc.).\nCaveat: As many in silico algorithms use the same or very similar input for their predictions, each algorithm should not be counted as an independent criterion. PP3 can be used only once in any evaluation of a variant.",
+                "sepioID": "SEPIO-CG:99035",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0238",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0024",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0019",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0025",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0062",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Use REVEL score of ≥0.70 as supportive evidence of pathogenicity. We also support using SpliceAI to assess the predicted impact of non-canonical splicing variants and synonymous variants: apply PP3 when the predicted change is above 0.2[<sup>8</sup>](#pmid_32123317),[<sup>9</sup>](#pmid_30661751).",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903885",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRc6---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PP2_nuclear_HNF1A",
+                "additionalComments": "Missense variants account for 55% of all published pathogenic variants in this gene (Colclough et al 2013), however the constraint score for HNF1A (gene) is 1.07, which is not significant; therefore, we do not support using this criterion at this time. The low constraint score is most likely due to high tolerance for missense variants in the transactivation domain (see PM1 section). There are significantly more pathogenic missense variants in the DNA binding and dimerization domains, which are much less tolerant to missense variation. We may update this in the future if we can generate domain-specific scores.",
+                "applicability": "Not applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PP2",
+                "ns": "017",
+                "originalACMGSummary": "Missense variant in a gene that has a low rate of benign missense variation and where missense variants are a common mechanism of disease.",
+                "sepioID": "SEPIO-CG:99034",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0237",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0049",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0033",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0034",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0061",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903884",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRee---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PP1_nuclear_HNF1A",
+                "additionalComments": "Phenotype of affected individuals must include diabetes, without clear evidence of an autoimmune etiology (see rules).",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Segregation Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Phenotype of affected individuals must include diabetes, without clear evidence of an autoimmune etiology: \n\n*   One or more positive diabetes autoantibodies (IA-2A, ZnT8A+, GAD)[<sup>11</sup>](#pmid_21395678),[<sup>12</sup>](#pmid_28701371),[<sup>13</sup>](#pmid_30409810),[<sup>14</sup>](#pmid_31704690)\n*   Very low or negative C-peptide, defined as either fasting or non-fasting random C-peptide (\\<200pmol/L or 0.6ng/mL)[<sup>15</sup>](#pmid_30225972),[<sup>16</sup>](#pmid_23771925) or urinary C-peptide/creatinine ratio \\<0.2 nmol/mmol[<sup>12</sup>](#pmid_28701371),[<sup>13</sup>](#pmid_30409810)",
+                "label": "PP1",
+                "ns": "017",
+                "originalACMGSummary": "Co-segregation with disease in multiple affected family members in a gene definitively known to cause the disease.\nNote: May be used as stronger evidence with increasing segregation data.",
+                "sepioID": "SEPIO-CG:99033",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0236",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0042",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0023",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation",
+                      "Gene-specific"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Use thresholds suggested by Jarvik and Browning[<sup>7</sup>](#pmid_27236918)\n\n*   Single Family : ≤ 1/32 (5 meioses)\n*   \\>1 Family : ≤ 1/16 (4 meioses)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0040",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation",
+                      "Gene-specific"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "Use thresholds suggested by Jarvik and Browning[<sup>7</sup>](#pmid_27236918)\n\n*   Single Family : ≤ 1/16 (4 meioses)\n*   \\>1 Family : ≤ 1/8 (3 meioses)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0060",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation",
+                      "Gene-specific"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Use thresholds suggested by Jarvik and Browning[<sup>7</sup>](#pmid_27236918)\n\n*   Single Family : ≤ 1/8 (3 meioses)\n*   \\>1 Family : ≤ ¼ (2 meioses)",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903883",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRf----"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PM2_nuclear_HNF1A",
+                "additionalComments": "Per guidance from ClinGen/SVI, PM2_Supporting + PVS1 is sufficient evidence of a variant being likely pathogenic ",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Recommend using as supporting level of evidence (PM2\\_Supporting) per ClinGen guidance. Per guidance from ClinGen/SVI, PM2\\_Supporting + PVS1 is sufficient evidence of a variant being likely pathogenic. We recommend investigating the genotype metrics in gnomAD for variants that have been flagged for having failed one or more quality parameters, as it is possible that some of these filtered variants are actually real. The number of filtered alleles can be counted to determine whether PM2\\_Supporting would be met even if they were genuine calls. If the filtered calls are sufficient in number to not meet PM2\\_Supporting, then we would not use it. Because it is also possible that these calls are false positives, we would not use filtered variants to support BA1 or BS1.",
+                "label": "PM2",
+                "ns": "017",
+                "originalACMGSummary": "Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes or Exome Aggregation Consortium.\nCaveat: Population data for indels may be poorly called by next generation sequencing.",
+                "sepioID": "SEPIO-CG:99028",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0231",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0044",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0013",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0011",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0030",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation",
+                      "Gene-specific"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "gnomAD Grpmax FAF ≤ 1:333,000 (≤ 0.000003 or 0.0003%)",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903878",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRdO---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PS3_nuclear_HNF1A",
+                "additionalComments": "Studies performed on a cell line generated from a patient sample (which will be heterozygous and also contain other variants in the patient’s genome which could modify function) will not count as PS3 but instead will count toward PP4_Moderate. \nNote that although occurrence in the transactivation domain (codons 281-631, NM_000545.8 has been cited in older publications as evidence for causality, it is known that the transactivation domain is more tolerant to benign missense variation and therefore we will not apply PM1 at any level to variants within this region at this time (PMID: 11272211, 18003757, 23348805).",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Applied at the strong level for variants with RNA and in silico evidence of aberrant splicing.  Otherwise, applied at the supporting level as described in the Supporting specification, except as noted in the Moderate specification.",
+                "label": "PS3",
+                "ns": "017",
+                "originalACMGSummary": "Well-established in vitro or in vivo functional studies supportive of a damaging effect on the gene or gene product.\nNote: Functional studies that have been validated and shown to be reproducible and robust in a clinical diagnostic laboratory setting are considered the most well-established.",
+                "sepioID": "SEPIO-CG:99025",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0242",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0031",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0052",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Applicable to non-canonical splice site variants that have RNA and in silico evidence of aberrant splicing.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0039",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "Currently applicable for variants with luciferase assay data (evidence of decreased transactivation (≤ 40% of wild type) by the Gloyn/Oxford group[<sup>10</sup>](#pmid_32910913) ([Althari et al. 2020).](https://pubmed.ncbi.nlm.nih.gov/32910913/)  This upgrade from supporting is based on a validation conducted according to the guidelines by Brnich et al. 2019 [<sup>1</sup>](#pmid_31892348).",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0045",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "PS3 should be applied at the supporting level for the following approved functional studies and cutoffs except as noted in the PS3\\_Moderate specification: \n\n1.  Luciferase assays for transactivation: less than 40% activity of wildtype (WT). Assays should include controls for WT, T2DM-risk, and known MODY variants. \n2.  EMSA for DNA binding: less than 40% activity of WT. We recommend that at least two of the following variants be used as positive controls for reduced DNA binding activity: c.335C>T (p.Pro112Leu), c.608G>A (p.Arg203His), c.787C>T (p.Arg263Cys) and c.686G>A (p.Arg229Gln) [<sup>4</sup>](#pmid_11162430), [<sup>5</sup>](#pmid_12574234), [<sup>6</sup>](#pmid_24915262). \n3.  Western blotting and indirect immunofluorescence for protein expression and localization - Determining appropriate thresholds for protein expression is more difficult due to variability in results between experimental protocols. Altered protein expression can be indirectly captured through the read-out frame from transactivation assay, and reduced protein expression can provide an explanation for reduced transactivation. When exploring protein mis-localization, we recommend that the c.589\\_615del (p.Lys197\\_Lys205del) variant is included as a positive control for impaired nuclear localization (cytosolic retention).",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903875",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRdu---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PP5_nuclear_HNF1A",
+                "additionalComments": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                "applicability": "Not Applicable for this VCEP",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Other Database",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "",
+                "label": "PP5",
+                "ns": "017",
+                "originalACMGSummary": "Reputable source recently reports variant as pathogenic, but the evidence is not available to the laboratory to perform an independent evaluation.",
+                "references": [
+                  {
+                    "id": "29543229",
+                    "source": "PubMed",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/29543229"
+                  }
+                ],
+                "sepioID": "SEPIO-CG:99049",
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "638433451",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRi----"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP7_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BP7",
+                "ns": "017",
+                "originalACMGSummary": "A synonymous variant for which splicing prediction algorithms predict no impact to the splice consensus sequence nor the creation of a new splice site AND the nucleotide is not highly conserved.",
+                "sepioID": "SEPIO-CG:99049",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0221",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0219",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0065",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0220",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0079",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "Apply BP7 when the predicted change from SpliceAI is below 0.2 AND phyloP100 way \\< 2.0.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903897",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRhu---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP5_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Other Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BP5",
+                "ns": "017",
+                "originalACMGSummary": "Variant found in a case with an alternate molecular basis for disease.",
+                "sepioID": "SEPIO-CG:99047",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0218",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0216",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0073",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0217",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0078",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "A variant in other monogenic diabetes gene is P/LP.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903896",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRfW---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP4_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BP4",
+                "ns": "017",
+                "originalACMGSummary": "Multiple lines of computational evidence suggest no impact on gene or gene product (conservation, evolutionary, splicing impact, etc)\nCaveat: As many in silico algorithms use the same or very similar input for their predictions, each algorithm cannot be counted as an independent criterion. BP4 can be used only once in any evaluation of a variant.",
+                "sepioID": "SEPIO-CG:99046",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0215",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0213",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0066",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0214",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0080",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "Use a REVEL score of ≤0.15 as supportive evidence of no predicted impact on the gene or gene product. We also support using SpliceAI to assess the predicted impact of non-canonical splicing variants and synonymous variants: apply BP4 when the predicted change is below 0.2 [<sup>8</sup>](#pmid_32123317),[<sup>9</sup>](#pmid_30661751).",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903895",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRfq---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP1_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Not applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BP1",
+                "ns": "017",
+                "originalACMGSummary": "Missense variant in a gene for which primarily truncating variants are known to cause disease.",
+                "sepioID": "SEPIO-CG:99043",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0206",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0204",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0075",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0205",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0082",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903892",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRiW---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BS2_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BS2",
+                "ns": "017",
+                "originalACMGSummary": "Observed in a healthy adult individual for a recessive (homozygous), dominant (heterozygous), or X-linked (hemizygous) disorder, with full penetrance expected at an early age.",
+                "sepioID": "SEPIO-CG:99040",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0091",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000357",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0224",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0069",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "Apply to normoglycemic individuals age 70 or older (i.e., genotype positive, phenotype negative)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0098",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0076",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903889",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRgy---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BA1_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Stand Alone",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BA1",
+                "ns": "017",
+                "originalACMGSummary": "Allele frequency is above 5% in Exome Sequencing Project, 1000 Genomes or Exome Aggregation Consortium.",
+                "sepioID": "SEPIO-CG:99038",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Applicable",
+                    "id": "0087",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "gnomAD Grpmax FAF ≥ 1:10,000 (≥ 0.01% or 0.0001)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0201",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0202",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0203",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0089",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903887",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRhW---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PM6_nuclear_HNF1A",
+                "additionalComments": "Subsumed by PS2.",
+                "applicability": "Not applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "De novo Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PM6",
+                "ns": "017",
+                "originalACMGSummary": "Assumed de novo, but without confirmation of paternity and maternity.",
+                "sepioID": "SEPIO-CG:99032",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0235",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0014",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0037",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0010",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0022",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903882",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRhG---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PM3_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Not applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Allelic Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PM3",
+                "ns": "017",
+                "originalACMGSummary": "For recessive disorders, detected in trans with a pathogenic variant\nNote: This requires testing of parents (or offspring) to determine phase.",
+                "sepioID": "SEPIO-CG:99029",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0232",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0038",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0058",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "007",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0027",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903879",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRga---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PS4_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "Population Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Variant should meet PM2\\_Supporting in order to use PS4 at any level (careful review of gnomAD QC data may be necessary to assess whether variant is real or an artifact, especially if variant is in a polyC region). \n\nPhenotype of affected individuals must include diabetes, without clear evidence of an autoimmune etiology: \n\n*   One or more positive diabetes autoantibodies (IA-2A, ZnT8A+, GAD)[<sup>11</sup>](#pmid_21395678),[<sup>12</sup>](#pmid_28701371),[<sup>13</sup>](#pmid_30409810),[<sup>14</sup>](#pmid_31704690)\n*   Very low or negative C-peptide, defined as either fasting or non-fasting random C-peptide (\\<200pmol/L or 0.6ng/mL)[<sup>15</sup>](#pmid_30225972),[<sup>16</sup>](#pmid_23771925) or urinary C-peptide/creatinine ratio \\<0.2 nmol/mmol[<sup>12</sup>](#pmid_28701371),[<sup>13</sup>](#pmid_30409810)",
+                "label": "PS4",
+                "ns": "017",
+                "originalACMGSummary": "The prevalence of the variant in affected individuals is significantly increased compared to the prevalence in controls.\nNote 1: Relative risk (RR) or odds ratio (OR), as obtained from case-control studies, is >5.0 and the confidence interval around the estimate of RR or OR does not include 1.0. See manuscript for detailed guidance.\nNote 2: In instances of very rare variants where case-control studies may not reach statistical significance, the prior observation of the variant in multiple unrelated patients with the same phenotype, and its absence in controls, may be used as moderate level of evidence.",
+                "sepioID": "SEPIO-CG:99026",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0243",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0029",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0053",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Seven or more unrelated occurrences = Strong.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0057",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "4-6 unrelated occurrences = Moderate. ",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0032",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903876",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRgC---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PM5_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PM5",
+                "ns": "017",
+                "originalACMGSummary": "Novel missense change at an amino acid residue where a different missense change determined to be pathogenic has been seen before.\nExample: Arg156His is pathogenic; now you observe Arg156Cys.\nCaveat: Beware of changes that impact splicing rather than at the amino acid/protein level.",
+                "sepioID": "SEPIO-CG:99031",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0234",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0047",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0056",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Applicable once two amino acid changes have been classified as pathogenic at the same amino acid residue",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "008",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "The novel amino acid change must have a Grantham distance greater than or equal to the previously classified pathogenic variant.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0048",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Apply if the previously classified amino acid change is likely pathogenic (rather than pathogenic), or if the previously classified variant is pathogenic but has a greater Grantham distance.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903881",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRjC---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PM4_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PM4",
+                "ns": "017",
+                "originalACMGSummary": "Protein length changes due to in-frame deletions/insertions in a non-repeat region or stop-loss variants.",
+                "sepioID": "SEPIO-CG:99030",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0233",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0012",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0035",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "009",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "For deletions/insertions of more than one amino acid in a non-repeat region, use as moderate level of evidence.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0059",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "For single amino acid deletions/insertions, use as supporting level of evidence",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903880",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRjy---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PS2_nuclear_HNF1A",
+                "additionalComments": "To obtain maximum points (“phenotype highly specific for gene”) patient must meet criteria for PP4 (result of ≥50% chance or higher of testing positive for MODY on the MODY Probability calculator (https://www.diabetesgenes.org/mody-probability-calculator/) AND have negative HNF4A testing).  If patient does not meet PP4 but is noted to have diabetes, use points corresponding to “phenotype consistent with gene but not highly specific”.  If patient shows evidence of an autoimmune etiology for their diabetes and/or absolute or near-absolute insulin deficiency (see above), do not apply PS2. ",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "De novo Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Use SVI recommended point-based system with MDEP specifications for “Phenotype Consistency”.\n\nDo not apply PS2 if the proband has an affected parent with any of the following:\n\n*   Affected parent meets PP4 specifications\n*   Parent is described as having similarly atypical diabetes to the proband\n*   Parent was diagnosed with non-autoimmune diabetes before age 30",
+                "label": "PS2",
+                "ns": "017",
+                "originalACMGSummary": "De novo (both maternity and paternity confirmed) in a patient with the disease and no family history.\nNote: Confirmation of paternity only is insufficient. Egg donation, surrogate motherhood, errors in embryo transfer, etc. can contribute to non-maternity.",
+                "sepioID": "SEPIO-CG:99024",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0241",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0016",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "Use SVI recommended point-based system with specifications for “Phenotype Consistency” described in PP4 specifications.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0051",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Use SVI recommended point-based system with specifications for “Phenotype Consistency” described in PP4 specifications.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "004",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "Use SVI recommended point-based system with specifications for “Phenotype Consistency” described in PP4 specifications.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0043",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Use SVI recommended point-based system with specifications for “Phenotype Consistency” described in PP4 specifications.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903874",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRiq---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PS1_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Strong",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PS1",
+                "ns": "017",
+                "originalACMGSummary": "Same amino acid change as a previously established pathogenic variant regardless of nucleotide change.\nExample: Val->Leu caused by either G>C or G>T in the same codon.\nCaveat: Beware of changes that impact splicing rather than at the amino acid/protein level.",
+                "sepioID": "SEPIO-CG:99023",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0240",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0021",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0050",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "General recommendation"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Applicable for a same amino acid change if the previously established variant is classified as pathogenic by ClinGen MDEP specifications.\n\nPS1 can also be applied for canonical and non-canoncial splicing variants that have a SpliceAI score within 10% of the original variant, or a greater predicted deleterious impact than the comparision (likely) pathogenic variant. See Table 2 from [PMID: 37352859](https://pmc.ncbi.nlm.nih.gov/articles/PMC10357475/table/tbl2/) for determining when PS1 should be applied at the Strong, Moderate, or Supporting level in these instances.[<sup>3</sup>](#pmid_37352859)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0046",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "Applicable for a same amino acid change if the previously established variant is classified as likely pathogenic by ClinGen MDEP specifications.\n\nPS1 can also be applied for canonical and non-canoncial splicing variants that have a SpliceAI score within 10% of the original variant, or a greater predicted deleterious impact than the comparision (likely) pathogenic variant. See Table 2 from [PMID: 37352859](https://pmc.ncbi.nlm.nih.gov/articles/PMC10357475/table/tbl2/) for determining when PS1 should be applied at the Strong, Moderate, or Supporting level in these instances.[<sup>3</sup>](#pmid_37352859)",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0036",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "PS1 can also be applied for canonical and non-canoncial splicing variants that have a SpliceAI score within 10% of the original variant, or a greater predicted deleterious impact than the comparision (likely) pathogenic variant. See Table 2 from [PMID: 37352859](https://pmc.ncbi.nlm.nih.gov/articles/PMC10357475/table/tbl2/) for determining when PS1 should be applied at the Strong, Moderate, or Supporting level in these instances.[<sup>3</sup>](#pmid_37352859)",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903873",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRja---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PVS1_nuclear_HNF1A",
+                "additionalComments": "Per guidance from ClinGen/SVI, PM2_Supporting + PVS1 is sufficient evidence of a variant being likely pathogenic ",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Very Strong",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Use HNF1A PVS1 decision tree.\n\nPer recommendations from the SVI, when RNA analysis demonstrates abnormal splicing from non-canonical splice site variants, apply PS3 instead of PVS1.",
+                "label": "PVS1",
+                "ns": "017",
+                "originalACMGSummary": "Null variant (nonsense, frameshift, canonical +/−1 or 2 splice sites, initiation codon, single or multi-exon deletion) in a gene where loss of function (LOF) is a known mechanism of disease.\nCaveats:\n * Beware of genes where LOF is not a known disease mechanism (e.g. GFAP, MYH7).\n * Use caution interpreting LOF variants at the extreme 3’ end of a gene.\n * Use caution with splice variants that are predicted to lead to exon skipping but leave the remainder of the protein intact.\n * Use caution in the presence of multiple transcripts.",
+                "sepioID": "SEPIO-CG:99022",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0245",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0017",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "Use HNF1A PVS1 decision tree.\n\n*   Apply PVS1 to nonsense or frameshift variants occurring 5' of c.1768. \n    *   Variants generating PTCs 3’ of c.1714 of NM\\_000545.8, which includes the last 55 nucleotides of exon 9 and all of exon 10, are not expected to cause NMD [<sup>2</sup>](#pmid_24274751). The transactivation domain (TAD) of the protein overlaps with this region. The last 55 nucleotides of exon 9 (c.1714-1768) is enriched for disease-causing variants and loss-of function variants in this region have been found in patients/families with a MODY phenotype. Therefore, a “very strong” level of evidence will be used for loss-of-function variants 5’ of c.1768 regardless of where the premature termination codon occurs.\n*   “Exon skipping or use of a cryptic splice site that preserves reading frame” and “Single to multi-exon deletion that preserves reading frame”\n    *   Apply PVS1 for exon skipping or single to multi exon deletion involving exons 1-9\n        *   Deletions of exon 1 would lead at least to loss of the initiation codon (see below for recommendations for initiation codon variants). Deletions of single exons 2, 3, 4, 5, 6, 8 or 9 all cause frameshift, and thus PVS1 would be used. In HNF1A, only exon 7 (LRG\\_522t1) is surrounded by introns of the same phase. Skipping or deletion of exon 7 would remove 64 amino acids in the TAD, which is >10% of the protein and 18% of the TAD. Given the significance of the TAD, we support still using PVS1 instead of PVS1\\_Strong in this situation.\n*   Apply PVS1 to initiation codon variants. Four initiation codon variants have been identified in patients with a MODY phenotype. The closest potential in-frame start codon is p.Met118. Starting the protein at p.Met118 would remove 18% of the protein, including the entire dimerization domain. There are many P/LP variants upstream of p.Met118.\n*   Per recommendations from the SVI, when RNA analysis demonstrates abnormal splicing from non-canonical splice site variants, apply PS3 instead of PVS1.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0020",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "Use HNF1A PVS1 decision tree.\n\n*   Apply PVS1\\_Strong for nonsense variants at c.1803 (p.601) and 5’ and frameshift variants at c.1854 (p.618) and 5’. \n    *   The distinction of nonsense and frameshift variants was made following a careful review of the phenotypes of individuals with loss-of-function variants in exon 10, which lead to our prediction that the addition of new amino acids from a frameshift will disrupt the TAD and cause a MODY phenotype more so than the deletion of a small part of the end of the TAD. Moderate phenotypic evidence was applied to the c.1802del (p.601Ter) variant, but the individual with the next nonsense variant (p.Gln625Ter) was unaffected. Frameshift variants at p.Ile618 and 5’ have been identified in patients with a phenotype consistent with MODY.\n*   “Exon skipping or use of a cryptic splice site that preserves reading frame” and “Single to multi-exon deletion that preserves reading frame”\n    *   Apply PVS1\\_Strong for deletions of exon 10 and splicing variants that would predict the skipping of exon 10.\n        *   A deletion of exon 10 would remove part of the TAD but less than 10% of the protein. Since the TAD is critical to protein function, and variants that disrupt all of exon 10 have been found in patients with a MODY phenotype, we will use  This specification is in accordance with Tayoun’s recommendation to use PVS1\\_Strong in cases in which the truncated region is critical to protein function.[<sup>17</sup>](#pmid_30192042)\n\nPer recommendations from the SVI, when RNA analysis demonstrates abnormal splicing from non-canonical splice site variants, apply PS3 instead of PVS1.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0026",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "001",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Use HNF1A PVS1 decision tree.\n\n*   Apply PVS1\\_Supporting levels for nonsense variants occurring 3’ of c.1803 (p.601) and frameshift variants occurring 3’ of c.1854 (p.618) as there is limited evidence of patients with MODY phenotype at this time.\n\nPer recommendations from the SVI, when RNA analysis demonstrates abnormal splicing from non-canonical splice site variants, apply PS3 instead of PVS1.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903872",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRkS---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP6_nuclear_HNF1A",
+                "additionalComments": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                "applicability": "Not Applicable for this VCEP",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Other Database",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "",
+                "label": "BP6",
+                "ns": "017",
+                "originalACMGSummary": "Reputable source recently reports variant as benign, but the evidence is not available to the laboratory to perform an independent evaluation.",
+                "references": [
+                  {
+                    "id": "29543229",
+                    "source": "PubMed",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/29543229"
+                  }
+                ],
+                "sepioID": "SEPIO-CG:99048",
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "instructionsToUse": "",
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000326",
+                    "text": "This criterion is not for use as recommended by the ClinGen Sequence Variant Interpretation VCEP Review Committee.",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "638433450",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRl6---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BP3_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Not applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Supporting",
+                "evidenceCategory": "Computational And Predictive Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BP3",
+                "ns": "017",
+                "originalACMGSummary": "In frame-deletions/insertions in a repetitive region without a known function.",
+                "sepioID": "SEPIO-CG:99045",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0212",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0210",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0074",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0211",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not applicable",
+                    "id": "0081",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903894",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRlq---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_BS4_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Benign",
+                "defaultStrength": "Benign Strong",
+                "evidenceCategory": "Segregation Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "BS4",
+                "ns": "017",
+                "originalACMGSummary": "Lack of segregation in affected members of a family.\nCaveat: The presence of phenocopies for common phenotypes (i.e. cancer, epilepsy) can mimic lack of segregation among affected individuals. Also, families may have more than one pathogenic variant contributing to an autosomal dominant disorder, further confounding an apparent lack of segregation.",
+                "sepioID": "SEPIO-CG:99042",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0229",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "SEPIO:0000325",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0227",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0071",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000328",
+                    "text": "Applicable to family members without variant who have MPC score >50% (i.e., genotype negative, phenotype positive).",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0228",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000699",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0077",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000327",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903891",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRki---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PP4_nuclear_HNF1A",
+                "additionalComments": "Phenotype of affected individuals must include diabetes, without clear evidence of an autoimmune etiology (see rules).\nCertain assumptions can be made in order to use the MODY probability calculator: \n* Specific clinical information about parents not given but lab/literature states “Family history of diabetes”: Click “Parent with diabetes” in calculator.    \n* No information about family history of diabetes is provided: Attempt to use the calculator using both possibilities (yes/no). If this makes a difference in the ability to meet the PP4 cutoff (>50%), PP4 cannot be used.  \n* Weight/Height/BMI not given but lab/literature states patient is “lean”: Enter BMI of 30.    \n* HbA1c is not provided: Attempt to use the calculator using values of 6% and 10%.  If this makes a difference in the ability to meet the PP4 cutoff (>50%), PP4 cannot be used.  \n* Treatment information is not provided: Cannot use calculator. ",
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Supporting",
+                "evidenceCategory": "Other Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": "Phenotype of affected individuals must include diabetes, without clear evidence of an autoimmune etiology: \n\n*   One or more positive diabetes autoantibodies (IA-2A, ZnT8A+, GAD)[<sup>11</sup>](#pmid_21395678),[<sup>12</sup>](#pmid_28701371),[<sup>13</sup>](#pmid_30409810),[<sup>14</sup>](#pmid_31704690)\n*   Very low or negative C-peptide, defined as either fasting or non-fasting random C-peptide (\\<200pmol/L or 0.6ng/mL)[<sup>15</sup>](#pmid_30225972),[<sup>16</sup>](#pmid_23771925) or urinary C-peptide/creatinine ratio \\<0.2 nmol/mmol[<sup>12</sup>](#pmid_28701371),[<sup>13</sup>](#pmid_30409810)",
+                "label": "PP4",
+                "ns": "017",
+                "originalACMGSummary": "Patient’s phenotype or family history is highly specific for a disease with a single genetic etiology.",
+                "sepioID": "SEPIO-CG:99036",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0239",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "002",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "005",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0018",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "MODY Probability Calculator (MPC) result ≥50% chance of testing positive [https://www.diabetesgenes.org/mody-probability-calculator/](https://www.diabetesgenes.org/mody-probability-calculator/)) AND negative HNF4A testing AND presence of at least one additional feature characteristic of HNF1A-MODY:\n\n*   Antibody negative and/or persistent C-peptide after five years post-T1DM diagnosis\n*   Response to low-dose sulfonyurea (SU) (extreme response- hypoglycemia)\n*   Low hsCRP in patient with clinical diagnosis of T2DM\n*   Biochemical/Molecular phenotypic evidence from patient cell lines\n*   Hepatocellular adenomas",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0063",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "MODY Probability Calculator (MPC) result ≥50% chance of testing positive https://www.diabetesgenes.org/mody-probability-calculator/) AND negative HNF4A testing",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903886",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRlO---"
+            },
+            {
+              "entContent": {
+                "_uniqueProp": "017_PM1_nuclear_HNF1A",
+                "additionalComments": null,
+                "applicability": "Applicable",
+                "baseStrength": "Pathogenic",
+                "defaultStrength": "Pathogenic Moderate",
+                "evidenceCategory": "Functional Data",
+                "gene": [
+                  "HNF1A"
+                ],
+                "geneType": "nuclear",
+                "instructionsToUse": null,
+                "label": "PM1",
+                "ns": "017",
+                "originalACMGSummary": "Located in a mutational hot spot and/or critical and well-established functional domain (e.g. active site of an enzyme) without benign variation.",
+                "sepioID": "SEPIO-CG:99027",
+                "status": {
+                  "Pilot Rules In Prep": {
+                    "completed": true
+                  }
+                },
+                "strengthDescriptor": [
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0230",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Stand Alone",
+                    "strengthSepioID": "",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable for this VCEP",
+                    "id": "0015",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Very Strong",
+                    "strengthSepioID": "SEPIO:0000220",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Not Applicable",
+                    "id": "0028",
+                    "instructionsToUse": "",
+                    "specificationType": [],
+                    "strength": "Strong",
+                    "strengthSepioID": "SEPIO:0000330",
+                    "text": "",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "006",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Moderate",
+                    "strengthSepioID": "SEPIO:0000216",
+                    "text": "This criterion can be used for variants in residues that directly bind DNA:   Gln130, Arg131, Glu132, His143, Leu144, Ser145, Gln146, His147, Leu148, Asn149, Lys155, Thr156, Gln157, Lys158, Arg203, Phe204, Lys205, Trp206, Arg263, Val264, Tyr265, Asn270, Arg271, Arg272, Lys273 ",
+                    "type": "EvidenceLineStrength"
+                  },
+                  {
+                    "applicability": "Applicable",
+                    "id": "0054",
+                    "instructionsToUse": "",
+                    "specificationType": [
+                      "Gene-specific",
+                      "Strength"
+                    ],
+                    "strength": "Supporting",
+                    "strengthSepioID": "SEPIO:0000329",
+                    "text": "Use for defined regions in the DNA binding and dimerization domains.\n\n*   Dimerization: codons 1-32, NM\\_000545.8\n*   Subset of DNA binding domains: codons 107-174 and 201-280\n\nIt can also be used for variants within certain transcription factor binding sites of the promoter:\n\n*   –c.-187 to c.-195 (AP1 binding site)\n*   –c.-209 to c.-227 (Overlapping HNF3 & NF-Y sites)\n*   –c.-238 to c.-259 (HNF1A binding site)\n*   –c.-276 to c.-288 (HNF4A binding site)",
+                    "type": "EvidenceLineStrength"
+                  }
+                ]
+              },
+              "entType": "CriteriaCode",
+              "ldhId": "467903877",
+              "modified": 1760120425930,
+              "modifier": "cjodarski",
+              "rev": "_ka7YRk2---"
+            }
+          ],
+          "File": [
+            {
+              "entContent": {
+                "description": "Table for determining strength of PS2 for apparent de novo variants",
+                "fileLabel": "PS2 De Novo Points Table",
+                "fileName": "PS2_DeNovo_Points_Table.pdf",
+                "path": "/data/srvc-files/cspec-reg/organizations/50016/rulesets/467903870/667441fd-a7cb-4a92-8592-86b8a0377c79.pdf",
+                "public": true,
+                "size": 214892,
+                "type": "pdf"
+              },
+              "entId": "667441fd-a7cb-4a92-8592-86b8a0377c79",
+              "entType": "File",
+              "ldhId": "1614428225",
+              "modified": 1760120426420,
+              "modifier": "cjodarski",
+              "rev": "_ka7YR66---"
+            },
+            {
+              "entContent": {
+                "description": "Decision tree for determining the strength of PVS1 to apply to variants in HNF1A for monogenic diabetes",
+                "fileLabel": "HNF1A (NM_000545.8) PVS1 Decision Tree",
+                "fileName": "HNF1A_PVS1_Decision_Tree_20230625.pdf",
+                "path": "/data/srvc-files/cspec-reg/organizations/50016/rulesets/467903870/5af96ed6-b35b-4704-be42-fe069d5e7426.pdf",
+                "public": true,
+                "size": 80201,
+                "type": "pdf"
+              },
+              "entId": "5af96ed6-b35b-4704-be42-fe069d5e7426",
+              "entType": "File",
+              "ldhId": "1614428226",
+              "modified": 1760120426420,
+              "modifier": "cjodarski",
+              "rev": "_ka7YR6q---"
+            }
+          ]
+        },
+        "ldhId": "467903870",
+        "modified": 1760120425819,
+        "modifier": "cjodarski",
+        "rev": "_ka7YRWe---"
+      }
+    ]
+  },
+  "ldFor": {
+    "Organization": [
+      {
+        "entContent": {
+          "approval": {
+            "step1": {
+              "approvalDate": "2018-02-21T00:00:00.000Z",
+              "approved": true
+            },
+            "step2": {
+              "approvalDate": "2019-11-21T00:00:00.000Z",
+              "approved": true
+            },
+            "step3": {
+              "approvalDate": "2021-06-04T00:00:00.000Z",
+              "approved": true
+            },
+            "step4": {
+              "approvalDate": "2021-08-18T00:00:00.000Z",
+              "approved": true
+            }
+          },
+          "curationActivity": "Variant Pathogenicity",
+          "fullBaseName": "Monogenic Diabetes",
+          "shortBaseName": "Diabetes",
+          "shortTitle": "Monogenic Diabetes VCEP",
+          "title": "Monogenic Diabetes Variant Curation Expert Panel",
+          "type": "Variant Curation Expert Panel"
+        },
+        "entId": "50016",
+        "entIri": "http://clinicalgenome.org/affiliation/50016",
+        "entType": "Organization",
+        "ldhId": "135637640",
+        "modified": 1680879306014,
+        "modifier": "cspecAdministrator",
+        "rev": "_inf5B_---A"
+      }
+    ]
+  },
+  "ldhId": "467903868",
+  "modified": 1760120425733,
+  "modifier": "cjodarski",
+  "rev": "_ka7YRPu---"
+}

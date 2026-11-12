@@ -1,0 +1,154 @@
+{
+  "context": {
+    "schemaVersion": "evidence-context-v2",
+    "contextId": "context-sha256-e91f157819704c59f8f2b2abe63156d425d2bd33e2addad009317c37d7c6385e",
+    "canonicalizationProfile": "varvis-json-c14n-v1",
+    "dataClass": "SYNTHETIC",
+    "scope": {
+      "analysisDomain": "GERMLINE",
+      "diseaseModel": "MENDELIAN",
+      "variantScope": "SMALL_SEQUENCE_VARIANT"
+    },
+    "variant": {
+      "alleleId": "allele-sha256-4479ca23467a98f7a151bb97f3c6ab0f508c91fdcd5f01a50fcd5b90b3db3406",
+      "variantType": "SNV",
+      "inputAllele": {"assembly": "GRCh38", "contig": "1", "position": 100000, "reference": "A", "alternate": "G"},
+      "normalizedAllele": {"assembly": "GRCh38", "contig": "1", "position": 100000, "reference": "A", "alternate": "G"},
+      "evidenceQueryAllele": {"assembly": "GRCh38", "contig": "1", "position": 100000, "reference": "A", "alternate": "G"},
+      "normalization": {
+        "status": "UNCHANGED",
+        "method": "synthetic-left-normalizer",
+        "methodVersion": "1.0.0",
+        "referenceSequenceSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "refValidation": "MATCH"
+      },
+      "assemblyLineage": {"mappingStatus": "NATIVE"}
+    },
+    "gene": {"hgncId": "HGNC:1", "symbol": "SYNTH1"},
+    "disease": {"mondoId": "MONDO:0000001", "label": "Synthetic Mendelian disorder"},
+    "moi": "AUTOSOMAL_DOMINANT",
+    "transcript": {
+      "accession": "NM_000001",
+      "version": 1,
+      "selectionPolicy": "SYNTHETIC_PINNED_TRANSCRIPT",
+      "annotationSourceVersion": "synthetic-1"
+    },
+    "patientContext": {
+      "patientContextId": "patient-context-synthetic-e1-proband",
+      "familyContextId": "family-context-synthetic-e1-family",
+      "role": "PROBAND",
+      "affectedStatus": "AFFECTED",
+      "sex": "UNKNOWN"
+    },
+    "contextCompleteness": {"status": "COMPLETE", "missingFields": []}
+  },
+  "carrier": {
+    "evidenceType": "POPULATION_FREQUENCY",
+    "queryAllele": {"assembly": "GRCh38", "contig": "1", "position": 100000, "reference": "A", "alternate": "G"},
+    "source": {
+      "sourceId": "GNOMAD_SYNTHETIC",
+      "resourceVersion": "synthetic-e2",
+      "resourceSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "retrievedAt": "2026-08-31T12:00:00Z",
+      "sourceRecords": [{
+        "recordId": "GNOMAD_SYNTHETIC:GRCh38:1:100000:A:G",
+        "locator": {
+          "locatorType": "GENOMIC_REGION",
+          "locatorValue": "SYNTHETIC_GRCh38:1:100000:A:G",
+          "sourceRecordId": "GNOMAD_SYNTHETIC:GRCh38:1:100000:A:G",
+          "artifactSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "retrievedAt": "2026-08-31T12:00:00Z"
+        }
+      }],
+      "sourceLocators": [{
+        "locatorType": "GENOMIC_REGION",
+        "locatorValue": "SYNTHETIC_GRCh38:1:100000:A:G",
+        "sourceRecordId": "GNOMAD_SYNTHETIC:GRCh38:1:100000:A:G",
+        "artifactSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "retrievedAt": "2026-08-31T12:00:00Z"
+      }]
+    },
+    "resourceExecution": {
+      "status": "SUCCEEDED",
+      "attemptedAt": "2026-08-31T11:59:58Z",
+      "completedAt": "2026-08-31T11:59:59Z"
+    },
+    "resourceAvailability": {"status": "AVAILABLE"},
+    "queryOutcome": {
+      "status": "HIT",
+      "recordCount": 1,
+      "queryFingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    "resourceApplicability": {"status": "APPLICABLE"},
+    "measurements": [{
+      "metricId": "maximumAlleleFrequency",
+      "rawValue": "0.00980392",
+      "normalizedValue": "0.00980392",
+      "unit": "fraction",
+      "calibrationProfileId": "SYNTHETIC_ONLY"
+    }],
+    "producedAt": "2026-08-31T12:00:00Z",
+    "sourcePayloadSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "expectedAtomicEvidence": {
+    "schemaVersion": "atomic-evidence-v2",
+    "contextId": "context-sha256-e91f157819704c59f8f2b2abe63156d425d2bd33e2addad009317c37d7c6385e",
+    "canonicalizationProfile": "varvis-json-c14n-v1",
+    "evidenceType": "POPULATION_FREQUENCY",
+    "direction": "UNDETERMINED",
+    "source": {
+      "sourceId": "GNOMAD_SYNTHETIC",
+      "resourceVersion": "synthetic-e2",
+      "resourceSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "retrievedAt": "2026-08-31T12:00:00Z",
+      "sourceRecords": [{
+        "recordId": "GNOMAD_SYNTHETIC:GRCh38:1:100000:A:G",
+        "locator": {
+          "locatorType": "GENOMIC_REGION",
+          "locatorValue": "SYNTHETIC_GRCh38:1:100000:A:G",
+          "sourceRecordId": "GNOMAD_SYNTHETIC:GRCh38:1:100000:A:G",
+          "artifactSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "retrievedAt": "2026-08-31T12:00:00Z"
+        }
+      }],
+      "sourceLocators": [{
+        "locatorType": "GENOMIC_REGION",
+        "locatorValue": "SYNTHETIC_GRCh38:1:100000:A:G",
+        "sourceRecordId": "GNOMAD_SYNTHETIC:GRCh38:1:100000:A:G",
+        "artifactSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "retrievedAt": "2026-08-31T12:00:00Z"
+      }]
+    },
+    "resourceExecution": {
+      "status": "SUCCEEDED",
+      "attemptedAt": "2026-08-31T11:59:58Z",
+      "completedAt": "2026-08-31T11:59:59Z"
+    },
+    "resourceAvailability": {"status": "AVAILABLE"},
+    "queryOutcome": {
+      "status": "HIT",
+      "recordCount": 1,
+      "queryFingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    "resourceApplicability": {"status": "APPLICABLE"},
+    "measurements": [{
+      "metricId": "maximumAlleleFrequency",
+      "rawValue": "0.00980392",
+      "normalizedValue": "0.00980392",
+      "unit": "fraction",
+      "calibrationProfileId": "SYNTHETIC_ONLY"
+    }],
+    "derivedFromEvidenceIds": [],
+    "conflict": {"status": "NONE", "conflictIds": []},
+    "review": {"status": "NOT_REQUIRED", "decision": "NONE", "reviewRecordIds": []},
+    "provenance": {
+      "producerId": "varvis-runtime-v2-adapter",
+      "producerVersion": "2.0.0-e2",
+      "producedAt": "2026-08-31T12:00:00Z",
+      "sourcePayloadSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "identityProjectionSha256": "778329d1a31e67b530003709339f975baddb2965afdb353e2229f0612a3871bd"
+    },
+    "deduplicationKey": "dedup-sha256-65fadb498a56d3c635368f6c769a2927288ab85232518747b6806d233c6175f9",
+    "evidenceId": "evidence-sha256-778329d1a31e67b530003709339f975baddb2965afdb353e2229f0612a3871bd"
+  }
+}

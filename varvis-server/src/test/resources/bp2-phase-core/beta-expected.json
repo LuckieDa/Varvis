@@ -1,0 +1,13 @@
+{
+  "criterionId": "ACMG_AMP_2015:BP2",
+  "derivedPhase": "CONFIRMED_TRANS",
+  "direction": "BENIGN",
+  "status": "MET",
+  "strength": "SUPPORTING",
+  "observationCount": 1,
+  "mode": "CONFIRMED_TRANS_FULLY_PENETRANT_AD",
+  "caseId": "TEST_ONLY_bp2_beta_case",
+  "occurrenceId": "TEST_ONLY_bp2_beta_occurrence",
+  "contextId": "context-sha256-9336e7ac04564ee845599cd74174e2e1c9e6cb4dab2612b3345849d5990b18e2",
+  "pairId": "pair-sha256-ed4e8e6178358a2ef5c4dcdcbc2a6254b42aa9c2eb2ea0f7e2a0b19fe7313b03"
+}

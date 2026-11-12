@@ -1,0 +1,4 @@
+SYNTHETIC software fixture. This is not expert knowledge or a clinical rule.
+For the invented HGNC:SYNTHETIC and MONDO:SYNTHETIC AD background,
+the reported presence of HP:0001250 meets the invented CONSISTENT condition.
+No other feature can be inferred from absence of a report field.

@@ -1,0 +1,13 @@
+{
+  "status": "MET",
+  "points": 1,
+  "strength": "MODERATE",
+  "targetParent": "FATHER",
+  "partnerParent": "MOTHER",
+  "classification": "PATHOGENIC",
+  "caseId": "TEST_ONLY_pm3_alpha_case",
+  "pairId": "pair-sha256-ae36ec3f5f17ea73e134d0b15b4100068828405cf3a9054be22269fdc15f81b9",
+  "targetAlleleId": "allele-sha256-f541b0caefe11c46ecd6426d195f3f908886bcf14614e55b4548b4e9332a7df0",
+  "partnerAlleleId": "allele-sha256-d4beca8bdc049a871810753af746ab2847613397fb2d0ef4bbe04f1a9ce08d26",
+  "contextId": "context-sha256-80178c0ff26c5d47e8f1aa62b8314f7e3e157d9fc6402497ff7c689b9f4674a4"
+}

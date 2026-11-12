@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nbscn.varvis.mapper.varvis.VariantPositionMapper">
+
+    <resultMap id="smallVariantMap" type="org.nbscn.varvis.dto.variant.response.SmallVariantDTO">
+        <result property="variantId" column="variant_id"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="position" column="position"/>
+        <result property="ref" column="ref"/>
+        <result property="alt" column="alt"/>
+        <result property="geneSymbol" column="gene_symbol"/>
+        <result property="variantType" column="variant_type"/>
+        <result property="clinicalSignificance" column="clinical_significance"/>
+        <result property="hgvsC" column="hgvs_c"/>
+        <result property="hgvsP" column="hgvs_p"/>
+        <result property="genotype" column="genotype"/>
+    </resultMap>
+
+    <resultMap id="structuralVariantMap" type="org.nbscn.varvis.dto.variant.response.StructuralVariantDTO">
+        <result property="variantId" column="variant_id"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="startBp" column="start_bp"/>
+        <result property="endBp" column="end_bp"/>
+        <result property="svType" column="sv_type"/>
+        <result property="copyNumber" column="copy_number"/>
+        <result property="geneSymbol" column="gene_symbol"/>
+        <result property="clinicalSignificance" column="clinical_significance"/>
+    </resultMap>
+
+    <resultMap id="regionCurationMap" type="org.nbscn.varvis.entity.variant.ClingenRegionCurationEntity">
+        <result property="regionCurationId" column="region_curation_id"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="startBp" column="start_bp"/>
+        <result property="endBp" column="end_bp"/>
+        <result property="regionName" column="region_name"/>
+        <result property="haploScore" column="haplo_score"/>
+        <result property="triploScore" column="triplo_score"/>
+        <result property="haploDescription" column="haplo_description"/>
+        <result property="triploDescription" column="triplo_description"/>
+        <result property="diseaseLabel" column="disease_label"/>
+        <result property="sourceFile" column="source_file"/>
+    </resultMap>
+
+    <resultMap id="recurrentCnvMap" type="org.nbscn.varvis.entity.variant.RecurrentCnvRegionEntity">
+        <result property="recurrentCnvId" column="recurrent_cnv_id"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="startBp" column="start_bp"/>
+        <result property="endBp" column="end_bp"/>
+        <result property="regionName" column="region_name"/>
+        <result property="scoreText" column="score_text"/>
+        <result property="strand" column="strand"/>
+        <result property="sourceFile" column="source_file"/>
+    </resultMap>
+
+    <select id="listSmallVariantsByGene" resultMap="smallVariantMap">
+        SELECT sv.small_variant_id AS variant_id,
+               chr.chr_name AS chromosome,
+               sv.start_bp AS position,
+               sv.ref_allele AS ref,
+               sv.alt_allele AS alt,
+               COALESCE(sv.gene_symbol, g.gene_symbol) AS gene_symbol,
+               sv.variant_type,
+               sv.clinical_significance,
+               NULL AS hgvs_c,
+               NULL AS hgvs_p,
+               NULL AS genotype
+        FROM gene g
+                 JOIN small_variant sv
+                      ON (sv.gene_id = g.gene_id OR sv.gene_symbol = g.gene_symbol)
+                 LEFT JOIN chromosome chr ON chr.chromosome_id = sv.chromosome_id
+        WHERE g.gene_symbol = #{geneSymbol}
+        ORDER BY sv.start_bp
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+
+    <select id="listStructuralVariantsByGene" resultMap="structuralVariantMap">
+        SELECT stv.structural_variant_id AS variant_id,
+               chr.chr_name AS chromosome,
+               stv.start_bp,
+               stv.end_bp,
+               stv.sv_type,
+               NULL AS copy_number,
+               g.gene_symbol AS gene_symbol,
+               stv.clinical_significance
+        FROM gene g
+                 JOIN structural_variant stv
+                      ON stv.chromosome_id = g.chromosome_id
+                          AND stv.start_bp &lt;= g.end_bp
+                          AND stv.end_bp &gt;= g.start_bp
+                 LEFT JOIN chromosome chr ON chr.chromosome_id = stv.chromosome_id
+        WHERE g.gene_symbol = #{geneSymbol}
+        ORDER BY stv.start_bp
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+
+    <select id="countSmallVariantsByGene" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM gene g
+                 JOIN small_variant sv
+                      ON (sv.gene_id = g.gene_id OR sv.gene_symbol = g.gene_symbol)
+        WHERE g.gene_symbol = #{geneSymbol}
+    </select>
+
+    <select id="countStructuralVariantsByGene" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM gene g
+                 JOIN structural_variant stv
+                      ON stv.chromosome_id = g.chromosome_id
+                          AND stv.start_bp &lt;= g.end_bp
+                          AND stv.end_bp &gt;= g.start_bp
+        WHERE g.gene_symbol = #{geneSymbol}
+    </select>
+
+    <select id="listRegionCurationOverlap" resultMap="regionCurationMap">
+        SELECT c.region_curation_id,
+               chr.chr_name AS chromosome,
+               c.start_bp,
+               c.end_bp,
+               c.region_name,
+               c.haplo_score,
+               c.triplo_score,
+               c.haplo_description,
+               c.triplo_description,
+               c.disease_label,
+               c.source_file
+        FROM clingen_region_curation c
+                 JOIN chromosome chr ON chr.chromosome_id = c.chromosome_id
+        WHERE chr.chr_name = #{chromosome}
+          AND c.start_bp &lt;= #{endBp}
+          AND c.end_bp &gt;= #{startBp}
+        ORDER BY c.start_bp
+    </select>
+
+    <select id="listRecurrentCnv" resultMap="recurrentCnvMap">
+        SELECT r.recurrent_cnv_id,
+               chr.chr_name AS chromosome,
+               r.start_bp,
+               r.end_bp,
+               r.region_name,
+               r.score_text,
+               r.strand,
+               r.source_file
+        FROM recurrent_cnv_region r
+                 JOIN chromosome chr ON chr.chromosome_id = r.chromosome_id
+        WHERE chr.chr_name = #{chromosome}
+          AND r.start_bp &lt;= #{endBp}
+          AND r.end_bp &gt;= #{startBp}
+        ORDER BY r.start_bp
+    </select>
+</mapper>

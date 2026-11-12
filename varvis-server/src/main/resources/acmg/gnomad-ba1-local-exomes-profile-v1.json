@@ -1,0 +1,462 @@
+{
+  "profileSchemaVersion": "gnomad-population-input-profile-v1",
+  "profileId": "GNOMAD_BA1_LOCAL_EXOMES",
+  "profileVersion": "1.0.0",
+  "status": "LOCAL_EXOMES_BA1_EVALUATION",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-08-31T23:59:59Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-e3-p1a-2026-09-02",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "fa036bb3ca9eecc1f6272e8d7170d965eb21555e5656a5fea9eeba42e8118c88",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-p1a-2026-09-02.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:BA1",
+      "ACMG_AMP_2015:BS1"
+    ]
+  },
+  "authorityBindings": [
+    {
+      "authoritySourceId": "authority-clingen-vcep-gnomad-v4-v3.0",
+      "snapshotSha256": "b84b9c30696aea6fa5cddc0916fe07a3ca647fcbd89d77b3d510bd5cf499106f"
+    }
+  ],
+  "evaluation": {
+    "evaluationEnabled": true,
+    "permittedResultStates": [
+      "MET",
+      "NOT_MET",
+      "NOT_EVALUATED"
+    ],
+    "criteria": [
+      {
+        "criterionId": "ACMG_AMP_2015:BA1",
+        "currentDesignation": "BA1",
+        "baseStrength": "STANDALONE",
+        "evaluationEnabled": true,
+        "frequencyRule": {
+          "metricId": "gnomad.exomes.faf95max",
+          "sourceInfoId": "fafmax_faf95_max",
+          "comparisonOperator": "GREATER_THAN",
+          "minimumSelectedAncestryAlleleNumber": {
+            "rawValue": "2000",
+            "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+          },
+          "threshold": {
+            "mode": "FIXED",
+            "rawValue": "0.05",
+            "normalizedValue": "0.05",
+            "unit": "fraction"
+          },
+          "missingOrInvalidInputResult": "NOT_EVALUATED",
+          "authoritySourceIds": [
+            "authority-clingen-svi-ba1-2018",
+            "authority-clingen-vcep-gnomad-v4-v3.0"
+          ],
+          "exceptionPolicy": {
+            "policyId": "clingen-svi-ba1-exception-process-2018",
+            "authoritySourceId": "authority-clingen-svi-ba1-2018",
+            "sourceUrl": "https://clinicalgenome.org/site/assets/files/3460/ba1_exception_list_07_30_2018.pdf",
+            "snapshotDate": "2018-07-30",
+            "sourceSnapshotSha256": "fdf0dc466fc7405dfffce88f95c16137a23edd570f56c2622ec8fa8a01bf84d8",
+            "snapshotStatus": "READY",
+            "entryCount": 9,
+            "entrySetSha256": "27624dccfc9719cfe5361296b96fbb64df2edaa7703b815d1b29c7c796383c0d",
+            "entries": [
+              {
+                "caid": "CA114709",
+                "assembly": "GRCh38",
+                "contig": "3",
+                "position": 128879647,
+                "reference": "C",
+                "alternate": "CTAAG"
+              },
+              {
+                "caid": "CA172210",
+                "assembly": "GRCh38",
+                "contig": "13",
+                "position": 20189473,
+                "reference": "C",
+                "alternate": "T"
+              },
+              {
+                "caid": "CA113797",
+                "assembly": "GRCh38",
+                "contig": "6",
+                "position": 26090951,
+                "reference": "C",
+                "alternate": "G"
+              },
+              {
+                "caid": "CA113795",
+                "assembly": "GRCh38",
+                "contig": "6",
+                "position": 26092913,
+                "reference": "G",
+                "alternate": "A"
+              },
+              {
+                "caid": "CA280114",
+                "assembly": "GRCh38",
+                "contig": "16",
+                "position": 3249586,
+                "reference": "G",
+                "alternate": "A"
+              },
+              {
+                "caid": "CA280116",
+                "assembly": "GRCh38",
+                "contig": "16",
+                "position": 3249468,
+                "reference": "C",
+                "alternate": "T"
+              },
+              {
+                "caid": "CA210261",
+                "assembly": "GRCh38",
+                "contig": "13",
+                "position": 72835359,
+                "reference": "G",
+                "alternate": "A"
+              },
+              {
+                "caid": "CA312214",
+                "assembly": "GRCh38",
+                "contig": "12",
+                "position": 120737875,
+                "reference": "C",
+                "alternate": "T"
+              },
+              {
+                "caid": "CA090886",
+                "assembly": "GRCh38",
+                "contig": "3",
+                "position": 15645186,
+                "reference": "G",
+                "alternate": "C"
+              }
+            ],
+            "matchMode": "EXACT_ASSEMBLY_CONTIG_POSITION_REF_ALT",
+            "allowedOutcomes": [
+              "NOT_HIT",
+              "HIT",
+              "UNKNOWN",
+              "AMBIGUOUS"
+            ],
+            "requiredOutcomeForMet": "NOT_HIT",
+            "hitOrUnknownOrAmbiguousResult": "NOT_EVALUATED"
+          }
+        }
+      }
+    ]
+  },
+  "outputPolicy": {
+    "atomicEvidenceOnly": true,
+    "legacySuggestionEnabled": false,
+    "classificationEnabled": false,
+    "direction": "UNDETERMINED",
+    "readinessMeaning": "MATCHED_RECORD_FIELDS_READY_FOR_FUTURE_CONTEXTUAL_EVALUATION_NOT_CRITERION_READY"
+  },
+  "resourceIdentitySemantics": {
+    "scope": "CANONICAL_RESOURCE_IDENTITY_NOT_FULL_BYTES",
+    "byteIntegrityClaimed": false
+  },
+  "resources": [
+    {
+      "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_FULL_SITES",
+      "provider": "GNOMAD",
+      "assembly": "GRCh38",
+      "resourceVersion": "gnomAD exomes v4.1 GRCh38",
+      "identityFingerprintSha256": "e4c39eef8a4f1481e1277e62fec61a00ccdb4a8bd0e3c8ca70a6da6465e87639",
+      "identity": {
+        "provider": "GNOMAD",
+        "release": "4.1",
+        "dataset": "exomes",
+        "assembly": "GRCh38",
+        "format": "gnomAD VCFv4.2 BGZF",
+        "logicalNamePattern": "gnomad/gnomad.exomes.v4.1.sites.chr{chromosome}.vcf.bgz",
+        "indexLogicalNamePattern": "gnomad/gnomad.exomes.v4.1.sites.chr{chromosome}.vcf.bgz.tbi",
+        "indexType": "TABIX_TBI",
+        "dataComponentCount": 24,
+        "dataTotalBytes": 198439013056,
+        "indexComponentCount": 24,
+        "indexTotalBytes": 1437195,
+        "chromosomes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "X",
+          "Y"
+        ]
+      }
+    }
+  ],
+  "retrievalOnlyResourceReference": {
+    "resourceId": "GNOMAD_EXOMES_V4_1_GRCH38_COMPACT",
+    "identityManifestId": "resource-identity-manifest-v1",
+    "use": "RETRIEVAL_ONLY",
+    "criterionInputAllowed": false
+  },
+  "datasetSemantics": {
+    "datasetType": "EXOMES",
+    "assembly": "GRCh38",
+    "jointOrCombinedAvailable": false,
+    "genomesAvailable": false,
+    "allSitesAlleleNumberAvailable": false,
+    "hitInputMayBeReady": true,
+    "noRecordInputReady": false,
+    "noRecordReasonCode": "NO_RECORD_WITHOUT_ALL_SITES_AN",
+    "generalCriterionDatasetReadiness": {
+      "status": "READY_FOR_LOCAL_EXOMES_BA1",
+      "reasonCodes": []
+    },
+    "combinedFrequencyRequirement": "NOT_USED_IN_LOCAL_EXOMES_POLICY",
+    "coverageAdequacyRequirement": "HIT_ONLY_SELECTED_ANCESTRY_AN"
+  },
+  "qualityGate": {
+    "acceptedFilters": [
+      "PASS"
+    ],
+    "minimumOverallAlleleNumber": 1,
+    "nonPassReadiness": "NOT_READY",
+    "missingOrInvalidFieldReadiness": "NOT_READY"
+  },
+  "numericSemantics": {
+    "integerRuntimeType": "java.math.BigInteger",
+    "decimalRuntimeType": "java.math.BigDecimal",
+    "rawLexemePreserved": true,
+    "canonicalDecimalFormat": "PLAIN_NO_EXPONENT_STRIP_TRAILING_ZEROES",
+    "binaryFloatingPointAllowedForDecisions": false
+  },
+  "fieldContract": {
+    "altIndexBase": 0,
+    "fields": [
+      {
+        "metricId": "gnomad.exomes.ac",
+        "infoId": "AC",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.an",
+        "infoId": "AN",
+        "number": "1",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.af",
+        "infoId": "AF",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.nhomalt",
+        "infoId": "nhomalt",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "individuals",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.groupmax.ancestry",
+        "infoId": "grpmax",
+        "number": "A",
+        "valueType": "ANCESTRY",
+        "unit": "genetic-ancestry-group",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.groupmax.ac",
+        "infoId": "AC_grpmax",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.groupmax.an",
+        "infoId": "AN_grpmax",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.groupmax.af",
+        "infoId": "AF_grpmax",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.groupmax.nhomalt",
+        "infoId": "nhomalt_grpmax",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "individuals",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.faf95",
+        "infoId": "faf95",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.faf95max",
+        "infoId": "fafmax_faf95_max",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": true
+      },
+      {
+        "metricId": "gnomad.exomes.faf95max.ancestry",
+        "infoId": "fafmax_faf95_max_gen_anc",
+        "number": "A",
+        "valueType": "ANCESTRY",
+        "unit": "genetic-ancestry-group",
+        "required": true
+      }
+    ],
+    "ancestryGroups": [
+      "afr",
+      "amr",
+      "asj",
+      "eas",
+      "fin",
+      "mid",
+      "nfe",
+      "remaining",
+      "sas"
+    ],
+    "ancestryFieldTemplates": [
+      {
+        "metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.ac",
+        "infoIdTemplate": "AC_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.an",
+        "infoIdTemplate": "AN_{ancestry}",
+        "number": "1",
+        "valueType": "BIG_INTEGER",
+        "unit": "alleles",
+        "required": false
+      },
+      {
+        "metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.af",
+        "infoIdTemplate": "AF_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false
+      },
+      {
+        "metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.nhomalt",
+        "infoIdTemplate": "nhomalt_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_INTEGER",
+        "unit": "individuals",
+        "required": false
+      },
+      {
+        "metricIdTemplate": "gnomad.exomes.ancestry.{ancestry}.faf95",
+        "infoIdTemplate": "faf95_{ancestry}",
+        "number": "A",
+        "valueType": "BIG_DECIMAL_FRACTION",
+        "unit": "fraction",
+        "required": false,
+        "appliesTo": [
+          "afr",
+          "amr",
+          "eas",
+          "mid",
+          "nfe",
+          "sas"
+        ]
+      }
+    ],
+    "selectedGroupRequiredSuffixes": [
+      "ac",
+      "an",
+      "af",
+      "nhomalt"
+    ],
+    "faf95AncestryGroups": [
+      "afr",
+      "amr",
+      "eas",
+      "mid",
+      "nfe",
+      "sas"
+    ]
+  },
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "criterionInputGates": {
+    "exactAlleleMatchMetricId": "gnomad.exactAlleleMatch",
+    "exactAlleleRequiredValue": true,
+    "filterMetricId": "gnomad.exomes.filter",
+    "acceptedFilterValues": [
+      "PASS"
+    ],
+    "frequencyMetricId": "gnomad.exomes.faf95max",
+    "frequencyAncestryMetricId": "gnomad.exomes.faf95max.ancestry",
+    "selectedAncestryAlleleCountMetricTemplate": "gnomad.exomes.ancestry.{ancestry}.ac",
+    "selectedAncestryAlleleNumberMetricTemplate": "gnomad.exomes.ancestry.{ancestry}.an",
+    "minimumSelectedAncestryAlleleNumber": 2000
+  },
+  "localDataPolicy": {
+    "policyId": "BA1_LOCAL_EXOMES_V1",
+    "version": "1.0.0",
+    "dataset": "EXOMES",
+    "release": "4.1",
+    "basis": "USER_AUTHORIZED_LOCAL_DATA_SCOPE_2026_10_09",
+    "clinicalAdoption": "NOT_ESTABLISHED",
+    "limitations": [
+      "GENOMES_NOT_INCLUDED",
+      "JOINT_FREQUENCY_NOT_ASSESSED",
+      "EXOME_GENOME_DISCORDANCE_NOT_ASSESSED"
+    ],
+    "description": "Local exomes FAF95 with catalog thresholds and exclusions; not a joint-frequency evaluation.",
+    "authorityNote": "Thresholds and exclusions are reused; the exomes-only data scope is a project policy, not the joint-data recommendation."
+  }
+}

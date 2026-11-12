@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nbscn.varvis.mapper.varvis.VariantOverviewMapper">
+
+    <resultMap id="chromosomeSummaryMap" type="org.nbscn.varvis.dto.variant.response.ChromosomeSummaryDTO">
+        <result property="chromosome" column="chromosome"/>
+        <result property="lengthBp" column="length_bp"/>
+        <result property="displayName" column="display_name"/>
+        <result property="cytobandCount" column="cytoband_count"/>
+    </resultMap>
+
+    <resultMap id="cytobandMap" type="org.nbscn.varvis.dto.variant.response.CytobandDTO">
+        <result property="bandId" column="band_id"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="bandName" column="band_name"/>
+        <result property="startBp" column="start_bp"/>
+        <result property="endBp" column="end_bp"/>
+        <result property="gieStain" column="gie_stain"/>
+    </resultMap>
+
+    <resultMap id="bandSummaryMap" type="org.nbscn.varvis.dto.variant.response.VariantOverviewDTO">
+        <result property="bandId" column="band_id"/>
+        <result property="chromosome" column="chromosome"/>
+        <result property="bandName" column="band_name"/>
+        <result property="startBp" column="start_bp"/>
+        <result property="endBp" column="end_bp"/>
+        <result property="diseaseCount" column="disease_count"/>
+        <result property="geneCount" column="gene_count"/>
+        <result property="smallVariantCount" column="small_variant_count"/>
+        <result property="structuralVariantCount" column="structural_variant_count"/>
+    </resultMap>
+
+    <select id="listChromosomes" resultMap="chromosomeSummaryMap">
+        SELECT c.chr_name AS chromosome,
+               c.chr_length_bp AS length_bp,
+               CONCAT('Chr ', c.chr_name) AS display_name,
+               (
+                   SELECT COUNT(1)
+                   FROM cytoband b
+                   WHERE b.chromosome_id = c.chromosome_id
+               ) AS cytoband_count
+        FROM chromosome c
+        ORDER BY
+            CASE
+                WHEN c.chr_name REGEXP '^[0-9]+$' THEN CAST(c.chr_name AS UNSIGNED)
+                WHEN c.chr_name = 'X' THEN 100
+                WHEN c.chr_name = 'Y' THEN 101
+                WHEN c.chr_name = 'MT' THEN 102
+                ELSE 999
+                END,
+            c.chr_name
+    </select>
+
+    <select id="listBandsByChromosome" parameterType="java.lang.String" resultMap="cytobandMap">
+        SELECT b.cytoband_id AS band_id,
+               c.chr_name AS chromosome,
+               b.band_name,
+               b.start_bp,
+               b.stop_bp AS end_bp,
+               b.gie_stain
+        FROM cytoband b
+                 JOIN chromosome c ON c.chromosome_id = b.chromosome_id
+        WHERE c.chr_name = #{chromosome}
+        ORDER BY b.start_bp
+    </select>
+
+    <select id="getBandSummaryByBandId" parameterType="long" resultMap="bandSummaryMap">
+        SELECT b.cytoband_id AS band_id,
+               c.chr_name AS chromosome,
+               b.band_name,
+               b.start_bp,
+               b.stop_bp AS end_bp,
+               (
+                   SELECT COUNT(DISTINCT dbm.disease_id)
+                   FROM disease_band_map dbm
+                   WHERE dbm.cytoband_id = b.cytoband_id
+               ) AS disease_count,
+               (
+                   SELECT COUNT(DISTINCT dgm.gene_id)
+                   FROM disease_band_map dbm
+                            JOIN disease_gene_map dgm ON dbm.disease_id = dgm.disease_id
+                   WHERE dbm.cytoband_id = b.cytoband_id
+               ) AS gene_count,
+               (
+                   SELECT COUNT(1)
+                   FROM small_variant sv
+                   WHERE sv.chromosome_id = b.chromosome_id
+                     AND sv.start_bp BETWEEN b.start_bp AND b.stop_bp
+               ) AS small_variant_count,
+               (
+                   SELECT COUNT(1)
+                   FROM structural_variant stv
+                   WHERE stv.chromosome_id = b.chromosome_id
+                     AND stv.start_bp &lt;= b.stop_bp
+                     AND stv.end_bp &gt;= b.start_bp
+               ) AS structural_variant_count
+        FROM cytoband b
+                 JOIN chromosome c ON c.chromosome_id = b.chromosome_id
+        WHERE b.cytoband_id = #{bandId}
+        LIMIT 1
+    </select>
+
+    <select id="getBandSummaryByRegion" resultMap="bandSummaryMap">
+        SELECT NULL AS band_id,
+               c.chr_name AS chromosome,
+               CONCAT('region:', c.chr_name, ':', #{startBp}, '-', #{endBp}) AS band_name,
+               #{startBp} AS start_bp,
+               #{endBp} AS end_bp,
+               (
+                   SELECT COUNT(DISTINCT dbm.disease_id)
+                   FROM disease_band_map dbm
+                            JOIN cytoband b2 ON b2.cytoband_id = dbm.cytoband_id
+                   WHERE b2.chromosome_id = c.chromosome_id
+                     AND b2.start_bp &lt;= #{endBp}
+                     AND b2.stop_bp &gt;= #{startBp}
+               ) AS disease_count,
+               (
+                   SELECT COUNT(DISTINCT dgm.gene_id)
+                   FROM disease_band_map dbm
+                            JOIN cytoband b2 ON b2.cytoband_id = dbm.cytoband_id
+                            JOIN disease_gene_map dgm ON dgm.disease_id = dbm.disease_id
+                   WHERE b2.chromosome_id = c.chromosome_id
+                     AND b2.start_bp &lt;= #{endBp}
+                     AND b2.stop_bp &gt;= #{startBp}
+               ) AS gene_count,
+               (
+                   SELECT COUNT(1)
+                   FROM small_variant sv
+                   WHERE sv.chromosome_id = c.chromosome_id
+                     AND sv.start_bp BETWEEN #{startBp} AND #{endBp}
+               ) AS small_variant_count,
+               (
+                   SELECT COUNT(1)
+                   FROM structural_variant stv
+                   WHERE stv.chromosome_id = c.chromosome_id
+                     AND stv.start_bp &lt;= #{endBp}
+                     AND stv.end_bp &gt;= #{startBp}
+               ) AS structural_variant_count
+        FROM chromosome c
+        WHERE c.chr_name = #{chromosome}
+        LIMIT 1
+    </select>
+</mapper>

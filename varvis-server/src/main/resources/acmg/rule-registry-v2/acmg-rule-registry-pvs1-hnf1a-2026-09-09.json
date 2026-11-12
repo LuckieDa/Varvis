@@ -1,0 +1,1356 @@
+{
+  "schemaVersion": "acmg-rule-registry-v2",
+  "registryId": "acmg-rule-registry-pvs1-hnf1a-2026-09-09",
+  "lineage": {
+    "baseRegistryId": "acmg-rule-registry-general-2026-08-31",
+    "baseSchemaVersion": "acmg-rule-registry-v1",
+    "baseRegistrySha256": "1865ae07534d90244df4d9f77f94d824befbe88e31b6e138611f425c7e19a557"
+  },
+  "authorityCatalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+  "authorityCatalogSha256": "9c4d12df8eba350318624e25d50321f845c023f1d136bff934ecfbb89d45e627",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-08-31T11:20:00Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "criteria": [
+    {
+      "criterionId": "ACMG_AMP_2015:PVS1",
+      "code": "PVS1",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "VERY_STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PVS1",
+        "strength": "VERY_STRONG",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pvs1-2018",
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "FIGURE",
+            "locatorValue": "Figure 1, PVS1 decision tree",
+            "sourceRecordId": "PMCID:PMC6185798",
+            "artifactSha256": "de9fa6927b8257ea0490801bafaebc0a458bcdbeeb3b24bd6272aba266cd8636",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1-3 and Figure 5, splicing refinements",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_GENERAL_REFINEMENT",
+        "allowedStrengths": [
+          "VERY_STRONG",
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "HNF1A stop-gained NMD business successor uses a separately pinned criterion-only GN017 3.1 policy; general PVS1 and other HNF1A decision-tree branches are not implemented by this successor."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PS1",
+      "code": "PS1",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PS1",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1-3 and Figure 5",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_SPLICING_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "General 2015 baseline remains outside splicing; released splicing guidance refines predicted RNA equivalence."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PS2",
+      "code": "PS2",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PS2",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-clingen-svi-ps2-pm6-v1.1"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Version 1.1 Tables 1 and 2",
+            "artifactSha256": "ad9e996866cf83887fe744abf0d3c27931760867816f2f6d2064c2ce7485f02d",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_GENERAL_REFINEMENT",
+        "allowedStrengths": [
+          "VERY_STRONG",
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Strength depends on confirmed relationships, phenotype consistency and de novo scoring."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PS3",
+      "code": "PS3",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PS3",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-clingen-svi-ps3-bs3-2019",
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Four-step functional assay framework",
+            "sourceRecordId": "PMCID:PMC6938631",
+            "artifactSha256": "7eebc20201e62da82d04494232e15046766e0d1429bc25cf6ed224fdf25038a2",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Direct RNA splicing evidence remapping",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_FUNCTIONAL_AND_SPLICING_REFINEMENT",
+        "allowedStrengths": [
+          "VERY_STRONG",
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "MANUAL_ONLY",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Assay validation is reviewed manually; direct RNA splice effect is represented under the splicing guidance."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PS4",
+      "code": "PS4",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "PS4",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM1",
+      "code": "PM1",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "PM1",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM2",
+      "code": "PM2",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PM2_SUPPORTING",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pm2-v1.0",
+          "authority-clingen-vcep-gnomad-v4-v3.0"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "DOCUMENT_PAGE",
+            "locatorValue": "Page 1, PM2_Supporting recommendation",
+            "artifactSha256": "30745e928c7146a479afdfb7f22230192a8d1d66f9239a463c53667dd9598c59",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Population resource version and GroupMax FAF guidance",
+            "artifactSha256": "b84b9c30696aea6fa5cddc0916fe07a3ca647fcbd89d77b3d510bd5cf499106f",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_STRENGTH_REDUCTION",
+        "allowedStrengths": [
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "DETERMINISTIC_CANDIDATE",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Original 2015 Moderate strength is retained separately; current general designation is PM2_Supporting, with the pinned gnomAD v4 population-resource guidance applied only as a resource-use prerequisite."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM3",
+      "code": "PM3",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PM3",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pm3-v1.0"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1 and 2",
+            "artifactSha256": "17877e54edd58decfe2c374b3d3e2103e52752ea808d48eb7147d007f1ca4c70",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_GENERAL_REFINEMENT",
+        "allowedStrengths": [
+          "VERY_STRONG",
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Requires phase and case-level scoring; no inference from an unphased candidate."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM4",
+      "code": "PM4",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "PM4",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM5",
+      "code": "PM5",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PM5",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards",
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1-3 and Figure 5",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_SPLICING_SCOPE_REFINEMENT",
+        "allowedStrengths": [
+          "MODERATE"
+        ],
+        "strengthResolutionPolicy": "FIXED_GENERAL"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Remains a missense criterion but is not applied to predicted splicing effects."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PM6",
+      "code": "PM6",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PM6",
+        "strength": "MODERATE",
+        "authoritySourceIds": [
+          "authority-clingen-svi-ps2-pm6-v1.1"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Version 1.1 Tables 1 and 2",
+            "artifactSha256": "ad9e996866cf83887fe744abf0d3c27931760867816f2f6d2064c2ce7485f02d",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_GENERAL_REFINEMENT",
+        "allowedStrengths": [
+          "VERY_STRONG",
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Strength depends on the released de novo framework."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PP1",
+      "code": "PP1",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PP1",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp1-bs4-pp4-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Co-segregation scoring tables and phenotype flow",
+            "sourceRecordId": "PMCID:PMC10806742",
+            "artifactSha256": "a7f17ef0eeb827173a9a6857ee5791fb9372b18dd1a8793c31496f6cd3cb4ab1",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_SEGREGATION_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "MANUAL_ONLY",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Family observations and segregation likelihood must be source-located and reviewed."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PP2",
+      "code": "PP2",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "PP2",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PP3",
+      "code": "PP3",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PP3",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp3-bp4-2022",
+          "authority-clingen-svi-pp3-bp4-extension-2025",
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Calibrated missense tool score intervals",
+            "sourceRecordId": "PMCID:PMC9748256",
+            "artifactSha256": "097ccdb67b1eee4d29dd830f3d3b38e34627c6049f8ebb73e3b52cd188a55fd9",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Versioned AlphaMissense, ESM1b and VARITY calibration",
+            "sourceRecordId": "PMID:40084623",
+            "artifactSha256": "f14b420b96ee479b87f7acf18c58a1c7fd006a5d888403bc0ea6425b2fcd619f",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1-3 and Figure 5, splicing refinements",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_CALIBRATION_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ],
+        "strengthResolutionPolicy": "PINNED_CALIBRATION_PROFILE"
+      },
+      "automationDisposition": "DETERMINISTIC_CANDIDATE",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Only a pinned, validated calibration profile may be used; simple multi-tool voting is prohibited. Released splicing guidance is separately bound for splice-effect predictions and prevents cross-mechanism double counting."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PP4",
+      "code": "PP4",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "PP4",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp1-bs4-pp4-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Co-segregation scoring tables and phenotype flow",
+            "sourceRecordId": "PMCID:PMC10806742",
+            "artifactSha256": "a7f17ef0eeb827173a9a6857ee5791fb9372b18dd1a8793c31496f6cd3cb4ab1",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_PHENOTYPE_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "MANUAL_ONLY",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Phenotype specificity is disease-context dependent and requires review."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:PP5",
+      "code": "PP5",
+      "direction": "PATHOGENIC",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "NOT_IN_CURRENT_USE",
+        "designation": "PP5_HISTORICAL_NOT_USED",
+        "strength": "NONE",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp5-bp6-2018"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Recommendation to discontinue PP5 and BP6",
+            "sourceRecordId": "PMCID:PMC6709533",
+            "artifactSha256": "99abe38f57fa25fe3e05434361f5b663bda1908da465534f494b9a86c5f8132e",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_DISCONTINUATION"
+      },
+      "automationDisposition": "NOT_USED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Historical 2015 entry retained; current use is prohibited."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BA1",
+      "code": "BA1",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STANDALONE",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "BA1",
+        "strength": "STANDALONE",
+        "authoritySourceIds": [
+          "authority-clingen-svi-ba1-2018",
+          "authority-clingen-vcep-gnomad-v4-v3.0"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "BA1 recommendation and exception process",
+            "sourceRecordId": "PMCID:PMC6188666",
+            "artifactSha256": "fdf0dc466fc7405dfffce88f95c16137a23edd570f56c2622ec8fa8a01bf84d8",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Population resource version and GroupMax FAF guidance",
+            "artifactSha256": "b84b9c30696aea6fa5cddc0916fe07a3ca647fcbd89d77b3d510bd5cf499106f",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_POPULATION_REFINEMENT",
+        "allowedStrengths": [
+          "STANDALONE"
+        ]
+      },
+      "automationDisposition": "DETERMINISTIC_CANDIDATE",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Requires appropriate population data, allele count, quality and exception handling; exact threshold may be overlaid by an eligible CSpec."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "code": "BS1",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "BS1",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards",
+          "authority-clingen-vcep-gnomad-v4-v3.0"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Population resource version and GroupMax FAF guidance",
+            "artifactSha256": "b84b9c30696aea6fa5cddc0916fe07a3ca647fcbd89d77b3d510bd5cf499106f",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_POPULATION_RESOURCE_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG"
+        ],
+        "strengthResolutionPolicy": "FIXED_GENERAL"
+      },
+      "automationDisposition": "DETERMINISTIC_CANDIDATE",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Disease-specific maximum credible frequency and population quality are required; no global 1%-5% rule is frozen."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BS2",
+      "code": "BS2",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "BS2",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BS3",
+      "code": "BS3",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "BS3",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-clingen-svi-ps3-bs3-2019",
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Four-step functional assay framework",
+            "sourceRecordId": "PMCID:PMC6938631",
+            "artifactSha256": "7eebc20201e62da82d04494232e15046766e0d1429bc25cf6ed224fdf25038a2",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Direct RNA splicing evidence remapping",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_FUNCTIONAL_AND_SPLICING_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "MANUAL_ONLY",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Assay validity is reviewed manually; direct RNA evidence showing no splice impact is handled by the splicing guidance."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BS4",
+      "code": "BS4",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "BS4",
+        "strength": "STRONG",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp1-bs4-pp4-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Co-segregation scoring tables and phenotype flow",
+            "sourceRecordId": "PMCID:PMC10806742",
+            "artifactSha256": "a7f17ef0eeb827173a9a6857ee5791fb9372b18dd1a8793c31496f6cd3cb4ab1",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_SEGREGATION_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG"
+        ]
+      },
+      "automationDisposition": "MANUAL_ONLY",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Non-segregation evidence requires penetrance, phenocopy and family-context review."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP1",
+      "code": "BP1",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "BP1",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP2",
+      "code": "BP2",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "BP2",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP3",
+      "code": "BP3",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "BP3",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP4",
+      "code": "BP4",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "BP4",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp3-bp4-2022",
+          "authority-clingen-svi-pp3-bp4-extension-2025",
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Calibrated missense tool score intervals",
+            "sourceRecordId": "PMCID:PMC9748256",
+            "artifactSha256": "097ccdb67b1eee4d29dd830f3d3b38e34627c6049f8ebb73e3b52cd188a55fd9",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Versioned AlphaMissense, ESM1b and VARITY calibration",
+            "sourceRecordId": "PMID:40084623",
+            "artifactSha256": "f14b420b96ee479b87f7acf18c58a1c7fd006a5d888403bc0ea6425b2fcd619f",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          },
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1-3 and Figure 5, splicing refinements",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_CALIBRATION_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "MODERATE",
+          "SUPPORTING"
+        ],
+        "strengthResolutionPolicy": "PINNED_CALIBRATION_PROFILE"
+      },
+      "automationDisposition": "DETERMINISTIC_CANDIDATE",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Mixed directions remain explicit conflicts; simple multi-tool voting is prohibited. Released splicing guidance is separately bound for splice-effect predictions and prevents cross-mechanism double counting."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP5",
+      "code": "BP5",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_BASELINE_2015",
+        "designation": "BP5",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "NO_RELEASED_GENERAL_REPLACEMENT_FOUND_AT_CUTOFF"
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "The 2015 baseline remains registered because no formally released general replacement was identified at the cutoff; this is not a new approval and an eligible context-specific overlay may modify it."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP6",
+      "code": "BP6",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "NOT_IN_CURRENT_USE",
+        "designation": "BP6_HISTORICAL_NOT_USED",
+        "strength": "NONE",
+        "authoritySourceIds": [
+          "authority-clingen-svi-pp5-bp6-2018"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "DOCUMENT_SECTION",
+            "locatorValue": "Recommendation to discontinue PP5 and BP6",
+            "sourceRecordId": "PMCID:PMC6709533",
+            "artifactSha256": "99abe38f57fa25fe3e05434361f5b663bda1908da465534f494b9a86c5f8132e",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_DISCONTINUATION"
+      },
+      "automationDisposition": "NOT_USED",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "notes": "Historical 2015 entry retained; current use is prohibited."
+    },
+    {
+      "criterionId": "ACMG_AMP_2015:BP7",
+      "code": "BP7",
+      "direction": "BENIGN",
+      "original2015": {
+        "status": "ORIGINAL_2015",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-acmg-amp-2015-richards"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 3 and 4",
+            "sourceRecordId": "PMCID:PMC4544753",
+            "artifactSha256": "7ec25cf2d54ce079251bdcfee92dcbf12b25117ab93998e54e86e8e9186145b3",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ]
+      },
+      "currentGeneral": {
+        "useStatus": "ACTIVE_MODIFIED",
+        "designation": "BP7",
+        "strength": "SUPPORTING",
+        "authoritySourceIds": [
+          "authority-clingen-svi-splicing-2023"
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "TABLE",
+            "locatorValue": "Tables 1-3 and Figure 5",
+            "sourceRecordId": "PMCID:PMC10357475",
+            "artifactSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211",
+            "retrievedAt": "2026-08-31T10:30:00Z"
+          }
+        ],
+        "changeReasonCode": "FORMALLY_RELEASED_SPLICING_REFINEMENT",
+        "allowedStrengths": [
+          "STRONG",
+          "SUPPORTING"
+        ]
+      },
+      "automationDisposition": "PARTIALLY_STRUCTURED",
+      "implementationStatus": "V2_IMPLEMENTED",
+      "notes": "Predicted BP7 and BP7_Strong(RNA) have distinct prerequisites; transcript position and BP4 dependency are explicit."
+    }
+  ]
+}

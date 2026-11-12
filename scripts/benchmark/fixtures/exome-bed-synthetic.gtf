@@ -1,0 +1,16 @@
+##synthetic=true
+##assembly=GRCh38
+chr1	SYN	exon	1	10	.	+	.	gene_id "GENE_PC"; gene_type "protein_coding"; transcript_id "TX_PC_1"; transcript_type "protein_coding";
+chr1	SYN	exon	20	30	.	+	.	gene_id "GENE_PC"; gene_type "protein_coding"; transcript_id "TX_PC_1"; transcript_type "protein_coding";
+chr1	SYN	exon	20	30	.	+	.	gene_id "GENE_PC"; gene_type "protein_coding"; transcript_id "TX_PC_2"; transcript_biotype "protein_coding";
+chr1	SYN	exon	100	120	.	+	.	gene_id "GENE_PC"; gene_type "protein_coding"; transcript_id "TX_NONCODING"; transcript_type "lncRNA";
+chr1	SYN	exon	150	160	.	+	.	gene_id "GENE_PC"; gene_type "protein_coding"; transcript_id "TX_MISSING_TYPE";
+chr1	SYN	exon	950	960	.	+	.	gene_id "GENE_PC"; transcript_type "protein_coding";
+chr2	SYN	exon	100	110	.	-	.	gene_id "GENE_TWO"; transcript_type "protein_coding";
+chr2	SYN	exon	151	160	.	-	.	gene_id "GENE_TWO"; transcript_type "protein_coding";
+chrX	SYN	exon	990	1000	.	+	.	gene_id "GENE_X"; transcript_type "protein_coding";
+chrY	SYN	exon	100	110	.	+	.	gene_id "GENE_Y"; transcript_type "protein_coding";
+chrM	SYN	exon	100	110	.	+	.	gene_id "GENE_MT"; transcript_type "protein_coding";
+chr1_gl000191_random	SYN	exon	100	110	.	+	.	gene_id "GENE_ALT"; transcript_type "protein_coding";
+chr1	SYN	exon	broken	160	.	+	.	gene_id "GENE_BAD"; transcript_type "protein_coding";
+malformed row without nine tab-separated fields

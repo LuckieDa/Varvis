@@ -1,0 +1,41 @@
+{
+  "sourceVersion": "SVI 1.1 updated 2021-05-05",
+  "dataClass": "TEST_ONLY",
+  "vectors": [
+    {
+      "category": "HIGHLY_SPECIFIC",
+      "heterogeneity": "NOT_HIGH",
+      "points": 2,
+      "status": "MET",
+      "strength": "STRONG"
+    },
+    {
+      "category": "CONSISTENT",
+      "heterogeneity": "NOT_HIGH",
+      "points": 1,
+      "status": "MET",
+      "strength": "MODERATE"
+    },
+    {
+      "category": "CONSISTENT",
+      "heterogeneity": "HIGH",
+      "points": 0.5,
+      "status": "MET",
+      "strength": "SUPPORTING"
+    },
+    {
+      "category": "NOT_CONSISTENT",
+      "heterogeneity": "NOT_HIGH",
+      "points": 0,
+      "status": "NOT_MET",
+      "strength": "NONE"
+    }
+  ],
+  "backgrounds": {
+    "alpha": 2,
+    "beta": 0.5
+  },
+  "maximumSingleCasePoints": 2,
+  "maximumSingleCaseStrength": "STRONG",
+  "multipleObservations": "NOT_EVALUATED"
+}

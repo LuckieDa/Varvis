@@ -1,0 +1,13 @@
+{
+  "criterionId": "ACMG_AMP_2015:BP2",
+  "derivedPhase": "CONFIRMED_CIS",
+  "direction": "BENIGN",
+  "status": "MET",
+  "strength": "SUPPORTING",
+  "observationCount": 1,
+  "mode": "CONFIRMED_CIS",
+  "caseId": "TEST_ONLY_bp2_gamma_case",
+  "occurrenceId": "TEST_ONLY_bp2_gamma_occurrence",
+  "contextId": "context-sha256-5a45cdc8c109e49b1b60ce78ed13f62bf7926d73c7d4f67db604b77510e1fd40",
+  "pairId": "pair-sha256-d5cacc8b750687d9c81a7eab03ad9d4a5a5ed8b35a8bf0f4f2f68ed165f3bbb7"
+}

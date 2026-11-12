@@ -1,0 +1,74 @@
+{
+  "name": "varvis",
+  "version": "6.0.0",
+  "private": true,
+  "description": "Chromosome variation visualization front end",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "start": "umi dev",
+    "start:dev": "cross-env REACT_APP_ENV=dev umi dev",
+    "start:test": "cross-env REACT_APP_ENV=test umi dev",
+    "start:prod": "cross-env REACT_APP_ENV=prod umi dev",
+    "build": "cross-env BROWSERSLIST_IGNORE_OLD_DATA=1 umi build",
+    "analyze": "cross-env BROWSERSLIST_IGNORE_OLD_DATA=1 ANALYZE=1 umi build",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint:style": "stylelint \"src/**/*.{css,less,scss}\"",
+    "lint:prettier": "prettier --check \"src/**/*\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx,js,jsx}\" && stylelint --fix \"src/**/*.{css,less,scss}\" && prettier --write \"src/**/*\"",
+    "test:contract:candidate-identity": "node scripts/candidate-identity-contract-smoke.mjs",
+    "test:contract:hpo-input": "node scripts/hpo-input-integrity-smoke.mjs",
+    "test:contract:acmg-teaching": "node scripts/acmg-teaching-contract-smoke.mjs",
+    "test:e2e:trio-weighted": "node scripts/trio-weighted-family-mode-smoke.mjs",
+    "test:e2e:ranking-explanation": "node scripts/ranking-explanation-route-smoke.mjs"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{css,less,scss}": [
+      "stylelint --fix"
+    ],
+    "src/**/*": [
+      "prettier --write"
+    ]
+  },
+  "browserslist": [
+    ">0.5%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "axios": "^1.6.8",
+    "ideogram": "^1.53.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@umijs/lint": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.4.3",
+    "umi": "^4.0.7"
+  }
+}

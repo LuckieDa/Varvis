@@ -1,0 +1,90 @@
+{
+  "artifacts": [],
+  "classificationEnabled": false,
+  "defaultEnabled": false,
+  "excludedReasons": {},
+  "excludedRows": 0,
+  "finishedAt": "2026-01-01T00:00:01Z",
+  "indexedRows": 4,
+  "logicalDiskBytesBeforeCleanup": 17156666670,
+  "maximumDiskBytes": 20000000000,
+  "nativeCdsVerified": false,
+  "nativeReferenceVerified": false,
+  "networkCalls": 0,
+  "peakReservedLogicalDiskBytes": 17223026366,
+  "producerSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "providerCalls": 0,
+  "publisherLookupReady": true,
+  "rawAnnotationFlagCounts": {},
+  "rawAnnotationFlagsDoNotFilterRowsOrEstablishScientificValidity": true,
+  "rawMissingCellCounts": {},
+  "runtimeActivation": "NOT_REGISTERED_NATIVE_REF_CDS_TRANSCRIPT_AND_CONFLICT_CHECKS_STILL_REQUIRED",
+  "schemaVersion": "revel-publisher-lookup-build-v1",
+  "sort": {
+    "chunkBytes": 33554432,
+    "cleanupBoundary": "SYNTHETIC_ONLY",
+    "fanIn": 64,
+    "maximumBufferedRecords": 500000,
+    "temporaryRuns": [
+      {
+        "file": "sort-run-000001.tsv",
+        "bytes": 100,
+        "rows": 4,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  "source": {
+    "expectedMemberBytes": 100,
+    "expectedMemberCrc32": "00000000",
+    "expectedMemberSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "expectedZipBytes": 100,
+    "expectedZipSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "member": "revel_with_transcript_ids",
+    "memberBytes": 100,
+    "memberCrc32": "00000000",
+    "memberSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "memberSha256Check": "MATCHED_EXPECTED",
+    "verifiedZipSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "zipFile": "SYNTHETIC_ONLY.zip"
+  },
+  "sourceDataRows": 4,
+  "sourceLineConvention": "One-based data-row ordinal; header excluded. rawCsv excludes its original single LF; output adds one LF.",
+  "sourceMappingMethod": "REVEL_publisher_liftOver",
+  "sourceOriginalAssembly": "GRCh37",
+  "sourcePublishedAssembly": "GRCh38",
+  "sourceTranscriptVersionStatus": "UNVERSIONED_SOURCE_NO_VERSION_EQUIVALENCE_CLAIM",
+  "startedAt": "2026-01-01T00:00:00Z",
+  "status": "COMPLETE",
+  "toolVersion": "1.0.1",
+  "tools": {
+    "bgzip": {
+      "path": "SYNTHETIC_NOT_EXECUTED",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "version": "SYNTHETIC"
+    },
+    "tabix": {
+      "path": "SYNTHETIC_NOT_EXECUTED",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "version": "SYNTHETIC"
+    }
+  },
+  "validation": {
+    "completeTbiParsed": true,
+    "contigs": [
+      "1"
+    ],
+    "criterionEvaluations": 0,
+    "excludedUncompressedSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "fullBgzfIntegrityTest": true,
+    "fullExcludedRowsReparsed": 0,
+    "fullIndexedRowsReparsed": 4,
+    "indexedUncompressedSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "projectedRowMultisetSumSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "referenceQueries": 0,
+    "tabixBoundaryQueries": 1,
+    "tabixStdoutNewlineModes": [
+      "CRLF_STDOUT"
+    ]
+  }
+}

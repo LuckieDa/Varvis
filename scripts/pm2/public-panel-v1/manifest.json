@@ -1,0 +1,276 @@
+{
+  "dataClass": "SYNTHETIC",
+  "selection": "Bounded public coding intervals plus fixed absent and intronic controls; fixed before formal analysis",
+  "controls": [
+    {
+      "gene": "DCLRE1C",
+      "allele": "GRCh38:10:14945109:C:T",
+      "ac": 3,
+      "af": 1.86317e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "013f0a94140f61840d72e5e162e4009b099744b4379b451d92dcf81498b882c2",
+      "sourceFile": "DCLRE1C.tsv"
+    },
+    {
+      "gene": "DCLRE1C",
+      "allele": "GRCh38:10:14945110:GT:G",
+      "ac": 2,
+      "af": 1.24233e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "cf340201bc608d88052dac6af216bdae5f5f4e4d601b0039d0f6fa3f326e532c",
+      "sourceFile": "DCLRE1C.tsv"
+    },
+    {
+      "gene": "DCLRE1C",
+      "allele": "GRCh38:10:14945175:A:G",
+      "ac": 2,
+      "af": 1.23994e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "693a9563e17d398200e26bd13d2f2200d7d9e5e3feed9fd113f2e41be002d891",
+      "sourceFile": "DCLRE1C.tsv"
+    },
+    {
+      "gene": "DCLRE1C",
+      "allele": "GRCh38:10:14949048:C:T",
+      "ac": 6,
+      "af": 3.7243e-06,
+      "faf": 3.473e-05,
+      "recordSha256": "944d67ff7f00a064c2f53e050b045b49e58e98270168ad3d308ffb8dba80293e",
+      "sourceFile": "DCLRE1C.tsv"
+    },
+    {
+      "gene": "HNF1A",
+      "allele": "GRCh38:12:120978778:A:G",
+      "ac": 2,
+      "af": 1.24007e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "f37c821a3eb2e5faa3093aa66279ef21b39019311956e69d3416a7aaa999c09e",
+      "sourceFile": "HNF1A.tsv"
+    },
+    {
+      "gene": "HNF1A",
+      "allele": "GRCh38:12:120978819:C:T",
+      "ac": 3,
+      "af": 1.86009e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "cd930b600accee79e9ba6c34b28c6cdc9b971f4c6cd5e5cdb808a9ca88ea9dd0",
+      "sourceFile": "HNF1A.tsv"
+    },
+    {
+      "gene": "HNF1A",
+      "allele": "GRCh38:12:120978828:G:T",
+      "ac": 2,
+      "af": 1.23976e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "e4b21a09fc651aca6fbba94f2947556329fc7a49f1396ba93304d44df10a1a0c",
+      "sourceFile": "HNF1A.tsv"
+    },
+    {
+      "gene": "HNF1A",
+      "allele": "GRCh38:12:120988847:G:A",
+      "ac": 78,
+      "af": 4.83241e-05,
+      "faf": 4.428e-05,
+      "recordSha256": "1661134ee8d4f3cb80c336d6b66dca76ac14dc29270cf3cde44d6711fe8d69de",
+      "sourceFile": "HNF1A.tsv"
+    },
+    {
+      "gene": "HNF4A",
+      "allele": "GRCh38:20:44355829:G:A",
+      "ac": 3,
+      "af": 1.85915e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "75568621e2d790037eb46a43ca356ade30e56c9bd99d6140b08c47bd2d536d4b",
+      "sourceFile": "HNF4A.tsv"
+    },
+    {
+      "gene": "HNF4A",
+      "allele": "GRCh38:20:44355850:T:A",
+      "ac": 2,
+      "af": 1.24106e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "c668dbbd3d1f930ed3b87fb868ad96091324969f0e3492a7c1b35034d2e6a57c",
+      "sourceFile": "HNF4A.tsv"
+    },
+    {
+      "gene": "HNF4A",
+      "allele": "GRCh38:20:44406092:G:T",
+      "ac": 2,
+      "af": 1.23991e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "dc532d970ffc5100c4e52524ad3cb6e0eca559837733d733f3943f6fcc90c69a",
+      "sourceFile": "HNF4A.tsv"
+    },
+    {
+      "gene": "HNF4A",
+      "allele": "GRCh38:20:44406076:G:A",
+      "ac": 8,
+      "af": 4.96134e-06,
+      "faf": 4.375e-05,
+      "recordSha256": "cc449c0a2954e6ea93cfcc9d62f5af5293bf16d4a30d04bc43c05b5337712d79",
+      "sourceFile": "HNF4A.tsv"
+    },
+    {
+      "gene": "IL7R",
+      "allele": "GRCh38:5:35857008:G:T",
+      "ac": 3,
+      "af": 1.86365e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "49c5aaf3e60eafffc06b8387457350dc71663ff37c1a052fb3e9ae4e875e4266",
+      "sourceFile": "IL7R.tsv"
+    },
+    {
+      "gene": "IL7R",
+      "allele": "GRCh38:5:35857037:A:T",
+      "ac": 2,
+      "af": 1.24451e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "3674b1dd3f5e3719ab9fe6fc86816524acdb2560e001e05010ae8516866de1b2",
+      "sourceFile": "IL7R.tsv"
+    },
+    {
+      "gene": "IL7R",
+      "allele": "GRCh38:5:35857043:T:C",
+      "ac": 2,
+      "af": 1.24714e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "ac27644d95d793daecedd4d18f9284a0a794054f4484e4469760553e92550397",
+      "sourceFile": "IL7R.tsv"
+    },
+    {
+      "gene": "IL7R",
+      "allele": "GRCh38:5:35867424:A:G",
+      "ac": 13,
+      "af": 8.05796e-06,
+      "faf": 4.374e-05,
+      "recordSha256": "454128167dc354c8e16ce658701674fc19436d5664311caf04cd64c1ff4bbd8b",
+      "sourceFile": "IL7R.tsv"
+    },
+    {
+      "gene": "RAG1",
+      "allele": "GRCh38:11:36573330:T:G",
+      "ac": 3,
+      "af": 1.85846e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "2eb2b1ab9a66cf98ff0a00f3a89674062ff65cbef4ddabdfadb21573b96fb924",
+      "sourceFile": "RAG1.tsv"
+    },
+    {
+      "gene": "RAG1",
+      "allele": "GRCh38:11:36573366:C:T",
+      "ac": 2,
+      "af": 1.23905e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "279ad50139989702a5a654912dd1ce61613fca3a3718f89ee9df9449039c6de6",
+      "sourceFile": "RAG1.tsv"
+    },
+    {
+      "gene": "RAG1",
+      "allele": "GRCh38:11:36573400:G:T",
+      "ac": 2,
+      "af": 1.23908e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "1cf8da9de1504b25cfb1e30a8c2cf563e5dbf0c951d60d4fa74fdc7ffaf63902",
+      "sourceFile": "RAG1.tsv"
+    },
+    {
+      "gene": "RAG1",
+      "allele": "GRCh38:11:36573736:G:T",
+      "ac": 77,
+      "af": 4.77101e-05,
+      "faf": 4.781e-05,
+      "recordSha256": "4b6918eb9506d087b8fa528c04ce8b961acab31d12580f7cc03bcd4894571c93",
+      "sourceFile": "RAG1.tsv"
+    },
+    {
+      "gene": "RAG2",
+      "allele": "GRCh38:11:36592586:T:C",
+      "ac": 2,
+      "af": 1.23918e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "7558188df1ed5cffeea42167aab9f82a72b7773e54490c1f4053aaaa7f734e10",
+      "sourceFile": "RAG2.tsv"
+    },
+    {
+      "gene": "RAG2",
+      "allele": "GRCh38:11:36592607:A:G",
+      "ac": 2,
+      "af": 1.23906e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "d76da2792db395e0b000fe86c9f2d0d296324dee7359c0db254494733e6eb53a",
+      "sourceFile": "RAG2.tsv"
+    },
+    {
+      "gene": "RAG2",
+      "allele": "GRCh38:11:36592619:G:A",
+      "ac": 2,
+      "af": 1.23912e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "052ef9c3312cb0be9ddc09402107bc8bf2faf179b7b5bbd1c164b2f786328270",
+      "sourceFile": "RAG2.tsv"
+    },
+    {
+      "gene": "RAG2",
+      "allele": "GRCh38:11:36594050:G:T",
+      "ac": 8,
+      "af": 4.95637e-06,
+      "faf": 4.368e-05,
+      "recordSha256": "7dbbf69ecc415d30214376c284682c8adb6b08e2fc63f67b65fdcc8a0a6fc006",
+      "sourceFile": "RAG2.tsv"
+    },
+    {
+      "gene": "G6PC3",
+      "allele": "GRCh38:17:44071062:G:A",
+      "ac": 2,
+      "af": 1.24191e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "72bb65bb30d39ace9f0d5dd354830e90a9c12e3cec08781508c681e9204a277b",
+      "sourceFile": "G6PC3.tsv"
+    },
+    {
+      "gene": "G6PC3",
+      "allele": "GRCh38:17:44071077:C:A",
+      "ac": 2,
+      "af": 1.23987e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "b969dc8e3e5a641e4ca95cf94f01574fbe5cc94506bb32a922cb436170b3e03f",
+      "sourceFile": "G6PC3.tsv"
+    },
+    {
+      "gene": "G6PC3",
+      "allele": "GRCh38:17:44071094:C:G",
+      "ac": 2,
+      "af": 1.23931e-06,
+      "faf": 2.8e-07,
+      "recordSha256": "00fc3a541093b22d1b2e58a920ac10bc7f2ff4f1dd70d54dcdc96c56aaa4d184",
+      "sourceFile": "G6PC3.tsv"
+    },
+    {
+      "gene": "G6PC3",
+      "allele": "GRCh38:17:44074218:G:T",
+      "ac": 8,
+      "af": 4.95652e-06,
+      "faf": 4.369e-05,
+      "recordSha256": "8c328ae957f35d15bdb989fe13ece75b895e9559d1e31cc4aea781ab541b06c7",
+      "sourceFile": "G6PC3.tsv"
+    },
+    {
+      "gene": "ACTA1",
+      "allele": "GRCh38:1:229431730:C:G",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/464138/"
+    },
+    {
+      "gene": "HBB",
+      "allele": "GRCh38:11:5225756:T:G",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/36317/"
+    }
+  ],
+  "panelId": "PM2_MULTIGENE_FORMAL_TOP20_V1",
+  "vcfSha256": "584a7668220a0a9059a47cfda1540add1a640d36eff130c3802f75cfab1711d7",
+  "freezeReason": "All original frequency thresholds passed; fixed before formal analysis; no result-driven panel replacement",
+  "topN": 20,
+  "publicResource": "https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/joint/gnomad.joint.v4.1.sites.chr{chromosome}.vcf.bgz",
+  "patientData": false,
+  "genotypes": "Synthetic: dominant genes heterozygous; other genes homozygous alternate. No phenotype supplied.",
+  "sourceRecordHashScope": "SHA256 of the exact UTF-8 public joint VCF record followed by one LF"
+}

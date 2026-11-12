@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "pm1-hnf1a-source-projection-v1",
+  "sourceUrl": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+  "sourceJsonSha256": "6195d0bf2f4cd7e86016ff13cdd78ad2696168b224fafc60f10cfc2409bc0ec1",
+  "sourceHtmlSha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+  "sourceJsonLocator": "/ld/RuleSet/0/ld/CriteriaCode/27/entContent",
+  "specification": "GN017",
+  "version": "3.1",
+  "rule": {
+    "_uniqueProp": "017_PM1_nuclear_HNF1A",
+    "additionalComments": null,
+    "applicability": "Applicable",
+    "baseStrength": "Pathogenic",
+    "defaultStrength": "Pathogenic Moderate",
+    "evidenceCategory": "Functional Data",
+    "gene": [
+      "HNF1A"
+    ],
+    "geneType": "nuclear",
+    "instructionsToUse": null,
+    "label": "PM1",
+    "ns": "017",
+    "originalACMGSummary": "Located in a mutational hot spot and/or critical and well-established functional domain (e.g. active site of an enzyme) without benign variation.",
+    "sepioID": "SEPIO-CG:99027",
+    "status": {
+      "Pilot Rules In Prep": {
+        "completed": true
+      }
+    },
+    "strengthDescriptor": [
+      {
+        "applicability": "Not Applicable for this VCEP",
+        "id": "0230",
+        "instructionsToUse": "",
+        "specificationType": [],
+        "strength": "Stand Alone",
+        "strengthSepioID": "",
+        "text": "",
+        "type": "EvidenceLineStrength"
+      },
+      {
+        "applicability": "Not Applicable for this VCEP",
+        "id": "0015",
+        "instructionsToUse": "",
+        "specificationType": [],
+        "strength": "Very Strong",
+        "strengthSepioID": "SEPIO:0000220",
+        "text": "",
+        "type": "EvidenceLineStrength"
+      },
+      {
+        "applicability": "Not Applicable",
+        "id": "0028",
+        "instructionsToUse": "",
+        "specificationType": [],
+        "strength": "Strong",
+        "strengthSepioID": "SEPIO:0000330",
+        "text": "",
+        "type": "EvidenceLineStrength"
+      },
+      {
+        "applicability": "Applicable",
+        "id": "006",
+        "instructionsToUse": "",
+        "specificationType": [
+          "Gene-specific",
+          "Strength"
+        ],
+        "strength": "Moderate",
+        "strengthSepioID": "SEPIO:0000216",
+        "text": "This criterion can be used for variants in residues that directly bind DNA:   Gln130, Arg131, Glu132, His143, Leu144, Ser145, Gln146, His147, Leu148, Asn149, Lys155, Thr156, Gln157, Lys158, Arg203, Phe204, Lys205, Trp206, Arg263, Val264, Tyr265, Asn270, Arg271, Arg272, Lys273 ",
+        "type": "EvidenceLineStrength"
+      },
+      {
+        "applicability": "Applicable",
+        "id": "0054",
+        "instructionsToUse": "",
+        "specificationType": [
+          "Gene-specific",
+          "Strength"
+        ],
+        "strength": "Supporting",
+        "strengthSepioID": "SEPIO:0000329",
+        "text": "Use for defined regions in the DNA binding and dimerization domains.\n\n*   Dimerization: codons 1-32, NM\\_000545.8\n*   Subset of DNA binding domains: codons 107-174 and 201-280\n\nIt can also be used for variants within certain transcription factor binding sites of the promoter:\n\n*   –c.-187 to c.-195 (AP1 binding site)\n*   –c.-209 to c.-227 (Overlapping HNF3 & NF-Y sites)\n*   –c.-238 to c.-259 (HNF1A binding site)\n*   –c.-276 to c.-288 (HNF4A binding site)",
+        "type": "EvidenceLineStrength"
+      }
+    ]
+  },
+  "excludedRegion": {
+    "first": 281,
+    "last": 631,
+    "reason": "GN017_TAD_NOT_PM1",
+    "sourceSection": "PS3 additional explanatory note"
+  },
+  "retrievedOn": "2026-09-10"
+}

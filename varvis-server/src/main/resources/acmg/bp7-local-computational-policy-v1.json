@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "bp7-local-computational-policy-v1",
+  "policyId": "BP7_LOCAL_NATIVE_SPLICE",
+  "version": "1.2.0",
+  "activation": "LOCAL_COMPUTATIONAL_CORE_ONLY",
+  "criterionId": "ACMG_AMP_2015:BP7",
+  "maximumStrength": "SUPPORTING",
+  "adoptionScope": "PROJECT_LOCAL_RESEARCH",
+  "authoritySources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10357475/",
+    "https://www.clinicalgenome.org/docs/clingen-svi-splicing-subgroup-response-to-feedback/"
+  ],
+  "scope": {
+    "assembly": "GRCh38",
+    "lineage": "NATIVE",
+    "variantType": "SNV",
+    "consequences": ["synonymous_variant", "intron_variant"],
+    "specialization": "APPLICABLE_CSPEC_REQUIRES_EXPLICIT_SUPPORTED_CLAUSE",
+    "utrSupported": false,
+    "rnaExperimentalStrengthEnabled": false
+  },
+  "predictionBinding": {
+    "method": "NATIVE_RAW_SELECTED_GENCODE_V1",
+    "runtimeVersion": "1.2.0",
+    "calibrationId": "CLINGEN_SVI_SPLICE_2024_03_22_SECTION_5",
+    "scoreMode": "RAW",
+    "distance": 4999,
+    "mask": 0,
+    "requiredBp4Mechanism": "SPLICING",
+    "samePreparedPlanRequired": true,
+    "sameContextAndTranscriptRequired": true,
+    "replaySavedObservationWithoutProvider": true
+  },
+  "positionRules": {
+    "status": "EVALUATED_BY_POSITION_ADAPTER",
+    "method": "EXACT_PREPARED_GENCODE_GEOMETRY",
+    "methodVersion": "1.0.0",
+    "synonymous": {
+      "firstExonBaseExcluded": true,
+      "minimumZeroBasedDistanceFromExonEndInclusive": 3
+    },
+    "intronic": {
+      "donorDistanceMinimumInclusive": 7,
+      "acceptorDistanceMinimumInclusive": 21,
+      "bothFlankingBoundariesRequired": true
+    },
+    "inferFromOrdinalAllowed": false
+  },
+  "adoptionRequirements": {
+    "positionCheckRequired": true,
+    "experimentalConflictCheckRequired": true,
+    "missingExperimentRecordMeans": "NOT_COVERED_NOT_EXPERIMENTALLY_NORMAL",
+    "knownApplicableConflict": "REVIEW_REQUIRED_NO_AUTOMATIC_ADOPTION",
+    "unavailableExperimentSource": "NOT_EVALUATED",
+    "sameAlleleUnresolvedTranscript": "REVIEW_REQUIRED_NO_AUTOMATIC_ADOPTION",
+    "functionalReviewScopeRequired": "COMPLETE_FOR_DECLARED_SCOPE",
+    "unreviewedSpliceOrUnknownMechanism": "REVIEW_REQUIRED_NO_AUTOMATIC_ADOPTION",
+    "experimentSourceValidation": "RECORDED_SPLICE_OBSERVATION_CHECK@1.0.0",
+    "clinicalApprovalGranted": false,
+    "bp4AndBp7SharePrediction": true,
+    "finalClassificationEnabled": false
+  },
+  "dependencyOutcomes": {
+    "validatedBp4Met": "READY_FOR_POSITION_AND_CONFLICT_CHECKS",
+    "validatedBp4NotMet": "DEPENDENCY_NOT_SATISFIED",
+    "missingInvalidOrBlockedBp4": "NOT_EVALUATED",
+    "otherConsequence": "NOT_APPLICABLE"
+  }
+}

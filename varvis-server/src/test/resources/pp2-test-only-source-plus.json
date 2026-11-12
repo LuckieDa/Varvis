@@ -1,0 +1,40 @@
+{
+  "dataClass": "TEST_ONLY_FICTIONAL_NOT_SCIENTIFIC_APPROVAL",
+  "scope": {
+    "id": "plus",
+    "strand": 1,
+    "contig": "11",
+    "hgncId": "HGNC:999001",
+    "geneSymbol": "TEST_PP2_PLUS",
+    "mondoId": "MONDO:0999001",
+    "moi": "AUTOSOMAL_DOMINANT",
+    "transcript": "ENST000001.1",
+    "protein": "ENSP000001.1",
+    "cds": "ATGCGAGAATTTTAA",
+    "alteredCds": "ATGCAAGAATTTTAA",
+    "referenceProtein": "MREF",
+    "alteredProtein": "MQEF",
+    "pos": 104,
+    "ref": "G",
+    "alt": "A",
+    "coding": "5G>A",
+    "proteinChange": "Arg2Gln",
+    "refCodon": "CGA",
+    "altCodon": "CAA",
+    "aminoAcids": "R/Q",
+    "proteinVariantKey": "R2Q",
+    "basisType": "AUTHORITY_CLAUSE"
+  },
+  "conditions": {
+    "missenseMechanism": {
+      "conclusion": "SUPPORTED",
+      "locator": "TEST_ONLY plus mechanism statement",
+      "explanation": "Invented statement: missense is a common pathogenic mechanism in this exact disease/MOI/transcript."
+    },
+    "lowBenignMissense": {
+      "conclusion": "SUPPORTED",
+      "locator": "TEST_ONLY plus benign spectrum statement",
+      "explanation": "Invented independently reviewed statement: low benign missense background for this exact scope."
+    }
+  }
+}

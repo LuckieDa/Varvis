@@ -1,0 +1,196 @@
+{
+  "profileSchemaVersion": "spliceai-pp3-bp4-profile-v1",
+  "profileId": "SPLICEAI_PP3_BP4_SUPPORTING",
+  "profileVersion": "1.0.0",
+  "status": "RUNTIME_EVALUATION_SLICE",
+  "canonicalizationProfile": "varvis-json-c14n-v1",
+  "authorityCutoff": "2026-08-31",
+  "asOf": "2026-09-02T00:00:00Z",
+  "scope": "GERMLINE_MENDELIAN_SMALL_SEQUENCE_VARIANT",
+  "lineage": {
+    "candidateProfileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+    "candidateProfileVersion": "1.0.0-candidate.1",
+    "candidateProfileCanonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d",
+    "candidateProfileRawSha256": "8efd4d5f34e238bab94abaaec99f7ea394729a8bf79083e618814ff837536edc",
+    "authorityCatalogId": "authority-catalog-acmg-evidence-v2-2026-08-31",
+    "authorityCatalogSchemaVersion": "authority-source-catalog-v1",
+    "authorityCatalogCanonicalSha256": "63db590058808737bdd03af7fd82533c572b80bfabae9b50f0632da78cd803f9"
+  },
+  "predictor": {
+    "name": "SpliceAI",
+    "providerSource": "SPLICEAI",
+    "packageVersion": "1.3.1",
+    "scoreMode": "RAW_UNMASKED_CLI",
+    "distanceArgument": 4999,
+    "maskArgument": 0,
+    "exclusiveComputationalChannel": true
+  },
+  "resources": [
+    {
+      "resourceId": "SPLICEAI_V1_3_1_RAW_GRCH38_LOCAL_COMPUTE",
+      "provider": "SPLICEAI",
+      "assembly": "GRCh38",
+      "resourceVersion": "SpliceAI 1.3.1 raw, distance 4999",
+      "identityFingerprintSha256": "e2f652e52955a0c6aaed434a3424cb69bb29413908d7dba8aaded016aa537542",
+      "identity": {
+        "provider": "SPLICEAI",
+        "assembly": "GRCh38",
+        "package": {
+          "name": "SpliceAI",
+          "version": "1.3.1",
+          "installArtifactSha256": "63c633b8de6803d4ffb613e6ef62f1a896fec9fc13245c0f000ff7adea279776"
+        },
+        "parameters": {
+          "scoreMode": "RAW_UNMASKED_CLI",
+          "distanceArgument": 4999,
+          "maskArgument": 0
+        },
+        "candidateResourceIdentityFingerprintSha256": "451a42ab28edab2f542816b51495a79e225217735e65040ceac0fb9cac7517d9",
+        "referenceIdentityFingerprintSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+      },
+      "identitySource": {
+        "profileId": "SPLICEAI_RAW_GRCH38_4999_V1_3_1_CANDIDATE",
+        "profileVersion": "1.0.0-candidate.1",
+        "canonicalSha256": "ae3f4079aac95a96ea60a0c5b7fa039673027acc422ac139c3144bfa0704663d"
+      }
+    }
+  ],
+  "activation": {
+    "runtimeBound": true,
+    "evaluationEnabled": true,
+    "patientFlowEnabled": false,
+    "classificationEnabled": false
+  },
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-e3-c1-2026-09-02",
+    "registrySchemaVersion": "acmg-rule-registry-v2",
+    "registrySha256": "73fca655b6d76700242fc6b12ba4c6c4b9f34ac5c79b38621fe03fecc8303469",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-e3-c1-2026-09-02.json",
+    "criterionIds": [
+      "ACMG_AMP_2015:PP3",
+      "ACMG_AMP_2015:BP4"
+    ]
+  },
+  "authorityBindings": [
+    {
+      "authoritySourceId": "authority-clingen-svi-splicing-2023",
+      "documentVersion": "2023 publication",
+      "sourceRecordId": "PMCID:PMC10357475",
+      "snapshotSha256": "de7f9bcced137ad048d3b38178d0943e8fc9e275a506cbb5252dba91fef8a211"
+    }
+  ],
+  "applicability": {
+    "assembly": "GRCh38",
+    "nativeAssemblyOnly": true,
+    "requiredAssemblyLineage": "NATIVE",
+    "selectedTranscriptConsequenceSource": "VEP_EVIDENCE_CONTEXT",
+    "allowedConsequenceTerms": [
+      "splice_region_variant",
+      "intron_variant",
+      "synonymous_variant"
+    ],
+    "excludedConsequenceTerms": [
+      "missense_variant",
+      "splice_donor_variant",
+      "splice_acceptor_variant"
+    ],
+    "nonMatchingOutcome": "NOT_APPLICABLE"
+  },
+  "matching": {
+    "exactAlleleRequired": true,
+    "geneSymbolSource": "SPLICEAI_GENE_ANNOTATION",
+    "geneContextExactMatchRequired": true,
+    "uniqueGeneMatchRequired": true,
+    "transcriptSelectionSource": "VEP_EVIDENCE_CONTEXT",
+    "spliceAiTranscriptIdentityClaimed": false,
+    "missingAmbiguousOrMismatchedGeneOutcome": "NOT_EVALUATED"
+  },
+  "fieldContract": {
+    "maximumScoreMeasurementId": "spliceai.maximumRawDeltaScore",
+    "deltaScoreMeasurementIds": [
+      "spliceai.DS_AG",
+      "spliceai.DS_AL",
+      "spliceai.DS_DG",
+      "spliceai.DS_DL"
+    ],
+    "deltaPositionMeasurementIds": [
+      "spliceai.DP_AG",
+      "spliceai.DP_AL",
+      "spliceai.DP_DG",
+      "spliceai.DP_DL"
+    ],
+    "exactAlleleMatchMeasurementId": "spliceai.exactAlleleMatch",
+    "geneSymbolMeasurementId": "spliceai.geneSymbol",
+    "geneContextMatchMeasurementId": "spliceai.geneContextMatch",
+    "selectedTranscriptMeasurementId": "spliceai.selectedTranscriptId"
+  },
+  "scoreSemantics": {
+    "rawUnmasked": true,
+    "officialCliOutputDecimalPlaces": 2,
+    "unroundedModelFloatClaimed": false,
+    "maximumScoreDefinition": "MAX_OF_DS_AG_DS_AL_DS_DG_DS_DL",
+    "rawLexemesPreserved": true,
+    "decimalRuntimeType": "java.math.BigDecimal",
+    "implicitRoundingAllowed": false,
+    "binaryFloatingPointAllowedForDecisions": false
+  },
+  "thresholds": {
+    "benignMaxInclusive": {
+      "rawValue": "0.10",
+      "comparisonOperator": "LESS_THAN_OR_EQUAL",
+      "bp4Result": "MET",
+      "pp3Result": "NOT_MET"
+    },
+    "pathogenicMinInclusive": {
+      "rawValue": "0.20",
+      "comparisonOperator": "GREATER_THAN_OR_EQUAL",
+      "pp3Result": "MET",
+      "bp4Result": "NOT_MET"
+    },
+    "intermediateInterval": {
+      "lowerBoundRawValue": "0.10",
+      "lowerBoundExclusive": true,
+      "upperBoundRawValue": "0.20",
+      "upperBoundExclusive": true,
+      "pp3Result": "NOT_MET",
+      "bp4Result": "NOT_MET"
+    }
+  },
+  "strengthPolicy": {
+    "strengthCap": "SUPPORTING",
+    "moderateEnabled": false,
+    "strongEnabled": false
+  },
+  "evaluation": {
+    "criteria": [
+      {
+        "criterionId": "ACMG_AMP_2015:PP3",
+        "currentDesignation": "PP3",
+        "baseStrength": "SUPPORTING",
+        "appliedStrengthCap": "SUPPORTING"
+      },
+      {
+        "criterionId": "ACMG_AMP_2015:BP4",
+        "currentDesignation": "BP4",
+        "baseStrength": "SUPPORTING",
+        "appliedStrengthCap": "SUPPORTING"
+      }
+    ],
+    "mutualExclusion": {
+      "criteriaMayBothBeMet": false
+    }
+  },
+  "failurePolicy": {
+    "notEvaluatedConditions": [
+      "SCORE_MISSING_OR_INVALID",
+      "NO_RECORD",
+      "RESOURCE_FAILED",
+      "RESOURCE_TIMEOUT",
+      "CONTEXT_INCOMPLETE",
+      "GENE_MATCH_MISSING",
+      "GENE_MATCH_AMBIGUOUS",
+      "GENE_CONTEXT_MISMATCH"
+    ],
+    "outcome": "NOT_EVALUATED"
+  }
+}

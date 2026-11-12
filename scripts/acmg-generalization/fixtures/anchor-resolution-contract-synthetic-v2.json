@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "frozen-anchor-identity-resolution-contract-v2",
+  "contractId": "SYNTHETIC_FROZEN_IDENTITY_RESOLUTION_ONLY",
+  "version": "2.1.0",
+  "fixedAt": "2026-09-13T21:05:05.442293+00:00",
+  "reviewer": "SYNTHETIC",
+  "status": "PROSPECTIVELY_FIXED_BEFORE_REAL_STRATIFICATION_OUTPUTS",
+  "bindings": {
+    "originalStratificationContractSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "frameSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "priorProjectionSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "priorCompletionContractSha256": "43b4eb9a5bcbc2b0b0bddad704e7befca64fafea217f74bb63d493b1e269d196"
+  },
+  "scope": "Synthetic identities only; unchanged reviewed operators. No clinical, public-panel or rule acceptance.",
+  "projectionSchema": {
+    "schemaVersion": "masked-frozen-anchor-identities-v2",
+    "topLevelKeys": [
+      "schemaVersion",
+      "bindings",
+      "review",
+      "sourceFiles",
+      "records",
+      "supplementaryRecords",
+      "unresolvedAnchors",
+      "sourceCoverage",
+      "identitySources",
+      "identityResolutions"
+    ],
+    "bindingsKeys": [
+      "frameSha256",
+      "prerankManifestSha256",
+      "priorProjectionSha256"
+    ],
+    "reviewKeys": [
+      "status",
+      "reviewedAt",
+      "reviewer",
+      "allFrozenAnchorsAccountedFor",
+      "exactDnaIdentityComplete"
+    ],
+    "reviewMeaning": "REVIEWED_SOURCE_IDENTITY_PROJECTION: allFrozenAnchorsAccountedFor means complete enumeration of original source roles. exactDnaIdentityComplete means every enumerated original anchor now has an exact public-source DNA identity, not REF, normalization, mechanical, clinical or rule verification.",
+    "sourceFiles": "The same nine original knowledge files and hashes; identity-resolution sources do not become new selection anchors.",
+    "recordKeys": [
+      "anchorId",
+      "geneSymbol",
+      "hgncId",
+      "mondoId",
+      "moi",
+      "originalAllele",
+      "originalSourceKey",
+      "sourceFile",
+      "sourceFileSha256",
+      "sourceRecordLocator",
+      "originalFixedAt",
+      "exposureRole",
+      "criterionExposureRoles",
+      "sourceRole"
+    ],
+    "optionalRecordKeys": [
+      "identityResolutionId"
+    ],
+    "records": "In-frame exact identities must retain the original frame context. Old exact records are preserved as complete objects; only originally protein-only anchors use identityResolutionId.",
+    "supplementaryRecords": "Exact original anchors whose gene is outside the unchanged twenty-gene frame. Same record keys; original hgncId/mondoId may be null. Never manufacture a frame context or change original MOI from a later source.",
+    "unresolvedAnchors": "Same original v1 protein-only nullable-context shape for any still unresolved source identity. Do not remove a record to make this list empty.",
+    "identitySourceKeys": [
+      "sourceId",
+      "relativePath",
+      "url",
+      "version",
+      "sha256"
+    ],
+    "identityResolutionKeys": [
+      "resolutionId",
+      "anchorId",
+      "originalProteinIdentity",
+      "resolvedAt",
+      "reviewer",
+      "sourceId",
+      "sourceLocator",
+      "transcript",
+      "protein",
+      "cdnaHgvs",
+      "proteinHgvs",
+      "genomicHgvs",
+      "originalAllele",
+      "originalSourceKey",
+      "status",
+      "referenceValidationStatus",
+      "normalizationStatus",
+      "mechanicalStatus"
+    ],
+    "identityResolutionStatus": "PUBLIC_SOURCE_EXACT_DNA_IDENTITY_REVIEWED",
+    "initialIndependentValidationStatuses": {
+      "referenceValidationStatus": "PENDING",
+      "normalizationStatus": "PENDING",
+      "mechanicalStatus": "PENDING"
+    },
+    "identityResolutionLink": "Unique resolutionId and anchorId; referenced original anchor, exact DNA object and originalSourceKey must equal the record. Versioned genomic/transcript/protein HGVS must be preserved, and originalProteinIdentity must equal proteinHgvs. A new resolution date never replaces originalFixedAt.",
+    "sourceCoverage": "Exact counts are records plus supplementaryRecords grouped by the original sourceFile. unresolvedProteinAnchorCount counts unresolvedAnchors. Every original source file remains enumerated.",
+    "originalAllele": "assembly, contig, position, reference, alternate. originalSourceKey uses the five-field GRCh38 source identity format only; it is not proof of native REF or canonical normalization."
+  },
+  "completionSemantics": {
+    "panelDefinition": "Exactly the original twenty genes, ten unchanged slots each, 200 globally distinct reference-verified public canonical alleles; fixed seed/order/strata/minimum independent missense slots/no quota transfer unchanged.",
+    "inFrameAnchors": "Retain the existing conservative gate: all in-frame frozen anchors must have a complete source-to-canonical join and an independently mapped mechanical stratum before final panel selection. Unknown in-frame anchors can affect the complete frozen anchor universe and independent slot eligibility.",
+    "outsideFrameDisjointProof": {
+      "supportedOriginalEnvelope": "Exact source-reviewed GRCh38 SNV with single A/C/G/T REF and different single A/C/G/T ALT; primary canonical contig spelling.",
+      "operator": "SOURCE_SNV_POINT_OUTSIDE_ALL_TWENTY_MODEL_CLOSED_GENOMIC_SPANS",
+      "status": "OUTSIDE_FRAME_DISJOINT_MODEL_SPANS_IDENTITY",
+      "meaning": "A narrowly supported proof that this original supplemental SNV identity cannot receive a mechanical stratum or quota from any of the twenty bound models; not a REF, normalization, transcript, disease or criterion proof.",
+      "prerequisites": "Complete reviewed identity resolution, unchanged original source context and role, and all twenty exact bound models successfully loaded. For each model retain geneSymbol, modelCanonicalSha256, contig, minimum physical exon genomicStart, maximum physical exon genomicEnd, and whether its closed span contains the source SNV point.",
+      "nonmatchingCases": "Any missing model, unresolved source identity, non-SNV envelope or intersection with any model closed span leaves the shortcut unavailable and preserves the blocking pending state. Gene symbols, source consequence labels, arbitrary distances, query-window membership, coding-only bounds or a subset of exons/models cannot replace the full-span test.",
+      "closedSpanDefinition": "For each fully validated model, genomicStart=min(exon.genomicStart for every physical exon) and genomicEnd=max(exon.genomicEnd for every physical exon). All UTR exons, coding exons and intervening introns belong to this closed span. Strand does not change the genomic closed interval.",
+      "intersection": "The SNV intersects a model if assembly and canonical contig match and genomicStart <= source position <= genomicEnd. Both end points are inside. Disjoint requires no intersection across all twenty exact models, not merely disjointness from the source gene name.",
+      "queryPoolBoundary": "Frozen source-query windows may extend beyond these model spans. Source rows outside every span can still occur in the complete raw/masked pool, but cannot be mechanically assigned to a fixed twenty-model stratum. This proof establishes only that no final mechanical quota is possible; it does not erase a source row, claim REF matched, or establish absence from the source pool.",
+      "requiredSyntheticControls": [
+        "SNV exactly at either closed interval boundary must not receive disjoint status.",
+        "A point one base outside a boundary may receive disjoint status only after all other nineteen full model spans also exclude it.",
+        "Another model on the same contig overlapping the point blocks the shortcut, irrespective of different gene identity.",
+        "UTR exon or intronic points within the full physical span block the shortcut even when outside CDS.",
+        "Different contigs are disjoint but all twenty model identities must still be present.",
+        "An indel, missing model or unresolved source identity remains pending and cannot claim disjointness."
+      ]
+    },
+    "outsideFrameDenominator": "Never receive a twenty-gene quota, mechanical stratum or public-panel credit solely because source identity is known. Preserve original criterion denominators, expectations and exposure; retain REF/normalization/mechanical statuses PENDING when unperformed.",
+    "separateFlags": {
+      "quotaComplete": "Original numerical slots and global 200 uniqueness only.",
+      "panelComplete": "Quota complete, no unresolved source/candidate/in-frame-anchor identity, all outside-frame anchors either independently reconciled or narrowly proven disjoint, and actual source-discovery exposure accounted for.",
+      "selectedRecordsFinal": "Equal panelComplete; may be true while separately retained disjoint supplementary reference/mechanical work remains pending.",
+      "allFrozenAnchorsReconciled": "False until every original anchor, including supplementary records, has independently completed required source/reference/canonical/mechanical review. Disjoint model-span identity alone does not satisfy it.",
+      "status": "Overall COMPLETE only when panelComplete and allFrozenAnchorsReconciled; otherwise INCOMPLETE with independent flags and exact remaining reasons.",
+      "taskCompletion": "Panel selection alone never marks the full scientific generalization task, rule coverage or held-out/formal/clinical acceptance complete."
+    }
+  },
+  "sourceDiscoveryExposure": {
+    "requiredInput": "Caller-pinned reviewed projection of all twenty original synthetic source-discovery probe identities with original input/output/export/source hash and locator. It must be independent from selected public candidates.",
+    "join": "Compare exact GRCh38 contig/position/REF/ALT of each already reference-verified source-discovery SNV with each proven canonical public allele. No gene-symbol-only or raw source alias-only inference.",
+    "output": "Per candidate actual MATCHED or NO_MATCH_IN_COMPLETE_PINNED_PROBE_SET, with matching probe IDs and source provenance; missing/incomplete probe input is unresolved exposure and cannot authorize final selection.",
+    "selectionEffect": "None: never filter, exchange, reprioritize, credit as public evidence, or alter an anchor/criterion role because of a match. Preserve source-discovery exposure separately from original rule-development/held-out exposure.",
+    "scientificMeaning": "These probes only caused source-object export. A match does not imply a prior rule result, clinical result or held-out rule-label exposure."
+  },
+  "reviewActivity": {
+    "realStratificationOutputsRead": 0,
+    "realNormalizedAllelesRead": 0,
+    "criterionResultsUsed": 0,
+    "newFastaReads": 0,
+    "newVepCalls": 0,
+    "newNetworkDownloads": 0,
+    "reasonForProspectiveMinor": "Source-only review of the original twenty technical probes confirmed that two distinct named genes may share a chromosome. This exact geometric operator uses complete already bound model intervals; no real stratification/normalization output or rule result was viewed to design it."
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "cspec-overlay-registry-v1",
+  "registryId": "cspec-overlay-registry-ps1-pm5-2026-09-09",
+  "authorityCatalogId": "authority-catalog-ps1-pm5-2026-09-09",
+  "authorityCatalogSha256": "a8c5fb1d16eb4727b23a4d63d3ad9bd8ba5269e84c0a0fccc84f1048ee0f9828",
+  "baseRuleRegistryId": "acmg-rule-registry-ps1-pm5-2026-09-09",
+  "baseRuleRegistrySha256": "a2e0619ca89a139741ff0d1c79596af4c8ee0f2d39965a55035ead36c8032db6",
+  "authorityCutoff": "2026-09-09",
+  "asOf": "2026-09-09T05:05:08Z",
+  "selectionPolicy": {
+    "policyId": "CSPEC_EXACT_CONTEXT_SELECTION_V1",
+    "matchMode": "EXACT_STABLE_IDENTIFIERS_SINGLE_MATCH",
+    "requiredDimensions": [
+      "HGNC_ID",
+      "MONDO_ID",
+      "MOI"
+    ],
+    "transcriptMode": "EXACT_IF_REQUIRED_BY_OVERLAY",
+    "outcomes": {
+      "zeroMatch": {
+        "overlaySelectionStatus": "NO_MATCH",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_GENERAL_RULES",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleSelectableMatch": {
+        "overlaySelectionStatus": "SELECTED",
+        "reviewConstraint": "NOT_REQUIRED",
+        "criterionEvaluationConstraint": "EVALUATE_WITH_SELECTED_OVERLAY",
+        "combinationDisposition": "CONTINUE"
+      },
+      "singleNonSelectableMatch": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MATCH_NOT_EXECUTABLE"
+      },
+      "multipleExactMatches": {
+        "overlaySelectionStatus": "AMBIGUOUS",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_MULTIPLE_EXACT_MATCHES"
+      },
+      "contextConflict": {
+        "overlaySelectionStatus": "NOT_EVALUATED",
+        "reviewConstraint": "REQUIRED",
+        "criterionEvaluationConstraint": "FORCE_NOT_EVALUATED",
+        "combinationDisposition": "ABSTAIN",
+        "reasonCode": "CSPEC_CONTEXT_CONFLICT"
+      }
+    }
+  },
+  "overlays": [
+    {
+      "overlayId": "cspec-overlay-gn049-2.3.0",
+      "cspecId": "GN049",
+      "version": "2.3.0",
+      "vcepId": "50021",
+      "vcepName": "ClinGen RASopathy Variant Curation Expert Panel",
+      "publicationStatus": "RELEASED",
+      "normativeEligibility": "ELIGIBLE",
+      "approvalDate": "2024-12-03",
+      "lifecycleStatus": "CURRENT",
+      "implementationStatus": "IMPLEMENTED",
+      "selectionStatus": "SELECTABLE",
+      "transcriptRequired": true,
+      "selector": {
+        "hgncId": "HGNC:1097",
+        "mondoId": "MONDO:0021060",
+        "moi": "AUTOSOMAL_DOMINANT",
+        "transcript": {
+          "accession": "ENST00000646891",
+          "version": 2
+        }
+      },
+      "authoritySourceIds": [
+        "authority-clingen-cspec-gn049-v2.3.0"
+      ],
+      "sourceLocators": [
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Official Zenodo GN049 version 2.3.0 JSON export",
+          "sourceRecordId": "Zenodo:21433906/GN049_2.3.0.json",
+          "artifactUrl": "https://zenodo.org/records/21433906/files/GN049_2.3.0.json?download=1",
+          "artifactMediaType": "application/json",
+          "artifactRole": "CSPEC_API_EXPORT_JSON",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "c4d6bd2dab599a4b2e66a4704dc1238ca873dfc9be0e3a9f5f9944d7b7133aa4",
+          "retrievedAt": "2026-09-09T05:05:08Z"
+        },
+        {
+          "locatorType": "REPOSITORY_ARTIFACT",
+          "locatorValue": "Official Zenodo GN049 version 2.3 specification PDF",
+          "sourceRecordId": "Zenodo:21433906/ClinGen_ACMG_Specifications_GN049_2.3.pdf",
+          "artifactUrl": "https://zenodo.org/records/21433906/files/ClinGen_ACMG_Specifications_GN049_2.3.pdf?download=1",
+          "artifactMediaType": "application/pdf",
+          "artifactRole": "CSPEC_SPECIFICATION_PDF",
+          "hashScope": "RAW_BYTES",
+          "artifactSha256": "c278d6a9fa666996546100236492085463d3ab0e37f5c1ed801d44afab0c3ea1",
+          "retrievedAt": "2026-09-09T05:05:08Z"
+        }
+      ],
+      "snapshotSha256": "c4d6bd2dab599a4b2e66a4704dc1238ca873dfc9be0e3a9f5f9944d7b7133aa4",
+      "snapshotSourceRecordId": "Zenodo:21433906/GN049_2.3.0.json",
+      "versionCanonicalizationProfile": "cspec-explicit-alias-map-v1",
+      "versionAliases": [
+        {
+          "rawVersion": "2.3.0",
+          "canonicalVersion": "2.3.0",
+          "sourceRecordId": "CSpec:GN049@2.3.0",
+          "apiLdhId": "643243119",
+          "apiRevision": "_i2nUog----",
+          "snapshotSourceRecordId": "Zenodo:21433906/GN049_2.3.0.json",
+          "snapshotSha256": "c4d6bd2dab599a4b2e66a4704dc1238ca873dfc9be0e3a9f5f9944d7b7133aa4"
+        }
+      ],
+      "versionAliasSetSha256": "c454c8ada4e00d8a793caff2f34d178ae37023b262eeefed5813d60052cb4313",
+      "versionDeduplication": {
+        "status": "UNIQUE",
+        "identityFields": [
+          "CSPEC_ID",
+          "CANONICAL_VERSION",
+          "API_LDH_ID",
+          "API_REVISION",
+          "SNAPSHOT_SHA256"
+        ],
+        "onIdentityConflict": "RETAIN_ALL_REQUIRE_REVIEW_AND_ABSTAIN",
+        "reasonCode": "CSPEC_VERSION_ALIAS_IDENTITY_CONFLICT"
+      },
+      "criterionSpecifications": [
+        {
+          "criterionId": "ACMG_AMP_2015:PS1",
+          "action": "MODIFY",
+          "designation": "PS1",
+          "strength": "STRONG",
+          "authoritySourceIds": [
+            "authority-clingen-cspec-gn049-v2.3.0"
+          ],
+          "sourceLocators": [
+            {
+              "locatorType": "REPOSITORY_ARTIFACT",
+              "locatorValue": "Official Zenodo GN049 version 2.3.0 JSON export",
+              "sourceRecordId": "Zenodo:21433906/GN049_2.3.0.json",
+              "artifactUrl": "https://zenodo.org/records/21433906/files/GN049_2.3.0.json?download=1",
+              "artifactMediaType": "application/json",
+              "artifactRole": "CSPEC_API_EXPORT_JSON",
+              "hashScope": "RAW_BYTES",
+              "artifactSha256": "c4d6bd2dab599a4b2e66a4704dc1238ca873dfc9be0e3a9f5f9944d7b7133aa4",
+              "retrievedAt": "2026-09-09T05:05:08Z"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "business.profileId",
+              "value": "CLINVAR_BRAF_RASOPATHY_PS1_PM5"
+            },
+            {
+              "name": "business.profileVersion",
+              "value": "1.0.0"
+            }
+          ]
+        },
+        {
+          "criterionId": "ACMG_AMP_2015:PM5",
+          "action": "MODIFY",
+          "designation": "PM5",
+          "strength": "MODERATE",
+          "authoritySourceIds": [
+            "authority-clingen-cspec-gn049-v2.3.0"
+          ],
+          "sourceLocators": [
+            {
+              "locatorType": "REPOSITORY_ARTIFACT",
+              "locatorValue": "Official Zenodo GN049 version 2.3.0 JSON export",
+              "sourceRecordId": "Zenodo:21433906/GN049_2.3.0.json",
+              "artifactUrl": "https://zenodo.org/records/21433906/files/GN049_2.3.0.json?download=1",
+              "artifactMediaType": "application/json",
+              "artifactRole": "CSPEC_API_EXPORT_JSON",
+              "hashScope": "RAW_BYTES",
+              "artifactSha256": "c4d6bd2dab599a4b2e66a4704dc1238ca873dfc9be0e3a9f5f9944d7b7133aa4",
+              "retrievedAt": "2026-09-09T05:05:08Z"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "business.profileId",
+              "value": "CLINVAR_BRAF_RASOPATHY_PS1_PM5"
+            },
+            {
+              "name": "business.profileVersion",
+              "value": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "notes": "Only protein missense PS1 Strong and PM5 Moderate. Exact MANE/RefSeq transcript mapping audited in the reference resource. Reference independence, bilateral raw splice gate and reviewed PM5 amino-acid relations are mandatory; no classification or automatic strength addition."
+    }
+  ]
+}

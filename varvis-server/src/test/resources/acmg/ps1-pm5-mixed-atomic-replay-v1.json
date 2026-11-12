@@ -1,0 +1,535 @@
+{
+  "fixtureClass": "PUBLIC_RESOURCE_REPLAY_WITH_SYNTHETIC_SPLICE_SCORES",
+  "context": {
+    "schemaVersion": "evidence-context-v2",
+    "canonicalizationProfile": "varvis-json-c14n-v1",
+    "dataClass": "SYNTHETIC",
+    "scope": {
+      "analysisDomain": "GERMLINE",
+      "diseaseModel": "MENDELIAN",
+      "variantScope": "SMALL_SEQUENCE_VARIANT"
+    },
+    "variant": {
+      "variantType": "SNV",
+      "inputAllele": {
+        "assembly": "GRCh38",
+        "contig": "7",
+        "position": 140801533,
+        "reference": "A",
+        "alternate": "C"
+      },
+      "normalizedAllele": {
+        "assembly": "GRCh38",
+        "contig": "7",
+        "position": 140801533,
+        "reference": "A",
+        "alternate": "C"
+      },
+      "evidenceQueryAllele": {
+        "assembly": "GRCh38",
+        "contig": "7",
+        "position": 140801533,
+        "reference": "A",
+        "alternate": "C"
+      },
+      "normalization": {
+        "status": "UNCHANGED",
+        "method": "NATIVE_SNV_IDENTITY_REF_CHECK",
+        "methodVersion": "1.0.0",
+        "referenceSequenceSha256": "8d5e868ddc6d9600b82cd7b7e625c240a43f369f6f1a9f16b0c516eb781e7988",
+        "refValidation": "MATCH"
+      },
+      "assemblyLineage": {
+        "mappingStatus": "NATIVE"
+      },
+      "legacyCanonicalVariantId": "GRCh38|7|140801533|A|C",
+      "alleleId": "allele-sha256-924b486211d047ac86f5e16358b0ce9e0abf29dcfab05b06b8809c0be28a548b"
+    },
+    "gene": {
+      "hgncId": "HGNC:1097",
+      "symbol": "BRAF"
+    },
+    "disease": {
+      "mondoId": "MONDO:0021060",
+      "label": "RASopathy"
+    },
+    "moi": "AUTOSOMAL_DOMINANT",
+    "transcript": {
+      "accession": "ENST00000646891",
+      "version": 2,
+      "selectionPolicy": "ORDINARY_CATALOG_AND_AM_IDENTITY@1.3.0-ps1-pm5",
+      "annotationSourceVersion": "116.0"
+    },
+    "patientContext": {
+      "patientContextId": "patient-context-public-ps1-pm5",
+      "role": "PROBAND",
+      "affectedStatus": "UNKNOWN",
+      "sex": "UNKNOWN"
+    },
+    "contextCompleteness": {
+      "status": "COMPLETE",
+      "missingFields": []
+    },
+    "contextId": "context-sha256-66a9097ca9032864377b5b2861e5311af1057dae3c8050f39055d10ffc36eb21"
+  },
+  "atomicEvidence": [
+    {
+      "schemaVersion": "atomic-evidence-v2",
+      "contextId": "context-sha256-66a9097ca9032864377b5b2861e5311af1057dae3c8050f39055d10ffc36eb21",
+      "canonicalizationProfile": "varvis-json-c14n-v1",
+      "evidenceType": "CLINICAL_DATABASE",
+      "direction": "UNDETERMINED",
+      "source": {
+        "sourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+        "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+        "resourceSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde",
+        "retrievedAt": "2026-09-09T06:15:15.668583800Z",
+        "sourceRecords": [
+          {
+            "recordId": "SCV000927041.1",
+            "locator": {
+              "locatorType": "DATABASE_RECORD",
+              "locatorValue": "submission_summary_2026-03.txt.gz#line=237122",
+              "sourceRecordId": "SCV000927041.1",
+              "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+            }
+          }
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "REPOSITORY_ARTIFACT",
+            "locatorValue": "resource-identity:CLINVAR_2026_03_21_GRCH38@GRCh38",
+            "artifactSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836",
+            "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+          },
+          {
+            "locatorType": "REPOSITORY_ARTIFACT",
+            "locatorValue": "resource-identity:VEP_116_GRCH38@GRCh38",
+            "artifactSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+            "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+          },
+          {
+            "locatorType": "REPOSITORY_ARTIFACT",
+            "locatorValue": "resource-identity:CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38@GRCh38",
+            "artifactSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde",
+            "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+          }
+        ]
+      },
+      "resourceExecution": {
+        "status": "SUCCEEDED",
+        "attemptedAt": "2026-09-09T06:15:15.668583800Z",
+        "completedAt": "2026-09-09T06:15:15.668583800Z"
+      },
+      "resourceAvailability": {
+        "status": "AVAILABLE"
+      },
+      "queryOutcome": {
+        "status": "HIT",
+        "recordCount": 1,
+        "queryFingerprint": "c3e891db8a33c5caab70fcfd7e46b85e97790937361a8010deebf3c93b56c0a5"
+      },
+      "resourceApplicability": {
+        "status": "APPLICABLE"
+      },
+      "measurements": [
+        {
+          "metricId": "clinvar.comparator.assembly",
+          "rawValue": "GRCh38"
+        },
+        {
+          "metricId": "clinvar.comparator.contig",
+          "rawValue": "7"
+        },
+        {
+          "metricId": "clinvar.comparator.position",
+          "rawValue": "140801531"
+        },
+        {
+          "metricId": "clinvar.comparator.reference",
+          "rawValue": "A"
+        },
+        {
+          "metricId": "clinvar.comparator.alternate",
+          "rawValue": "C"
+        },
+        {
+          "metricId": "clinvar.comparator.variationId",
+          "rawValue": "55793"
+        },
+        {
+          "metricId": "clinvar.comparator.recordConflictState",
+          "rawValue": "NO_CONFLICT_REPORTED"
+        },
+        {
+          "metricId": "clinvar.comparator.geneSymbols",
+          "rawValue": "BRAF"
+        },
+        {
+          "metricId": "vep.target.consequence",
+          "rawValue": "missense_variant"
+        },
+        {
+          "metricId": "vep.target.transcriptId",
+          "rawValue": "ENST00000646891.2"
+        },
+        {
+          "metricId": "vep.target.proteinPosition",
+          "rawValue": "247"
+        },
+        {
+          "metricId": "vep.target.referenceAminoAcid",
+          "rawValue": "F"
+        },
+        {
+          "metricId": "vep.target.alternateAminoAcid",
+          "rawValue": "V"
+        },
+        {
+          "metricId": "vep.comparator.consequence",
+          "rawValue": "missense_variant"
+        },
+        {
+          "metricId": "vep.comparator.transcriptId",
+          "rawValue": "ENST00000646891.2"
+        },
+        {
+          "metricId": "vep.comparator.proteinPosition",
+          "rawValue": "247"
+        },
+        {
+          "metricId": "vep.comparator.referenceAminoAcid",
+          "rawValue": "F"
+        },
+        {
+          "metricId": "vep.comparator.alternateAminoAcid",
+          "rawValue": "L"
+        },
+        {
+          "metricId": "vep.proteinRelation",
+          "rawValue": "SAME_RESIDUE_DIFFERENT_AMINO_ACID"
+        },
+        {
+          "metricId": "clinvar.assertion.scv",
+          "rawValue": "SCV000927041.1"
+        },
+        {
+          "metricId": "clinvar.assertion.classification",
+          "rawValue": "Pathogenic"
+        },
+        {
+          "metricId": "clinvar.assertion.reviewStatus",
+          "rawValue": "reviewed by expert panel"
+        },
+        {
+          "metricId": "clinvar.assertion.dateLastEvaluated",
+          "rawValue": "May 10, 2019"
+        },
+        {
+          "metricId": "clinvar.assertion.geneSymbol",
+          "rawValue": "BRAF"
+        },
+        {
+          "metricId": "clinvar.assertion.condition.submittedRaw",
+          "rawValue": "Orphanet:ORPHA98733"
+        },
+        {
+          "metricId": "clinvar.assertion.condition.reportedRaw",
+          "rawValue": "C5681679:Noonan syndrome and Noonan-related syndrome"
+        },
+        {
+          "metricId": "clinvar.assertion.source.logicalName",
+          "rawValue": "submission_summary_2026-03.txt.gz"
+        },
+        {
+          "metricId": "clinvar.assertion.source.line",
+          "rawValue": "237122"
+        },
+        {
+          "metricId": "resource.clinvarVcf.id",
+          "rawValue": "CLINVAR_2026_03_21_GRCH38"
+        },
+        {
+          "metricId": "resource.clinvarVcf.version",
+          "rawValue": "ClinVar 2026-03-21 GRCh38"
+        },
+        {
+          "metricId": "resource.clinvarVcf.identityFingerprintSha256",
+          "rawValue": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836"
+        },
+        {
+          "metricId": "resource.vep.id",
+          "rawValue": "VEP_116_GRCH38"
+        },
+        {
+          "metricId": "resource.vep.version",
+          "rawValue": "VEP 116.0 / cache 116_GRCh38"
+        },
+        {
+          "metricId": "resource.vep.identityFingerprintSha256",
+          "rawValue": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+        },
+        {
+          "metricId": "resource.sidecar.id",
+          "rawValue": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38"
+        },
+        {
+          "metricId": "resource.sidecar.version",
+          "rawValue": "ClinVar 2026-03-05 monthly tab-delimited archive"
+        },
+        {
+          "metricId": "resource.sidecar.identityFingerprintSha256",
+          "rawValue": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde"
+        }
+      ],
+      "derivedFromEvidenceIds": [],
+      "conflict": {
+        "status": "NONE",
+        "conflictIds": []
+      },
+      "review": {
+        "status": "NOT_REQUIRED",
+        "decision": "NONE",
+        "reviewRecordIds": []
+      },
+      "provenance": {
+        "producerId": "varvis-runtime-v2-adapter",
+        "producerVersion": "2.0.0-e2",
+        "producedAt": "2026-09-09T06:15:15.668583800Z",
+        "sourcePayloadSha256": "ab255041615be61e3288b87963a9fe492f04d72a9a4118e44a77f807a3fa3517",
+        "identityProjectionSha256": "866c639d619fd1f50aa88d0925dd1881dd66af639899af75058154c1edbfd37e"
+      },
+      "deduplicationKey": "dedup-sha256-2e184b8ce60da545a5fcdce61c732eea30fbfa6aca65727dd234839542b53ada",
+      "evidenceId": "evidence-sha256-866c639d619fd1f50aa88d0925dd1881dd66af639899af75058154c1edbfd37e"
+    },
+    {
+      "schemaVersion": "atomic-evidence-v2",
+      "contextId": "context-sha256-66a9097ca9032864377b5b2861e5311af1057dae3c8050f39055d10ffc36eb21",
+      "canonicalizationProfile": "varvis-json-c14n-v1",
+      "evidenceType": "CLINICAL_DATABASE",
+      "direction": "UNDETERMINED",
+      "source": {
+        "sourceId": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38",
+        "resourceVersion": "ClinVar 2026-03-05 monthly tab-delimited archive",
+        "resourceSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde",
+        "retrievedAt": "2026-09-09T06:15:15.668583800Z",
+        "sourceRecords": [
+          {
+            "recordId": "SCV000965945.1",
+            "locator": {
+              "locatorType": "DATABASE_RECORD",
+              "locatorValue": "submission_summary_2026-03.txt.gz#line=237119",
+              "sourceRecordId": "SCV000965945.1",
+              "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+            }
+          }
+        ],
+        "sourceLocators": [
+          {
+            "locatorType": "REPOSITORY_ARTIFACT",
+            "locatorValue": "resource-identity:CLINVAR_2026_03_21_GRCH38@GRCh38",
+            "artifactSha256": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836",
+            "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+          },
+          {
+            "locatorType": "REPOSITORY_ARTIFACT",
+            "locatorValue": "resource-identity:VEP_116_GRCH38@GRCh38",
+            "artifactSha256": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed",
+            "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+          },
+          {
+            "locatorType": "REPOSITORY_ARTIFACT",
+            "locatorValue": "resource-identity:CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38@GRCh38",
+            "artifactSha256": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde",
+            "retrievedAt": "2026-09-09T06:15:15.668583800Z"
+          }
+        ]
+      },
+      "resourceExecution": {
+        "status": "SUCCEEDED",
+        "attemptedAt": "2026-09-09T06:15:15.668583800Z",
+        "completedAt": "2026-09-09T06:15:15.668583800Z"
+      },
+      "resourceAvailability": {
+        "status": "AVAILABLE"
+      },
+      "queryOutcome": {
+        "status": "HIT",
+        "recordCount": 1,
+        "queryFingerprint": "c3e891db8a33c5caab70fcfd7e46b85e97790937361a8010deebf3c93b56c0a5"
+      },
+      "resourceApplicability": {
+        "status": "APPLICABLE"
+      },
+      "measurements": [
+        {
+          "metricId": "clinvar.comparator.assembly",
+          "rawValue": "GRCh38"
+        },
+        {
+          "metricId": "clinvar.comparator.contig",
+          "rawValue": "7"
+        },
+        {
+          "metricId": "clinvar.comparator.position",
+          "rawValue": "140801531"
+        },
+        {
+          "metricId": "clinvar.comparator.reference",
+          "rawValue": "A"
+        },
+        {
+          "metricId": "clinvar.comparator.alternate",
+          "rawValue": "C"
+        },
+        {
+          "metricId": "clinvar.comparator.variationId",
+          "rawValue": "55793"
+        },
+        {
+          "metricId": "clinvar.comparator.recordConflictState",
+          "rawValue": "NO_CONFLICT_REPORTED"
+        },
+        {
+          "metricId": "clinvar.comparator.geneSymbols",
+          "rawValue": "BRAF"
+        },
+        {
+          "metricId": "vep.target.consequence",
+          "rawValue": "missense_variant"
+        },
+        {
+          "metricId": "vep.target.transcriptId",
+          "rawValue": "ENST00000646891.2"
+        },
+        {
+          "metricId": "vep.target.proteinPosition",
+          "rawValue": "247"
+        },
+        {
+          "metricId": "vep.target.referenceAminoAcid",
+          "rawValue": "F"
+        },
+        {
+          "metricId": "vep.target.alternateAminoAcid",
+          "rawValue": "V"
+        },
+        {
+          "metricId": "vep.comparator.consequence",
+          "rawValue": "missense_variant"
+        },
+        {
+          "metricId": "vep.comparator.transcriptId",
+          "rawValue": "ENST00000646891.2"
+        },
+        {
+          "metricId": "vep.comparator.proteinPosition",
+          "rawValue": "247"
+        },
+        {
+          "metricId": "vep.comparator.referenceAminoAcid",
+          "rawValue": "F"
+        },
+        {
+          "metricId": "vep.comparator.alternateAminoAcid",
+          "rawValue": "L"
+        },
+        {
+          "metricId": "vep.proteinRelation",
+          "rawValue": "SAME_RESIDUE_DIFFERENT_AMINO_ACID"
+        },
+        {
+          "metricId": "clinvar.assertion.scv",
+          "rawValue": "SCV000965945.1"
+        },
+        {
+          "metricId": "clinvar.assertion.classification",
+          "rawValue": "Likely pathogenic"
+        },
+        {
+          "metricId": "clinvar.assertion.reviewStatus",
+          "rawValue": "no assertion criteria provided"
+        },
+        {
+          "metricId": "clinvar.assertion.dateLastEvaluated",
+          "rawValue": null
+        },
+        {
+          "metricId": "clinvar.assertion.geneSymbol",
+          "rawValue": "BRAF"
+        },
+        {
+          "metricId": "clinvar.assertion.condition.submittedRaw",
+          "rawValue": "Orphanet:ORPHA648"
+        },
+        {
+          "metricId": "clinvar.assertion.condition.reportedRaw",
+          "rawValue": "C0028326:Noonan syndrome"
+        },
+        {
+          "metricId": "clinvar.assertion.source.logicalName",
+          "rawValue": "submission_summary_2026-03.txt.gz"
+        },
+        {
+          "metricId": "clinvar.assertion.source.line",
+          "rawValue": "237119"
+        },
+        {
+          "metricId": "resource.clinvarVcf.id",
+          "rawValue": "CLINVAR_2026_03_21_GRCH38"
+        },
+        {
+          "metricId": "resource.clinvarVcf.version",
+          "rawValue": "ClinVar 2026-03-21 GRCh38"
+        },
+        {
+          "metricId": "resource.clinvarVcf.identityFingerprintSha256",
+          "rawValue": "20125a3041d57b5200f761c67f678cb85bdc122ef2d98b533e031986f1f7f836"
+        },
+        {
+          "metricId": "resource.vep.id",
+          "rawValue": "VEP_116_GRCH38"
+        },
+        {
+          "metricId": "resource.vep.version",
+          "rawValue": "VEP 116.0 / cache 116_GRCh38"
+        },
+        {
+          "metricId": "resource.vep.identityFingerprintSha256",
+          "rawValue": "43c0422c1d2f2bc2221c60a96433f1602de7205113f107d027deea0b7eabdbed"
+        },
+        {
+          "metricId": "resource.sidecar.id",
+          "rawValue": "CLINVAR_COMPARATOR_SIDECAR_2026_03_05_GRCH38"
+        },
+        {
+          "metricId": "resource.sidecar.version",
+          "rawValue": "ClinVar 2026-03-05 monthly tab-delimited archive"
+        },
+        {
+          "metricId": "resource.sidecar.identityFingerprintSha256",
+          "rawValue": "e0f51a58a2ed011e765438411c1c44378aa0352a6404f1e79393fbd8e6e5cfde"
+        }
+      ],
+      "derivedFromEvidenceIds": [],
+      "conflict": {
+        "status": "NONE",
+        "conflictIds": []
+      },
+      "review": {
+        "status": "NOT_REQUIRED",
+        "decision": "NONE",
+        "reviewRecordIds": []
+      },
+      "provenance": {
+        "producerId": "varvis-runtime-v2-adapter",
+        "producerVersion": "2.0.0-e2",
+        "producedAt": "2026-09-09T06:15:15.668583800Z",
+        "sourcePayloadSha256": "fd3e0eb08d78e6b0bdf618010f4acce49db636efa323aa042053b169272196be",
+        "identityProjectionSha256": "87935b79b35536ce0b559aaf6f02e4c6e740945c63f636a5f7bbfddaa7f17d88"
+      },
+      "deduplicationKey": "dedup-sha256-6fe38f928e98782fad403e154d72fb9a69c70136f5c6ec1c2de83883d5f1bc7b",
+      "evidenceId": "evidence-sha256-87935b79b35536ce0b559aaf6f02e4c6e740945c63f636a5f7bbfddaa7f17d88"
+    }
+  ]
+}

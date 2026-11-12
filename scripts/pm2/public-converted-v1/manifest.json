@@ -1,0 +1,17 @@
+{
+  "scope": "PUBLIC_ALLELE_SYNTHETIC_GENOTYPE_NOT_PATIENT",
+  "archivedSelection": "scripts/pm2/public-panel-v1/manifest.json ACTA1 GRCh38:1:229431730:C:G",
+  "originalSource": "https://www.ncbi.nlm.nih.gov/clinvar/variation/464138/",
+  "sourceAccession": "VCV000464138.9",
+  "source37Hgvs": "NC_000001.10:g.229567477C>G",
+  "expected38Hgvs": "NC_000001.11:g.229431730C>G",
+  "inputSha256": "6cb581e3d80c713b8c02f0745c355dad186e2ad30ab3adb1586e6ba57c7b7180",
+  "note": "Expected target is not conversion proof; normal uploaded pipeline must perform and verify conversion. Existing GN147 v2.0 only. No clinical classification claimed.",
+  "fixtureId": "PM2_PUBLIC_ACTA1_GRCH37_TO_GRCH38_V1",
+  "dataClass": "SYNTHETIC",
+  "sampleId": "PM2_PUBLIC_SYNTHETIC",
+  "existingPolicyId": "PM2_GN147_HGNC:129_MONDO:0100084_AUTOSOMAL_DOMINANT",
+  "normalFlow": "Normal multipart upload -> Picard -> Exomiser -> target VEP -> ordinary explicit synthetic declaration -> PM2 -> saved run",
+  "browserAcceptance": "NOT_PERFORMED; final confirmation belongs to the user",
+  "outcomeNotPrespecified": true
+}

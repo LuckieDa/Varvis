@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "spliceai-braf-mane-window-equivalence-v1",
+  "verifiedOn": "2026-09-09",
+  "geneSymbol": "BRAF",
+  "assembly": "GRCh38",
+  "strand": "-",
+  "coordinateConvention": "ALL_INTERVALS_1_BASED_INCLUSIVE",
+  "packageAnnotation": {
+    "designation": "GENCODE_V24_CANONICAL_GRCH38",
+    "logicalPath": "spliceai/annotations/grch38.txt",
+    "byteLength": 4250439,
+    "sha256": "565c0ea83f66b2210182364c3d626fef526229e3d02f444bab247329b6695f2c",
+    "transcriptionStart": 140734479,
+    "transcriptionEnd": 140924764,
+    "exons": [[140734479,140734770],[140739812,140739946],[140749287,140749418],[140753275,140753393],[140754187,140754233],[140776912,140777088],[140777991,140778075],[140781576,140781693],[140783021,140783157],[140787548,140787584],[140794308,140794467],[140800362,140800481],[140801412,140801560],[140807960,140808062],[140808892,140808995],[140834609,140834872],[140850111,140850212],[140924566,140924764]]
+  },
+  "maneAnnotation": {
+    "transcript": "ENST00000646891.2",
+    "protein": "ENSP00000493543.1",
+    "refseqTranscript": "NM_004333.6",
+    "sourceUrl": "https://rest.ensembl.org/lookup/id/ENST00000646891?expand=1;content-type=application/json",
+    "transcriptionStart": 140730665,
+    "transcriptionEnd": 140924929,
+    "exons": [[140730665,140734770],[140739812,140739946],[140749287,140749418],[140753275,140753393],[140754187,140754233],[140776912,140777088],[140777991,140778075],[140781576,140781693],[140783021,140783157],[140787548,140787584],[140794308,140794467],[140800362,140800481],[140801412,140801560],[140807960,140808062],[140808892,140808995],[140834609,140834872],[140850111,140850212],[140924566,140924929]]
+  },
+  "comparison": {
+    "fullTranscriptEqual": false,
+    "internalExonCount": 16,
+    "internalExonsEqual": true,
+    "spliceJunctionCount": 17,
+    "spliceJunctionsEqual": true,
+    "difference": "ONLY_THE_TWO_OUTERMOST_UTR_BOUNDARIES"
+  },
+  "inferencePolicy": {
+    "policyId": "SPLICEAI_1_3_1_RAW_UNPADDED_WINDOW_EQUIVALENCE_V1",
+    "sourceFile": "spliceai/utils.py",
+    "sourceSha256": "207e147c73bdc1970fdb176dcbf088883f9a58756bfeb0d93494e75018ae477c",
+    "mask": 0,
+    "distance": 4999,
+    "modelInputWidth": 19999,
+    "modelInputRadius": 9999,
+    "sourceMeaning": "With mask 0, exon-boundary masking is disabled. Transcript bounds affect gene inclusion and N-padding. An entire input window inside both transcript spans gives equal unpadded inputs with the same FASTA, strand and weights.",
+    "requiresExactPackageAndModelIdentity": true,
+    "requiresSameReferenceFasta": true,
+    "requiresPerAlleleWindowCheck": true,
+    "minimumUnpaddedPositionInclusive": 140744478,
+    "maximumUnpaddedPositionInclusive": 140914765,
+    "outsideVerifiedWindowOutcome": "NOT_EVALUATED",
+    "notClaimed": "GLOBAL_GENCODE24_MANE_TRANSCRIPT_IDENTITY"
+  },
+  "preselectedPositions": [140801531,140801533,140801537],
+  "modelInvocations": 0
+}

@@ -1,0 +1,2907 @@
+{
+  "schemaVersion": "bs1-development-policy-set-v1",
+  "formalEnabled": false,
+  "sourcePublicationState": "RELEASED_SOURCE_NOT_APPLICATION_APPROVAL",
+  "sourceScopes": [
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Recessive",
+          "preferredMondoId": "MONDO:0019501",
+          "preferredTitle": "Usher syndrome"
+        },
+        {
+          "preferredModeOfInheritance": "Autosomal Recessive",
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "CDH23",
+      "preferredTranscript": "NM_022124.6"
+    },
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Dominant",
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "COCH",
+      "preferredTranscript": "NM_004086.3"
+    },
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Recessive",
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "GJB2",
+      "preferredTranscript": "NM_004004.6"
+    },
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Dominant",
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "KCNQ4",
+      "preferredTranscript": "NM_004700.4"
+    },
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Dominant",
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "MYO6",
+      "preferredTranscript": "NM_004999.4"
+    },
+    {
+      "diseases": [
+        {
+          "preferredMondoId": "MONDO:0019501",
+          "preferredTitle": "Usher syndrome"
+        },
+        {
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "MYO7A",
+      "preferredTranscript": "NM_000260.4"
+    },
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Recessive",
+          "preferredMondoId": "MONDO:0010134",
+          "preferredTitle": "Pendred syndrome"
+        }
+      ],
+      "gene": "SLC26A4",
+      "preferredTranscript": "NM_000441.2"
+    },
+    {
+      "diseases": [
+        {
+          "preferredMondoId": "MONDO:0019497",
+          "preferredTitle": "nonsyndromic genetic deafness"
+        }
+      ],
+      "gene": "TECTA",
+      "preferredTranscript": "NM_005422.4"
+    },
+    {
+      "diseases": [
+        {
+          "preferredModeOfInheritance": "Autosomal Recessive",
+          "preferredMondoId": "MONDO:0019501",
+          "preferredTitle": "Usher syndrome"
+        }
+      ],
+      "gene": "USH2A",
+      "preferredTranscript": "NM_206933.4"
+    }
+  ],
+  "dualModeRule": {
+    "sourceLocator": "GN005 v2 PDF p16",
+    "modeSelection": "DUAL_MODE_USE_AR",
+    "requires": "Verified gene-disease association supports both modes; missing metadata is not evidence of dual inheritance"
+  },
+  "policies": [
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN017_3_1_BS1",
+      "version": "1.1.1",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn017-3.1",
+          "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+          "version": "3.1",
+          "sha256": "87d34bf90904413720591669d431018ea271d313da92b0d10fe46fc7d4fe2022",
+          "locator": "raw-010-contents-10.json#/data/3; complete rules and PM2 cross-rule FILTER restriction"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:11621",
+        "mondoId": "MONDO:0015967",
+        "modes": [
+          "AUTOSOMAL_DOMINANT"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_DOMINANT_STRONG",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.000033",
+              "unit": "fraction",
+              "originalText": ">= 1:30,000 (>=0.0033% or 0.000033); published decimal used, not exact reciprocal",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN017 v3.1 BS1"
+            }
+          ],
+          "sourceLocator": "GN017 v3.1 BS1"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN017_3_1_BS1-exceptions",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [],
+        "sourceLocator": "raw-010-contents-10.json#/data/3; complete rules and PM2 cross-rule FILTER restriction"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.1.1",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "RAW_UNKNOWN_FILTER_BY_BOUND_JOINT",
+          "missingSubtype": "OPTIONAL_WITH_BOUND_JOINT_FILTER",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": "",
+          "jointFilterDefinition": "GNOMAD_4_1_JOINT_FILTER"
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "COMPATIBLE",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN017 Grpmax FAF and ClinGen 2025-06-23 v3.0 combined FAF; conservative native-quality verification; no general exception waiver"
+      },
+      "interpretation": "Development adaptation, not ClinGen approval. No epidemiological threshold calculation. Transcript is not a frequency variable; exact versions remain necessary for unresolved nomenclature/exception mappings."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_CDH23_0019501",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:13733",
+        "mondoId": "MONDO:0019501",
+        "modes": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_STRONG",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.003",
+              "unit": "fraction",
+              "originalText": "0.003 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        },
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_SUPPORTING",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 2,
+          "strength": "SUPPORTING",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0007",
+              "unit": "fraction",
+              "originalText": "0.0007 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_022124.6. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_CDH23_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:13733",
+        "mondoId": "MONDO:0019497",
+        "modes": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_STRONG",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.003",
+              "unit": "fraction",
+              "originalText": "0.003 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        },
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_SUPPORTING",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 2,
+          "strength": "SUPPORTING",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0007",
+              "unit": "fraction",
+              "originalText": "0.0007 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_022124.6. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_COCH_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:2180",
+        "mondoId": "MONDO:0019497",
+        "modes": [
+          "AUTOSOMAL_DOMINANT"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_DOMINANT_STRONG",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0002",
+              "unit": "fraction",
+              "originalText": "0.0002 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_004086.3. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_GJB2_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:4284",
+        "mondoId": "MONDO:0019497",
+        "modes": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_STRONG",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.003",
+              "unit": "fraction",
+              "originalText": "0.003 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        },
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_SUPPORTING",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 2,
+          "strength": "SUPPORTING",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0007",
+              "unit": "fraction",
+              "originalText": "0.0007 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_004004.6. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_KCNQ4_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:6298",
+        "mondoId": "MONDO:0019497",
+        "modes": [
+          "AUTOSOMAL_DOMINANT"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_DOMINANT_STRONG",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0002",
+              "unit": "fraction",
+              "originalText": "0.0002 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_004700.4. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_MYO6_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:7605",
+        "mondoId": "MONDO:0019497",
+        "modes": [
+          "AUTOSOMAL_DOMINANT"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_DOMINANT_STRONG",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0002",
+              "unit": "fraction",
+              "originalText": "0.0002 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_004999.4. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_MYO7A_0019501",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "UNRESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:7606",
+        "mondoId": "MONDO:0019501",
+        "modes": [],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_000260.4. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_MYO7A_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "UNRESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:7606",
+        "mondoId": "MONDO:0019497",
+        "modes": [],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_000260.4. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_SLC26A4_0010134",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:8818",
+        "mondoId": "MONDO:0010134",
+        "modes": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_STRONG",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.003",
+              "unit": "fraction",
+              "originalText": "0.003 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        },
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_SUPPORTING",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 2,
+          "strength": "SUPPORTING",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0007",
+              "unit": "fraction",
+              "originalText": "0.0007 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_000441.2. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_TECTA_0019497",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "UNRESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:11720",
+        "mondoId": "MONDO:0019497",
+        "modes": [],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_005422.4. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    },
+    {
+      "schemaVersion": "population-frequency-policy-v2",
+      "policyId": "GN005_2_0_USH2A_0019501",
+      "version": "1.0.0",
+      "criterionId": "ACMG_AMP_2015:BS1",
+      "sources": [
+        {
+          "sourceId": "authority-clingen-gn005-2.0",
+          "url": "https://www.clinicalgenome.org/site/assets/files/7814/clingen_hl_acmg_specifications_cdh23_coch_gjb2_kcnq4_myo6_myo7a_slc26a4_tecta_ush2a_v2.pdf",
+          "version": "2.0",
+          "sha256": "33664273fc512406f894f019886f5795c898e4d4c1087a8ab5e28cb8789d915d",
+          "locator": "GN005 v2 complete PDF pp1,11,16,17"
+        }
+      ],
+      "sourceCompleteness": "COMPLETE",
+      "semanticSupport": "SUPPORTED",
+      "identityResolution": "RESOLVED",
+      "activation": "ISOLATED_DEVELOPMENT_ONLY",
+      "scope": {
+        "hgncId": "HGNC:12601",
+        "mondoId": "MONDO:0019501",
+        "modes": [
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "modeSelection": "EXACT_DECLARED_MODE",
+        "variantTypes": [
+          "SNV",
+          "SMALL_INSERTION",
+          "SMALL_DELETION"
+        ]
+      },
+      "statistic": {
+        "metricId": "gnomad.joint.faf95max",
+        "unit": "fraction",
+        "confidence": "95_PERCENT_LOWER_BOUND",
+        "ancestries": [
+          "afr",
+          "amr",
+          "eas",
+          "nfe",
+          "sas",
+          "mid"
+        ]
+      },
+      "tiers": [
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_STRONG",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 1,
+          "strength": "STRONG",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.003",
+              "unit": "fraction",
+              "originalText": "0.003 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        },
+        {
+          "tierId": "AUTOSOMAL_RECESSIVE_SUPPORTING",
+          "moi": "AUTOSOMAL_RECESSIVE",
+          "priority": 2,
+          "strength": "SUPPORTING",
+          "conditions": [
+            {
+              "fact": "FAF95",
+              "operator": "GTE",
+              "decimal": "0.0007",
+              "unit": "fraction",
+              "originalText": "0.0007 fraction (published decimal)",
+              "basis": "OFFICIAL_CONDITION",
+              "sourceLocator": "GN005 v2 PDF pp3,16"
+            }
+          ],
+          "sourceLocator": "GN005 v2 PDF pp3,16"
+        }
+      ],
+      "commonConditions": [
+        {
+          "fact": "AN",
+          "operator": "GT",
+          "decimal": "0",
+          "unit": "alleles",
+          "originalText": "Positive selected ancestry AN",
+          "basis": "LOCAL_ENGINEERING_SAFEGUARD",
+          "sourceLocator": "BS1 core quality contract"
+        }
+      ],
+      "exceptionSet": {
+        "setId": "GN005_2_0_complete_exclusion_table",
+        "version": "1.0.0",
+        "criterionId": "ACMG_AMP_2015:BS1",
+        "status": "COMPLETE_IN_PINNED_SCOPE",
+        "entries": [
+          {
+            "entryId": "GN005_v2_table_p17_row_1",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.35delG",
+            "protein": "p.Gly12Valfs*2",
+            "clinvarId": "17004",
+            "sourceLocator": "GN005 v2 PDF p17 row 1",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_2",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.235delC",
+            "protein": "p.Leu79Cysfs*3",
+            "clinvarId": "17014",
+            "sourceLocator": "GN005 v2 PDF p17 row 2",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_3",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.167delT",
+            "protein": "p.Leu56Argfs*26",
+            "clinvarId": "17010",
+            "sourceLocator": "GN005 v2 PDF p17 row 3",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_4",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.-22-2A>C",
+            "protein": "p.?",
+            "clinvarId": "375406",
+            "sourceLocator": "GN005 v2 PDF p17 row 4",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_5",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.71G>A",
+            "protein": "p.Trp24*",
+            "clinvarId": "17002",
+            "sourceLocator": "GN005 v2 PDF p17 row 5",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_6",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.34G>T",
+            "protein": "p.Gly12Cys",
+            "clinvarId": "44740",
+            "sourceLocator": "GN005 v2 PDF p17 row 6",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_7",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.109G>A",
+            "protein": "p.Val37Ile",
+            "clinvarId": "17023",
+            "sourceLocator": "GN005 v2 PDF p17 row 7",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_8",
+            "hgncId": "HGNC:4284",
+            "mondoId": "MONDO:0019497",
+            "transcript": "NM_004004.6",
+            "cdna": "c.101T>C",
+            "protein": "p.Met34Thr",
+            "clinvarId": "17000",
+            "sourceLocator": "GN005 v2 PDF p17 row 8",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_9",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.919-2A>G",
+            "protein": "p.?",
+            "clinvarId": "4840",
+            "sourceLocator": "GN005 v2 PDF p17 row 9",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          },
+          {
+            "entryId": "GN005_v2_table_p17_row_10",
+            "hgncId": "HGNC:8818",
+            "mondoId": "MONDO:0010134",
+            "transcript": "NM_000441.2",
+            "cdna": "c.349C>T",
+            "protein": "p.Leu117Phe",
+            "clinvarId": "43555",
+            "sourceLocator": "GN005 v2 PDF p17 row 10",
+            "identityStatus": "IDENTITY_UNRESOLVED",
+            "disposition": "NOT_APPLICABLE"
+          }
+        ],
+        "sourceLocator": "GN005 v2 PDF p17 all 10 rows"
+      },
+      "requiredContext": {
+        "transcript": "NOT_REQUIRED_BY_POLICY"
+      },
+      "qualityContract": {
+        "contractId": "BS1_GNOMAD41_QUALITY",
+        "version": "1.0.0",
+        "officialConditions": {
+          "rejectFilteredCalls": true,
+          "sourceLocator": "GN017 v3.1 PM2 instructions: filtered calls cannot support BA1/BS1; other pairs pending complete adaptation"
+        },
+        "releaseSemantics": {
+          "version": "4.1",
+          "headerSha256": "2875792c14a97bc0d69d96267f3532594d0cef1c1c9578cd7f0c43159aa0cc00",
+          "sourceLocator": "gnomad41-joint-chr1-header-v1.txt: FILTER and INFO; chromosome-1 header identity only",
+          "subtypeDot": "UNKNOWN_REQUIRES_NATIVE",
+          "missingSubtype": "REQUIRED",
+          "pValueField": "stat_union_p_value",
+          "pValueThreshold": "0.0001",
+          "pMissing": "REQUIRED_OR_UNKNOWN",
+          "notApplicableBasis": ""
+        },
+        "engineering": {
+          "kind": "LOCAL_ENGINEERING_SAFEGUARD",
+          "discordance": "ABSTAIN_SIGNIFICANT_UNEXPLAINED",
+          "afCountPrecision": "VCF_FLOAT32_WITH_DECIMAL_ROUNDING",
+          "sourceLocator": "A05 D2; count consistency tolerance is not a threshold tolerance"
+        }
+      },
+      "resourceCompatibility": {
+        "status": "PENDING_COMPATIBILITY_REVIEW",
+        "resourceVersion": "gnomAD joint v4.1 GRCh38",
+        "resourceSha256": "c7ab8fc9194cc8474c29fbc493cb6ce05c4958264d00c9faa40a6d569bc2ef2f",
+        "basis": "GN005 v2 PDF p16 AJ FAF clause versus 2025 v4 GroupMax ancestry exclusions unresolved; do not execute this pairing"
+      },
+      "interpretation": "Source table specifies NM_206933.4. PDF p16 requires AR benign thresholds when gene has both modes. Relationship modes not supplied by CSpec remain unresolved; do not invent them. Supporting and Strong are one criterion, not additive. No clinical classification."
+    }
+  ]
+}

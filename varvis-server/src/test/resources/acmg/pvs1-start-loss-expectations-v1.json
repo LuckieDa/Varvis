@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "pvs1-start-loss-independent-expectations-v1",
+  "dataClass": "SYNTHETIC",
+  "runtimeEligible": false,
+  "status": "EXPECTED_BEFORE_IMPLEMENTATION_NOT_EXECUTED",
+  "basis": {
+    "policy": "CLINGEN_SVI_PVS1_2018_START_LOSS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6185798/",
+    "section": "Initiation codon variants",
+    "design": "docs/execution/PVS1_START_LOSS_DESIGN_2026-11-01.md",
+    "note": "Expected outcomes are authored from the selected rule and explicit assumptions, not from evaluator output. Engineering reasons are project expectations, not additional clinical guidelines."
+  },
+  "baseFacts": {
+    "gene": "TEST_ONLY_GENE",
+    "referenceCds": "ATGAAACCCATGAAATAA",
+    "selectedCdsStart": 1,
+    "referenceCodon": "ATG",
+    "alternateCodon": "GTG",
+    "nearestDownstreamInFrameAtgCdsPosition": 10,
+    "strictUpstreamCdsInterval": [1, 9],
+    "policySelection": "GENERAL_SELECTED",
+    "mechanism": "ESTABLISHED_LOF",
+    "alternativeTranscriptReview": "NOT_FOUND_IN_ASSESSED_SET",
+    "transcriptReviewComplete": true,
+    "referenceSearchComplete": true,
+    "qualifiedIndependentPathogenicReferenceCdsPositions": [4],
+    "assumptions": ["exact disease and transcript identity", "complete assessed transcript set", "qualified source semantics", "reference classification independently justified", "no competing splice outcome"]
+  },
+  "cases": [
+    {"id":"SL01","description":"Positive strand: each of the three start bases","variants":[{"cdsPosition":1,"genomicPosition":100,"ref":"A","alt":"G","mutantCodon":"GTG"},{"cdsPosition":2,"genomicPosition":101,"ref":"T","alt":"C","mutantCodon":"ACG"},{"cdsPosition":3,"genomicPosition":102,"ref":"G","alt":"A","mutantCodon":"ATA"}],"overrides":{"strand":1},"expected":{"display":"MET","strength":"MODERATE"}},
+    {"id":"SL02","description":"Negative strand: genomic alleles are complemented in CDS","variants":[{"cdsPosition":1,"genomicPosition":102,"ref":"T","alt":"C","mutantCodon":"GTG"},{"cdsPosition":2,"genomicPosition":101,"ref":"A","alt":"G","mutantCodon":"ACG"},{"cdsPosition":3,"genomicPosition":100,"ref":"C","alt":"T","mutantCodon":"ATA"}],"overrides":{"strand":-1},"expected":{"display":"MET","strength":"MODERATE"}},
+    {"id":"SL03","description":"Completed bounded sources have no eligible upstream P reference","overrides":{"qualifiedIndependentPathogenicReferenceCdsPositions":[]},"expected":{"display":"MET","strength":"SUPPORTING"}},
+    {"id":"SL04","description":"Functional alternative transcript has different unaffected start","overrides":{"alternativeTranscriptReview":"FOUND"},"expected":{"display":"NOT_APPLICABLE","strength":"NONE"}},
+    {"id":"SL05","description":"Alternative transcript functional relevance unresolved","overrides":{"alternativeTranscriptReview":"UNRESOLVED"},"expected":{"display":"INSUFFICIENT_INFORMATION","strength":"NONE"}},
+    {"id":"SL06","description":"Transcript inventory incomplete","overrides":{"transcriptReviewComplete":false},"expected":{"display":"INSUFFICIENT_INFORMATION","strength":"NONE"}},
+    {"id":"SL07","description":"Reference query timed out, no known positive witness","overrides":{"referenceSearchComplete":false,"qualifiedIndependentPathogenicReferenceCdsPositions":[]},"expected":{"display":"SOURCE_UNAVAILABLE","strength":"NONE"}},
+    {"id":"SL08","description":"Only reference falls in candidate restart codon, not upstream","overrides":{"qualifiedIndependentPathogenicReferenceCdsPositions":[],"excludedReferenceCdsPositions":[10]},"expected":{"display":"MET","strength":"SUPPORTING"}},
+    {"id":"SL09","description":"Only reference is LP and baseline requires P; sources otherwise complete","overrides":{"qualifiedIndependentPathogenicReferenceCdsPositions":[],"excludedReferenceClassification":"LIKELY_PATHOGENIC"},"expected":{"display":"MET","strength":"SUPPORTING"}},
+    {"id":"SL10","description":"Reference classification conflict remains unresolved","overrides":{"upstreamReferenceReview":"CONFLICT"},"expected":{"display":"CONFLICT","strength":"NONE"}},
+    {"id":"SL11","description":"No downstream in-frame candidate in complete CDS","overrides":{"referenceCds":"ATGAAACCCTAA","nearestDownstreamInFrameAtgCdsPosition":null,"strictUpstreamCdsInterval":null},"expected":{"display":"INSUFFICIENT_INFORMATION","strength":"NONE"}},
+    {"id":"SL12","description":"Applicable specialist policy prohibits start-loss PVS1","overrides":{"policySelection":"PROHIBITED"},"expected":{"display":"NOT_APPLICABLE","strength":"NONE"}},
+    {"id":"SL13","description":"Applicable specialist conditions not implemented","overrides":{"policySelection":"UNSUPPORTED"},"expected":{"display":"RULE_NOT_IMPLEMENTED","strength":"NONE"}},
+    {"id":"SL14","description":"LoF mechanism unknown rather than established absent","overrides":{"mechanism":"UNRESOLVED"},"expected":{"display":"INSUFFICIENT_INFORMATION","strength":"NONE"}},
+    {"id":"SL15","description":"Exact disease mechanism establishes that LoF does not apply","overrides":{"mechanism":"NOT_LOF"},"expected":{"display":"NOT_APPLICABLE","strength":"NONE"}},
+    {"id":"SL16","description":"Reference allele conflicts with selected sequence","overrides":{"sequenceIdentity":"CONFLICT"},"expected":{"display":"CONFLICT","strength":"NONE"}},
+    {"id":"SL17","description":"Start-lost with extra NMD metadata retains start-loss route","overrides":{"consequence":"start_lost&NMD_transcript_variant"},"expected":{"display":"MET","strength":"MODERATE"}},
+    {"id":"SL18","description":"Complex allele is outside first-release SNV scope","overrides":{"variantType":"DELINS"},"expected":{"display":"SOFTWARE_UNSUPPORTED","strength":"NONE"}}
+  ],
+  "integrationRequirements": [
+    "PVS1 single selection and full selection agree in the same background",
+    "same biological facts with a different gene identity follow the same generic rules",
+    "candidate and source order do not affect results",
+    "target itself and aliases are not independent upstream witnesses",
+    "conflicting splice effects do not result in taking the highest score",
+    "save, separate-process read and export preserve status, strength and provenance",
+    "legacy NMD/splice/escape results still validate without start-loss fields"
+  ]
+}

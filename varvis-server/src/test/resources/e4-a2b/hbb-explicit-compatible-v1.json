@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "e4-a2b-explicit-compatible-fixtures-v1",
+  "choicesFixedAt": "2026-09-05T16:06:19.126225Z",
+  "selectionPolicy": "EXPLICIT_PUBLIC_VEP_AM_IDENTITY_COMPATIBILITY_V1",
+  "diseaseSpecificClinicalSelection": false,
+  "resourceDataClass": "PUBLIC",
+  "patientContextDataClass": "SYNTHETIC",
+  "hypothesisDataClass": "SYNTHETIC",
+  "candidateRankingDataClass": "SYNTHETIC",
+  "clinicalValidation": false,
+  "fixedChoices": [
+    {
+      "fixtureId": "E4_A2B_HBB_COMPATIBLE_V1",
+      "caseId": "public-hbb-compatible-e7v",
+      "symbol": "HBB",
+      "assembly": "GRCh38",
+      "contig": "11",
+      "position": 5227002,
+      "reference": "T",
+      "alternate": "A",
+      "ncbiGeneId": "3043",
+      "hgncId": "HGNC:4827",
+      "transcript": "ENST00000647020.1",
+      "syntheticHypothesisMondoId": "MONDO:0013517",
+      "syntheticHypothesisMoi": "AUTOSOMAL_RECESSIVE",
+      "clinvarVariationId": "15333",
+      "selectionPolicy": "EXPLICIT_PUBLIC_VEP_AM_IDENTITY_COMPATIBILITY_V1",
+      "selectionBasis": "User-authorized independent fixture using reverified real VEP and retained AM versioned-transcript/AA identity intersection; no score inspection and no disease-specific clinical selection",
+      "selectionSourceLocator": "e4-a2b-hbb-tp53-preparation-attempt-1/real-vep-output.jsonl#public-hbb-sickle/transcript=ENST00000647020.1",
+      "selectionSourceSha256": "a838739de7d8831b5ecf69863bc946aad91f4a45c73dfb564ab7e2c69b994fab",
+      "identityReceiptLocator": "e4-a2b-hbb-tp53-compatibility.json#HBB",
+      "expectedHgvsp": "ENSP00000494175.1:p.Glu7Val",
+      "expectedProteinIdentity": "ENSP00000494175.1",
+      "expectedAminoAcidChange": "E7V",
+      "independentOfHistoricalManeChoice": true
+    }
+  ]
+}

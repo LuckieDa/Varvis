@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "prediction-standard-calibration-v1",
+  "calibrationId": "am-standard-strength-20260918",
+  "version": "1.0.0",
+  "activation": "OFFLINE_ONLY",
+  "model": "ALPHAMISSENSE",
+  "scoreField": "am_pathogenicity",
+  "domain": "UNIT_INTERVAL",
+  "comparisonSemantics": "EXACT_PUBLISHED_THRESHOLDS_STANDARD_STRENGTH_PROJECTION",
+  "fullSourcePointBandingVerified": false,
+  "sourceThresholds": {
+    "PP3_VeryStrong": null,
+    "PP3_Strong": "0.990",
+    "PP3_+3": "0.973",
+    "PP3_Moderate": "0.906",
+    "PP3_Supporting": "0.792",
+    "BP4_VeryStrong": null,
+    "BP4_Strong": null,
+    "BP4_-3": "0.070",
+    "BP4_Moderate": "0.099",
+    "BP4_Supporting": "0.169"
+  },
+  "sources": {
+    "thresholdSha256": "77ca28d340758ae1b3316403afd5e56e0f9b1be3e9d262902b9efe19afb69612",
+    "readmeSha256": "edb3dd5e601014d0953b1ac55c0eefacaa79d6637f6a0df6d285043a06c106bc",
+    "thresholdLocator": "https://zenodo.org/records/13766399#results/discounted_comparator_tools_w3pts_bootstrap10k_thrs.txt",
+    "methodLocator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9748256/#FD8",
+    "methodScope": "Pejaver 2022 equations 8-10 and Table 2; Bergquist 2025 p2 explicitly reuses methods and post-hoc pipeline",
+    "finalTableLocator": "https://doi.org/10.1016/j.gim.2025.101402#Table1",
+    "localProjection": "User-authorized standard strengths; benign cap MODERATE; +2/+3 both MODERATE; no source point assignment"
+  },
+  "discrepancy": {
+    "status": "UNRESOLVED",
+    "source2024Plus3Lower": "0.973",
+    "final2025Plus3Lower": "0.972",
+    "source2024Minus3Upper": "0.070",
+    "scope": "Full source point banding, not standard strength projection"
+  },
+  "bands": [
+    {
+      "lower": "0",
+      "upper": "0.099",
+      "lowerInclusive": true,
+      "upperInclusive": true,
+      "direction": "BENIGN",
+      "calibratedStrength": "MODERATE",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.099",
+      "upper": "0.169",
+      "lowerInclusive": false,
+      "upperInclusive": true,
+      "direction": "BENIGN",
+      "calibratedStrength": "SUPPORTING",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.169",
+      "upper": "0.792",
+      "lowerInclusive": false,
+      "upperInclusive": false,
+      "direction": "UNINFORMATIVE",
+      "calibratedStrength": "NONE",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.792",
+      "upper": "0.906",
+      "lowerInclusive": true,
+      "upperInclusive": false,
+      "direction": "HARMFUL",
+      "calibratedStrength": "SUPPORTING",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.906",
+      "upper": "0.990",
+      "lowerInclusive": true,
+      "upperInclusive": false,
+      "direction": "HARMFUL",
+      "calibratedStrength": "MODERATE",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.990",
+      "upper": "1",
+      "lowerInclusive": true,
+      "upperInclusive": true,
+      "direction": "HARMFUL",
+      "calibratedStrength": "STRONG",
+      "sourcePointValue": null
+    }
+  ]
+}

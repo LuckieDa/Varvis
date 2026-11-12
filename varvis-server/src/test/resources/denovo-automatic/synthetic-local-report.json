@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "denovo-local-report-v1",
+  "sourceClass": "SYNTHETIC",
+  "reportId": "SYNTHETIC-report-1",
+  "reportVersion": "1",
+  "issuer": "SYNTHETIC software fixture; not a laboratory",
+  "caseId": "SYNTHETIC-case-1",
+  "familyId": "SYNTHETIC-family-1",
+  "target": {"assembly":"GRCh38","contig":"1","position":100,"reference":"A","alternate":"G","hgncId":"HGNC:SYNTHETIC"},
+  "members": [
+    {"role":"PROBAND","memberId":"child"},
+    {"role":"MOTHER","memberId":"mother"},
+    {"role":"FATHER","memberId":"father"}
+  ],
+  "tests": [
+    {"memberId":"child","result":"PRESENT","method":"SANGER","targetCoverage":"EXPLICIT_TARGET","detectionCapability":"ADEQUATE","quality":"VALID","basis":"SYNTHETIC target-specific result","limitations":"SYNTHETIC; no low-level mosaic exclusion"},
+    {"memberId":"mother","result":"ABSENT","method":"SANGER","targetCoverage":"EXPLICIT_TARGET","detectionCapability":"ADEQUATE","quality":"VALID","basis":"SYNTHETIC target-specific result","limitations":"SYNTHETIC; no low-level mosaic exclusion"},
+    {"memberId":"father","result":"ABSENT","method":"SANGER","targetCoverage":"EXPLICIT_TARGET","detectionCapability":"ADEQUATE","quality":"VALID","basis":"SYNTHETIC target-specific result","limitations":"SYNTHETIC; no low-level mosaic exclusion"}
+  ],
+  "parentage": [
+    {"parentId":"mother","probandId":"child","result":"CONFIRMED","method":"SNP_PANEL","basis":"SYNTHETIC informative SNP relationship report"},
+    {"parentId":"father","probandId":"child","result":"CONFIRMED","method":"SNP_PANEL","basis":"SYNTHETIC informative SNP relationship report"}
+  ],
+  "clinical": {
+    "probandId":"child","reportedDiseaseId":"MONDO:SYNTHETIC","inheritance":"AD",
+    "presentHpo":["HP:0001250"],"absentHpo":[],"familyHistory":"NO_SIMILAR_HISTORY",
+    "mosaicism":"NOT_REPORTED","siblingRecurrence":"NONE_REPORTED"
+  }
+}

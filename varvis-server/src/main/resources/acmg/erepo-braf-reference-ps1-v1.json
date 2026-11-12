@@ -1,0 +1,1749 @@
+{
+  "data": {
+    "@context": "https://erepo.genome.network/evrepo/api/context",
+    "@id": "https://cgerepoapi/evrepo/api/summary/classification/cf6b44e4-40ca-4713-b35e-0ad194eb2f96/doc/sepio/version/1.0.0",
+    "assertionMethod": {
+      "type": "VariantPathogenicityInterpretationGuideline"
+    },
+    "condition": {
+      "@id": "https://api.monarchinitiative.org/api/bioentity/phenotype/MONDO:0021060",
+      "id": "MONDO:0021060",
+      "label": "RASopathy",
+      "type": "GeneticCondition"
+    },
+    "evidenceLine": [
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1804",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1805",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1804/1806",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1804/1806",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1805",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1804",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1768",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1769",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1768/1770",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1768/1770",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1769",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1768",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1588",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1589",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1588/1590",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1588/1590",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1589",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1588",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1579",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1580",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1579/1581",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1579/1581",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1580",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1579",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1654",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1655",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1654/1656",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1654/1656",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1655",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1654",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1672",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1673",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1672/1674",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "Koudova 19416762: p.Leu245Phe variant was detected in a patient with a RASopathy. Martin Zenker has confirmed that this patient had the c.735A>C change.\n\nMartin Zenker also stated that his laboratory has 2 further unpublished de novo cases with this particular variant.",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1672/1674",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1673",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1672",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1798",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1799",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1798/1800",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant is absent from gnomAD",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1798/1800",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1799",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1798",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1624",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1625",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1624/1626",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant has been identified in 4 de novo occurrences one of which has been confirmed.\nGeneDx: de novo via whole exome sequencing.\n\nKoudova 19416762: p.Leu245Phe variant was detected in a patient with a RASopathy. Martin Zenker has confirmed that this patient had the c.735A>C change.\n\nMartin Zenker also stated that his laboratory has 2 further unpublished de novo cases with this particular variant.",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1624/1626",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1625",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1624",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1615",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1616",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1615/1617",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant is located in exon 6 which has been designated as a hot spot by the ClinGen RAS VCEP",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1615/1617",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1616",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1615",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1780",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1781",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1780/1782",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1780/1782",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1781",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1780",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1591",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1592",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1591/1593",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1591/1593",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1592",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1591",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1678",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1679",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1678/1680",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1678/1680",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1679",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1678",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1837",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1838",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1837/1839",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "The variant is located in the BRAF gene, which has been defined by the ClinGen RASopathy Expert Panel as a gene with a low rate of benign missense variants and pathogenic missense variants are common (PP2; PMID: 29493581).",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1837/1839",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1838",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1837",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1747",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1748",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1747/1749",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "Computational prediction tools and conservation analysis suggest that the p.Leu245Phe variant may impact the protein (PP3).",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1747/1749",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1748",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1747",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1702",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1703",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1702/1704",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1702/1704",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1703",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1702",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1606",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1607",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1606/1608",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "GeneDx- de novo via whole exome (PS2)\nLMM- detected in 1 patient with CFC; no parental data\nInvitae-detected in 2 patients with clinical features of RASopathy\n\nFulgent- identified in patient with motor and language delay (ID panel testing). Never got parental data\nKoudova 2009- de novo case.",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1606/1608",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1607",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1606",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1684",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1685",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1684/1686",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1684/1686",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1685",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1684",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1789",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1790",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1789/1791",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1789/1791",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1790",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1789",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1726",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1727",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1726/1728",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1726/1728",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1727",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1726",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1597",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1598",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1597/1599",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1597/1599",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1598",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1597",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1777",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1778",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1777/1779",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1777/1779",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1778",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1777",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1765",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1766",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1765/1767",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "comments": "This variant has more evidence and may be used as evidence for PS1 for the c.735A>T change, but the code cannot be used on this variant.",
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1765/1767",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1766",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1765",
+        "type": "EvidenceLine"
+      },
+      {
+        "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1828",
+        "evidenceItem": [
+          {
+            "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/ei/1/1829",
+            "contribution": [
+              {
+                "agent": {
+                  "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                  "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                  "type": "Agent"
+                },
+                "contributionDate": {
+                  "date": "2019/6/28",
+                  "description": "Date on which this evidence was provided"
+                },
+                "contributionRole": {
+                  "@id": "https://obofoundry.org/sepio/0000156",
+                  "id": "SEPIO:0000516",
+                  "label": "curator role",
+                  "type": "ContributoryRole"
+                },
+                "type": "Contribution"
+              }
+            ],
+            "evidenceLine": [
+              {
+                "@id": "https://erepo.genome.network/evrepo/api/interpretation/CA280027/MONDO:0021060/004/el/0/1828/1830",
+                "evidenceItem": [
+                  {
+                    "@id": "CG-PCER:curatorInference/CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "contribution": [
+                      {
+                        "agent": {
+                          "@id": "https://erepo.genome.network/evrepo/api//agent/CG_50021_EP155190663717081",
+                          "id": "CG-PCER-AGENT:CG_50021_EP155190663717081",
+                          "type": "Agent"
+                        },
+                        "contributionDate": {
+                          "date": "2019/6/28",
+                          "description": "Date on which this evidence was provided"
+                        },
+                        "contributionRole": {
+                          "@id": "https://obofoundry.org/sepio/0000156",
+                          "id": "SEPIO:0000516",
+                          "label": "curator role",
+                          "type": "ContributoryRole"
+                        },
+                        "type": "Contribution"
+                      }
+                    ],
+                    "id": "CA280027/MONDO:0021060/004/ci/CA280027/MONDO:0021060/004.002",
+                    "type": "InfFromBkgrndSciKnow"
+                  }
+                ],
+                "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1828/1830",
+                "type": "EvidenceLine"
+              }
+            ],
+            "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/1/1829",
+            "statementOutcome": {
+              "@id": "SEPIO:0000224",
+              "label": "Not Met"
+            },
+            "type": "CriterionAssessment"
+          }
+        ],
+        "evidenceStrength": {
+          "@id": "https://obofoundry.org/sepio"
+        },
+        "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004/0/1828",
+        "type": "EvidenceLine"
+      }
+    ],
+    "id": "CG-PCER-VARINT:CA280027/MONDO:0021060/004",
+    "metadata": {
+      "created": "2024-09-27T19:56:36.514Z",
+      "note": "DISCLAIMER: While the data/content in this document is approved by ClinGen expert panel(s), the SEPIO schema presented here is an initial prototype and has not been reviewed nor finalized by the ClinGen Data Exchange Modeling Team. We expect it to differ significantly from the final schema.",
+      "producedAtUTC": "Fri, 27 Sep 2024 19:56:36 -0000",
+      "schemaLabel": "Evidence Repository.Beta-1 (Unofficial)",
+      "version": "1.0.0"
+    },
+    "statementOutcome": {
+      "@id": "https://loinc.org/LA6668-3",
+      "id": "LN:LA6668-3",
+      "label": "Pathogenic"
+    },
+    "type": "VariantPathogenicityInterpretation",
+    "uuid": "cf6b44e4-40ca-4713-b35e-0ad194eb2f96",
+    "variant": {
+      "@id": "https://reg.genome.network/allele/CA280027",
+      "id": "CAR:CA280027",
+      "relatedContextualAllele": [
+        {
+          "alleleName": [
+            {
+              "name": "NM_004333.4:c.735A>C"
+            }
+          ],
+          "preferred": true
+        }
+      ],
+      "relatedIdentifier": [
+        {
+          "label": "NM_004333.4(BRAF):c.735A>C (p.Leu245Phe)"
+        }
+      ],
+      "type": "CAR"
+    }
+  },
+  "metadata": {
+    "rendered": {
+      "by": "https://erepo.genome.network/evrepo/api/summary/srvc",
+      "when": "2026-09-09T05:09:38.326Z"
+    }
+  },
+  "status": {
+    "code": 200,
+    "name": "OK"
+  }
+}

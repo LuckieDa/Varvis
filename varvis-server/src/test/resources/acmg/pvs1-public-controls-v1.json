@@ -1,0 +1,23 @@
+{
+  "profileSha256": "bd9702b1ea32b63c6ce0ee9f3a786cf601bc00192fdddb21a2814f096d74bafc",
+  "controls": [
+    {
+      "allele": "GRCh38:12:120989017:C:T",
+      "clinvarVariationId": "377965",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/377965/",
+      "hgvsc": "NM_000545.8:c.511C>T",
+      "hgvsp": "NP_000536.6:p.Arg171Ter",
+      "expectedPvs1": "MET",
+      "role": "PUBLIC_ENGINEERING_POSITIVE_NOT_CLINICAL_VALIDATION"
+    },
+    {
+      "allele": "GRCh38:12:120993678:C:T",
+      "clinvarVariationId": "420064",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/variation/420064/",
+      "hgvsc": "NM_000545.8:c.685C>T",
+      "hgvsp": "NP_000536.6:p.Arg229Ter",
+      "expectedPvs1": "MET",
+      "role": "PUBLIC_ENGINEERING_POSITIVE_NOT_CLINICAL_VALIDATION"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "panelId": "BS1_HNF1A_FIXED_PUBLIC_SIX_20260910",
+  "dataClass": "SYNTHETIC",
+  "provenance": "Planning commit 9990b69c0057461751cfab8e930253d99eea3734; fixed before implementation evaluation",
+  "genotype": "0/1:10,10:20:99 (GT:AD:DP:GQ), synthetic engineering control, not a patient",
+  "phenotypes": [],
+  "phenotypePurpose": "No patient HPO or affected status is invented. No-HPO STANDARD analysis follows existing Exomiser policy.",
+  "declaration": "Explicit source-backed HNF1A / HGNC:11621, MONDO:0015967, AUTOSOMAL_DOMINANT hypothesis; affected status UNKNOWN; independent frequency confirmation",
+  "topN": 20,
+  "analysisScope": "STANDARD",
+  "controls": [
+    {"allele": "GRCh38:12:120978778:A:G", "role": "LOW_FREQUENCY_NEGATIVE"},
+    {"allele": "GRCh38:12:120978819:C:T", "role": "LOW_FREQUENCY_AND_DIFFERENT_AF_FAF_ANCESTRY"},
+    {"allele": "GRCh38:12:120978828:G:T", "role": "LOW_FREQUENCY_NEGATIVE"},
+    {"allele": "GRCh38:12:120988847:G:A", "role": "BS1_RANGE_AND_DIFFERENT_AF_FAF_ANCESTRY"},
+    {"allele": "GRCh38:12:120989017:C:T", "role": "NO_RECORD_NOT_ZERO_DO_NOT_BORROW_C_TO_A"},
+    {"allele": "GRCh38:12:120993678:C:T", "role": "BETWEEN_PM2_AND_BS1"}
+  ]
+}

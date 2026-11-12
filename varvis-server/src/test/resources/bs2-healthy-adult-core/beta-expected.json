@@ -1,0 +1,11 @@
+{
+  "status": "MET",
+  "reasonCode": "BS2_REVIEWED_HEALTHY_ADULT_EARLY_FULL_PENETRANCE",
+  "direction": "BENIGN",
+  "baseStrength": "STRONG",
+  "appliedStrength": "STRONG",
+  "evidenceGroupId": "pp1-pp4-group-sha256-fe415ccedd06e3bc1848958df07824f22f793fba25e62b2e1efab67f120ce6ac",
+  "ageYears": 64,
+  "examinations": 3,
+  "expectedBeforeExecution": true
+}

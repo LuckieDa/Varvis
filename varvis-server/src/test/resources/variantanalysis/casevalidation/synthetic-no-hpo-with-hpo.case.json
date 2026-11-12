@@ -1,0 +1,53 @@
+{
+  "caseId": "synthetic-phenotype-reranking-demo",
+  "description": "Synthetic fixture for no-HPO vs with-HPO validation harness.",
+  "assembly": "GRCh38",
+  "vcfPath": null,
+  "probandSampleId": "synthetic-proband",
+  "hpoTerms": [
+    "HP:0001250",
+    "HP:0004322"
+  ],
+  "truthVariants": [
+    {
+      "chrom": "1",
+      "pos": 101,
+      "ref": "A",
+      "alt": "G",
+      "geneSymbol": "SYNPHENO1",
+      "transcript": "ENST_SYNPHENO1",
+      "zygosity": "heterozygous",
+      "inheritance": "unknown",
+      "label": "synthetic_truth_variant",
+      "note": "Synthetic truth variant expected to receive phenotype support."
+    }
+  ],
+  "truthGenes": [
+    {
+      "geneSymbol": "SYNPHENO1",
+      "label": "synthetic_truth_gene",
+      "note": "Synthetic truth gene expected to improve with HPO terms."
+    }
+  ],
+  "expected": {
+    "requireGeneAnnotation": true,
+    "requirePhenotypeSupport": true,
+    "compareNoHpoWithHpo": true,
+    "hitK": [
+      1,
+      5,
+      10,
+      50
+    ]
+  },
+  "metadata": {
+    "source": "SYNTHETIC_FIXTURE",
+    "deidentified": true,
+    "createdAt": "2026-06-30",
+    "notes": [
+      "No patient data.",
+      "No real VCF path.",
+      "No Exomiser, LIRICAL, trio, or benchmark dependency."
+    ]
+  }
+}

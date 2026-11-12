@@ -1,0 +1,365 @@
+server:
+  port: 8086
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+spring:
+  config:
+    import:
+      - ${VARVIS_DATABASE_LOCAL_CONFIG_IMPORT:optional:file:./config/database-local.properties}
+      - ${VARVIS_VARIANT_ANALYSIS_LOCAL_CONFIG_IMPORT:optional:file:./config/variant-analysis-local.properties}
+      - ${VARVIS_SERVER_DATABASE_LOCAL_CONFIG_IMPORT:optional:file:./varvis-server/config/database-local.properties}
+      - ${VARVIS_SERVER_VARIANT_ANALYSIS_LOCAL_CONFIG_IMPORT:optional:file:./varvis-server/config/variant-analysis-local.properties}
+      # Optional evidence wiring only; database and analysis storage stay in their own configuration.
+      - ${VARVIS_ACMG_LOCAL_CONFIG_IMPORT:optional:file:${VARVIS_PROJECT_ROOT:.}/local/private/config/acmg-evidence-current.properties}
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  servlet:
+    multipart:
+      max-file-size: ${VARVIS_MULTIPART_MAX_FILE_SIZE:512MB}
+      max-request-size: ${VARVIS_MULTIPART_MAX_REQUEST_SIZE:600MB}
+
+varvis:
+  datasource:
+    enabled: ${VARVIS_DB_ENABLED:true}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${VARVIS_DB_URL:}
+    username: ${VARVIS_DB_USERNAME:}
+    password: ${VARVIS_DB_PASSWORD:}
+    maximum-pool-size: 20
+    minimum-idle: 5
+    connection-timeout: ${VARVIS_DB_CONNECTION_TIMEOUT:PT30S}
+    validation-timeout: ${VARVIS_DB_VALIDATION_TIMEOUT:PT5S}
+    idle-timeout: ${VARVIS_DB_IDLE_TIMEOUT:PT1M}
+    # Blank defaults let the data-source policy keep embedded H2 connections stable
+    # for long external-engine stages while retaining the remote-MySQL defaults.
+    max-lifetime: ${VARVIS_DB_MAX_LIFETIME:}
+    keepalive-time: ${VARVIS_DB_KEEPALIVE_TIME:}
+    jdbc-connect-timeout: ${VARVIS_DB_JDBC_CONNECT_TIMEOUT:PT30S}
+    jdbc-socket-timeout: ${VARVIS_DB_JDBC_SOCKET_TIMEOUT:PT5M}
+    rewrite-batched-statements: ${VARVIS_DB_REWRITE_BATCHED_STATEMENTS:true}
+
+variant-analysis:
+  storage-root: ${VARVIS_VARIANT_ANALYSIS_ROOT:${java.io.tmpdir}/varvis-variant-analyses}
+  # Formal jobs, candidates, ACMG history and source files persist until explicit deletion.
+  # Former retention/cleanup-delay settings are ignored. Tool-owned scratch is cleaned separately.
+  max-upload-size-bytes: ${VARVIS_VARIANT_ANALYSIS_MAX_UPLOAD_BYTES:536870912}
+  max-expanded-size-bytes: ${VARVIS_VARIANT_ANALYSIS_MAX_EXPANDED_BYTES:1073741824}
+  analysis-assembly-policy: ${VARVIS_ANALYSIS_ASSEMBLY_POLICY:GRCh38}
+  # The product dispatches through Exomiser; runtime paths remain private local configuration.
+  default-engine: ${VARVIS_DEFAULT_ANALYSIS_ENGINE:EXOMISER}
+  acmg-business:
+    # Explicit PP3/BP4 submissions only; never automatically triggered by analysis completion.
+    enabled: ${VARVIS_ACMG_BUSINESS_ENABLED:false}
+    binding-directory: ${VARVIS_ACMG_BINDING_DIRECTORY:}
+    resource-root: ${VARVIS_RESOURCE_ROOT:}
+    reference-receipt-file: ${VARVIS_ACMG_REFERENCE_RECEIPT_FILE:}
+    reference-receipt-sha256: ${VARVIS_ACMG_REFERENCE_RECEIPT_SHA256:}
+    reference-receipt-locator: ${VARVIS_ACMG_REFERENCE_RECEIPT_LOCATOR:}
+    reference37-resource-root: ${VARVIS_ACMG_REFERENCE37_RESOURCE_ROOT:}
+    reference37-receipt-file: ${VARVIS_ACMG_REFERENCE37_RECEIPT_FILE:}
+    reference37-receipt-sha256: ${VARVIS_ACMG_REFERENCE37_RECEIPT_SHA256:}
+    reference37-receipt-locator: ${VARVIS_ACMG_REFERENCE37_RECEIPT_LOCATOR:}
+    # Opt-in local exomes policy: disables population network paths for this ACMG instance.
+    ba1-local-exomes-enabled: ${VARVIS_ACMG_BA1_LOCAL_EXOMES_ENABLED:false}
+    # Requires local BA1; shares its verified facts under a separate disease-specific BS1 scope.
+    bs1-local-exomes-enabled: ${VARVIS_ACMG_BS1_LOCAL_EXOMES_ENABLED:false}
+    # Selected LOCAL_COMPUTATIONAL_BATCH1 only; the all-sites manifest pins the unmodified EXOMES TSV and sparse index.
+    local-batch-pm2-adoption-file: ${VARVIS_PM2_LOCAL_ADOPTION_FILE:}
+    local-batch-pm2-adoption-sha256: ${VARVIS_PM2_LOCAL_ADOPTION_SHA256:}
+    local-batch-pm2-all-sites-file: ${VARVIS_PM2_ALL_SITES_MANIFEST:}
+    local-batch-pm2-all-sites-sha256: ${VARVIS_PM2_ALL_SITES_MANIFEST_SHA256:}
+    local-batch-pm2-general-absence-enabled: ${VARVIS_PM2_GENERAL_ABSENCE_ENABLED:false}
+    # Optional exact-version GENCODE material; does not authorize a prediction policy or replace a prebuilt model.
+    gencode-transcript-index-directory: ${VARVIS_GENCODE_TRANSCRIPT_INDEX_DIRECTORY:}
+    gencode-transcript-index-manifest-sha256: ${VARVIS_GENCODE_TRANSCRIPT_INDEX_MANIFEST_SHA256:}
+    local-batch-general-protein-model: ${VARVIS_LOCAL_BATCH_GENERAL_PROTEIN_MODEL:REVEL}
+    general-alphamissense-binding-file: ${VARVIS_GENERAL_ALPHAMISSENSE_BINDING_FILE:}
+    general-alphamissense-binding-sha256: ${VARVIS_GENERAL_ALPHAMISSENSE_BINDING_SHA256:}
+    alphamissense-source-transcript-index-directory: ${VARVIS_ALPHAMISSENSE_SOURCE_TRANSCRIPT_INDEX_DIRECTORY:}
+    alphamissense-source-transcript-index-manifest-sha256: ${VARVIS_ALPHAMISSENSE_SOURCE_TRANSCRIPT_INDEX_MANIFEST_SHA256:}
+    local-batch-general-revel-enabled: ${VARVIS_LOCAL_BATCH_GENERAL_REVEL_ENABLED:false}
+    prediction-specialization-catalog-file: ${VARVIS_PREDICTION_SPECIALIZATION_CATALOG_FILE:}
+    prediction-specialization-catalog-sha256: ${VARVIS_PREDICTION_SPECIALIZATION_CATALOG_SHA256:}
+    prediction-specialization-source-directory: ${VARVIS_PREDICTION_SPECIALIZATION_SOURCE_DIRECTORY:}
+    prediction-release-index-file: ${VARVIS_PREDICTION_RELEASE_INDEX_FILE:}
+    prediction-release-index-sha256: ${VARVIS_PREDICTION_RELEASE_INDEX_SHA256:}
+    prediction-mondo-file: ${VARVIS_PREDICTION_MONDO_FILE:}
+    prediction-mondo-sha256: ${VARVIS_PREDICTION_MONDO_SHA256:}
+    # BA1 catalog selection stays within explicit ACMG execution; false preserves the legacy BA1 path.
+    ba1-generalization-enabled: ${VARVIS_ACMG_BA1_GENERALIZATION_ENABLED:true}
+    # Configure a reviewed external snapshot and its SHA. A missing bundled fallback or invalid override blocks new BA1 selection.
+    ba1-specification-catalog-file: ${VARVIS_ACMG_BA1_SPECIFICATION_CATALOG_FILE:}
+    ba1-specification-catalog-sha256: ${VARVIS_ACMG_BA1_SPECIFICATION_CATALOG_SHA256:}
+    # Bounded HNF1A PM1 remains part of explicit business evaluation only.
+    pm1-enabled: ${VARVIS_ACMG_PM1_ENABLED:true}
+  exomiser:
+    # Phase B contract only: disabled until separately authorized runtime execution.
+    enabled: ${VARVIS_EXOMISER_ENABLED:false}
+    version: ${VARVIS_EXOMISER_VERSION:15.1.0}
+    data-version: ${VARVIS_EXOMISER_DATA_VERSION:2602}
+    java-executable: ${VARVIS_EXOMISER_JAVA:}
+    java-heap: ${VARVIS_EXOMISER_JAVA_HEAP:4g}
+    cli-jar: ${VARVIS_EXOMISER_CLI_JAR:}
+    data-directory: ${VARVIS_EXOMISER_DATA_DIRECTORY:}
+    analysis-template: ${VARVIS_EXOMISER_ANALYSIS_TEMPLATE:}
+    resource-fingerprint: ${VARVIS_EXOMISER_RESOURCE_FINGERPRINT:}
+    timeout: ${VARVIS_EXOMISER_TIMEOUT:PT30M}
+    # Exomiser remains primary; the remainder is transparent local evidence ordering.
+    engine-primary-weight: ${VARVIS_EXOMISER_PRIMARY_WEIGHT:0.75}
+  lift-over:
+    mode: ${VARVIS_LIFTOVER_MODE:DISABLED}
+    java-executable: ${VARVIS_LIFTOVER_JAVA:java}
+    java-heap: ${VARVIS_LIFTOVER_JAVA_HEAP:6g}
+    picard-jar: ${VARVIS_PICARD_JAR:}
+    hg19-to-hg38-chain: ${VARVIS_HG19_TO_HG38_CHAIN:}
+    timeout: ${VARVIS_LIFTOVER_TIMEOUT:PT30M}
+    min-match: ${VARVIS_LIFTOVER_MIN_MATCH:0.95}
+    evidence-projection-enabled: ${VARVIS_GRCH37_EVIDENCE_PROJECTION_ENABLED:true}
+    evidence-projection-max-candidates: ${VARVIS_GRCH37_EVIDENCE_PROJECTION_MAX_CANDIDATES:20000}
+  normalization:
+    mode: ${VARVIS_VCF_NORMALIZATION_MODE:COPY_ONLY}
+    bcftools-executable: ${VARVIS_BCFTOOLS_EXECUTABLE:bcftools}
+    timeout: ${VARVIS_BCFTOOLS_TIMEOUT:PT10M}
+    grch37-reference: ${VARVIS_GRCH37_REFERENCE:}
+    grch38-reference: ${VARVIS_GRCH38_REFERENCE:}
+    grch37-profile-id: ${VARVIS_GRCH37_REFERENCE_PROFILE_ID:}
+    grch38-profile-id: ${VARVIS_GRCH38_REFERENCE_PROFILE_ID:}
+    grch37-reference-sha256: ${VARVIS_GRCH37_REFERENCE_SHA256:}
+    grch38-reference-sha256: ${VARVIS_GRCH38_REFERENCE_SHA256:}
+    grch37-contig-alias-file: ${VARVIS_GRCH37_CONTIG_ALIAS_FILE:}
+    grch38-contig-alias-file: ${VARVIS_GRCH38_CONTIG_ALIAS_FILE:}
+  persistence:
+    table-prefix: ${VARVIS_VARIANT_ANALYSIS_TABLE_PREFIX:}
+    acceptance-table-bootstrap-enabled: ${VARVIS_VARIANT_ANALYSIS_ACCEPTANCE_TABLE_BOOTSTRAP:false}
+    batch-size: ${VARVIS_VARIANT_ANALYSIS_DB_BATCH_SIZE:500}
+    persist-observations: ${VARVIS_VARIANT_ANALYSIS_PERSIST_OBSERVATIONS:true}
+    persist-summary-only-interpretations: ${VARVIS_VARIANT_ANALYSIS_PERSIST_SUMMARY_ONLY_INTERPRETATIONS:false}
+    observation-batch-size: ${VARVIS_VARIANT_ANALYSIS_OBSERVATION_BATCH_SIZE:500}
+    interpretation-batch-size: ${VARVIS_VARIANT_ANALYSIS_INTERPRETATION_BATCH_SIZE:200}
+    interpretation-batch-max-bytes: ${VARVIS_VARIANT_ANALYSIS_INTERPRETATION_BATCH_MAX_BYTES:262144}
+    deletion-batch-size: ${VARVIS_VARIANT_ANALYSIS_DELETION_BATCH_SIZE:10000}
+    retry-attempts: ${VARVIS_VARIANT_ANALYSIS_DB_RETRY_ATTEMPTS:3}
+    retry-backoff: ${VARVIS_VARIANT_ANALYSIS_DB_RETRY_BACKOFF:PT1S}
+  large-file:
+    enabled: ${VARVIS_LARGE_FILE_ENABLED:true}
+    variant-threshold: ${VARVIS_LARGE_FILE_VARIANT_THRESHOLD:100000}
+    pass-variant-threshold: ${VARVIS_LARGE_FILE_PASS_VARIANT_THRESHOLD:50000}
+    candidate-hard-limit: ${VARVIS_LARGE_FILE_CANDIDATE_HARD_LIMIT:20000}
+    expensive-annotation-limit: ${VARVIS_LARGE_FILE_EXPENSIVE_ANNOTATION_LIMIT:20000}
+    default-skip-expensive-for-filtered: ${VARVIS_LARGE_FILE_DEFAULT_SKIP_EXPENSIVE_FOR_FILTERED:true}
+    phenotype-prior-rescue-enabled: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_ENABLED:true}
+    phenotype-prior-rescue-max-genes: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_MAX_GENES:50}
+    phenotype-prior-rescue-max-variants-per-gene: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_MAX_VARIANTS_PER_GENE:2}
+    phenotype-prior-rescue-padding-bp: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_PADDING_BP:2}
+    phenotype-prior-rescue-interval-file: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_INTERVAL_FILE:}
+    phenotype-prior-rescue-use-varvis-gene-coordinates: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_USE_VARVIS_GENE_COORDINATES:false}
+    phenotype-prior-rescue-gene-coordinate-assembly: ${VARVIS_LARGE_FILE_PHENOTYPE_PRIOR_RESCUE_GENE_COORDINATE_ASSEMBLY:}
+  cadd:
+    enabled: ${VARVIS_CADD_ENABLED:false}
+    version: ${VARVIS_CADD_VERSION:v1.7}
+    tabix-executable: ${VARVIS_TABIX_EXECUTABLE:tabix}
+    timeout: ${VARVIS_CADD_TIMEOUT:PT30M}
+    grch38-snv-file: ${VARVIS_CADD_GRCH38_SNV:}
+    grch38-indel-file: ${VARVIS_CADD_GRCH38_INDEL:}
+    query-window-bp: ${VARVIS_CADD_QUERY_WINDOW_BP:1000}
+    query-merge-gap-bp: ${VARVIS_CADD_QUERY_MERGE_GAP_BP:200}
+    parallelism: ${VARVIS_CADD_PARALLELISM:1}
+    max-candidates: ${VARVIS_CADD_MAX_CANDIDATES:5000}
+    batch-size: ${VARVIS_CADD_BATCH_SIZE:500}
+    batch-timeout: ${VARVIS_CADD_BATCH_TIMEOUT:PT60S}
+    fallback-max-variants: ${VARVIS_CADD_FALLBACK_MAX_VARIANTS:0}
+  clin-var:
+    enabled: ${VARVIS_CLINVAR_ENABLED:false}
+    version: ${VARVIS_CLINVAR_VERSION:local-grch38}
+    grch37-file: ${VARVIS_CLINVAR_GRCH37:}
+    grch38-file: ${VARVIS_CLINVAR_GRCH38:}
+    allow-vcf-info-fallback: ${VARVIS_CLINVAR_ALLOW_VCF_INFO_FALLBACK:true}
+    timeout: ${VARVIS_CLINVAR_TIMEOUT:PT10S}
+    compact-index:
+      enabled: ${VARVIS_CLINVAR_COMPACT_INDEX_ENABLED:false}
+      file: ${VARVIS_CLINVAR_COMPACT_INDEX_FILE:}
+      source-version: ${VARVIS_CLINVAR_COMPACT_INDEX_SOURCE_VERSION:}
+      batch-size: ${VARVIS_CLINVAR_COMPACT_INDEX_BATCH_SIZE:5000}
+      allow-tabix-fallback: ${VARVIS_CLINVAR_COMPACT_INDEX_ALLOW_TABIX_FALLBACK:true}
+  gnomad:
+    enabled: ${VARVIS_GNOMAD_ENABLED:false}
+    version: ${VARVIS_GNOMAD_VERSION:local-grch38}
+    tabix-executable: ${VARVIS_GNOMAD_TABIX_EXECUTABLE:tabix}
+    bcftools-executable: ${VARVIS_GNOMAD_BCFTOOLS_EXECUTABLE:bcftools}
+    grch38-files: ${VARVIS_GNOMAD_GRCH38_FILES:}
+    grch38-compact-files: ${VARVIS_GNOMAD_GRCH38_COMPACT_FILES:}
+    allow-full-vcf-fallback: ${VARVIS_GNOMAD_ALLOW_FULL_VCF_FALLBACK:false}
+    population-input-enabled: ${VARVIS_GNOMAD_POPULATION_INPUT_ENABLED:false}
+    allow-vcf-info-fallback: ${VARVIS_GNOMAD_ALLOW_VCF_INFO_FALLBACK:true}
+    allele-frequency-fields: ${VARVIS_GNOMAD_AF_FIELDS:AF,AF_popmax,gnomAD_AF,gnomADg_AF,gnomADe_AF}
+    timeout: ${VARVIS_GNOMAD_TIMEOUT:PT5M}
+    query-window-bp: ${VARVIS_GNOMAD_QUERY_WINDOW_BP:1000}
+    query-merge-gap-bp: ${VARVIS_GNOMAD_QUERY_MERGE_GAP_BP:200}
+    tabix-cache-mb: ${VARVIS_GNOMAD_TABIX_CACHE_MB:256}
+    parallelism: ${VARVIS_GNOMAD_PARALLELISM:4}
+  splice-ai:
+    enabled: ${VARVIS_SPLICEAI_ENABLED:false}
+    version: ${VARVIS_SPLICEAI_VERSION:v1.3.1}
+    grch38-file: ${VARVIS_SPLICEAI_GRCH38:}
+    resource-path: ${VARVIS_SPLICEAI_RESOURCE:}
+    index-path: ${VARVIS_SPLICEAI_INDEX:}
+    snv-resource-path: ${VARVIS_SPLICEAI_SNV_RESOURCE:}
+    snv-index-path: ${VARVIS_SPLICEAI_SNV_INDEX:}
+    indel-resource-path: ${VARVIS_SPLICEAI_INDEL_RESOURCE:}
+    indel-index-path: ${VARVIS_SPLICEAI_INDEL_INDEX:}
+    genome-build: ${VARVIS_SPLICEAI_GENOME_BUILD:GRCh38}
+    allow-vcf-info-fallback: ${VARVIS_SPLICEAI_ALLOW_VCF_INFO_FALLBACK:true}
+    timeout: ${VARVIS_SPLICEAI_TIMEOUT:PT10S}
+    max-candidates: ${VARVIS_SPLICEAI_MAX_CANDIDATES:0}
+    batch-size: ${VARVIS_SPLICEAI_BATCH_SIZE:500}
+    high-threshold: ${VARVIS_SPLICEAI_HIGH_THRESHOLD:0.8}
+    moderate-threshold: ${VARVIS_SPLICEAI_MODERATE_THRESHOLD:0.5}
+    low-threshold: ${VARVIS_SPLICEAI_LOW_THRESHOLD:0.2}
+  alpha-missense:
+    enabled: ${VARVIS_ALPHAMISSENSE_ENABLED:false}
+    version: ${VARVIS_ALPHAMISSENSE_VERSION:2023-08-03}
+    grch38-file: ${VARVIS_ALPHAMISSENSE_GRCH38:}
+    timeout: ${VARVIS_ALPHAMISSENSE_TIMEOUT:PT10S}
+  alpha-genome:
+    enabled: ${VARVIS_ALPHAGENOME_ENABLED:false}
+    version: ${VARVIS_ALPHAGENOME_VERSION:official-api}
+    python-executable: ${VARVIS_ALPHAGENOME_PYTHON:python}
+    script-path: ${VARVIS_ALPHAGENOME_SCRIPT:scripts/alphagenome_score_variant.py}
+    timeout: ${VARVIS_ALPHAGENOME_TIMEOUT:PT5M}
+    default-candidate-limit: ${VARVIS_ALPHAGENOME_DEFAULT_CANDIDATES:20}
+    max-candidate-limit: ${VARVIS_ALPHAGENOME_MAX_CANDIDATES:100}
+    sequence-length: ${VARVIS_ALPHAGENOME_SEQUENCE_LENGTH:1048576}
+    max-attempts: ${VARVIS_ALPHAGENOME_MAX_ATTEMPTS:2}
+  vep:
+    enabled: ${VARVIS_VEP_ENABLED:false}
+    executable: ${VARVIS_VEP_EXECUTABLE:}
+    cache-dir: ${VARVIS_VEP_CACHE_DIR:}
+    fasta: ${VARVIS_VEP_FASTA:}
+    plugins-dir: ${VARVIS_VEP_PLUGINS_DIR:}
+    loftee-enabled: ${VARVIS_LOFTEE_ENABLED:false}
+    execution-enabled: ${VARVIS_VEP_EXECUTION_ENABLED:false}
+    pre-ranking-enabled: ${VARVIS_VEP_PRE_RANKING_ENABLED:true}
+    pre-ranking-max-candidates: ${VARVIS_VEP_PRE_RANKING_MAX_CANDIDATES:3000}
+    pre-ranking-batch-size: ${VARVIS_VEP_PRE_RANKING_BATCH_SIZE:200}
+    pre-ranking-timeout-seconds: ${VARVIS_VEP_PRE_RANKING_TIMEOUT_SECONDS:600}
+    pre-ranking-cache-enabled: ${VARVIS_VEP_PRE_RANKING_CACHE_ENABLED:true}
+    pre-ranking-fail-open: ${VARVIS_VEP_PRE_RANKING_FAIL_OPEN:true}
+    pre-ranking-max-concurrency: ${VARVIS_VEP_PRE_RANKING_MAX_CONCURRENCY:1}
+    pre-ranking-temp-dir: ${VARVIS_VEP_PRE_RANKING_TEMP_DIR:}
+    pre-ranking-provider: ${VARVIS_VEP_PRE_RANKING_PROVIDER:vep}
+    pre-ranking-assembly-policy: ${VARVIS_VEP_PRE_RANKING_ASSEMBLY_POLICY:strict}
+    max-candidates: ${VARVIS_VEP_MAX_CANDIDATES:300}
+    batch-size: ${VARVIS_VEP_BATCH_SIZE:500}
+    timeout-seconds: ${VARVIS_VEP_TIMEOUT_SECONDS:600}
+    mode: ${VARVIS_VEP_MODE:top-candidates}
+    temp-dir: ${VARVIS_VEP_TEMP_DIR:}
+    cleanup-temp: ${VARVIS_VEP_CLEANUP_TEMP:true}
+    version: ${VARVIS_VEP_VERSION:not-configured}
+    ensembl-cache-version: ${VARVIS_ENSEMBL_CACHE_VERSION:not-configured}
+    mane-version: ${VARVIS_MANE_VERSION:not-configured}
+    loftee-version: ${VARVIS_LOFTEE_VERSION:not-configured}
+    resources:
+      GRCh38:
+        enabled: ${VARVIS_VEP_GRCH38_ENABLED:${VARVIS_VEP_ENABLED:false}}
+        assembly: GRCh38
+        executable: ${VARVIS_VEP_GRCH38_EXECUTABLE:${VARVIS_VEP_EXECUTABLE:}}
+        cache-dir: ${VARVIS_VEP_GRCH38_CACHE:${VARVIS_VEP_CACHE_DIR:}}
+        fasta: ${VARVIS_VEP_GRCH38_FASTA:${VARVIS_VEP_FASTA:}}
+        plugins-dir: ${VARVIS_VEP_GRCH38_PLUGINS_DIR:${VARVIS_VEP_PLUGINS_DIR:}}
+        species: ${VARVIS_VEP_GRCH38_SPECIES:homo_sapiens}
+        version: ${VARVIS_VEP_GRCH38_VERSION:${VARVIS_VEP_VERSION:not-configured}}
+        ensembl-cache-version: ${VARVIS_VEP_GRCH38_CACHE_VERSION:${VARVIS_ENSEMBL_CACHE_VERSION:not-configured}}
+        mane-version: ${VARVIS_VEP_GRCH38_MANE_VERSION:${VARVIS_MANE_VERSION:not-configured}}
+        loftee-version: ${VARVIS_VEP_GRCH38_LOFTEE_VERSION:${VARVIS_LOFTEE_VERSION:not-configured}}
+      GRCh37:
+        enabled: ${VARVIS_VEP_GRCH37_ENABLED:false}
+        assembly: GRCh37
+        executable: ${VARVIS_VEP_GRCH37_EXECUTABLE:${VARVIS_VEP_EXECUTABLE:}}
+        cache-dir: ${VARVIS_VEP_GRCH37_CACHE:}
+        fasta: ${VARVIS_VEP_GRCH37_FASTA:}
+        plugins-dir: ${VARVIS_VEP_GRCH37_PLUGINS_DIR:${VARVIS_VEP_PLUGINS_DIR:}}
+        species: ${VARVIS_VEP_GRCH37_SPECIES:homo_sapiens}
+        version: ${VARVIS_VEP_GRCH37_VERSION:${VARVIS_VEP_VERSION:not-configured}}
+        ensembl-cache-version: ${VARVIS_VEP_GRCH37_CACHE_VERSION:not-configured}
+        mane-version: ${VARVIS_VEP_GRCH37_MANE_VERSION:${VARVIS_MANE_VERSION:not-configured}}
+        loftee-version: ${VARVIS_VEP_GRCH37_LOFTEE_VERSION:${VARVIS_LOFTEE_VERSION:not-configured}}
+  acmg-ready:
+    enabled: ${VARVIS_ACMG_READY_ENABLED:true}
+    rule-version: ${VARVIS_ACMG_READY_RULE_VERSION:acmg-ready-v1}
+  hpo-ontology:
+    # One explicit trusted local OBO file; missing or mismatched integrity metadata disables lookup safely.
+    file: ${VARVIS_HPO_ONTOLOGY_FILE:}
+    expected-data-version: ${VARVIS_HPO_ONTOLOGY_EXPECTED_DATA_VERSION:}
+    expected-sha256: ${VARVIS_HPO_ONTOLOGY_EXPECTED_SHA256:}
+  phenotype-prior:
+    enabled: ${VARVIS_PHENOTYPE_PRIOR_ENABLED:false}
+    source: ${VARVIS_PHENOTYPE_PRIOR_SOURCE:LOCAL_FIXTURE}
+    local-file: ${VARVIS_PHENOTYPE_PRIOR_LOCAL_FILE:}
+    version: ${VARVIS_PHENOTYPE_PRIOR_VERSION:mock-v1}
+    max-genes: ${VARVIS_PHENOTYPE_PRIOR_MAX_GENES:50}
+    fail-on-malformed-row: ${VARVIS_PHENOTYPE_PRIOR_FAIL_ON_MALFORMED_ROW:false}
+    require-matching-hpo: ${VARVIS_PHENOTYPE_PRIOR_REQUIRE_MATCHING_HPO:true}
+    format: ${VARVIS_PHENOTYPE_PRIOR_FORMAT:TSV}
+    manifest-file: ${VARVIS_PHENOTYPE_PRIOR_MANIFEST_FILE:}
+  phenotype-ranking:
+    enabled: ${VARVIS_PHENOTYPE_RANKING_ENABLED:false}
+    max-score-boost: ${VARVIS_PHENOTYPE_RANKING_MAX_SCORE_BOOST:8.0}
+    strong-threshold: ${VARVIS_PHENOTYPE_RANKING_STRONG_THRESHOLD:0.8}
+    moderate-threshold: ${VARVIS_PHENOTYPE_RANKING_MODERATE_THRESHOLD:0.5}
+    low-threshold: ${VARVIS_PHENOTYPE_RANKING_LOW_THRESHOLD:0.2}
+    confidence-aware: ${VARVIS_PHENOTYPE_RANKING_CONFIDENCE_AWARE:true}
+    manual-source-confidence-cap: ${VARVIS_PHENOTYPE_RANKING_MANUAL_SOURCE_CONFIDENCE_CAP:0.9}
+    ai-source-confidence-cap: ${VARVIS_PHENOTYPE_RANKING_AI_SOURCE_CONFIDENCE_CAP:0.75}
+    unknown-source-confidence-cap: ${VARVIS_PHENOTYPE_RANKING_UNKNOWN_SOURCE_CONFIDENCE_CAP:0.8}
+    minimum-matched-term-coverage-factor: ${VARVIS_PHENOTYPE_RANKING_MINIMUM_MATCHED_TERM_COVERAGE_FACTOR:0.5}
+    minimum-confidence-for-boost: ${VARVIS_PHENOTYPE_RANKING_MINIMUM_CONFIDENCE_FOR_BOOST:0.5}
+    apply-to-filtered-common: ${VARVIS_PHENOTYPE_RANKING_APPLY_TO_FILTERED_COMMON:false}
+    apply-to-filtered-qc: ${VARVIS_PHENOTYPE_RANKING_APPLY_TO_FILTERED_QC:false}
+  trio:
+    enabled: ${VARVIS_TRIO_ENABLED:true}
+    pipeline-enabled: ${VARVIS_TRIO_PIPELINE_ENABLED:true}
+    evidence-only: ${VARVIS_TRIO_EVIDENCE_ONLY:true}
+    fail-open: ${VARVIS_TRIO_FAIL_OPEN:true}
+    min-depth-for-confirmed-ref: ${VARVIS_TRIO_MIN_DP_FOR_CONFIRMED_REF:10}
+    min-gq-for-confirmed-ref: ${VARVIS_TRIO_MIN_GQ_FOR_CONFIRMED_REF:20}
+    max-variants-for-trio-evidence: ${VARVIS_TRIO_MAX_VARIANTS_FOR_EVIDENCE:5000}
+    input-mode: ${VARVIS_TRIO_INPUT_MODE:DISABLED}
+    ranking-enabled: ${VARVIS_TRIO_RANKING_ENABLED:true}
+    ranking-max-score-contribution: ${VARVIS_TRIO_RANKING_MAX_SCORE_CONTRIBUTION:2.0}
+    ranking-allow-negative-penalty: ${VARVIS_TRIO_RANKING_ALLOW_NEGATIVE_PENALTY:false}
+    ranking-require-supported-confidence: ${VARVIS_TRIO_RANKING_REQUIRE_SUPPORTED_CONFIDENCE:true}
+    ranking-allow-possible-boost: ${VARVIS_TRIO_RANKING_ALLOW_POSSIBLE_BOOST:false}
+    ranking-enable-shared-parent-penalty: ${VARVIS_TRIO_RANKING_ENABLE_SHARED_PARENT_PENALTY:false}
+  ranking:
+    cadd-review-threshold: ${VARVIS_CADD_REVIEW_THRESHOLD:15}
+    cadd-highlight-threshold: ${VARVIS_CADD_HIGHLIGHT_THRESHOLD:20}
+    splice-ai-highlight-threshold: ${VARVIS_SPLICEAI_HIGHLIGHT_THRESHOLD:0.5}
+    alpha-missense-highlight-threshold: ${VARVIS_ALPHAMISSENSE_HIGHLIGHT_THRESHOLD:0.564}
+    common-allele-frequency-threshold: ${VARVIS_COMMON_AF_THRESHOLD:0.01}
+    very-common-allele-frequency-threshold: ${VARVIS_VERY_COMMON_AF_THRESHOLD:0.05}
+    min-depth: ${VARVIS_RANKING_MIN_DP:10}
+    min-genotype-quality: ${VARVIS_RANKING_MIN_GQ:20}
+    min-allele-balance: ${VARVIS_RANKING_MIN_AB:0.2}
+    compact-mode-threshold: ${VARVIS_RANKING_COMPACT_MODE_THRESHOLD:100000}
+    detailed-max-candidates: ${VARVIS_RANKING_DETAILED_MAX_CANDIDATES:5000}
+    version: ${VARVIS_RANKING_VERSION:tier-breakdown-v1}
+  llm-shadow:
+    # Privacy-bounded preview only. No network provider is shipped or configured.
+    enabled: ${VARVIS_LLM_SHADOW_ENABLED:false}
+    provider: ${VARVIS_LLM_SHADOW_PROVIDER:NONE}
+    candidate-limit: ${VARVIS_LLM_SHADOW_CANDIDATE_LIMIT:10}
+    max-output-characters: ${VARVIS_LLM_SHADOW_MAX_OUTPUT_CHARACTERS:1000}
+    prompt-schema-version: ${VARVIS_LLM_SHADOW_PROMPT_SCHEMA_VERSION:llm-shadow-input-v1}
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springframework.boot.autoconfigure: INFO
+    org.springframework.jdbc.core: WARN
+    org.nbscn.varvis: INFO

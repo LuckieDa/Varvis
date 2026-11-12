@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "general-revel-policy-v1",
+  "policyId": "PEJAVER_2022_REVEL_TABLE2_LOCAL",
+  "version": "1.0.0",
+  "model": "REVEL",
+  "adoption": "PROJECT_LOCAL_RESEARCH",
+  "defaultEnabled": false,
+  "clinicalAcceptance": false,
+  "modelSelection": "BEFORE_SCORE_LOOKUP_NO_FALLBACK",
+  "scope": "NATIVE_GRCH38_MISSENSE_SNV_EXACT_ENST_CDS_AND_VEP",
+  "specSearchScope": "LOCAL_SUPPORTED_CSPEC_AND_CONFIGURED_REVIEWED_POLICY_ONLY",
+  "aggregation": "REQUIRE_ALL_PUBLISHER_ISOFORMS_FOR_EXACT_ALLELE_TO_AGREE_NO_MAX_OR_VOTE",
+  "source": {
+    "doi": "10.1016/j.ajhg.2022.10.013",
+    "pmid": "36413997",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9748256/",
+    "locator": "Table 2 REVEL row and interval notation; Table 4 maximum clinical recommendations; Methods",
+    "publisherUrl": "https://sites.google.com/site/revelgenomics/downloads",
+    "transferScope": "Same original REVEL raw score; published GRCh38 coordinate plus allele-specific current CDS/VEP verification; no cross-isoform score disagreement admitted",
+    "validationClaim": "PROJECT_LOCAL_TECHNICAL_ADOPTION_NOT_REPLICATION_OF_CALIBRATION_STUDY"
+  },
+  "resourceBinding": {
+    "resourceId": "REVEL_PUBLISHER",
+    "resourceVersion": "1.3",
+    "identityFingerprintSha256": "8b39ce6854a79147bb728912342fdf9a3ae1281536168ba81c5e4152a6c11a6a",
+    "sourceArtifactSha256": "fc9e4cb400a14b5897644a58a4f35f46a01f923382f5399f69ccf12f6b655e21"
+  },
+  "combinationConstraints": {
+    "proteinOnly": true,
+    "completeBp4RequiresSplicing": true,
+    "maximumAppliedStrength": "STRONG",
+    "pm1PlusPp3MaximumPoints": 4,
+    "automaticCombinationAllowed": false,
+    "sameEffectAdoptionCheckRequired": true
+  },
+  "bands": [
+    {
+      "lower": "0",
+      "upper": "0.003",
+      "lowerInclusive": true,
+      "upperInclusive": true,
+      "direction": "BENIGN",
+      "calibratedStrength": "STRONG",
+      "sourceStrength": "VERY_STRONG",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.003",
+      "upper": "0.016",
+      "lowerInclusive": false,
+      "upperInclusive": true,
+      "direction": "BENIGN",
+      "calibratedStrength": "STRONG",
+      "sourceStrength": "STRONG",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.016",
+      "upper": "0.183",
+      "lowerInclusive": false,
+      "upperInclusive": true,
+      "direction": "BENIGN",
+      "calibratedStrength": "MODERATE",
+      "sourceStrength": "MODERATE",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.183",
+      "upper": "0.290",
+      "lowerInclusive": false,
+      "upperInclusive": true,
+      "direction": "BENIGN",
+      "calibratedStrength": "SUPPORTING",
+      "sourceStrength": "SUPPORTING",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.290",
+      "upper": "0.644",
+      "lowerInclusive": false,
+      "upperInclusive": false,
+      "direction": "UNINFORMATIVE",
+      "calibratedStrength": "NONE",
+      "sourceStrength": "NONE",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.644",
+      "upper": "0.773",
+      "lowerInclusive": true,
+      "upperInclusive": false,
+      "direction": "HARMFUL",
+      "calibratedStrength": "SUPPORTING",
+      "sourceStrength": "SUPPORTING",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.773",
+      "upper": "0.932",
+      "lowerInclusive": true,
+      "upperInclusive": false,
+      "direction": "HARMFUL",
+      "calibratedStrength": "MODERATE",
+      "sourceStrength": "MODERATE",
+      "sourcePointValue": null
+    },
+    {
+      "lower": "0.932",
+      "upper": "1",
+      "lowerInclusive": true,
+      "upperInclusive": true,
+      "direction": "HARMFUL",
+      "calibratedStrength": "STRONG",
+      "sourceStrength": "STRONG",
+      "sourcePointValue": null
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "hnf1a-transcript-model-v1",
+  "assembly": "GRCh38",
+  "contig": "12",
+  "strand": 1,
+  "hgncId": "HGNC:11621",
+  "ensemblGeneId": "ENSG00000135100",
+  "transcript": "ENST00000257555.11",
+  "refseqTranscript": "NM_000545.8",
+  "protein": "ENSP00000257555.5",
+  "refseqProtein": "NP_000536.6",
+  "cdsStartInCdna": 227,
+  "cdsLength": 1896,
+  "proteinLength": 631,
+  "cdsSequence": "ATGGTTTCTAAACTGAGCCAGCTGCAGACGGAGCTCCTGGCGGCCCTGCTCGAGTCAGGGCTGAGCAAAGAGGCACTGATCCAGGCACTGGGTGAGCCGGGGCCCTACCTCCTGGCTGGAGAAGGCCCCCTGGACAAGGGGGAGTCCTGCGGCGGCGGTCGAGGGGAGCTGGCTGAGCTGCCCAATGGGCTGGGGGAGACTCGGGGCTCCGAGGACGAGACGGACGACGATGGGGAAGACTTCACGCCACCCATCCTCAAAGAGCTGGAGAACCTCAGCCCTGAGGAGGCGGCCCACCAGAAAGCCGTGGTGGAGACCCTTCTGCAGGAGGACCCGTGGCGTGTGGCGAAGATGGTCAAGTCCTACCTGCAGCAGCACAACATCCCACAGCGGGAGGTGGTCGATACCACTGGCCTCAACCAGTCCCACCTGTCCCAACACCTCAACAAGGGCACTCCCATGAAGACGCAGAAGCGGGCCGCCCTGTACACCTGGTACGTCCGCAAGCAGCGAGAGGTGGCGCAGCAGTTCACCCATGCAGGGCAGGGAGGGCTGATTGAAGAGCCCACAGGTGATGAGCTACCAACCAAGAAGGGGCGGAGGAACCGTTTCAAGTGGGGCCCAGCATCCCAGCAGATCCTGTTCCAGGCCTATGAGAGGCAGAAGAACCCTAGCAAGGAGGAGCGAGAGACGCTAGTGGAGGAGTGCAATAGGGCGGAATGCATCCAGAGAGGGGTGTCCCCATCACAGGCACAGGGGCTGGGCTCCAACCTCGTCACGGAGGTGCGTGTCTACAACTGGTTTGCCAACCGGCGCAAAGAAGAAGCCTTCCGGCACAAGCTGGCCATGGACACGTACAGCGGGCCCCCCCCAGGGCCAGGCCCGGGACCTGCGCTGCCCGCTCACAGCTCCCCTGGCCTGCCTCCACCTGCCCTCTCCCCCAGTAAGGTCCACGGTGTGCGCTATGGACAGCCTGCGACCAGTGAGACTGCAGAAGTACCCTCAAGCAGCGGCGGTCCCTTAGTGACAGTGTCTACACCCCTCCACCAAGTGTCCCCCACGGGCCTGGAGCCCAGCCACAGCCTGCTGAGTACAGAAGCCAAGCTGGTCTCAGCAGCTGGGGGCCCCCTCCCCCCTGTCAGCACCCTGACAGCACTGCACAGCTTGGAGCAGACATCCCCAGGCCTCAACCAGCAGCCCCAGAACCTCATCATGGCCTCACTTCCTGGGGTCATGACCATCGGGCCTGGTGAGCCTGCCTCCCTGGGTCCTACGTTCACCAACACAGGTGCCTCCACCCTGGTCATCGGCCTGGCCTCCACGCAGGCACAGAGTGTGCCGGTCATCAACAGCATGGGCAGCAGCCTGACCACCCTGCAGCCCGTCCAGTTCTCCCAGCCGCTGCACCCCTCCTACCAGCAGCCGCTCATGCCACCTGTGCAGAGCCATGTGACCCAGAGCCCCTTCATGGCCACCATGGCTCAGCTGCAGAGCCCCCACGCCCTCTACAGCCACAAGCCCGAGGTGGCCCAGTACACCCACACGGGCCTGCTCCCGCAGACTATGCTCATCACCGACACCACCAACCTGAGCGCCCTGGCCAGCCTCACGCCCACCAAGCAGGTCTTCACCTCAGACACTGAGGCCTCCAGTGAGTCCGGGCTTCACACGCCGGCATCTCAGGCCACCACCCTCCACGTCCCCAGCCAGGACCCTGCCAGCATCCAGCACCTGCAGCCGGCCCACCGGCTCAGCGCCAGCCCCACAGTGTCCTCCAGCAGCCTGGTGCTGTACCAGAGCTCAGACTCCAGCAATGGCCAGAGCCACCTGCTGCCATCCAACCACAGCGTCATCGAGACCTTCATCTCCACCCAGATGGCCTCTTCCTCCCAGTAA",
+  "lastJunctionCdsPosition": 1768,
+  "exons": [
+    {
+      "ordinal": 1,
+      "genomicStart": 120978543,
+      "genomicEnd": 120979094,
+      "cdnaStart": 1,
+      "cdnaEnd": 552,
+      "cdsStart": -225,
+      "cdsEnd": 326
+    },
+    {
+      "ordinal": 2,
+      "genomicStart": 120988833,
+      "genomicEnd": 120989032,
+      "cdnaStart": 553,
+      "cdnaEnd": 752,
+      "cdsStart": 327,
+      "cdsEnd": 526
+    },
+    {
+      "ordinal": 3,
+      "genomicStart": 120993520,
+      "genomicEnd": 120993706,
+      "cdnaStart": 753,
+      "cdnaEnd": 939,
+      "cdsStart": 527,
+      "cdsEnd": 713
+    },
+    {
+      "ordinal": 4,
+      "genomicStart": 120994164,
+      "genomicEnd": 120994405,
+      "cdnaStart": 940,
+      "cdnaEnd": 1181,
+      "cdsStart": 714,
+      "cdsEnd": 955
+    },
+    {
+      "ordinal": 5,
+      "genomicStart": 120996262,
+      "genomicEnd": 120996413,
+      "cdnaStart": 1182,
+      "cdnaEnd": 1333,
+      "cdsStart": 956,
+      "cdsEnd": 1107
+    },
+    {
+      "ordinal": 6,
+      "genomicStart": 120996541,
+      "genomicEnd": 120996742,
+      "cdnaStart": 1334,
+      "cdnaEnd": 1535,
+      "cdsStart": 1108,
+      "cdsEnd": 1309
+    },
+    {
+      "ordinal": 7,
+      "genomicStart": 120997474,
+      "genomicEnd": 120997665,
+      "cdnaStart": 1536,
+      "cdnaEnd": 1727,
+      "cdsStart": 1310,
+      "cdsEnd": 1501
+    },
+    {
+      "ordinal": 8,
+      "genomicStart": 120999268,
+      "genomicEnd": 120999389,
+      "cdnaStart": 1728,
+      "cdnaEnd": 1849,
+      "cdsStart": 1502,
+      "cdsEnd": 1623
+    },
+    {
+      "ordinal": 9,
+      "genomicStart": 120999483,
+      "genomicEnd": 120999627,
+      "cdnaStart": 1850,
+      "cdnaEnd": 1994,
+      "cdsStart": 1624,
+      "cdsEnd": 1768
+    },
+    {
+      "ordinal": 10,
+      "genomicStart": 121001065,
+      "genomicEnd": 121002512,
+      "cdnaStart": 1995,
+      "cdnaEnd": 3442,
+      "cdsStart": 1769,
+      "cdsEnd": 3216
+    }
+  ],
+  "sourceRecords": [
+    {
+      "file": "cspec.html",
+      "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN017?version=3.1",
+      "sha256": "2fb9d33bb3d7a20f15997833eb2456eac762bcb06046f091545e805bfda5aa87",
+      "sizeBytes": 342281,
+      "retrievedOn": "2026-09-09"
+    },
+    {
+      "file": "hnf1a-pvs1-tree.bin",
+      "url": "https://cspec.genome.network/cspec/File/id/5af96ed6-b35b-4704-be42-fe069d5e7426/data",
+      "sha256": "6ae8621438a4fdfb7b3ab51bb29043d9fc7b98b9a23c95a76ccf513b3440f9fd",
+      "sizeBytes": 80201,
+      "retrievedOn": "2026-09-09"
+    },
+    {
+      "file": "refseq.gb",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000545.8&rettype=gbwithparts&retmode=text",
+      "sha256": "e3cc709dd773b5ab82bd58b8c9beaddf3e3ceffd91ef6d8657f76491a7e2726a",
+      "sizeBytes": 23591,
+      "retrievedOn": "2026-09-09"
+    },
+    {
+      "file": "ensembl-lookup.json",
+      "url": "https://rest.ensembl.org/lookup/id/ENST00000257555?expand=1&content-type=application/json",
+      "sha256": "b92c63a047953929693cec86584d41453df6e548cb0a7d29ff79dd321682e357",
+      "sizeBytes": 2568,
+      "retrievedOn": "2026-09-09"
+    },
+    {
+      "file": "ensembl-cds.json",
+      "url": "https://rest.ensembl.org/sequence/id/ENST00000257555?type=cds;content-type=application/json",
+      "sha256": "65b9a9a7a7554cf3a2036b663817c7d97f2239f5b29d3b458c23f4c1c0f364f1",
+      "sizeBytes": 1997,
+      "retrievedOn": "2026-09-09"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "denovo-model-config-v1",
+  "enabled": false,
+  "endpoint": "",
+  "model": "gemini-3-flash",
+  "expectedResponseModel": "",
+  "apiKeyEnvironment": "VARVIS_DENOVO_API_KEY",
+  "apiKeyFile": "",
+  "protocol": "openai-chat-completions-json-schema",
+  "pricingConfirmed": false,
+  "inputCreditsPerMillion": "1",
+  "outputCreditsPerMillion": "6",
+  "creditsPerRmb": "3",
+  "budgetRmb": "16.66",
+  "maxCalls": 100,
+  "maxOutputTokens": 8192,
+  "maxBilledOutputTokens": 16384,
+  "timeoutSeconds": 90,
+  "maxRequestBytes": 196608,
+  "maxResponseBytes": 524288
+}

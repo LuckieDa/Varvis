@@ -1,0 +1,792 @@
+{
+  "schemaVersion": "pp1-segregation-core-bundle-v1",
+  "context": {
+    "schemaVersion": "evidence-context-v3",
+    "contextId": "context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720",
+    "canonicalizationProfile": "varvis-json-c14n-v1",
+    "dataClass": "SYNTHETIC",
+    "scope": {
+      "analysisDomain": "GERMLINE",
+      "diseaseModel": "MENDELIAN",
+      "variantScope": "SMALL_SEQUENCE_VARIANT"
+    },
+    "variant": {
+      "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+      "variantType": "SNV",
+      "inputAllele": {
+        "assembly": "GRCh38",
+        "contig": "8",
+        "position": 840012,
+        "reference": "A",
+        "alternate": "G"
+      },
+      "normalizedAllele": {
+        "assembly": "GRCh38",
+        "contig": "8",
+        "position": 840012,
+        "reference": "A",
+        "alternate": "G"
+      },
+      "evidenceQueryAllele": {
+        "assembly": "GRCh38",
+        "contig": "8",
+        "position": 840012,
+        "reference": "A",
+        "alternate": "G"
+      },
+      "normalization": {
+        "status": "UNCHANGED",
+        "method": "TEST_ONLY_native_identity",
+        "methodVersion": "1.0",
+        "referenceSequenceSha256": "d13970cc5412bd5519e9422761262656a5d9cdcd62ea94af7b2c73cd1bc60a30",
+        "refValidation": "MATCH"
+      },
+      "assemblyLineage": {
+        "mappingStatus": "NATIVE"
+      }
+    },
+    "gene": {
+      "hgncId": "HGNC:940012",
+      "symbol": "TESTPP1B"
+    },
+    "disease": {
+      "mondoId": "MONDO:0940012",
+      "label": "TEST_ONLY_pp1_beta_fictional_disease"
+    },
+    "moi": "AUTOSOMAL_DOMINANT",
+    "patientContext": {
+      "patientContextId": "patient-context-test-pp1-beta",
+      "familyContextId": "family-context-test-pp1-beta",
+      "role": "PROBAND",
+      "affectedStatus": "AFFECTED",
+      "sex": "UNKNOWN"
+    },
+    "contextCompleteness": {
+      "status": "COMPLETE",
+      "missingFields": []
+    }
+  },
+  "observations": [
+    {
+      "facts": {
+        "schemaVersion": "nuclear-family-observation-v1",
+        "observationId": "TEST_ONLY_pp1_beta_observation",
+        "observationVersion": "TEST_ONLY_PP1_1",
+        "occurrenceId": "TEST_ONLY_pp1_beta_occurrence",
+        "caseId": "TEST_ONLY_pp1_beta_case",
+        "familyId": "family-context-test-pp1-beta",
+        "binding": {
+          "observationId": "TEST_ONLY_pp1_beta_observation",
+          "occurrenceId": "TEST_ONLY_pp1_beta_occurrence",
+          "caseId": "TEST_ONLY_pp1_beta_case",
+          "contextId": "context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720",
+          "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+          "hgncId": "HGNC:940012",
+          "mondoId": "MONDO:0940012",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-pp1-beta",
+          "familyContextId": "family-context-test-pp1-beta"
+        },
+        "variant": {
+          "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+          "variantType": "SNV",
+          "inputAllele": {
+            "assembly": "GRCh38",
+            "contig": "8",
+            "position": 840012,
+            "reference": "A",
+            "alternate": "G"
+          },
+          "normalizedAllele": {
+            "assembly": "GRCh38",
+            "contig": "8",
+            "position": 840012,
+            "reference": "A",
+            "alternate": "G"
+          },
+          "evidenceQueryAllele": {
+            "assembly": "GRCh38",
+            "contig": "8",
+            "position": 840012,
+            "reference": "A",
+            "alternate": "G"
+          },
+          "normalization": {
+            "status": "UNCHANGED",
+            "method": "TEST_ONLY_native_identity",
+            "methodVersion": "1.0",
+            "referenceSequenceSha256": "d13970cc5412bd5519e9422761262656a5d9cdcd62ea94af7b2c73cd1bc60a30",
+            "refValidation": "MATCH"
+          },
+          "assemblyLineage": {
+            "mappingStatus": "NATIVE"
+          }
+        },
+        "structure": "NUCLEAR",
+        "parentRelatedness": "UNRELATED_CONFIRMED",
+        "members": [
+          {
+            "memberId": "TEST_ONLY_pp1_beta_father",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_father_person",
+            "sampleId": "TEST_ONLY_pp1_beta_father_sample",
+            "role": "FATHER",
+            "proband": false,
+            "fatherId": null,
+            "motherId": null,
+            "independence": "INDEPENDENT_SINGLETON",
+            "affectedStatus": "AFFECTED",
+            "clinical": {
+              "observedAt": "2026-10-01T00:00:00Z",
+              "ageYears": 40,
+              "mondoId": "MONDO:0940012",
+              "mechanism": "LOSS_OF_FUNCTION",
+              "diagnosis": "SAME_DISEASE_CONFIRMED",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ],
+              "review": {
+                "status": "REVIEWED",
+                "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+                "date": "2026-10-01T00:00:00Z",
+                "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+                "sourceIds": [
+                  "TEST_ONLY_pp1_beta_facts_source"
+                ]
+              }
+            },
+            "detection": {
+              "status": "TESTED",
+              "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+              "coverage": "COMPLETE",
+              "mosaicism": "NONMOSAIC",
+              "observedAt": "2026-10-01T00:00:00Z",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ],
+              "review": {
+                "status": "REVIEWED",
+                "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+                "date": "2026-10-01T00:00:00Z",
+                "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+                "sourceIds": [
+                  "TEST_ONLY_pp1_beta_facts_source"
+                ]
+              }
+            }
+          },
+          {
+            "memberId": "TEST_ONLY_pp1_beta_mother",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_mother_person",
+            "sampleId": "TEST_ONLY_pp1_beta_mother_sample",
+            "role": "MOTHER",
+            "proband": false,
+            "fatherId": null,
+            "motherId": null,
+            "independence": "INDEPENDENT_SINGLETON",
+            "affectedStatus": "UNAFFECTED",
+            "clinical": {
+              "observedAt": "2026-10-01T00:00:00Z",
+              "ageYears": 40,
+              "mondoId": "MONDO:0940012",
+              "mechanism": "LOSS_OF_FUNCTION",
+              "diagnosis": "UNAFFECTED_CONFIRMED",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ],
+              "review": {
+                "status": "REVIEWED",
+                "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+                "date": "2026-10-01T00:00:00Z",
+                "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+                "sourceIds": [
+                  "TEST_ONLY_pp1_beta_facts_source"
+                ]
+              }
+            },
+            "detection": {
+              "status": "TESTED",
+              "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+              "coverage": "COMPLETE",
+              "mosaicism": "NONMOSAIC",
+              "observedAt": "2026-10-01T00:00:00Z",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ],
+              "review": {
+                "status": "REVIEWED",
+                "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+                "date": "2026-10-01T00:00:00Z",
+                "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+                "sourceIds": [
+                  "TEST_ONLY_pp1_beta_facts_source"
+                ]
+              }
+            }
+          },
+          {
+            "memberId": "patient-context-test-pp1-beta",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_child1_person",
+            "sampleId": "TEST_ONLY_pp1_beta_child1_sample",
+            "role": "CHILD",
+            "proband": true,
+            "fatherId": "TEST_ONLY_pp1_beta_father",
+            "motherId": "TEST_ONLY_pp1_beta_mother",
+            "independence": "INDEPENDENT_SINGLETON",
+            "affectedStatus": "AFFECTED",
+            "clinical": {
+              "observedAt": "2026-10-01T00:00:00Z",
+              "ageYears": 10,
+              "mondoId": "MONDO:0940012",
+              "mechanism": "LOSS_OF_FUNCTION",
+              "diagnosis": "SAME_DISEASE_CONFIRMED",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ],
+              "review": {
+                "status": "REVIEWED",
+                "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+                "date": "2026-10-01T00:00:00Z",
+                "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+                "sourceIds": [
+                  "TEST_ONLY_pp1_beta_facts_source"
+                ]
+              }
+            },
+            "detection": {
+              "status": "TESTED",
+              "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+              "coverage": "COMPLETE",
+              "mosaicism": "NONMOSAIC",
+              "observedAt": "2026-10-01T00:00:00Z",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ],
+              "review": {
+                "status": "REVIEWED",
+                "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+                "date": "2026-10-01T00:00:00Z",
+                "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+                "sourceIds": [
+                  "TEST_ONLY_pp1_beta_facts_source"
+                ]
+              }
+            }
+          }
+        ],
+        "records": [
+          {
+            "recordId": "TEST_ONLY_pp1_beta_father_record",
+            "memberId": "TEST_ONLY_pp1_beta_father",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_father_person",
+            "sampleId": "TEST_ONLY_pp1_beta_father_sample",
+            "allele": {
+              "assembly": "GRCh38",
+              "contig": "8",
+              "position": 840012,
+              "reference": "A",
+              "alternate": "G"
+            },
+            "geneSymbol": "TESTPP1B",
+            "locator": "TEST_ONLY_pp1_beta_original_vcf#father",
+            "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+            "format": "GT:DP:GQ:AD:FT",
+            "rawSample": "0/1:40:60:20,20:PASS",
+            "recordFilter": "PASS",
+            "observation": {
+              "genotype": "0/1",
+              "phased": false,
+              "depth": 40,
+              "genotypeQuality": 60,
+              "alleleDepth": "20,20",
+              "sampleFilter": "PASS",
+              "call": "HET_ALT",
+              "targetAltIndex": 1,
+              "ploidy": 2
+            },
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_facts_source"
+            ]
+          },
+          {
+            "recordId": "TEST_ONLY_pp1_beta_mother_record",
+            "memberId": "TEST_ONLY_pp1_beta_mother",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_mother_person",
+            "sampleId": "TEST_ONLY_pp1_beta_mother_sample",
+            "allele": {
+              "assembly": "GRCh38",
+              "contig": "8",
+              "position": 840012,
+              "reference": "A",
+              "alternate": "G"
+            },
+            "geneSymbol": "TESTPP1B",
+            "locator": "TEST_ONLY_pp1_beta_original_vcf#mother",
+            "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+            "format": "GT:DP:GQ:AD:FT",
+            "rawSample": "0/0:40:60:40,0:PASS",
+            "recordFilter": "PASS",
+            "observation": {
+              "genotype": "0/0",
+              "phased": false,
+              "depth": 40,
+              "genotypeQuality": 60,
+              "alleleDepth": "40,0",
+              "sampleFilter": "PASS",
+              "call": "HOM_REF",
+              "targetAltIndex": 1,
+              "ploidy": 2
+            },
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_facts_source"
+            ]
+          },
+          {
+            "recordId": "TEST_ONLY_pp1_beta_child1_record",
+            "memberId": "patient-context-test-pp1-beta",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_child1_person",
+            "sampleId": "TEST_ONLY_pp1_beta_child1_sample",
+            "allele": {
+              "assembly": "GRCh38",
+              "contig": "8",
+              "position": 840012,
+              "reference": "A",
+              "alternate": "G"
+            },
+            "geneSymbol": "TESTPP1B",
+            "locator": "TEST_ONLY_pp1_beta_original_vcf#child1",
+            "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+            "format": "GT:DP:GQ:AD:FT",
+            "rawSample": "0/1:40:60:20,20:PASS",
+            "recordFilter": "PASS",
+            "observation": {
+              "genotype": "0/1",
+              "phased": false,
+              "depth": 40,
+              "genotypeQuality": 60,
+              "alleleDepth": "20,20",
+              "sampleFilter": "PASS",
+              "call": "HET_ALT",
+              "targetAltIndex": 1,
+              "ploidy": 2
+            },
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_facts_source"
+            ]
+          }
+        ],
+        "parentage": [
+          {
+            "relationshipId": "TEST_ONLY_pp1_beta_father_child1",
+            "parentMemberId": "TEST_ONLY_pp1_beta_father",
+            "childMemberId": "patient-context-test-pp1-beta",
+            "relationship": "BIOLOGICAL",
+            "status": "CONFIRMED",
+            "method": "TEST_ONLY_INDEPENDENT_RELATIONSHIP_TEST_V1",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_facts_source"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+              "date": "2026-10-01T00:00:00Z",
+              "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ]
+            }
+          },
+          {
+            "relationshipId": "TEST_ONLY_pp1_beta_mother_child1",
+            "parentMemberId": "TEST_ONLY_pp1_beta_mother",
+            "childMemberId": "patient-context-test-pp1-beta",
+            "relationship": "BIOLOGICAL",
+            "status": "CONFIRMED",
+            "method": "TEST_ONLY_INDEPENDENT_RELATIONSHIP_TEST_V1",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_facts_source"
+            ],
+            "review": {
+              "status": "REVIEWED",
+              "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+              "date": "2026-10-01T00:00:00Z",
+              "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+              "sourceIds": [
+                "TEST_ONLY_pp1_beta_facts_source"
+              ]
+            }
+          }
+        ],
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_pp1_beta_facts_source",
+            "recordId": "TEST_ONLY_pp1_beta_facts_document",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY_pp1_beta_original/facts",
+            "acquiredAt": "2026-10-01T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"nuclear-family-observation-v1\",\"observationId\":\"TEST_ONLY_pp1_beta_observation\",\"observationVersion\":\"TEST_ONLY_PP1_1\",\"occurrenceId\":\"TEST_ONLY_pp1_beta_occurrence\",\"caseId\":\"TEST_ONLY_pp1_beta_case\",\"familyId\":\"family-context-test-pp1-beta\",\"binding\":{\"observationId\":\"TEST_ONLY_pp1_beta_observation\",\"occurrenceId\":\"TEST_ONLY_pp1_beta_occurrence\",\"caseId\":\"TEST_ONLY_pp1_beta_case\",\"contextId\":\"context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720\",\"alleleId\":\"allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0\",\"hgncId\":\"HGNC:940012\",\"mondoId\":\"MONDO:0940012\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-pp1-beta\",\"familyContextId\":\"family-context-test-pp1-beta\"},\"variant\":{\"alleleId\":\"allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0\",\"variantType\":\"SNV\",\"inputAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"8\",\"position\":840012,\"reference\":\"A\",\"alternate\":\"G\"},\"normalizedAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"8\",\"position\":840012,\"reference\":\"A\",\"alternate\":\"G\"},\"evidenceQueryAllele\":{\"assembly\":\"GRCh38\",\"contig\":\"8\",\"position\":840012,\"reference\":\"A\",\"alternate\":\"G\"},\"normalization\":{\"status\":\"UNCHANGED\",\"method\":\"TEST_ONLY_native_identity\",\"methodVersion\":\"1.0\",\"referenceSequenceSha256\":\"d13970cc5412bd5519e9422761262656a5d9cdcd62ea94af7b2c73cd1bc60a30\",\"refValidation\":\"MATCH\"},\"assemblyLineage\":{\"mappingStatus\":\"NATIVE\"}},\"structure\":\"NUCLEAR\",\"parentRelatedness\":\"UNRELATED_CONFIRMED\",\"members\":[{\"memberId\":\"TEST_ONLY_pp1_beta_father\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_father_person\",\"sampleId\":\"TEST_ONLY_pp1_beta_father_sample\",\"role\":\"FATHER\",\"proband\":false,\"fatherId\":null,\"motherId\":null,\"independence\":\"INDEPENDENT_SINGLETON\",\"affectedStatus\":\"AFFECTED\",\"clinical\":{\"observedAt\":\"2026-10-01T00:00:00Z\",\"ageYears\":40,\"mondoId\":\"MONDO:0940012\",\"mechanism\":\"LOSS_OF_FUNCTION\",\"diagnosis\":\"SAME_DISEASE_CONFIRMED\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}},\"detection\":{\"status\":\"TESTED\",\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"coverage\":\"COMPLETE\",\"mosaicism\":\"NONMOSAIC\",\"observedAt\":\"2026-10-01T00:00:00Z\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}}},{\"memberId\":\"TEST_ONLY_pp1_beta_mother\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_mother_person\",\"sampleId\":\"TEST_ONLY_pp1_beta_mother_sample\",\"role\":\"MOTHER\",\"proband\":false,\"fatherId\":null,\"motherId\":null,\"independence\":\"INDEPENDENT_SINGLETON\",\"affectedStatus\":\"UNAFFECTED\",\"clinical\":{\"observedAt\":\"2026-10-01T00:00:00Z\",\"ageYears\":40,\"mondoId\":\"MONDO:0940012\",\"mechanism\":\"LOSS_OF_FUNCTION\",\"diagnosis\":\"UNAFFECTED_CONFIRMED\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}},\"detection\":{\"status\":\"TESTED\",\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"coverage\":\"COMPLETE\",\"mosaicism\":\"NONMOSAIC\",\"observedAt\":\"2026-10-01T00:00:00Z\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}}},{\"memberId\":\"patient-context-test-pp1-beta\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_child1_person\",\"sampleId\":\"TEST_ONLY_pp1_beta_child1_sample\",\"role\":\"CHILD\",\"proband\":true,\"fatherId\":\"TEST_ONLY_pp1_beta_father\",\"motherId\":\"TEST_ONLY_pp1_beta_mother\",\"independence\":\"INDEPENDENT_SINGLETON\",\"affectedStatus\":\"AFFECTED\",\"clinical\":{\"observedAt\":\"2026-10-01T00:00:00Z\",\"ageYears\":10,\"mondoId\":\"MONDO:0940012\",\"mechanism\":\"LOSS_OF_FUNCTION\",\"diagnosis\":\"SAME_DISEASE_CONFIRMED\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}},\"detection\":{\"status\":\"TESTED\",\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"coverage\":\"COMPLETE\",\"mosaicism\":\"NONMOSAIC\",\"observedAt\":\"2026-10-01T00:00:00Z\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}}}],\"records\":[{\"recordId\":\"TEST_ONLY_pp1_beta_father_record\",\"memberId\":\"TEST_ONLY_pp1_beta_father\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_father_person\",\"sampleId\":\"TEST_ONLY_pp1_beta_father_sample\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"8\",\"position\":840012,\"reference\":\"A\",\"alternate\":\"G\"},\"geneSymbol\":\"TESTPP1B\",\"locator\":\"TEST_ONLY_pp1_beta_original_vcf#father\",\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"format\":\"GT:DP:GQ:AD:FT\",\"rawSample\":\"0/1:40:60:20,20:PASS\",\"recordFilter\":\"PASS\",\"observation\":{\"genotype\":\"0/1\",\"phased\":false,\"depth\":40,\"genotypeQuality\":60,\"alleleDepth\":\"20,20\",\"sampleFilter\":\"PASS\",\"call\":\"HET_ALT\",\"targetAltIndex\":1,\"ploidy\":2},\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]},{\"recordId\":\"TEST_ONLY_pp1_beta_mother_record\",\"memberId\":\"TEST_ONLY_pp1_beta_mother\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_mother_person\",\"sampleId\":\"TEST_ONLY_pp1_beta_mother_sample\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"8\",\"position\":840012,\"reference\":\"A\",\"alternate\":\"G\"},\"geneSymbol\":\"TESTPP1B\",\"locator\":\"TEST_ONLY_pp1_beta_original_vcf#mother\",\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"format\":\"GT:DP:GQ:AD:FT\",\"rawSample\":\"0/0:40:60:40,0:PASS\",\"recordFilter\":\"PASS\",\"observation\":{\"genotype\":\"0/0\",\"phased\":false,\"depth\":40,\"genotypeQuality\":60,\"alleleDepth\":\"40,0\",\"sampleFilter\":\"PASS\",\"call\":\"HOM_REF\",\"targetAltIndex\":1,\"ploidy\":2},\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]},{\"recordId\":\"TEST_ONLY_pp1_beta_child1_record\",\"memberId\":\"patient-context-test-pp1-beta\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_child1_person\",\"sampleId\":\"TEST_ONLY_pp1_beta_child1_sample\",\"allele\":{\"assembly\":\"GRCh38\",\"contig\":\"8\",\"position\":840012,\"reference\":\"A\",\"alternate\":\"G\"},\"geneSymbol\":\"TESTPP1B\",\"locator\":\"TEST_ONLY_pp1_beta_original_vcf#child1\",\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"format\":\"GT:DP:GQ:AD:FT\",\"rawSample\":\"0/1:40:60:20,20:PASS\",\"recordFilter\":\"PASS\",\"observation\":{\"genotype\":\"0/1\",\"phased\":false,\"depth\":40,\"genotypeQuality\":60,\"alleleDepth\":\"20,20\",\"sampleFilter\":\"PASS\",\"call\":\"HET_ALT\",\"targetAltIndex\":1,\"ploidy\":2},\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}],\"parentage\":[{\"relationshipId\":\"TEST_ONLY_pp1_beta_father_child1\",\"parentMemberId\":\"TEST_ONLY_pp1_beta_father\",\"childMemberId\":\"patient-context-test-pp1-beta\",\"relationship\":\"BIOLOGICAL\",\"status\":\"CONFIRMED\",\"method\":\"TEST_ONLY_INDEPENDENT_RELATIONSHIP_TEST_V1\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}},{\"relationshipId\":\"TEST_ONLY_pp1_beta_mother_child1\",\"parentMemberId\":\"TEST_ONLY_pp1_beta_mother\",\"childMemberId\":\"patient-context-test-pp1-beta\",\"relationship\":\"BIOLOGICAL\",\"status\":\"CONFIRMED\",\"method\":\"TEST_ONLY_INDEPENDENT_RELATIONSHIP_TEST_V1\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_facts_source\"]}}]}",
+            "rawSha256": "b7f026050b65fba0d7b0ad6204ac97589defec4b2a17ae19ec6badb9c3b52107",
+            "canonicalSha256": "9f7b7cd8427bb419f90d308310a6004d5b582270a6cd648a017df60ec7a5c36b"
+          }
+        ]
+      },
+      "segregationReview": {
+        "schemaVersion": "pp1-segregation-review-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_pp1_beta_observation",
+          "occurrenceId": "TEST_ONLY_pp1_beta_occurrence",
+          "caseId": "TEST_ONLY_pp1_beta_case",
+          "contextId": "context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720",
+          "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+          "hgncId": "HGNC:940012",
+          "mondoId": "MONDO:0940012",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-pp1-beta",
+          "familyContextId": "family-context-test-pp1-beta"
+        },
+        "rosterStatus": "COMPLETE_FROZEN_ROSTER",
+        "memberReviews": [
+          {
+            "memberId": "TEST_ONLY_pp1_beta_father",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_father_person",
+            "independence": "CONFIRMED",
+            "clinicalStatus": "REVIEWED",
+            "detectionStatus": "REVIEWED",
+            "exclusionReason": "NONE",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_segregationReview_source"
+            ]
+          },
+          {
+            "memberId": "TEST_ONLY_pp1_beta_mother",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_mother_person",
+            "independence": "CONFIRMED",
+            "clinicalStatus": "REVIEWED",
+            "detectionStatus": "REVIEWED",
+            "exclusionReason": "NONE",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_segregationReview_source"
+            ]
+          },
+          {
+            "memberId": "patient-context-test-pp1-beta",
+            "sourcePersonId": "TEST_ONLY_pp1_beta_child1_person",
+            "independence": "CONFIRMED",
+            "clinicalStatus": "REVIEWED",
+            "detectionStatus": "REVIEWED",
+            "exclusionReason": "NONE",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_segregationReview_source"
+            ]
+          }
+        ],
+        "declaredCount": 1,
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+          "date": "2026-10-01T00:00:00Z",
+          "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+          "sourceIds": [
+            "TEST_ONLY_pp1_beta_segregationReview_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_pp1_beta_segregationReview_source",
+            "recordId": "TEST_ONLY_pp1_beta_segregationReview_document",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY_pp1_beta_original/segregationReview",
+            "acquiredAt": "2026-10-01T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"pp1-segregation-review-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_pp1_beta_observation\",\"occurrenceId\":\"TEST_ONLY_pp1_beta_occurrence\",\"caseId\":\"TEST_ONLY_pp1_beta_case\",\"contextId\":\"context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720\",\"alleleId\":\"allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0\",\"hgncId\":\"HGNC:940012\",\"mondoId\":\"MONDO:0940012\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-pp1-beta\",\"familyContextId\":\"family-context-test-pp1-beta\"},\"rosterStatus\":\"COMPLETE_FROZEN_ROSTER\",\"memberReviews\":[{\"memberId\":\"TEST_ONLY_pp1_beta_father\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_father_person\",\"independence\":\"CONFIRMED\",\"clinicalStatus\":\"REVIEWED\",\"detectionStatus\":\"REVIEWED\",\"exclusionReason\":\"NONE\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_segregationReview_source\"]},{\"memberId\":\"TEST_ONLY_pp1_beta_mother\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_mother_person\",\"independence\":\"CONFIRMED\",\"clinicalStatus\":\"REVIEWED\",\"detectionStatus\":\"REVIEWED\",\"exclusionReason\":\"NONE\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_segregationReview_source\"]},{\"memberId\":\"patient-context-test-pp1-beta\",\"sourcePersonId\":\"TEST_ONLY_pp1_beta_child1_person\",\"independence\":\"CONFIRMED\",\"clinicalStatus\":\"REVIEWED\",\"detectionStatus\":\"REVIEWED\",\"exclusionReason\":\"NONE\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_segregationReview_source\"]}],\"declaredCount\":1,\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_segregationReview_source\"]}}",
+            "rawSha256": "84c533d531d72905e0cc1ec8f6f8d82271169387e5a5137572d14b3973b27e05",
+            "canonicalSha256": "22cfd3077b958ec699a3778e7eaecf9eec45090ef70469786671cfac4341ab8d"
+          }
+        ]
+      },
+      "diseaseApplicability": {
+        "schemaVersion": "pp1-disease-applicability-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_pp1_beta_observation",
+          "occurrenceId": "TEST_ONLY_pp1_beta_occurrence",
+          "caseId": "TEST_ONLY_pp1_beta_case",
+          "contextId": "context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720",
+          "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+          "hgncId": "HGNC:940012",
+          "mondoId": "MONDO:0940012",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-pp1-beta",
+          "familyContextId": "family-context-test-pp1-beta"
+        },
+        "mechanism": "LOSS_OF_FUNCTION",
+        "geneDiseaseValidity": "ESTABLISHED",
+        "validityBasis": "TEST_ONLY independent fictional disease definition, not this family",
+        "validityIndependentOfFamily": true,
+        "heterogeneity": "HETEROGENEOUS",
+        "diagnosticYield": "NOT_HIGH_HOMOGENEOUS",
+        "phenocopy": "EXCLUDED",
+        "linkageRequired": "NOT_REQUIRED",
+        "simpleAdMethod": "APPLICABLE",
+        "conditionMode": "UNRESTRICTED",
+        "conditions": [],
+        "affectedMembers": [
+          {
+            "memberId": "TEST_ONLY_pp1_beta_father",
+            "mondoId": "MONDO:0940012",
+            "mechanism": "LOSS_OF_FUNCTION",
+            "conclusion": "SAME_DISEASE_CONFIRMED",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_diseaseApplicability_source"
+            ]
+          },
+          {
+            "memberId": "patient-context-test-pp1-beta",
+            "mondoId": "MONDO:0940012",
+            "mechanism": "LOSS_OF_FUNCTION",
+            "conclusion": "SAME_DISEASE_CONFIRMED",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_diseaseApplicability_source"
+            ]
+          }
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+          "date": "2026-10-01T00:00:00Z",
+          "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+          "sourceIds": [
+            "TEST_ONLY_pp1_beta_diseaseApplicability_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_pp1_beta_diseaseApplicability_source",
+            "recordId": "TEST_ONLY_pp1_beta_diseaseApplicability_document",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY_pp1_beta_original/diseaseApplicability",
+            "acquiredAt": "2026-10-01T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"pp1-disease-applicability-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_pp1_beta_observation\",\"occurrenceId\":\"TEST_ONLY_pp1_beta_occurrence\",\"caseId\":\"TEST_ONLY_pp1_beta_case\",\"contextId\":\"context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720\",\"alleleId\":\"allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0\",\"hgncId\":\"HGNC:940012\",\"mondoId\":\"MONDO:0940012\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-pp1-beta\",\"familyContextId\":\"family-context-test-pp1-beta\"},\"mechanism\":\"LOSS_OF_FUNCTION\",\"geneDiseaseValidity\":\"ESTABLISHED\",\"validityBasis\":\"TEST_ONLY independent fictional disease definition, not this family\",\"validityIndependentOfFamily\":true,\"heterogeneity\":\"HETEROGENEOUS\",\"diagnosticYield\":\"NOT_HIGH_HOMOGENEOUS\",\"phenocopy\":\"EXCLUDED\",\"linkageRequired\":\"NOT_REQUIRED\",\"simpleAdMethod\":\"APPLICABLE\",\"conditionMode\":\"UNRESTRICTED\",\"conditions\":[],\"affectedMembers\":[{\"memberId\":\"TEST_ONLY_pp1_beta_father\",\"mondoId\":\"MONDO:0940012\",\"mechanism\":\"LOSS_OF_FUNCTION\",\"conclusion\":\"SAME_DISEASE_CONFIRMED\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_diseaseApplicability_source\"]},{\"memberId\":\"patient-context-test-pp1-beta\",\"mondoId\":\"MONDO:0940012\",\"mechanism\":\"LOSS_OF_FUNCTION\",\"conclusion\":\"SAME_DISEASE_CONFIRMED\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_diseaseApplicability_source\"]}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_diseaseApplicability_source\"]}}",
+            "rawSha256": "b4f6d9e8043b1b06168bb3a2b219cdba95d211cd066daea642526475e8011d8b",
+            "canonicalSha256": "e9677bab7c1c24d158b58479721633ad191139271e85fe7d3f4ff95981cbf472"
+          }
+        ]
+      },
+      "locusAttribution": {
+        "schemaVersion": "pp1-locus-attribution-v1",
+        "binding": {
+          "observationId": "TEST_ONLY_pp1_beta_observation",
+          "occurrenceId": "TEST_ONLY_pp1_beta_occurrence",
+          "caseId": "TEST_ONLY_pp1_beta_case",
+          "contextId": "context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720",
+          "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+          "hgncId": "HGNC:940012",
+          "mondoId": "MONDO:0940012",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "patientContextId": "patient-context-test-pp1-beta",
+          "familyContextId": "family-context-test-pp1-beta"
+        },
+        "method": "TEST_ONLY_SEQUENCING_CODING_SPLICE_V1",
+        "coverageScope": "CODING_AND_SPLICE",
+        "coverageStatus": "COMPLETE",
+        "candidateRosterStatus": "COMPLETE_FROZEN_ROSTER",
+        "candidates": [
+          {
+            "candidateId": "TEST_ONLY_pp1_beta_target_candidate",
+            "alleleId": "allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0",
+            "hgncId": "HGNC:940012",
+            "disposition": "TARGET",
+            "basis": "TEST_ONLY sole attributable target after complete source-based candidate review",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_locusAttribution_source"
+            ]
+          },
+          {
+            "candidateId": "TEST_ONLY_pp1_beta_excluded_candidate",
+            "alleleId": "TEST_ONLY_pp1_beta_excluded_allele",
+            "hgncId": "HGNC:940012",
+            "disposition": "EXCLUDED_INDEPENDENTLY",
+            "basis": "TEST_ONLY independent complete candidate exclusion report",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_locusAttribution_source"
+            ]
+          }
+        ],
+        "allocation": "SOLE_TARGET_NO_SHARING",
+        "usedEvidenceStatus": "COMPLETE_FROZEN_ROSTER",
+        "usedEvidence": [
+          {
+            "criterionId": "ACMG_AMP_2015:PP1",
+            "evidenceGroupId": "pp1-pp4-group-sha256-10114e93d5194206742190f694855de1618fea902096b75b027524c0642b77b4",
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete reviewed use ledger; no external system assertion",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_locusAttribution_source"
+            ]
+          },
+          {
+            "criterionId": "ACMG_AMP_2015:PP4",
+            "evidenceGroupId": "pp1-pp4-group-sha256-10114e93d5194206742190f694855de1618fea902096b75b027524c0642b77b4",
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete reviewed use ledger; no external system assertion",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_locusAttribution_source"
+            ]
+          },
+          {
+            "criterionId": "ACMG_AMP_2015:BS4",
+            "evidenceGroupId": "pp1-pp4-group-sha256-10114e93d5194206742190f694855de1618fea902096b75b027524c0642b77b4",
+            "status": "NOT_APPLIED_NO_CONFLICT",
+            "basis": "TEST_ONLY complete reviewed use ledger; no external system assertion",
+            "sourceIds": [
+              "TEST_ONLY_pp1_beta_locusAttribution_source"
+            ]
+          }
+        ],
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+          "date": "2026-10-01T00:00:00Z",
+          "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+          "sourceIds": [
+            "TEST_ONLY_pp1_beta_locusAttribution_source"
+          ]
+        },
+        "sources": [
+          {
+            "sourceId": "TEST_ONLY_pp1_beta_locusAttribution_source",
+            "recordId": "TEST_ONLY_pp1_beta_locusAttribution_document",
+            "version": "TEST_ONLY_1",
+            "locator": "TEST_ONLY_pp1_beta_original/locusAttribution",
+            "acquiredAt": "2026-10-01T00:00:00Z",
+            "rawUtf8": "{\"schemaVersion\":\"pp1-locus-attribution-v1\",\"binding\":{\"observationId\":\"TEST_ONLY_pp1_beta_observation\",\"occurrenceId\":\"TEST_ONLY_pp1_beta_occurrence\",\"caseId\":\"TEST_ONLY_pp1_beta_case\",\"contextId\":\"context-sha256-3f1619454397f481397ac2ba32b85a08d600fd2b9c05995e7c6107f39e1bc720\",\"alleleId\":\"allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0\",\"hgncId\":\"HGNC:940012\",\"mondoId\":\"MONDO:0940012\",\"moi\":\"AUTOSOMAL_DOMINANT\",\"patientContextId\":\"patient-context-test-pp1-beta\",\"familyContextId\":\"family-context-test-pp1-beta\"},\"method\":\"TEST_ONLY_SEQUENCING_CODING_SPLICE_V1\",\"coverageScope\":\"CODING_AND_SPLICE\",\"coverageStatus\":\"COMPLETE\",\"candidateRosterStatus\":\"COMPLETE_FROZEN_ROSTER\",\"candidates\":[{\"candidateId\":\"TEST_ONLY_pp1_beta_target_candidate\",\"alleleId\":\"allele-sha256-caf90786e627b2369a98d23ec8785197f5340344d489f7c1ed17e27174a83fc0\",\"hgncId\":\"HGNC:940012\",\"disposition\":\"TARGET\",\"basis\":\"TEST_ONLY sole attributable target after complete source-based candidate review\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_locusAttribution_source\"]},{\"candidateId\":\"TEST_ONLY_pp1_beta_excluded_candidate\",\"alleleId\":\"TEST_ONLY_pp1_beta_excluded_allele\",\"hgncId\":\"HGNC:940012\",\"disposition\":\"EXCLUDED_INDEPENDENTLY\",\"basis\":\"TEST_ONLY independent complete candidate exclusion report\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_locusAttribution_source\"]}],\"allocation\":\"SOLE_TARGET_NO_SHARING\",\"usedEvidenceStatus\":\"COMPLETE_FROZEN_ROSTER\",\"usedEvidence\":[{\"criterionId\":\"ACMG_AMP_2015:PP1\",\"evidenceGroupId\":\"pp1-pp4-group-sha256-10114e93d5194206742190f694855de1618fea902096b75b027524c0642b77b4\",\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete reviewed use ledger; no external system assertion\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_locusAttribution_source\"]},{\"criterionId\":\"ACMG_AMP_2015:PP4\",\"evidenceGroupId\":\"pp1-pp4-group-sha256-10114e93d5194206742190f694855de1618fea902096b75b027524c0642b77b4\",\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete reviewed use ledger; no external system assertion\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_locusAttribution_source\"]},{\"criterionId\":\"ACMG_AMP_2015:BS4\",\"evidenceGroupId\":\"pp1-pp4-group-sha256-10114e93d5194206742190f694855de1618fea902096b75b027524c0642b77b4\",\"status\":\"NOT_APPLIED_NO_CONFLICT\",\"basis\":\"TEST_ONLY complete reviewed use ledger; no external system assertion\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_locusAttribution_source\"]}],\"review\":{\"status\":\"REVIEWED\",\"reviewer\":\"TEST_ONLY_pp1_beta_independent_reviewer\",\"date\":\"2026-10-01T00:00:00Z\",\"basis\":\"TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption\",\"sourceIds\":[\"TEST_ONLY_pp1_beta_locusAttribution_source\"]}}",
+            "rawSha256": "562a090bc857565b1a8e5b531ba2b17fde9c20bb78dff52643faf34aa8a74764",
+            "canonicalSha256": "cba7535ce4b179e30ee50d196b9c8ebde36ff5b890fd2622e9055b9d5ee56ce3"
+          }
+        ]
+      },
+      "assessment": {
+        "schemaVersion": "pp1-assessment-v1",
+        "assessmentId": "TEST_ONLY_pp1_beta_assessment",
+        "assessmentVersion": "TEST_ONLY_1",
+        "partPins": {
+          "facts": "4290bc035e48eb199b456d7bdff03afe2c70b2f648fe0099664073c023e1489e",
+          "segregationReview": "804dfdaf60a62cabd1817a6b16e159be8c90ad6cabe0b65331b9fedd7b3e81b9",
+          "diseaseApplicability": "6b84a9cd9e9ac8ad5748705f637ba96de731ec8a87f3302a75bfd5e985c48e29",
+          "locusAttribution": "273209285c4dd55945a95ca09db066f90f3b7f9a0ebd1efd2af9cceaa9264825"
+        },
+        "review": {
+          "status": "REVIEWED",
+          "reviewer": "TEST_ONLY_pp1_beta_independent_reviewer",
+          "date": "2026-10-01T00:00:00Z",
+          "basis": "TEST_ONLY fictional independent review: complete original roster and stated scope, no scientific adoption",
+          "sourceIds": [
+            "TEST_ONLY_pp1_beta_segregationReview_source"
+          ]
+        },
+        "contentSha256": "d825d7953e5c9d914b40ba8dabf215348553a9bc5cf8d88de5a37647405502a2"
+      }
+    }
+  ],
+  "policy": {
+    "schemaVersion": "pp1-reviewed-segregation-policy-v1",
+    "policyId": "TEST_ONLY_pp1_beta_policy",
+    "policyVersion": "1.0",
+    "mode": "SINGLE_NUCLEAR_FAMILY_AD",
+    "criterionIds": [
+      "ACMG_AMP_2015:PP1"
+    ],
+    "scope": {
+      "hgncId": "HGNC:940012",
+      "mondoId": "MONDO:0940012",
+      "moi": "AUTOSOMAL_DOMINANT",
+      "assembly": "GRCh38",
+      "transcriptMode": "TRANSCRIPT_NOT_REQUIRED",
+      "variantType": "NATIVE_NONPROJECTED_SNV"
+    },
+    "review": {
+      "status": "REVIEWED_IMPLEMENTED",
+      "reviewId": "TEST_ONLY_pp1_beta_policy_review"
+    },
+    "partPins": {
+      "facts": "4290bc035e48eb199b456d7bdff03afe2c70b2f648fe0099664073c023e1489e",
+      "segregationReview": "804dfdaf60a62cabd1817a6b16e159be8c90ad6cabe0b65331b9fedd7b3e81b9",
+      "diseaseApplicability": "6b84a9cd9e9ac8ad5748705f637ba96de731ec8a87f3302a75bfd5e985c48e29",
+      "locusAttribution": "273209285c4dd55945a95ca09db066f90f3b7f9a0ebd1efd2af9cceaa9264825"
+    },
+    "assessmentSha256": "8b4ad55bc216f59dc1dcf8194ff6417360186951d100dd59641039cbe2162afa",
+    "authoritySourceIds": [
+      "authority-clingen-svi-pp1-bs4-pp4-2023"
+    ],
+    "scientificSources": [
+      {
+        "sourceId": "authority-clingen-svi-pp1-bs4-pp4-2023",
+        "version": "2023 publication",
+        "url": "https://www.clinicalgenome.org/docs/clingen-guidance-for-use-of-the-pp1-bs4-co-segregation-and-pp4-phenotype-specificity-criteria-for-sequence-variant/",
+        "sha256": "a7f17ef0eeb827173a9a6857ee5791fb9372b18dd1a8793c31496f6cd3cb4ab1",
+        "publicationDate": "2023-12-15",
+        "publicationStatus": "RELEASED",
+        "normativeEligibility": "ELIGIBLE",
+        "authorityCutoff": "2026-09-11"
+      }
+    ],
+    "qualityProfile": "pp1-diploid-snv-dp20-gq20-explicit-ft-v1"
+  },
+  "catalog": {
+    "schemaVersion": "acmg-specification-catalog-v1",
+    "catalogId": "TEST_ONLY_pp1_beta_catalog",
+    "catalogVersion": "1.0",
+    "searchScope": "TEST_ONLY exact fictional PP1 background beta; no real VCEP claim",
+    "searchedAt": "2026-09-29T00:00:00Z",
+    "review": {
+      "status": "REVIEWED",
+      "reviewId": "TEST_ONLY_catalog_review_beta"
+    },
+    "sources": [
+      {
+        "sourceId": "TEST_ONLY_PP1_catalog_source_beta",
+        "version": "TEST_ONLY_1",
+        "url": "https://example.invalid/TEST_ONLY/pp1/beta",
+        "sha256": "12a33e3420b87561d7c788f4fac76c0ac955661a8eb2925ef07d2473f9f7ef74"
+      }
+    ],
+    "entries": [
+      {
+        "entryId": "TEST_ONLY_pp1_beta_entry",
+        "criterionId": "ACMG_AMP_2015:PP1",
+        "scope": {
+          "hgncId": "HGNC:940012",
+          "mondoId": "MONDO:0940012",
+          "moi": "AUTOSOMAL_DOMINANT",
+          "assembly": "GRCh38",
+          "transcriptMode": "TRANSCRIPT_NOT_REQUIRED",
+          "variantType": "NATIVE_NONPROJECTED_SNV"
+        },
+        "searchStatus": "COMPLETE",
+        "review": {
+          "status": "REVIEWED",
+          "reviewId": "TEST_ONLY_entry_review_beta"
+        },
+        "sourceIds": [
+          "TEST_ONLY_PP1_catalog_source_beta"
+        ],
+        "disposition": "NO_APPLICABLE_SPECIALIZATION",
+        "baseRuleRelationship": "TEST_ONLY complete exact-scope search permits general PP1 single-case branch",
+        "generalPrerequisites": {
+          "status": "COMPLETE",
+          "sourceIds": [
+            "TEST_ONLY_PP1_catalog_source_beta"
+          ]
+        },
+        "policyBinding": {
+          "policyId": "TEST_ONLY_pp1_beta_policy",
+          "policyVersion": "1.0",
+          "policySha256": "4ef9745218452d45acbcb5a52c6946f32e36ae858b77f0411fc2ebe17be7a355"
+        }
+      }
+    ]
+  },
+  "catalogSha256": "9cf167d46b6c632dd4e462873b5ccc9b8a67aa0386c6467640ae617e4d4bd19c",
+  "registryBinding": {
+    "registryId": "acmg-rule-registry-pp1-segregation-core-2026-10-01",
+    "registrySha256": "36db9b90647cc408909ed9bcc06706d6d78834986902b2d2a3468dea64dd0778",
+    "registryClasspathResource": "/acmg/rule-registry-v2/acmg-rule-registry-pp1-segregation-core-2026-10-01.json"
+  }
+}

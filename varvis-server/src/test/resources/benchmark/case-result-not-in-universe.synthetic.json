@@ -1,0 +1,33 @@
+{
+  "schemaVersion" : "benchmark-case-result-v1",
+  "resultId" : "synthetic-result-not-in-universe",
+  "createdAt" : "2026-01-01T00:04:00Z",
+  "runId" : "synthetic-run-001",
+  "datasetId" : "synthetic-public-like-dataset",
+  "caseId" : "case-beta",
+  "groupId" : "G0",
+  "caseExecutionStatus" : "COMPLETED_WITH_FAILURES",
+  "analysisReference" : "analysis-synthetic-beta-g0",
+  "truthMatches" : [ {
+    "truthGene" : "SYNGENE2",
+    "truthCanonicalIdentity" : {
+      "genomeAssembly" : "GRCh38",
+      "chromosome" : "2",
+      "position" : 200,
+      "reference" : "C",
+      "alternate" : "T"
+    },
+    "matchStatus" : "NOT_IN_RANKING_UNIVERSE",
+    "assembly" : "GRCh38",
+    "ambiguityStatus" : "UNAMBIGUOUS",
+    "rankingContractVersion" : "ranking-contract-v1",
+    "rankStatus" : "NOT_IN_RANKING_UNIVERSE",
+    "rankingUniverseSize" : 10000
+  } ],
+  "stageRetention" : [
+    { "stage" : "RAW_INPUT", "presence" : "PRESENT", "observedCount" : 10000 },
+    { "stage" : "RANKING", "presence" : "ABSENT", "observedCount" : 10000, "note" : "synthetic non-hit" }
+  ],
+  "primaryFailureCode" : "F9",
+  "failureNote" : "retained reference is below the synthetic ranking boundary"
+}
